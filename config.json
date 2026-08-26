@@ -1,0 +1,71 @@
+{
+  "interval_minutes": 30,
+  "locales": [
+    "en-US",
+    "es"
+  ],
+  "force_patch": true,
+  "striplibs": [],
+  "bytecode_mode": "",
+  "bundles": {
+    "morphe": "https://github.com/MorpheApp/morphe-patches",
+    "prathxm": "https://github.com/PrathxmOp/Prathxm-Patches"
+  },
+  "apps": [
+    {
+      "package": "com.google.android.youtube",
+      "combos": [
+        [
+          "morphe"
+        ]
+      ]
+    },
+    {
+      "package": "com.google.android.apps.youtube.music",
+      "combos": [
+        [
+          "morphe"
+        ]
+      ]
+    },
+    {
+      "package": "com.reddit.frontpage",
+      "combos": [
+        [
+          "morphe"
+        ]
+      ]
+    },
+    {
+      "package": "com.chess",
+      "combos": [
+        [
+          "prathxm"
+        ]
+      ]
+    }
+  ],
+  "tools": {
+    "morphe-desktop": {
+      "repo": "MorpheApp/morphe-desktop",
+      "local": "bin/morphe-desktop.jar"
+    },
+    "apkeditor": {
+      "repo": "REAndroid/APKEditor",
+      "local": "bin/apkeditor.jar"
+    }
+  },
+  "fdroid": {
+    "enabled": true,
+    "name": "Morphe Updater",
+    "description": "Patched apps rebuilt automatically",
+    "url": ""
+  },
+  "tmp_max_mb": 2048,
+  "tmp_max_age_days": 7,
+  "commit": false,
+  "release": false,
+  "archs": [
+    "arm64"
+  ]
+}

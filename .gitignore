@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+tmp/
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+release.keystore
+
+# Runtime artifacts (committed on purpose: out/, state.json, options/)
+morphe-data/
+/bin/*.jar
+*.part

@@ -1,0 +1,33 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-08-26T00:38:12.028095844Z",
+            "updated_at": "2026-08-26T11:20:26.951013762Z",
+            "source": "v1.13.1-dev.4__patches-1.13.1-dev.4.mpp",
+            "sha256": "2e95ec5bd2509bad2017de13757fbc13485cf11178e7f71a5657bfd24018650f"
+        },
+        "patches": {
+            "Ad-Free": {
+                "enabled": true
+            },
+            "Unlock All Bots": {
+                "enabled": true
+            },
+            "Lichess Puzzles": {
+                "enabled": true
+            },
+            "Clone Chess.com": {
+                "enabled": true
+            },
+            "Global Crash Handler": {
+                "enabled": true
+            },
+            "Custom Titles": {
+                "enabled": true
+            },
+            "Local Stockfish Analysis": {
+                "enabled": true
+            }
+        }
+    }
+]
