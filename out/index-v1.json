@@ -1,0 +1,120 @@
+{
+ "repo": {
+  "name": "Morphe Updater",
+  "description": "Patched apps rebuilt automatically",
+  "timestamp": 1787786910997,
+  "packages": {}
+ },
+ "apps": [
+  {
+   "packageName": "com.chess",
+   "name": "Chess",
+   "localized": {
+    "en-US": {
+     "name": "Chess",
+     "summary": "Chess patched with Morphe",
+     "description": "Chess patched with Morphe",
+     "icon": "icons/com.chess.png"
+    }
+   },
+   "icon": {
+    "en-US": "icons/com.chess.png"
+   }
+  },
+  {
+   "packageName": "com.reddit.frontpage",
+   "name": "Frontpage",
+   "localized": {
+    "en-US": {
+     "name": "Frontpage",
+     "summary": "Frontpage patched with Morphe",
+     "description": "Frontpage patched with Morphe",
+     "icon": "icons/com.reddit.frontpage.png"
+    }
+   },
+   "icon": {
+    "en-US": "icons/com.reddit.frontpage.png"
+   }
+  },
+  {
+   "packageName": "com.google.android.apps.youtube.music",
+   "name": "Music",
+   "localized": {
+    "en-US": {
+     "name": "Music",
+     "summary": "Music patched with Morphe",
+     "description": "Music patched with Morphe",
+     "icon": "icons/com.google.android.apps.youtube.music.png"
+    }
+   },
+   "icon": {
+    "en-US": "icons/com.google.android.apps.youtube.music.png"
+   }
+  },
+  {
+   "packageName": "com.google.android.youtube",
+   "name": "Youtube",
+   "localized": {
+    "en-US": {
+     "name": "Youtube",
+     "summary": "Youtube patched with Morphe",
+     "description": "Youtube patched with Morphe",
+     "icon": "icons/com.google.android.youtube.png"
+    }
+   },
+   "icon": {
+    "en-US": "icons/com.google.android.youtube.png"
+   }
+  }
+ ],
+ "packages": [
+  {
+   "appName": "Chess",
+   "packageName": "com.chess",
+   "versionName": "4.10.0",
+   "versionCode": 268250,
+   "apkName": "chess-4.10.0-prathxm-arm64.apk",
+   "hash": "2ab8c8d1c16217ed7f8e80ce48913bc2d8ce06eaa5e0f914941a54ab19632e73",
+   "size": 258536872,
+   "minSdkVersion": 26,
+   "targetSdkVersion": 36,
+   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
+  },
+  {
+   "appName": "Frontpage",
+   "packageName": "com.reddit.frontpage",
+   "versionName": "2026.14.0",
+   "versionCode": 2614140,
+   "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
+   "hash": "15ba79a02b0c06f0f4c9fb9bfbcfe57eef986fb2cf70bc1d37863ebcf5b3aff3",
+   "size": 57426263,
+   "minSdkVersion": 29,
+   "targetSdkVersion": 36,
+   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
+  },
+  {
+   "appName": "Music",
+   "packageName": "com.google.android.apps.youtube.music",
+   "versionName": "9.15.51",
+   "versionCode": 91551240,
+   "apkName": "music-9.15.51-morphe-arm64.apk",
+   "hash": "ecaa226db0da43bbe45addd117a12c1169619223fd285b4179d1967b56f0f901",
+   "size": 72263622,
+   "minSdkVersion": 32,
+   "targetSdkVersion": 36,
+   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
+  },
+  {
+   "appName": "Youtube",
+   "packageName": "com.google.android.youtube",
+   "versionName": "21.04.223",
+   "versionCode": 1561052632,
+   "apkName": "youtube-21.04.223-morphe-arm64.apk",
+   "hash": "ace453328efb38d3974763fe30ea86ee0b484335b9e42676a6ea7db3f070851a",
+   "size": 114354461,
+   "minSdkVersion": 32,
+   "targetSdkVersion": 36,
+   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
+  }
+ ]
+}
