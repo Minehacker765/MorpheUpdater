@@ -16,5 +16,8 @@ release.keystore
 
 # Runtime artifacts (committed on purpose: out/, state.json, options/)
 morphe-data/
+out/*.apk
+out/*.idsig
+
 /bin/*.jar
 *.part
