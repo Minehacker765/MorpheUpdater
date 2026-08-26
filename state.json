@@ -1,0 +1,8 @@
+{
+  "builds": {},
+  "bundles": {
+    "morphe": "v1.41.0-dev.1",
+    "prathxm": "v1.13.1-dev.4"
+  },
+  "tools": {}
+}
