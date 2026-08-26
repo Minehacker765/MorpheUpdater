@@ -55,15 +55,20 @@ def load_env() -> None:
                 continue
             key, _, value = line.partition("=")
             os.environ.setdefault(key.strip(), value.strip().strip("'\""))
-    b64 = os.environ.get("KEYSTORE_B64", "")
-    path = os.environ.get("KEYSTORE_PATH", "release.keystore")
-    if b64 and not Path(path).exists():
-        Path(path).write_bytes(base64.b64decode(b64))
-        log.info("decoded KEYSTORE_B64 into %s", path)
+    b64 = (os.environ.get("KEYSTORE_B64") or "").strip()
+    path = (os.environ.get("KEYSTORE_PATH") or "release.keystore").strip() or "release.keystore"
+    env_path = Path(path)
+    if not env_path.is_absolute():
+        env_path = ROOT / env_path
+    if b64 and not env_path.exists():
+        env_path.parent.mkdir(parents=True, exist_ok=True)
+        env_path.write_bytes(base64.b64decode(b64))
+        log.info("decoded KEYSTORE_B64 into %s", env_path)
 
 
 def keystore() -> str:
-    return os.environ.get("KEYSTORE_PATH", "release.keystore")
+    raw = (os.environ.get("KEYSTORE_PATH") or "").strip()
+    return raw if raw else "release.keystore"
 
 
 def load_config() -> dict:

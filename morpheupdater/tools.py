@@ -77,6 +77,7 @@ async def update_tool(session: ClientSession, name: str, spec: dict, state: dict
     if not url:
         raise RuntimeError(f"no jar asset in {repo} {tag}")
     dest = ROOT / local
+    dest.parent.mkdir(parents=True, exist_ok=True)
     tmp = dest.with_suffix(dest.suffix + ".part")
     async with session.get(url, timeout=None) as resp:
         resp.raise_for_status()
