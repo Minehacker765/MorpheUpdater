@@ -117,22 +117,38 @@ _DPI_RANK = {"xxxhdpi": 5, "xxhdpi": 4, "xhdpi": 3, "hdpi": 2, "mdpi": 1, "ldpi"
 def extract_icon(apk: Path, dest: Path) -> str | None:
     try:
         with zipfile.ZipFile(apk) as z:
-            best: tuple[tuple, str] | None = None
+            # Prefer the manifest's launcher icon: ic_launcher.png at highest density
+            candidates = []
             for name in z.namelist():
                 low = name.lower()
-                if not low.endswith((".png", ".webp")) or "/" not in name:
+                if not low.endswith((".png", ".webp")):
                     continue
-                folder, qualifier = name.split("/")[:2]
-                m = re.match(r"mipmap[^-]*-(\w+)", qualifier)
+                # only mipmap launcher variants
+                if "ic_launcher" not in low and "morphe_adaptive" not in low:
+                    continue
+                # rank by density and prefer plain ic_launcher.png over background/foreground variants
+                m = re.search(r"-(xxxhdpi|xxhdpi|xhdpi|hdpi|mdpi|ldpi)", low)
                 rank = _DPI_RANK.get(m.group(1), 0) if m else 0
-                is_mipmap = folder.startswith("mipmap") or qualifier.startswith("mipmap")
-                score = (1 if is_mipmap else 0, rank, z.getinfo(name).file_size)
-                if best is None or score > best[0]:
-                    best = (score, name)
-            if best is None:
+                # plain ic_launcher.png scores higher than _foreground/_background
+                plain = 1 if re.search(r"ic_launcher\.png$", low) else 0
+                # for adaptive icons without plain png, prefer foreground
+                fg = 1 if "foreground" in low else 0
+                score = (plain, fg, rank, z.getinfo(name).file_size)
+                candidates.append((score, name))
+            # fallback to any mipmap if no launcher found (should not happen)
+            if not candidates:
+                for name in z.namelist():
+                    low = name.lower()
+                    if not low.endswith((".png", ".webp")) or "mipmap" not in low:
+                        continue
+                    m = re.search(r"-(xxxhdpi|xxhdpi|xhdpi|hdpi|mdpi)", low)
+                    rank = _DPI_RANK.get(m.group(1), 0) if m else 0
+                    candidates.append(((0, 0, rank, z.getinfo(name).file_size), name))
+            if not candidates:
                 return None
+            best = max(candidates, key=lambda x: x[0])[1]
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_bytes(z.read(best[1]))
+            dest.write_bytes(z.read(best))
             return dest.name
     except Exception as exc:
         log.warning("icon extraction from %s failed: %s", apk.name, exc)
@@ -196,43 +212,27 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     by_out = {e.get("out"): e for e in state["builds"].values() if e.get("out")}
     creds = tools.resolve_signing()
 
-    signer_b64 = (state.get("fdroid") or {}).get("cert_b64", "")
-    # signer hex for packages[].signer, sig is first 8 of cert's SHA1? fdroid uses hex SHA256 for signer
-    import hashlib as _hl
-    signer_hex = ""
-    sig = ""
-    if signer_b64:
-        try:
-            der = __import__("base64").b64decode(signer_b64)
-            signer_hex = _hl.sha256(der).hexdigest()
-            # sig is first 8 hex of sha256 as well in v1? use same prefix for simplicity
-            sig = signer_hex[:8]
-        except Exception:
-            pass
+    fdroid_state = state.get("fdroid") or {}
+    signer_hex = fdroid_state.get("cert_sha256", "")
+    sig = signer_hex[:8] if signer_hex else 
     packages: dict[str, list[dict]] = {}
     apps: dict[str, dict] = {}
 
     for apk in sorted(OUT.glob("*.apk")):
         entry = by_out.get(apk.name) or {}
-        # always read actual APK to get cloned package/versionCode/appName
-        info = None
-        # prefer actual APK for package/appName (clone), but keep original Play vc as you requested
         try:
             info = tools.apk_info(editor_jar, apk)
         except Exception:
             info = None
         if info:
-            package, _, _, app_name_real = info
-            package = package  # cloned (app.morphe...)
+            package, version, vc, app_name_real = info
             app_name = app_name_real or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
         else:
-            package = entry.get("package") or ""
+            if not (entry.get("package") and entry.get("version") and entry.get("vc")):
+                log.warning("index: skipping %s (no metadata)", apk.name)
+                continue
+            package, version, vc = entry["package"], entry["version"], int(entry["vc"])
             app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
-        if not (entry.get("package") and entry.get("version") and entry.get("vc")) and not info:
-            log.warning("index: skipping %s (no metadata)", apk.name)
-            continue
-        version = entry.get("version") or (info[1] if info else "")
-        vc = int(entry.get("vc") or (info[2] if info else 0))
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
         apk_name = template.format(tag=tag, apkName=apk.name) if template and tag else apk.name
