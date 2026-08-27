@@ -1,9 +1,9 @@
 {
   "builds": {
     "com.chess|prathxm|arm64": {
-      "app_name": "Chess - Play and Learn Online",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1787874609,
+      "at": 1787874675,
       "out": "chess-4.10.0-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
@@ -13,9 +13,9 @@
       "version": "4.10.0"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
-      "app_name": "YouTube Music",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1787874404,
+      "at": 1787874517,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
@@ -25,9 +25,9 @@
       "version": "9.15.51"
     },
     "com.google.android.youtube|morphe|arm64": {
-      "app_name": "YouTube",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1787874322,
+      "at": 1787874450,
       "out": "youtube-21.04.223-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
@@ -49,9 +49,9 @@
       "version": "7.0.0-dev.3"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "Reddit",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1787874486,
+      "at": 1787874579,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
