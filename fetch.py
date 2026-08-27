@@ -126,11 +126,13 @@ def main() -> None:
     p = argparse.ArgumentParser(
         prog="fetch.py",
         description="Download an APK (+ splits) from Play and merge them with APKEditor.",
-        epilog="Version can be dotted (21.04.223) — resolved to Play vc via APKPure — or a numeric versionCode. Omit to fetch the latest Play version.",
+        epilog="Version can be dotted (21.04.223) — resolved to Play vc via APKPure or version_overrides.json — or a numeric versionCode. Omit to fetch the latest Play version. Use --save to persist a custom dotted->vc pair to version_overrides.json.",
     )
     p.add_argument("package", help="Play package name, e.g. com.google.android.youtube")
     p.add_argument("version", nargs="?", default=None, help="dotted version (21.04.223) or versionCode (1561052632); omit for latest")
     p.add_argument("--version", dest="version_opt", default=None, help="same as positional version (explicit)")
+    p.add_argument("--version-code", dest="version_code", default=None, help="explicit Play versionCode for the dotted version (saves to version_overrides.json with --save)")
+    p.add_argument("--save", action="store_true", help="persist dotted->versionCode mapping to version_overrides.json (use with --version-code or after a successful mirror* resolve)")
     p.add_argument("--arch", default="arm64", help="device profile arch: arm64 (default), arm, x86, x86_64 (see profiles/)")
     p.add_argument("--locales", default=None, help="comma-separated locales, e.g. en-US,es (default from config.json)")
     p.add_argument("--out", dest="out", default=None, help="output merged APK path (default: ./<short>-<version>.apk)")
@@ -138,6 +140,23 @@ def main() -> None:
     args = p.parse_args()
 
     version_arg = args.version_opt if args.version_opt is not None else args.version
+    # --version-code + --save handling: persist custom pair and use vc directly
+    if args.version_code is not None:
+        if version_arg is None or _is_version_code(version_arg):
+            # user gave only vc, nothing to map
+            version_arg = args.version_code
+        else:
+            # dotted + explicit vc -> save mapping
+            try:
+                vc = int(args.version_code)
+                if args.save or True:  # always save when explicit vc given with dotted
+                    from morpheupdater.play import _save_override
+
+                    _save_override(args.package, version_arg, vc)
+                    print(f"saved override {args.package} {version_arg} -> {vc} to version_overrides.json", file=sys.stderr)
+                version_arg = str(vc)  # use vc directly for fetch
+            except ValueError:
+                p.error("--version-code must be numeric")
     locales = [s.strip() for s in args.locales.split(",") if s.strip()] if args.locales else []
 
     logging.basicConfig(

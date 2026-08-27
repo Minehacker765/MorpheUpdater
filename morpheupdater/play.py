@@ -11,7 +11,7 @@ from aiohttp import ClientSession, ClientTimeout
 
 from . import pb
 from .profiles import get_priority_profiles
-from .settings import TMP
+from .settings import ROOT, TMP
 
 DISPENSER = "https://auroraoss.com/api/auth"
 FDFE = "https://android.clients.google.com/fdfe"
@@ -368,6 +368,35 @@ async def fetch_version_codes(session: ClientSession, package: str, attempts: in
     raise last_err or PlayError(f"metadata source failed for {package}")
 
 
+OVERRIDES_PATH = ROOT / "version_overrides.json"
+
+
+def _load_overrides() -> dict[str, dict[str, int]]:
+    try:
+        if OVERRIDES_PATH.exists():
+            data = __import__("json").loads(OVERRIDES_PATH.read_text())
+            # normalize: {pkg: {ver: vc}}
+            out: dict[str, dict[str, int]] = {}
+            for pkg, mapping in data.items():
+                if isinstance(mapping, dict):
+                    out[pkg] = {str(k): int(v) for k, v in mapping.items() if str(v).isdigit()}
+            return out
+    except Exception:
+        pass
+    return {}
+
+
+def _save_override(package: str, version: str, vc: int) -> None:
+    try:
+        data = _load_overrides()
+        data.setdefault(package, {})[str(version)] = int(vc)
+        # sort for determinism
+        sorted_data = {pkg: dict(sorted(m.items())) for pkg, m in sorted(data.items())}
+        OVERRIDES_PATH.write_text(__import__("json").dumps(sorted_data, indent=2, sort_keys=True) + "\n")
+    except Exception:
+        pass
+
+
 def guess_version_codes(dotted: str) -> list[int]:
     """Heuristic guesses for Play versionCode from dotted version.
 
@@ -392,13 +421,20 @@ def guess_version_codes(dotted: str) -> list[int]:
             for suffix in (0, 6, 16, 26, 36):
                 cand.add(base + d + suffix)
                 cand.add(base * 10 + suffix)
-    # known hard mapping for the reported Twitch case (APKPure shallow history)
-    if dotted == "25.3.0":
-        cand.add(2503006)
     return sorted(c for c in cand if 0 < c < 2_147_483_647)
 
 
 async def resolve_vc(session: ClientSession, package: str, version: str) -> tuple[int, dict[str, int]]:
+    # 0) overrides file first (user-persisted custom pairs)
+    overrides = _load_overrides()
+    if version in overrides.get(package, {}):
+        vc = int(overrides[package][version])
+        try:
+            codes = await fetch_version_codes(session, package)
+        except Exception:
+            codes = {}
+        codes[version] = vc
+        return vc, codes
     codes = await fetch_version_codes(session, package)
     if version in codes:
         return codes[version], codes
@@ -437,9 +473,6 @@ async def resolve_vc_with_fallback(
             pass
         # mirror* 2: brute-force guess against Play (requires auth, try)
         try:
-            from .settings import TMP  # local import to avoid cycle
-            import json, time
-
             # need a valid auth token for this arch
             auth = await ensure_auth(session, arch)
             for guess in guess_version_codes(version):
@@ -449,11 +482,8 @@ async def resolve_vc_with_fallback(
                     # get_delivery will validate vc; we don't need splits yet
                     # try a lightweight delivery check (fast fail)
                     await get_delivery(session, auth, package, guess, ["en-US"], token)
-                    # if we got here, vc is served — check its versionString matches
-                    det = await get_details(session, auth, package)
-                    # details is latest, not specific vc, so we trust guess if delivery succeeded
-                    # we could also try to verify via Play's versionHistory but we don't have
-                    # So accept first vc that Play serves in the guessed range
+                    # if we got here, vc is served — persist for next time
+                    _save_override(package, version, guess)
                     codes = await fetch_version_codes(session, package)
                     codes[version] = guess
                     return guess, codes
@@ -471,17 +501,12 @@ async def resolve_vc_with_fallback(
 
 
 async def _fetch_vc_via_apkmirror(session: ClientSession, package: str, version: str) -> int | None:
-    """Best-effort scrape APKMirror for versionCode. Returns None if not found.
-
-    APKMirror is Cloudflare-protected, so we try a few lightweight mirrors that
-    echo the page without CF:
-    - https://apkcombo fallback already tried via APKPure, so here we try
-      APKMirror's version-specific page via textise/cached view. As of 2025-07,
-      Twitch 25.3.0 is 2503006 (verified via APKMirror HTML: 'Version: 25.3.0 (2503006)').
-    """
-    # hard-coded known mapping for the issue reported (avoids network)
-    if package == "tv.twitch.android.app" and version == "25.3.0":
-        return 2503006
-    # generic: try to fetch APKMirror page via alternative textise proxy
+    """Best-effort scrape for versionCode. Checks overrides file first."""
+    # 1) user overrides file (version_overrides.json)
+    overrides = _load_overrides()
+    vc = overrides.get(package, {}).get(str(version))
+    if vc:
+        return int(vc)
+    # 2) generic: try to fetch APKMirror page via alternative textise proxy
     # (may fail, caller will fall through)
     return None
