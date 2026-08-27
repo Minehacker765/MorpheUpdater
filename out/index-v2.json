@@ -1,0 +1,276 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "Morphe Updater"
+    },
+    "description": {
+      "en-US": "Patched apps rebuilt automatically"
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "0f52b87519892bbfaf7198a00be9ec5c7ab1ce0204d3191733fd2109e515d0a1",
+        "size": 10091
+      }
+    },
+    "address": "https://morpheupdater.minehacker765.workers.dev",
+    "timestamp": 1787866135984,
+    "mirrors": [
+      {
+        "url": "https://morpheupdater.minehacker765.workers.dev"
+      }
+    ]
+  },
+  "packages": {
+    "com.chess.prathxm": {
+      "metadata": {
+        "name": {
+          "en-US": "Chess"
+        },
+        "summary": {
+          "en-US": "Chess patched with Morphe"
+        },
+        "description": {
+          "en-US": "Chess patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/com.chess.prathxm.png",
+            "sha256": "66eeecd90280a8a49f981334b049f93f34a2d42149e72e509339356628510c5a",
+            "size": 2695
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787849286147,
+        "lastUpdated": 1787849286147,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a": {
+          "added": 1787849286147,
+          "file": {
+            "name": "/chess-4.10.0-prathxm-arm64.apk",
+            "sha256": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
+            "size": 258536872
+          },
+          "manifest": {
+            "versionName": "4.10.0-googleplay",
+            "versionCode": 268250,
+            "usesSdk": {
+              "minSdkVersion": 26,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "app.revanced.android.gms": {
+      "metadata": {
+        "name": {
+          "en-US": "MicroG"
+        },
+        "summary": {
+          "en-US": "MicroG RE patched with Morphe"
+        },
+        "description": {
+          "en-US": "MicroG RE patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/app.revanced.android.gms.png",
+            "sha256": "8d23d07b34188c7abacc64f142b3e233f1424f93cd74ef9016c5b5cee2ef0319",
+            "size": 13787
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787849287376,
+        "lastUpdated": 1787849287376,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248": {
+          "added": 1787849287376,
+          "file": {
+            "name": "/microg-7.0.0-dev.3-arm64.apk",
+            "sha256": "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248",
+            "size": 95753899
+          },
+          "manifest": {
+            "versionName": "7.0.0-dev.3",
+            "versionCode": 255070000,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "com.reddit.frontpage": {
+      "metadata": {
+        "name": {
+          "en-US": "Reddit"
+        },
+        "summary": {
+          "en-US": "Reddit patched with Morphe"
+        },
+        "description": {
+          "en-US": "Reddit patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/com.reddit.frontpage.png",
+            "sha256": "1cf1dcfd1d5164c592d7fc70e8c21f665d268e89b900ded8326f69a26af6c3c5",
+            "size": 9112
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787849286838,
+        "lastUpdated": 1787849286838,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666": {
+          "added": 1787849286838,
+          "file": {
+            "name": "/frontpage-2026.14.0-morphe-arm64.apk",
+            "sha256": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
+            "size": 57426263
+          },
+          "manifest": {
+            "versionName": "2026.14.0",
+            "versionCode": 2147483647,
+            "usesSdk": {
+              "minSdkVersion": 29,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "app.morphe.android.youtube": {
+      "metadata": {
+        "name": {
+          "en-US": "YouTube"
+        },
+        "summary": {
+          "en-US": "YouTube :3 patched with Morphe"
+        },
+        "description": {
+          "en-US": "YouTube :3 patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/app.morphe.android.youtube.png",
+            "sha256": "47ae85195661aee2d05b7864f5b172d5be5faea8eb4362cbf2c3948e5afafc0f",
+            "size": 4595
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787849288611,
+        "lastUpdated": 1787849288611,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be": {
+          "added": 1787849288611,
+          "file": {
+            "name": "/youtube-21.04.223-morphe-arm64.apk",
+            "sha256": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
+            "size": 114416502
+          },
+          "manifest": {
+            "versionName": "21.04.223",
+            "versionCode": 2147483647,
+            "usesSdk": {
+              "minSdkVersion": 32,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "app.morphe.android.apps.youtube.music": {
+      "metadata": {
+        "name": {
+          "en-US": "YouTube Music"
+        },
+        "summary": {
+          "en-US": "Music :3 patched with Morphe"
+        },
+        "description": {
+          "en-US": "Music :3 patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/app.morphe.android.apps.youtube.music.png",
+            "sha256": "0f52b87519892bbfaf7198a00be9ec5c7ab1ce0204d3191733fd2109e515d0a1",
+            "size": 10091
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787849287922,
+        "lastUpdated": 1787849287922,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64": {
+          "added": 1787849287922,
+          "file": {
+            "name": "/music-9.15.51-morphe-arm64.apk",
+            "sha256": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
+            "size": 72267718
+          },
+          "manifest": {
+            "versionName": "9.15.51",
+            "versionCode": 2147483647,
+            "usesSdk": {
+              "minSdkVersion": 32,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
