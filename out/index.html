@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morphe Updater — MorpheUpdater</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 system-ui;background:#0e0e10;color:#e6e6e6}
+header{padding:2.5rem 1rem;text-align:center;border-bottom:1px solid #222}
+h1{margin:0 0 .25rem;font-size:2rem}small{color:#9aa}
+main{max-width:960px;margin:auto;padding:1.5rem}
+.fdr{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center;background:#16161a;border:1px solid #2a2a30;border-radius:12px;padding:1rem 1.2rem;margin:1.2rem 0}
+.fdr code{background:#0e0e10;padding:.2rem .4rem;border-radius:6px;font-size:.9rem;word-break:break-all}
+#qrcode{background:#fff;padding:8px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.card{background:#16161a;border:1px solid #2a2a30;border-radius:12px;padding:1rem;display:flex;gap:1rem}
+.card img{width:56px;height:56px;border-radius:12px;background:#222;object-fit:cover;flex-shrink:0}
+.card h3{margin:.1rem 0 .2rem;font-size:1.05rem}.muted{color:#9aa;font-size:.85rem}a{color:#8ab4ff;text-decoration:none}a:hover{text-decoration:underline}
+footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
+</style>
+<header>
+  <h1>Morphe Updater</h1>
+  <small>Patched apps rebuilt automatically · updated 2026-08-27 13:32 UTC</small>
+</header>
+<main>
+  <div class="fdr">
+    <div id="qrcode"></div>
+    <div style="flex:1;min-width:240px">
+      <div><b>F-Droid repo</b> — add to <a href="https://droidify.eu.org/">Droidify</a> / Neo Store</div>
+      <div><code id="repoUrl">https://morpheupdater.minehacker765.workers.dev</code> <a href="#" onclick="navigator.clipboard.writeText(document.getElementById('repoUrl').textContent);return false">[copy]</a></div>
+      <div class="muted">fingerprint: <code>2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7</code></div>
+      <div style="margin-top:.6rem"><a id="addBtn" href="">Add to Droidify</a> · <a href="https://morpheupdater.minehacker765.workers.devindex-v1.jar">index-v1.jar</a></div>
+    </div>
+  </div>
+  <div class="grid"><div class="card">
+  <img src="icons/com.chess.png" onerror="this.style.visibility='hidden'">
+  <div>
+    <h3>Chess</h3>
+    <div class="muted">com.chess · 4.10.0 · arm64</div>
+    <div class="muted">prathxm v1.13.1-dev.4</div>
+    <div style="margin-top:.4rem"><a href="https://github.com/Minehacker765/MorpheUpdater/releases/download/v1.13.1-dev.4/chess-4.10.0-prathxm-arm64.apk">Download APK</a></div>
+  </div>
+</div><div class="card">
+  <img src="icons/com.google.android.apps.youtube.music.png" onerror="this.style.visibility='hidden'">
+  <div>
+    <h3>Music</h3>
+    <div class="muted">com.google.android.apps.youtube.music · 9.15.51 · arm64</div>
+    <div class="muted">morphe v1.41.0-dev.2</div>
+    <div style="margin-top:.4rem"><a href="https://github.com/Minehacker765/MorpheUpdater/releases/download/v1.41.0-dev.2/music-9.15.51-morphe-arm64.apk">Download APK</a></div>
+  </div>
+</div><div class="card">
+  <img src="icons/com.google.android.youtube.png" onerror="this.style.visibility='hidden'">
+  <div>
+    <h3>Youtube</h3>
+    <div class="muted">com.google.android.youtube · 21.04.223 · arm64</div>
+    <div class="muted">morphe v1.41.0-dev.2</div>
+    <div style="margin-top:.4rem"><a href="https://github.com/Minehacker765/MorpheUpdater/releases/download/v1.41.0-dev.2/youtube-21.04.223-morphe-arm64.apk">Download APK</a></div>
+  </div>
+</div><div class="card">
+  <img src="icons/com.reddit.frontpage.png" onerror="this.style.visibility='hidden'">
+  <div>
+    <h3>Frontpage</h3>
+    <div class="muted">com.reddit.frontpage · 2026.14.0 · arm64</div>
+    <div class="muted">morphe v1.41.0-dev.2</div>
+    <div style="margin-top:.4rem"><a href="https://github.com/Minehacker765/MorpheUpdater/releases/download/v1.41.0-dev.2/frontpage-2026.14.0-morphe-arm64.apk">Download APK</a></div>
+  </div>
+</div></div>
+</main>
+<footer>Built from <a href="https://github.com/Minehacker765/MorpheUpdater">Minehacker765/MorpheUpdater</a> · patches morphe v1.41.0-dev.2, prathxm v1.13.1-dev.4</footer>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+const url=document.getElementById('repoUrl').textContent.trim();
+new QRCode(document.getElementById("qrcode"),{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
+document.getElementById('addBtn').href="fdroidrepos://"+url.replace(/^https?:\/\//,"");
+</script>
+</html>
