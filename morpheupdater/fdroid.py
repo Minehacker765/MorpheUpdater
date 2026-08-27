@@ -214,7 +214,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
 
     fdroid_state = state.get("fdroid") or {}
     signer_hex = fdroid_state.get("cert_sha256", "")
-    sig = signer_hex[:8] if signer_hex else 
+    sig = signer_hex[:8] if signer_hex else ""
     packages: dict[str, list[dict]] = {}
     apps: dict[str, dict] = {}
 
