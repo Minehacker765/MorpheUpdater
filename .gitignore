@@ -21,3 +21,4 @@ morphe-data/
 *.part
 out/*.apk
 out/*.idsig
+worker/.wrangler/

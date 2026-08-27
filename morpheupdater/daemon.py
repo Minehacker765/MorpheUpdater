@@ -14,7 +14,7 @@ from pathlib import Path
 
 from aiohttp import ClientSession, ClientTimeout
 
-from . import fdroid, play, tools
+from . import fdroid, pages, play, tools
 from .settings import (
     MORPHE_DATA,
     OPTIONS,
@@ -445,6 +445,11 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         except Exception as exc:
             log.error("fdroid index failed: %s", exc)
             summary["failed"].append(("f-droid index", str(exc)))
+        try:
+            if pages.build_showcase(cfg, state):
+                summary["pages"] = True
+        except Exception as exc:
+            log.error("pages showcase failed: %s", exc)
 
     commit = commit_override if commit_override is not None else bool(cfg.get("commit"))
     release = release_override if release_override is not None else bool(cfg.get("release"))
@@ -464,7 +469,7 @@ def _fmt_bundle_changes(changed: dict[str, tuple]) -> str:
 
 
 async def publish(summary: dict, commit: bool, release: bool, tag: str | None = None) -> None:
-    if not summary["built"] and not summary["bundles"] and not summary.get("fdroid"):
+    if not summary["built"] and not summary["bundles"] and not summary.get("fdroid") and not summary.get("pages"):
         log.info("nothing changed; no commit or release")
         return
     stamp = tag or time.strftime("%Y%m%d-%H%M%S")
@@ -481,6 +486,8 @@ async def publish(summary: dict, commit: bool, release: bool, tag: str | None = 
         parts.append(f"failed {len(summary['failed'])}")
     if summary.get("fdroid"):
         parts.append("fdroid index")
+    if summary.get("pages"):
+        parts.append("pages")
 
     if commit:
         try:
