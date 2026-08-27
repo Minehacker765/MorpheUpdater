@@ -2,7 +2,7 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787838887747,
+  "timestamp": 1787839332958,
   "version": 20001,
   "maxage": 0,
   "packages": {},
@@ -17,11 +17,8 @@
      "name": "Chess",
      "summary": "Chess patched with Morphe",
      "description": "Chess patched with Morphe",
-     "icon": "icons/com.chess.prathxm.png"
+     "icon": "com.chess.prathxm.png"
     }
-   },
-   "icon": {
-    "en-US": "icons/com.chess.prathxm.png"
    }
   },
   {
@@ -32,11 +29,8 @@
      "name": "Music :3",
      "summary": "Music :3 patched with Morphe",
      "description": "Music :3 patched with Morphe",
-     "icon": "icons/app.morphe.android.apps.youtube.music.png"
+     "icon": "app.morphe.android.apps.youtube.music.png"
     }
-   },
-   "icon": {
-    "en-US": "icons/app.morphe.android.apps.youtube.music.png"
    }
   },
   {
@@ -47,11 +41,8 @@
      "name": "Reddit",
      "summary": "Reddit patched with Morphe",
      "description": "Reddit patched with Morphe",
-     "icon": "icons/com.reddit.frontpage.png"
+     "icon": "com.reddit.frontpage.png"
     }
-   },
-   "icon": {
-    "en-US": "icons/com.reddit.frontpage.png"
    }
   },
   {
@@ -62,18 +53,15 @@
      "name": "YouTube :3",
      "summary": "YouTube :3 patched with Morphe",
      "description": "YouTube :3 patched with Morphe",
-     "icon": "icons/app.morphe.android.youtube.png"
+     "icon": "app.morphe.android.youtube.png"
     }
-   },
-   "icon": {
-    "en-US": "icons/app.morphe.android.youtube.png"
    }
   }
  ],
  "packages": {
   "com.chess.prathxm": [
    {
-    "added": 1787838885801,
+    "added": 1787839326980,
     "apkName": "chess-4.10.0-prathxm-arm64.apk",
     "hash": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
     "hashType": "sha256",
@@ -90,7 +78,7 @@
   ],
   "com.reddit.frontpage": [
    {
-    "added": 1787838886480,
+    "added": 1787839328744,
     "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
     "hash": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
     "hashType": "sha256",
@@ -107,7 +95,7 @@
   ],
   "app.morphe.android.apps.youtube.music": [
    {
-    "added": 1787838887005,
+    "added": 1787839330425,
     "apkName": "music-9.15.51-morphe-arm64.apk",
     "hash": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
     "hashType": "sha256",
@@ -124,7 +112,7 @@
   ],
   "app.morphe.android.youtube": [
    {
-    "added": 1787838887679,
+    "added": 1787839332879,
     "apkName": "youtube-21.04.223-morphe-arm64.apk",
     "hash": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
     "hashType": "sha256",

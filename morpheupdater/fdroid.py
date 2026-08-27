@@ -208,7 +208,6 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     """Regenerate out/index-v1.json (+signed .jar) when contents changed."""
     editor_jar = ROOT / cfg["tools"]["apkeditor"]["local"]
     meta = cfg.get("fdroid") or {}
-    template = meta.get("apk_url_template", "")
     by_out = {e.get("out"): e for e in state["builds"].values() if e.get("out")}
     creds = tools.resolve_signing()
 
@@ -235,7 +234,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
-        apk_name = template.format(tag=tag, apkName=apk.name) if template and tag else apk.name
+        apk_name = apk.name
         pkg_entry: dict = {
             "added": int(__import__("time").time() * 1000),
             "apkName": apk_name,
@@ -257,10 +256,11 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             pkg_entry["sig"] = sig
         packages.setdefault(package, []).append(pkg_entry)
 
-        icon_rel = f"icons/{package}.png"
-        if not (OUT / icon_rel).exists():
-            got = extract_icon(apk, OUT / icon_rel)
-            icon_rel = f"icons/{got}" if got else ""
+        icon_file = f"{package}.png"
+        icon_rel = icon_file
+        if not (OUT / "icons" / icon_file).exists():
+            got = extract_icon(apk, OUT / "icons" / icon_file)
+            icon_rel = got if got else ""
         display = app_name.removesuffix(" Morphe")
         summary = f"{display} patched with Morphe"
         en: dict = {"name": app_name, "summary": summary, "description": summary}
@@ -271,7 +271,6 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 "packageName": package,
                 "name": app_name,
                 "localized": {"en-US": en},
-                **({"icon": {"en-US": icon_rel}} if icon_rel else {}),
             }
 
     repo: dict = {

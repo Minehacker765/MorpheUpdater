@@ -58,7 +58,7 @@ CARD = """<div class="card">
     <h3>${name}</h3>
     <div class="muted">${pkg} · ${ver} · ${arch}</div>
     <div class="muted">${patches}</div>
-    <div style="margin-top:.4rem"><a href="${dl}">Download APK</a> <span class="dl-qr" data-url="${dl}" style="display:inline-block;vertical-align:middle;margin-left:.4rem"></span></div>
+    <div style="margin-top:.4rem"><a href="${dl}">Download APK</a></div>
   </div>
 </div>"""
 
