@@ -2,34 +2,51 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787835998244,
+  "timestamp": 1787836784694,
+  "version": 20001,
+  "maxage": 0,
   "packages": {},
   "address": "https://morpheupdater.minehacker765.workers.dev"
  },
  "apps": [
   {
-   "packageName": "com.chess",
+   "packageName": "com.chess.prathxm",
    "name": "Chess",
    "localized": {
     "en-US": {
      "name": "Chess",
      "summary": "Chess patched with Morphe",
      "description": "Chess patched with Morphe",
-     "icon": "icons/com.chess.png"
+     "icon": "icons/com.chess.prathxm.png"
     }
    },
    "icon": {
-    "en-US": "icons/com.chess.png"
+    "en-US": "icons/com.chess.prathxm.png"
+   }
+  },
+  {
+   "packageName": "app.morphe.android.apps.youtube.music",
+   "name": "Music :3",
+   "localized": {
+    "en-US": {
+     "name": "Music :3",
+     "summary": "Music :3 patched with Morphe",
+     "description": "Music :3 patched with Morphe",
+     "icon": "icons/app.morphe.android.apps.youtube.music.png"
+    }
+   },
+   "icon": {
+    "en-US": "icons/app.morphe.android.apps.youtube.music.png"
    }
   },
   {
    "packageName": "com.reddit.frontpage",
-   "name": "Frontpage",
+   "name": "Reddit",
    "localized": {
     "en-US": {
-     "name": "Frontpage",
-     "summary": "Frontpage patched with Morphe",
-     "description": "Frontpage patched with Morphe",
+     "name": "Reddit",
+     "summary": "Reddit patched with Morphe",
+     "description": "Reddit patched with Morphe",
      "icon": "icons/com.reddit.frontpage.png"
     }
    },
@@ -38,84 +55,89 @@
    }
   },
   {
-   "packageName": "com.google.android.apps.youtube.music",
-   "name": "Music",
+   "packageName": "app.morphe.android.youtube",
+   "name": "YouTube :3",
    "localized": {
     "en-US": {
-     "name": "Music",
-     "summary": "Music patched with Morphe",
-     "description": "Music patched with Morphe",
-     "icon": "icons/com.google.android.apps.youtube.music.png"
+     "name": "YouTube :3",
+     "summary": "YouTube :3 patched with Morphe",
+     "description": "YouTube :3 patched with Morphe",
+     "icon": "icons/app.morphe.android.youtube.png"
     }
    },
    "icon": {
-    "en-US": "icons/com.google.android.apps.youtube.music.png"
-   }
-  },
-  {
-   "packageName": "com.google.android.youtube",
-   "name": "Youtube",
-   "localized": {
-    "en-US": {
-     "name": "Youtube",
-     "summary": "Youtube patched with Morphe",
-     "description": "Youtube patched with Morphe",
-     "icon": "icons/com.google.android.youtube.png"
-    }
-   },
-   "icon": {
-    "en-US": "icons/com.google.android.youtube.png"
+    "en-US": "icons/app.morphe.android.youtube.png"
    }
   }
  ],
- "packages": [
-  {
-   "appName": "Chess",
-   "packageName": "com.chess",
-   "versionName": "4.10.0",
-   "versionCode": 268250,
-   "apkName": "chess-4.10.0-prathxm-arm64.apk",
-   "hash": "0647d909cab4c718b8c62b40839d66975a3d767aa79e829e39b3750261f7e213",
-   "size": 258536872,
-   "minSdkVersion": 26,
-   "targetSdkVersion": 36,
-   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
-  },
-  {
-   "appName": "Frontpage",
-   "packageName": "com.reddit.frontpage",
-   "versionName": "2026.14.0",
-   "versionCode": 2614140,
-   "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
-   "hash": "468e56b764ac506efbf2a3760bfb74fde09ad33e0daeaef0708c2bf0b8b9a902",
-   "size": 57426263,
-   "minSdkVersion": 29,
-   "targetSdkVersion": 36,
-   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
-  },
-  {
-   "appName": "Music",
-   "packageName": "com.google.android.apps.youtube.music",
-   "versionName": "9.15.51",
-   "versionCode": 91551240,
-   "apkName": "music-9.15.51-morphe-arm64.apk",
-   "hash": "807ac17ef84614cb049b3cad185a1da42c95ee70bf4095ed06393c72f58f8ccb",
-   "size": 72267718,
-   "minSdkVersion": 32,
-   "targetSdkVersion": 36,
-   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
-  },
-  {
-   "appName": "Youtube",
-   "packageName": "com.google.android.youtube",
-   "versionName": "21.04.223",
-   "versionCode": 1561052632,
-   "apkName": "youtube-21.04.223-morphe-arm64.apk",
-   "hash": "d53d44c4361c5d12a75df550f0162998fc5408b9f44a0386c984a6767afad542",
-   "size": 114416502,
-   "minSdkVersion": 32,
-   "targetSdkVersion": 36,
-   "signer": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc="
-  }
- ]
+ "packages": {
+  "com.chess.prathxm": [
+   {
+    "added": 1787836778995,
+    "apkName": "chess-4.10.0-prathxm-arm64.apk",
+    "hash": "0647d909cab4c718b8c62b40839d66975a3d767aa79e829e39b3750261f7e213",
+    "hashType": "sha256",
+    "packageName": "com.chess.prathxm",
+    "versionCode": 268250,
+    "versionName": "4.10.0-googleplay",
+    "size": 258536872,
+    "appName": "Chess",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 36,
+    "signer": "1f3508abb0c29f1725dfefe0000b6402e6c5cbf78f2ed40e980aacbcd5dc7f31",
+    "sig": "1f3508ab"
+   }
+  ],
+  "com.reddit.frontpage": [
+   {
+    "added": 1787836780786,
+    "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
+    "hash": "468e56b764ac506efbf2a3760bfb74fde09ad33e0daeaef0708c2bf0b8b9a902",
+    "hashType": "sha256",
+    "packageName": "com.reddit.frontpage",
+    "versionCode": 2147483647,
+    "versionName": "2026.14.0",
+    "size": 57426263,
+    "appName": "Reddit",
+    "minSdkVersion": 29,
+    "targetSdkVersion": 36,
+    "signer": "1f3508abb0c29f1725dfefe0000b6402e6c5cbf78f2ed40e980aacbcd5dc7f31",
+    "sig": "1f3508ab"
+   }
+  ],
+  "app.morphe.android.apps.youtube.music": [
+   {
+    "added": 1787836782327,
+    "apkName": "music-9.15.51-morphe-arm64.apk",
+    "hash": "807ac17ef84614cb049b3cad185a1da42c95ee70bf4095ed06393c72f58f8ccb",
+    "hashType": "sha256",
+    "packageName": "app.morphe.android.apps.youtube.music",
+    "versionCode": 2147483647,
+    "versionName": "9.15.51",
+    "size": 72267718,
+    "appName": "Music :3",
+    "minSdkVersion": 32,
+    "targetSdkVersion": 36,
+    "signer": "1f3508abb0c29f1725dfefe0000b6402e6c5cbf78f2ed40e980aacbcd5dc7f31",
+    "sig": "1f3508ab"
+   }
+  ],
+  "app.morphe.android.youtube": [
+   {
+    "added": 1787836784558,
+    "apkName": "youtube-21.04.223-morphe-arm64.apk",
+    "hash": "d53d44c4361c5d12a75df550f0162998fc5408b9f44a0386c984a6767afad542",
+    "hashType": "sha256",
+    "packageName": "app.morphe.android.youtube",
+    "versionCode": 2147483647,
+    "versionName": "21.04.223",
+    "size": 114416502,
+    "appName": "YouTube :3",
+    "minSdkVersion": 32,
+    "targetSdkVersion": 36,
+    "signer": "1f3508abb0c29f1725dfefe0000b6402e6c5cbf78f2ed40e980aacbcd5dc7f31",
+    "sig": "1f3508ab"
+   }
+  ]
+ }
 }

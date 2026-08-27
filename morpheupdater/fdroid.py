@@ -197,40 +197,58 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     creds = tools.resolve_signing()
 
     signer_b64 = (state.get("fdroid") or {}).get("cert_b64", "")
-    packages: list[dict] = []
+    # signer hex for packages[].signer, sig is first 8 of cert's SHA1? fdroid uses hex SHA256 for signer
+    import hashlib as _hl
+    signer_hex = ""
+    sig = ""
+    if signer_b64:
+        try:
+            der = __import__("base64").b64decode(signer_b64)
+            signer_hex = _hl.sha256(der).hexdigest()
+            # sig is first 8 hex of sha256 as well in v1? use same prefix for simplicity
+            sig = signer_hex[:8]
+        except Exception:
+            pass
+    packages: dict[str, list[dict]] = {}
     apps: dict[str, dict] = {}
 
     for apk in sorted(OUT.glob("*.apk")):
         entry = by_out.get(apk.name) or {}
-        info = None
-        if not (entry.get("package") and entry.get("version") and entry.get("vc")):
-            info = tools.apk_info(editor_jar, apk)
-            if not info:
+        # always read actual APK to get cloned package/versionCode/appName
+        info = tools.apk_info(editor_jar, apk)
+        if not info:
+            # fallback to state when APKEditor fails (e.g. no java)
+            if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                 log.warning("index: skipping %s (no metadata)", apk.name)
                 continue
-        package = entry.get("package") or info[0]
-        version = entry.get("version") or info[1]
-        vc = int(entry.get("vc") or info[2])
-        app_name = entry.get("app_name") or (info[3] if info else "") or package.rsplit(".", 1)[-1].capitalize()
+            package, version, vc = entry["package"], entry["version"], int(entry["vc"])
+            app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+        else:
+            # prefer actual APK values (clone renames package, bumps vc)
+            package, version, vc, app_name = info[0], info[1], int(info[2]), info[3] or entry.get("app_name") or info[0].rsplit(".", 1)[-1].capitalize()
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
         apk_name = template.format(tag=tag, apkName=apk.name) if template and tag else apk.name
         pkg_entry: dict = {
-            "appName": app_name,
-            "packageName": package,
-            "versionName": version,
-            "versionCode": vc,
+            "added": int(__import__("time").time() * 1000),
             "apkName": apk_name,
             "hash": _sha256_file(apk),
+            "hashType": "sha256",
+            "packageName": package,
+            "versionCode": vc,
+            "versionName": version,
             "size": apk.stat().st_size,
         }
+        if app_name:
+            pkg_entry["appName"] = app_name
         if min_sdk:
             pkg_entry["minSdkVersion"] = min_sdk
         if target_sdk:
             pkg_entry["targetSdkVersion"] = target_sdk
-        if signer_b64:
-            pkg_entry["signer"] = signer_b64
-        packages.append(pkg_entry)
+        if signer_hex:
+            pkg_entry["signer"] = signer_hex
+            pkg_entry["sig"] = sig
+        packages.setdefault(package, []).append(pkg_entry)
 
         icon_rel = f"icons/{package}.png"
         if not (OUT / icon_rel).exists():
@@ -253,11 +271,16 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
         "name": meta.get("name", "morpheupdater"),
         "description": meta.get("description", "Patched apps"),
         "timestamp": int(time.time() * 1000),
+        "version": 20001,
+        "maxage": 0,
         "packages": {},
     }
     if meta.get("url"):
         repo["address"] = meta["url"]
-    index = {"repo": repo, "apps": list(apps.values()), "packages": packages}
+    # sort packages for determinism
+    for k in packages:
+        packages[k] = sorted(packages[k], key=lambda p: p["versionCode"], reverse=True)
+    index = {"repo": repo, "apps": sorted(apps.values(), key=lambda a: a["name"].lower()), "packages": packages}
 
     existing = OUT / "index-v1.json"
     if existing.exists():
