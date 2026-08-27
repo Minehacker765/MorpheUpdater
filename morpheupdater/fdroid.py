@@ -192,6 +192,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     """Regenerate out/index-v1.json (+signed .jar) when contents changed."""
     editor_jar = ROOT / cfg["tools"]["apkeditor"]["local"]
     meta = cfg.get("fdroid") or {}
+    template = meta.get("apk_url_template", "")
     by_out = {e.get("out"): e for e in state["builds"].values() if e.get("out")}
     creds = tools.resolve_signing()
 

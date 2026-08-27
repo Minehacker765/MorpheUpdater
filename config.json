@@ -59,7 +59,7 @@
     "enabled": true,
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "url": "",
+    "url": "https://minehacker765.github.io/MorpheUpdater/",
     "apk_url_template": "https://github.com/Minehacker765/MorpheUpdater/releases/download/{tag}/{apkName}"
   },
   "tmp_max_mb": 2048,
