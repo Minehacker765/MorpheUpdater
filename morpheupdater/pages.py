@@ -84,9 +84,30 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         tag = next(iter(b.get("tags", {}).values()), "") or next(iter(state.get("bundles", {}).values()), "")
         dl = f"https://github.com/Minehacker765/MorpheUpdater/releases/latest/download/{apk}" if apk else "#"
         patches_str = ", ".join(f"{k} {v}" for k, v in sorted(b.get("tags", {}).items()))
-        icon = f"icons/{pkg}.png"
-        if not (OUT / icon).exists():
-            icon = ""
+        # icons are named after the *actual* (cloned) package, not the original
+        icon = ""
+        for cand in [pkg.replace("com.google.android.youtube", "app.morphe.android.youtube").replace("com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music").replace("com.chess", "com.chess.prathxm"), pkg]:
+            cand_path = f"icons/{cand}.png"
+            if (OUT / cand_path).exists():
+                icon = cand_path
+                break
+        # also try without the replace (for non-cloned)
+        if not icon:
+            for cand in [pkg, pkg.replace("com.chess", "com.chess.prathxm")]:
+                cand_path = f"icons/{cand}.png"
+                if (OUT / cand_path).exists():
+                    icon = cand_path
+                    break
+        if not icon:
+            apk_file = OUT / apk if apk else None
+            if apk_file and apk_file.exists():
+                try:
+                    from morpheupdater.fdroid import extract_icon as _ei
+                    got = _ei(apk_file, OUT / f"icons/{pkg}.png")
+                    if got:
+                        icon = f"icons/{got}"
+                except Exception:
+                    pass
         from string import Template as _T
         cards_html += _T(CARD).substitute(icon=icon, name=b.get("app_name") or pkg.rsplit(".", 1)[-1].capitalize(), pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
 
