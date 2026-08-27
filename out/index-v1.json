@@ -2,7 +2,7 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787837520932,
+  "timestamp": 1787837701015,
   "version": 20001,
   "maxage": 0,
   "packages": {},
@@ -73,13 +73,13 @@
  "packages": {
   "com.chess.prathxm": [
    {
-    "added": 1787837518837,
+    "added": 1787837696284,
     "apkName": "chess-4.10.0-prathxm-arm64.apk",
     "hash": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
     "hashType": "sha256",
     "packageName": "com.chess.prathxm",
     "versionCode": 268250,
-    "versionName": "4.10.0-googleplay",
+    "versionName": "4.10.0",
     "size": 258536872,
     "appName": "Chess",
     "minSdkVersion": 26,
@@ -90,12 +90,12 @@
   ],
   "com.reddit.frontpage": [
    {
-    "added": 1787837519509,
+    "added": 1787837697817,
     "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
     "hash": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
     "hashType": "sha256",
     "packageName": "com.reddit.frontpage",
-    "versionCode": 2147483647,
+    "versionCode": 2614140,
     "versionName": "2026.14.0",
     "size": 57426263,
     "appName": "Reddit",
@@ -107,12 +107,12 @@
   ],
   "app.morphe.android.apps.youtube.music": [
    {
-    "added": 1787837520050,
+    "added": 1787837699170,
     "apkName": "music-9.15.51-morphe-arm64.apk",
     "hash": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
     "hashType": "sha256",
     "packageName": "app.morphe.android.apps.youtube.music",
-    "versionCode": 2147483647,
+    "versionCode": 91551240,
     "versionName": "9.15.51",
     "size": 72267718,
     "appName": "Music :3",
@@ -124,12 +124,12 @@
   ],
   "app.morphe.android.youtube": [
    {
-    "added": 1787837520802,
+    "added": 1787837700931,
     "apkName": "youtube-21.04.223-morphe-arm64.apk",
     "hash": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
     "hashType": "sha256",
     "packageName": "app.morphe.android.youtube",
-    "versionCode": 2147483647,
+    "versionCode": 1561052632,
     "versionName": "21.04.223",
     "size": 114416502,
     "appName": "YouTube :3",

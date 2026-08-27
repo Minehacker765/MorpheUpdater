@@ -215,17 +215,24 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     for apk in sorted(OUT.glob("*.apk")):
         entry = by_out.get(apk.name) or {}
         # always read actual APK to get cloned package/versionCode/appName
-        info = tools.apk_info(editor_jar, apk)
-        if not info:
-            # fallback to state when APKEditor fails (e.g. no java)
-            if not (entry.get("package") and entry.get("version") and entry.get("vc")):
-                log.warning("index: skipping %s (no metadata)", apk.name)
-                continue
-            package, version, vc = entry["package"], entry["version"], int(entry["vc"])
-            app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+        info = None
+        # prefer actual APK for package/appName (clone), but keep original Play vc as you requested
+        try:
+            info = tools.apk_info(editor_jar, apk)
+        except Exception:
+            info = None
+        if info:
+            package, _, _, app_name_real = info
+            package = package  # cloned (app.morphe...)
+            app_name = app_name_real or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
         else:
-            # prefer actual APK values (clone renames package, bumps vc)
-            package, version, vc, app_name = info[0], info[1], int(info[2]), info[3] or entry.get("app_name") or info[0].rsplit(".", 1)[-1].capitalize()
+            package = entry.get("package") or ""
+            app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+        if not (entry.get("package") and entry.get("version") and entry.get("vc")) and not info:
+            log.warning("index: skipping %s (no metadata)", apk.name)
+            continue
+        version = entry.get("version") or (info[1] if info else "")
+        vc = int(entry.get("vc") or (info[2] if info else 0))
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
         apk_name = template.format(tag=tag, apkName=apk.name) if template and tag else apk.name
