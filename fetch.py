@@ -99,12 +99,26 @@ async def fetch_one(
     if locales:
         cfg["locales"] = locales
     editor_jar = ROOT / cfg["tools"]["apkeditor"]["local"]
-    if not editor_jar.exists():
-        log.warning("APKEditor jar not found at %s — will be fetched on demand", editor_jar)
 
     holder = AuthHolder()
     timeout = ClientTimeout(total=None, connect=15, sock_read=600)
     async with ClientSession(timeout=timeout) as session:
+        # ensure APKEditor jar exists (fetch.py may run on fresh clone without bin/)
+        if not editor_jar.exists():
+            log.info("APKEditor not found at %s, downloading...", editor_jar)
+            from morpheupdater import tools
+            from morpheupdater.settings import load_state, save_state
+
+            state = load_state()
+            try:
+                changed, tag = await tools.update_tool(session, "apkeditor", cfg["tools"]["apkeditor"], state)
+                save_state(state)
+                log.info("APKEditor %s ready", tag)
+            except Exception as e:
+                raise RuntimeError(f"failed to download APKEditor: {e}") from e
+            if not editor_jar.exists():
+                raise RuntimeError(f"APKEditor still missing at {editor_jar} after download")
+
         vc, dotted = await _resolve_version(session, holder, package, version_arg, arch)
         log.info("fetching %s %s (vc %d) [%s] locales=%s", package, dotted, vc, arch, ",".join(cfg.get("locales", [])))
         merged, details = await ensure_merged(session, holder, cfg, editor_jar, package, vc, arch)
