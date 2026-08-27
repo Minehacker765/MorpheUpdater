@@ -382,6 +382,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         vc_cache: dict = {}
 
         archs: list[str] = cfg["archs"] or ["arm64"]
+        pending_tag: str | None = None
         plan: list[tuple[dict, list[str], str, int, str]] = []
         seen: set[tuple] = set()
         for app in cfg["apps"]:
@@ -433,8 +434,10 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                 log.error("failed %s: %s", label, exc)
                 summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))
 
+        if summary["built"] and (cfg.get("release") or release_override):
+            pending_tag = "p" + __import__("time").strftime("%Y%m%d-%H%M%S")
         try:
-            if await fdroid.update(cfg, state):
+            if await fdroid.update(cfg, state, pending_tag):
                 summary["fdroid"] = True
                 summary["fdroid_url"] = (cfg.get("fdroid") or {}).get("url", "")
                 summary["fdroid_fp"] = (state.get("fdroid") or {}).get("cert_sha256", "")
@@ -446,7 +449,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
     commit = commit_override if commit_override is not None else bool(cfg.get("commit"))
     release = release_override if release_override is not None else bool(cfg.get("release"))
     if commit or release:
-        await publish(summary, commit, release)
+        await publish(summary, commit, release, pending_tag)
 
     for pkg_combo, why in summary["failed"]:
         log.error("FAILED %s: %s", pkg_combo, why)
@@ -460,11 +463,12 @@ def _fmt_bundle_changes(changed: dict[str, tuple]) -> str:
     return "\n".join(lines) or "- (none)"
 
 
-async def publish(summary: dict, commit: bool, release: bool) -> None:
+async def publish(summary: dict, commit: bool, release: bool, tag: str | None = None) -> None:
     if not summary["built"] and not summary["bundles"] and not summary.get("fdroid"):
         log.info("nothing changed; no commit or release")
         return
-    stamp = time.strftime("%Y%m%d-%H%M%S")
+    stamp = tag or time.strftime("%Y%m%d-%H%M%S")
+    tag = f"p{stamp}" if not stamp.startswith("p") else stamp
     parts = []
     if summary["bundles"]:
         bc = "; ".join(f"{n}: {o or 'new'}->{t}" for n, (o, t) in sorted(summary["bundles"].items()))
@@ -497,7 +501,7 @@ async def publish(summary: dict, commit: bool, release: bool) -> None:
             notes += f"\n\n## F-Droid repo\n- URL: `{summary['fdroid_url']}`\n- fingerprint: `{summary['fdroid_fp']}`"
         files = [OUT / name for name in summary["built"]]
         try:
-            await tools.create_release(f"p{stamp}", f"Patched apps {stamp}", notes, files)
+            await tools.create_release(tag, f"Patched apps {stamp}", notes, files)
         except Exception as exc:
             log.error("release failed: %s", exc)
             summary["failed"].append(("release", str(exc)))

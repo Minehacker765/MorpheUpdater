@@ -188,7 +188,7 @@ def sign_index(index_json: Path, creds: dict) -> None:
         jar_path.write_bytes(jar_tmp.read_bytes())
 
 
-def build_index(cfg: dict, state: dict) -> bool:
+def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     """Regenerate out/index-v1.json (+signed .jar) when contents changed."""
     editor_jar = ROOT / cfg["tools"]["apkeditor"]["local"]
     meta = cfg.get("fdroid") or {}
@@ -213,12 +213,13 @@ def build_index(cfg: dict, state: dict) -> bool:
         app_name = entry.get("app_name") or (info[3] if info else "") or package.rsplit(".", 1)[-1].capitalize()
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
+        apk_name = template.format(tag=tag, apkName=apk.name) if template and tag else apk.name
         pkg_entry: dict = {
             "appName": app_name,
             "packageName": package,
             "versionName": version,
             "versionCode": vc,
-            "apkName": apk.name,
+            "apkName": apk_name,
             "hash": _sha256_file(apk),
             "size": apk.stat().st_size,
         }
@@ -276,7 +277,7 @@ def build_index(cfg: dict, state: dict) -> bool:
     return True
 
 
-async def update(cfg: dict, state: dict) -> bool:
+async def update(cfg: dict, state: dict, tag: str | None = None) -> bool:
     if not (cfg.get("fdroid") or {}).get("enabled", True):
         return False
     if not (state.get("fdroid") or {}).get("cert_b64"):
@@ -285,4 +286,4 @@ async def update(cfg: dict, state: dict) -> bool:
             return False
         state.setdefault("fdroid", {}).update({"cert_b64": fp[0], "cert_sha256": fp[1]})
         log.info("repo certificate fingerprint: %s", fp[1])
-    return build_index(cfg, state)
+    return build_index(cfg, state, tag)
