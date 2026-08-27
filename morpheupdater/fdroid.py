@@ -114,7 +114,42 @@ def parse_manifest_sdk(apk: Path) -> tuple[int | None, int | None]:
 _DPI_RANK = {"xxxhdpi": 5, "xxhdpi": 4, "xhdpi": 3, "hdpi": 2, "mdpi": 1, "ldpi": 0}
 
 
+def _fallback_microg_icon(dest: Path) -> str | None:
+    try:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        # Generate a minimal 512x512 MicroG placeholder (dark bg, white μG)
+        import struct, zlib
+        w = h = 512
+        # solid #1e1e1e background, simple white circle + μG text approximated
+        # Use a tiny precomputed 1x1 PNG and scale via F-Droid client? Instead, create a real 512 PNG with Pillow if available, else a 1x1
+        try:
+            from PIL import Image, ImageDraw, ImageFont  # type: ignore
+            im = Image.new("RGB", (w, h), "#1e1e1e")
+            d = ImageDraw.Draw(im)
+            # Try to draw a circle and text; fallback to solid if font missing
+            d.ellipse([96, 96, 416, 416], fill="#3DDC84")
+            try:
+                d.text((w//2, h//2), "μG", fill="white", anchor="mm", font=ImageFont.load_default())
+            except Exception:
+                pass
+            im.save(dest, "PNG")
+            return dest.name
+        except Exception:
+            pass
+        # Fallback: generate a valid 1x1 transparent PNG
+        import base64
+        dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
+        return dest.name
+    except Exception:
+        return None
+
+
 def extract_icon(apk: Path, dest: Path) -> str | None:
+    # For MicroG no-icon, try fallback immediately
+    if "microg" in apk.name.lower() and "noicon" in apk.name.lower():
+        fb = _fallback_microg_icon(dest)
+        if fb:
+            return fb
     try:
         with zipfile.ZipFile(apk) as z:
             # Prefer the manifest's launcher icon: ic_launcher.png at highest density
@@ -145,6 +180,9 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
                     rank = _DPI_RANK.get(m.group(1), 0) if m else 0
                     candidates.append(((0, 0, rank, z.getinfo(name).file_size), name))
             if not candidates:
+                # for MicroG no-icon, try generic fallback
+                if "microg" in apk.name.lower() or "mgoogle" in dest.name.lower():
+                    return _fallback_microg_icon(dest)
                 return None
             best = max(candidates, key=lambda x: x[0])[1]
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -152,6 +190,9 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
             return dest.name
     except Exception as exc:
         log.warning("icon extraction from %s failed: %s", apk.name, exc)
+        # last resort for microg
+        if "microg" in apk.name.lower() or "mgoogle" in dest.name.lower():
+            return _fallback_microg_icon(dest)
         return None
 
 
@@ -225,13 +266,18 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             info = None
         if info:
             package, version, vc, app_name_real = info
-            app_name = app_name_real or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+            # Use display names for showcase/F-Droid, not package segments
+            disp_map = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
+                        "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
+                        "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG"}
+            app_name = disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package.rsplit(".", 1)[-1].capitalize()
         else:
             if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                 log.warning("index: skipping %s (no metadata)", apk.name)
                 continue
             package, version, vc = entry["package"], entry["version"], int(entry["vc"])
-            app_name = entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+            disp_map2 = {"com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess"}
+            app_name = disp_map2.get(package) or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
         apk_name = apk.name
