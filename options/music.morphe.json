@@ -8,7 +8,7 @@
         },
         "patches": {
             "Clone app": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageName": "Default",
                     "updatePermissions": false,
@@ -16,13 +16,13 @@
                 }
             },
             "Change installer source": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageInstallerName": "com.android.vending"
                 }
             },
             "Override certificate pinning": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Play Store updates": {
                 "enabled": true
@@ -156,212 +156,212 @@
                 "enabled": true
             },
             "Custom font": {
-                "enabled": false
+                "enabled": true
             },
             "Force system font": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Ask button": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding name for Reddit": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "appName": "Reddit Morphe"
                 }
             },
             "Hide communities shelf": {
-                "enabled": false
+                "enabled": true
             },
             "Disable modern home": {
-                "enabled": false
+                "enabled": true
             },
             "Hide navigation buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Disable screenshot popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Reddit search": {
-                "enabled": false
+                "enabled": true
             },
             "Hide sidebar components": {
-                "enabled": false
+                "enabled": true
             },
             "Remove subreddit dialog": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Trending shelves": {
-                "enabled": false
+                "enabled": true
             },
             "Show view count": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof signature": {
-                "enabled": false
+                "enabled": true
             },
             "Open links directly": {
-                "enabled": false
+                "enabled": true
             },
             "Open links externally": {
-                "enabled": false
+                "enabled": true
             },
             "Copy video link": {
-                "enabled": false
+                "enabled": true
             },
             "Disable double tap actions": {
-                "enabled": false
+                "enabled": true
             },
             "Double tap to seek": {
-                "enabled": false
+                "enabled": true
             },
             "Disable haptic feedback": {
-                "enabled": false
+                "enabled": true
             },
             "Loop video": {
-                "enabled": false
+                "enabled": true
             },
             "Play all": {
-                "enabled": false
+                "enabled": true
             },
             "Reload video": {
-                "enabled": false
+                "enabled": true
             },
             "Save to watch later": {
-                "enabled": false
+                "enabled": true
             },
             "Seekbar": {
-                "enabled": false
+                "enabled": true
             },
             "Swipe controls": {
-                "enabled": false
+                "enabled": true
             },
             "Hide video action buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide player overlay buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Captions": {
-                "enabled": false
+                "enabled": true
             },
             "Disable layout updates": {
-                "enabled": false
+                "enabled": true
             },
             "Add to queue": {
-                "enabled": false
+                "enabled": true
             },
             "Change form factor": {
-                "enabled": false
+                "enabled": true
             },
             "Ambient mode": {
-                "enabled": false
+                "enabled": true
             },
             "Hide autoplay preview": {
-                "enabled": false
+                "enabled": true
             },
             "Hide end screen cards": {
-                "enabled": false
+                "enabled": true
             },
             "Hide end screen suggested video": {
-                "enabled": false
+                "enabled": true
             },
             "Hide info cards": {
-                "enabled": false
+                "enabled": true
             },
             "Hide player flyout menu components": {
-                "enabled": false
+                "enabled": true
             },
             "Disable player popup panels": {
-                "enabled": false
+                "enabled": true
             },
             "Hide related video overlay": {
-                "enabled": false
+                "enabled": true
             },
             "Hide related videos": {
-                "enabled": false
+                "enabled": true
             },
             "Disable rolling number animations": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Shorts components": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "hideShortsAppShortcut": false,
                     "hideShortsWidget": false
                 }
             },
             "Disable sign in to TV popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide timestamp": {
-                "enabled": false
+                "enabled": true
             },
             "Open channel of live avatar": {
-                "enabled": false
+                "enabled": true
             },
             "Miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Override YouTube Music buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Playback in feeds": {
-                "enabled": false
+                "enabled": true
             },
             "Disable fullscreen gestures": {
-                "enabled": false
+                "enabled": true
             },
             "Exit fullscreen mode": {
-                "enabled": false
+                "enabled": true
             },
             "Open videos fullscreen": {
-                "enabled": false
+                "enabled": true
             },
             "Custom player overlay opacity": {
-                "enabled": false
+                "enabled": true
             },
             "Open system share sheet": {
-                "enabled": false
+                "enabled": true
             },
             "Shorts autoplay": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Shorts resuming on startup": {
-                "enabled": false
+                "enabled": true
             },
             "Open Shorts in regular player": {
-                "enabled": false
+                "enabled": true
             },
             "Alternative thumbnails": {
-                "enabled": false
+                "enabled": true
             },
             "Bypass image region restrictions": {
-                "enabled": false
+                "enabled": true
             },
             "Wide search bar": {
-                "enabled": false
+                "enabled": true
             },
             "Bypass link redirects": {
-                "enabled": false
+                "enabled": true
             },
             "Media notification controls": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof device dimensions": {
-                "enabled": false
+                "enabled": true
             },
             "Disable video codecs": {
-                "enabled": false
+                "enabled": true
             },
             "Video quality": {
-                "enabled": false
+                "enabled": true
             },
             "Playback speed": {
-                "enabled": false
+                "enabled": true
             },
             "Voice over translation": {
-                "enabled": false
+                "enabled": true
             }
         }
     },
@@ -374,7 +374,7 @@
         },
         "patches": {
             "Clone app": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageName": "Default",
                     "updatePermissions": false,
@@ -382,13 +382,13 @@
                 }
             },
             "Change installer source": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageInstallerName": "com.android.vending"
                 }
             },
             "Override certificate pinning": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Play Store updates": {
                 "enabled": true
@@ -522,215 +522,215 @@
                 "enabled": true
             },
             "Custom font": {
-                "enabled": false
+                "enabled": true
             },
             "Force system font": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Ask button": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding name for Reddit": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "appName": "Reddit Morphe"
                 }
             },
             "Hide communities shelf": {
-                "enabled": false
+                "enabled": true
             },
             "Disable modern home": {
-                "enabled": false
+                "enabled": true
             },
             "Hide navigation buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Disable screenshot popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Reddit search": {
-                "enabled": false
+                "enabled": true
             },
             "Hide sidebar components": {
-                "enabled": false
+                "enabled": true
             },
             "Remove subreddit dialog": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Trending shelves": {
-                "enabled": false
+                "enabled": true
             },
             "Show view count": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof signature": {
-                "enabled": false
+                "enabled": true
             },
             "Open links directly": {
-                "enabled": false
+                "enabled": true
             },
             "Open links externally": {
-                "enabled": false
+                "enabled": true
             },
             "Copy video link": {
-                "enabled": false
+                "enabled": true
             },
             "Disable double tap actions": {
-                "enabled": false
+                "enabled": true
             },
             "Double tap to seek": {
-                "enabled": false
+                "enabled": true
             },
             "Disable haptic feedback": {
-                "enabled": false
+                "enabled": true
             },
             "Loop video": {
-                "enabled": false
+                "enabled": true
             },
             "Play all": {
-                "enabled": false
+                "enabled": true
             },
             "Reload video": {
-                "enabled": false
+                "enabled": true
             },
             "Save to Watch later": {
-                "enabled": false
+                "enabled": true
             },
             "Seekbar": {
-                "enabled": false
+                "enabled": true
             },
             "Swipe controls": {
-                "enabled": false
+                "enabled": true
             },
             "Hide video action buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide player overlay buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Captions": {
-                "enabled": false
+                "enabled": true
             },
             "Disable layout updates": {
-                "enabled": false
+                "enabled": true
             },
             "Add to queue": {
-                "enabled": false
+                "enabled": true
             },
             "Change form factor": {
-                "enabled": false
+                "enabled": true
             },
             "Ambient mode": {
-                "enabled": false
+                "enabled": true
             },
             "Hide autoplay preview": {
-                "enabled": false
+                "enabled": true
             },
             "Hide end screen cards": {
-                "enabled": false
+                "enabled": true
             },
             "Hide end screen suggested video": {
-                "enabled": false
+                "enabled": true
             },
             "Hide info cards": {
-                "enabled": false
+                "enabled": true
             },
             "Hide player flyout menu components": {
-                "enabled": false
+                "enabled": true
             },
             "Disable player popup panels": {
-                "enabled": false
+                "enabled": true
             },
             "Hide related video overlay": {
-                "enabled": false
+                "enabled": true
             },
             "Hide related videos": {
-                "enabled": false
+                "enabled": true
             },
             "Disable rolling number animations": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Shorts components": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "hideShortsAppShortcut": false,
                     "hideShortsWidget": false
                 }
             },
             "Disable sign in to TV popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide timestamp": {
-                "enabled": false
+                "enabled": true
             },
             "Open channel of live avatar": {
-                "enabled": false
+                "enabled": true
             },
             "Miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Override YouTube Music buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Playback in feeds": {
-                "enabled": false
+                "enabled": true
             },
             "Disable fullscreen gestures": {
-                "enabled": false
+                "enabled": true
             },
             "Exit fullscreen mode": {
-                "enabled": false
+                "enabled": true
             },
             "Open videos fullscreen": {
-                "enabled": false
+                "enabled": true
             },
             "Custom player overlay opacity": {
-                "enabled": false
+                "enabled": true
             },
             "Disable scrolling speed limit": {
                 "enabled": true
             },
             "Open system share sheet": {
-                "enabled": false
+                "enabled": true
             },
             "Shorts autoplay": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Shorts resuming on startup": {
-                "enabled": false
+                "enabled": true
             },
             "Open Shorts in regular player": {
-                "enabled": false
+                "enabled": true
             },
             "Alternative thumbnails": {
-                "enabled": false
+                "enabled": true
             },
             "Bypass image region restrictions": {
-                "enabled": false
+                "enabled": true
             },
             "Wide search bar": {
-                "enabled": false
+                "enabled": true
             },
             "Bypass link redirects": {
-                "enabled": false
+                "enabled": true
             },
             "Media notification controls": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof device dimensions": {
-                "enabled": false
+                "enabled": true
             },
             "Disable video codecs": {
-                "enabled": false
+                "enabled": true
             },
             "Video quality": {
-                "enabled": false
+                "enabled": true
             },
             "Playback speed": {
-                "enabled": false
+                "enabled": true
             },
             "Voice over translation": {
-                "enabled": false
+                "enabled": true
             }
         }
     }

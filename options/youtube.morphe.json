@@ -8,7 +8,7 @@
         },
         "patches": {
             "Clone app": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageName": "Default",
                     "updatePermissions": false,
@@ -16,13 +16,13 @@
                 }
             },
             "Change installer source": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageInstallerName": "com.android.vending"
                 }
             },
             "Override certificate pinning": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Play Store updates": {
                 "enabled": true
@@ -31,28 +31,28 @@
                 "enabled": true
             },
             "Hide flyout menu components": {
-                "enabled": false
+                "enabled": true
             },
             "Crossfade": {
-                "enabled": false
+                "enabled": true
             },
             "Remove viewer discretion dialog": {
                 "enabled": true
             },
             "Disable dislike redirection": {
-                "enabled": false
+                "enabled": true
             },
             "Downloads": {
                 "enabled": true
             },
             "Remember repeat state": {
-                "enabled": false
+                "enabled": true
             },
             "Remember shuffle state": {
-                "enabled": false
+                "enabled": true
             },
             "Scrobbling": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding": {
                 "enabled": true,
@@ -68,13 +68,13 @@
                 }
             },
             "Hide buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide music action buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide filter bar": {
-                "enabled": false
+                "enabled": true
             },
             "Hide layout components": {
                 "enabled": true
@@ -83,19 +83,19 @@
                 "enabled": true
             },
             "Third-party lyrics": {
-                "enabled": false
+                "enabled": true
             },
             "Change miniplayer color": {
-                "enabled": false
+                "enabled": true
             },
             "Enable forced miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Enable swipe to dismiss miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Miniplayer previous and next buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Navigation bar": {
                 "enabled": true
@@ -117,13 +117,13 @@
                 }
             },
             "Bypass certificate checks": {
-                "enabled": false
+                "enabled": true
             },
             "Disable DRC audio": {
                 "enabled": true
             },
             "Enable exclusive audio playback": {
-                "enabled": false
+                "enabled": true
             },
             "Force original audio": {
                 "enabled": true
@@ -156,52 +156,52 @@
                 "enabled": true
             },
             "Custom font": {
-                "enabled": false
+                "enabled": true
             },
             "Force system font": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Ask button": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding name for Reddit": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "appName": "Reddit Morphe"
                 }
             },
             "Hide communities shelf": {
-                "enabled": false
+                "enabled": true
             },
             "Disable modern home": {
-                "enabled": false
+                "enabled": true
             },
             "Hide navigation buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Disable screenshot popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Reddit search": {
-                "enabled": false
+                "enabled": true
             },
             "Hide sidebar components": {
-                "enabled": false
+                "enabled": true
             },
             "Remove subreddit dialog": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Trending shelves": {
-                "enabled": false
+                "enabled": true
             },
             "Show view count": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof signature": {
-                "enabled": false
+                "enabled": true
             },
             "Open links directly": {
-                "enabled": false
+                "enabled": true
             },
             "Open links externally": {
                 "enabled": true
@@ -374,7 +374,7 @@
         },
         "patches": {
             "Clone app": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageName": "Default",
                     "updatePermissions": false,
@@ -382,13 +382,13 @@
                 }
             },
             "Change installer source": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "packageInstallerName": "com.android.vending"
                 }
             },
             "Override certificate pinning": {
-                "enabled": false
+                "enabled": true
             },
             "Disable Play Store updates": {
                 "enabled": true
@@ -397,28 +397,28 @@
                 "enabled": true
             },
             "Hide flyout menu components": {
-                "enabled": false
+                "enabled": true
             },
             "Crossfade": {
-                "enabled": false
+                "enabled": true
             },
             "Remove viewer discretion dialog": {
                 "enabled": true
             },
             "Disable dislike redirection": {
-                "enabled": false
+                "enabled": true
             },
             "Downloads": {
                 "enabled": true
             },
             "Remember repeat state": {
-                "enabled": false
+                "enabled": true
             },
             "Remember shuffle state": {
-                "enabled": false
+                "enabled": true
             },
             "Scrobbling": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding": {
                 "enabled": true,
@@ -434,13 +434,13 @@
                 }
             },
             "Hide buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide music action buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Hide filter bar": {
-                "enabled": false
+                "enabled": true
             },
             "Hide layout components": {
                 "enabled": true
@@ -449,19 +449,19 @@
                 "enabled": true
             },
             "Third-party lyrics": {
-                "enabled": false
+                "enabled": true
             },
             "Change miniplayer color": {
-                "enabled": false
+                "enabled": true
             },
             "Enable forced miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Enable swipe to dismiss miniplayer": {
-                "enabled": false
+                "enabled": true
             },
             "Miniplayer previous and next buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Navigation bar": {
                 "enabled": true
@@ -483,13 +483,13 @@
                 }
             },
             "Bypass certificate checks": {
-                "enabled": false
+                "enabled": true
             },
             "Disable DRC audio": {
                 "enabled": true
             },
             "Enable exclusive audio playback": {
-                "enabled": false
+                "enabled": true
             },
             "Force original audio": {
                 "enabled": true
@@ -522,52 +522,52 @@
                 "enabled": true
             },
             "Custom font": {
-                "enabled": false
+                "enabled": true
             },
             "Force system font": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Ask button": {
-                "enabled": false
+                "enabled": true
             },
             "Custom branding name for Reddit": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "appName": "Reddit Morphe"
                 }
             },
             "Hide communities shelf": {
-                "enabled": false
+                "enabled": true
             },
             "Disable modern home": {
-                "enabled": false
+                "enabled": true
             },
             "Hide navigation buttons": {
-                "enabled": false
+                "enabled": true
             },
             "Disable screenshot popup": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Reddit search": {
-                "enabled": false
+                "enabled": true
             },
             "Hide sidebar components": {
-                "enabled": false
+                "enabled": true
             },
             "Remove subreddit dialog": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Trending shelves": {
-                "enabled": false
+                "enabled": true
             },
             "Show view count": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof signature": {
-                "enabled": false
+                "enabled": true
             },
             "Open links directly": {
-                "enabled": false
+                "enabled": true
             },
             "Open links externally": {
                 "enabled": true

@@ -1,9 +1,9 @@
 {
   "builds": {
     "com.chess|prathxm|arm64": {
-      "app_name": "",
+      "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
-      "at": 1787837518,
+      "at": 1787874609,
       "out": "chess-4.10.0-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
@@ -13,9 +13,9 @@
       "version": "4.10.0"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube Music",
       "arch": "arm64",
-      "at": 1787837438,
+      "at": 1787874404,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
@@ -25,9 +25,9 @@
       "version": "9.15.51"
     },
     "com.google.android.youtube|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube",
       "arch": "arm64",
-      "at": 1787837408,
+      "at": 1787874322,
       "out": "youtube-21.04.223-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
@@ -39,19 +39,19 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1787849285,
+      "at": 1787874200,
       "out": "microg-7.0.0-dev.3-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
         "microg": "7.0.0-dev.3"
       },
-      "vc": 255070000,
+      "vc": 0,
       "version": "7.0.0-dev.3"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "",
+      "app_name": "Reddit",
       "arch": "arm64",
-      "at": 1787837469,
+      "at": 1787874486,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
@@ -62,9 +62,16 @@
     }
   },
   "bundles": {
+    "androidtv": "v1.30.0",
+    "de-vanced": "v1.3.0-dev.4",
+    "hoodles": "v1.42.0",
+    "hoomans": "v1.51.1",
+    "hxreborn": "v1.13.0",
     "microg": "7.0.0-dev.3",
     "morphe": "v1.41.0-dev.2",
-    "prathxm": "v1.13.1-dev.4"
+    "prathxm": "v1.13.1-dev.4",
+    "tiktok-hx": "v1.0.0",
+    "xtra": "v2.12.0"
   },
   "fdroid": {
     "cert_b64": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc=",
@@ -75,7 +82,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "internal",
+      "signing": "external",
       "tag": "v1.15.0-dev.2"
     }
   }

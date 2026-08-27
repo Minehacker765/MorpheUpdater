@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1787866135984,
+    "timestamp": 1787874659539,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -44,17 +44,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787849286147,
-        "lastUpdated": 1787849286147,
+        "added": 1787874653481,
+        "lastUpdated": 1787874653481,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a": {
-          "added": 1787849286147,
+        "20ae1cc63290a1063b4e3a8157d7c0bc1eee7b30484dcff9bd121d170a13de25": {
+          "added": 1787874653481,
           "file": {
             "name": "/chess-4.10.0-prathxm-arm64.apk",
-            "sha256": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
-            "size": 258536872
+            "sha256": "20ae1cc63290a1063b4e3a8157d7c0bc1eee7b30484dcff9bd121d170a13de25",
+            "size": 258532784
           },
           "manifest": {
             "versionName": "4.10.0-googleplay",
@@ -72,57 +72,7 @@
         }
       }
     },
-    "app.revanced.android.gms": {
-      "metadata": {
-        "name": {
-          "en-US": "MicroG"
-        },
-        "summary": {
-          "en-US": "MicroG RE patched with Morphe"
-        },
-        "description": {
-          "en-US": "MicroG RE patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/app.revanced.android.gms.png",
-            "sha256": "8d23d07b34188c7abacc64f142b3e233f1424f93cd74ef9016c5b5cee2ef0319",
-            "size": 13787
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787849287376,
-        "lastUpdated": 1787849287376,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248": {
-          "added": 1787849287376,
-          "file": {
-            "name": "/microg-7.0.0-dev.3-arm64.apk",
-            "sha256": "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248",
-            "size": 95753899
-          },
-          "manifest": {
-            "versionName": "7.0.0-dev.3",
-            "versionCode": 255070000,
-            "usesSdk": {
-              "minSdkVersion": 21,
-              "targetSdkVersion": 34
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.reddit.frontpage": {
+    "com.reddit.frontpage.morphe": {
       "metadata": {
         "name": {
           "en-US": "Reddit"
@@ -135,7 +85,7 @@
         },
         "icon": {
           "en-US": {
-            "name": "/icons/com.reddit.frontpage.png",
+            "name": "/icons/com.reddit.frontpage.morphe.png",
             "sha256": "1cf1dcfd1d5164c592d7fc70e8c21f665d268e89b900ded8326f69a26af6c3c5",
             "size": 9112
           }
@@ -144,17 +94,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787849286838,
-        "lastUpdated": 1787849286838,
+        "added": 1787874655427,
+        "lastUpdated": 1787874655427,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666": {
-          "added": 1787849286838,
+        "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17": {
+          "added": 1787874655427,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
-            "sha256": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
-            "size": 57426263
+            "sha256": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
+            "size": 57405791
           },
           "manifest": {
             "versionName": "2026.14.0",
@@ -178,10 +128,10 @@
           "en-US": "YouTube"
         },
         "summary": {
-          "en-US": "YouTube :3 patched with Morphe"
+          "en-US": "YouTube patched with Morphe"
         },
         "description": {
-          "en-US": "YouTube :3 patched with Morphe"
+          "en-US": "YouTube patched with Morphe"
         },
         "icon": {
           "en-US": {
@@ -194,17 +144,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787849288611,
-        "lastUpdated": 1787849288611,
+        "added": 1787874659438,
+        "lastUpdated": 1787874659438,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be": {
-          "added": 1787849288611,
+        "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55": {
+          "added": 1787874659438,
           "file": {
             "name": "/youtube-21.04.223-morphe-arm64.apk",
-            "sha256": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
-            "size": 114416502
+            "sha256": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
+            "size": 114109310
           },
           "manifest": {
             "versionName": "21.04.223",
@@ -228,10 +178,10 @@
           "en-US": "YouTube Music"
         },
         "summary": {
-          "en-US": "Music :3 patched with Morphe"
+          "en-US": "YouTube Music patched with Morphe"
         },
         "description": {
-          "en-US": "Music :3 patched with Morphe"
+          "en-US": "YouTube Music patched with Morphe"
         },
         "icon": {
           "en-US": {
@@ -244,17 +194,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787849287922,
-        "lastUpdated": 1787849287922,
+        "added": 1787874657350,
+        "lastUpdated": 1787874657350,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64": {
-          "added": 1787849287922,
+        "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb": {
+          "added": 1787874657350,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
-            "sha256": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
-            "size": 72267718
+            "sha256": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
+            "size": 72062926
           },
           "manifest": {
             "versionName": "9.15.51",
