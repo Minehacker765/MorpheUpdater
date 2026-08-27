@@ -2,7 +2,7 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787839867859,
+  "timestamp": 1787849288679,
   "version": 20001,
   "maxage": 0,
   "packages": {},
@@ -18,6 +18,17 @@
      "summary": "Chess patched with Morphe",
      "description": "Chess patched with Morphe",
      "icon": "com.chess.prathxm.png"
+    }
+   }
+  },
+  {
+   "packageName": "app.revanced.android.gms",
+   "name": "MicroG RE",
+   "localized": {
+    "en-US": {
+     "name": "MicroG RE",
+     "summary": "MicroG RE patched with Morphe",
+     "description": "MicroG RE patched with Morphe"
     }
    }
   },
@@ -61,7 +72,7 @@
  "packages": {
   "com.chess.prathxm": [
    {
-    "added": 1787839863207,
+    "added": 1787849286147,
     "apkName": "chess-4.10.0-prathxm-arm64.apk",
     "hash": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
     "hashType": "sha256",
@@ -78,7 +89,7 @@
   ],
   "com.reddit.frontpage": [
    {
-    "added": 1787839864689,
+    "added": 1787849286838,
     "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
     "hash": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
     "hashType": "sha256",
@@ -93,9 +104,26 @@
     "sig": "2b4d9183"
    }
   ],
+  "app.revanced.android.gms": [
+   {
+    "added": 1787849287376,
+    "apkName": "microg-7.0.0-dev.3-arm64.apk",
+    "hash": "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248",
+    "hashType": "sha256",
+    "packageName": "app.revanced.android.gms",
+    "versionCode": 255070000,
+    "versionName": "7.0.0-dev.3",
+    "size": 95753899,
+    "appName": "MicroG RE",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 34,
+    "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+    "sig": "2b4d9183"
+   }
+  ],
   "app.morphe.android.apps.youtube.music": [
    {
-    "added": 1787839865992,
+    "added": 1787849287922,
     "apkName": "music-9.15.51-morphe-arm64.apk",
     "hash": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
     "hashType": "sha256",
@@ -112,7 +140,7 @@
   ],
   "app.morphe.android.youtube": [
    {
-    "added": 1787839867777,
+    "added": 1787849288611,
     "apkName": "youtube-21.04.223-morphe-arm64.apk",
     "hash": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
     "hashType": "sha256",

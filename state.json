@@ -36,6 +36,18 @@
       "vc": 1561052632,
       "version": "21.04.223"
     },
+    "com.mgoogle.android.gms|microg|arm64": {
+      "app_name": "MicroG",
+      "arch": "arm64",
+      "at": 1787849285,
+      "out": "microg-7.0.0-dev.3-arm64.apk",
+      "package": "com.mgoogle.android.gms",
+      "tags": {
+        "microg": "7.0.0-dev.3"
+      },
+      "vc": 255070000,
+      "version": "7.0.0-dev.3"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -50,6 +62,7 @@
     }
   },
   "bundles": {
+    "microg": "7.0.0-dev.3",
     "morphe": "v1.41.0-dev.2",
     "prathxm": "v1.13.1-dev.4"
   },
