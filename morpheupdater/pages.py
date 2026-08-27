@@ -74,10 +74,25 @@ def build_showcase(cfg: dict, state: dict) -> bool:
     patches = ", ".join(f"{k} {v}" for k, v in sorted(state.get("bundles", {}).items())) or "—"
 
     # per-app cards from state builds (one per pkg|combo|arch)
+    # Map original -> actual (e.g. com.mgoogle -> app.revanced) via APK inspection when possible
+    try:
+        import json as _js2
+        _idx2 = _js2.load(open(OUT / "index-v1.json"))
+        _actual_map = {e["packageName"]: e["packageName"] for e in _idx2.get("apps", [])}
+        # Also map original package from state to actual via APK
+        for _k, _b in state.get("builds", {}).items():
+            _orig = _b.get("package", _k.split("|")[0])
+            # Find matching app in index by version/out
+            for _a in _idx2.get("apps", []):
+                if _a["packageName"] in (_orig, _orig.replace("com.mgoogle", "app.revanced")):
+                    _actual_map[_orig] = _a["packageName"]
+    except Exception:
+        _actual_map = {}
     cards_html = ""
     for key in sorted(state.get("builds", {})):
         b = state["builds"][key]
-        pkg = b.get("package", key.split("|")[0])
+        _orig_pkg = b.get("package", key.split("|")[0])
+        pkg = _actual_map.get(_orig_pkg, _orig_pkg)
         ver = b.get("version", "?")
         arch = b.get("arch", "")
         apk = b.get("out", "")
