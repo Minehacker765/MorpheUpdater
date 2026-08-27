@@ -58,7 +58,7 @@ CARD = """<div class="card">
     <h3>${name}</h3>
     <div class="muted">${pkg} · ${ver} · ${arch}</div>
     <div class="muted">${patches}</div>
-    <div style="margin-top:.4rem"><a href="${dl}">Download APK</a></div>
+    <div style="margin-top:.4rem"><a href="${dl}">Download APK</a> <span class="dl-qr" data-url="${dl}" style="display:inline-block;vertical-align:middle;margin-left:.4rem"></span></div>
   </div>
 </div>"""
 
@@ -82,7 +82,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         arch = b.get("arch", "")
         apk = b.get("out", "")
         tag = next(iter(b.get("tags", {}).values()), "") or next(iter(state.get("bundles", {}).values()), "")
-        dl = f"https://github.com/Minehacker765/MorpheUpdater/releases/download/{tag}/{apk}" if tag and apk else "#"
+        dl = f"https://github.com/Minehacker765/MorpheUpdater/releases/latest/download/{apk}" if apk else "#"
         patches_str = ", ".join(f"{k} {v}" for k, v in sorted(b.get("tags", {}).items()))
         icon = f"icons/{pkg}.png"
         if not (OUT / icon).exists():
