@@ -63,8 +63,8 @@
   },
   "tmp_max_mb": 2048,
   "tmp_max_age_days": 7,
-  "commit": false,
-  "release": false,
+  "commit": true,
+  "release": true,
   "archs": [
     "arm64"
   ]

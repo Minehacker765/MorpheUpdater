@@ -1,0 +1,69 @@
+{
+  "builds": {
+    "com.chess|prathxm|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1787790376,
+      "out": "chess-4.10.0-prathxm-arm64.apk",
+      "package": "com.chess",
+      "tags": {
+        "prathxm": "v1.13.1-dev.4"
+      },
+      "vc": 268250,
+      "version": "4.10.0"
+    },
+    "com.google.android.apps.youtube.music|morphe|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1787822708,
+      "out": "music-9.15.51-morphe-arm64.apk",
+      "package": "com.google.android.apps.youtube.music",
+      "tags": {
+        "morphe": "v1.41.0-dev.2"
+      },
+      "vc": 91551240,
+      "version": "9.15.51"
+    },
+    "com.google.android.youtube|morphe|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1787822677,
+      "out": "youtube-21.04.223-morphe-arm64.apk",
+      "package": "com.google.android.youtube",
+      "tags": {
+        "morphe": "v1.41.0-dev.2"
+      },
+      "vc": 1561052632,
+      "version": "21.04.223"
+    },
+    "com.reddit.frontpage|morphe|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1787822738,
+      "out": "frontpage-2026.14.0-morphe-arm64.apk",
+      "package": "com.reddit.frontpage",
+      "tags": {
+        "morphe": "v1.41.0-dev.2"
+      },
+      "vc": 2614140,
+      "version": "2026.14.0"
+    }
+  },
+  "bundles": {
+    "morphe": "v1.41.0-dev.2",
+    "prathxm": "v1.13.1-dev.4"
+  },
+  "fdroid": {
+    "cert_b64": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc=",
+    "cert_sha256": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+  },
+  "tools": {
+    "apkeditor": {
+      "tag": "V1.4.9"
+    },
+    "morphe-desktop": {
+      "signing": "internal",
+      "tag": "v1.15.0-dev.2"
+    }
+  }
+}
