@@ -126,8 +126,8 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                         icon = f"icons/{got}"
                 except Exception:
                     pass
-        display = {pkg: "YouTube" for pkg in ["com.google.android.youtube", "app.morphe.android.youtube"]} | {pkg: "YouTube Music" for pkg in ["com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"]} | {"com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG"}
-        name = b.get("app_name") or display.get(pkg) or pkg.rsplit(".", 1)[-1].capitalize()
+        display = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
+        name = display.get(pkg) or display.get(b.get("package","")) or pkg.rsplit(".", 1)[-1].capitalize()
         from string import Template as _T
         cards_html += _T(CARD).substitute(icon=icon, name=name, pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
 

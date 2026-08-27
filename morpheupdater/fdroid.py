@@ -267,16 +267,14 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
         if info:
             package, version, vc, app_name_real = info
             # Use display names for showcase/F-Droid, not package segments
-            disp_map = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
-                        "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
-                        "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG"}
+            disp_map = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
             app_name = disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package.rsplit(".", 1)[-1].capitalize()
         else:
             if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                 log.warning("index: skipping %s (no metadata)", apk.name)
                 continue
             package, version, vc = entry["package"], entry["version"], int(entry["vc"])
-            disp_map2 = {"com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess"}
+            disp_map2 = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
             app_name = disp_map2.get(package) or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
 
         min_sdk, target_sdk = parse_manifest_sdk(apk)
