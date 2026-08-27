@@ -15,11 +15,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1787790296,
+      "at": 1787822708,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.41.0-dev.1"
+        "morphe": "v1.41.0-dev.2"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -27,11 +27,11 @@
     "com.google.android.youtube|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1787790267,
+      "at": 1787822677,
       "out": "youtube-21.04.223-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.41.0-dev.1"
+        "morphe": "v1.41.0-dev.2"
       },
       "vc": 1561052632,
       "version": "21.04.223"
@@ -39,18 +39,18 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1787790326,
+      "at": 1787822738,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.41.0-dev.1"
+        "morphe": "v1.41.0-dev.2"
       },
       "vc": 2614140,
       "version": "2026.14.0"
     }
   },
   "bundles": {
-    "morphe": "v1.41.0-dev.1",
+    "morphe": "v1.41.0-dev.2",
     "prathxm": "v1.13.1-dev.4"
   },
   "fdroid": {
