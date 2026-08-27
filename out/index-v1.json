@@ -2,8 +2,9 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787789015972,
-  "packages": {}
+  "timestamp": 1787789702491,
+  "packages": {},
+  "address": "https://minehacker765.github.io/MorpheUpdater/"
  },
  "apps": [
   {
@@ -73,7 +74,7 @@
    "packageName": "com.chess",
    "versionName": "4.10.0",
    "versionCode": 268250,
-   "apkName": "chess-4.10.0-prathxm-arm64.apk",
+   "apkName": "https://github.com/Minehacker765/MorpheUpdater/releases/download/p20260827-000336/chess-4.10.0-prathxm-arm64.apk",
    "hash": "6d8432c384c0536c36de28e476fadb0093f22d36f29973a0a83a9711261fb5d8",
    "size": 258536872,
    "minSdkVersion": 26,
@@ -85,7 +86,7 @@
    "packageName": "com.reddit.frontpage",
    "versionName": "2026.14.0",
    "versionCode": 2614140,
-   "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
+   "apkName": "https://github.com/Minehacker765/MorpheUpdater/releases/download/p20260827-000336/frontpage-2026.14.0-morphe-arm64.apk",
    "hash": "19b791da09c2be708aef7e3ce8454089843a55942fd3ef5c2c5ee8b4d0b5e480",
    "size": 57426263,
    "minSdkVersion": 29,
@@ -97,7 +98,7 @@
    "packageName": "com.google.android.apps.youtube.music",
    "versionName": "9.15.51",
    "versionCode": 91551240,
-   "apkName": "music-9.15.51-morphe-arm64.apk",
+   "apkName": "https://github.com/Minehacker765/MorpheUpdater/releases/download/p20260827-000336/music-9.15.51-morphe-arm64.apk",
    "hash": "7195ae52d0f2861b95c05a2062fcfa484862c33bbd39f032d4c7e1103360f553",
    "size": 72263622,
    "minSdkVersion": 32,
@@ -109,7 +110,7 @@
    "packageName": "com.google.android.youtube",
    "versionName": "21.04.223",
    "versionCode": 1561052632,
-   "apkName": "youtube-21.04.223-morphe-arm64.apk",
+   "apkName": "https://github.com/Minehacker765/MorpheUpdater/releases/download/p20260827-000336/youtube-21.04.223-morphe-arm64.apk",
    "hash": "5d7e4b2f4ec56f4ca7b01abaedd12926c18cffb4840ba12d100e2c66178f1749",
    "size": 114354461,
    "minSdkVersion": 32,
