@@ -268,6 +268,35 @@ async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) ->
     return cache[key]
 
 
+async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pathlib.Path]:
+    # MicroG is a plain APK from its GitHub releases, not Play
+    import re as _re
+    rel = await __import__("morpheupdater.tools", fromlist=["gh_latest_prerelease"]).gh_latest_prerelease(session, "MorpheApp/MicroG-RE")
+    tag = rel["tag_name"]
+    # pick the no-icon apk
+    url = next((a["browser_download_url"] for a in rel.get("assets", []) if "noicon" in a["name"].lower()), None)
+    if not url:
+        url = next((a["browser_download_url"] for a in rel.get("assets", []) if a["name"].endswith(".apk")), None)
+    if not url:
+        raise RuntimeError("no MicroG apk in release")
+    # version from tag, e.g. 7.0.0-dev.3 -> 7.0.0
+    ver = tag.lstrip("v")
+    # download to tmp
+    dest = __import__("morpheupdater.settings", fromlist=["TMP"]).TMP / "direct" / f"microg-{tag}.apk"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if not dest.exists():
+        async with session.get(url) as r:
+            r.raise_for_status()
+            with open(dest, "wb") as f:
+                async for chunk in r.content.iter_chunked(1 << 20):
+                    f.write(chunk)
+    # versionCode from APK
+    info = __import__("morpheupdater.tools", fromlist=["apk_info"]).apk_info(
+        __import__("pathlib").Path("bin/apkeditor.jar"), dest)
+    vc = info[2] if info else 0
+    return ver, vc, dest
+
+
 async def _resolve_vc(session: ClientSession, package: str, version: str, cache: dict) -> int:
     vc, codes = await play.resolve_vc(session, package, version)
     cache[package] = codes
@@ -397,6 +426,32 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     for arch in archs:
                         summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", "unknown bundle name"))
                     continue
+                # MicroG is direct GitHub, not Play
+                if package == "com.mgoogle.android.gms":
+                    try:
+                        version, vc, _ = await _fetch_microg(session, cfg)
+                    except Exception as exc:
+                        for arch in archs:
+                            summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
+                        continue
+                    # MicroG has no arch splits, single apk
+                    for arch in archs:
+                        key = f"{package}|{combo_id(combo)}|{arch}"
+                        prev = state["builds"].get(key)
+                        # use version as-is, arch is still part of key for consistency
+                        out = OUT / f"microg-{version}-{arch}.apk"
+                        up_to_date = prev and prev.get("version") == version and out.exists()
+                        if up_to_date:
+                            log.info("MicroG %s [%s]: up to date", version, arch)
+                            continue
+                        # copy direct apk to out
+                        import shutil as _sh
+                        _sh.copyfile(_ , out)
+                        state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "MicroG", "tags": {"microg": version}, "out": out.name, "at": now()}
+                        save_state(state)
+                        summary["built"].append(out.name)
+                    continue
+
                 try:
                     version = await _recommended(cfg, urls, package, ver_cache)
                     if not version:

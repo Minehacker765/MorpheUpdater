@@ -84,6 +84,9 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         tag = next(iter(b.get("tags", {}).values()), "") or next(iter(state.get("bundles", {}).values()), "")
         dl = f"https://github.com/Minehacker765/MorpheUpdater/releases/latest/download/{apk}" if apk else "#"
         patches_str = ", ".join(f"{k} {v}" for k, v in sorted(b.get("tags", {}).items()))
+        # YouTube/Music need MicroG
+        if pkg in ("com.google.android.youtube", "app.morphe.android.youtube", "com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"):
+            patches_str += " · requires MicroG"
         # icons are named after the *actual* (cloned) package, not the original
         icon = ""
         for cand in [pkg.replace("com.google.android.youtube", "app.morphe.android.youtube").replace("com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music").replace("com.chess", "com.chess.prathxm"), pkg]:
@@ -108,14 +111,17 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                         icon = f"icons/{got}"
                 except Exception:
                     pass
+        display = {pkg: "YouTube" for pkg in ["com.google.android.youtube", "app.morphe.android.youtube"]} | {pkg: "YouTube Music" for pkg in ["com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"]} | {"com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG"}
+        name = b.get("app_name") or display.get(pkg) or pkg.rsplit(".", 1)[-1].capitalize()
         from string import Template as _T
-        cards_html += _T(CARD).substitute(icon=icon, name=b.get("app_name") or pkg.rsplit(".", 1)[-1].capitalize(), pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
+        cards_html += _T(CARD).substitute(icon=icon, name=name, pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
 
     if not cards_html:
         for app in cfg.get("apps", []):
             pkg = app["package"]
+            disp2 = {"com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess"}.get(pkg, pkg.rsplit(".", 1)[-1].capitalize())
             from string import Template as _T2
-            cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=pkg.rsplit(".", 1)[-1].capitalize(), pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
+            cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
 
     from string import Template
     html = Template(TEMPLATE).substitute(title=title, description=desc, repo_url=repo_url, fingerprint=fp or "—", updated=time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), cards=cards_html, patches=patches)

@@ -9,7 +9,8 @@
   "bytecode_mode": "",
   "bundles": {
     "morphe": "https://github.com/MorpheApp/morphe-patches",
-    "prathxm": "https://github.com/PrathxmOp/Prathxm-Patches"
+    "prathxm": "https://github.com/PrathxmOp/Prathxm-Patches",
+    "microg": "https://github.com/MorpheApp/MicroG-RE"
   },
   "apps": [
     {
@@ -18,7 +19,8 @@
         [
           "morphe"
         ]
-      ]
+      ],
+      "display": "YouTube"
     },
     {
       "package": "com.google.android.apps.youtube.music",
@@ -26,7 +28,8 @@
         [
           "morphe"
         ]
-      ]
+      ],
+      "display": "YouTube Music"
     },
     {
       "package": "com.reddit.frontpage",
@@ -34,7 +37,8 @@
         [
           "morphe"
         ]
-      ]
+      ],
+      "display": "Reddit"
     },
     {
       "package": "com.chess",
@@ -43,6 +47,15 @@
           "prathxm"
         ]
       ]
+    },
+    {
+      "package": "com.mgoogle.android.gms",
+      "combos": [
+        [
+          "microg"
+        ]
+      ],
+      "display": "MicroG"
     }
   ],
   "tools": {
