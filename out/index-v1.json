@@ -2,7 +2,7 @@
  "repo": {
   "name": "Morphe Updater",
   "description": "Patched apps rebuilt automatically",
-  "timestamp": 1787837701015,
+  "timestamp": 1787837790876,
   "version": 20001,
   "maxage": 0,
   "packages": {},
@@ -73,7 +73,7 @@
  "packages": {
   "com.chess.prathxm": [
    {
-    "added": 1787837696284,
+    "added": 1787837788925,
     "apkName": "chess-4.10.0-prathxm-arm64.apk",
     "hash": "91d3e723ae9f99d8b239885cf39027dd6cdd21f8bc535c16d25d8bd6b7b5708a",
     "hashType": "sha256",
@@ -90,7 +90,7 @@
   ],
   "com.reddit.frontpage": [
    {
-    "added": 1787837697817,
+    "added": 1787837789607,
     "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
     "hash": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
     "hashType": "sha256",
@@ -107,7 +107,7 @@
   ],
   "app.morphe.android.apps.youtube.music": [
    {
-    "added": 1787837699170,
+    "added": 1787837790107,
     "apkName": "music-9.15.51-morphe-arm64.apk",
     "hash": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
     "hashType": "sha256",
@@ -124,7 +124,7 @@
   ],
   "app.morphe.android.youtube": [
    {
-    "added": 1787837700931,
+    "added": 1787837790811,
     "apkName": "youtube-21.04.223-morphe-arm64.apk",
     "hash": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
     "hashType": "sha256",
