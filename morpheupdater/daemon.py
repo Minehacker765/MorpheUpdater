@@ -173,23 +173,67 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
         )
         return details, delivery
 
+    # try all priority profiles for this arch (some apps' old vcs are only served to specific devices)
+    from morpheupdater.profiles import get_priority_profiles
+
+    profiles = [p for _, p in get_priority_profiles(arch)]
+    # also include holder's cached profile first for speed
+    tried: set[str] = set()
     details = delivery = None
-    for attempt in range(4):
+    last_exc: Exception | None = None
+    # attempt up to 4 tries per profile, but overall try each profile
+    for prof in profiles:
+        # try to get auth for this specific profile (bypass holder cache)
         try:
-            auth = await holder.get(session, arch, refresh=attempt > 0 and details is None)
+            # _post_profile directly to avoid holder's first-profile bias
+            auth = await play._post_profile(session, play.DISPENSER, prof)
+            if not auth or isinstance(auth, play.PlayError):
+                # fall back to holder's generic token
+                auth = await holder.get(session, arch)
+            # quick check that this profile can see the package
             details, delivery = await flow(auth)
+            # cache successful auth for next time
+            holder._auths[arch] = auth
             break
-        except play.AuthExpiredError:
-            if attempt:
-                raise
-        except play.RateLimitError:
-            if attempt == 3:
-                raise
-            wait = 30 * 2 ** attempt
-            log.warning("%s: rate limited by Play; waiting %ds", short(package), wait)
+        except play.AuthExpiredError as e:
+            last_exc = e
+            continue
+        except play.RateLimitError as e:
+            last_exc = e
+            wait = 10
+            log.warning("%s: rate limited on profile, waiting %ds", short(package), wait)
             await asyncio.sleep(wait)
+            continue
         except (play.AppNotSupportedError, play.AppNotAvailableError) as exc:
-            raise RuntimeError(f"{exc}; consider a different --arch profile") from exc
+            last_exc = exc
+            # try next profile for same arch before giving up
+            log.debug("%s vc %d not supported on profile %s, trying next", short(package), vc, prof.get("deviceInfoProvider", {}).get("product", "?")[:20])
+            continue
+        except play.PlayError as e:
+            # unparseable delivery etc. — try next profile
+            last_exc = e
+            continue
+    else:
+        # no profile succeeded, fall back to original 4-attempt logic with holder for RateLimit etc.
+        for attempt in range(4):
+            try:
+                auth = await holder.get(session, arch, refresh=attempt > 0 and details is None)
+                details, delivery = await flow(auth)
+                break
+            except play.AuthExpiredError:
+                if attempt:
+                    raise
+            except play.RateLimitError:
+                if attempt == 3:
+                    raise
+                wait = 30 * 2 ** attempt
+                log.warning("%s: rate limited by Play; waiting %ds", short(package), wait)
+                await asyncio.sleep(wait)
+            except (play.AppNotSupportedError, play.AppNotAvailableError) as exc:
+                raise RuntimeError(f"{exc}; tried {len(profiles)} profiles for --arch {arch}") from exc
+        else:
+            if last_exc:
+                raise RuntimeError(f"{last_exc}; tried {len(profiles)} profiles for --arch {arch}") from last_exc
     assert delivery is not None
 
     log.info("%s %s: %d splits (%s)", short(package), details.version_string or f"vc{vc}",

@@ -300,9 +300,12 @@ async def get_delivery(
         raw = await resp.read()
         _check(resp.status)
 
-    d = parse_delivery(raw)
-    if d.download_url:
-        return d
+    try:
+        d = parse_delivery(raw)
+        if d.download_url:
+            return d
+    except PlayError:
+        d = None
 
     status = None
     for payload_fn in (21, 5, 4, 6):
@@ -314,7 +317,10 @@ async def get_delivery(
         raise AppNotSupportedError(f"vc {vc} of {package} not served to this profile")
     if status == 3:
         raise AppNotPurchasedError(f"{package} not acquired by account")
-    raise PlayError(f"no download URL for {package} vc {vc} (status={status})")
+    if d is not None:
+        # parse succeeded but no download_url and no status -> treat as error
+        raise PlayError(f"no download URL for {package} vc {vc} (status={status})")
+    raise PlayError(f"unparseable delivery response for {package} vc {vc} (status={status})")
 
 
 # ── APKPure metadata (version string -> real Play version code) ────────────
