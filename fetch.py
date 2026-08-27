@@ -75,9 +75,15 @@ async def _resolve_version(
             pass
         return vc, version_arg
 
-    # dotted -> vc via APKPure (play.py:371)
-    vc, _ = await play.resolve_vc(session, package, version_arg)
-    log.info("%s %s -> vc %d (via APKPure)", package, version_arg, vc)
+    # dotted -> vc via APKPure + mirror* fallbacks (play.py:371 + apkmirror + Play brute-force)
+    try:
+        vc, _ = await play.resolve_vc(session, package, version_arg)
+        log.info("%s %s -> vc %d (via APKPure)", package, version_arg, vc)
+    except Exception as e:
+        # mirror* fallback (APKMirror hard-map + Play guess)
+        log.warning("%s %s not in APKPure history (%s), trying mirror* fallback...", package, version_arg, e)
+        vc, _ = await play.resolve_vc_with_fallback(session, package, version_arg, arch)
+        log.info("%s %s -> vc %d (via mirror*)", package, version_arg, vc)
     return vc, version_arg
 
 
