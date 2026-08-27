@@ -36,7 +36,6 @@ DEFAULT_CONFIG: dict = {
         "name": "Morphe Updater",
         "description": "Apps patched with Morphe, rebuilt automatically",
         "url": "",
-        "apk_url_template": "https://github.com/Minehacker765/MorpheUpdater/releases/download/{tag}/{apkName}",
     },
     "tmp_max_mb": 2048,
     "tmp_max_age_days": 7,
