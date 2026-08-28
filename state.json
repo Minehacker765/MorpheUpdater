@@ -25,16 +25,16 @@
       "version": "3.3.6"
     },
     "com.chess|prathxm|arm64": {
-      "app_name": "Chess - Play and Learn Online",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1787876429,
-      "out": "chess-4.10.0-googleplay-prathxm-arm64.apk",
+      "at": 1787880178,
+      "out": "chess-4.10.0-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
         "prathxm": "v1.13.1-dev.4"
       },
       "vc": 268250,
-      "version": "4.10.0-googleplay"
+      "version": "4.10.0"
     },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
