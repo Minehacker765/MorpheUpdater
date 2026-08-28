@@ -96,6 +96,18 @@
       "vc": 457019914,
       "version": "490.0.0.63.82"
     },
+    "com.facebook.orca|de-vanced|arm64": {
+      "app_name": "Messenger",
+      "arch": "arm64",
+      "at": 1787918367,
+      "out": "orca-573.0.0.44.88-de-vanced-arm64.apk",
+      "package": "com.facebook.orca",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 344611864,
+      "version": "573.0.0.44.88"
+    },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
