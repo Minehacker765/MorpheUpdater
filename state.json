@@ -156,6 +156,18 @@
       "vc": 405203,
       "version": "9.15.1"
     },
+    "jp.pxv.android|de-vanced|arm64": {
+      "app_name": "pixiv",
+      "arch": "arm64",
+      "at": 1787877964,
+      "out": "android-6.141.1-de-vanced-arm64.apk",
+      "package": "jp.pxv.android",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 56869,
+      "version": "6.141.1"
+    },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
