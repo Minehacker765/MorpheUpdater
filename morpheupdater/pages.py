@@ -126,15 +126,45 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                         icon = f"icons/{got}"
                 except Exception:
                     pass
-        display = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
-        name = display.get(pkg) or display.get(b.get("package","")) or pkg.rsplit(".", 1)[-1].capitalize()
+        display = {
+            "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
+            "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
+            "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
+            "com.chess": "Chess", "com.chess.prathxm": "Chess",
+            "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
+            "tv.twitch.android.app": "Twitch",
+            "com.strava": "Strava",
+            "com.google.android.apps.photos": "Google Photos",
+            "com.microblink.photomath": "Photomath",
+            "com.facebook.katana": "Facebook",
+            "com.amazon.mp3": "Amazon Music",
+            "com.bandcamp.android": "Bandcamp",
+            "de.gmx.mobile.android.mail": "GMX Mail",
+            "ginlemon.iconpackstudio": "Icon Pack Studio",
+            "com.facebook.orca": "Messenger",
+            "com.letterboxd.letterboxd": "Letterboxd",
+            "com.nothing.smartcenter": "Nothing X",
+            "jp.pxv.android": "Pixiv",
+        }
+        cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
+        name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg.rsplit(".", 1)[-1].capitalize()
         from string import Template as _T
         cards_html += _T(CARD).substitute(icon=icon, name=name, pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
 
     if not cards_html:
         for app in cfg.get("apps", []):
             pkg = app["package"]
-            disp2 = {"com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess"}.get(pkg, pkg.rsplit(".", 1)[-1].capitalize())
+            disp2 = {
+                "com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music",
+                "com.reddit.frontpage": "Reddit", "com.chess": "Chess",
+                "tv.twitch.android.app": "Twitch", "com.strava": "Strava",
+                "com.google.android.apps.photos": "Google Photos", "com.microblink.photomath": "Photomath",
+                "com.facebook.katana": "Facebook", "com.amazon.mp3": "Amazon Music",
+                "com.bandcamp.android": "Bandcamp", "de.gmx.mobile.android.mail": "GMX Mail",
+                "ginlemon.iconpackstudio": "Icon Pack Studio", "com.facebook.orca": "Messenger",
+                "com.letterboxd.letterboxd": "Letterboxd", "com.nothing.smartcenter": "Nothing X",
+                "jp.pxv.android": "Pixiv",
+            }.get(pkg, pkg.rsplit(".", 1)[-1].capitalize())
             from string import Template as _T2
             cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
 

@@ -357,8 +357,28 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 # normalize package: mgoogle clone
                 if package == "com.mgoogle.android.gms":
                     package = "app.revanced.android.gms"
-                disp_map = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
-                app_name = disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package.rsplit(".", 1)[-1].capitalize()
+                disp_map = {
+                    "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
+                    "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
+                    "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
+                    "com.chess": "Chess", "com.chess.prathxm": "Chess",
+                    "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
+                    "tv.twitch.android.app": "Twitch",
+                    "com.strava": "Strava",
+                    "com.google.android.apps.photos": "Google Photos",
+                    "com.microblink.photomath": "Photomath",
+                    "com.facebook.katana": "Facebook",
+                    "com.amazon.mp3": "Amazon Music",
+                    "com.bandcamp.android": "Bandcamp",
+                    "de.gmx.mobile.android.mail": "GMX Mail",
+                    "ginlemon.iconpackstudio": "Icon Pack Studio",
+                    "com.facebook.orca": "Messenger",
+                    "com.letterboxd.letterboxd": "Letterboxd",
+                    "com.nothing.smartcenter": "Nothing X",
+                    "jp.pxv.android": "Pixiv",
+                }
+                cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
+                app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package.rsplit(".", 1)[-1].capitalize()
             else:
                 if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                     log.warning("index: skipping %s (no metadata)", apk.name)
@@ -366,8 +386,28 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 package, version, vc = entry["package"], entry["version"], int(entry["vc"])
                 if package == "com.mgoogle.android.gms":
                     package = "app.revanced.android.gms"
-                disp_map2 = {"com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music", "com.reddit.frontpage": "Reddit", "com.chess": "Chess", "com.chess.prathxm": "Chess", "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG"}
-                app_name = disp_map2.get(package) or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+                disp_map2 = {
+                    "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
+                    "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
+                    "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
+                    "com.chess": "Chess", "com.chess.prathxm": "Chess",
+                    "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
+                    "tv.twitch.android.app": "Twitch",
+                    "com.strava": "Strava",
+                    "com.google.android.apps.photos": "Google Photos",
+                    "com.microblink.photomath": "Photomath",
+                    "com.facebook.katana": "Facebook",
+                    "com.amazon.mp3": "Amazon Music",
+                    "com.bandcamp.android": "Bandcamp",
+                    "de.gmx.mobile.android.mail": "GMX Mail",
+                    "ginlemon.iconpackstudio": "Icon Pack Studio",
+                    "com.facebook.orca": "Messenger",
+                    "com.letterboxd.letterboxd": "Letterboxd",
+                    "com.nothing.smartcenter": "Nothing X",
+                    "jp.pxv.android": "Pixiv",
+                }
+                cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
+                app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
 
             min_sdk, target_sdk = parse_manifest_sdk(apk)
             apk_name = apk.name

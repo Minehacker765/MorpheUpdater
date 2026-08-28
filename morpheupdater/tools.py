@@ -19,10 +19,11 @@ log = logging.getLogger("tools")
 
 GH_API = "https://api.github.com"
 BLOCK_RE = re.compile(
-    r"Package name:\s*(?P<pkg>[\w.]+)\s*\nMost common compatible versions:\s*\n"
-    r"(?P<versions>(?:\t[^\n]+\n?)+)"
+    r"(?:INFO:\s*)?Package name:\s*(?P<pkg>[\w.]+)\s*\n(?:INFO:\s*)?Most common compatible versions:\s*\n"
+    r"(?P<versions>(?:[ \t][^\n]*\n?)+)"
 )
-VERSION_LINE_RE = re.compile(r"^\t(?P<ver>[0-9][\w.]*?)\s+\((?P<count>\d+) patches?\)\s*$", re.MULTILINE)
+# handles "490.0.0.63.82 [versionCodes: ...] (2 patches)", "2.2 build 016 (1 patch)", "477.14 (9 patches)"
+VERSION_LINE_RE = re.compile(r"^[ \t]+(?P<ver>\S+(?:\s+build\s+\S+)?)(?:\s*\[versionCodes:[^\]]+\])?\s*\(\d+ patch(?:es)?\)", re.MULTILINE)
 
 
 def _gh_headers() -> dict[str, str]:
@@ -49,6 +50,23 @@ async def gh_latest_prerelease(session: ClientSession, repo: str) -> dict:
         if release.get("prerelease"):
             return release
     return releases[0]
+
+async def gh_latest_release(session: ClientSession, repo: str) -> dict:
+    """Newest stable release (prerelease==false), falling back to prerelease."""
+    async with session.get(
+        f"{GH_API}/repos/{repo}/releases?per_page=20",
+        headers=_gh_headers(), timeout=None,
+    ) as resp:
+        if resp.status != 200:
+            raise RuntimeError(f"github HTTP {resp.status} for {repo}")
+        releases = await resp.json()
+    if not releases:
+        raise RuntimeError(f"no releases for {repo}")
+    for release in releases:
+        if not release.get("prerelease"):
+            return release
+    return releases[0]
+
 
 
 def pick_jar_asset(release: dict) -> str | None:
@@ -301,8 +319,36 @@ def _version_key(version: str) -> tuple:
     return tuple(parts)
 
 
-async def recommended_version(jar: Path, urls: list[str], package: str) -> str | None:
-    cmd = [java_bin(), "-jar", str(jar), "list-versions", "--prerelease"]
+def _bundle_prerelease(cfg: dict, url: str) -> bool:
+    # cfg bundles can be str -> prerelease true, or dict {url, prerelease}
+    # also handle local MPP paths: map back to bundle
+    for name, spec in cfg.get("bundles", {}).items():
+        u = spec if isinstance(spec, str) else spec.get("url", "")
+        if u == url:
+            if isinstance(spec, str):
+                return True
+            return bool(spec.get("prerelease", True))
+        # check if url is a local MPP file for this bundle
+        if url.endswith(".mpp") and u and u.split("/")[-1] in url:
+            if isinstance(spec, str):
+                return True
+            return bool(spec.get("prerelease", True))
+    # for local files, don't use prerelease (file is already specific)
+    if url.endswith(".mpp"):
+        return False
+    # fallback: if url not found as value, check if url itself is key
+    return True
+
+
+async def recommended_version(jar: Path, urls: list[str], package: str, cfg: dict | None = None) -> str | None:
+    use_prerelease = False
+    if cfg is not None:
+        use_prerelease = any(_bundle_prerelease(cfg, u) for u in urls)
+    else:
+        use_prerelease = True
+    cmd = [java_bin(), "-jar", str(jar), "list-versions"]
+    if use_prerelease:
+        cmd.append("--prerelease")
     for url in urls:
         cmd += ["--patches", url]
     cmd += ["-f", package]
