@@ -108,6 +108,18 @@
       "vc": 70001016,
       "version": "8.48.0"
     },
+    "com.nothing.smartcenter|de-vanced|arm64": {
+      "app_name": "Nothing X",
+      "arch": "arm64",
+      "at": 1787877875,
+      "out": "smartcenter-3.8.0-de-vanced-arm64.apk",
+      "package": "com.nothing.smartcenter",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 3080004,
+      "version": "3.8.0"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
