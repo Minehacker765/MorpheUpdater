@@ -252,6 +252,18 @@
       "vc": 305191,
       "version": "3.5.19"
     },
+    "ru.iiec.pydroid3|hoodles|arm64": {
+      "app_name": "Pydroid 3 - IDE for Python 3",
+      "arch": "arm64",
+      "at": 1787917212,
+      "out": "pydroid3-8.3_arm64-hoodles-arm64.apk",
+      "package": "ru.iiec.pydroid3",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 1131,
+      "version": "8.3_arm64"
+    },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
