@@ -180,6 +180,18 @@
       "vc": 56869,
       "version": "6.141.1"
     },
+    "pl.solidexplorer2|hoodles|arm64": {
+      "app_name": "Solid Explorer File Manager",
+      "arch": "arm64",
+      "at": 1787911780,
+      "out": "solidexplorer2-3.5.19-hoodles-arm64.apk",
+      "package": "pl.solidexplorer2",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 305191,
+      "version": "3.5.19"
+    },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
