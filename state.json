@@ -120,6 +120,18 @@
       "vc": 12399244,
       "version": "477.14"
     },
+    "de.gmx.mobile.android.mail|de-vanced|arm64": {
+      "app_name": "GMX - Mail & Cloud",
+      "arch": "arm64",
+      "at": 1787877519,
+      "out": "mail-9.15.1-de-vanced-arm64.apk",
+      "package": "de.gmx.mobile.android.mail",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 405203,
+      "version": "9.15.1"
+    },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
