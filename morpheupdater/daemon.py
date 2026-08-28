@@ -575,6 +575,28 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
     return ver, vc, dest
 
 
+async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path]:
+    # AdGuard is no longer on Play Store, direct from adguardcdn.com
+    url = "https://download.adguardcdn.com/d/18675/adguard.apk"
+    dest = __import__("morpheupdater.settings", fromlist=["TMP"]).TMP / "direct" / "adguard-4.13.2.apk"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if not dest.exists():
+        async with session.get(url) as r:
+            r.raise_for_status()
+            with open(dest, "wb") as f:
+                async for chunk in r.content.iter_chunked(1 << 20):
+                    f.write(chunk)
+    info = __import__("morpheupdater.tools", fromlist=["apk_info"]).apk_info(
+        __import__("pathlib").Path("bin/apkeditor.jar"), dest)
+    if not info:
+        raise RuntimeError("failed to get AdGuard info")
+    pkg, ver, vc, _ = info
+    # verify package is correct
+    if pkg != "com.adguard.android":
+        log.warning("AdGuard package mismatch: %s", pkg)
+    return ver, vc, dest
+
+
 async def _resolve_vc(session: ClientSession, package: str, version: str, cache: dict) -> int:
     vc, codes = await play.resolve_vc(session, package, version)
     cache[package] = codes
@@ -734,6 +756,28 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                         import shutil as _sh
                         _sh.copyfile(_ , out)
                         state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "MicroG", "tags": {"microg": version}, "out": out.name, "at": now()}
+                        save_state(state)
+                        summary["built"].append(out.name)
+                    continue
+                # AdGuard is direct from adguardcdn.com (not on Play)
+                if package == "com.adguard.android":
+                    try:
+                        version, vc, _ = await _fetch_adguard(session)
+                    except Exception as exc:
+                        for arch in archs:
+                            summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
+                        continue
+                    for arch in archs:
+                        key = f"{package}|{combo_id(combo)}|{arch}"
+                        prev = state["builds"].get(key)
+                        out = OUT / f"adguard-{version}-{arch}.apk"
+                        up_to_date = prev and prev.get("version") == version and out.exists()
+                        if up_to_date:
+                            log.info("AdGuard %s [%s]: up to date", version, arch)
+                            continue
+                        import shutil as _sh2
+                        _sh2.copyfile(_, out)
+                        state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "AdGuard", "tags": {"hoodles": state["bundles"].get("hoodles", "")}, "out": out.name, "at": now()}
                         save_state(state)
                         summary["built"].append(out.name)
                     continue

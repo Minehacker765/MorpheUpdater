@@ -61,10 +61,17 @@ def _supporting(abi: str) -> list[tuple[str, dict[str, str]]]:
 
 def get_priority_profiles(arch: str = "arm64") -> list[tuple[str, dict[str, str]]]:
     priority = _PRIORITY.get(arch, _PRIORITY["arm64"])
-    pool = list(_of_arch(arch)) if arch in ("arm64", "armv7") else (
-        [(k, p) for k, (a, p) in _ALL.items() if a == "tv"] if arch == "tv"
-        else _supporting(ABI_TOKENS[arch])
-    )
+    if arch == "tv":
+        pool = [(k, p) for k, (a, p) in _ALL.items() if "android.software.leanback" in p.get("Features", "")]
+        if not pool:
+            for k, (a, p) in _ALL.items():
+                if k == "Gb":
+                    pool = [(k, p)]
+                    break
+    elif arch in ("arm64", "armv7"):
+        pool = list(_of_arch(arch))
+    else:
+        pool = _supporting(ABI_TOKENS[arch])
     seen: set[str] = set()
     result: list[tuple[str, dict[str, str]]] = []
     for key in priority:

@@ -291,6 +291,15 @@
         ]
       ],
       "display": "Netflix TV"
+    },
+    {
+      "package": "com.adguard.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "AdGuard"
     }
   ],
   "tools": {
