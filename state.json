@@ -84,6 +84,18 @@
       "vc": 2433,
       "version": "6.92.5"
     },
+    "com.facebook.katana|de-vanced|arm64": {
+      "app_name": "Facebook",
+      "arch": "arm64",
+      "at": 1787918084,
+      "out": "katana-490.0.0.63.82-de-vanced-arm64.apk",
+      "package": "com.facebook.katana",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 457019914,
+      "version": "490.0.0.63.82"
+    },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
