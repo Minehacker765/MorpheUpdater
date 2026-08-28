@@ -147,7 +147,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
             "jp.pxv.android": "Pixiv",
         }
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
-        name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg.rsplit(".", 1)[-1].capitalize()
+        name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg
         # Build patch dropdown for webpage
         patch_list_html = ""
         try:
@@ -161,7 +161,6 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                     _patches = _e.get("patches", {})
                     _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
                     if _enabled:
-                        # need descriptions - try to get from morphe-desktop list-patches cache
                         patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
                         for _pn in sorted(_enabled):
                             patch_list_html += f"<li>{_pn}</li>"
@@ -190,7 +189,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                 "ginlemon.iconpackstudio": "Icon Pack Studio", "com.facebook.orca": "Messenger",
                 "com.letterboxd.letterboxd": "Letterboxd", "com.nothing.smartcenter": "Nothing X",
                 "jp.pxv.android": "Pixiv",
-            }.get(pkg, pkg.rsplit(".", 1)[-1].capitalize())
+            }.get(pkg, pkg)
             from string import Template as _T2
             cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
 

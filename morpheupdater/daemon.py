@@ -51,7 +51,16 @@ def combo_id(combo: list[str]) -> str:
 
 
 def short(package: str) -> str:
-    return package.rsplit(".", 1)[-1]
+    # Use last two segments for packages that would collide on last segment (e.g. com.bandcamp.android vs jp.pxv.android -> android)
+    # For uniqueness, use the last segment, but if that segment is common (android, app, etc.), use more
+    last = package.rsplit(".", 1)[-1]
+    # common generic last segments that cause collisions
+    if last in {"android", "app", "client", "mobile"}:
+        parts = package.split(".")
+        if len(parts) >= 2:
+            return f"{parts[-2]}.{last}"
+        return package.replace(".", "_")
+    return last
 
 
 def options_path(package: str, combo: list[str]) -> Path:

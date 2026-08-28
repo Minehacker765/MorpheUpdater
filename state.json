@@ -4,7 +4,7 @@
       "app_name": "Proton VPN: Fast & Secure VPN",
       "arch": "arm64",
       "at": 1787912273,
-      "out": "android-5.19.43.0-hoodles-arm64.apk",
+      "out": "protonvpn.android-5.19.43.0-hoodles-arm64.apk",
       "package": "ch.protonvpn.android",
       "tags": {
         "hoodles": "v1.42.0"
@@ -40,7 +40,7 @@
       "app_name": "Bandcamp",
       "arch": "arm64",
       "at": 1787877414,
-      "out": "android-3.3.6-de-vanced-arm64.apk",
+      "out": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
       "package": "com.bandcamp.android",
       "tags": {
         "de-vanced": "v1.3.0-dev.4"
@@ -172,7 +172,7 @@
       "app_name": "SoundCloud: The Music You Love",
       "arch": "arm64",
       "at": 1787911917,
-      "out": "android-2026.08.26-release-hoodles-arm64.apk",
+      "out": "soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
       "package": "com.soundcloud.android",
       "tags": {
         "hoodles": "v1.42.0"
@@ -208,7 +208,7 @@
       "app_name": "pixiv",
       "arch": "arm64",
       "at": 1787877964,
-      "out": "android-6.141.1-de-vanced-arm64.apk",
+      "out": "pxv.android-6.141.1-de-vanced-arm64.apk",
       "package": "jp.pxv.android",
       "tags": {
         "de-vanced": "v1.3.0-dev.4"
@@ -232,7 +232,7 @@
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
       "at": 1787875309,
-      "out": "app-30.7.2-hoomans-arm64.apk",
+      "out": "android.app-30.7.2-hoomans-arm64.apk",
       "package": "tv.twitch.android.app",
       "tags": {
         "hoomans": "v1.51.1"

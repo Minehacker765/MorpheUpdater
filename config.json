@@ -201,6 +201,96 @@
         ]
       ],
       "display": "Pixiv"
+    },
+    {
+      "package": "com.amazon.avod.thirdpartyclient",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Prime Video"
+    },
+    {
+      "package": "com.duolingo",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Duolingo"
+    },
+    {
+      "package": "com.adobe.lrmobile",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Lightroom"
+    },
+    {
+      "package": "ch.protonvpn.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "ProtonVPN"
+    },
+    {
+      "package": "com.soundcloud.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "SoundCloud"
+    },
+    {
+      "package": "pl.solidexplorer2",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Solid Explorer"
+    },
+    {
+      "package": "videoeditor.videorecorder.screenrecorder",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "XRecorder"
+    },
+    {
+      "package": "ru.iiec.pydroid3",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "PyDroid3"
+    },
+    {
+      "package": "com.myfitnesspal.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "MyFitnessPal"
+    },
+    {
+      "package": "com.netflix.ninja",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Netflix TV"
     }
   ],
   "tools": {

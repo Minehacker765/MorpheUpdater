@@ -185,13 +185,63 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
                 return None
             best = max(candidates, key=lambda x: x[0])[1]
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_bytes(z.read(best))
+            # handle webp vs png
+            data = z.read(best)
+            # if it's webp, keep as is; if xml, fallback
+            if best.lower().endswith(".xml"):
+                # adaptive icon xml, use fallback with initials
+                raise ValueError("xml icon, use fallback")
+            dest.write_bytes(data)
             return dest.name
     except Exception as exc:
-        log.warning("icon extraction from %s failed: %s", apk.name, exc)
+        log.debug("icon extraction from %s failed: %s", apk.name, exc)
+        # try fallback with initials from package
+        try:
+            from PIL import Image, ImageDraw, ImageFont  # type: ignore
+
+            pkg = dest.stem  # e.g. com.duolingo
+            # use last part or first letters
+            parts = pkg.split(".")
+            initials = "".join(p[0].upper() for p in parts[-2:])[:2]  # Du -> Du
+            if pkg == "com.duolingo":
+                initials = "Du"
+            elif pkg == "com.bandcamp.android":
+                initials = "Ba"
+            elif pkg == "app.morphe.android.apps.photos":
+                initials = "Ph"
+            elif pkg == "jp.pxv.android":
+                initials = "Px"
+            elif "adguard" in pkg:
+                initials = "Ad"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            im = Image.new("RGB", (512, 512), "#1e1e1e")
+            d = ImageDraw.Draw(im)
+            # random color based on package hash
+            import hashlib
+
+            h = int(hashlib.md5(pkg.encode()).hexdigest()[:6], 16)
+            color = f"#{h & 0xFFFFFF:06x}"
+            d.ellipse([96, 96, 416, 416], fill=color)
+            try:
+                d.text((256, 256), initials, fill="white", anchor="mm", font=ImageFont.load_default())
+            except Exception:
+                pass
+            im.save(dest, "PNG")
+            return dest.name
+        except Exception:
+            pass
+        # last resort for microg
         if "microg" in apk.name.lower() or "mgoogle" in dest.name.lower():
             return _fallback_microg_icon(dest)
-        return None
+        # generic 1x1 fallback to ensure icon exists
+        try:
+            import base64
+
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
+            return dest.name
+        except Exception:
+            return None
 
 
 # ── repo certificate fingerprint ────────────────────────────────────────────
@@ -378,7 +428,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "jp.pxv.android": "Pixiv",
                 }
                 cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
-                app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package.rsplit(".", 1)[-1].capitalize()
+                app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package
             else:
                 if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                     log.warning("index: skipping %s (no metadata)", apk.name)
@@ -407,7 +457,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "jp.pxv.android": "Pixiv",
                 }
                 cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
-                app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package.rsplit(".", 1)[-1].capitalize()
+                app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package
 
             min_sdk, target_sdk = parse_manifest_sdk(apk)
             apk_name = apk.name

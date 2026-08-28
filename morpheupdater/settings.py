@@ -109,9 +109,18 @@ def load_state() -> dict:
 
 def validate_apps(cfg: dict) -> None:
     """Reject configs whose app short-names would collide in out/ or options/."""
+    def _short(pkg: str) -> str:
+        last = pkg.rsplit(".", 1)[-1]
+        if last in {"android", "app", "client", "mobile"}:
+            parts = pkg.split(".")
+            if len(parts) >= 2:
+                return f"{parts[-2]}.{last}"
+            return pkg.replace(".", "_")
+        return last
+
     seen: dict[str, str] = {}
     for app in cfg["apps"]:
-        name = app["package"].rsplit(".", 1)[-1]
+        name = _short(app["package"])
         if name in seen and seen[name] != app["package"]:
             raise SystemExit(
                 f"config error: packages {seen[name]!r} and {app['package']!r} "
