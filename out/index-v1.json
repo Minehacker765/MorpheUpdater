@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1787911955250,
+    "timestamp": 1787912016979,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -260,7 +260,7 @@
   "packages": {
     "com.soundcloud.android": [
       {
-        "added": 1787911918827,
+        "added": 1787911981065,
         "apkName": "android-2026.08.26-release-hoodles-arm64.apk",
         "hash": "8baffcb1003b4ede56c97868a195a4f751c875327cdcae286c5698153fd80c08",
         "hashType": "sha256",
@@ -277,7 +277,7 @@
     ],
     "com.bandcamp.android": [
       {
-        "added": 1787911920208,
+        "added": 1787911982433,
         "apkName": "android-3.3.6-de-vanced-arm64.apk",
         "hash": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
         "hashType": "sha256",
@@ -294,7 +294,7 @@
     ],
     "jp.pxv.android": [
       {
-        "added": 1787911921575,
+        "added": 1787911983882,
         "apkName": "android-6.141.1-de-vanced-arm64.apk",
         "hash": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
         "hashType": "sha256",
@@ -311,7 +311,7 @@
     ],
     "tv.twitch.android.app": [
       {
-        "added": 1787911924251,
+        "added": 1787911986544,
         "apkName": "app-30.7.2-hoomans-arm64.apk",
         "hash": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
         "hashType": "sha256",
@@ -328,7 +328,7 @@
     ],
     "com.chess": [
       {
-        "added": 1787911925933,
+        "added": 1787911988334,
         "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
         "hash": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
         "hashType": "sha256",
@@ -345,7 +345,7 @@
     ],
     "com.chess.prathxm": [
       {
-        "added": 1787911927738,
+        "added": 1787911990059,
         "apkName": "chess-4.10.0-prathxm-arm64.apk",
         "hash": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
         "hashType": "sha256",
@@ -362,7 +362,7 @@
     ],
     "com.duolingo": [
       {
-        "added": 1787911930747,
+        "added": 1787911992903,
         "apkName": "duolingo-6.92.5-hoodles-arm64.apk",
         "hash": "329e27790d8349dfee03ad89e643d393d5a631cbc2510c37b43ab93a60a51eee",
         "hashType": "sha256",
@@ -379,7 +379,7 @@
     ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1787911932568,
+        "added": 1787911994780,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
         "hash": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
         "hashType": "sha256",
@@ -396,7 +396,7 @@
     ],
     "ginlemon.iconpackstudio": [
       {
-        "added": 1787911933937,
+        "added": 1787911996155,
         "apkName": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
         "hash": "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f",
         "hashType": "sha256",
@@ -413,7 +413,7 @@
     ],
     "com.facebook.katana": [
       {
-        "added": 1787911935509,
+        "added": 1787911997764,
         "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
         "hash": "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17",
         "hashType": "sha256",
@@ -430,7 +430,7 @@
     ],
     "com.letterboxd.letterboxd": [
       {
-        "added": 1787911936702,
+        "added": 1787911998963,
         "apkName": "letterboxd-3.5.6-de-vanced-arm64.apk",
         "hash": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
         "hashType": "sha256",
@@ -447,7 +447,7 @@
     ],
     "de.gmx.mobile.android.mail": [
       {
-        "added": 1787911937936,
+        "added": 1787912000197,
         "apkName": "mail-9.15.1-de-vanced-arm64.apk",
         "hash": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
         "hashType": "sha256",
@@ -464,7 +464,7 @@
     ],
     "com.amazon.mp3": [
       {
-        "added": 1787911940411,
+        "added": 1787912002613,
         "apkName": "mp3-26.28.2-de-vanced-arm64.apk",
         "hash": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
         "hashType": "sha256",
@@ -481,7 +481,7 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1787911942045,
+        "added": 1787912004297,
         "apkName": "music-9.15.51-morphe-arm64.apk",
         "hash": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
         "hashType": "sha256",
@@ -498,7 +498,7 @@
     ],
     "com.facebook.orca": [
       {
-        "added": 1787911944172,
+        "added": 1787912006487,
         "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
         "hash": "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2",
         "hashType": "sha256",
@@ -515,7 +515,7 @@
     ],
     "com.microblink.photomath": [
       {
-        "added": 1787911945596,
+        "added": 1787912007809,
         "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
         "hash": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
         "hashType": "sha256",
@@ -532,7 +532,7 @@
     ],
     "app.morphe.android.apps.photos": [
       {
-        "added": 1787911947596,
+        "added": 1787912009694,
         "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
         "hash": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
         "hashType": "sha256",
@@ -549,7 +549,7 @@
     ],
     "com.nothing.smartcenter": [
       {
-        "added": 1787911948939,
+        "added": 1787912010984,
         "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
         "hash": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
         "hashType": "sha256",
@@ -566,7 +566,7 @@
     ],
     "pl.solidexplorer2": [
       {
-        "added": 1787911950954,
+        "added": 1787912012793,
         "apkName": "solidexplorer2-3.5.19-hoodles-arm64.apk",
         "hash": "826c982ea1599c682fd927c295a7581cc7191cd4e434a116342ac4a17aea87d0",
         "hashType": "sha256",
@@ -583,7 +583,7 @@
     ],
     "com.strava": [
       {
-        "added": 1787911952753,
+        "added": 1787912014542,
         "apkName": "strava-477.14-de-vanced-arm64.apk",
         "hash": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
         "hashType": "sha256",
@@ -600,7 +600,7 @@
     ],
     "app.morphe.android.youtube": [
       {
-        "added": 1787911955154,
+        "added": 1787912016866,
         "apkName": "youtube-21.04.223-morphe-arm64.apk",
         "hash": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
         "hashType": "sha256",
