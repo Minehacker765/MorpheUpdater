@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1787876099643,
+    "timestamp": 1787876542158,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -22,6 +22,56 @@
     ]
   },
   "packages": {
+    "com.chess": {
+      "metadata": {
+        "name": {
+          "en-US": "Chess"
+        },
+        "summary": {
+          "en-US": "Chess patched with Morphe"
+        },
+        "description": {
+          "en-US": "Chess patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/com.chess.png",
+            "sha256": "66eeecd90280a8a49f981334b049f93f34a2d42149e72e509339356628510c5a",
+            "size": 2695
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787876530428,
+        "lastUpdated": 1787876530428,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117": {
+          "added": 1787876530428,
+          "file": {
+            "name": "/chess-4.10.0-googleplay-prathxm-arm64.apk",
+            "sha256": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
+            "size": 258532784
+          },
+          "manifest": {
+            "versionName": "4.10.0-googleplay",
+            "versionCode": 268250,
+            "usesSdk": {
+              "minSdkVersion": 26,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
     "com.chess.prathxm": {
       "metadata": {
         "name": {
@@ -44,13 +94,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876089981,
-        "lastUpdated": 1787876089981,
+        "added": 1787876532050,
+        "lastUpdated": 1787876532050,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118": {
-          "added": 1787876089981,
+          "added": 1787876532050,
           "file": {
             "name": "/chess-4.10.0-prathxm-arm64.apk",
             "sha256": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
@@ -94,13 +144,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876094301,
-        "lastUpdated": 1787876094301,
+        "added": 1787876536656,
+        "lastUpdated": 1787876536656,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509": {
-          "added": 1787876094301,
+          "added": 1787876536656,
           "file": {
             "name": "/photomath-8.48.0-de-vanced-arm64.apk",
             "sha256": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
@@ -144,13 +194,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876095988,
-        "lastUpdated": 1787876095988,
+        "added": 1787876538549,
+        "lastUpdated": 1787876538549,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f": {
-          "added": 1787876095988,
+          "added": 1787876538549,
           "file": {
             "name": "/photos-7.89.0.968035987-de-vanced-arm64.apk",
             "sha256": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
@@ -194,13 +244,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876091615,
-        "lastUpdated": 1787876091615,
+        "added": 1787876533739,
+        "lastUpdated": 1787876533739,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17": {
-          "added": 1787876091615,
+          "added": 1787876533739,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
             "sha256": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
@@ -244,23 +294,23 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876097572,
-        "lastUpdated": 1787876097572,
+        "added": 1787876540211,
+        "lastUpdated": 1787876540211,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "75d27a43e7537725f30debdc4296263f6299d1460aeacdcc15c3c29fffc147cb": {
-          "added": 1787876097572,
+        "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a": {
+          "added": 1787876540211,
           "file": {
-            "name": "/strava-473.11-de-vanced-arm64.apk",
-            "sha256": "75d27a43e7537725f30debdc4296263f6299d1460aeacdcc15c3c29fffc147cb",
-            "size": 115871199
+            "name": "/strava-477.14-de-vanced-arm64.apk",
+            "sha256": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
+            "size": 117491017
           },
           "manifest": {
-            "versionName": "473.11",
-            "versionCode": 12398817,
+            "versionName": "477.14",
+            "versionCode": 12399244,
             "usesSdk": {
-              "minSdkVersion": 26,
+              "minSdkVersion": 32,
               "targetSdkVersion": 35
             },
             "signer": {
@@ -294,13 +344,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876088628,
-        "lastUpdated": 1787876088628,
+        "added": 1787876528987,
+        "lastUpdated": 1787876528987,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422": {
-          "added": 1787876088628,
+          "added": 1787876528987,
           "file": {
             "name": "/app-30.7.2-hoomans-arm64.apk",
             "sha256": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
@@ -344,13 +394,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876099553,
-        "lastUpdated": 1787876099553,
+        "added": 1787876542070,
+        "lastUpdated": 1787876542070,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55": {
-          "added": 1787876099553,
+          "added": 1787876542070,
           "file": {
             "name": "/youtube-21.04.223-morphe-arm64.apk",
             "sha256": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
@@ -394,13 +444,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787876093273,
-        "lastUpdated": 1787876093273,
+        "added": 1787876535546,
+        "lastUpdated": 1787876535546,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb": {
-          "added": 1787876093273,
+          "added": 1787876535546,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
             "sha256": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",

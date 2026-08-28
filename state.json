@@ -1,16 +1,16 @@
 {
   "builds": {
     "com.chess|prathxm|arm64": {
-      "app_name": "",
+      "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
-      "at": 1787874675,
-      "out": "chess-4.10.0-prathxm-arm64.apk",
+      "at": 1787876429,
+      "out": "chess-4.10.0-googleplay-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
         "prathxm": "v1.13.1-dev.4"
       },
       "vc": 268250,
-      "version": "4.10.0"
+      "version": "4.10.0-googleplay"
     },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
@@ -87,14 +87,14 @@
     "com.strava|de-vanced|arm64": {
       "app_name": "Strava: Run, Bike, Walk",
       "arch": "arm64",
-      "at": 1787875563,
-      "out": "strava-473.11-de-vanced-arm64.apk",
+      "at": 1787876497,
+      "out": "strava-477.14-de-vanced-arm64.apk",
       "package": "com.strava",
       "tags": {
         "de-vanced": "v1.3.0-dev.4"
       },
-      "vc": 12398817,
-      "version": "473.11"
+      "vc": 12399244,
+      "version": "477.14"
     },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",

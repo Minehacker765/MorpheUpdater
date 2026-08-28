@@ -52,7 +52,7 @@
                 "enabled": true
             },
             "Enable DCIM folders backup control": {
-                "enabled": false
+                "enabled": true
             },
             "Spoof features": {
                 "enabled": true,
@@ -131,7 +131,7 @@
                 "enabled": true
             },
             "Spoof package version": {
-                "enabled": false,
+                "enabled": true,
                 "options": {
                     "versionCode": "2147483647"
                 }
@@ -211,13 +211,247 @@
                 "enabled": true
             },
             "Debug mode": {
-                "enabled": false
+                "enabled": true
             },
             "Hide Ads": {
                 "enabled": true
             },
             "Hide navigation buttons": {
+                "enabled": true,
+                "options": {
+                    "hideExplore": true,
+                    "hidePay": true,
+                    "hideCamera": true,
+                    "hideMarketplace": true
+                }
+            }
+        }
+    },
+    {
+        "meta": {
+            "created_at": "2026-08-28T00:14:26.098979695Z",
+            "updated_at": "2026-08-28T00:22:06.533053359Z",
+            "source": "v1.3.0-dev.4__patches-1.3.0-dev.4.mpp",
+            "sha256": "fc05ccc5b6def9380aaf388eaae9782c6f2b5c446d113c0b0b0103712a491745"
+        },
+        "patches": {
+            "Change package name": {
                 "enabled": false,
+                "options": {
+                    "packageName": "Default",
+                    "updatePermissions": false,
+                    "updateProviders": false
+                }
+            },
+            "Always allow deep-linking": {
+                "enabled": true
+            },
+            "Skip ads": {
+                "enabled": true
+            },
+            "Rename shared permissions": {
+                "enabled": true
+            },
+            "Unlimited track skipping": {
+                "enabled": true
+            },
+            "Unlock Unlimited": {
+                "enabled": true
+            },
+            "Prevent log upload": {
+                "enabled": true
+            },
+            "Hide ads": {
+                "enabled": true
+            },
+            "Remove play limits": {
+                "enabled": true
+            },
+            "Hide 'Sponsored Stories'": {
+                "enabled": true
+            },
+            "Hide story ads": {
+                "enabled": true
+            },
+            "Force enable FreePhone": {
+                "enabled": true
+            },
+            "Hide Premium upgrade button": {
+                "enabled": true
+            },
+            "Enable DCIM folders backup control": {
+                "enabled": true
+            },
+            "Spoof features": {
+                "enabled": true,
+                "options": {
+                    "featuresToEnable": [
+                        "com.google.android.apps.photos.NEXUS_PRELOAD",
+                        "com.google.android.apps.photos.nexus_preload"
+                    ],
+                    "featuresToDisable": [
+                        "com.google.android.apps.photos.PIXEL_2017_PRELOAD",
+                        "com.google.android.apps.photos.PIXEL_2018_PRELOAD",
+                        "com.google.android.apps.photos.PIXEL_2019_MIDYEAR_PRELOAD",
+                        "com.google.android.apps.photos.PIXEL_2019_PRELOAD",
+                        "com.google.android.feature.PIXEL_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2017_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2018_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2019_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2019_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2020_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2020_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2021_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2021_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2022_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2022_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2023_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2023_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2024_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2024_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2025_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2025_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2026_MIDYEAR_EXPERIENCE",
+                        "com.google.android.feature.PIXEL_2026_EXPERIENCE"
+                    ]
+                }
+            },
+            "GmsCore support": {
+                "enabled": true
+            },
+            "Fix selected account persistence": {
+                "enabled": true
+            },
+            "Remove device restrictions": {
+                "enabled": true
+            },
+            "Disable ads": {
+                "enabled": true
+            },
+            "Unlock pro": {
+                "enabled": true
+            },
+            "Remove ads": {
+                "enabled": true
+            },
+            "Unlock app icons": {
+                "enabled": true
+            },
+            "Hide inbox ads": {
+                "enabled": true
+            },
+            "Hide inbox stories and notes tray": {
+                "enabled": true
+            },
+            "Hide inbox subtabs": {
+                "enabled": true
+            },
+            "Disable typing indicator": {
+                "enabled": true
+            },
+            "Hide Facebook buttons": {
+                "enabled": true
+            },
+            "Open links externally": {
+                "enabled": true
+            },
+            "Remove Meta AI": {
+                "enabled": true
+            },
+            "Spoof package version": {
+                "enabled": true,
+                "options": {
+                    "versionCode": "2147483647"
+                }
+            },
+            "Hide OneDrive migration": {
+                "enabled": true
+            },
+            "Show K1 token(s)": {
+                "enabled": true
+            },
+            "Spoof certificate": {
+                "enabled": true
+            },
+            "Spoof device ID": {
+                "enabled": true
+            },
+            "Hide update popup": {
+                "enabled": true
+            },
+            "Unlock plus": {
+                "enabled": true
+            },
+            "Bypass login": {
+                "enabled": true
+            },
+            "Remove popular search time limit": {
+                "enabled": true
+            },
+            "Hide distractions": {
+                "enabled": true,
+                "options": {
+                    "upselling": true,
+                    "promo": true,
+                    "followSuggestions": true,
+                    "challengeSuggestions": true,
+                    "joinChallenge": false,
+                    "joinClub": false,
+                    "activityLookback": false
+                }
+            },
+            "Add 'Give Kudos' button to 'Group Activity'": {
+                "enabled": true
+            },
+            "Add media download": {
+                "enabled": true
+            },
+            "Overwrite media upload parameters": {
+                "enabled": true,
+                "options": {
+                    "compressionQuality": null,
+                    "maxDuration": null,
+                    "maxSize": null
+                }
+            },
+            "Enable password login": {
+                "enabled": true
+            },
+            "Block Snowplow tracking": {
+                "enabled": true
+            },
+            "Disable Quick Edit": {
+                "enabled": true
+            },
+            "Add route export": {
+                "enabled": true
+            },
+            "Unlock subscription features": {
+                "enabled": true
+            },
+            "Block audio ads": {
+                "enabled": true
+            },
+            "Block embedded ads": {
+                "enabled": true
+            },
+            "Block video ads": {
+                "enabled": true
+            },
+            "Show deleted messages": {
+                "enabled": true
+            },
+            "Auto claim channel points": {
+                "enabled": true
+            },
+            "Debug mode": {
+                "enabled": true
+            },
+            "Hide Ads": {
+                "enabled": true
+            },
+            "Hide navigation buttons": {
+                "enabled": true,
                 "options": {
                     "hideExplore": true,
                     "hidePay": true,
