@@ -60,6 +60,18 @@
       "vc": 0,
       "version": "7.0.0-dev.3"
     },
+    "com.microblink.photomath|de-vanced|arm64": {
+      "app_name": "Photomath",
+      "arch": "arm64",
+      "at": 1787875962,
+      "out": "photomath-8.48.0-de-vanced-arm64.apk",
+      "package": "com.microblink.photomath",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 70001016,
+      "version": "8.48.0"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
