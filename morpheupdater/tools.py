@@ -385,16 +385,19 @@ async def patch(
     force: bool,
     striplibs: list[str],
     bytecode_mode: str,
+    cfg: dict | None = None,
 ) -> None:
+    use_prerelease = False
+    if cfg is not None:
+        use_prerelease = any(_bundle_prerelease(cfg, u) for u in urls)
+    else:
+        use_prerelease = True
     cmd = [java_bin(), "-Xmx4g", "-jar", str(jar), "patch"]
     for url in urls:
         cmd += ["-p", url]
-    cmd += [
-        "--prerelease",
-        "--options-file", str(options_file),
-        "--options-update",
-        "-t", str(TMP / "morphe"),
-    ]
+    cmd += ["--options-file", str(options_file), "--options-update", "-t", str(TMP / "morphe")]
+    if use_prerelease:
+        cmd.append("--prerelease")
     if not unsigned:
         cmd += signing_args()
     if unsigned:

@@ -58,6 +58,112 @@ def options_path(package: str, combo: list[str]) -> Path:
     return OPTIONS / f"{short(package)}.{combo_id(combo)}.json"
 
 
+def _get_bundle_urls(cfg: dict, combo: list[str]) -> list[str]:
+    urls = []
+    for b in combo:
+        spec = cfg["bundles"].get(b, "")
+        url = spec if isinstance(spec, str) else spec.get("url", "")
+        if url:
+            urls.append(url)
+    return urls
+
+
+def _get_local_mpp(bundle_name: str, url: str) -> pathlib.Path | None:
+    """Return cached MPP file for bundle if present (avoids GitHub API rate limit)."""
+    from pathlib import Path as _P
+    if "github.com" not in url:
+        return None
+    try:
+        repo = _repo_from_url(url) or ""
+        sanitized = repo.replace("/", "-")
+        cache_dir = ROOT / "bin" / "morphe-data" / "patches" / sanitized
+        if not cache_dir.exists():
+            return None
+        mpps = list(cache_dir.glob("*.mpp"))
+        mpps = [p for p in mpps if not p.name.endswith(".part")]
+        if not mpps:
+            return None
+        def _ver_key(p: _P):
+            import re
+            m = re.search(r"v(\d+\.\d+\.\d+(?:-dev\.\d+)?)", p.name)
+            if m:
+                v = m.group(1)
+                base = v.split("-")[0]
+                parts = [int(x) for x in base.split(".")]
+                is_dev = 1 if "-dev" in v else 0
+                if "-dev" in v:
+                    dev_num = int(v.split("-dev.")[-1]) if "-dev." in v else 0
+                    return (parts[0], parts[1], parts[2], 1, dev_num)
+                return (parts[0], parts[1], parts[2], 0, 999)
+            return (0, 0, 0, 0, 0)
+        mpps.sort(key=_ver_key, reverse=True)
+        return mpps[0]
+    except Exception:
+        return None
+
+
+def _get_patch_inputs(cfg: dict, combo: list[str]) -> list[str]:
+    """Return patch inputs for morphe-desktop: prefer local MPP cache to avoid GitHub rate limit."""
+    inputs = []
+    for b in combo:
+        spec = cfg["bundles"].get(b, "")
+        url = spec if isinstance(spec, str) else spec.get("url", "")
+        if not url:
+            continue
+        local = _get_local_mpp(b, url)
+        if local and local.exists():
+            inputs.append(str(local))
+        else:
+            inputs.append(url)
+    return inputs
+
+
+def _enable_all_patches(options_file: pathlib.Path) -> int:
+    """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
+    import json
+    BROKEN = {
+        "com.facebook.katana": {"Hide 'Sponsored Stories'"},
+        "com.facebook.orca": set(),
+    }
+    pkg_hint = options_file.name.split(".")[0]
+    short_to_pkg = {"katana": "com.facebook.katana", "orca": "com.facebook.orca", "facebook": "com.facebook.katana", "messenger": "com.facebook.orca"}
+    broken_for_this = BROKEN.get(short_to_pkg.get(pkg_hint, ""), set())
+    if not options_file.exists():
+        return 0
+    try:
+        data = json.loads(options_file.read_text())
+    except Exception:
+        return 0
+    changed = 0
+    entries = data if isinstance(data, list) else [data]
+    for entry in entries:
+        patches = entry.get("patches") if isinstance(entry, dict) else None
+        if not isinstance(patches, dict):
+            continue
+        for name, opts in patches.items():
+            if "Clone" in name or "Change package name" in name:
+                if isinstance(opts, dict) and opts.get("enabled"):
+                    opts["enabled"] = False
+                    changed += 1
+                continue
+            if name in broken_for_this:
+                if isinstance(opts, dict) and opts.get("enabled"):
+                    opts["enabled"] = False
+                    changed += 1
+                continue
+            if isinstance(opts, dict) and "enabled" in opts:
+                if not opts["enabled"]:
+                    opts["enabled"] = True
+                    changed += 1
+    if changed:
+        if isinstance(data, list):
+            options_file.write_text(json.dumps(data, indent=4) + "\n")
+        else:
+            options_file.write_text(json.dumps(data, indent=4) + "\n")
+    return changed
+
+
+
 def clean_tmp(cfg: dict) -> None:
     TMP.mkdir(parents=True, exist_ok=True)
     max_mb = cfg["tmp_max_mb"]
@@ -81,15 +187,134 @@ def _repo_from_url(url: str) -> str | None:
     return "/".join(parts[:2])
 
 
+def _bundle_url(spec) -> str:
+    return spec if isinstance(spec, str) else spec.get("url", "")
+
+
+def _bundle_prerelease(cfg: dict, name: str) -> bool:
+    spec = cfg["bundles"].get(name, "")
+    if isinstance(spec, str):
+        return True
+    return bool(spec.get("prerelease", True))
+
+
+def _get_local_mpp(bundle_name: str, url: str) -> Path | None:
+    """Return cached MPP file for bundle if present (avoids GitHub API rate limit)."""
+    if "github.com" not in url:
+        return None
+    try:
+        repo = _repo_from_url(url) or ""
+        sanitized = repo.replace("/", "-")
+        cache_dir = ROOT / "bin" / "morphe-data" / "patches" / sanitized
+        if not cache_dir.exists():
+            return None
+        mpps = list(cache_dir.glob("*.mpp"))
+        mpps = [p for p in mpps if not p.name.endswith(".part")]
+        if not mpps:
+            return None
+        def _ver_key(p: Path):
+            import re
+            m = re.search(r"v(\d+\.\d+\.\d+(?:-dev\.\d+)?)", p.name)
+            if m:
+                v = m.group(1)
+                base = v.split("-")[0]
+                parts = [int(x) for x in base.split(".")]
+                if "-dev" in v:
+                    dev_num = int(v.split("-dev.")[-1]) if "-dev." in v else 0
+                    return (parts[0], parts[1], parts[2], 1, dev_num)
+                return (parts[0], parts[1], parts[2], 0, 999)
+            return (0, 0, 0, 0, 0)
+        mpps.sort(key=_ver_key, reverse=True)
+        return mpps[0]
+    except Exception:
+        return None
+
+
+def _get_patch_inputs(cfg: dict, combo: list[str]) -> list[str]:
+    """Return patch inputs for morphe-desktop: prefer local MPP cache to avoid GitHub rate limit."""
+    inputs = []
+    for b in combo:
+        spec = cfg["bundles"].get(b, "")
+        url = spec if isinstance(spec, str) else spec.get("url", "")
+        if not url:
+            continue
+        local = _get_local_mpp(b, url)
+        if local and local.exists():
+            inputs.append(str(local))
+        else:
+            inputs.append(url)
+    return inputs
+
+
+def _get_bundle_urls(cfg: dict, combo: list[str]) -> list[str]:
+    urls = []
+    for b in combo:
+        spec = cfg["bundles"].get(b, "")
+        url = spec if isinstance(spec, str) else spec.get("url", "")
+        if url:
+            urls.append(url)
+    return urls
+
+
+def _enable_all_patches(options_file: Path) -> int:
+    """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
+    import json
+    BROKEN = {
+        "com.facebook.katana": {"Hide 'Sponsored Stories'"},
+        "com.facebook.orca": set(),
+    }
+    pkg_hint = options_file.name.split(".")[0]
+    short_to_pkg = {"katana": "com.facebook.katana", "orca": "com.facebook.orca", "facebook": "com.facebook.katana", "messenger": "com.facebook.orca"}
+    broken_for_this = BROKEN.get(short_to_pkg.get(pkg_hint, ""), set())
+    if not options_file.exists():
+        return 0
+    try:
+        data = json.loads(options_file.read_text())
+    except Exception:
+        return 0
+    changed = 0
+    entries = data if isinstance(data, list) else [data]
+    for entry in entries:
+        patches = entry.get("patches") if isinstance(entry, dict) else None
+        if not isinstance(patches, dict):
+            continue
+        for name, opts in patches.items():
+            if "Clone" in name or "Change package name" in name:
+                if isinstance(opts, dict) and opts.get("enabled"):
+                    opts["enabled"] = False
+                    changed += 1
+                continue
+            if name in broken_for_this:
+                if isinstance(opts, dict) and opts.get("enabled"):
+                    opts["enabled"] = False
+                    changed += 1
+                continue
+            if isinstance(opts, dict) and "enabled" in opts:
+                if not opts["enabled"]:
+                    opts["enabled"] = True
+                    changed += 1
+    if changed:
+        if isinstance(data, list):
+            options_file.write_text(json.dumps(data, indent=4) + "\n")
+        else:
+            options_file.write_text(json.dumps(data, indent=4) + "\n")
+    return changed
+
+
 async def check_bundles(session: ClientSession, cfg: dict, state: dict) -> dict[str, tuple]:
     changed: dict[str, tuple] = {}
-    for name, url in cfg["bundles"].items():
+    for name, spec in cfg["bundles"].items():
+        url = _bundle_url(spec)
+        prerelease = _bundle_prerelease(cfg, name)
         repo = _repo_from_url(url)
         if not repo:
             log.warning("bundle %s: cannot derive a GitHub repo from %s; assuming unchanged", name, url)
             continue
         try:
-            release = await tools.gh_latest_prerelease(session, repo)
+            if prerelease:
+                release = await tools.gh_latest_prerelease(session, repo)
+            else:
+                release = await tools.gh_latest_release(session, repo)
         except Exception as exc:
             log.warning("bundle %s: release check failed (%s); keeping %s", name, exc, state["bundles"].get(name, "?"))
             continue
@@ -374,7 +599,7 @@ async def build_one(
     summary: dict,
 ) -> None:
     cid = combo_id(combo)
-    urls = [cfg["bundles"][b] for b in combo]
+    urls = _get_bundle_urls(cfg, combo)
     missing = [b for b in combo if b not in cfg["bundles"]]
     if missing:
         raise RuntimeError(f"unknown bundle(s) in combo: {', '.join(missing)}")
@@ -429,8 +654,16 @@ async def build_one(
     summary["built"].append(out.name)
 
 
-async def cycle(commit_override: bool | None = None, release_override: bool | None = None) -> dict:
+async def cycle(commit_override: bool | None = None, release_override: bool | None = None, app_filter: str | None = None, clean_after: bool = False) -> dict:
     cfg = load_config()
+    # filter apps if requested (for low-storage one-by-one builds)
+    if app_filter:
+        orig_len = len(cfg.get("apps", []))
+        cfg["apps"] = [a for a in cfg.get("apps", []) if a.get("package") == app_filter or a.get("display", "").lower() == app_filter.lower() or app_filter.lower() in a.get("package", "").lower()]
+        if not cfg["apps"]:
+            raise SystemExit(f"no app matches filter {app_filter!r} (available: {[a.get('package') for a in load_config().get('apps', [])]})")
+        import logging as _log
+        _log.getLogger("daemon").info("single-app mode: %s (%d -> %d apps)", app_filter, orig_len, len(cfg["apps"]))
     validate_apps(cfg)
     if os.environ.get("FDROID_URL") and not (cfg.get("fdroid") or {}).get("url"):
         cfg.setdefault("fdroid", {})["url"] = os.environ["FDROID_URL"]
@@ -465,7 +698,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                 if ident in seen:
                     continue
                 seen.add(ident)
-                urls = [cfg["bundles"][b] for b in combo if b in cfg["bundles"]]
+                urls = _get_bundle_urls(cfg, combo)
                 if len(urls) != len(combo):
                     for arch in archs:
                         summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", "unknown bundle name"))
@@ -529,6 +762,17 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
             try:
                 await build_one(session, holder, cfg, state, app["package"], combo, version, vc, arch, summary)
                 log.info("built %s", label)
+                if clean_after:
+                    # free storage: remove this app's dl/merged/build cache
+                    for p in [TMP / "dl" / app["package"] / f"{vc}-{arch}", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk.tmp", TMP / "build"]:
+                        try:
+                            if p.is_dir():
+                                shutil.rmtree(p, ignore_errors=True)
+                            elif p.is_file():
+                                p.unlink(missing_ok=True)
+                        except Exception:
+                            pass
+                    log.info("cleaned tmp for %s (low-storage mode)", short(app["package"]))
             except Exception as exc:
                 log.error("failed %s: %s", label, exc)
                 summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))

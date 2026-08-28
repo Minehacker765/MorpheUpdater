@@ -450,10 +450,40 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 icon_rel = icon_path.name
 
             display = app_name.removesuffix(" Morphe")
-            summary = f"{display} patched with Morphe"
+            # Build detailed description with patch list
+            # Try to load patch descriptions from options file
+            patch_desc = ""
+            try:
+                import json as _js3
+                # find options file for this package
+                for _opt in (ROOT / "options").glob(f"{package.split('.')[-1]}.*.json"):
+                    if _opt.exists():
+                        _d = json.loads(_opt.read_text())
+                        _entries = _d if isinstance(_d, list) else [_d]
+                        for _e in _entries:
+                            _patches = _e.get("patches", {})
+                            _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
+                            if _enabled:
+                                patch_desc = "\n\nPatches (" + str(len(_enabled)) + "): " + ", ".join(sorted(_enabled)[:10])
+                                if len(_enabled) > 10:
+                                    patch_desc += f" +{len(_enabled)-10} more"
+                                break
+                        if patch_desc:
+                            break
+            except Exception:
+                pass
+            # Check if this is Android TV
+            is_tv = "androidtv" in str(cfg.get("bundles", {}).get("tv.twitch.android.app", "")) or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax"]
+            tv_note = " [Android TV] " if is_tv or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"] else ""
+            summary = f"{display}{tv_note} patched with Morphe ({len(patch_desc.split(',')) if patch_desc else 0} patches)"
+            # For universal, keep it short; for specific, include patch count
+            desc = f"{display}{tv_note} — {summary}{patch_desc}\n\nOriginal: {package} — {display} is {display.lower()} with enhancements."
+            # Keep it brief for F-Droid (max 4000 chars)
+            if len(desc) > 3500:
+                desc = desc[:3500]
             # For v1, prefer top-level `icon` (legacy /icons/ path) and keep
             # localized without icon so fdroidclient doesn't look in /$pkg/en-US/
-            en: dict = {"name": app_name, "summary": summary, "description": summary}
+            en: dict = {"name": app_name, "summary": summary, "description": desc}
             if package not in apps:
                 apps[package] = {
                     "packageName": package,

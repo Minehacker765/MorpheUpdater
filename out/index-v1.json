@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1787912765388,
+    "timestamp": 1787912885162,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -16,8 +16,8 @@
       "localized": {
         "en-US": {
           "name": "Amazon Music",
-          "summary": "Amazon Music patched with Morphe",
-          "description": "Amazon Music patched with Morphe"
+          "summary": "Amazon Music patched with Morphe (10 patches)",
+          "description": "Amazon Music \u2014 Amazon Music patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.amazon.mp3 \u2014 Amazon Music is amazon music with enhancements."
         }
       },
       "icon": "com.amazon.mp3.png"
@@ -28,8 +28,8 @@
       "localized": {
         "en-US": {
           "name": "Bandcamp",
-          "summary": "Bandcamp patched with Morphe",
-          "description": "Bandcamp patched with Morphe"
+          "summary": "Bandcamp patched with Morphe (10 patches)",
+          "description": "Bandcamp \u2014 Bandcamp patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.bandcamp.android \u2014 Bandcamp is bandcamp with enhancements."
         }
       }
     },
@@ -39,8 +39,8 @@
       "localized": {
         "en-US": {
           "name": "Chess",
-          "summary": "Chess patched with Morphe",
-          "description": "Chess patched with Morphe"
+          "summary": "Chess patched with Morphe (6 patches)",
+          "description": "Chess \u2014 Chess patched with Morphe (6 patches)\n\nPatches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots\n\nOriginal: com.chess \u2014 Chess is chess with enhancements."
         }
       },
       "icon": "com.chess.png"
@@ -51,8 +51,8 @@
       "localized": {
         "en-US": {
           "name": "Chess",
-          "summary": "Chess patched with Morphe",
-          "description": "Chess patched with Morphe"
+          "summary": "Chess patched with Morphe (0 patches)",
+          "description": "Chess \u2014 Chess patched with Morphe (0 patches)\n\nOriginal: com.chess.prathxm \u2014 Chess is chess with enhancements."
         }
       },
       "icon": "com.chess.prathxm.png"
@@ -63,8 +63,8 @@
       "localized": {
         "en-US": {
           "name": "Duolingo",
-          "summary": "Duolingo patched with Morphe",
-          "description": "Duolingo patched with Morphe"
+          "summary": "Duolingo patched with Morphe (10 patches)",
+          "description": "Duolingo \u2014 Duolingo patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.duolingo \u2014 Duolingo is duolingo with enhancements."
         }
       }
     },
@@ -74,8 +74,8 @@
       "localized": {
         "en-US": {
           "name": "Facebook",
-          "summary": "Facebook patched with Morphe",
-          "description": "Facebook patched with Morphe"
+          "summary": "Facebook patched with Morphe (10 patches)",
+          "description": "Facebook \u2014 Facebook patched with Morphe (10 patches)\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.facebook.katana \u2014 Facebook is facebook with enhancements."
         }
       }
     },
@@ -85,8 +85,8 @@
       "localized": {
         "en-US": {
           "name": "GMX Mail",
-          "summary": "GMX Mail patched with Morphe",
-          "description": "GMX Mail patched with Morphe"
+          "summary": "GMX Mail patched with Morphe (10 patches)",
+          "description": "GMX Mail \u2014 GMX Mail patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: de.gmx.mobile.android.mail \u2014 GMX Mail is gmx mail with enhancements."
         }
       },
       "icon": "de.gmx.mobile.android.mail.png"
@@ -97,8 +97,8 @@
       "localized": {
         "en-US": {
           "name": "Google Photos",
-          "summary": "Google Photos patched with Morphe",
-          "description": "Google Photos patched with Morphe"
+          "summary": "Google Photos patched with Morphe (10 patches)",
+          "description": "Google Photos \u2014 Google Photos patched with Morphe (10 patches)\n\nPatches (49): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +39 more\n\nOriginal: app.morphe.android.apps.photos \u2014 Google Photos is google photos with enhancements."
         }
       }
     },
@@ -108,8 +108,8 @@
       "localized": {
         "en-US": {
           "name": "Icon Pack Studio",
-          "summary": "Icon Pack Studio patched with Morphe",
-          "description": "Icon Pack Studio patched with Morphe"
+          "summary": "Icon Pack Studio patched with Morphe (0 patches)",
+          "description": "Icon Pack Studio \u2014 Icon Pack Studio patched with Morphe (0 patches)\n\nOriginal: ginlemon.iconpackstudio \u2014 Icon Pack Studio is icon pack studio with enhancements."
         }
       },
       "icon": "ginlemon.iconpackstudio.png"
@@ -120,8 +120,8 @@
       "localized": {
         "en-US": {
           "name": "Letterboxd",
-          "summary": "Letterboxd patched with Morphe",
-          "description": "Letterboxd patched with Morphe"
+          "summary": "Letterboxd patched with Morphe (10 patches)",
+          "description": "Letterboxd \u2014 Letterboxd patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.letterboxd.letterboxd \u2014 Letterboxd is letterboxd with enhancements."
         }
       },
       "icon": "com.letterboxd.letterboxd.png"
@@ -132,8 +132,8 @@
       "localized": {
         "en-US": {
           "name": "Lightroom",
-          "summary": "Lightroom patched with Morphe",
-          "description": "Lightroom patched with Morphe"
+          "summary": "Lightroom patched with Morphe (10 patches)",
+          "description": "Lightroom \u2014 Lightroom patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.adobe.lrmobile \u2014 Lightroom is lightroom with enhancements."
         }
       },
       "icon": "com.adobe.lrmobile.png"
@@ -144,8 +144,8 @@
       "localized": {
         "en-US": {
           "name": "Messenger",
-          "summary": "Messenger patched with Morphe",
-          "description": "Messenger patched with Morphe"
+          "summary": "Messenger patched with Morphe (8 patches)",
+          "description": "Messenger \u2014 Messenger patched with Morphe (8 patches)\n\nPatches (8): Disable typing indicator, Hide Facebook buttons, Hide inbox ads, Hide inbox stories and notes tray, Hide inbox subtabs, Open links externally, Remove Meta AI, Spoof package version\n\nOriginal: com.facebook.orca \u2014 Messenger is messenger with enhancements."
         }
       }
     },
@@ -155,8 +155,8 @@
       "localized": {
         "en-US": {
           "name": "Nothing X",
-          "summary": "Nothing X patched with Morphe",
-          "description": "Nothing X patched with Morphe"
+          "summary": "Nothing X patched with Morphe (10 patches)",
+          "description": "Nothing X \u2014 Nothing X patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.nothing.smartcenter \u2014 Nothing X is nothing x with enhancements."
         }
       },
       "icon": "com.nothing.smartcenter.png"
@@ -167,8 +167,8 @@
       "localized": {
         "en-US": {
           "name": "Photomath",
-          "summary": "Photomath patched with Morphe",
-          "description": "Photomath patched with Morphe"
+          "summary": "Photomath patched with Morphe (10 patches)",
+          "description": "Photomath \u2014 Photomath patched with Morphe (10 patches)\n\nPatches (48): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +38 more\n\nOriginal: com.microblink.photomath \u2014 Photomath is photomath with enhancements."
         }
       },
       "icon": "com.microblink.photomath.png"
@@ -179,19 +179,19 @@
       "localized": {
         "en-US": {
           "name": "Pixiv",
-          "summary": "Pixiv patched with Morphe",
-          "description": "Pixiv patched with Morphe"
+          "summary": "Pixiv patched with Morphe (10 patches)",
+          "description": "Pixiv \u2014 Pixiv patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: jp.pxv.android \u2014 Pixiv is pixiv with enhancements."
         }
       }
     },
     {
       "packageName": "ch.protonvpn.android",
-      "name": "Proton VPN",
+      "name": "ProtonVPN",
       "localized": {
         "en-US": {
-          "name": "Proton VPN",
-          "summary": "Proton VPN patched with Morphe",
-          "description": "Proton VPN patched with Morphe"
+          "name": "ProtonVPN",
+          "summary": "ProtonVPN patched with Morphe (10 patches)",
+          "description": "ProtonVPN \u2014 ProtonVPN patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: ch.protonvpn.android \u2014 ProtonVPN is protonvpn with enhancements."
         }
       },
       "icon": "ch.protonvpn.android.png"
@@ -202,8 +202,8 @@
       "localized": {
         "en-US": {
           "name": "Reddit",
-          "summary": "Reddit patched with Morphe",
-          "description": "Reddit patched with Morphe"
+          "summary": "Reddit patched with Morphe (0 patches)",
+          "description": "Reddit \u2014 Reddit patched with Morphe (0 patches)\n\nOriginal: com.reddit.frontpage.morphe \u2014 Reddit is reddit with enhancements."
         }
       },
       "icon": "com.reddit.frontpage.morphe.png"
@@ -214,8 +214,8 @@
       "localized": {
         "en-US": {
           "name": "Solid Explorer",
-          "summary": "Solid Explorer patched with Morphe",
-          "description": "Solid Explorer patched with Morphe"
+          "summary": "Solid Explorer patched with Morphe (10 patches)",
+          "description": "Solid Explorer \u2014 Solid Explorer patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: pl.solidexplorer2 \u2014 Solid Explorer is solid explorer with enhancements."
         }
       },
       "icon": "pl.solidexplorer2.png"
@@ -226,8 +226,8 @@
       "localized": {
         "en-US": {
           "name": "SoundCloud",
-          "summary": "SoundCloud patched with Morphe",
-          "description": "SoundCloud patched with Morphe"
+          "summary": "SoundCloud patched with Morphe (10 patches)",
+          "description": "SoundCloud \u2014 SoundCloud patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.soundcloud.android \u2014 SoundCloud is soundcloud with enhancements."
         }
       },
       "icon": "com.soundcloud.android.png"
@@ -238,8 +238,8 @@
       "localized": {
         "en-US": {
           "name": "Strava",
-          "summary": "Strava patched with Morphe",
-          "description": "Strava patched with Morphe"
+          "summary": "Strava patched with Morphe (10 patches)",
+          "description": "Strava \u2014 Strava patched with Morphe (10 patches)\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.strava \u2014 Strava is strava with enhancements."
         }
       },
       "icon": "com.strava.png"
@@ -250,8 +250,8 @@
       "localized": {
         "en-US": {
           "name": "Twitch",
-          "summary": "Twitch patched with Morphe",
-          "description": "Twitch patched with Morphe"
+          "summary": "Twitch patched with Morphe (10 patches)",
+          "description": "Twitch \u2014 Twitch patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: tv.twitch.android.app \u2014 Twitch is twitch with enhancements."
         }
       },
       "icon": "tv.twitch.android.app.png"
@@ -262,8 +262,8 @@
       "localized": {
         "en-US": {
           "name": "XRecorder",
-          "summary": "XRecorder patched with Morphe",
-          "description": "XRecorder patched with Morphe"
+          "summary": "XRecorder patched with Morphe (10 patches)",
+          "description": "XRecorder \u2014 XRecorder patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: videoeditor.videorecorder.screenrecorder \u2014 XRecorder is xrecorder with enhancements."
         }
       },
       "icon": "videoeditor.videorecorder.screenrecorder.png"
@@ -274,8 +274,8 @@
       "localized": {
         "en-US": {
           "name": "YouTube",
-          "summary": "YouTube patched with Morphe",
-          "description": "YouTube patched with Morphe"
+          "summary": "YouTube patched with Morphe (10 patches)",
+          "description": "YouTube \u2014 YouTube patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.youtube \u2014 YouTube is youtube with enhancements."
         }
       },
       "icon": "app.morphe.android.youtube.png"
@@ -286,8 +286,8 @@
       "localized": {
         "en-US": {
           "name": "YouTube Music",
-          "summary": "YouTube Music patched with Morphe",
-          "description": "YouTube Music patched with Morphe"
+          "summary": "YouTube Music patched with Morphe (10 patches)",
+          "description": "YouTube Music \u2014 YouTube Music patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.apps.youtube.music \u2014 YouTube Music is youtube music with enhancements."
         }
       },
       "icon": "app.morphe.android.apps.youtube.music.png"
@@ -296,7 +296,7 @@
   "packages": {
     "com.soundcloud.android": [
       {
-        "added": 1787912724398,
+        "added": 1787912842815,
         "apkName": "android-2026.08.26-release-hoodles-arm64.apk",
         "hash": "8baffcb1003b4ede56c97868a195a4f751c875327cdcae286c5698153fd80c08",
         "hashType": "sha256",
@@ -313,7 +313,7 @@
     ],
     "com.bandcamp.android": [
       {
-        "added": 1787912725698,
+        "added": 1787912844148,
         "apkName": "android-3.3.6-de-vanced-arm64.apk",
         "hash": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
         "hashType": "sha256",
@@ -330,7 +330,7 @@
     ],
     "ch.protonvpn.android": [
       {
-        "added": 1787912726917,
+        "added": 1787912845476,
         "apkName": "android-5.19.43.0-hoodles-arm64.apk",
         "hash": "e322fbfa70550ce0d5cb1876f162185dc2360016e847982da3f5f89ea3e0eef2",
         "hashType": "sha256",
@@ -338,7 +338,7 @@
         "versionCode": 605194300,
         "versionName": "5.19.43.0",
         "size": 36726155,
-        "appName": "Proton VPN",
+        "appName": "ProtonVPN",
         "minSdkVersion": 26,
         "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
@@ -347,7 +347,7 @@
     ],
     "jp.pxv.android": [
       {
-        "added": 1787912728288,
+        "added": 1787912846846,
         "apkName": "android-6.141.1-de-vanced-arm64.apk",
         "hash": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
         "hashType": "sha256",
@@ -364,7 +364,7 @@
     ],
     "tv.twitch.android.app": [
       {
-        "added": 1787912730956,
+        "added": 1787912849544,
         "apkName": "app-30.7.2-hoomans-arm64.apk",
         "hash": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
         "hashType": "sha256",
@@ -381,7 +381,7 @@
     ],
     "com.chess": [
       {
-        "added": 1787912732533,
+        "added": 1787912851304,
         "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
         "hash": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
         "hashType": "sha256",
@@ -398,7 +398,7 @@
     ],
     "com.chess.prathxm": [
       {
-        "added": 1787912734271,
+        "added": 1787912853099,
         "apkName": "chess-4.10.0-prathxm-arm64.apk",
         "hash": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
         "hashType": "sha256",
@@ -415,7 +415,7 @@
     ],
     "com.duolingo": [
       {
-        "added": 1787912737333,
+        "added": 1787912856363,
         "apkName": "duolingo-6.92.5-hoodles-arm64.apk",
         "hash": "329e27790d8349dfee03ad89e643d393d5a631cbc2510c37b43ab93a60a51eee",
         "hashType": "sha256",
@@ -432,7 +432,7 @@
     ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1787912739306,
+        "added": 1787912858388,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
         "hash": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
         "hashType": "sha256",
@@ -449,7 +449,7 @@
     ],
     "ginlemon.iconpackstudio": [
       {
-        "added": 1787912740853,
+        "added": 1787912859977,
         "apkName": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
         "hash": "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f",
         "hashType": "sha256",
@@ -466,7 +466,7 @@
     ],
     "com.facebook.katana": [
       {
-        "added": 1787912742509,
+        "added": 1787912861675,
         "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
         "hash": "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17",
         "hashType": "sha256",
@@ -483,7 +483,7 @@
     ],
     "com.letterboxd.letterboxd": [
       {
-        "added": 1787912743779,
+        "added": 1787912863030,
         "apkName": "letterboxd-3.5.6-de-vanced-arm64.apk",
         "hash": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
         "hashType": "sha256",
@@ -500,7 +500,7 @@
     ],
     "com.adobe.lrmobile": [
       {
-        "added": 1787912745287,
+        "added": 1787912864708,
         "apkName": "lrmobile-11.5.01-hoodles-arm64.apk",
         "hash": "58690a0f200694b4993b5df4603d4d97613c20c458708c1406ea04d02fea3d19",
         "hashType": "sha256",
@@ -517,7 +517,7 @@
     ],
     "de.gmx.mobile.android.mail": [
       {
-        "added": 1787912746784,
+        "added": 1787912866138,
         "apkName": "mail-9.15.1-de-vanced-arm64.apk",
         "hash": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
         "hashType": "sha256",
@@ -534,7 +534,7 @@
     ],
     "com.amazon.mp3": [
       {
-        "added": 1787912749290,
+        "added": 1787912868793,
         "apkName": "mp3-26.28.2-de-vanced-arm64.apk",
         "hash": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
         "hashType": "sha256",
@@ -551,7 +551,7 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1787912751043,
+        "added": 1787912870666,
         "apkName": "music-9.15.51-morphe-arm64.apk",
         "hash": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
         "hashType": "sha256",
@@ -568,7 +568,7 @@
     ],
     "com.facebook.orca": [
       {
-        "added": 1787912753199,
+        "added": 1787912872964,
         "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
         "hash": "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2",
         "hashType": "sha256",
@@ -585,7 +585,7 @@
     ],
     "com.microblink.photomath": [
       {
-        "added": 1787912754574,
+        "added": 1787912874379,
         "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
         "hash": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
         "hashType": "sha256",
@@ -602,7 +602,7 @@
     ],
     "app.morphe.android.apps.photos": [
       {
-        "added": 1787912756593,
+        "added": 1787912876432,
         "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
         "hash": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
         "hashType": "sha256",
@@ -619,7 +619,7 @@
     ],
     "videoeditor.videorecorder.screenrecorder": [
       {
-        "added": 1787912757907,
+        "added": 1787912877785,
         "apkName": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
         "hash": "4bb770e94f63b4b83ab0ca1b65a550354f14c417f654f52701c10313d0848ee7",
         "hashType": "sha256",
@@ -636,7 +636,7 @@
     ],
     "com.nothing.smartcenter": [
       {
-        "added": 1787912759206,
+        "added": 1787912879033,
         "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
         "hash": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
         "hashType": "sha256",
@@ -653,7 +653,7 @@
     ],
     "pl.solidexplorer2": [
       {
-        "added": 1787912761206,
+        "added": 1787912880969,
         "apkName": "solidexplorer2-3.5.19-hoodles-arm64.apk",
         "hash": "826c982ea1599c682fd927c295a7581cc7191cd4e434a116342ac4a17aea87d0",
         "hashType": "sha256",
@@ -670,7 +670,7 @@
     ],
     "com.strava": [
       {
-        "added": 1787912762956,
+        "added": 1787912882708,
         "apkName": "strava-477.14-de-vanced-arm64.apk",
         "hash": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
         "hashType": "sha256",
@@ -687,7 +687,7 @@
     ],
     "app.morphe.android.youtube": [
       {
-        "added": 1787912765299,
+        "added": 1787912885069,
         "apkName": "youtube-21.04.223-morphe-arm64.apk",
         "hash": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
         "hashType": "sha256",

@@ -148,8 +148,34 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         }
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg.rsplit(".", 1)[-1].capitalize()
+        # Build patch dropdown for webpage
+        patch_list_html = ""
+        try:
+            import json as _js3
+            for _opt in (ROOT / "options").glob(f"{pkg.split('.')[-1]}.*.json"):
+                if not _opt.exists():
+                    continue
+                _d = json.loads(_opt.read_text())
+                _entries = _d if isinstance(_d, list) else [_d]
+                for _e in _entries:
+                    _patches = _e.get("patches", {})
+                    _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
+                    if _enabled:
+                        # need descriptions - try to get from morphe-desktop list-patches cache
+                        patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
+                        for _pn in sorted(_enabled):
+                            patch_list_html += f"<li>{_pn}</li>"
+                        patch_list_html += "</ul></details>"
+                        break
+                if patch_list_html:
+                    break
+        except Exception:
+            pass
+        # Check TV
+        is_tv = pkg in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"]
+        tv_badge = " <span style='background:#2a2a30;padding:2px 6px;border-radius:4px;font-size:0.7rem'>TV</span>" if is_tv else ""
         from string import Template as _T
-        cards_html += _T(CARD).substitute(icon=icon, name=name, pkg=pkg, ver=ver, arch=arch, patches=patches_str, dl=dl)
+        cards_html += _T(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)
 
     if not cards_html:
         for app in cfg.get("apps", []):
