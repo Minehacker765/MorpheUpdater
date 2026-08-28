@@ -180,9 +180,50 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
                     rank = _DPI_RANK.get(m.group(1), 0) if m else 0
                     candidates.append(((0, 0, rank, z.getinfo(name).file_size), name))
             if not candidates:
+                # for packages with no mipmap/ic_launcher (e.g. Duolingo XML, Bandcamp, Photos, Pixiv) - generate fallback with initials
+                try:
+                    from PIL import Image, ImageDraw, ImageFont  # type: ignore
+
+                    pkg = dest.stem
+                    parts = pkg.split(".")
+                    initials = "".join(p[0].upper() for p in parts[-2:])[:2]
+                    if pkg == "com.duolingo":
+                        initials = "Du"
+                    elif pkg == "com.bandcamp.android":
+                        initials = "Ba"
+                    elif pkg == "app.morphe.android.apps.photos":
+                        initials = "Ph"
+                    elif pkg == "jp.pxv.android":
+                        initials = "Px"
+                    elif "adguard" in pkg:
+                        initials = "Ad"
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    im = Image.new("RGB", (512, 512), "#1e1e1e")
+                    d = ImageDraw.Draw(im)
+                    import hashlib
+
+                    h = int(hashlib.md5(pkg.encode()).hexdigest()[:6], 16)
+                    color = f"#{h & 0xFFFFFF:06x}"
+                    d.ellipse([96, 96, 416, 416], fill=color)
+                    try:
+                        d.text((256, 256), initials, fill="white", anchor="mm", font=ImageFont.load_default())
+                    except Exception:
+                        pass
+                    im.save(dest, "PNG")
+                    return dest.name
+                except Exception:
+                    pass
                 if "microg" in apk.name.lower() or "mgoogle" in dest.name.lower():
                     return _fallback_microg_icon(dest)
-                return None
+                # generic 1x1
+                try:
+                    import base64
+
+                    dest.parent.mkdir(parents=True, exist_ok=True)
+                    dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
+                    return dest.name
+                except Exception:
+                    return None
             best = max(candidates, key=lambda x: x[0])[1]
             dest.parent.mkdir(parents=True, exist_ok=True)
             # handle webp vs png
