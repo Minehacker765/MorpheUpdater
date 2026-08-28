@@ -36,6 +36,18 @@
       "vc": 268250,
       "version": "4.10.0"
     },
+    "com.duolingo|hoodles|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1787911584,
+      "out": "duolingo-6.92.5-hoodles-arm64.apk",
+      "package": "com.duolingo",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 2433,
+      "version": "6.92.5"
+    },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
