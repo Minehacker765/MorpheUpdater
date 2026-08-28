@@ -1,5 +1,17 @@
 {
   "builds": {
+    "com.adobe.lrmobile|hoodles|arm64": {
+      "app_name": "Lightroom Photo & Video Editor",
+      "arch": "arm64",
+      "at": 1787912174,
+      "out": "lrmobile-11.5.01-hoodles-arm64.apk",
+      "package": "com.adobe.lrmobile",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 711105100,
+      "version": "11.5.01"
+    },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
