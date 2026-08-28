@@ -144,6 +144,18 @@
       "vc": 2614140,
       "version": "2026.14.0"
     },
+    "com.soundcloud.android|hoodles|arm64": {
+      "app_name": "SoundCloud: The Music You Love",
+      "arch": "arm64",
+      "at": 1787911917,
+      "out": "android-2026.08.26-release-hoodles-arm64.apk",
+      "package": "com.soundcloud.android",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 369070,
+      "version": "2026.08.26-release"
+    },
     "com.strava|de-vanced|arm64": {
       "app_name": "Strava: Run, Bike, Walk",
       "arch": "arm64",
