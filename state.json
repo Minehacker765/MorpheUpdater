@@ -60,6 +60,18 @@
       "vc": 2614140,
       "version": "2026.14.0"
     },
+    "com.strava|de-vanced|arm64": {
+      "app_name": "Strava: Run, Bike, Walk",
+      "arch": "arm64",
+      "at": 1787875563,
+      "out": "strava-473.11-de-vanced-arm64.apk",
+      "package": "com.strava",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 12398817,
+      "version": "473.11"
+    },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
