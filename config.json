@@ -10,7 +10,35 @@
   "bundles": {
     "morphe": "https://github.com/MorpheApp/morphe-patches",
     "prathxm": "https://github.com/PrathxmOp/Prathxm-Patches",
-    "microg": "https://github.com/MorpheApp/MicroG-RE"
+    "microg": "https://github.com/MorpheApp/MicroG-RE",
+    "de-vanced": {
+      "url": "https://github.com/RookieEnough/De-Vanced",
+      "prerelease": true
+    },
+    "androidtv": {
+      "url": "https://github.com/ajstrick81/morphe-androidtv-patches",
+      "prerelease": false
+    },
+    "hoodles": {
+      "url": "https://github.com/hoo-dles/morphe-patches",
+      "prerelease": false
+    },
+    "xtra": {
+      "url": "https://github.com/BholeyKaBhakt/android-patches-xtra",
+      "prerelease": false
+    },
+    "hxreborn": {
+      "url": "https://github.com/hxreborn/morphe-patches",
+      "prerelease": false
+    },
+    "tiktok-hx": {
+      "url": "https://github.com/hxreborn/hxreborn-tiktok-patches",
+      "prerelease": false
+    },
+    "hoomans": {
+      "url": "https://github.com/arandomhooman/hoomans-morphe-patches",
+      "prerelease": false
+    }
   },
   "apps": [
     {
@@ -56,6 +84,123 @@
         ]
       ],
       "display": "MicroG"
+    },
+    {
+      "package": "tv.twitch.android.app",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Twitch"
+    },
+    {
+      "package": "com.strava",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Strava"
+    },
+    {
+      "package": "com.google.android.apps.photos",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Google Photos"
+    },
+    {
+      "package": "com.microblink.photomath",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Photomath"
+    },
+    {
+      "package": "com.facebook.katana",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Facebook"
+    },
+    {
+      "package": "com.amazon.mp3",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Amazon Music"
+    },
+    {
+      "package": "com.bandcamp.android",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Bandcamp"
+    },
+    {
+      "package": "de.gmx.mobile.android.mail",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "GMX Mail"
+    },
+    {
+      "package": "ginlemon.iconpackstudio",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Icon Pack Studio"
+    },
+    {
+      "package": "com.facebook.orca",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Messenger"
+    },
+    {
+      "package": "com.letterboxd.letterboxd",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Letterboxd"
+    },
+    {
+      "package": "com.nothing.smartcenter",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Nothing X"
+    },
+    {
+      "package": "jp.pxv.android",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Pixiv"
     }
   ],
   "tools": {
@@ -80,5 +225,6 @@
   "release": true,
   "archs": [
     "arm64"
-  ]
+  ],
+  "enable_all_patches": true
 }
