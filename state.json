@@ -59,6 +59,18 @@
       },
       "vc": 2614140,
       "version": "2026.14.0"
+    },
+    "tv.twitch.android.app|hoomans|arm64": {
+      "app_name": "Twitch: Live Streaming",
+      "arch": "arm64",
+      "at": 1787875309,
+      "out": "app-30.7.2-hoomans-arm64.apk",
+      "package": "tv.twitch.android.app",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 3007026,
+      "version": "30.7.2"
     }
   },
   "bundles": {

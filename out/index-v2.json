@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1787874698901,
+    "timestamp": 1787875318825,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -44,13 +44,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787874692557,
-        "lastUpdated": 1787874692557,
+        "added": 1787875313489,
+        "lastUpdated": 1787875313489,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118": {
-          "added": 1787874692557,
+          "added": 1787875313489,
           "file": {
             "name": "/chess-4.10.0-prathxm-arm64.apk",
             "sha256": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
@@ -94,13 +94,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787874694448,
-        "lastUpdated": 1787874694448,
+        "added": 1787875315089,
+        "lastUpdated": 1787875315089,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17": {
-          "added": 1787874694448,
+          "added": 1787875315089,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
             "sha256": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
@@ -111,6 +111,56 @@
             "versionCode": 2147483647,
             "usesSdk": {
               "minSdkVersion": 29,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "tv.twitch.android.app": {
+      "metadata": {
+        "name": {
+          "en-US": "Twitch"
+        },
+        "summary": {
+          "en-US": "Twitch patched with Morphe"
+        },
+        "description": {
+          "en-US": "Twitch patched with Morphe"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/icons/tv.twitch.android.app.png",
+            "sha256": "24b6ef30d610b7aa107a645af6a49b72e88e6b9691e5e1c2dbf4be33dbf71196",
+            "size": 4133
+          }
+        },
+        "categories": [
+          "Other"
+        ],
+        "license": "Unknown",
+        "added": 1787875312067,
+        "lastUpdated": 1787875312067,
+        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+      },
+      "versions": {
+        "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422": {
+          "added": 1787875312067,
+          "file": {
+            "name": "/app-30.7.2-hoomans-arm64.apk",
+            "sha256": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
+            "size": 97512162
+          },
+          "manifest": {
+            "versionName": "30.7.2",
+            "versionCode": 3007026,
+            "usesSdk": {
+              "minSdkVersion": 26,
               "targetSdkVersion": 36
             },
             "signer": {
@@ -144,13 +194,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787874698799,
-        "lastUpdated": 1787874698799,
+        "added": 1787875318737,
+        "lastUpdated": 1787875318737,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55": {
-          "added": 1787874698799,
+          "added": 1787875318737,
           "file": {
             "name": "/youtube-21.04.223-morphe-arm64.apk",
             "sha256": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
@@ -194,13 +244,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787874696471,
-        "lastUpdated": 1787874696471,
+        "added": 1787875316841,
+        "lastUpdated": 1787875316841,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb": {
-          "added": 1787874696471,
+          "added": 1787875316841,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
             "sha256": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
