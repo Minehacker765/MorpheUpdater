@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1787917260521,
+    "timestamp": 1787917897318,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -28,10 +28,10 @@
           "en-US": "AdGuard"
         },
         "summary": {
-          "en-US": "AdGuard patched with Morphe (10 patches)"
+          "en-US": "AdGuard patched with Morphe (54 patches) \u2014 Unlock Premium, remove ads, enable advanced filtering"
         },
         "description": {
-          "en-US": "AdGuard \u2014 AdGuard patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.adguard.android \u2014 AdGuard is adguard with enhancements."
+          "en-US": "AdGuard \u2014 System-wide ad blocker and privacy protection \u2014 Unlock Premium, remove ads, enable advanced filtering\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.adguard.android \u2014 System-wide ad blocker and privacy protection \u2014 Unlock Premium, remove ads, enable advanced filtering"
         },
         "icon": {
           "en-US": {
@@ -44,13 +44,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917214192,
-        "lastUpdated": 1787917214192,
+        "added": 1787917848378,
+        "lastUpdated": 1787917848378,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6": {
-          "added": 1787917214192,
+          "added": 1787917848378,
           "file": {
             "name": "/adguard-4.13.2-arm64.apk",
             "sha256": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
@@ -78,10 +78,10 @@
           "en-US": "Amazon Music"
         },
         "summary": {
-          "en-US": "Amazon Music patched with Morphe (10 patches)"
+          "en-US": "Amazon Music patched with Morphe (50 patches) \u2014 Unlock Unlimited, remove ads, unlimited skips"
         },
         "description": {
-          "en-US": "Amazon Music \u2014 Amazon Music patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.amazon.mp3 \u2014 Amazon Music is amazon music with enhancements."
+          "en-US": "Amazon Music \u2014 Amazon Music streaming \u2014 Unlock Unlimited, remove ads, unlimited skips\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.amazon.mp3 \u2014 Amazon Music streaming \u2014 Unlock Unlimited, remove ads, unlimited skips"
         },
         "icon": {
           "en-US": {
@@ -94,13 +94,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917237636,
-        "lastUpdated": 1787917237636,
+        "added": 1787917872988,
+        "lastUpdated": 1787917872988,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16": {
-          "added": 1787917237636,
+          "added": 1787917872988,
           "file": {
             "name": "/mp3-26.28.2-de-vanced-arm64.apk",
             "sha256": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
@@ -128,10 +128,10 @@
           "en-US": "Bandcamp"
         },
         "summary": {
-          "en-US": "Bandcamp patched with Morphe (10 patches)"
+          "en-US": "Bandcamp patched with Morphe (54 patches) \u2014 Unlock premium features, remove ads"
         },
         "description": {
-          "en-US": "Bandcamp \u2014 Bandcamp patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.bandcamp.android \u2014 Bandcamp is bandcamp with enhancements."
+          "en-US": "Bandcamp \u2014 Music discovery and purchase platform \u2014 Unlock premium features, remove ads\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.bandcamp.android \u2014 Music discovery and purchase platform \u2014 Unlock premium features, remove ads"
         },
         "icon": {
           "en-US": {
@@ -144,13 +144,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917218408,
-        "lastUpdated": 1787917218408,
+        "added": 1787917852387,
+        "lastUpdated": 1787917852387,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089": {
-          "added": 1787917218408,
+          "added": 1787917852387,
           "file": {
             "name": "/bandcamp.android-3.3.6-de-vanced-arm64.apk",
             "sha256": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
@@ -178,10 +178,10 @@
           "en-US": "Chess"
         },
         "summary": {
-          "en-US": "Chess patched with Morphe (6 patches)"
+          "en-US": "Chess patched with Morphe (6 patches) \u2014 Ad-Free, Unlock All Bots, Lichess Puzzles, Local Stockfish"
         },
         "description": {
-          "en-US": "Chess \u2014 Chess patched with Morphe (6 patches)\n\nPatches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots\n\nOriginal: com.chess \u2014 Chess is chess with enhancements."
+          "en-US": "Chess \u2014 Chess.com official app \u2014 Ad-Free, Unlock All Bots, Lichess Puzzles, Local Stockfish\n\nPatches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots\n\nOriginal: com.chess \u2014 Chess.com official app \u2014 Ad-Free, Unlock All Bots, Lichess Puzzles, Local Stockfish"
         },
         "icon": {
           "en-US": {
@@ -194,13 +194,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917220055,
-        "lastUpdated": 1787917220055,
+        "added": 1787917854022,
+        "lastUpdated": 1787917854022,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117": {
-          "added": 1787917220055,
+          "added": 1787917854022,
           "file": {
             "name": "/chess-4.10.0-googleplay-prathxm-arm64.apk",
             "sha256": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
@@ -228,10 +228,10 @@
           "en-US": "Chess"
         },
         "summary": {
-          "en-US": "Chess patched with Morphe (0 patches)"
+          "en-US": "Chess patched with Morphe"
         },
         "description": {
-          "en-US": "Chess \u2014 Chess patched with Morphe (0 patches)\n\nOriginal: com.chess.prathxm \u2014 Chess is chess with enhancements."
+          "en-US": "Chess \u2014 Patched with Morphe\n\nOriginal: com.chess.prathxm \u2014 Chess with enhancements."
         },
         "icon": {
           "en-US": {
@@ -244,13 +244,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917221932,
-        "lastUpdated": 1787917221932,
+        "added": 1787917855877,
+        "lastUpdated": 1787917855877,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118": {
-          "added": 1787917221932,
+          "added": 1787917855877,
           "file": {
             "name": "/chess-4.10.0-prathxm-arm64.apk",
             "sha256": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
@@ -278,10 +278,10 @@
           "en-US": "Duolingo"
         },
         "summary": {
-          "en-US": "Duolingo patched with Morphe (10 patches)"
+          "en-US": "Duolingo patched with Morphe (30 patches) \u2014 Unlock Super/MAX, remove ads, enable premium features, disab"
         },
         "description": {
-          "en-US": "Duolingo \u2014 Duolingo patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.duolingo \u2014 Duolingo is duolingo with enhancements."
+          "en-US": "Duolingo \u2014 Language learning app with gamified lessons \u2014 Unlock Super/MAX, remove ads, enable premium features, disable telemetry\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.duolingo \u2014 Language learning app with gamified lessons \u2014 Unlock Super/MAX, remove ads, enable premium features, disable telemetry"
         },
         "icon": {
           "en-US": {
@@ -294,13 +294,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917225175,
-        "lastUpdated": 1787917225175,
+        "added": 1787917859041,
+        "lastUpdated": 1787917859041,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "329e27790d8349dfee03ad89e643d393d5a631cbc2510c37b43ab93a60a51eee": {
-          "added": 1787917225175,
+          "added": 1787917859041,
           "file": {
             "name": "/duolingo-6.92.5-hoodles-arm64.apk",
             "sha256": "329e27790d8349dfee03ad89e643d393d5a631cbc2510c37b43ab93a60a51eee",
@@ -328,10 +328,10 @@
           "en-US": "Facebook"
         },
         "summary": {
-          "en-US": "Facebook patched with Morphe (10 patches)"
+          "en-US": "Facebook patched with Morphe (52 patches) \u2014 Remove ads, hide sponsored stories, unlock features"
         },
         "description": {
-          "en-US": "Facebook \u2014 Facebook patched with Morphe (10 patches)\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.facebook.katana \u2014 Facebook is facebook with enhancements."
+          "en-US": "Facebook \u2014 Social media platform \u2014 Remove ads, hide sponsored stories, unlock features\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.facebook.katana \u2014 Social media platform \u2014 Remove ads, hide sponsored stories, unlock features"
         },
         "icon": {
           "en-US": {
@@ -344,13 +344,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917230586,
-        "lastUpdated": 1787917230586,
+        "added": 1787917864838,
+        "lastUpdated": 1787917864838,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17": {
-          "added": 1787917230586,
+          "added": 1787917864838,
           "file": {
             "name": "/katana-490.0.0.63.82-de-vanced-arm64.apk",
             "sha256": "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17",
@@ -378,10 +378,10 @@
           "en-US": "GMX Mail"
         },
         "summary": {
-          "en-US": "GMX Mail patched with Morphe (10 patches)"
+          "en-US": "GMX Mail patched with Morphe (50 patches) \u2014 Unlock premium, remove ads"
         },
         "description": {
-          "en-US": "GMX Mail \u2014 GMX Mail patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: de.gmx.mobile.android.mail \u2014 GMX Mail is gmx mail with enhancements."
+          "en-US": "GMX Mail \u2014 Email client for GMX \u2014 Unlock premium, remove ads\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: de.gmx.mobile.android.mail \u2014 Email client for GMX \u2014 Unlock premium, remove ads"
         },
         "icon": {
           "en-US": {
@@ -394,13 +394,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917234862,
-        "lastUpdated": 1787917234862,
+        "added": 1787917869988,
+        "lastUpdated": 1787917869988,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9": {
-          "added": 1787917234862,
+          "added": 1787917869988,
           "file": {
             "name": "/mail-9.15.1-de-vanced-arm64.apk",
             "sha256": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
@@ -428,10 +428,10 @@
           "en-US": "Google Photos"
         },
         "summary": {
-          "en-US": "Google Photos patched with Morphe (10 patches)"
+          "en-US": "Google Photos patched with Morphe (49 patches)"
         },
         "description": {
-          "en-US": "Google Photos \u2014 Google Photos patched with Morphe (10 patches)\n\nPatches (49): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +39 more\n\nOriginal: app.morphe.android.apps.photos \u2014 Google Photos is google photos with enhancements."
+          "en-US": "Google Photos \u2014 Patched with Morphe\n\nPatches (49): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +39 more\n\nOriginal: app.morphe.android.apps.photos \u2014 Google Photos with enhancements."
         },
         "icon": {
           "en-US": {
@@ -444,13 +444,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917246617,
-        "lastUpdated": 1787917246617,
+        "added": 1787917882957,
+        "lastUpdated": 1787917882957,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f": {
-          "added": 1787917246617,
+          "added": 1787917882957,
           "file": {
             "name": "/photos-7.89.0.968035987-de-vanced-arm64.apk",
             "sha256": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
@@ -478,10 +478,10 @@
           "en-US": "Icon Pack Studio"
         },
         "summary": {
-          "en-US": "Icon Pack Studio patched with Morphe (0 patches)"
+          "en-US": "Icon Pack Studio patched with Morphe"
         },
         "description": {
-          "en-US": "Icon Pack Studio \u2014 Icon Pack Studio patched with Morphe (0 patches)\n\nOriginal: ginlemon.iconpackstudio \u2014 Icon Pack Studio is icon pack studio with enhancements."
+          "en-US": "Icon Pack Studio \u2014 Icon pack creation studio \u2014 Unlock premium, remove ads\n\nOriginal: ginlemon.iconpackstudio \u2014 Icon pack creation studio \u2014 Unlock premium, remove ads"
         },
         "icon": {
           "en-US": {
@@ -494,13 +494,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917228783,
-        "lastUpdated": 1787917228783,
+        "added": 1787917862774,
+        "lastUpdated": 1787917862774,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f": {
-          "added": 1787917228783,
+          "added": 1787917862774,
           "file": {
             "name": "/iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
             "sha256": "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f",
@@ -528,10 +528,10 @@
           "en-US": "Letterboxd"
         },
         "summary": {
-          "en-US": "Letterboxd patched with Morphe (10 patches)"
+          "en-US": "Letterboxd patched with Morphe (50 patches) \u2014 Unlock Pro, remove ads"
         },
         "description": {
-          "en-US": "Letterboxd \u2014 Letterboxd patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.letterboxd.letterboxd \u2014 Letterboxd is letterboxd with enhancements."
+          "en-US": "Letterboxd \u2014 Social network for film lovers \u2014 Unlock Pro, remove ads\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.letterboxd.letterboxd \u2014 Social network for film lovers \u2014 Unlock Pro, remove ads"
         },
         "icon": {
           "en-US": {
@@ -544,13 +544,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917231854,
-        "lastUpdated": 1787917231854,
+        "added": 1787917866427,
+        "lastUpdated": 1787917866427,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5": {
-          "added": 1787917231854,
+          "added": 1787917866427,
           "file": {
             "name": "/letterboxd-3.5.6-de-vanced-arm64.apk",
             "sha256": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
@@ -578,10 +578,10 @@
           "en-US": "Lightroom"
         },
         "summary": {
-          "en-US": "Lightroom patched with Morphe (10 patches)"
+          "en-US": "Lightroom patched with Morphe (30 patches) \u2014 Unlock Premium, bypass login, enable premium features"
         },
         "description": {
-          "en-US": "Lightroom \u2014 Lightroom patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.adobe.lrmobile \u2014 Lightroom is lightroom with enhancements."
+          "en-US": "Lightroom \u2014 Adobe Lightroom photo editor for mobile \u2014 Unlock Premium, bypass login, enable premium features\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.adobe.lrmobile \u2014 Adobe Lightroom photo editor for mobile \u2014 Unlock Premium, bypass login, enable premium features"
         },
         "icon": {
           "en-US": {
@@ -594,13 +594,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917233363,
-        "lastUpdated": 1787917233363,
+        "added": 1787917868390,
+        "lastUpdated": 1787917868390,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "58690a0f200694b4993b5df4603d4d97613c20c458708c1406ea04d02fea3d19": {
-          "added": 1787917233363,
+          "added": 1787917868390,
           "file": {
             "name": "/lrmobile-11.5.01-hoodles-arm64.apk",
             "sha256": "58690a0f200694b4993b5df4603d4d97613c20c458708c1406ea04d02fea3d19",
@@ -628,10 +628,10 @@
           "en-US": "Messenger"
         },
         "summary": {
-          "en-US": "Messenger patched with Morphe (8 patches)"
+          "en-US": "Messenger patched with Morphe (8 patches) \u2014 Remove ads, unlock features"
         },
         "description": {
-          "en-US": "Messenger \u2014 Messenger patched with Morphe (8 patches)\n\nPatches (8): Disable typing indicator, Hide Facebook buttons, Hide inbox ads, Hide inbox stories and notes tray, Hide inbox subtabs, Open links externally, Remove Meta AI, Spoof package version\n\nOriginal: com.facebook.orca \u2014 Messenger is messenger with enhancements."
+          "en-US": "Messenger \u2014 Facebook Messenger \u2014 Remove ads, unlock features\n\nPatches (8): Disable typing indicator, Hide Facebook buttons, Hide inbox ads, Hide inbox stories and notes tray, Hide inbox subtabs, Open links externally, Remove Meta AI, Spoof package version\n\nOriginal: com.facebook.orca \u2014 Facebook Messenger \u2014 Remove ads, unlock features"
         },
         "icon": {
           "en-US": {
@@ -644,13 +644,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917243363,
-        "lastUpdated": 1787917243363,
+        "added": 1787917879115,
+        "lastUpdated": 1787917879115,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2": {
-          "added": 1787917243363,
+          "added": 1787917879115,
           "file": {
             "name": "/orca-573.0.0.44.88-de-vanced-arm64.apk",
             "sha256": "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2",
@@ -678,10 +678,10 @@
           "en-US": "MyFitnessPal"
         },
         "summary": {
-          "en-US": "MyFitnessPal patched with Morphe (10 patches)"
+          "en-US": "MyFitnessPal patched with Morphe (54 patches) \u2014 Enable Premium+, unlock premium features"
         },
         "description": {
-          "en-US": "MyFitnessPal \u2014 MyFitnessPal patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.myfitnesspal.android \u2014 MyFitnessPal is myfitnesspal with enhancements."
+          "en-US": "MyFitnessPal \u2014 Calorie counter and diet tracker \u2014 Enable Premium+, unlock premium features\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.myfitnesspal.android \u2014 Calorie counter and diet tracker \u2014 Enable Premium+, unlock premium features"
         },
         "icon": {
           "en-US": {
@@ -694,13 +694,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917241104,
-        "lastUpdated": 1787917241104,
+        "added": 1787917876664,
+        "lastUpdated": 1787917876664,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e8ea891a6274884d162b83abcc632ebbe599233779b2938af29403d504e1e4c3": {
-          "added": 1787917241104,
+          "added": 1787917876664,
           "file": {
             "name": "/myfitnesspal.android-26.31.0-hoodles-arm64.apk",
             "sha256": "e8ea891a6274884d162b83abcc632ebbe599233779b2938af29403d504e1e4c3",
@@ -728,10 +728,10 @@
           "en-US": "Nothing X"
         },
         "summary": {
-          "en-US": "Nothing X patched with Morphe (10 patches)"
+          "en-US": "Nothing X patched with Morphe (50 patches) \u2014 Unlock premium, remove ads"
         },
         "description": {
-          "en-US": "Nothing X \u2014 Nothing X patched with Morphe (10 patches)\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.nothing.smartcenter \u2014 Nothing X is nothing x with enhancements."
+          "en-US": "Nothing X \u2014 Nothing X device manager for earbuds \u2014 Unlock premium, remove ads\n\nPatches (50): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +40 more\n\nOriginal: com.nothing.smartcenter \u2014 Nothing X device manager for earbuds \u2014 Unlock premium, remove ads"
         },
         "icon": {
           "en-US": {
@@ -744,13 +744,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917253002,
-        "lastUpdated": 1787917253002,
+        "added": 1787917889727,
+        "lastUpdated": 1787917889727,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a": {
-          "added": 1787917253002,
+          "added": 1787917889727,
           "file": {
             "name": "/smartcenter-3.8.0-de-vanced-arm64.apk",
             "sha256": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
@@ -778,10 +778,10 @@
           "en-US": "Photomath"
         },
         "summary": {
-          "en-US": "Photomath patched with Morphe (10 patches)"
+          "en-US": "Photomath patched with Morphe (48 patches) \u2014 Unlock premium, remove ads"
         },
         "description": {
-          "en-US": "Photomath \u2014 Photomath patched with Morphe (10 patches)\n\nPatches (48): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +38 more\n\nOriginal: com.microblink.photomath \u2014 Photomath is photomath with enhancements."
+          "en-US": "Photomath \u2014 Math problem solver with camera \u2014 Unlock premium, remove ads\n\nPatches (48): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Disable Quick Edit +38 more\n\nOriginal: com.microblink.photomath \u2014 Math problem solver with camera \u2014 Unlock premium, remove ads"
         },
         "icon": {
           "en-US": {
@@ -794,13 +794,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917244693,
-        "lastUpdated": 1787917244693,
+        "added": 1787917880669,
+        "lastUpdated": 1787917880669,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509": {
-          "added": 1787917244693,
+          "added": 1787917880669,
           "file": {
             "name": "/photomath-8.48.0-de-vanced-arm64.apk",
             "sha256": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
@@ -828,10 +828,10 @@
           "en-US": "Pixiv"
         },
         "summary": {
-          "en-US": "Pixiv patched with Morphe (10 patches)"
+          "en-US": "Pixiv patched with Morphe (54 patches) \u2014 Unlock premium, remove ads, enable premium browsing"
         },
         "description": {
-          "en-US": "Pixiv \u2014 Pixiv patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: jp.pxv.android \u2014 Pixiv is pixiv with enhancements."
+          "en-US": "Pixiv \u2014 Pixiv art community \u2014 Unlock premium, remove ads, enable premium browsing\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: jp.pxv.android \u2014 Pixiv art community \u2014 Unlock premium, remove ads, enable premium browsing"
         },
         "icon": {
           "en-US": {
@@ -844,13 +844,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917249442,
-        "lastUpdated": 1787917249442,
+        "added": 1787917886013,
+        "lastUpdated": 1787917886013,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e": {
-          "added": 1787917249442,
+          "added": 1787917886013,
           "file": {
             "name": "/pxv.android-6.141.1-de-vanced-arm64.apk",
             "sha256": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
@@ -875,13 +875,13 @@
     "ch.protonvpn.android": {
       "metadata": {
         "name": {
-          "en-US": "Proton VPN"
+          "en-US": "ProtonVPN"
         },
         "summary": {
-          "en-US": "Proton VPN patched with Morphe (10 patches)"
+          "en-US": "ProtonVPN patched with Morphe (54 patches) \u2014 Remove server change delay, unlock custom DNS, LAN, split tu"
         },
         "description": {
-          "en-US": "Proton VPN \u2014 Proton VPN patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: ch.protonvpn.android \u2014 Proton VPN is proton vpn with enhancements."
+          "en-US": "ProtonVPN \u2014 Secure VPN with privacy focus \u2014 Remove server change delay, unlock custom DNS, LAN, split tunneling\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: ch.protonvpn.android \u2014 Secure VPN with privacy focus \u2014 Remove server change delay, unlock custom DNS, LAN, split tunneling"
         },
         "icon": {
           "en-US": {
@@ -894,13 +894,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917247964,
-        "lastUpdated": 1787917247964,
+        "added": 1787917884456,
+        "lastUpdated": 1787917884456,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e322fbfa70550ce0d5cb1876f162185dc2360016e847982da3f5f89ea3e0eef2": {
-          "added": 1787917247964,
+          "added": 1787917884456,
           "file": {
             "name": "/protonvpn.android-5.19.43.0-hoodles-arm64.apk",
             "sha256": "e322fbfa70550ce0d5cb1876f162185dc2360016e847982da3f5f89ea3e0eef2",
@@ -928,10 +928,10 @@
           "en-US": "PyDroid3"
         },
         "summary": {
-          "en-US": "PyDroid3 patched with Morphe (10 patches)"
+          "en-US": "PyDroid3 patched with Morphe (30 patches) \u2014 Enable Premium, unlock all features"
         },
         "description": {
-          "en-US": "PyDroid3 \u2014 PyDroid3 patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: ru.iiec.pydroid3 \u2014 PyDroid3 is pydroid3 with enhancements."
+          "en-US": "PyDroid3 \u2014 Python IDE for Android \u2014 Enable Premium, unlock all features\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: ru.iiec.pydroid3 \u2014 Python IDE for Android \u2014 Enable Premium, unlock all features"
         },
         "icon": {
           "en-US": {
@@ -944,13 +944,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917250593,
-        "lastUpdated": 1787917250593,
+        "added": 1787917887157,
+        "lastUpdated": 1787917887157,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "489f4310359367bbedef659d8efecd97fdf30cbacbb84b783d9cebe4d18cc411": {
-          "added": 1787917250593,
+          "added": 1787917887157,
           "file": {
             "name": "/pydroid3-8.3_arm64-hoodles-arm64.apk",
             "sha256": "489f4310359367bbedef659d8efecd97fdf30cbacbb84b783d9cebe4d18cc411",
@@ -978,10 +978,10 @@
           "en-US": "Reddit"
         },
         "summary": {
-          "en-US": "Reddit patched with Morphe (0 patches)"
+          "en-US": "Reddit patched with Morphe"
         },
         "description": {
-          "en-US": "Reddit \u2014 Reddit patched with Morphe (0 patches)\n\nOriginal: com.reddit.frontpage.morphe \u2014 Reddit is reddit with enhancements."
+          "en-US": "Reddit \u2014 Patched with Morphe\n\nOriginal: com.reddit.frontpage.morphe \u2014 Reddit with enhancements."
         },
         "icon": {
           "en-US": {
@@ -994,13 +994,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917227212,
-        "lastUpdated": 1787917227212,
+        "added": 1787917861002,
+        "lastUpdated": 1787917861002,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17": {
-          "added": 1787917227212,
+          "added": 1787917861002,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
             "sha256": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
@@ -1028,10 +1028,10 @@
           "en-US": "Solid Explorer"
         },
         "summary": {
-          "en-US": "Solid Explorer patched with Morphe (10 patches)"
+          "en-US": "Solid Explorer patched with Morphe (30 patches) \u2014 Enable Pro, unlock premium features"
         },
         "description": {
-          "en-US": "Solid Explorer \u2014 Solid Explorer patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: pl.solidexplorer2 \u2014 Solid Explorer is solid explorer with enhancements."
+          "en-US": "Solid Explorer \u2014 File manager with cloud and network support \u2014 Enable Pro, unlock premium features\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: pl.solidexplorer2 \u2014 File manager with cloud and network support \u2014 Enable Pro, unlock premium features"
         },
         "icon": {
           "en-US": {
@@ -1044,13 +1044,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917254816,
-        "lastUpdated": 1787917254816,
+        "added": 1787917891835,
+        "lastUpdated": 1787917891835,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "826c982ea1599c682fd927c295a7581cc7191cd4e434a116342ac4a17aea87d0": {
-          "added": 1787917254816,
+          "added": 1787917891835,
           "file": {
             "name": "/solidexplorer2-3.5.19-hoodles-arm64.apk",
             "sha256": "826c982ea1599c682fd927c295a7581cc7191cd4e434a116342ac4a17aea87d0",
@@ -1078,10 +1078,10 @@
           "en-US": "SoundCloud"
         },
         "summary": {
-          "en-US": "SoundCloud patched with Morphe (10 patches)"
+          "en-US": "SoundCloud patched with Morphe (54 patches) \u2014 Enable SoundCloud Go, AMOLED dark theme, disable telemetry"
         },
         "description": {
-          "en-US": "SoundCloud \u2014 SoundCloud patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.soundcloud.android \u2014 SoundCloud is soundcloud with enhancements."
+          "en-US": "SoundCloud \u2014 Music streaming and discovery platform \u2014 Enable SoundCloud Go, AMOLED dark theme, disable telemetry\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.soundcloud.android \u2014 Music streaming and discovery platform \u2014 Enable SoundCloud Go, AMOLED dark theme, disable telemetry"
         },
         "icon": {
           "en-US": {
@@ -1094,13 +1094,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917256301,
-        "lastUpdated": 1787917256301,
+        "added": 1787917893275,
+        "lastUpdated": 1787917893275,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8baffcb1003b4ede56c97868a195a4f751c875327cdcae286c5698153fd80c08": {
-          "added": 1787917256301,
+          "added": 1787917893275,
           "file": {
             "name": "/soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
             "sha256": "8baffcb1003b4ede56c97868a195a4f751c875327cdcae286c5698153fd80c08",
@@ -1128,10 +1128,10 @@
           "en-US": "Strava"
         },
         "summary": {
-          "en-US": "Strava patched with Morphe (10 patches)"
+          "en-US": "Strava patched with Morphe (52 patches) \u2014 Unlock premium, remove ads, enable premium routes"
         },
         "description": {
-          "en-US": "Strava \u2014 Strava patched with Morphe (10 patches)\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.strava \u2014 Strava is strava with enhancements."
+          "en-US": "Strava \u2014 Fitness tracking for running and cycling \u2014 Unlock premium, remove ads, enable premium routes\n\nPatches (52): Add 'Give Kudos' button to 'Group Activity', Add media download, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login, Debug mode +42 more\n\nOriginal: com.strava \u2014 Fitness tracking for running and cycling \u2014 Unlock premium, remove ads, enable premium routes"
         },
         "icon": {
           "en-US": {
@@ -1144,13 +1144,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917258085,
-        "lastUpdated": 1787917258085,
+        "added": 1787917894877,
+        "lastUpdated": 1787917894877,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a": {
-          "added": 1787917258085,
+          "added": 1787917894877,
           "file": {
             "name": "/strava-477.14-de-vanced-arm64.apk",
             "sha256": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
@@ -1178,10 +1178,10 @@
           "en-US": "Twitch"
         },
         "summary": {
-          "en-US": "Twitch patched with Morphe (10 patches)"
+          "en-US": "Twitch patched with Morphe (34 patches) \u2014 Block live/display ads via proxy, 7TV/BTTV emotes, auto-clai"
         },
         "description": {
-          "en-US": "Twitch \u2014 Twitch patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: tv.twitch.android.app \u2014 Twitch is twitch with enhancements."
+          "en-US": "Twitch \u2014 Live streaming platform for gaming and more \u2014 Block live/display ads via proxy, 7TV/BTTV emotes, auto-claim points, fix login\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: tv.twitch.android.app \u2014 Live streaming platform for gaming and more \u2014 Block live/display ads via proxy, 7TV/BTTV emotes, auto-claim points, fix login"
         },
         "icon": {
           "en-US": {
@@ -1194,13 +1194,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917217002,
-        "lastUpdated": 1787917217002,
+        "added": 1787917851079,
+        "lastUpdated": 1787917851079,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422": {
-          "added": 1787917217002,
+          "added": 1787917851079,
           "file": {
             "name": "/android.app-30.7.2-hoomans-arm64.apk",
             "sha256": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
@@ -1228,10 +1228,10 @@
           "en-US": "XRecorder"
         },
         "summary": {
-          "en-US": "XRecorder patched with Morphe (10 patches)"
+          "en-US": "XRecorder patched with Morphe (30 patches) \u2014 Enable Pro, unlock premium features"
         },
         "description": {
-          "en-US": "XRecorder \u2014 XRecorder patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: videoeditor.videorecorder.screenrecorder \u2014 XRecorder is xrecorder with enhancements."
+          "en-US": "XRecorder \u2014 Screen recording and video editing \u2014 Enable Pro, unlock premium features\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: videoeditor.videorecorder.screenrecorder \u2014 Screen recording and video editing \u2014 Enable Pro, unlock premium features"
         },
         "icon": {
           "en-US": {
@@ -1244,13 +1244,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917251841,
-        "lastUpdated": 1787917251841,
+        "added": 1787917888452,
+        "lastUpdated": 1787917888452,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4bb770e94f63b4b83ab0ca1b65a550354f14c417f654f52701c10313d0848ee7": {
-          "added": 1787917251841,
+          "added": 1787917888452,
           "file": {
             "name": "/screenrecorder-2.5.1.1-hoodles-arm64.apk",
             "sha256": "4bb770e94f63b4b83ab0ca1b65a550354f14c417f654f52701c10313d0848ee7",
@@ -1278,10 +1278,10 @@
           "en-US": "YouTube"
         },
         "summary": {
-          "en-US": "YouTube patched with Morphe (10 patches)"
+          "en-US": "YouTube patched with Morphe (110 patches)"
         },
         "description": {
-          "en-US": "YouTube \u2014 YouTube patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.youtube \u2014 YouTube is youtube with enhancements."
+          "en-US": "YouTube \u2014 Patched with Morphe\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.youtube \u2014 YouTube with enhancements."
         },
         "icon": {
           "en-US": {
@@ -1294,13 +1294,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917260429,
-        "lastUpdated": 1787917260429,
+        "added": 1787917897214,
+        "lastUpdated": 1787917897214,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55": {
-          "added": 1787917260429,
+          "added": 1787917897214,
           "file": {
             "name": "/youtube-21.04.223-morphe-arm64.apk",
             "sha256": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
@@ -1328,10 +1328,10 @@
           "en-US": "YouTube Music"
         },
         "summary": {
-          "en-US": "YouTube Music patched with Morphe (10 patches)"
+          "en-US": "YouTube Music patched with Morphe (110 patches)"
         },
         "description": {
-          "en-US": "YouTube Music \u2014 YouTube Music patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.apps.youtube.music \u2014 YouTube Music is youtube music with enhancements."
+          "en-US": "YouTube Music \u2014 Patched with Morphe\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.apps.youtube.music \u2014 YouTube Music with enhancements."
         },
         "icon": {
           "en-US": {
@@ -1344,13 +1344,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787917239615,
-        "lastUpdated": 1787917239615,
+        "added": 1787917875022,
+        "lastUpdated": 1787917875022,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb": {
-          "added": 1787917239615,
+          "added": 1787917875022,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
             "sha256": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
