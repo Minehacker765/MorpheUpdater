@@ -1,5 +1,17 @@
 {
   "builds": {
+    "ch.protonvpn.android|hoodles|arm64": {
+      "app_name": "Proton VPN: Fast & Secure VPN",
+      "arch": "arm64",
+      "at": 1787912273,
+      "out": "android-5.19.43.0-hoodles-arm64.apk",
+      "package": "ch.protonvpn.android",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 605194300,
+      "version": "5.19.43.0"
+    },
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "Lightroom Photo & Video Editor",
       "arch": "arm64",
