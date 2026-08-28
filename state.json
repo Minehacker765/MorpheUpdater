@@ -12,6 +12,18 @@
       "vc": 605194300,
       "version": "5.19.43.0"
     },
+    "com.adguard.android|hoodles|arm64": {
+      "app_name": "AdGuard",
+      "arch": "arm64",
+      "at": 1787916215,
+      "out": "adguard-4.13.2-arm64.apk",
+      "package": "com.adguard.android",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 42119001,
+      "version": "4.13.2"
+    },
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "Lightroom Photo & Video Editor",
       "arch": "arm64",
