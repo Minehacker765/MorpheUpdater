@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1787875573842,
+    "timestamp": 1787875776528,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -21,6 +21,17 @@
         }
       },
       "icon": "com.chess.prathxm.png"
+    },
+    {
+      "packageName": "app.morphe.android.apps.photos",
+      "name": "Photos",
+      "localized": {
+        "en-US": {
+          "name": "Photos",
+          "summary": "Photos patched with Morphe",
+          "description": "Photos patched with Morphe"
+        }
+      }
     },
     {
       "packageName": "com.reddit.frontpage.morphe",
@@ -86,7 +97,7 @@
   "packages": {
     "tv.twitch.android.app": [
       {
-        "added": 1787875565325,
+        "added": 1787875766396,
         "apkName": "app-30.7.2-hoomans-arm64.apk",
         "hash": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
         "hashType": "sha256",
@@ -103,7 +114,7 @@
     ],
     "com.chess.prathxm": [
       {
-        "added": 1787875566709,
+        "added": 1787875767789,
         "apkName": "chess-4.10.0-prathxm-arm64.apk",
         "hash": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
         "hashType": "sha256",
@@ -120,7 +131,7 @@
     ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1787875568437,
+        "added": 1787875769494,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
         "hash": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
         "hashType": "sha256",
@@ -137,7 +148,7 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1787875570230,
+        "added": 1787875771185,
         "apkName": "music-9.15.51-morphe-arm64.apk",
         "hash": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
         "hashType": "sha256",
@@ -152,9 +163,26 @@
         "sig": "2b4d9183"
       }
     ],
+    "app.morphe.android.apps.photos": [
+      {
+        "added": 1787875772899,
+        "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
+        "hash": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
+        "hashType": "sha256",
+        "packageName": "app.morphe.android.apps.photos",
+        "versionCode": 52244454,
+        "versionName": "7.89.0.968035987",
+        "size": 74495582,
+        "appName": "Photos",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 37,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.strava": [
       {
-        "added": 1787875571796,
+        "added": 1787875774474,
         "apkName": "strava-473.11-de-vanced-arm64.apk",
         "hash": "75d27a43e7537725f30debdc4296263f6299d1460aeacdcc15c3c29fffc147cb",
         "hashType": "sha256",
@@ -171,7 +199,7 @@
     ],
     "app.morphe.android.youtube": [
       {
-        "added": 1787875573758,
+        "added": 1787875776441,
         "apkName": "youtube-21.04.223-morphe-arm64.apk",
         "hash": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
         "hashType": "sha256",

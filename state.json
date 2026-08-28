@@ -12,6 +12,18 @@
       "vc": 268250,
       "version": "4.10.0"
     },
+    "com.google.android.apps.photos|de-vanced|arm64": {
+      "app_name": "Google Photos",
+      "arch": "arm64",
+      "at": 1787875764,
+      "out": "photos-7.89.0.968035987-de-vanced-arm64.apk",
+      "package": "com.google.android.apps.photos",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 52244454,
+      "version": "7.89.0.968035987"
+    },
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
