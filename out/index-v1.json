@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1787910857796,
+    "timestamp": 1787910745993,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -10,29 +10,6 @@
     "address": "https://morpheupdater.minehacker765.workers.dev"
   },
   "apps": [
-    {
-      "packageName": "com.amazon.mp3",
-      "name": "Amazon Music",
-      "localized": {
-        "en-US": {
-          "name": "Amazon Music",
-          "summary": "Amazon Music patched with Morphe",
-          "description": "Amazon Music patched with Morphe"
-        }
-      },
-      "icon": "com.amazon.mp3.png"
-    },
-    {
-      "packageName": "com.bandcamp.android",
-      "name": "Bandcamp",
-      "localized": {
-        "en-US": {
-          "name": "Bandcamp",
-          "summary": "Bandcamp patched with Morphe",
-          "description": "Bandcamp patched with Morphe"
-        }
-      }
-    },
     {
       "packageName": "com.chess",
       "name": "Chess",
@@ -46,123 +23,19 @@
       "icon": "com.chess.png"
     },
     {
-      "packageName": "com.chess.prathxm",
-      "name": "Chess",
+      "packageName": "app.revanced.android.gms",
+      "name": "MicroG",
       "localized": {
         "en-US": {
-          "name": "Chess",
-          "summary": "Chess patched with Morphe",
-          "description": "Chess patched with Morphe"
+          "name": "MicroG",
+          "summary": "MicroG patched with Morphe",
+          "description": "MicroG patched with Morphe"
         }
       },
-      "icon": "com.chess.prathxm.png"
+      "icon": "app.revanced.android.gms.png"
     },
     {
-      "packageName": "com.facebook.katana",
-      "name": "Facebook",
-      "localized": {
-        "en-US": {
-          "name": "Facebook",
-          "summary": "Facebook patched with Morphe",
-          "description": "Facebook patched with Morphe"
-        }
-      }
-    },
-    {
-      "packageName": "de.gmx.mobile.android.mail",
-      "name": "GMX Mail",
-      "localized": {
-        "en-US": {
-          "name": "GMX Mail",
-          "summary": "GMX Mail patched with Morphe",
-          "description": "GMX Mail patched with Morphe"
-        }
-      },
-      "icon": "de.gmx.mobile.android.mail.png"
-    },
-    {
-      "packageName": "app.morphe.android.apps.photos",
-      "name": "Google Photos",
-      "localized": {
-        "en-US": {
-          "name": "Google Photos",
-          "summary": "Google Photos patched with Morphe",
-          "description": "Google Photos patched with Morphe"
-        }
-      }
-    },
-    {
-      "packageName": "ginlemon.iconpackstudio",
-      "name": "Icon Pack Studio",
-      "localized": {
-        "en-US": {
-          "name": "Icon Pack Studio",
-          "summary": "Icon Pack Studio patched with Morphe",
-          "description": "Icon Pack Studio patched with Morphe"
-        }
-      },
-      "icon": "ginlemon.iconpackstudio.png"
-    },
-    {
-      "packageName": "com.letterboxd.letterboxd",
-      "name": "Letterboxd",
-      "localized": {
-        "en-US": {
-          "name": "Letterboxd",
-          "summary": "Letterboxd patched with Morphe",
-          "description": "Letterboxd patched with Morphe"
-        }
-      },
-      "icon": "com.letterboxd.letterboxd.png"
-    },
-    {
-      "packageName": "com.facebook.orca",
-      "name": "Messenger",
-      "localized": {
-        "en-US": {
-          "name": "Messenger",
-          "summary": "Messenger patched with Morphe",
-          "description": "Messenger patched with Morphe"
-        }
-      }
-    },
-    {
-      "packageName": "com.nothing.smartcenter",
-      "name": "Nothing X",
-      "localized": {
-        "en-US": {
-          "name": "Nothing X",
-          "summary": "Nothing X patched with Morphe",
-          "description": "Nothing X patched with Morphe"
-        }
-      },
-      "icon": "com.nothing.smartcenter.png"
-    },
-    {
-      "packageName": "com.microblink.photomath",
-      "name": "Photomath",
-      "localized": {
-        "en-US": {
-          "name": "Photomath",
-          "summary": "Photomath patched with Morphe",
-          "description": "Photomath patched with Morphe"
-        }
-      },
-      "icon": "com.microblink.photomath.png"
-    },
-    {
-      "packageName": "jp.pxv.android",
-      "name": "Pixiv",
-      "localized": {
-        "en-US": {
-          "name": "Pixiv",
-          "summary": "Pixiv patched with Morphe",
-          "description": "Pixiv patched with Morphe"
-        }
-      }
-    },
-    {
-      "packageName": "com.reddit.frontpage.morphe",
+      "packageName": "com.reddit.frontpage",
       "name": "Reddit",
       "localized": {
         "en-US": {
@@ -171,31 +44,7 @@
           "description": "Reddit patched with Morphe"
         }
       },
-      "icon": "com.reddit.frontpage.morphe.png"
-    },
-    {
-      "packageName": "com.strava",
-      "name": "Strava",
-      "localized": {
-        "en-US": {
-          "name": "Strava",
-          "summary": "Strava patched with Morphe",
-          "description": "Strava patched with Morphe"
-        }
-      },
-      "icon": "com.strava.png"
-    },
-    {
-      "packageName": "tv.twitch.android.app",
-      "name": "Twitch",
-      "localized": {
-        "en-US": {
-          "name": "Twitch",
-          "summary": "Twitch patched with Morphe",
-          "description": "Twitch patched with Morphe"
-        }
-      },
-      "icon": "tv.twitch.android.app.png"
+      "icon": "com.reddit.frontpage.png"
     },
     {
       "packageName": "app.morphe.android.youtube",
@@ -223,62 +72,11 @@
     }
   ],
   "packages": {
-    "com.bandcamp.android": [
-      {
-        "added": 1787910833084,
-        "apkName": "android-3.3.6-de-vanced-arm64.apk",
-        "hash": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
-        "hashType": "sha256",
-        "packageName": "com.bandcamp.android",
-        "versionCode": 220489,
-        "versionName": "3.3.6",
-        "size": 13930871,
-        "appName": "Bandcamp",
-        "minSdkVersion": 24,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "jp.pxv.android": [
-      {
-        "added": 1787910834249,
-        "apkName": "android-6.141.1-de-vanced-arm64.apk",
-        "hash": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
-        "hashType": "sha256",
-        "packageName": "jp.pxv.android",
-        "versionCode": 56869,
-        "versionName": "6.141.1",
-        "size": 47434882,
-        "appName": "Pixiv",
-        "minSdkVersion": 23,
-        "targetSdkVersion": 34,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "tv.twitch.android.app": [
-      {
-        "added": 1787910836526,
-        "apkName": "app-30.7.2-hoomans-arm64.apk",
-        "hash": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
-        "hashType": "sha256",
-        "packageName": "tv.twitch.android.app",
-        "versionCode": 3007026,
-        "versionName": "30.7.2",
-        "size": 97512162,
-        "appName": "Twitch",
-        "minSdkVersion": 26,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
     "com.chess": [
       {
-        "added": 1787910837889,
-        "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
-        "hash": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
+        "added": 1787910742915,
+        "apkName": "chess-4.10.0-prathxm-arm64.apk",
+        "hash": "c2da487f3d7463e791678fdc3e16523e2989b431e9b54a7052f33141481c1e83",
         "hashType": "sha256",
         "packageName": "com.chess",
         "versionCode": 268250,
@@ -291,33 +89,16 @@
         "sig": "2b4d9183"
       }
     ],
-    "com.chess.prathxm": [
+    "com.reddit.frontpage": [
       {
-        "added": 1787910839395,
-        "apkName": "chess-4.10.0-prathxm-arm64.apk",
-        "hash": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
-        "hashType": "sha256",
-        "packageName": "com.chess.prathxm",
-        "versionCode": 268250,
-        "versionName": "4.10.0-googleplay",
-        "size": 258532784,
-        "appName": "Chess",
-        "minSdkVersion": 26,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.reddit.frontpage.morphe": [
-      {
-        "added": 1787910840924,
+        "added": 1787910743624,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
-        "hash": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
+        "hash": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
         "hashType": "sha256",
-        "packageName": "com.reddit.frontpage.morphe",
+        "packageName": "com.reddit.frontpage",
         "versionCode": 2147483647,
         "versionName": "2026.14.0",
-        "size": 57405791,
+        "size": 57426263,
         "appName": "Reddit",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
@@ -325,101 +106,48 @@
         "sig": "2b4d9183"
       }
     ],
-    "ginlemon.iconpackstudio": [
+    "app.revanced.android.gms": [
       {
-        "added": 1787910842186,
-        "apkName": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
-        "hash": "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f",
+        "added": 1787910744155,
+        "apkName": "microg-7.0.0-dev.3-arm64.apk",
+        "hash": "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248",
         "hashType": "sha256",
-        "packageName": "ginlemon.iconpackstudio",
-        "versionCode": 220160,
-        "versionName": "2.2 build 016",
-        "size": 53411439,
-        "appName": "Icon Pack Studio",
-        "minSdkVersion": 24,
-        "targetSdkVersion": 33,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.facebook.katana": [
-      {
-        "added": 1787910843698,
-        "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
-        "hash": "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17",
-        "hashType": "sha256",
-        "packageName": "com.facebook.katana",
-        "versionCode": 457019914,
-        "versionName": "490.0.0.63.82",
-        "size": 88246650,
-        "appName": "Facebook",
-        "minSdkVersion": 30,
+        "packageName": "app.revanced.android.gms",
+        "versionCode": 255070000,
+        "versionName": "7.0.0-dev.3",
+        "size": 95753899,
+        "appName": "MicroG",
+        "minSdkVersion": 21,
         "targetSdkVersion": 34,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
-      }
-    ],
-    "com.letterboxd.letterboxd": [
+      },
       {
-        "added": 1787910844823,
-        "apkName": "letterboxd-3.5.6-de-vanced-arm64.apk",
-        "hash": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
+        "added": 1787910744688,
+        "apkName": "microg-7.0.0-dev.4-arm64.apk",
+        "hash": "102d571466727a51f29853ac2762ef22938e2e48d73bc4ddcdbc2ea260c17585",
         "hashType": "sha256",
-        "packageName": "com.letterboxd.letterboxd",
-        "versionCode": 498,
-        "versionName": "3.5.6",
-        "size": 93081401,
-        "appName": "Letterboxd",
-        "minSdkVersion": 32,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "de.gmx.mobile.android.mail": [
-      {
-        "added": 1787910845800,
-        "apkName": "mail-9.15.1-de-vanced-arm64.apk",
-        "hash": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
-        "hashType": "sha256",
-        "packageName": "de.gmx.mobile.android.mail",
-        "versionCode": 405203,
-        "versionName": "9.15.1",
-        "size": 51988821,
-        "appName": "GMX Mail",
-        "minSdkVersion": 28,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.amazon.mp3": [
-      {
-        "added": 1787910847785,
-        "apkName": "mp3-26.28.2-de-vanced-arm64.apk",
-        "hash": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
-        "hashType": "sha256",
-        "packageName": "com.amazon.mp3",
-        "versionCode": 526280210,
-        "versionName": "26.28.2",
-        "size": 168722949,
-        "appName": "Amazon Music",
-        "minSdkVersion": 29,
-        "targetSdkVersion": 36,
+        "packageName": "app.revanced.android.gms",
+        "versionCode": 255070000,
+        "versionName": "7.0.0-dev.4",
+        "size": 95753899,
+        "appName": "MicroG",
+        "minSdkVersion": 21,
+        "targetSdkVersion": 34,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1787910849185,
+        "added": 1787910745227,
         "apkName": "music-9.15.51-morphe-arm64.apk",
-        "hash": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
+        "hash": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
         "hashType": "sha256",
         "packageName": "app.morphe.android.apps.youtube.music",
         "versionCode": 2147483647,
         "versionName": "9.15.51",
-        "size": 72062926,
+        "size": 72267718,
         "appName": "YouTube Music",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
@@ -427,101 +155,16 @@
         "sig": "2b4d9183"
       }
     ],
-    "com.facebook.orca": [
-      {
-        "added": 1787910850816,
-        "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
-        "hash": "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2",
-        "hashType": "sha256",
-        "packageName": "com.facebook.orca",
-        "versionCode": 2147483647,
-        "versionName": "573.0.0.44.88",
-        "size": 95601495,
-        "appName": "Messenger",
-        "minSdkVersion": 28,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.microblink.photomath": [
-      {
-        "added": 1787910851918,
-        "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
-        "hash": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
-        "hashType": "sha256",
-        "packageName": "com.microblink.photomath",
-        "versionCode": 70001016,
-        "versionName": "8.48.0",
-        "size": 12218698,
-        "appName": "Photomath",
-        "minSdkVersion": 21,
-        "targetSdkVersion": 35,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "app.morphe.android.apps.photos": [
-      {
-        "added": 1787910853335,
-        "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
-        "hash": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
-        "hashType": "sha256",
-        "packageName": "app.morphe.android.apps.photos",
-        "versionCode": 52244454,
-        "versionName": "7.89.0.968035987",
-        "size": 74495582,
-        "appName": "Google Photos",
-        "minSdkVersion": 32,
-        "targetSdkVersion": 37,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.nothing.smartcenter": [
-      {
-        "added": 1787910854444,
-        "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
-        "hash": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
-        "hashType": "sha256",
-        "packageName": "com.nothing.smartcenter",
-        "versionCode": 3080004,
-        "versionName": "3.8.0",
-        "size": 229906369,
-        "appName": "Nothing X",
-        "minSdkVersion": 26,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
-    "com.strava": [
-      {
-        "added": 1787910855963,
-        "apkName": "strava-477.14-de-vanced-arm64.apk",
-        "hash": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
-        "hashType": "sha256",
-        "packageName": "com.strava",
-        "versionCode": 12399244,
-        "versionName": "477.14",
-        "size": 117491017,
-        "appName": "Strava",
-        "minSdkVersion": 32,
-        "targetSdkVersion": 35,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      }
-    ],
     "app.morphe.android.youtube": [
       {
-        "added": 1787910857717,
+        "added": 1787910745926,
         "apkName": "youtube-21.04.223-morphe-arm64.apk",
-        "hash": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
+        "hash": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
         "hashType": "sha256",
         "packageName": "app.morphe.android.youtube",
         "versionCode": 2147483647,
         "versionName": "21.04.223",
-        "size": 114109310,
+        "size": 114416502,
         "appName": "YouTube",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,

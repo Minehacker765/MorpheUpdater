@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1787910857796,
+    "timestamp": 1787910745993,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -22,106 +22,6 @@
     ]
   },
   "packages": {
-    "com.amazon.mp3": {
-      "metadata": {
-        "name": {
-          "en-US": "Amazon Music"
-        },
-        "summary": {
-          "en-US": "Amazon Music patched with Morphe"
-        },
-        "description": {
-          "en-US": "Amazon Music patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.amazon.mp3.png",
-            "sha256": "b36bfee28b7a14de88223cb9ca42e57850d35855d601cc252cc4b64e94bafa8c",
-            "size": 6698
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910847785,
-        "lastUpdated": 1787910847785,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16": {
-          "added": 1787910847785,
-          "file": {
-            "name": "/mp3-26.28.2-de-vanced-arm64.apk",
-            "sha256": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
-            "size": 168722949
-          },
-          "manifest": {
-            "versionName": "26.28.2",
-            "versionCode": 526280210,
-            "usesSdk": {
-              "minSdkVersion": 29,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.bandcamp.android": {
-      "metadata": {
-        "name": {
-          "en-US": "Bandcamp"
-        },
-        "summary": {
-          "en-US": "Bandcamp patched with Morphe"
-        },
-        "description": {
-          "en-US": "Bandcamp patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.bandcamp.android.png",
-            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-            "size": 0
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910833084,
-        "lastUpdated": 1787910833084,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089": {
-          "added": 1787910833084,
-          "file": {
-            "name": "/android-3.3.6-de-vanced-arm64.apk",
-            "sha256": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
-            "size": 13930871
-          },
-          "manifest": {
-            "versionName": "3.3.6",
-            "versionCode": 220489,
-            "usesSdk": {
-              "minSdkVersion": 24,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
     "com.chess": {
       "metadata": {
         "name": {
@@ -144,66 +44,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787910837889,
-        "lastUpdated": 1787910837889,
+        "added": 1787910742915,
+        "lastUpdated": 1787910742915,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117": {
-          "added": 1787910837889,
-          "file": {
-            "name": "/chess-4.10.0-googleplay-prathxm-arm64.apk",
-            "sha256": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
-            "size": 258532784
-          },
-          "manifest": {
-            "versionName": "4.10.0-googleplay",
-            "versionCode": 268250,
-            "usesSdk": {
-              "minSdkVersion": 26,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.chess.prathxm": {
-      "metadata": {
-        "name": {
-          "en-US": "Chess"
-        },
-        "summary": {
-          "en-US": "Chess patched with Morphe"
-        },
-        "description": {
-          "en-US": "Chess patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.chess.prathxm.png",
-            "sha256": "66eeecd90280a8a49f981334b049f93f34a2d42149e72e509339356628510c5a",
-            "size": 2695
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910839395,
-        "lastUpdated": 1787910839395,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118": {
-          "added": 1787910839395,
+        "c2da487f3d7463e791678fdc3e16523e2989b431e9b54a7052f33141481c1e83": {
+          "added": 1787910742915,
           "file": {
             "name": "/chess-4.10.0-prathxm-arm64.apk",
-            "sha256": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
+            "sha256": "c2da487f3d7463e791678fdc3e16523e2989b431e9b54a7052f33141481c1e83",
             "size": 258532784
           },
           "manifest": {
@@ -222,396 +72,46 @@
         }
       }
     },
-    "com.facebook.katana": {
+    "app.revanced.android.gms": {
       "metadata": {
         "name": {
-          "en-US": "Facebook"
+          "en-US": "MicroG"
         },
         "summary": {
-          "en-US": "Facebook patched with Morphe"
+          "en-US": "MicroG patched with Morphe"
         },
         "description": {
-          "en-US": "Facebook patched with Morphe"
+          "en-US": "MicroG patched with Morphe"
         },
         "icon": {
           "en-US": {
-            "name": "/icons/com.facebook.katana.png",
-            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-            "size": 0
+            "name": "/icons/app.revanced.android.gms.png",
+            "sha256": "8d23d07b34188c7abacc64f142b3e233f1424f93cd74ef9016c5b5cee2ef0319",
+            "size": 13787
           }
         },
         "categories": [
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787910843698,
-        "lastUpdated": 1787910843698,
+        "added": 1787910744155,
+        "lastUpdated": 1787910744155,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17": {
-          "added": 1787910843698,
+        "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248": {
+          "added": 1787910744155,
           "file": {
-            "name": "/katana-490.0.0.63.82-de-vanced-arm64.apk",
-            "sha256": "4aaa3f88796e292eb940355364486698c2690e7f86207cef663d3a72ff5eeb17",
-            "size": 88246650
+            "name": "/microg-7.0.0-dev.3-arm64.apk",
+            "sha256": "be3056b484f100598afc5b0b37adb6f47c8e3bfea7dac54c39de843c1e18c248",
+            "size": 95753899
           },
           "manifest": {
-            "versionName": "490.0.0.63.82",
-            "versionCode": 457019914,
-            "usesSdk": {
-              "minSdkVersion": 30,
-              "targetSdkVersion": 34
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "de.gmx.mobile.android.mail": {
-      "metadata": {
-        "name": {
-          "en-US": "GMX Mail"
-        },
-        "summary": {
-          "en-US": "GMX Mail patched with Morphe"
-        },
-        "description": {
-          "en-US": "GMX Mail patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/de.gmx.mobile.android.mail.png",
-            "sha256": "9decc19e786feb293a3c35dde56e505816246b4bde1f8ff4e46cdb4ad8eb0022",
-            "size": 9616
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910845800,
-        "lastUpdated": 1787910845800,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9": {
-          "added": 1787910845800,
-          "file": {
-            "name": "/mail-9.15.1-de-vanced-arm64.apk",
-            "sha256": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
-            "size": 51988821
-          },
-          "manifest": {
-            "versionName": "9.15.1",
-            "versionCode": 405203,
-            "usesSdk": {
-              "minSdkVersion": 28,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "app.morphe.android.apps.photos": {
-      "metadata": {
-        "name": {
-          "en-US": "Google Photos"
-        },
-        "summary": {
-          "en-US": "Google Photos patched with Morphe"
-        },
-        "description": {
-          "en-US": "Google Photos patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/app.morphe.android.apps.photos.png",
-            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-            "size": 0
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910853335,
-        "lastUpdated": 1787910853335,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f": {
-          "added": 1787910853335,
-          "file": {
-            "name": "/photos-7.89.0.968035987-de-vanced-arm64.apk",
-            "sha256": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
-            "size": 74495582
-          },
-          "manifest": {
-            "versionName": "7.89.0.968035987",
-            "versionCode": 52244454,
-            "usesSdk": {
-              "minSdkVersion": 32,
-              "targetSdkVersion": 37
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "ginlemon.iconpackstudio": {
-      "metadata": {
-        "name": {
-          "en-US": "Icon Pack Studio"
-        },
-        "summary": {
-          "en-US": "Icon Pack Studio patched with Morphe"
-        },
-        "description": {
-          "en-US": "Icon Pack Studio patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/ginlemon.iconpackstudio.png",
-            "sha256": "5d40d75bfcb2ea94dc6543fd09888427460de2befcd1c5f625b0998f2a134a7f",
-            "size": 10746
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910842186,
-        "lastUpdated": 1787910842186,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f": {
-          "added": 1787910842186,
-          "file": {
-            "name": "/iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
-            "sha256": "dc81b686e1f6a550ce207e703fdafc9791b471f22f92cbb32b53b5db9f86b54f",
-            "size": 53411439
-          },
-          "manifest": {
-            "versionName": "2.2 build 016",
-            "versionCode": 220160,
-            "usesSdk": {
-              "minSdkVersion": 24,
-              "targetSdkVersion": 33
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.letterboxd.letterboxd": {
-      "metadata": {
-        "name": {
-          "en-US": "Letterboxd"
-        },
-        "summary": {
-          "en-US": "Letterboxd patched with Morphe"
-        },
-        "description": {
-          "en-US": "Letterboxd patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.letterboxd.letterboxd.png",
-            "sha256": "bb508d81c1968542023aa1137dbece9bc6128545245fa12db68a09672dd2929a",
-            "size": 6094
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910844823,
-        "lastUpdated": 1787910844823,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5": {
-          "added": 1787910844823,
-          "file": {
-            "name": "/letterboxd-3.5.6-de-vanced-arm64.apk",
-            "sha256": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
-            "size": 93081401
-          },
-          "manifest": {
-            "versionName": "3.5.6",
-            "versionCode": 498,
-            "usesSdk": {
-              "minSdkVersion": 32,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.facebook.orca": {
-      "metadata": {
-        "name": {
-          "en-US": "Messenger"
-        },
-        "summary": {
-          "en-US": "Messenger patched with Morphe"
-        },
-        "description": {
-          "en-US": "Messenger patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.facebook.orca.png",
-            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-            "size": 0
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910850816,
-        "lastUpdated": 1787910850816,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2": {
-          "added": 1787910850816,
-          "file": {
-            "name": "/orca-573.0.0.44.88-de-vanced-arm64.apk",
-            "sha256": "1f34b683781c4a234f78e63a7296f67d80430f59dd60a8793641039ad904d4d2",
-            "size": 95601495
-          },
-          "manifest": {
-            "versionName": "573.0.0.44.88",
-            "versionCode": 2147483647,
-            "usesSdk": {
-              "minSdkVersion": 28,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.nothing.smartcenter": {
-      "metadata": {
-        "name": {
-          "en-US": "Nothing X"
-        },
-        "summary": {
-          "en-US": "Nothing X patched with Morphe"
-        },
-        "description": {
-          "en-US": "Nothing X patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.nothing.smartcenter.png",
-            "sha256": "e8fa2a75baa720bbc787eea3f6170516adad3bf83093707738eae58ec1b3a58d",
-            "size": 12699
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910854444,
-        "lastUpdated": 1787910854444,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a": {
-          "added": 1787910854444,
-          "file": {
-            "name": "/smartcenter-3.8.0-de-vanced-arm64.apk",
-            "sha256": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
-            "size": 229906369
-          },
-          "manifest": {
-            "versionName": "3.8.0",
-            "versionCode": 3080004,
-            "usesSdk": {
-              "minSdkVersion": 26,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.microblink.photomath": {
-      "metadata": {
-        "name": {
-          "en-US": "Photomath"
-        },
-        "summary": {
-          "en-US": "Photomath patched with Morphe"
-        },
-        "description": {
-          "en-US": "Photomath patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.microblink.photomath.png",
-            "sha256": "fadd2974564206654b5ae2389f0c43e436f37d1247d373e1310971683873f3ed",
-            "size": 4360
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910851918,
-        "lastUpdated": 1787910851918,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509": {
-          "added": 1787910851918,
-          "file": {
-            "name": "/photomath-8.48.0-de-vanced-arm64.apk",
-            "sha256": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
-            "size": 12218698
-          },
-          "manifest": {
-            "versionName": "8.48.0",
-            "versionCode": 70001016,
+            "versionName": "7.0.0-dev.3",
+            "versionCode": 255070000,
             "usesSdk": {
               "minSdkVersion": 21,
-              "targetSdkVersion": 35
+              "targetSdkVersion": 34
             },
             "signer": {
               "sha256": [
@@ -619,48 +119,19 @@
               ]
             }
           }
-        }
-      }
-    },
-    "jp.pxv.android": {
-      "metadata": {
-        "name": {
-          "en-US": "Pixiv"
         },
-        "summary": {
-          "en-US": "Pixiv patched with Morphe"
-        },
-        "description": {
-          "en-US": "Pixiv patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/jp.pxv.android.png",
-            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-            "size": 0
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910834249,
-        "lastUpdated": 1787910834249,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e": {
-          "added": 1787910834249,
+        "102d571466727a51f29853ac2762ef22938e2e48d73bc4ddcdbc2ea260c17585": {
+          "added": 1787910744688,
           "file": {
-            "name": "/android-6.141.1-de-vanced-arm64.apk",
-            "sha256": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
-            "size": 47434882
+            "name": "/microg-7.0.0-dev.4-arm64.apk",
+            "sha256": "102d571466727a51f29853ac2762ef22938e2e48d73bc4ddcdbc2ea260c17585",
+            "size": 95753899
           },
           "manifest": {
-            "versionName": "6.141.1",
-            "versionCode": 56869,
+            "versionName": "7.0.0-dev.4",
+            "versionCode": 255070000,
             "usesSdk": {
-              "minSdkVersion": 23,
+              "minSdkVersion": 21,
               "targetSdkVersion": 34
             },
             "signer": {
@@ -672,7 +143,7 @@
         }
       }
     },
-    "com.reddit.frontpage.morphe": {
+    "com.reddit.frontpage": {
       "metadata": {
         "name": {
           "en-US": "Reddit"
@@ -685,7 +156,7 @@
         },
         "icon": {
           "en-US": {
-            "name": "/icons/com.reddit.frontpage.morphe.png",
+            "name": "/icons/com.reddit.frontpage.png",
             "sha256": "1cf1dcfd1d5164c592d7fc70e8c21f665d268e89b900ded8326f69a26af6c3c5",
             "size": 9112
           }
@@ -694,123 +165,23 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787910840924,
-        "lastUpdated": 1787910840924,
+        "added": 1787910743624,
+        "lastUpdated": 1787910743624,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17": {
-          "added": 1787910840924,
+        "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666": {
+          "added": 1787910743624,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
-            "sha256": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
-            "size": 57405791
+            "sha256": "7cc66d88413bc03364b2b220879809d40d539ec63102c08e4adb1d9aa8ac1666",
+            "size": 57426263
           },
           "manifest": {
             "versionName": "2026.14.0",
             "versionCode": 2147483647,
             "usesSdk": {
               "minSdkVersion": 29,
-              "targetSdkVersion": 36
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "com.strava": {
-      "metadata": {
-        "name": {
-          "en-US": "Strava"
-        },
-        "summary": {
-          "en-US": "Strava patched with Morphe"
-        },
-        "description": {
-          "en-US": "Strava patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/com.strava.png",
-            "sha256": "c0c2aee6a01a935ba5af03704bda24ec26b6a41b7b710bdedc7685de600d2c0a",
-            "size": 81482
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910855963,
-        "lastUpdated": 1787910855963,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a": {
-          "added": 1787910855963,
-          "file": {
-            "name": "/strava-477.14-de-vanced-arm64.apk",
-            "sha256": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
-            "size": 117491017
-          },
-          "manifest": {
-            "versionName": "477.14",
-            "versionCode": 12399244,
-            "usesSdk": {
-              "minSdkVersion": 32,
-              "targetSdkVersion": 35
-            },
-            "signer": {
-              "sha256": [
-                "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-              ]
-            }
-          }
-        }
-      }
-    },
-    "tv.twitch.android.app": {
-      "metadata": {
-        "name": {
-          "en-US": "Twitch"
-        },
-        "summary": {
-          "en-US": "Twitch patched with Morphe"
-        },
-        "description": {
-          "en-US": "Twitch patched with Morphe"
-        },
-        "icon": {
-          "en-US": {
-            "name": "/icons/tv.twitch.android.app.png",
-            "sha256": "24b6ef30d610b7aa107a645af6a49b72e88e6b9691e5e1c2dbf4be33dbf71196",
-            "size": 4133
-          }
-        },
-        "categories": [
-          "Other"
-        ],
-        "license": "Unknown",
-        "added": 1787910836526,
-        "lastUpdated": 1787910836526,
-        "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
-      },
-      "versions": {
-        "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422": {
-          "added": 1787910836526,
-          "file": {
-            "name": "/app-30.7.2-hoomans-arm64.apk",
-            "sha256": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
-            "size": 97512162
-          },
-          "manifest": {
-            "versionName": "30.7.2",
-            "versionCode": 3007026,
-            "usesSdk": {
-              "minSdkVersion": 26,
               "targetSdkVersion": 36
             },
             "signer": {
@@ -844,17 +215,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787910857717,
-        "lastUpdated": 1787910857717,
+        "added": 1787910745926,
+        "lastUpdated": 1787910745926,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55": {
-          "added": 1787910857717,
+        "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be": {
+          "added": 1787910745926,
           "file": {
             "name": "/youtube-21.04.223-morphe-arm64.apk",
-            "sha256": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
-            "size": 114109310
+            "sha256": "24c1506726c6a5276447e9a8e356d3086dd6c4de090d845529dcb523f22a39be",
+            "size": 114416502
           },
           "manifest": {
             "versionName": "21.04.223",
@@ -894,17 +265,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1787910849185,
-        "lastUpdated": 1787910849185,
+        "added": 1787910745227,
+        "lastUpdated": 1787910745227,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb": {
-          "added": 1787910849185,
+        "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64": {
+          "added": 1787910745227,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
-            "sha256": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
-            "size": 72062926
+            "sha256": "f37c339c7c9baa2c338ce68f9993fe60dc12f095d262f71a8b2f4d16ca696f64",
+            "size": 72267718
           },
           "manifest": {
             "versionName": "9.15.51",

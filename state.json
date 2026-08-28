@@ -87,14 +87,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1787874200,
-      "out": "microg-7.0.0-dev.3-arm64.apk",
+      "at": 1787910742,
+      "out": "microg-7.0.0-dev.4-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.0.0-dev.3"
+        "microg": "7.0.0-dev.4"
       },
-      "vc": 0,
-      "version": "7.0.0-dev.3"
+      "vc": 255070000,
+      "version": "7.0.0-dev.4"
     },
     "com.microblink.photomath|de-vanced|arm64": {
       "app_name": "Photomath",
@@ -187,7 +187,7 @@
     "hoodles": "v1.42.0",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.13.0",
-    "microg": "7.0.0-dev.3",
+    "microg": "7.0.0-dev.4",
     "morphe": "v1.41.0-dev.2",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
