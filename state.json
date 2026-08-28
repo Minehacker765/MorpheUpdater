@@ -12,6 +12,18 @@
       "vc": 526280210,
       "version": "26.28.2"
     },
+    "com.bandcamp.android|de-vanced|arm64": {
+      "app_name": "Bandcamp",
+      "arch": "arm64",
+      "at": 1787877414,
+      "out": "android-3.3.6-de-vanced-arm64.apk",
+      "package": "com.bandcamp.android",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 220489,
+      "version": "3.3.6"
+    },
     "com.chess|prathxm|arm64": {
       "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
