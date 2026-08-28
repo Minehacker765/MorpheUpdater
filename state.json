@@ -240,6 +240,18 @@
       "vc": 405203,
       "version": "9.15.1"
     },
+    "ginlemon.iconpackstudio|de-vanced|arm64": {
+      "app_name": "Icon Pack Studio",
+      "arch": "arm64",
+      "at": 1787918193,
+      "out": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
+      "package": "ginlemon.iconpackstudio",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 220160,
+      "version": "2.2 build 016"
+    },
     "jp.pxv.android|de-vanced|arm64": {
       "app_name": "pixiv",
       "arch": "arm64",
