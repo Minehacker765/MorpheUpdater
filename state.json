@@ -36,6 +36,18 @@
       "vc": 711105100,
       "version": "11.5.01"
     },
+    "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
+      "app_name": "Prime Video",
+      "arch": "arm64",
+      "at": 1787918772,
+      "out": "thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
+      "package": "com.amazon.avod.thirdpartyclient",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 470000357,
+      "version": "3.0.452.1047"
+    },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
