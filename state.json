@@ -239,6 +239,18 @@
       },
       "vc": 3007026,
       "version": "30.7.2"
+    },
+    "videoeditor.videorecorder.screenrecorder|hoodles|arm64": {
+      "app_name": "Screen Recorder - XRecorder",
+      "arch": "arm64",
+      "at": 1787912430,
+      "out": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
+      "package": "videoeditor.videorecorder.screenrecorder",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 2511001,
+      "version": "2.5.1.1"
     }
   },
   "bundles": {
