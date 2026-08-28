@@ -171,7 +171,7 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1787910742,
+      "at": 1787921040,
       "out": "microg-7.0.0-dev.4-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
