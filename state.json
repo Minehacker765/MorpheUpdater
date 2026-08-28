@@ -1,5 +1,17 @@
 {
   "builds": {
+    "com.amazon.mp3|de-vanced|arm64": {
+      "app_name": "Amazon Music: Songs & Podcasts",
+      "arch": "arm64",
+      "at": 1787877263,
+      "out": "mp3-26.28.2-de-vanced-arm64.apk",
+      "package": "com.amazon.mp3",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 526280210,
+      "version": "26.28.2"
+    },
     "com.chess|prathxm|arm64": {
       "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
