@@ -158,19 +158,10 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         }
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg
-        # Build patch dropdown + brief modded description for webpage (very brief)
+        # Build patch dropdown for webpage
         patch_list_html = ""
-        brief_modded = ""
         try:
             import json as _js3
-            # brief from app_descriptions.json
-            try:
-                _ad_data = json.loads((ROOT / "app_descriptions.json").read_text())
-                _ad = _ad_data.get(pkg, {})
-                if _ad and _ad.get("modded"):
-                    brief_modded = f"<div class='muted' style='margin-top:4px'>{_ad['modded'][:120]}</div>"
-            except Exception:
-                pass
             for _opt in (ROOT / "options").glob(f"{pkg.split('.')[-1]}.*.json"):
                 if not _opt.exists():
                     continue
@@ -189,10 +180,11 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                     break
         except Exception:
             pass
+        # Check TV
         is_tv = pkg in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"]
         tv_badge = " <span style='background:#2a2a30;padding:2px 6px;border-radius:4px;font-size:0.7rem'>TV</span>" if is_tv else ""
         from string import Template as _T
-        cards_html += _T(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+brief_modded+patch_list_html, dl=dl)
+        cards_html += _T(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)
 
     if not cards_html:
         for app in cfg.get("apps", []):
@@ -207,6 +199,11 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                 "ginlemon.iconpackstudio": "Icon Pack Studio", "com.facebook.orca": "Messenger",
                 "com.letterboxd.letterboxd": "Letterboxd", "com.nothing.smartcenter": "Nothing X",
                 "jp.pxv.android": "Pixiv",
+                "com.adguard.android": "AdGuard", "com.adobe.lrmobile": "Lightroom",
+                "com.soundcloud.android": "SoundCloud", "pl.solidexplorer2": "Solid Explorer",
+                "videoeditor.videorecorder.screenrecorder": "Screen Recorder", "ru.iiec.pydroid3": "PyDroid3",
+                "com.myfitnesspal.android": "MyFitnessPal", "ch.protonvpn.android": "ProtonVPN",
+                "com.amazon.avod.thirdpartyclient": "Prime Video", "com.duolingo": "Duolingo",
             }.get(pkg, pkg)
             from string import Template as _T2
             cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")

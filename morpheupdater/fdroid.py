@@ -180,50 +180,9 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
                     rank = _DPI_RANK.get(m.group(1), 0) if m else 0
                     candidates.append(((0, 0, rank, z.getinfo(name).file_size), name))
             if not candidates:
-                # for packages with no mipmap/ic_launcher (e.g. Duolingo XML, Bandcamp, Photos, Pixiv) - generate fallback with initials
-                try:
-                    from PIL import Image, ImageDraw, ImageFont  # type: ignore
-
-                    pkg = dest.stem
-                    parts = pkg.split(".")
-                    initials = "".join(p[0].upper() for p in parts[-2:])[:2]
-                    if pkg == "com.duolingo":
-                        initials = "Du"
-                    elif pkg == "com.bandcamp.android":
-                        initials = "Ba"
-                    elif pkg == "app.morphe.android.apps.photos":
-                        initials = "Ph"
-                    elif pkg == "jp.pxv.android":
-                        initials = "Px"
-                    elif "adguard" in pkg:
-                        initials = "Ad"
-                    dest.parent.mkdir(parents=True, exist_ok=True)
-                    im = Image.new("RGB", (512, 512), "#1e1e1e")
-                    d = ImageDraw.Draw(im)
-                    import hashlib
-
-                    h = int(hashlib.md5(pkg.encode()).hexdigest()[:6], 16)
-                    color = f"#{h & 0xFFFFFF:06x}"
-                    d.ellipse([96, 96, 416, 416], fill=color)
-                    try:
-                        d.text((256, 256), initials, fill="white", anchor="mm", font=ImageFont.load_default())
-                    except Exception:
-                        pass
-                    im.save(dest, "PNG")
-                    return dest.name
-                except Exception:
-                    pass
                 if "microg" in apk.name.lower() or "mgoogle" in dest.name.lower():
                     return _fallback_microg_icon(dest)
-                # generic 1x1
-                try:
-                    import base64
-
-                    dest.parent.mkdir(parents=True, exist_ok=True)
-                    dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
-                    return dest.name
-                except Exception:
-                    return None
+                return None
             best = max(candidates, key=lambda x: x[0])[1]
             dest.parent.mkdir(parents=True, exist_ok=True)
             # handle webp vs png
@@ -467,16 +426,6 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "com.letterboxd.letterboxd": "Letterboxd",
                     "com.nothing.smartcenter": "Nothing X",
                     "jp.pxv.android": "Pixiv",
-                    "com.adguard.android": "AdGuard",
-                    "com.adobe.lrmobile": "Lightroom",
-                    "com.soundcloud.android": "SoundCloud",
-                    "pl.solidexplorer2": "Solid Explorer",
-                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
-                    "ru.iiec.pydroid3": "PyDroid3",
-                    "com.myfitnesspal.android": "MyFitnessPal",
-                    "ch.protonvpn.android": "ProtonVPN",
-                    "com.amazon.avod.thirdpartyclient": "Prime Video",
-                    "com.duolingo": "Duolingo",
                 }
                 cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package
@@ -506,16 +455,6 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "com.letterboxd.letterboxd": "Letterboxd",
                     "com.nothing.smartcenter": "Nothing X",
                     "jp.pxv.android": "Pixiv",
-                    "com.adguard.android": "AdGuard",
-                    "com.adobe.lrmobile": "Lightroom",
-                    "com.soundcloud.android": "SoundCloud",
-                    "pl.solidexplorer2": "Solid Explorer",
-                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
-                    "ru.iiec.pydroid3": "PyDroid3",
-                    "com.myfitnesspal.android": "MyFitnessPal",
-                    "ch.protonvpn.android": "ProtonVPN",
-                    "com.amazon.avod.thirdpartyclient": "Prime Video",
-                    "com.duolingo": "Duolingo",
                 }
                 cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package
@@ -561,19 +500,11 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 icon_rel = icon_path.name
 
             display = app_name.removesuffix(" Morphe")
-            # Build detailed description with patch list and app original/modded brief
+            # Build detailed description with patch list
+            # Try to load patch descriptions from options file
             patch_desc = ""
-            app_desc = ""
             try:
                 import json as _js3
-                # app original/modded brief from app_descriptions.json
-                try:
-                    _app_desc_data = json.loads((ROOT / "app_descriptions.json").read_text())
-                    _ad = _app_desc_data.get(package, {})
-                    if _ad:
-                        app_desc = f"\n\n{_ad.get('original','')} — {_ad.get('modded','')}"
-                except Exception:
-                    pass
                 # find options file for this package
                 for _opt in (ROOT / "options").glob(f"{package.split('.')[-1]}.*.json"):
                     if _opt.exists():
@@ -591,22 +522,12 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                             break
             except Exception:
                 pass
+            # Check if this is Android TV
             is_tv = "androidtv" in str(cfg.get("bundles", {}).get("tv.twitch.android.app", "")) or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax"]
             tv_note = " [Android TV] " if is_tv or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"] else ""
-            summary = f"{display}{tv_note} patched with Morphe"
-            if patch_desc:
-                # extract patch count from patch_desc
-                import re as _re
-                _m = _re.search(r"Patches \((\d+)\)", patch_desc)
-                _cnt = _m.group(1) if _m else "?"
-                summary += f" ({_cnt} patches)"
-                if app_desc:
-                    summary += f" — {_ad.get('modded','')[:60]}"
-            desc = f"{display}{tv_note} — {app_desc.strip() if app_desc else 'Patched with Morphe'}{patch_desc}\n\nOriginal: {package} — {app_desc.strip() if app_desc else display + ' with enhancements.'}"
-            # Add full patch list for F-Droid (longer)
-            if patch_desc and "Patches (" in patch_desc:
-                # already includes patch list, keep it
-                pass
+            summary = f"{display}{tv_note} patched with Morphe ({len(patch_desc.split(',')) if patch_desc else 0} patches)"
+            # For universal, keep it short; for specific, include patch count
+            desc = f"{display}{tv_note} — {summary}{patch_desc}\n\nOriginal: {package} — {display} is {display.lower()} with enhancements."
             # Keep it brief for F-Droid (max 4000 chars)
             if len(desc) > 3500:
                 desc = desc[:3500]
