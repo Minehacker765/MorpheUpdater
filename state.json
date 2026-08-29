@@ -12,6 +12,18 @@
       "vc": 605,
       "version": "1.16.0"
     },
+    "bitpit.launcher|hoodles|arm64": {
+      "app_name": "Niagara Launcher \u2027 Home Screen",
+      "arch": "arm64",
+      "at": 1788040977,
+      "out": "bitpit.launcher-1.16.23-hoodles-arm64.apk",
+      "package": "bitpit.launcher",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 1627,
+      "version": "1.16.23"
+    },
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "Proton VPN: Fast & Secure VPN",
       "arch": "arm64",
