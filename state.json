@@ -132,6 +132,18 @@
       "vc": 344611864,
       "version": "573.0.0.44.88"
     },
+    "com.google.android.apps.magazines|hoodles|arm64": {
+      "app_name": "Google News - Daily Headlines",
+      "arch": "arm64",
+      "at": 1788013718,
+      "out": "magazines-5.161.0.931240252-hoodles-arm64.apk",
+      "package": "com.google.android.apps.magazines",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 2022244226,
+      "version": "5.161.0.931240252"
+    },
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
