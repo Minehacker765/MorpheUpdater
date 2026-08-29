@@ -1,5 +1,17 @@
 {
   "builds": {
+    "app.ttmikstories.android|hoodles|arm64": {
+      "app_name": "Korean Reading: TTMIK Stories",
+      "arch": "arm64",
+      "at": 1788040702,
+      "out": "ttmikstories.android-1.16.0-hoodles-arm64.apk",
+      "package": "app.ttmikstories.android",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 605,
+      "version": "1.16.0"
+    },
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "Proton VPN: Fast & Secure VPN",
       "arch": "arm64",
@@ -406,6 +418,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
+      "signing": "external",
       "tag": "v1.15.0-dev.4"
     }
   }
