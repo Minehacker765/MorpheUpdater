@@ -426,6 +426,21 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "com.letterboxd.letterboxd": "Letterboxd",
                     "com.nothing.smartcenter": "Nothing X",
                     "jp.pxv.android": "Pixiv",
+                    "com.adguard.android": "AdGuard",
+                    "com.adobe.lrmobile": "Lightroom",
+                    "com.soundcloud.android": "SoundCloud",
+                    "pl.solidexplorer2": "Solid Explorer",
+                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
+                    "ru.iiec.pydroid3": "PyDroid3",
+                    "com.myfitnesspal.android": "MyFitnessPal",
+                    "ch.protonvpn.android": "ProtonVPN",
+                    "com.amazon.avod.thirdpartyclient": "Prime Video",
+                    "com.duolingo": "Duolingo",
+                    "com.cricbuzz.android": "Cricbuzz",
+                    "com.google.android.apps.recorder": "Recorder",
+                    "com.microsoft.office.officelens": "Office Lens",
+                    "com.google.android.apps.magazines": "Google News",
+                    "com.github.android": "GitHub",
                 }
                 cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package
@@ -455,6 +470,21 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     "com.letterboxd.letterboxd": "Letterboxd",
                     "com.nothing.smartcenter": "Nothing X",
                     "jp.pxv.android": "Pixiv",
+                    "com.adguard.android": "AdGuard",
+                    "com.adobe.lrmobile": "Lightroom",
+                    "com.soundcloud.android": "SoundCloud",
+                    "pl.solidexplorer2": "Solid Explorer",
+                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
+                    "ru.iiec.pydroid3": "PyDroid3",
+                    "com.myfitnesspal.android": "MyFitnessPal",
+                    "ch.protonvpn.android": "ProtonVPN",
+                    "com.amazon.avod.thirdpartyclient": "Prime Video",
+                    "com.duolingo": "Duolingo",
+                    "com.cricbuzz.android": "Cricbuzz",
+                    "com.google.android.apps.recorder": "Recorder",
+                    "com.microsoft.office.officelens": "Office Lens",
+                    "com.google.android.apps.magazines": "Google News",
+                    "com.github.android": "GitHub",
                 }
                 cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package

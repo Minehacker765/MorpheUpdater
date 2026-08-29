@@ -359,6 +359,9 @@ async def recommended_version(jar: Path, urls: list[str], package: str, cfg: dic
     for block in BLOCK_RE.finditer(out):
         if block.group("pkg") != package:
             continue
+        # check for universal "Any" (no specific version)
+        if "Any" in block.group("versions"):
+            return "Any"
         versions = [m.group("ver") for m in VERSION_LINE_RE.finditer(block.group("versions"))]
         if versions:
             highest = max(versions, key=_version_key)

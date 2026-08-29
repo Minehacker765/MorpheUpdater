@@ -155,6 +155,11 @@ def build_showcase(cfg: dict, state: dict) -> bool:
             "ch.protonvpn.android": "ProtonVPN",
             "com.amazon.avod.thirdpartyclient": "Prime Video",
             "com.duolingo": "Duolingo",
+            "com.cricbuzz.android": "Cricbuzz",
+            "com.google.android.apps.recorder": "Recorder",
+            "com.microsoft.office.officelens": "Office Lens",
+            "com.google.android.apps.magazines": "Google News",
+            "com.github.android": "GitHub",
         }
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg
@@ -204,6 +209,9 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                 "videoeditor.videorecorder.screenrecorder": "Screen Recorder", "ru.iiec.pydroid3": "PyDroid3",
                 "com.myfitnesspal.android": "MyFitnessPal", "ch.protonvpn.android": "ProtonVPN",
                 "com.amazon.avod.thirdpartyclient": "Prime Video", "com.duolingo": "Duolingo",
+                "com.cricbuzz.android": "Cricbuzz", "com.google.android.apps.recorder": "Recorder",
+                "com.microsoft.office.officelens": "Office Lens", "com.google.android.apps.magazines": "Google News",
+                "com.github.android": "GitHub",
             }.get(pkg, pkg)
             from string import Template as _T2
             cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
