@@ -338,13 +338,13 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.30.0",
+    "androidtv": "v1.30.1",
     "de-vanced": "v1.3.0-dev.4",
     "hoodles": "v1.42.0",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.13.0",
-    "microg": "7.0.0-dev.4",
-    "morphe": "v1.41.0-dev.3",
+    "microg": "7.0.0-dev.5",
+    "morphe": "v1.41.0-dev.4",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
@@ -358,8 +358,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "external",
-      "tag": "v1.15.0-dev.2"
+      "tag": "v1.15.0-dev.3"
     }
   }
 }
