@@ -84,6 +84,18 @@
       "vc": 268250,
       "version": "4.10.0"
     },
+    "com.cricbuzz.android|de-vanced|arm64": {
+      "app_name": "Cricbuzz - Live Cricket Scores",
+      "arch": "arm64",
+      "at": 1788013401,
+      "out": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
+      "package": "com.cricbuzz.android",
+      "tags": {
+        "de-vanced": "v1.3.0-dev.4"
+      },
+      "vc": 1521062401,
+      "version": "6.24.01"
+    },
     "com.duolingo|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -358,6 +370,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
+      "signing": "external",
       "tag": "v1.15.0-dev.3"
     }
   }
