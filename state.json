@@ -132,6 +132,18 @@
       "vc": 344611864,
       "version": "573.0.0.44.88"
     },
+    "com.github.android|hoodles|arm64": {
+      "app_name": "GitHub",
+      "arch": "arm64",
+      "at": 1788013813,
+      "out": "github.android-1.271.1-hoodles-arm64.apk",
+      "package": "com.github.android",
+      "tags": {
+        "hoodles": "v1.42.0"
+      },
+      "vc": 942,
+      "version": "1.271.1"
+    },
     "com.google.android.apps.magazines|hoodles|arm64": {
       "app_name": "Google News - Daily Headlines",
       "arch": "arm64",
