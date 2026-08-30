@@ -240,6 +240,18 @@
       "vc": 344611864,
       "version": "573.0.0.44.88"
     },
+    "com.getmimo|hoodles|arm64": {
+      "app_name": "Learn Python Coding - Mimo",
+      "arch": "arm64",
+      "at": 1788091117,
+      "out": "getmimo-9.24-hoodles-arm64.apk",
+      "package": "com.getmimo",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 1786101892,
+      "version": "9.24"
+    },
     "com.github.android|hoodles|arm64": {
       "app_name": "GitHub",
       "arch": "arm64",
@@ -500,7 +512,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.13.0",
     "microg": "7.0.0-dev.5",
-    "morphe": "v1.41.0-dev.5",
+    "morphe": "v1.41.0-dev.6",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
