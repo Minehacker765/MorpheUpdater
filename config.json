@@ -1601,7 +1601,8 @@
   "commit": true,
   "release": true,
   "archs": [
-    "arm64"
+    "arm64",
+    "tv"
   ],
   "enable_all_patches": true
 }

@@ -731,14 +731,18 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         vc_cache: dict = {}
 
         # global archs, but allow per-app override (for TV)
+        # TV apks should build if tv is in global archs; filter tv for non-TV packages
+        from .display import TV_PACKAGES as _TVP
         global_archs: list[str] = cfg["archs"] or ["arm64"]
         pending_tag: str | None = None
         plan: list[tuple[dict, list[str], str, int, str]] = []
         seen: set[tuple] = set()
         for app in cfg["apps"]:
             package = app["package"]
-            # per-app archs override (e.g. TV apps use armv7)
+            # per-app archs override (e.g. TV apps use armv7); if tv in global but package not TV, filter it
             archs = app.get("archs") or global_archs
+            if "tv" in archs and package not in _TVP and not app.get("archs"):
+                archs = [a for a in archs if a != "tv"]
             for combo in app["combos"]:
                 ident = (package, tuple(sorted(combo)))
                 if ident in seen:
