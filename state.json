@@ -456,6 +456,18 @@
       "vc": 3080004,
       "version": "3.8.0"
     },
+    "com.pandora.android|hoodles|arm64": {
+      "app_name": "Pandora - Music & Podcasts",
+      "arch": "arm64",
+      "at": 1788094103,
+      "out": "pandora.android-2608.1-hoodles-arm64.apk",
+      "package": "com.pandora.android",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 26081001,
+      "version": "2608.1"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
