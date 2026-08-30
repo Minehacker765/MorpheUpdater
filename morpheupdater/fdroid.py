@@ -16,7 +16,7 @@ import zipfile
 from pathlib import Path
 
 from . import tools
-from .display import PACKAGE_DISPLAY
+from .display import CLONE_PACKAGE_MAP, PACKAGE_DISPLAY, TV_PACKAGES
 from .settings import ICONS, OUT, ROOT
 
 log = logging.getLogger("fdroid")
@@ -375,12 +375,7 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     continue
                 raw_pkg = entry.get("package", key.split("|")[0])
                 # normalize clones: mgoogle -> revanced, google youtube -> morphe
-                pkg = {
-                    "com.mgoogle.android.gms": "app.revanced.android.gms",
-                    "com.google.android.youtube": "app.morphe.android.youtube",
-                    "com.google.android.apps.youtube.music": "app.morphe.android.apps.youtube.music",
-                    "com.chess": "com.chess.prathxm",
-                }.get(raw_pkg, raw_pkg)
+                pkg = CLONE_PACKAGE_MAP.get(raw_pkg, raw_pkg)
                 if pkg in prev_packages:
                     packages[pkg] = prev_packages[pkg]
                     if pkg not in apps and pkg in prev_apps:
@@ -417,8 +412,8 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             if info:
                 package, version, vc, app_name_real = info
                 # normalize package: mgoogle clone
-                if package == "com.mgoogle.android.gms":
-                    package = "app.revanced.android.gms"
+                if package in CLONE_PACKAGE_MAP:
+                    package = CLONE_PACKAGE_MAP[package]
                 disp_map = PACKAGE_DISPLAY
                 cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package
@@ -427,8 +422,8 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     log.warning("index: skipping %s (no metadata)", apk.name)
                     continue
                 package, version, vc = entry["package"], entry["version"], int(entry["vc"])
-                if package == "com.mgoogle.android.gms":
-                    package = "app.revanced.android.gms"
+                if package in CLONE_PACKAGE_MAP:
+                    package = CLONE_PACKAGE_MAP[package]
                 disp_map2 = PACKAGE_DISPLAY
                 cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package
@@ -497,8 +492,8 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             except Exception:
                 pass
             # Check if this is Android TV
-            is_tv = "androidtv" in str(cfg.get("bundles", {}).get("tv.twitch.android.app", "")) or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax"]
-            tv_note = " [Android TV] " if is_tv or package in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"] else ""
+            is_tv = package in TV_PACKAGES
+            tv_note = " [Android TV] " if is_tv else ""
             summary = f"{display}{tv_note} patched with Morphe ({len(patch_desc.split(',')) if patch_desc else 0} patches)"
             # For universal, keep it short; for specific, include patch count
             desc = f"{display}{tv_note} — {summary}{patch_desc}\n\nOriginal: {package} — {display} is {display.lower()} with enhancements."

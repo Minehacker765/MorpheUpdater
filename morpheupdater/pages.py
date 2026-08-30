@@ -6,7 +6,7 @@ import json
 import time
 from pathlib import Path
 
-from .display import PACKAGE_DISPLAY
+from .display import PACKAGE_DISPLAY, TV_PACKAGES
 from .settings import ICONS, OUT, ROOT
 
 TEMPLATE = """<!doctype html>
@@ -153,7 +153,7 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         except Exception:
             pass
         # Check TV
-        is_tv = pkg in ["com.netflix.ninja", "com.amazon.amazonvideo.livingroom", "tv.pluto.android", "com.disney.disneyplus", "com.wbd.hbomax", "com.peacocktv.peacockandroid", "com.fox.foxone", "com.tubitv", "com.bamnetworks.mobile.android.gameday.atbat", "com.cbs.ott"]
+        is_tv = pkg in TV_PACKAGES
         tv_badge = " <span style='background:#2a2a30;padding:2px 6px;border-radius:4px;font-size:0.7rem'>TV</span>" if is_tv else ""
         from string import Template as _T
         cards_html += _T(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)

@@ -17,7 +17,10 @@ from pathlib import Path
 from aiohttp import ClientSession, ClientTimeout
 
 from . import fdroid, pages, play, tools
+from .display import CLONE_PACKAGE_MAP, SHORT_TO_PACKAGE, TV_PACKAGES
+from .profiles import get_priority_profiles
 from .settings import (
+    ICONS,
     MORPHE_DATA,
     OPTIONS,
     OUT,
@@ -31,6 +34,7 @@ from .settings import (
     short,
     validate_apps,
 )
+from .tools import apk_info
 
 log = logging.getLogger("daemon")
 
@@ -51,19 +55,6 @@ class AuthHolder:
 
 def combo_id(combo: list[str]) -> str:
     return "+".join(combo)
-
-
-def short(package: str) -> str:
-    # Use last two segments for packages that would collide on last segment (e.g. com.bandcamp.android vs jp.pxv.android -> android)
-    # For uniqueness, use the last segment, but if that segment is common (android, app, etc.), use more
-    last = package.rsplit(".", 1)[-1]
-    # common generic last segments that cause collisions (android/app + launcher/reader etc.)
-    if last in {"android", "app", "client", "mobile", "launcher", "reader", "gallery", "converter", "manager"}:
-        parts = package.split(".")
-        if len(parts) >= 2:
-            return f"{parts[-2]}.{last}"
-        return package.replace(".", "_")
-    return last
 
 
 def options_path(package: str, combo: list[str]) -> Path:
@@ -288,8 +279,7 @@ def _enable_all_patches(options_file: Path) -> int:
         "com.facebook.orca": set(),
     }
     pkg_hint = options_file.name.split(".")[0]
-    short_to_pkg = {"katana": "com.facebook.katana", "orca": "com.facebook.orca", "facebook": "com.facebook.katana", "messenger": "com.facebook.orca"}
-    broken_for_this = BROKEN.get(short_to_pkg.get(pkg_hint, ""), set())
+    broken_for_this = BROKEN.get(SHORT_TO_PACKAGE.get(pkg_hint, ""), set())
     if not options_file.exists():
         return 0
     try:
@@ -430,9 +420,6 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
         )
         return details, delivery
 
-    # try all priority profiles for this arch (some apps' old vcs are only served to specific devices)
-    from morpheupdater.profiles import get_priority_profiles
-
     profiles = [p for _, p in get_priority_profiles(arch)]
     # also include holder's cached profile first for speed
     tried: set[str] = set()
@@ -571,7 +558,7 @@ async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) ->
 
 async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pathlib.Path]:
     # MicroG is a plain APK from its GitHub releases, not Play (use absolute latest)
-    rel = await __import__("morpheupdater.tools", fromlist=["gh_latest"]).gh_latest(session, "MorpheApp/MicroG-RE")
+    rel = await tools.gh_latest(session, "MorpheApp/MicroG-RE")
     tag = rel["tag_name"]
     # pick the no-icon apk
     url = next((a["browser_download_url"] for a in rel.get("assets", []) if "noicon" in a["name"].lower()), None)
@@ -582,7 +569,7 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
     # version from tag, e.g. 7.0.0-dev.3 -> 7.0.0
     ver = tag.lstrip("v")
     # download to tmp
-    dest = __import__("morpheupdater.settings", fromlist=["TMP"]).TMP / "direct" / f"microg-{tag}.apk"
+    dest = TMP / "direct" / f"microg-{tag}.apk"
     dest.parent.mkdir(parents=True, exist_ok=True)
     if not dest.exists():
         async with session.get(url) as r:
@@ -590,10 +577,7 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    # versionCode from APK (async)
-    from morpheupdater.tools import apk_info as _apk_info
-    from pathlib import Path as _P2
-    info = await _apk_info(_P2("bin/apkeditor.jar"), dest)
+    info = await apk_info(ROOT / "bin" / "apkeditor.jar", dest)
     vc = info[2] if info else 0
     return ver, vc, dest
 
@@ -601,7 +585,7 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
 async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path]:
     # AdGuard is no longer on Play Store, direct from adguardcdn.com
     url = "https://download.adguardcdn.com/d/18675/adguard.apk"
-    dest = __import__("morpheupdater.settings", fromlist=["TMP"]).TMP / "direct" / "adguard-4.13.2.apk"
+    dest = TMP / "direct" / "adguard-4.13.2.apk"
     dest.parent.mkdir(parents=True, exist_ok=True)
     if not dest.exists():
         async with session.get(url) as r:
@@ -609,9 +593,7 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    from morpheupdater.tools import apk_info as _apk_info2
-    from pathlib import Path as _P3
-    info = await _apk_info2(_P3("bin/apkeditor.jar"), dest)
+    info = await apk_info(ROOT / "bin" / "apkeditor.jar", dest)
     if not info:
         raise RuntimeError("failed to get AdGuard info")
     pkg, ver, vc, _ = info

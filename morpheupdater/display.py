@@ -164,3 +164,35 @@ PACKAGE_DISPLAY: dict[str, str] = {
     "net.uniquegem.directchat": "DirectChat",
     "studio.muggle.chatboost": "ChatBoost",
 }
+
+# TV packages (armv7 leanback)
+TV_PACKAGES: list[str] = [
+    "com.netflix.ninja",
+    "com.amazon.amazonvideo.livingroom",
+    "tv.pluto.android",
+    "com.disney.disneyplus",
+    "com.wbd.hbomax",
+    "com.peacocktv.peacockandroid",
+    "com.fox.foxone",
+    "com.tubitv",
+    "com.bamnetworks.mobile.android.gameday.atbat",
+    "com.cbs.ott",
+    "com.univision.prendetv",
+    "tv.twitch.android.app",  # also has phone variant, TV is separate entry
+]
+
+# Clone / package normalization (original -> actual after patch)
+CLONE_PACKAGE_MAP: dict[str, str] = {
+    "com.mgoogle.android.gms": "app.revanced.android.gms",
+    "com.google.android.youtube": "app.morphe.android.youtube",
+    "com.google.android.apps.youtube.music": "app.morphe.android.apps.youtube.music",
+    "com.chess": "com.chess.prathxm",
+}
+
+# Short name collision map for options files (hint -> package)
+SHORT_TO_PACKAGE: dict[str, str] = {
+    "katana": "com.facebook.katana",
+    "orca": "com.facebook.orca",
+    "facebook": "com.facebook.katana",
+    "messenger": "com.facebook.orca",
+}
