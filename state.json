@@ -492,6 +492,18 @@
       "vc": 2614140,
       "version": "2026.14.0"
     },
+    "com.rp.hypertrophy|hoodles|arm64": {
+      "app_name": "RP Hypertrophy",
+      "arch": "arm64",
+      "at": 1788114530,
+      "out": "hypertrophy-1.1.0-hoodles-arm64.apk",
+      "package": "com.rp.hypertrophy",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 58,
+      "version": "1.1.0"
+    },
     "com.soundcloud.android|hoodles|arm64": {
       "app_name": "SoundCloud: The Music You Love",
       "arch": "arm64",
