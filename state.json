@@ -168,6 +168,18 @@
       "vc": 200,
       "version": "3.21.0"
     },
+    "com.busuu.android.enc|hoodles|arm64": {
+      "app_name": "Busuu: Learn & Speak Languages",
+      "arch": "arm64",
+      "at": 1788058483,
+      "out": "enc-32.46.0(1732689)-hoodles-arm64.apk",
+      "package": "com.busuu.android.enc",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 1732689,
+      "version": "32.46.0(1732689)"
+    },
     "com.chess|prathxm|arm64": {
       "app_name": "",
       "arch": "arm64",
