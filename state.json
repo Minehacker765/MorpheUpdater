@@ -408,6 +408,18 @@
       "vc": 70001016,
       "version": "8.48.0"
     },
+    "com.mirinae.mirinae|hoodles|arm64": {
+      "app_name": "Mirinae - Learn Korean with AI",
+      "arch": "arm64",
+      "at": 1788093113,
+      "out": "mirinae-2.2.2-hoodles-arm64.apk",
+      "package": "com.mirinae.mirinae",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 198,
+      "version": "2.2.2"
+    },
     "com.myfitnesspal.android|hoodles|arm64": {
       "app_name": "MyFitnessPal: Calorie Counter",
       "arch": "arm64",
