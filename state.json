@@ -372,6 +372,18 @@
       "vc": 676,
       "version": "2.99.412"
     },
+    "com.lyfta|hoodles|arm64": {
+      "app_name": "Lyfta: Gym Log Workout Tracker",
+      "arch": "arm64",
+      "at": 1788092683,
+      "out": "lyfta-1.551-hoodles-arm64.apk",
+      "package": "com.lyfta",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 551,
+      "version": "1.551"
+    },
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
