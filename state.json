@@ -324,6 +324,18 @@
       "vc": 1561052632,
       "version": "21.04.223"
     },
+    "com.hellochinese|hoodles|arm64": {
+      "app_name": "HelloChinese: Learn Chinese",
+      "arch": "arm64",
+      "at": 1788092276,
+      "out": "hellochinese-7.11.0-hoodles-arm64.apk",
+      "package": "com.hellochinese",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 402,
+      "version": "7.11.0"
+    },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
       "arch": "arm64",
