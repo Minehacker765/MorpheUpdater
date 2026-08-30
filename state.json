@@ -156,6 +156,18 @@
       "vc": 220489,
       "version": "3.3.6"
     },
+    "com.bunpoapp|hoodles|arm64": {
+      "app_name": "Bunpo: Language Learning",
+      "arch": "arm64",
+      "at": 1788057787,
+      "out": "bunpoapp-3.21.0-hoodles-arm64.apk",
+      "package": "com.bunpoapp",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 200,
+      "version": "3.21.0"
+    },
     "com.chess|prathxm|arm64": {
       "app_name": "",
       "arch": "arm64",
