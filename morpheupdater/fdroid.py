@@ -661,18 +661,6 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
         fp = (state.get("fdroid") or {}).get("cert_sha256", "")
         log.info("f-droid index-v1 written (%d apks)%s", len(packages), f"; repo fp {fp}" if fp else "")
 
-    # Sync icons/ at root to out/icons for Pages (icons primary is at repo root per user)
-    try:
-        import shutil
-        (OUT / "icons").mkdir(parents=True, exist_ok=True)
-        for p in ICONS.glob("*.png"):
-            try:
-                shutil.copyfile(p, OUT / "icons" / p.name)
-            except Exception:
-                pass
-    except Exception:
-        pass
-
     # ── index-v2 generation (modern, with fileEntry for icons) ──────────────
     changed_v2 = _build_index_v2(index, creds)
 

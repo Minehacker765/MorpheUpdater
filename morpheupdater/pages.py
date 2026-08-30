@@ -122,14 +122,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                 try:
                     from morpheupdater.fdroid import extract_icon as _ei
                     got = _ei(apk_file, ICONS / f"{pkg}.png")
-                    # also ensure out/icons copy for Pages worker
                     if got:
-                        try:
-                            import shutil
-                            (OUT / "icons").mkdir(parents=True, exist_ok=True)
-                            shutil.copyfile(ICONS / got, OUT / "icons" / got)
-                        except Exception:
-                            pass
                         icon = f"icons/{got}"
                 except Exception:
                     pass
