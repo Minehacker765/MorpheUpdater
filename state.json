@@ -84,6 +84,18 @@
       "vc": 711105100,
       "version": "11.5.01"
     },
+    "com.alltrails.alltrails|hoodles|arm64": {
+      "app_name": "AllTrails: Hike, Bike & Run",
+      "arch": "arm64",
+      "at": 1788054692,
+      "out": "alltrails-26.8.30-hoodles-arm64.apk",
+      "package": "com.alltrails.alltrails",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 60501,
+      "version": "26.8.30"
+    },
     "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
       "app_name": "Prime Video",
       "arch": "arm64",
@@ -267,14 +279,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1787921040,
-      "out": "microg-7.0.0-dev.4-arm64.apk",
+      "at": 1788051816,
+      "out": "microg-7.0.0-dev.5-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.0.0-dev.4"
+        "microg": "7.0.0-dev.5"
       },
       "vc": 255070000,
-      "version": "7.0.0-dev.4"
+      "version": "7.0.0-dev.5"
     },
     "com.microblink.photomath|de-vanced|arm64": {
       "app_name": "Photomath",
