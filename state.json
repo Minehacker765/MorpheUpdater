@@ -468,6 +468,18 @@
       "vc": 26081001,
       "version": "2608.1"
     },
+    "com.qbis.guessthecountry|hoodles|arm64": {
+      "app_name": "World Map Quiz",
+      "arch": "arm64",
+      "at": 1788114383,
+      "out": "guessthecountry-3.34.2-hoodles-arm64.apk",
+      "package": "com.qbis.guessthecountry",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 148,
+      "version": "3.34.2"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -591,12 +603,12 @@
   },
   "bundles": {
     "androidtv": "v1.30.3",
-    "de-vanced": "v1.3.0-dev.5",
+    "de-vanced": "v1.3.0-dev.6",
     "hoodles": "v1.43.0",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.13.0",
     "microg": "7.0.0-dev.5",
-    "morphe": "v1.41.0-dev.6",
+    "morphe": "v1.41.0-dev.7",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
