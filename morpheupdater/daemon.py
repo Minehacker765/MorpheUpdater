@@ -321,8 +321,10 @@ async def check_bundles(session: ClientSession, cfg: dict, state: dict) -> dict[
             continue
         try:
             if prerelease:
-                release = await tools.gh_latest_prerelease(session, repo)
+                # prerelease enabled: take absolute latest (stable or prerelease, whichever is newest)
+                release = await tools.gh_latest(session, repo)
             else:
+                # prerelease disabled: only latest stable
                 release = await tools.gh_latest_release(session, repo)
         except Exception as exc:
             log.warning("bundle %s: release check failed (%s); keeping %s", name, exc, state["bundles"].get(name, "?"))
@@ -547,9 +549,9 @@ async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) ->
 
 
 async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pathlib.Path]:
-    # MicroG is a plain APK from its GitHub releases, not Play
+    # MicroG is a plain APK from its GitHub releases, not Play (use absolute latest)
     import re as _re
-    rel = await __import__("morpheupdater.tools", fromlist=["gh_latest_prerelease"]).gh_latest_prerelease(session, "MorpheApp/MicroG-RE")
+    rel = await __import__("morpheupdater.tools", fromlist=["gh_latest"]).gh_latest(session, "MorpheApp/MicroG-RE")
     tag = rel["tag_name"]
     # pick the no-icon apk
     url = next((a["browser_download_url"] for a in rel.get("assets", []) if "noicon" in a["name"].lower()), None)

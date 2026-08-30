@@ -68,6 +68,20 @@ async def gh_latest_release(session: ClientSession, repo: str) -> dict:
     return releases[0]
 
 
+async def gh_latest(session: ClientSession, repo: str) -> dict:
+    """Absolute latest release (prerelease or stable, whichever is newest)."""
+    async with session.get(
+        f"{GH_API}/repos/{repo}/releases?per_page=20",
+        headers=_gh_headers(), timeout=None,
+    ) as resp:
+        if resp.status != 200:
+            raise RuntimeError(f"github HTTP {resp.status} for {repo}")
+        releases = await resp.json()
+    if not releases:
+        raise RuntimeError(f"no releases for {repo}")
+    return releases[0]
+
+
 
 def pick_jar_asset(release: dict) -> str | None:
     jars = [
@@ -86,7 +100,7 @@ async def update_tool(session: ClientSession, name: str, spec: dict, state: dict
     """Check one tool's upstream release; download and replace its jar on change.
     Returns (changed, tag)."""
     repo, local = spec["repo"], spec["local"]
-    release = await gh_latest_prerelease(session, repo)
+    release = await gh_latest(session, repo)
     tag = release["tag_name"]
     prev = state["tools"].get(name)
     if prev and prev.get("tag") == tag and (ROOT / local).exists():
