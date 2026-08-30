@@ -336,6 +336,18 @@
       "vc": 402,
       "version": "7.11.0"
     },
+    "com.intsig.camscanner|hoodles|arm64": {
+      "app_name": "CamScanner- scanner, PDF maker",
+      "arch": "arm64",
+      "at": 1788092451,
+      "out": "camscanner-7.20.0.2606230000-hoodles-arm64.apk",
+      "package": "com.intsig.camscanner",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 72002,
+      "version": "7.20.0.2606230000"
+    },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
       "arch": "arm64",
