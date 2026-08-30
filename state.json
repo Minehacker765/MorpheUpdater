@@ -36,18 +36,6 @@
       "vc": 605194300,
       "version": "5.19.43.0"
     },
-    "cn.ommiao.iconpacker|hoodles|arm64": {
-      "app_name": "Icon Packer",
-      "arch": "arm64",
-      "at": 1788050708,
-      "out": "iconpacker-1.21.0-release-hoodles-arm64.apk",
-      "package": "cn.ommiao.iconpacker",
-      "tags": {
-        "hoodles": "v1.43.0"
-      },
-      "vc": 35,
-      "version": "1.21.0-release"
-    },
     "com.adguard.android|hoodles|arm64": {
       "app_name": "AdGuard",
       "arch": "arm64",
