@@ -360,6 +360,18 @@
       "vc": 498,
       "version": "3.5.6"
     },
+    "com.lingodeer|hoodles|arm64": {
+      "app_name": "LingoDeer - Learn Languages",
+      "arch": "arm64",
+      "at": 1788092575,
+      "out": "lingodeer-2.99.412-hoodles-arm64.apk",
+      "package": "com.lingodeer",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 676,
+      "version": "2.99.412"
+    },
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
