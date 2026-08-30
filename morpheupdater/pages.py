@@ -6,6 +6,7 @@ import json
 import time
 from pathlib import Path
 
+from .display import PACKAGE_DISPLAY
 from .settings import ICONS, OUT, ROOT
 
 TEMPLATE = """<!doctype html>
@@ -63,7 +64,7 @@ CARD = """<div class="card">
 </div>"""
 
 
-def build_showcase(cfg: dict, state: dict) -> bool:
+async def build_showcase(cfg: dict, state: dict) -> bool:
     meta = cfg.get("fdroid") or {}
     repo_url = meta.get("url") or "https://morpheupdater.minehacker765.workers.dev"
     fp = (state.get("fdroid") or {}).get("cert_sha256", "")
@@ -126,41 +127,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
                         icon = f"icons/{got}"
                 except Exception:
                     pass
-        display = {
-            "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
-            "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
-            "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
-            "com.chess": "Chess", "com.chess.prathxm": "Chess",
-            "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
-            "tv.twitch.android.app": "Twitch",
-            "com.strava": "Strava",
-            "com.google.android.apps.photos": "Google Photos",
-            "com.microblink.photomath": "Photomath",
-            "com.facebook.katana": "Facebook",
-            "com.amazon.mp3": "Amazon Music",
-            "com.bandcamp.android": "Bandcamp",
-            "de.gmx.mobile.android.mail": "GMX Mail",
-            "ginlemon.iconpackstudio": "Icon Pack Studio",
-            "com.facebook.orca": "Messenger",
-            "com.letterboxd.letterboxd": "Letterboxd",
-            "com.nothing.smartcenter": "Nothing X",
-            "jp.pxv.android": "Pixiv",
-            "com.adguard.android": "AdGuard",
-            "com.adobe.lrmobile": "Lightroom",
-            "com.soundcloud.android": "SoundCloud",
-            "pl.solidexplorer2": "Solid Explorer",
-            "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
-            "ru.iiec.pydroid3": "PyDroid3",
-            "com.myfitnesspal.android": "MyFitnessPal",
-            "ch.protonvpn.android": "ProtonVPN",
-            "com.amazon.avod.thirdpartyclient": "Prime Video",
-            "com.duolingo": "Duolingo",
-            "com.cricbuzz.android": "Cricbuzz",
-            "com.google.android.apps.recorder": "Recorder",
-            "com.microsoft.office.officelens": "Office Lens",
-            "com.google.android.apps.magazines": "Google News",
-            "com.github.android": "GitHub",
-        }
+        display = PACKAGE_DISPLAY
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package","")) or pkg
         # Build patch dropdown for webpage
@@ -194,25 +161,7 @@ def build_showcase(cfg: dict, state: dict) -> bool:
     if not cards_html:
         for app in cfg.get("apps", []):
             pkg = app["package"]
-            disp2 = {
-                "com.google.android.youtube": "YouTube", "com.google.android.apps.youtube.music": "YouTube Music",
-                "com.reddit.frontpage": "Reddit", "com.chess": "Chess",
-                "tv.twitch.android.app": "Twitch", "com.strava": "Strava",
-                "com.google.android.apps.photos": "Google Photos", "com.microblink.photomath": "Photomath",
-                "com.facebook.katana": "Facebook", "com.amazon.mp3": "Amazon Music",
-                "com.bandcamp.android": "Bandcamp", "de.gmx.mobile.android.mail": "GMX Mail",
-                "ginlemon.iconpackstudio": "Icon Pack Studio", "com.facebook.orca": "Messenger",
-                "com.letterboxd.letterboxd": "Letterboxd", "com.nothing.smartcenter": "Nothing X",
-                "jp.pxv.android": "Pixiv",
-                "com.adguard.android": "AdGuard", "com.adobe.lrmobile": "Lightroom",
-                "com.soundcloud.android": "SoundCloud", "pl.solidexplorer2": "Solid Explorer",
-                "videoeditor.videorecorder.screenrecorder": "Screen Recorder", "ru.iiec.pydroid3": "PyDroid3",
-                "com.myfitnesspal.android": "MyFitnessPal", "ch.protonvpn.android": "ProtonVPN",
-                "com.amazon.avod.thirdpartyclient": "Prime Video", "com.duolingo": "Duolingo",
-                "com.cricbuzz.android": "Cricbuzz", "com.google.android.apps.recorder": "Recorder",
-                "com.microsoft.office.officelens": "Office Lens", "com.google.android.apps.magazines": "Google News",
-                "com.github.android": "GitHub",
-            }.get(pkg, pkg)
+            disp2 = PACKAGE_DISPLAY.get(pkg, pkg)
             from string import Template as _T2
             cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
 

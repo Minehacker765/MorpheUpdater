@@ -4,8 +4,10 @@ from __future__ import annotations
 
 import asyncio
 import hashlib
+import json
 import logging
 import os
+import re
 import shutil
 import time
 import zlib
@@ -26,6 +28,7 @@ from .settings import (
     load_state,
     now,
     save_state,
+    short,
     validate_apps,
 )
 
@@ -77,113 +80,127 @@ def _get_bundle_urls(cfg: dict, combo: list[str]) -> list[str]:
     return urls
 
 
-def _get_local_mpp(bundle_name: str, url: str) -> pathlib.Path | None:
-    """Return cached MPP file for bundle if present (avoids GitHub API rate limit)."""
-    from pathlib import Path as _P
-    if "github.com" not in url:
-        return None
-    try:
-        repo = _repo_from_url(url) or ""
-        sanitized = repo.replace("/", "-")
-        cache_dir = ROOT / "bin" / "morphe-data" / "patches" / sanitized
-        if not cache_dir.exists():
-            return None
-        mpps = list(cache_dir.glob("*.mpp"))
-        mpps = [p for p in mpps if not p.name.endswith(".part")]
-        if not mpps:
-            return None
-        def _ver_key(p: _P):
-            import re
-            m = re.search(r"v(\d+\.\d+\.\d+(?:-dev\.\d+)?)", p.name)
-            if m:
-                v = m.group(1)
-                base = v.split("-")[0]
-                parts = [int(x) for x in base.split(".")]
-                is_dev = 1 if "-dev" in v else 0
-                if "-dev" in v:
-                    dev_num = int(v.split("-dev.")[-1]) if "-dev." in v else 0
-                    return (parts[0], parts[1], parts[2], 1, dev_num)
-                return (parts[0], parts[1], parts[2], 0, 999)
-            return (0, 0, 0, 0, 0)
-        mpps.sort(key=_ver_key, reverse=True)
-        return mpps[0]
-    except Exception:
-        return None
-
-
-def _get_patch_inputs(cfg: dict, combo: list[str]) -> list[str]:
-    """Return patch inputs for morphe-desktop: prefer local MPP cache to avoid GitHub rate limit."""
-    inputs = []
-    for b in combo:
-        spec = cfg["bundles"].get(b, "")
-        url = spec if isinstance(spec, str) else spec.get("url", "")
-        if not url:
-            continue
-        local = _get_local_mpp(b, url)
-        if local and local.exists():
-            inputs.append(str(local))
-        else:
-            inputs.append(url)
-    return inputs
-
-
-def _enable_all_patches(options_file: pathlib.Path) -> int:
-    """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
-    import json
-    BROKEN = {
-        "com.facebook.katana": {"Hide 'Sponsored Stories'"},
-        "com.facebook.orca": set(),
-    }
-    pkg_hint = options_file.name.split(".")[0]
-    short_to_pkg = {"katana": "com.facebook.katana", "orca": "com.facebook.orca", "facebook": "com.facebook.katana", "messenger": "com.facebook.orca"}
-    broken_for_this = BROKEN.get(short_to_pkg.get(pkg_hint, ""), set())
-    if not options_file.exists():
-        return 0
-    try:
-        data = json.loads(options_file.read_text())
-    except Exception:
-        return 0
-    changed = 0
-    entries = data if isinstance(data, list) else [data]
-    for entry in entries:
-        patches = entry.get("patches") if isinstance(entry, dict) else None
-        if not isinstance(patches, dict):
-            continue
-        for name, opts in patches.items():
-            if "Clone" in name or "Change package name" in name:
-                if isinstance(opts, dict) and opts.get("enabled"):
-                    opts["enabled"] = False
-                    changed += 1
-                continue
-            if name in broken_for_this:
-                if isinstance(opts, dict) and opts.get("enabled"):
-                    opts["enabled"] = False
-                    changed += 1
-                continue
-            if isinstance(opts, dict) and "enabled" in opts:
-                if not opts["enabled"]:
-                    opts["enabled"] = True
-                    changed += 1
-    if changed:
-        if isinstance(data, list):
-            options_file.write_text(json.dumps(data, indent=4) + "\n")
-        else:
-            options_file.write_text(json.dumps(data, indent=4) + "\n")
-    return changed
-
-
-
 def clean_tmp(cfg: dict) -> None:
     TMP.mkdir(parents=True, exist_ok=True)
-    max_mb = cfg["tmp_max_mb"]
-    max_age_days = cfg["tmp_max_age_days"]
+    max_mb = cfg.get("tmp_max_mb", 2048)
+    max_age_days = cfg.get("tmp_max_age_days", 7)
+    min_free_gb = cfg.get("tmp_min_free_gb", cfg.get("clean", {}).get("tmp_min_free_gb", 5) if isinstance(cfg.get("clean"), dict) else 5)
     size_mb = dir_size_mb(TMP)
     cutoff = now() - int(max_age_days * 86400)
     too_old = any(p.stat().st_mtime < cutoff for p in TMP.rglob("*") if p.is_file())
-    if size_mb > max_mb or too_old:
-        log.info("wiping tmp/ (size=%.0fMB max=%dMB old=%s)", size_mb, max_mb, too_old)
+    # Check free space
+    try:
+        free_gb = shutil.disk_usage(ROOT).free / (1024**3)
+        low_space = free_gb < min_free_gb
+    except Exception:
+        low_space = False
+        free_gb = 0
+    if size_mb > max_mb or too_old or low_space:
+        log.info("wiping tmp/ (size=%.0fMB max=%dMB old=%s free=%.1fGB min=%dGB)", size_mb, max_mb, too_old, free_gb, min_free_gb)
         shutil.rmtree(TMP)
         TMP.mkdir(parents=True, exist_ok=True)
+
+
+async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False) -> int:
+    """LRU prune tmp/ until size < max and no old files, or just dupes. Returns deleted count."""
+    TMP.mkdir(parents=True, exist_ok=True)
+    max_mb = cfg.get("tmp_max_mb", 2048)
+    max_age_days = cfg.get("tmp_max_age_days", 7)
+    cutoff = now() - int(max_age_days * 86400)
+    files = [p for p in TMP.rglob("*") if p.is_file()]
+    # Sort by mtime (oldest first) for LRU
+    files.sort(key=lambda p: p.stat().st_mtime)
+    deleted = 0
+    size_mb = dir_size_mb(TMP)
+    for p in files:
+        is_old = p.stat().st_mtime < cutoff
+        is_dup = remove_dupes and p.suffix == ".part"
+        # Delete if old, or if dupes flag and it's a .part, or if size still over max
+        if is_old or is_dup or size_mb > max_mb:
+            if dry_run:
+                log.info("[dry-run] would delete tmp %s (old=%s dup=%s size=%.0fMB)", p, is_old, is_dup, size_mb)
+            else:
+                try:
+                    p.unlink()
+                    deleted += 1
+                    size_mb = dir_size_mb(TMP)
+                except Exception:
+                    pass
+            if not is_old and not is_dup and size_mb <= max_mb:
+                break
+    # Also handle morphe-data duplicate cache
+    if remove_dupes:
+        for dup in [ROOT / "morphe-data", ROOT / "bin" / "morphe-data"]:
+            if dup.exists():
+                # Keep only bin/morphe-data as canonical, delete old morphe-data if duplicate
+                if dup == ROOT / "morphe-data" and (ROOT / "bin" / "morphe-data").exists():
+                    if dry_run:
+                        log.info("[dry-run] would delete duplicate %s", dup)
+                    else:
+                        try:
+                            shutil.rmtree(dup)
+                            deleted += 1
+                        except Exception:
+                            pass
+    if deleted:
+        log.info("prune_tmp deleted %d files", deleted)
+    return deleted
+
+
+async def prune_out(cfg: dict, dry_run: bool = False, remove_dupes: bool = False) -> int:
+    """Ensure out/ only has latest APK per package|combo|arch. Returns deleted count."""
+    from collections import defaultdict
+    state = load_state()
+    # Group by package|cid|arch -> keep only latest per state, delete older version files
+    keep = set()
+    for e in state.get("builds", {}).values():
+        apk = e.get("out")
+        if apk:
+            keep.add(apk)
+    # Also check actual files in out/
+    deleted = 0
+    for apk in OUT.glob("*.apk"):
+        if apk.name not in keep:
+            # Check if it's an old version for a package that has newer in keep
+            # Use short to group
+            is_old_dup = False
+            if remove_dupes:
+                # If dupes flag, delete any file not in keep (old versions)
+                is_old_dup = True
+            if is_old_dup or apk.name not in keep:
+                if dry_run:
+                    log.info("[dry-run] would delete out %s (not in keep)", apk.name)
+                else:
+                    try:
+                        apk.unlink()
+                        deleted += 1
+                    except Exception:
+                        pass
+    # Also handle duplicate old version files for same package (keep only latest per short|cid|arch)
+    if remove_dupes or True:  # always enforce latest-only
+        grouped = defaultdict(list)
+        for apk in OUT.glob("*.apk"):
+            # Parse package short and version from filename: short-version-cid-arch.apk
+            # Use state to find latest, but fallback to mtime
+            grouped[apk.name.split("-")[0]].append(apk)
+        for short_name, files in grouped.items():
+            if len(files) > 1:
+                # Keep only newest by mtime (which should correspond to latest state)
+                files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+                for old in files[1:]:
+                    if old.name in keep:
+                        continue
+                    if dry_run:
+                        log.info("[dry-run] would delete old dup out %s", old.name)
+                    else:
+                        try:
+                            old.unlink()
+                            deleted += 1
+                        except Exception:
+                            pass
+    if deleted:
+        log.info("prune_out deleted %d files", deleted)
+    return deleted
 
 
 # ── GitHub bundle checks ────────────────────────────────────────────────────
@@ -222,7 +239,6 @@ def _get_local_mpp(bundle_name: str, url: str) -> Path | None:
         if not mpps:
             return None
         def _ver_key(p: Path):
-            import re
             m = re.search(r"v(\d+\.\d+\.\d+(?:-dev\.\d+)?)", p.name)
             if m:
                 v = m.group(1)
@@ -267,7 +283,6 @@ def _get_bundle_urls(cfg: dict, combo: list[str]) -> list[str]:
 
 def _enable_all_patches(options_file: Path) -> int:
     """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
-    import json
     BROKEN = {
         "com.facebook.katana": {"Hide 'Sponsored Stories'"},
         "com.facebook.orca": set(),
@@ -312,26 +327,32 @@ def _enable_all_patches(options_file: Path) -> int:
 
 async def check_bundles(session: ClientSession, cfg: dict, state: dict) -> dict[str, tuple]:
     changed: dict[str, tuple] = {}
-    for name, spec in cfg["bundles"].items():
+
+    async def _check_one(name: str, spec):
         url = _bundle_url(spec)
         prerelease = _bundle_prerelease(cfg, name)
         repo = _repo_from_url(url)
         if not repo:
             log.warning("bundle %s: cannot derive a GitHub repo from %s; assuming unchanged", name, url)
-            continue
+            return None
         try:
             if prerelease:
-                # prerelease enabled: take absolute latest (stable or prerelease, whichever is newest)
                 release = await tools.gh_latest(session, repo)
             else:
-                # prerelease disabled: only latest stable
                 release = await tools.gh_latest_release(session, repo)
         except Exception as exc:
             log.warning("bundle %s: release check failed (%s); keeping %s", name, exc, state["bundles"].get(name, "?"))
-            continue
+            return None
         tag = release["tag_name"]
         old = state["bundles"].get(name)
         if old != tag:
+            return (name, old, tag)
+        return None
+
+    results = await asyncio.gather(*[_check_one(n, s) for n, s in cfg["bundles"].items()])
+    for r in results:
+        if r:
+            name, old, tag = r
             changed[name] = (old, tag)
             state["bundles"][name] = tag
             log.info("bundle %s: %s -> %s", name, old or "(new)", tag)
@@ -550,7 +571,6 @@ async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) ->
 
 async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pathlib.Path]:
     # MicroG is a plain APK from its GitHub releases, not Play (use absolute latest)
-    import re as _re
     rel = await __import__("morpheupdater.tools", fromlist=["gh_latest"]).gh_latest(session, "MorpheApp/MicroG-RE")
     tag = rel["tag_name"]
     # pick the no-icon apk
@@ -570,9 +590,10 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    # versionCode from APK
-    info = __import__("morpheupdater.tools", fromlist=["apk_info"]).apk_info(
-        __import__("pathlib").Path("bin/apkeditor.jar"), dest)
+    # versionCode from APK (async)
+    from morpheupdater.tools import apk_info as _apk_info
+    from pathlib import Path as _P2
+    info = await _apk_info(_P2("bin/apkeditor.jar"), dest)
     vc = info[2] if info else 0
     return ver, vc, dest
 
@@ -588,8 +609,9 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    info = __import__("morpheupdater.tools", fromlist=["apk_info"]).apk_info(
-        __import__("pathlib").Path("bin/apkeditor.jar"), dest)
+    from morpheupdater.tools import apk_info as _apk_info2
+    from pathlib import Path as _P3
+    info = await _apk_info2(_P3("bin/apkeditor.jar"), dest)
     if not info:
         raise RuntimeError("failed to get AdGuard info")
     pkg, ver, vc, _ = info
@@ -840,27 +862,49 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                         continue
                     plan.append((app, combo, version, vc, arch))
 
-        for idx, (app, combo, version, vc, arch) in enumerate(plan):
-            label = f"{short(app['package'])} {version} [{combo_id(combo)}/{arch}]"
-            if idx:
-                await asyncio.sleep(10)
-            try:
-                await build_one(session, holder, cfg, state, app["package"], combo, version, vc, arch, summary)
-                log.info("built %s", label)
-                if clean_after:
-                    # free storage: remove this app's dl/merged/build cache
-                    for p in [TMP / "dl" / app["package"] / f"{vc}-{arch}", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk.tmp", TMP / "build"]:
-                        try:
-                            if p.is_dir():
-                                shutil.rmtree(p, ignore_errors=True)
-                            elif p.is_file():
-                                p.unlink(missing_ok=True)
-                        except Exception:
-                            pass
-                    log.info("cleaned tmp for %s (low-storage mode)", short(app["package"]))
-            except Exception as exc:
-                log.error("failed %s: %s", label, exc)
-                summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))
+        # Parallel patching: morphe is single-core, so run up to cpu_count in parallel via asyncio subprocess pool
+        import os as _os
+        cpu = _os.cpu_count() or 4
+        # Respect clean config: if full_clean, use more aggressive cleanup; else keep tmp for speed
+        sem = asyncio.Semaphore(max(1, cpu))
+        # Also limit concurrent Play downloads to avoid dispenser rate limit
+        play_sem = asyncio.Semaphore(3)
+
+        async def _build_with_sem(app, combo, version, vc, arch):
+            async with sem:
+                label = f"{short(app['package'])} {version} [{combo_id(combo)}/{arch}]"
+                try:
+                    # Use play_sem for the fetch part inside build_one (via holder, but we wrap)
+                    async with play_sem:
+                        await build_one(session, holder, cfg, state, app["package"], combo, version, vc, arch, summary)
+                    log.info("built %s", label)
+                    # Handle out latest-only: remove older version files for same package|cid|arch
+                    try:
+                        pattern = f"{short(app['package'])}-*-{combo_id(combo)}-{arch}.apk"
+                        for old in OUT.glob(pattern):
+                            if old.name != f"{short(app['package'])}-{version}-{combo_id(combo)}-{arch}.apk":
+                                try:
+                                    old.unlink()
+                                    log.debug("pruned old out %s", old.name)
+                                except Exception:
+                                    pass
+                    except Exception:
+                        pass
+                    if clean_after or cfg.get("clean", {}).get("full_clean") or cfg.get("full_clean"):
+                        for p in [TMP / "dl" / app["package"] / f"{vc}-{arch}", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk", TMP / "merged" / f"{app['package']}-{vc}-{arch}.apk.tmp", TMP / "build" / app["package"]]:
+                            try:
+                                if p.is_dir():
+                                    shutil.rmtree(p, ignore_errors=True)
+                                elif p.is_file():
+                                    p.unlink(missing_ok=True)
+                            except Exception:
+                                pass
+                        log.info("cleaned tmp for %s (low-storage mode)", short(app["package"]))
+                except Exception as exc:
+                    log.error("failed %s: %s", label, exc)
+                    summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))
+
+        await asyncio.gather(*[_build_with_sem(a, c, v, vc, arch) for a, c, v, vc, arch in plan])
 
         if summary["built"] and (cfg.get("release") or release_override):
             pending_tag = "p" + __import__("time").strftime("%Y%m%d-%H%M%S")
@@ -874,7 +918,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
             log.error("fdroid index failed: %s", exc)
             summary["failed"].append(("f-droid index", str(exc)))
         try:
-            if pages.build_showcase(cfg, state):
+            if await pages.build_showcase(cfg, state):
                 summary["pages"] = True
         except Exception as exc:
             log.error("pages showcase failed: %s", exc)

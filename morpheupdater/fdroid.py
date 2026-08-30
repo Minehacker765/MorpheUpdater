@@ -16,6 +16,7 @@ import zipfile
 from pathlib import Path
 
 from . import tools
+from .display import PACKAGE_DISPLAY
 from .settings import ICONS, OUT, ROOT
 
 log = logging.getLogger("fdroid")
@@ -319,7 +320,7 @@ def _ensure_repo_icon() -> str:
     return repo_icon.name if repo_icon.exists() else "icon.png"
 
 
-def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
+async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     """Regenerate out/index-v1.json (+signed .jar) and out/index-v2.json when contents changed."""
     editor_jar = ROOT / cfg["tools"]["apkeditor"]["local"]
     meta = cfg.get("fdroid") or {}
@@ -396,52 +397,29 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
         else:
             log.warning("index: no APKs and no previous index")
     if apk_files:
-        for apk in apk_files:
+        # Process APKs concurrently (async) – apk_info is now async via subprocess
+        async def _process_apk(apk: Path):
             entry = by_out.get(apk.name) or {}
             try:
-                info = tools.apk_info(editor_jar, apk)
+                info = await tools.apk_info(editor_jar, apk)
             except Exception:
                 info = None
+            return apk, entry, info
+
+        # Gather with concurrency limit to avoid spawning too many JVMs
+        import asyncio as _asyncio
+        sem = _asyncio.Semaphore(4)
+        async def _bounded(apk):
+            async with sem:
+                return await _process_apk(apk)
+        results = await _asyncio.gather(*[_bounded(a) for a in apk_files])
+        for apk, entry, info in results:
             if info:
                 package, version, vc, app_name_real = info
                 # normalize package: mgoogle clone
                 if package == "com.mgoogle.android.gms":
                     package = "app.revanced.android.gms"
-                disp_map = {
-                    "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
-                    "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
-                    "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
-                    "com.chess": "Chess", "com.chess.prathxm": "Chess",
-                    "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
-                    "tv.twitch.android.app": "Twitch",
-                    "com.strava": "Strava",
-                    "com.google.android.apps.photos": "Google Photos",
-                    "com.microblink.photomath": "Photomath",
-                    "com.facebook.katana": "Facebook",
-                    "com.amazon.mp3": "Amazon Music",
-                    "com.bandcamp.android": "Bandcamp",
-                    "de.gmx.mobile.android.mail": "GMX Mail",
-                    "ginlemon.iconpackstudio": "Icon Pack Studio",
-                    "com.facebook.orca": "Messenger",
-                    "com.letterboxd.letterboxd": "Letterboxd",
-                    "com.nothing.smartcenter": "Nothing X",
-                    "jp.pxv.android": "Pixiv",
-                    "com.adguard.android": "AdGuard",
-                    "com.adobe.lrmobile": "Lightroom",
-                    "com.soundcloud.android": "SoundCloud",
-                    "pl.solidexplorer2": "Solid Explorer",
-                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
-                    "ru.iiec.pydroid3": "PyDroid3",
-                    "com.myfitnesspal.android": "MyFitnessPal",
-                    "ch.protonvpn.android": "ProtonVPN",
-                    "com.amazon.avod.thirdpartyclient": "Prime Video",
-                    "com.duolingo": "Duolingo",
-                    "com.cricbuzz.android": "Cricbuzz",
-                    "com.google.android.apps.recorder": "Recorder",
-                    "com.microsoft.office.officelens": "Office Lens",
-                    "com.google.android.apps.magazines": "Google News",
-                    "com.github.android": "GitHub",
-                }
+                disp_map = PACKAGE_DISPLAY
                 cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display or disp_map.get(package) or disp_map.get(entry.get("package","")) or app_name_real or package
             else:
@@ -451,41 +429,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 package, version, vc = entry["package"], entry["version"], int(entry["vc"])
                 if package == "com.mgoogle.android.gms":
                     package = "app.revanced.android.gms"
-                disp_map2 = {
-                    "com.google.android.youtube": "YouTube", "app.morphe.android.youtube": "YouTube",
-                    "com.google.android.apps.youtube.music": "YouTube Music", "app.morphe.android.apps.youtube.music": "YouTube Music",
-                    "com.reddit.frontpage": "Reddit", "com.reddit.frontpage.morphe": "Reddit",
-                    "com.chess": "Chess", "com.chess.prathxm": "Chess",
-                    "com.mgoogle.android.gms": "MicroG", "app.revanced.android.gms": "MicroG",
-                    "tv.twitch.android.app": "Twitch",
-                    "com.strava": "Strava",
-                    "com.google.android.apps.photos": "Google Photos",
-                    "com.microblink.photomath": "Photomath",
-                    "com.facebook.katana": "Facebook",
-                    "com.amazon.mp3": "Amazon Music",
-                    "com.bandcamp.android": "Bandcamp",
-                    "de.gmx.mobile.android.mail": "GMX Mail",
-                    "ginlemon.iconpackstudio": "Icon Pack Studio",
-                    "com.facebook.orca": "Messenger",
-                    "com.letterboxd.letterboxd": "Letterboxd",
-                    "com.nothing.smartcenter": "Nothing X",
-                    "jp.pxv.android": "Pixiv",
-                    "com.adguard.android": "AdGuard",
-                    "com.adobe.lrmobile": "Lightroom",
-                    "com.soundcloud.android": "SoundCloud",
-                    "pl.solidexplorer2": "Solid Explorer",
-                    "videoeditor.videorecorder.screenrecorder": "Screen Recorder",
-                    "ru.iiec.pydroid3": "PyDroid3",
-                    "com.myfitnesspal.android": "MyFitnessPal",
-                    "ch.protonvpn.android": "ProtonVPN",
-                    "com.amazon.avod.thirdpartyclient": "Prime Video",
-                    "com.duolingo": "Duolingo",
-                    "com.cricbuzz.android": "Cricbuzz",
-                    "com.google.android.apps.recorder": "Recorder",
-                    "com.microsoft.office.officelens": "Office Lens",
-                    "com.google.android.apps.magazines": "Google News",
-                    "com.github.android": "GitHub",
-                }
+                disp_map2 = PACKAGE_DISPLAY
                 cfg_display2 = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == package), None)
                 app_name = cfg_display2 or disp_map2.get(package) or entry.get("app_name") or package
 
@@ -832,4 +776,4 @@ async def update(cfg: dict, state: dict, tag: str | None = None) -> bool:
             return False
         state.setdefault("fdroid", {}).update({"cert_b64": fp[0], "cert_sha256": fp[1]})
         log.info("repo certificate fingerprint: %s", fp[1])
-    return build_index(cfg, state, tag)
+    return await build_index(cfg, state, tag)

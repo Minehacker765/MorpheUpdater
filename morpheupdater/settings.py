@@ -15,7 +15,7 @@ OUT = ROOT / "out"
 ICONS = ROOT / "icons"
 BRANDING = ROOT / "branding"
 OPTIONS = ROOT / "options"
-MORPHE_DATA = ROOT / "morphe-data"
+MORPHE_DATA = ROOT / "bin" / "morphe-data"
 
 DEFAULT_CONFIG: dict = {
     "interval_minutes": 30,
@@ -41,8 +41,15 @@ DEFAULT_CONFIG: dict = {
     },
     "tmp_max_mb": 2048,
     "tmp_max_age_days": 7,
+    "tmp_min_free_gb": 5,
     "commit": False,
     "release": False,
+    "clean": {
+        "full_clean": False,
+        "full_clean_out": False,
+        "between_builds_seconds": 2,
+        "download_concurrency": 4,
+    },
 }
 
 log = logging.getLogger("settings")
@@ -109,20 +116,22 @@ def load_state() -> dict:
     return state
 
 
+def short(package: str) -> str:
+    """Short name for out/ and options/ (handles collisions like bandcamp.android vs pxv.android)."""
+    last = package.rsplit(".", 1)[-1]
+    if last in {"android", "app", "client", "mobile", "launcher", "reader", "gallery", "converter", "manager"}:
+        parts = package.split(".")
+        if len(parts) >= 2:
+            return f"{parts[-2]}.{last}"
+        return package.replace(".", "_")
+    return last
+
+
 def validate_apps(cfg: dict) -> None:
     """Reject configs whose app short-names would collide in out/ or options/."""
-    def _short(pkg: str) -> str:
-        last = pkg.rsplit(".", 1)[-1]
-        if last in {"android", "app", "client", "mobile", "launcher", "reader", "gallery", "converter", "manager"}:
-            parts = pkg.split(".")
-            if len(parts) >= 2:
-                return f"{parts[-2]}.{last}"
-            return pkg.replace(".", "_")
-        return last
-
     seen: dict[str, str] = {}
     for app in cfg["apps"]:
-        name = _short(app["package"])
+        name = short(app["package"])
         if name in seen and seen[name] != app["package"]:
             raise SystemExit(
                 f"config error: packages {seen[name]!r} and {app['package']!r} "

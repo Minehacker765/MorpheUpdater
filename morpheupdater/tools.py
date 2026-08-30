@@ -279,14 +279,13 @@ async def sign_apk(apk_in: Path, apk_out: Path, creds: dict) -> None:
     log.info("signed %s", apk_out.name)
 
 
-def apk_info(jar: Path, apk: Path) -> tuple[str, str, int, str] | None:
-    """(package, versionName, versionCode, appName) via APKEditor info."""
+async def apk_info(jar: Path, apk: Path) -> tuple[str, str, int, str] | None:
+    """(package, versionName, versionCode, appName) via APKEditor info (async)."""
     try:
-        proc = subprocess.run(
+        rc, out = await run(
             [java_bin(), "-jar", str(jar), "info", "-i", str(apk)],
-            capture_output=True, text=True, timeout=300,
+            timeout_s=300,
         )
-        rc, out = proc.returncode or 0, proc.stdout
     except Exception:
         return None
     if rc != 0:
