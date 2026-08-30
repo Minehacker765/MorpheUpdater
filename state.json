@@ -120,6 +120,18 @@
       "vc": 526280210,
       "version": "26.28.2"
     },
+    "com.avocards|hoodles|arm64": {
+      "app_name": "Korean Flashcards & Vocabulary",
+      "arch": "arm64",
+      "at": 1788057325,
+      "out": "avocards-3.0.18-hoodles-arm64.apk",
+      "package": "com.avocards",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 1698219898,
+      "version": "3.0.18"
+    },
     "com.bandcamp.android|de-vanced|arm64": {
       "app_name": "Bandcamp",
       "arch": "arm64",
