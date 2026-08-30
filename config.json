@@ -290,7 +290,262 @@
           "androidtv"
         ]
       ],
-      "display": "Netflix TV"
+      "display": "Netflix TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.amazon.amazonvideo.livingroom",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Prime Video TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "tv.pluto.android",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Pluto TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.disney.disneyplus",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Disney+ TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.wbd.hbomax",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "HBO Max TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.peacocktv.peacockandroid",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Peacock TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.fox.foxone",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Fox One TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.tubitv",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Tubi TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.bamnetworks.mobile.android.gameday.atbat",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "MLB TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.cbs.ott",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Paramount TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.cricbuzz.android",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Cricbuzz"
+    },
+    {
+      "package": "com.google.android.apps.recorder",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Recorder"
+    },
+    {
+      "package": "com.microsoft.office.officelens",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Office Lens"
+    },
+    {
+      "package": "com.google.android.apps.magazines",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Google News"
+    },
+    {
+      "package": "com.github.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "GitHub"
+    },
+    {
+      "package": "com.adobe.photoshopmix",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Photoshop Mix"
+    },
+    {
+      "package": "com.amazon.mShop.android.shopping",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Amazon Shopping"
+    },
+    {
+      "package": "com.drinkplusplus.angulus",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Angulus"
+    },
+    {
+      "package": "com.myprog.hexedit",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "HexEdit"
+    },
+    {
+      "package": "com.viber.voip",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "Viber"
+    },
+    {
+      "package": "net.binarymode.android.irplus",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "IRPlus"
+    },
+    {
+      "package": "nl.sanomamedia.android.nu",
+      "combos": [
+        [
+          "de-vanced"
+        ]
+      ],
+      "display": "NU.nl"
+    },
+    {
+      "package": "app.ttmikstories.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "TTMik Stories"
+    },
+    {
+      "package": "bitpit.launcher",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Bitpit Launcher"
+    },
+    {
+      "package": "cn.ommiao.iconpacker",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Icon Packer"
+    },
+    {
+      "package": "cn.wps.moffice_eng",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "WPS Office"
     },
     {
       "package": "com.adguard.android",
@@ -300,6 +555,1020 @@
         ]
       ],
       "display": "AdGuard"
+    },
+    {
+      "package": "com.alltrails.alltrails",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "AllTrails"
+    },
+    {
+      "package": "com.avocards",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Avocards"
+    },
+    {
+      "package": "com.bambuna.podcastaddict",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Podcast Addict"
+    },
+    {
+      "package": "com.bunpoapp",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Bunpo"
+    },
+    {
+      "package": "com.busuu.android.enc",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Busuu"
+    },
+    {
+      "package": "com.getmimo",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Mimo"
+    },
+    {
+      "package": "com.goodreads",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Goodreads"
+    },
+    {
+      "package": "com.hellochinese",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "HelloChinese"
+    },
+    {
+      "package": "com.intsig.camscanner",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "CamScanner"
+    },
+    {
+      "package": "com.lingodeer",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "LingoDeer"
+    },
+    {
+      "package": "com.lyfta",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Lyfta"
+    },
+    {
+      "package": "com.merriamwebster",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Merriam Webster"
+    },
+    {
+      "package": "com.mirinae.mirinae",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Mirinae"
+    },
+    {
+      "package": "com.mobilefootie.wc2010",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "MobileFootie"
+    },
+    {
+      "package": "com.pandora.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Pandora"
+    },
+    {
+      "package": "com.qbis.guessthecountry",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Guess Country"
+    },
+    {
+      "package": "com.rp.hypertrophy",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "RP Hypertrophy"
+    },
+    {
+      "package": "com.sbs.diet",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "SBS Diet"
+    },
+    {
+      "package": "com.sbs.train",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "SBS Train"
+    },
+    {
+      "package": "com.simyasolutions.ling.universal",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Ling Universal"
+    },
+    {
+      "package": "com.snorelab.app",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "SnoreLab"
+    },
+    {
+      "package": "com.superchinese",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "SuperChinese"
+    },
+    {
+      "package": "com.teslacoilsw.launcher",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Tesla Coil"
+    },
+    {
+      "package": "com.urbandroid.sleep",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Sleep as Android"
+    },
+    {
+      "package": "com.wallpaperscraft.wallpaper",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "WallpapersCraft"
+    },
+    {
+      "package": "com.windyty.android",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Windy"
+    },
+    {
+      "package": "com.xodo.pdf.reader",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Xodo PDF"
+    },
+    {
+      "package": "com.zombodroid.MemeGenerator",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Meme Generator"
+    },
+    {
+      "package": "cz.ackee.ventusky",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Ventusky"
+    },
+    {
+      "package": "ginlemon.flowerfree",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "FlowerFree"
+    },
+    {
+      "package": "jp.ne.ibis.ibispaintx.app",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "ibisPaint X"
+    },
+    {
+      "package": "kr.co.yjteam.dailypay",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "DailyPay"
+    },
+    {
+      "package": "kr.eggbun.eggconvo",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "EggBun"
+    },
+    {
+      "package": "me.mycake",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "MyCake"
+    },
+    {
+      "package": "nom.vrd",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "VRD"
+    },
+    {
+      "package": "org.languageapp.lingory",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "Lingory"
+    },
+    {
+      "package": "org.totschnig.myexpenses",
+      "combos": [
+        [
+          "hoodles"
+        ]
+      ],
+      "display": "My Expenses"
+    },
+    {
+      "package": "com.univision.prendetv",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "ViX TV",
+      "archs": [
+        "tv"
+      ]
+    },
+    {
+      "package": "com.atmfee",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "ATM Fee"
+    },
+    {
+      "package": "com.backdrops.wallpapers",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Backdrops"
+    },
+    {
+      "package": "com.llamalab.automate",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Automate"
+    },
+    {
+      "package": "com.nis.app",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "NIS"
+    },
+    {
+      "package": "com.noctuasoftware.stellarium_free",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Stellarium"
+    },
+    {
+      "package": "com.proto.circuitsimulator",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Circuit Simulator"
+    },
+    {
+      "package": "com.ttxapps.autosync",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "AutoSync"
+    },
+    {
+      "package": "com.ufovpn.connect.velnet",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "UFO VPN"
+    },
+    {
+      "package": "com.vitotechnology.StarWalk2Free",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Star Walk 2"
+    },
+    {
+      "package": "com.vitotechnology.sky.tonight.map.star.walk",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Sky Tonight"
+    },
+    {
+      "package": "com.vpn.free.hotspot.secure.vpnify",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "VPNify"
+    },
+    {
+      "package": "io.funswitch.blocker",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Blocker"
+    },
+    {
+      "package": "org.zwanoo.android.speedtest",
+      "combos": [
+        [
+          "xtra"
+        ]
+      ],
+      "display": "Speedtest"
+    },
+    {
+      "package": "ai.perplexity.app.android",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Perplexity"
+    },
+    {
+      "package": "all.in.one.calculator",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Calculator"
+    },
+    {
+      "package": "app.rubberbands.fit",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Rubberbands"
+    },
+    {
+      "package": "app.symfonik.music.player",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Symfonik"
+    },
+    {
+      "package": "ch.protonmail.android",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Proton Mail"
+    },
+    {
+      "package": "com.audible.application",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Audible"
+    },
+    {
+      "package": "com.cxinventor.file.explorer",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "File Explorer"
+    },
+    {
+      "package": "com.etsy.android",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Etsy"
+    },
+    {
+      "package": "com.gamma.scan",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Gamma Scan"
+    },
+    {
+      "package": "com.kick.mobile",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Kick"
+    },
+    {
+      "package": "com.michaldrabik.showly2",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Showly"
+    },
+    {
+      "package": "com.myvitale.forus",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Forus"
+    },
+    {
+      "package": "com.spocky.projengmenu",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Eng Menu"
+    },
+    {
+      "package": "com.streetwriters.notesnook",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Notesnook"
+    },
+    {
+      "package": "com.thetrainline",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Trainline"
+    },
+    {
+      "package": "org.readera",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "ReadEra"
+    },
+    {
+      "package": "photo.editor.photoeditor.photoeditorpro",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "Photo Editor Pro"
+    },
+    {
+      "package": "psyberia.alpinequest.free",
+      "combos": [
+        [
+          "hxreborn"
+        ]
+      ],
+      "display": "AlpineQuest"
+    },
+    {
+      "package": "com.zhiliaoapp.musically",
+      "combos": [
+        [
+          "tiktok-hx"
+        ]
+      ],
+      "display": "TikTok"
+    },
+    {
+      "package": "ak.alizandro.smartaudiobookplayer",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Smart AudioBook"
+    },
+    {
+      "package": "altergames.carlauncher",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Car Launcher"
+    },
+    {
+      "package": "app.remux.video.converter",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Video Converter"
+    },
+    {
+      "package": "com.adobe.reader",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Adobe Reader"
+    },
+    {
+      "package": "com.alphaprogression.alphaprogression",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Alpha Progression"
+    },
+    {
+      "package": "com.appfactory.essence",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Essence"
+    },
+    {
+      "package": "com.atomengineapps.teachmeanatomy",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "TeachMeAnatomy"
+    },
+    {
+      "package": "com.bandlab.bandlab",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "BandLab"
+    },
+    {
+      "package": "com.blockerhero",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "BlockerHero"
+    },
+    {
+      "package": "com.budget.tracker_app",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Budget Tracker"
+    },
+    {
+      "package": "com.camerasideas.instashot",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "InShot"
+    },
+    {
+      "package": "com.cfdrink",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "CF Drink"
+    },
+    {
+      "package": "com.collectrinc.collectr",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Collectr"
+    },
+    {
+      "package": "com.cronometer.android.gold",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Cronometer"
+    },
+    {
+      "package": "com.dv.adm",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "ADM"
+    },
+    {
+      "package": "com.finch.finch",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Finch"
+    },
+    {
+      "package": "com.flightradar24free",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Flightradar24"
+    },
+    {
+      "package": "com.google.android.dialer",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Phone"
+    },
+    {
+      "package": "com.hevy",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Hevy"
+    },
+    {
+      "package": "com.hv.replaio",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Replaio"
+    },
+    {
+      "package": "com.maxmpz.audioplayer",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Poweramp"
+    },
+    {
+      "package": "com.naver.linewebtoon",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Webtoon"
+    },
+    {
+      "package": "com.overdevs.at4k",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "AT4K"
+    },
+    {
+      "package": "com.paget96.batteryguru",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Battery Guru"
+    },
+    {
+      "package": "com.quizlet.quizletandroid",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Quizlet"
+    },
+    {
+      "package": "com.realbyteapps.moneymanagerfree",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Money Manager"
+    },
+    {
+      "package": "com.rumble.battles",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Rumble"
+    },
+    {
+      "package": "com.soepic.photogallery.release",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Photo Gallery"
+    },
+    {
+      "package": "com.sofascore.results",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Sofascore"
+    },
+    {
+      "package": "com.thehungrywasp.iamsober",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "I Am Sober"
+    },
+    {
+      "package": "com.todoist",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Todoist"
+    },
+    {
+      "package": "com.tracked.mobile",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Tracked"
+    },
+    {
+      "package": "com.tranzmate",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Tranzmate"
+    },
+    {
+      "package": "com.tumblr",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Tumblr"
+    },
+    {
+      "package": "com.wanderlog.android",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Wanderlog"
+    },
+    {
+      "package": "com.zenthek.autozen",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "AutoZen"
+    },
+    {
+      "package": "currency.converter.moneta",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Moneta"
+    },
+    {
+      "package": "dk.tacit.android.foldersync.lite",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "FolderSync"
+    },
+    {
+      "package": "io.stashteam.games.tracker.stashapp",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "Stash"
+    },
+    {
+      "package": "net.uniquegem.directchat",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "DirectChat"
+    },
+    {
+      "package": "studio.muggle.chatboost",
+      "combos": [
+        [
+          "hoomans"
+        ]
+      ],
+      "display": "ChatBoost"
+    },
+    {
+      "package": "tv.twitch.android.app",
+      "combos": [
+        [
+          "androidtv"
+        ]
+      ],
+      "display": "Twitch TV",
+      "archs": [
+        "tv"
+      ]
     }
   ],
   "tools": {

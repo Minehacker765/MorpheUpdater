@@ -111,7 +111,7 @@ def validate_apps(cfg: dict) -> None:
     """Reject configs whose app short-names would collide in out/ or options/."""
     def _short(pkg: str) -> str:
         last = pkg.rsplit(".", 1)[-1]
-        if last in {"android", "app", "client", "mobile"}:
+        if last in {"android", "app", "client", "mobile", "launcher", "reader", "gallery", "converter", "manager"}:
             parts = pkg.split(".")
             if len(parts) >= 2:
                 return f"{parts[-2]}.{last}"

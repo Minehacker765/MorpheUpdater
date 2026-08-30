@@ -408,9 +408,11 @@ def guess_version_codes(dotted: str) -> list[int]:
 
     Play versionCodes vary per app (Twitch 25.3.0 -> 2503006, YouTube 21.04.223 -> 1561052632
     is not guessable), so this is a best-effort fallback when APKPure history is
-    shallow. Tries common encodings: a*1e5+b*1e3+c etc.
+    shallow. Tries common encodings: a*1e5+b*1e3+c etc., plus large TV encodings.
     """
-    parts = [int(x) for x in re.findall(r"\d+", dotted)][:3]
+    nums = [int(x) for x in re.findall(r"\d+", dotted)]
+    # use first 3 as a,b,c and also handle +v extra numbers for TV (6.23.23+v15.5.0.70 -> 6,23,23,15,5,0,70)
+    parts = nums[:3]
     while len(parts) < 3:
         parts.append(0)
     a, b, c = parts
@@ -421,12 +423,25 @@ def guess_version_codes(dotted: str) -> list[int]:
         a * 1000000 + b * 1000 + c,
         a * 1000000 + b * 10000 + c,
         a * 10000000 + b * 1000 + c,
+        # TV large encodings (e.g. 606024040 for 6.24.4)
+        a * 100000000 + b * 100000 + c * 100,
+        a * 100000000 + b * 1000000 + c * 1000,
+        a * 100000000 + b * 100000 + c * 1000,
+        a * 100000000 + b * 10000 + c,
     ]
+    # also try incorporating extra numbers for TV +v parts
+    if len(nums) >= 5:
+        v = nums[3] if len(nums) > 3 else 0
+        w = nums[4] if len(nums) > 4 else 0
+        # common TV pattern: 6.23.23+v15.5.0.70 -> 602315500 etc? try combining
+        bases.append(a * 10000000 + v * 100000 + b * 1000 + c)
+        bases.append(a * 100000000 + v * 1000000 + b * 10000 + c)
     for base in bases:
-        for d in range(-5, 6):
-            for suffix in (0, 6, 16, 26, 36):
+        for d in range(-50, 51):
+            for suffix in (0, 6, 16, 26, 36, 40, 70, 230, 240):
                 cand.add(base + d + suffix)
                 cand.add(base * 10 + suffix)
+                cand.add(base + d)
     return sorted(c for c in cand if 0 < c < 2_147_483_647)
 
 
@@ -464,8 +479,14 @@ async def resolve_vc_with_fallback(
     try:
         return await resolve_vc(session, package, version)
     except PlayError as e:
-        if "unknown for" not in str(e):
+        if "unknown for" not in str(e) and "no versions found" not in str(e):
             raise
+        # keep original codes if available for error hint
+        codes = {}
+        try:
+            codes = await fetch_version_codes(session, package)
+        except Exception:
+            codes = {}
         # mirror* 1: try APKMirror scrape via allorigins-like proxy that bypasses CF
         # (best-effort, no auth needed)
         try:

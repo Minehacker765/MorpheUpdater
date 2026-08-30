@@ -54,8 +54,8 @@ def short(package: str) -> str:
     # Use last two segments for packages that would collide on last segment (e.g. com.bandcamp.android vs jp.pxv.android -> android)
     # For uniqueness, use the last segment, but if that segment is common (android, app, etc.), use more
     last = package.rsplit(".", 1)[-1]
-    # common generic last segments that cause collisions
-    if last in {"android", "app", "client", "mobile"}:
+    # common generic last segments that cause collisions (android/app + launcher/reader etc.)
+    if last in {"android", "app", "client", "mobile", "launcher", "reader", "gallery", "converter", "manager"}:
         parts = package.split(".")
         if len(parts) >= 2:
             return f"{parts[-2]}.{last}"
@@ -542,7 +542,7 @@ def _jar(cfg: dict, tool: str) -> Path:
 async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) -> str | None:
     key = (frozenset(urls), package)
     if key not in cache:
-        cache[key] = await tools.recommended_version(_jar(cfg, "morphe-desktop"), urls, package)
+        cache[key] = await tools.recommended_version(_jar(cfg, "morphe-desktop"), urls, package, cfg)
     return cache[key]
 
 
@@ -597,8 +597,13 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
     return ver, vc, dest
 
 
-async def _resolve_vc(session: ClientSession, package: str, version: str, cache: dict) -> int:
-    vc, codes = await play.resolve_vc(session, package, version)
+async def _resolve_vc(session: ClientSession, package: str, version: str, cache: dict, arch: str = "arm64") -> int:
+    # use fallback that handles no Pure history and brute-force for TV etc.
+    try:
+        vc, codes = await play.resolve_vc_with_fallback(session, package, version, arch)
+    except Exception:
+        # fallback to plain resolve for error message
+        vc, codes = await play.resolve_vc(session, package, version)
     cache[package] = codes
     return vc
 
@@ -653,6 +658,7 @@ async def build_one(
             force=cfg.get("force_patch", True),
             striplibs=cfg.get("striplibs", []),
             bytecode_mode=cfg.get("bytecode_mode", ""),
+            cfg=cfg,
         )
 
     try:
@@ -718,12 +724,15 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         ver_cache: dict = {}
         vc_cache: dict = {}
 
-        archs: list[str] = cfg["archs"] or ["arm64"]
+        # global archs, but allow per-app override (for TV)
+        global_archs: list[str] = cfg["archs"] or ["arm64"]
         pending_tag: str | None = None
         plan: list[tuple[dict, list[str], str, int, str]] = []
         seen: set[tuple] = set()
         for app in cfg["apps"]:
             package = app["package"]
+            # per-app archs override (e.g. TV apps use armv7)
+            archs = app.get("archs") or global_archs
             for combo in app["combos"]:
                 ident = (package, tuple(sorted(combo)))
                 if ident in seen:
@@ -784,9 +793,30 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
 
                 try:
                     version = await _recommended(cfg, urls, package, ver_cache)
-                    if not version:
-                        raise RuntimeError("no versions listed")
-                    vc = await _resolve_vc(session, package, version, vc_cache)
+                    if not version or version.strip().lower() == "any":
+                        # universal patches (Any) -> use latest Play version
+                        auth_tmp = await holder.get(session, archs[0])
+                        det_tmp = await play.get_details(session, auth_tmp, package)
+                        if not det_tmp.version_code:
+                            raise RuntimeError("no versions listed and Play details failed for universal patch")
+                        version = det_tmp.version_string or str(det_tmp.version_code)
+                        log.info("%s: universal patches, using latest Play %s", short(package), version)
+                    try:
+                        vc = await _resolve_vc(session, package, version, vc_cache, archs[0])
+                    except Exception as e:
+                        # Pure has no history for this package (e.g. TV livingroom) -> fallback to latest Play
+                        if "no versions found" in str(e):
+                            auth_tmp = await holder.get(session, archs[0])
+                            det_tmp = await play.get_details(session, auth_tmp, package)
+                            if det_tmp.version_code:
+                                log.info("%s: no Pure history, using latest Play %s (%d) for %s", short(package), det_tmp.version_string, det_tmp.version_code, version)
+                                version = det_tmp.version_string
+                                vc = det_tmp.version_code
+                                vc_cache[package] = {version: vc}
+                            else:
+                                raise
+                        else:
+                            raise
                 except Exception as exc:
                     for arch in archs:
                         summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
