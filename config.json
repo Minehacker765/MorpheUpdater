@@ -8,36 +8,45 @@
   "striplibs": [],
   "bytecode_mode": "",
   "bundles": {
-    "morphe": "https://github.com/MorpheApp/morphe-patches",
-    "prathxm": "https://github.com/PrathxmOp/Prathxm-Patches",
-    "microg": "https://github.com/MorpheApp/MicroG-RE",
+    "morphe": {
+      "url": "https://github.com/MorpheApp/morphe-patches",
+      "prerelease": true
+    },
+    "prathxm": {
+      "url": "https://github.com/PrathxmOp/Prathxm-Patches",
+      "prerelease": true
+    },
+    "microg": {
+      "url": "https://github.com/MorpheApp/MicroG-RE",
+      "prerelease": true
+    },
     "de-vanced": {
       "url": "https://github.com/RookieEnough/De-Vanced",
       "prerelease": true
     },
     "androidtv": {
       "url": "https://github.com/ajstrick81/morphe-androidtv-patches",
-      "prerelease": false
+      "prerelease": true
     },
     "hoodles": {
       "url": "https://github.com/hoo-dles/morphe-patches",
-      "prerelease": false
+      "prerelease": true
     },
     "xtra": {
       "url": "https://github.com/BholeyKaBhakt/android-patches-xtra",
-      "prerelease": false
+      "prerelease": true
     },
     "hxreborn": {
       "url": "https://github.com/hxreborn/morphe-patches",
-      "prerelease": false
+      "prerelease": true
     },
     "tiktok-hx": {
       "url": "https://github.com/hxreborn/hxreborn-tiktok-patches",
-      "prerelease": false
+      "prerelease": true
     },
     "hoomans": {
       "url": "https://github.com/arandomhooman/hoomans-morphe-patches",
-      "prerelease": false
+      "prerelease": true
     }
   },
   "apps": [
