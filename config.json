@@ -1596,7 +1596,7 @@
     "description": "Patched apps rebuilt automatically",
     "url": "https://morpheupdater.minehacker765.workers.dev"
   },
-  "tmp_max_mb": 2048,
+  "tmp_max_mb": 20480,
   "tmp_max_age_days": 7,
   "commit": true,
   "release": true,
