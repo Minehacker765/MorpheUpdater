@@ -132,6 +132,18 @@
       "vc": 1698219898,
       "version": "3.0.18"
     },
+    "com.bambuna.podcastaddict|hoodles|arm64": {
+      "app_name": "Podcast Addict: Podcast player",
+      "arch": "arm64",
+      "at": 1788057563,
+      "out": "podcastaddict-2026.4-hoodles-arm64.apk",
+      "package": "com.bambuna.podcastaddict",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 21673,
+      "version": "2026.4"
+    },
     "com.bandcamp.android|de-vanced|arm64": {
       "app_name": "Bandcamp",
       "arch": "arm64",
