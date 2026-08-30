@@ -13,9 +13,11 @@ export default {
       );
     }
 
-    // index + icons are committed (small) — proxy from raw
+    // index + icons/branding are committed (small) — proxy from raw
+    // icons/ and branding/ are at repo root (new), out/* is F-Droid repo (legacy)
     const bases = [
       "https://raw.githubusercontent.com/Minehacker765/MorpheUpdater/main/out",
+      "https://raw.githubusercontent.com/Minehacker765/MorpheUpdater/main",
       "https://minehacker765.github.io/MorpheUpdater",
     ];
     for (const base of bases) {

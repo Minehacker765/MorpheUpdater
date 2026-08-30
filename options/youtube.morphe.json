@@ -57,14 +57,14 @@
             "Custom branding": {
                 "enabled": true,
                 "options": {
-                    "customIcon": "youtube_branding",
+                    "customIcon": "branding/youtube",
                     "customName": "YouTube :3"
                 }
             },
             "Change header": {
                 "enabled": true,
                 "options": {
-                    "custom": "youtube_branding"
+                    "custom": "branding/youtube"
                 }
             },
             "Hide buttons": {
@@ -424,13 +424,13 @@
                 "enabled": true,
                 "options": {
                     "customName": "YouTube :3",
-                    "customIcon": "youtube_branding"
+                    "customIcon": "branding/youtube"
                 }
             },
             "Change header": {
                 "enabled": true,
                 "options": {
-                    "custom": "youtube_branding"
+                    "custom": "branding/youtube"
                 }
             },
             "Hide buttons": {

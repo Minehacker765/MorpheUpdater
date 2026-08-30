@@ -6,7 +6,7 @@ import json
 import time
 from pathlib import Path
 
-from .settings import OUT, ROOT
+from .settings import ICONS, OUT, ROOT
 
 TEMPLATE = """<!doctype html>
 <html lang="en"><meta charset="utf-8">
@@ -102,18 +102,18 @@ def build_showcase(cfg: dict, state: dict) -> bool:
         # YouTube/Music need MicroG
         if pkg in ("com.google.android.youtube", "app.morphe.android.youtube", "com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"):
             patches_str += " · requires MicroG"
-        # icons are named after the *actual* (cloned) package, not the original
+        # icons are named after the *actual* (cloned) package, not the original (now at icons/ at root, copied to out/icons for Pages)
         icon = ""
         for cand in [pkg.replace("com.google.android.youtube", "app.morphe.android.youtube").replace("com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music").replace("com.chess", "com.chess.prathxm"), pkg]:
             cand_path = f"icons/{cand}.png"
-            if (OUT / cand_path).exists():
+            if (ICONS / f"{cand}.png").exists() or (OUT / cand_path).exists():
                 icon = cand_path
                 break
         # also try without the replace (for non-cloned)
         if not icon:
             for cand in [pkg, pkg.replace("com.chess", "com.chess.prathxm")]:
                 cand_path = f"icons/{cand}.png"
-                if (OUT / cand_path).exists():
+                if (ICONS / f"{cand}.png").exists() or (OUT / cand_path).exists():
                     icon = cand_path
                     break
         if not icon:
@@ -121,8 +121,15 @@ def build_showcase(cfg: dict, state: dict) -> bool:
             if apk_file and apk_file.exists():
                 try:
                     from morpheupdater.fdroid import extract_icon as _ei
-                    got = _ei(apk_file, OUT / f"icons/{pkg}.png")
+                    got = _ei(apk_file, ICONS / f"{pkg}.png")
+                    # also ensure out/icons copy for Pages worker
                     if got:
+                        try:
+                            import shutil
+                            (OUT / "icons").mkdir(parents=True, exist_ok=True)
+                            shutil.copyfile(ICONS / got, OUT / "icons" / got)
+                        except Exception:
+                            pass
                         icon = f"icons/{got}"
                 except Exception:
                     pass

@@ -16,7 +16,7 @@ import zipfile
 from pathlib import Path
 
 from . import tools
-from .settings import OUT, ROOT
+from .settings import ICONS, OUT, ROOT
 
 log = logging.getLogger("fdroid")
 
@@ -295,7 +295,7 @@ def sign_index(index_json: Path, creds: dict) -> None:
 
 def _ensure_repo_icon() -> str:
     """Ensure out/icons/icon.png exists for repo.icon; return filename."""
-    icons_dir = OUT / "icons"
+    icons_dir = ICONS
     icons_dir.mkdir(parents=True, exist_ok=True)
     repo_icon = icons_dir / "icon.png"
     if repo_icon.exists():
@@ -361,7 +361,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 top_icon = app.get("icon")
                 if loc_icon and not top_icon:
                     # icon was in localized but file is actually in icons/ -> move to top-level
-                    if (OUT / "icons" / loc_icon).exists():
+                    if (ICONS / loc_icon).exists():
                         app["icon"] = loc_icon
                         loc.pop("icon", None)
                 elif loc_icon and top_icon and loc_icon == top_icon:
@@ -515,7 +515,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             icon_file = f"{package}.png"
             icon_rel = icon_file
             # ensure icon exists at out/icons/<package>.png
-            icon_path = OUT / "icons" / icon_file
+            icon_path = ICONS / icon_file
             if not icon_path.exists():
                 got = extract_icon(apk, icon_path)
                 if got:
@@ -586,13 +586,13 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             loc_icon = app.get("localized", {}).get("en-US", {}).get("icon")
             if loc_icon and "icon" not in app:
                 # move from localized to top-level if file is in icons/
-                if (OUT / "icons" / loc_icon).exists():
+                if (ICONS / loc_icon).exists():
                     app["icon"] = loc_icon
                     # remove from localized to avoid fdroidclient's /$pkg/en-US/ lookup
                     app["localized"]["en-US"].pop("icon", None)
             # ensure icon file exists; otherwise fallback microg
             if "icon" not in app:
-                icon_path = OUT / "icons" / f"{pkg}.png"
+                icon_path = ICONS / f"{pkg}.png"
                 if not icon_path.exists():
                     # try to create fallback for microg
                     if "microg" in pkg or "mgoogle" in pkg:
@@ -606,7 +606,7 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     for pkg, app in apps.items():
         if "icon" not in app:
             # try to find existing icon file
-            icon_path = OUT / "icons" / f"{pkg}.png"
+            icon_path = ICONS / f"{pkg}.png"
             if icon_path.exists():
                 app["icon"] = icon_path.name
             else:
@@ -661,6 +661,18 @@ def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
         fp = (state.get("fdroid") or {}).get("cert_sha256", "")
         log.info("f-droid index-v1 written (%d apks)%s", len(packages), f"; repo fp {fp}" if fp else "")
 
+    # Sync icons/ at root to out/icons for Pages (icons primary is at repo root per user)
+    try:
+        import shutil
+        (OUT / "icons").mkdir(parents=True, exist_ok=True)
+        for p in ICONS.glob("*.png"):
+            try:
+                shutil.copyfile(p, OUT / "icons" / p.name)
+            except Exception:
+                pass
+    except Exception:
+        pass
+
     # ── index-v2 generation (modern, with fileEntry for icons) ──────────────
     changed_v2 = _build_index_v2(index, creds)
 
@@ -675,10 +687,10 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
 
     # repo fileEntry for icon
     repo_icon_name = repo_v1.get("icon", "icon.png")
-    repo_icon_path = OUT / "icons" / repo_icon_name
+    repo_icon_path = ICONS / repo_icon_name
     if not repo_icon_path.exists():
         # try fallback
-        repo_icon_path = OUT / "icons" / _ensure_repo_icon()
+        repo_icon_path = ICONS / _ensure_repo_icon()
     try:
         repo_icon_entry = _file_entry(repo_icon_path, f"/icons/{repo_icon_path.name}")
     except Exception:
@@ -706,14 +718,14 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
         loc = app.get("localized", {}).get("en-US", {})
         icon_name = app.get("icon")
         if icon_name:
-            icon_path = OUT / "icons" / icon_name
+            icon_path = ICONS / icon_name
             if icon_path.exists():
                 icon_entry = _file_entry(icon_path, f"/icons/{icon_name}")
             else:
                 icon_entry = {"name": f"/icons/{icon_name}", "sha256": "0"*64, "size": 0}
         elif loc.get("icon"):
             # fallback if we still have localized icon (legacy)
-            p = OUT / "icons" / loc["icon"]
+            p = ICONS / loc["icon"]
             if p.exists():
                 icon_entry = _file_entry(p, f"/icons/{p.name}")
             else:
@@ -725,7 +737,7 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
                     icon_entry = {"name": f"/{pkg}/en-US/{loc['icon']}", "sha256": "0"*64, "size": 0}
         else:
             # synthesize fallback microg
-            p = OUT / "icons" / f"{pkg}.png"
+            p = ICONS / f"{pkg}.png"
             if p.exists():
                 icon_entry = _file_entry(p, f"/icons/{p.name}")
             else:

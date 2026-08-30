@@ -57,14 +57,14 @@
             "Custom branding": {
                 "enabled": true,
                 "options": {
-                    "customIcon": "music_branding",
+                    "customIcon": "branding/music",
                     "customName": "Music :3"
                 }
             },
             "Change header": {
                 "enabled": true,
                 "options": {
-                    "custom": "music_branding"
+                    "custom": "branding/music"
                 }
             },
             "Hide buttons": {
@@ -424,13 +424,13 @@
                 "enabled": true,
                 "options": {
                     "customName": "Music :3",
-                    "customIcon": "music_branding"
+                    "customIcon": "branding/music"
                 }
             },
             "Change header": {
                 "enabled": true,
                 "options": {
-                    "custom": "music_branding"
+                    "custom": "branding/music"
                 }
             },
             "Hide buttons": {

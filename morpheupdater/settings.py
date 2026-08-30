@@ -12,6 +12,8 @@ CONFIG_PATH = ROOT / "config.json"
 STATE_PATH = ROOT / "state.json"
 TMP = ROOT / "tmp"
 OUT = ROOT / "out"
+ICONS = ROOT / "icons"
+BRANDING = ROOT / "branding"
 OPTIONS = ROOT / "options"
 MORPHE_DATA = ROOT / "morphe-data"
 
