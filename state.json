@@ -87,14 +87,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
-      "at": 1788054692,
-      "out": "alltrails-26.8.30-hoodles-arm64.apk",
+      "at": 1788055423,
+      "out": "alltrails-26.8.40-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.43.0"
       },
-      "vc": 60501,
-      "version": "26.8.30"
+      "vc": 60505,
+      "version": "26.8.40"
     },
     "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
       "app_name": "Prime Video",
