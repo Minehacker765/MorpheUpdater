@@ -929,12 +929,23 @@ async def publish(summary: dict, commit: bool, release: bool, tag: str | None = 
             f"{_fmt_bundle_changes(summary['bundles'])}\n\n"
             "## Built\n"
             + "\n".join(f"- {name}" for name in summary["built"])
+            + f"\n\nFull release contains {len(state.get('builds', {}))} APKs (updated {len(summary['built'])} this cycle)"
         )
         if summary["tools"]:
             notes += "\n\n## Tools\n" + "\n".join(f"- {n}: {t}" for n, t in summary["tools"].items())
         if summary.get("fdroid"):
             notes += f"\n\n## F-Droid repo\n- URL: `{summary['fdroid_url']}`\n- fingerprint: `{summary['fdroid_fp']}`"
-        files = [OUT / name for name in summary["built"]]
+        # Latest release: full set (all APKs from state), not just updated
+        # Past releases remain as log with only updated APKs, but latest always has all
+        # No need to delete state.json to get full release when old releases are deleted
+        files = []
+        for e in state.get("builds", {}).values():
+            apk = e.get("out")
+            if apk and (OUT / apk).exists():
+                files.append(OUT / apk)
+        # Fallback: if state has no files on disk (e.g. after clean), use built list
+        if not files:
+            files = [OUT / name for name in summary["built"] if (OUT / name).exists()]
         try:
             await tools.create_release(tag, f"Patched apps {stamp}", notes, files)
         except Exception as exc:
