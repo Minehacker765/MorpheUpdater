@@ -41,6 +41,33 @@ log = logging.getLogger("daemon")
 DOWNLOAD_CONCURRENCY = 4
 
 
+def _enabled_archs(archs_cfg) -> list[str]:
+    """Normalize archs config (list or dict) to list of enabled arch strings."""
+    if archs_cfg is None:
+        return ["arm64"]
+    if isinstance(archs_cfg, dict):
+        return [k for k, v in archs_cfg.items() if v]
+    if isinstance(archs_cfg, list):
+        return archs_cfg
+    return ["arm64"]
+
+
+def _load_overrides() -> dict:
+    """Load overrides.json if exists. Returns dict with exclude_rest and per-package overrides."""
+    import json as _js
+    from pathlib import Path as _P
+    path = _P("overrides.json")
+    if not path.exists():
+        path = ROOT / "overrides.json"
+    if not path.exists():
+        return {}
+    try:
+        data = _js.loads(path.read_text())
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
 class AuthHolder:
     def __init__(self) -> None:
         self._auths: dict[str, dict] = {}
@@ -731,8 +758,8 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         vc_cache: dict = {}
 
         # global archs, but allow per-app override (for TV)
-        # TV apks should build if tv is in global archs; filter tv for non-TV packages
-        global_archs: list[str] = cfg["archs"] or ["arm64"]
+        # archs now dict {arm64:true, tv:true, universal:false} or list for back-compat
+        global_archs: list[str] = _enabled_archs(cfg.get("archs"))
         pending_tag: str | None = None
         plan: list[tuple[dict, list[str], str, int, str]] = []
         seen: set[tuple] = set()
@@ -892,7 +919,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         await asyncio.gather(*[_build_with_sem(a, c, v, vc, arch) for a, c, v, vc, arch in plan])
 
         if summary["built"] and (cfg.get("release") or release_override):
-            pending_tag = "p" + __import__("time").strftime("%Y%m%d-%H%M%S")
+            pending_tag = "p" + time.strftime("%Y%m%d-%H%M%S")
         try:
             if await fdroid.update(cfg, state, pending_tag):
                 summary["fdroid"] = True

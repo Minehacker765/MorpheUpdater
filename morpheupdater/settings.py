@@ -19,7 +19,8 @@ MORPHE_DATA = ROOT / "bin" / "morphe-data"
 
 DEFAULT_CONFIG: dict = {
     "interval_minutes": 30,
-    "archs": ["arm64"],
+    "archs": {"arm64": True, "tv": True, "universal": False},
+    "resolution": "xxxhdpi",
     "locales": ["en-US", "es"],
     "force_patch": True,
     "striplibs": [],
@@ -85,7 +86,13 @@ def load_config() -> dict:
         CONFIG_PATH.write_text(json.dumps(DEFAULT_CONFIG, indent=2) + "\n")
         log.info("created default config.json")
     cfg = json.loads(CONFIG_PATH.read_text())
-    merged = {**DEFAULT_CONFIG, **cfg}
+    # Deep merge for nested dicts (tools, fdroid, clean, archs, bundles)
+    merged = {**DEFAULT_CONFIG}
+    for k, v in cfg.items():
+        if isinstance(v, dict) and isinstance(merged.get(k), dict):
+            merged[k] = {**merged[k], **v}
+        else:
+            merged[k] = v
     return merged
 
 

@@ -1,0 +1,19 @@
+{
+  "_comment": "Per-package overrides. All fields optional, only applied if existent. Keys are package names.",
+  "exclude_rest": false,
+  "com.example.does.not.exist": {
+    "enabled": false
+  },
+  "com.other.example": {
+    "_comment": "Example useful override: APK with arm64 and universal apk, extra locales, custom display, custom resolution",
+    "enabled": true,
+    "archs": {
+      "arm64": true,
+      "armeabi": false,
+      "tv": false,
+      "universal": true
+    },
+    "locales": ["en-US", "es", "fr"],
+    "display": "YouTube Custom"
+  }
+}

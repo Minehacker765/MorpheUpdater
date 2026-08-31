@@ -1600,9 +1600,11 @@
   "tmp_max_age_days": 7,
   "commit": true,
   "release": true,
-  "archs": [
-    "arm64",
-    "tv"
-  ],
-  "enable_all_patches": true
+  "archs": {
+    "arm64": true,
+    "tv": true,
+    "universal": false
+  },
+  "enable_all_patches": true,
+  "resolution": "xxxhdpi"
 }
