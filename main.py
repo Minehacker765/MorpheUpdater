@@ -74,15 +74,29 @@ def main() -> None:
             cfg["tmp_max_age_days"] = args.old
         if args.min_free is not None:
             cfg["tmp_min_free_gb"] = args.min_free
-        # full means tmp + out
         target = args.target
         if args.full:
             target = "all"
-        # Handle out dupes: prune old APKs keeping only latest per package
-        if target in ("out", "all"):
-            asyncio.run(daemon.prune_out(cfg, dry_run=args.dry_run, remove_dupes=args.dupes or args.full))
-        if target in ("tmp", "all"):
-            asyncio.run(daemon.prune_tmp(cfg, dry_run=args.dry_run, remove_dupes=args.dupes or args.full))
+        if args.full:
+            import shutil
+            from pathlib import Path
+            from morpheupdater.settings import OUT, TMP
+            if not args.dry_run:
+                if target in ("tmp", "all") and TMP.exists():
+                    shutil.rmtree(TMP)
+                    TMP.mkdir(parents=True, exist_ok=True)
+                if target in ("out", "all") and OUT.exists():
+                    shutil.rmtree(OUT)
+                    OUT.mkdir(parents=True, exist_ok=True)
+                    (OUT / "icons").mkdir(parents=True, exist_ok=True)
+            else:
+                for p in ([TMP] if target in ("tmp", "all") else []) + ([OUT] if target in ("out", "all") else []):
+                    print(f"[dry-run] would rmtree {p}")
+        else:
+            if target in ("out", "all"):
+                asyncio.run(daemon.prune_out(cfg, dry_run=args.dry_run, remove_dupes=args.dupes))
+            if target in ("tmp", "all"):
+                asyncio.run(daemon.prune_tmp(cfg, dry_run=args.dry_run, remove_dupes=args.dupes))
         if args.dry_run:
             print("dry-run done")
         raise SystemExit(0)
