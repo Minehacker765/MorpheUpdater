@@ -12,6 +12,7 @@ import shutil
 import time
 import zlib
 from base64 import urlsafe_b64encode
+from collections import defaultdict
 from pathlib import Path
 
 from aiohttp import ClientSession, ClientTimeout
@@ -131,7 +132,7 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     size_mb = dir_size_mb(TMP)
     for p in files:
         is_old = p.stat().st_mtime < cutoff
-        is_dup = remove_dupes and p.suffix == ".part"
+        is_dup = p.suffix == ".part"  # dedup always
         if is_old or is_dup or size_mb > max_mb:
             if dry_run:
                 log.info("[dry-run] would delete tmp %s (old=%s dup=%s size=%.0fMB)", p, is_old, is_dup, size_mb)
@@ -163,7 +164,6 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
 
 async def prune_out(cfg: dict, dry_run: bool = False, remove_dupes: bool = False) -> int:
     """Ensure out/ only has latest APK per package|combo|arch. Returns deleted count."""
-    from collections import defaultdict
     state = load_state()
     keep = set()
     for e in state.get("builds", {}).values():
@@ -173,36 +173,31 @@ async def prune_out(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     deleted = 0
     for apk in OUT.glob("*.apk"):
         if apk.name not in keep:
-            is_old_dup = False
-            if remove_dupes:
-                is_old_dup = True
-            if is_old_dup or apk.name not in keep:
+            if dry_run:
+                log.info("[dry-run] would delete out %s (not in keep)", apk.name)
+            else:
+                try:
+                    apk.unlink()
+                    deleted += 1
+                except Exception:
+                    pass
+    grouped = defaultdict(list)
+    for apk in OUT.glob("*.apk"):
+        grouped[apk.name.split("-")[0]].append(apk)
+    for short_name, files in grouped.items():
+        if len(files) > 1:
+            files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+            for old in files[1:]:
+                if old.name in keep:
+                    continue
                 if dry_run:
-                    log.info("[dry-run] would delete out %s (not in keep)", apk.name)
+                    log.info("[dry-run] would delete old dup out %s", old.name)
                 else:
                     try:
-                        apk.unlink()
+                        old.unlink()
                         deleted += 1
                     except Exception:
                         pass
-    # keep only latest per short|cid|arch
-        grouped = defaultdict(list)
-        for apk in OUT.glob("*.apk"):
-            grouped[apk.name.split("-")[0]].append(apk)
-        for short_name, files in grouped.items():
-            if len(files) > 1:
-                files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
-                for old in files[1:]:
-                    if old.name in keep:
-                        continue
-                    if dry_run:
-                        log.info("[dry-run] would delete old dup out %s", old.name)
-                    else:
-                        try:
-                            old.unlink()
-                            deleted += 1
-                        except Exception:
-                            pass
     if deleted:
         log.info("prune_out deleted %d files", deleted)
     return deleted
@@ -506,7 +501,8 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
             log.info("%s: resolution %s -> keeping %s (had %s)", short(package), requested, ",".join(k.name for k in keep), ",".join(k.name for k,_ in density))
         delivery.splits = other + keep
 
-    sem = asyncio.Semaphore(DOWNLOAD_CONCURRENCY)
+    dl_conc = cfg.get("clean", {}).get("download_concurrency", DOWNLOAD_CONCURRENCY) if isinstance(cfg.get("clean"), dict) else DOWNLOAD_CONCURRENCY
+    sem = asyncio.Semaphore(dl_conc)
     specs = []
     use_gzip = bool(delivery.gzipped_url and delivery.gzipped_size)
     specs.append({
@@ -730,8 +726,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         cfg["apps"] = [a for a in cfg.get("apps", []) if a.get("package") == app_filter or a.get("display", "").lower() == app_filter.lower() or app_filter.lower() in a.get("package", "").lower()]
         if not cfg["apps"]:
             raise SystemExit(f"no app matches filter {app_filter!r} (available: {[a.get('package') for a in load_config().get('apps', [])]})")
-        import logging as _log
-        _log.getLogger("daemon").info("single-app mode: %s (%d -> %d apps)", app_filter, orig_len, len(cfg["apps"]))
+        log.info("single-app mode: %s (%d -> %d apps)", app_filter, orig_len, len(cfg["apps"]))
     validate_apps(cfg)
     if os.environ.get("FDROID_URL") and not (cfg.get("fdroid") or {}).get("url"):
         cfg.setdefault("fdroid", {})["url"] = os.environ["FDROID_URL"]
@@ -820,8 +815,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                             log.info("MicroG %s [%s]: up to date", version, arch)
                             continue
                         # copy direct apk to out
-                        import shutil as _sh
-                        _sh.copyfile(_ , out)
+                        shutil.copyfile(_ , out)
                         state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "MicroG", "tags": {"microg": version}, "out": out.name, "at": now()}
                         save_state(state)
                         summary["built"].append(out.name)
@@ -842,8 +836,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                         if up_to_date:
                             log.info("AdGuard %s [%s]: up to date", version, arch)
                             continue
-                        import shutil as _sh2
-                        _sh2.copyfile(_, out)
+                        shutil.copyfile(_, out)
                         state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "AdGuard", "tags": {"hoodles": state["bundles"].get("hoodles", "")}, "out": out.name, "at": now()}
                         save_state(state)
                         summary["built"].append(out.name)
@@ -881,8 +874,6 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     continue
 
                 for arch in archs:
-                    # universal bundles all arch splits (arm64+tv) into one APK, compatible with separate per-arch builds
-                    is_universal = arch == "universal"
                     key = f"{package}|{combo_id(combo)}|{arch}"
                     prev = state["builds"].get(key)
                     out = OUT / f"{short(package)}-{version}-{combo_id(combo)}-{arch}.apk"
@@ -900,13 +891,10 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     eff_res = (over.get("resolution") if over and "resolution" in over else None) or cfg.get("resolution", "xxxhdpi")
                     plan.append((app, combo, version, vc, arch, eff_res))
 
-        # Parallel patching: morphe is single-core, so run up to cpu_count in parallel via asyncio subprocess pool
-        import os as _os
-        cpu = _os.cpu_count() or 4
-        # Respect clean config: if full_clean, use more aggressive cleanup; else keep tmp for speed
+        cpu = os.cpu_count() or 4
         sem = asyncio.Semaphore(max(1, cpu))
-        # Also limit concurrent Play downloads to avoid dispenser rate limit
-        play_sem = asyncio.Semaphore(3)
+        dl_cfg = cfg.get("clean", {}).get("download_concurrency", DOWNLOAD_CONCURRENCY) if isinstance(cfg.get("clean"), dict) else DOWNLOAD_CONCURRENCY
+        play_sem = asyncio.Semaphore(max(1, min(dl_cfg, 3)))
 
         async def _build_with_sem(app, combo, version, vc, arch, resolution):
             async with sem:
@@ -943,6 +931,9 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                             except Exception:
                                 pass
                         log.info("cleaned tmp for %s (low-storage mode)", short(app["package"]))
+                    between = cfg.get("clean", {}).get("between_builds_seconds", 0) if isinstance(cfg.get("clean"), dict) else 0
+                    if between:
+                        await asyncio.sleep(between)
                 except Exception as exc:
                     log.error("failed %s: %s", label, exc)
                     summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))

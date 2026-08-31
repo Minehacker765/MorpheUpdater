@@ -145,7 +145,6 @@ def _fallback_microg_icon(dest: Path) -> str | None:
             return dest.name
         except Exception:
             pass
-        import base64
         dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
         return dest.name
     except Exception:
@@ -218,7 +217,6 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
             im = Image.new("RGB", (512, 512), "#1e1e1e")
             d = ImageDraw.Draw(im)
             # random color based on package hash
-            import hashlib
 
             h = int(hashlib.md5(pkg.encode()).hexdigest()[:6], 16)
             color = f"#{h & 0xFFFFFF:06x}"
@@ -236,7 +234,6 @@ def extract_icon(apk: Path, dest: Path) -> str | None:
             return _fallback_microg_icon(dest)
         # generic 1x1 fallback to ensure icon exists
         try:
-            import base64
 
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
@@ -313,7 +310,6 @@ def _ensure_repo_icon() -> str:
                 pass
     # fallback: create 1x1
     try:
-        import base64
         repo_icon.write_bytes(base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="))
     except Exception:
         pass
@@ -402,12 +398,11 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             return apk, entry, info
 
         # Gather with concurrency limit to avoid spawning too many JVMs
-        import asyncio as _asyncio
-        sem = _asyncio.Semaphore(4)
+        sem = asyncio.Semaphore(4)
         async def _bounded(apk):
             async with sem:
                 return await _process_apk(apk)
-        results = await _asyncio.gather(*[_bounded(a) for a in apk_files])
+        results = await asyncio.gather(*[_bounded(a) for a in apk_files])
         for apk, entry, info in results:
             if info:
                 package, version, vc, app_name_real = info
@@ -473,7 +468,6 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             # Try to load patch descriptions from options file
             patch_desc = ""
             try:
-                import json as _js3
                 # find options file for this package
                 for _opt in (ROOT / "options").glob(f"{package.split('.')[-1]}.*.json"):
                     if _opt.exists():

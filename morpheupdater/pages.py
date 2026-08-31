@@ -8,6 +8,7 @@ from pathlib import Path
 
 from .display import PACKAGE_DISPLAY, TV_PACKAGES
 from .settings import ICONS, OUT, ROOT
+from string import Template
 
 TEMPLATE = """<!doctype html>
 <html lang="en"><meta charset="utf-8">
@@ -77,8 +78,7 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
     # per-app cards from state builds (one per pkg|combo|arch)
     # Map original -> actual (e.g. com.mgoogle -> app.revanced) via APK inspection when possible
     try:
-        import json as _js2
-        _idx2 = _js2.load(open(OUT / "index-v1.json"))
+        _idx2 = json.load(open(OUT / "index-v1.json"))
         _actual_map = {e["packageName"]: e["packageName"] for e in _idx2.get("apps", [])}
         # Also map original package from state to actual via APK
         for _k, _b in state.get("builds", {}).items():
@@ -121,8 +121,8 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
             apk_file = OUT / apk if apk else None
             if apk_file and apk_file.exists():
                 try:
-                    from morpheupdater.fdroid import extract_icon as _ei
-                    got = _ei(apk_file, ICONS / f"{pkg}.png")
+                    from morpheupdater.fdroid import extract_icon
+                    got = extract_icon(apk_file, ICONS / f"{pkg}.png")
                     if got:
                         icon = f"icons/{got}"
                 except Exception:
@@ -133,7 +133,6 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         # Build patch dropdown for webpage
         patch_list_html = ""
         try:
-            import json as _js3
             for _opt in (ROOT / "options").glob(f"{pkg.split('.')[-1]}.*.json"):
                 if not _opt.exists():
                     continue
@@ -155,17 +154,14 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         # Check TV
         is_tv = pkg in TV_PACKAGES
         tv_badge = " <span style='background:#2a2a30;padding:2px 6px;border-radius:4px;font-size:0.7rem'>TV</span>" if is_tv else ""
-        from string import Template as _T
-        cards_html += _T(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)
+        cards_html += Template(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)
 
     if not cards_html:
         for app in cfg.get("apps", []):
             pkg = app["package"]
             disp2 = PACKAGE_DISPLAY.get(pkg, pkg)
-            from string import Template as _T2
-            cards_html += _T2(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
+            cards_html += Template(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
 
-    from string import Template
     html = Template(TEMPLATE).substitute(title=title, description=desc, repo_url=repo_url, fingerprint=fp or "—", updated=time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), cards=cards_html, patches=patches)
     dest = OUT / "index.html"
     if dest.exists() and dest.read_text() == html:
