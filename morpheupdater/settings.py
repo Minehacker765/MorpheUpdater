@@ -19,7 +19,7 @@ MORPHE_DATA = ROOT / "bin" / "morphe-data"
 
 DEFAULT_CONFIG: dict = {
     "interval_minutes": 30,
-    "archs": {"arm64": True, "tv": True, "universal": False},
+    "archs": {"arm64": True, "arm": False, "armv7": False, "x86": False, "x86_64": False, "tv": True, "universal": False},
     "resolution": "xxxhdpi",
     "locales": ["en-US", "es"],
     "force_patch": True,
