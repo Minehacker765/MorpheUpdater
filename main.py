@@ -35,19 +35,25 @@ def main() -> None:
     )
     try:
         from pathlib import Path
+        import time
         log_dir = Path(__file__).resolve().parent / "tmp" / "logs"
         log_dir.mkdir(parents=True, exist_ok=True)
+        dated = log_dir / time.strftime("%Y-%m-%d_%H.log", time.gmtime())
         latest = log_dir / "latest.log"
-        fh = logging.handlers.TimedRotatingFileHandler(str(latest), when="H", interval=1, backupCount=0, encoding="utf-8", utc=True)
-        fh.suffix = "%Y-%m-%d_%H.log"
-        fh.extMatch = re.compile(r"^\d{4}-\d{2}-\d{2}_\d{2}\.log$")
-        def namer(name):
-            base = name.replace(str(latest) + ".", "")
-            return str(log_dir / base)
-        fh.namer = namer
+        fh = logging.FileHandler(str(dated), encoding="utf-8")
         fh.setLevel(logging.INFO)
         fh.setFormatter(logging.Formatter("%(asctime)s %(levelname)-7s %(name)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
         logging.getLogger().addHandler(fh)
+        try:
+            if latest.is_symlink() or latest.exists():
+                latest.unlink()
+            latest.symlink_to(dated.name)
+        except Exception:
+            try:
+                import shutil
+                shutil.copyfile(dated, latest)
+            except Exception:
+                pass
     except Exception:
         pass
     load_env()
