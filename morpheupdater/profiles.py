@@ -23,6 +23,7 @@ _PRIORITY = {
     "x86": ["x8", "7M"],
     "x86_64": ["x8", "7M"],
     "tv": ["Gb"],
+    "universal": ["7M", "Pv", "D2", "eV"],
 }
 
 
@@ -61,7 +62,11 @@ def _supporting(abi: str) -> list[tuple[str, dict[str, str]]]:
 
 def get_priority_profiles(arch: str = "arm64") -> list[tuple[str, dict[str, str]]]:
     priority = _PRIORITY.get(arch, _PRIORITY["arm64"])
-    if arch == "tv":
+    if arch == "universal":
+        pool = [(k, p) for k, (a, p) in _ALL.items() if "arm64-v8a" in p.get("Platforms", "") and "armeabi" in p.get("Platforms", "")]
+        if not pool:
+            pool = list(_ALL.items())
+    elif arch == "tv":
         pool = [(k, p) for k, (a, p) in _ALL.items() if "android.software.leanback" in p.get("Features", "")]
         if not pool:
             for k, (a, p) in _ALL.items():
