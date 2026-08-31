@@ -163,6 +163,17 @@ PACKAGE_DISPLAY: dict[str, str] = {
     "io.stashteam.games.tracker.stashapp": "Stash",
     "net.uniquegem.directchat": "DirectChat",
     "studio.muggle.chatboost": "ChatBoost",
+    # TV (leanback)
+    "com.netflix.ninja": "Netflix",
+    "com.amazon.amazonvideo.livingroom": "Prime Video TV",
+    "tv.pluto.android": "Pluto TV",
+    "com.disney.disneyplus": "Disney+",
+    "com.wbd.hbomax": "HBO Max",
+    "com.peacocktv.peacockandroid": "Peacock",
+    "com.fox.foxone": "Fox One",
+    "com.tubitv": "Tubi",
+    "com.bamnetworks.mobile.android.gameday.atbat": "MLB At Bat",
+    "com.cbs.ott": "Paramount+",
 }
 
 # TV packages (armv7 leanback)

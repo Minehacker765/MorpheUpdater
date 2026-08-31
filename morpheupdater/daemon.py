@@ -52,17 +52,24 @@ def _enabled_archs(archs_cfg) -> list[str]:
     return ["arm64"]
 
 
+_RESOLUTION_DPI = {"ldpi": 120, "mdpi": 160, "hdpi": 240, "xhdpi": 320, "xxhdpi": 480, "xxxhdpi": 640}
+
+
+def _max_dpi_for(resolution: str | None) -> int:
+    if not resolution:
+        return 640
+    return _RESOLUTION_DPI.get(resolution.lower(), 640)
+
+
 def _load_overrides() -> dict:
     """Load overrides.json if exists. Returns dict with exclude_rest and per-package overrides."""
-    import json as _js
-    from pathlib import Path as _P
-    path = _P("overrides.json")
+    path = ROOT / "overrides.json"
     if not path.exists():
-        path = ROOT / "overrides.json"
+        path = Path("overrides.json")
     if not path.exists():
         return {}
     try:
-        data = _js.loads(path.read_text())
+        data = json.loads(path.read_text())
         return data if isinstance(data, dict) else {}
     except Exception:
         return {}
@@ -289,16 +296,6 @@ def _get_patch_inputs(cfg: dict, combo: list[str]) -> list[str]:
     return inputs
 
 
-def _get_bundle_urls(cfg: dict, combo: list[str]) -> list[str]:
-    urls = []
-    for b in combo:
-        spec = cfg["bundles"].get(b, "")
-        url = spec if isinstance(spec, str) else spec.get("url", "")
-        if url:
-            urls.append(url)
-    return urls
-
-
 def _enable_all_patches(options_file: Path) -> int:
     """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
     BROKEN = {
@@ -437,7 +434,7 @@ def _file_digest(path: Path) -> str:
     return urlsafe_b64encode(h.digest()).decode().rstrip("=")
 
 
-async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, package: str, vc: int, dest_dir: Path, arch: str) -> play.Details:
+async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, package: str, vc: int, dest_dir: Path, arch: str, resolution: str | None = None) -> play.Details:
 
     async def flow(auth: dict):
         details = await play.get_details(session, auth, package)
@@ -448,6 +445,23 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
         return details, delivery
 
     profiles = [p for _, p in get_priority_profiles(arch)]
+    # Filter by resolution (max DPI, closest without exceeding)
+    max_dpi = _max_dpi_for(resolution or cfg.get("resolution", "xxxhdpi"))
+    # Annotate with density for sorting, keep original priority for tie-break
+    def _dpi(p: dict) -> int:
+        try:
+            return int(p.get("Screen.Density", "0"))
+        except Exception:
+            return 0
+    # Keep only profiles with dpi <= max, sorted by dpi desc then original order
+    filtered = [p for p in profiles if _dpi(p) <= max_dpi]
+    if filtered:
+        # Sort by dpi desc, but stable keeps priority order for same dpi
+        filtered.sort(key=lambda p: _dpi(p), reverse=True)
+        profiles = filtered
+    else:
+        # Fallback: closest <= max not found, use lowest dpi available
+        profiles = sorted(profiles, key=lambda p: _dpi(p))
     # also include holder's cached profile first for speed
     tried: set[str] = set()
     details = delivery = None
@@ -551,6 +565,7 @@ async def ensure_merged(
     package: str,
     vc: int,
     arch: str,
+    resolution: str | None = None,
 ) -> tuple[Path, play.Details | None]:
     dl_dir = TMP / "dl" / package / f"{vc}-{arch}"
     merged = TMP / "merged" / f"{package}-{vc}-{arch}.apk"
@@ -558,7 +573,7 @@ async def ensure_merged(
     if not merged.exists():
         done_marker = dl_dir / ".complete"
         if not done_marker.exists():
-            details = await _fetch_splits(session, holder, cfg, package, vc, dl_dir, arch)
+            details = await _fetch_splits(session, holder, cfg, package, vc, dl_dir, arch, resolution)
             dl_dir.mkdir(parents=True, exist_ok=True)
             done_marker.write_text("")
         staged = merged.with_suffix(".apk.tmp")
@@ -666,6 +681,7 @@ async def build_one(
     vc: int,
     arch: str,
     summary: dict,
+    resolution: str | None = None,
 ) -> None:
     cid = combo_id(combo)
     urls = _get_bundle_urls(cfg, combo)
@@ -673,7 +689,7 @@ async def build_one(
     if missing:
         raise RuntimeError(f"unknown bundle(s) in combo: {', '.join(missing)}")
 
-    merged, details = await ensure_merged(session, holder, cfg, _jar(cfg, "apkeditor"), package, vc, arch)
+    merged, details = await ensure_merged(session, holder, cfg, _jar(cfg, "apkeditor"), package, vc, arch, resolution)
     out = OUT / f"{short(package)}-{version}-{cid}-{arch}.apk"
     out.parent.mkdir(parents=True, exist_ok=True)
 
@@ -760,14 +776,38 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         # global archs, but allow per-app override (for TV)
         # archs now dict {arm64:true, tv:true, universal:false} or list for back-compat
         global_archs: list[str] = _enabled_archs(cfg.get("archs"))
+        overrides = _load_overrides()
+        exclude_rest = bool(overrides.get("exclude_rest", False))
         pending_tag: str | None = None
-        plan: list[tuple[dict, list[str], str, int, str]] = []
+        plan: list[tuple[dict, list[str], str, int, str, str | None]] = []
         seen: set[tuple] = set()
         for app in cfg["apps"]:
             package = app["package"]
-            # per-app archs override (e.g. TV apps use armv7); if tv in global but package not TV, filter it
-            archs = app.get("archs") or global_archs
-            if "tv" in archs and package not in TV_PACKAGES and not app.get("archs"):
+            over = overrides.get(package) if isinstance(overrides.get(package), dict) else None
+            if over is not None and over.get("enabled") is False:
+                continue
+            if exclude_rest and package not in overrides:
+                continue
+            # per-app archs override (e.g. TV apps use armv7); overrides.json archs takes precedence
+            if over and "archs" in over:
+                archs = _enabled_archs(over["archs"])
+            else:
+                archs = app.get("archs") or global_archs
+                # expand dict archs if needed
+                if isinstance(archs, dict):
+                    archs = _enabled_archs(archs)
+                elif isinstance(archs, list) and archs and isinstance(archs[0], dict):
+                    archs = _enabled_archs(archs[0])
+            # handle add_archs/remove_archs from overrides
+            if over:
+                if "add_archs" in over:
+                    for a in _enabled_archs(over["add_archs"]):
+                        if a not in archs:
+                            archs.append(a)
+                if "remove_archs" in over:
+                    rm = set(_enabled_archs(over["remove_archs"]))
+                    archs = [a for a in archs if a not in rm]
+            if "tv" in archs and package not in TV_PACKAGES and not app.get("archs") and not (over and "archs" in over):
                 archs = [a for a in archs if a != "tv"]
             for combo in app["combos"]:
                 ident = (package, tuple(sorted(combo)))
@@ -874,7 +914,9 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     if up_to_date:
                         log.info("%s %s [%s/%s]: up to date", short(package), version, combo_id(combo), arch)
                         continue
-                    plan.append((app, combo, version, vc, arch))
+                    # per-package resolution override (overrides.json or app-specific), fallback to global
+                    eff_res = (over.get("resolution") if over and "resolution" in over else None) or cfg.get("resolution", "xxxhdpi")
+                    plan.append((app, combo, version, vc, arch, eff_res))
 
         # Parallel patching: morphe is single-core, so run up to cpu_count in parallel via asyncio subprocess pool
         import os as _os
@@ -884,13 +926,18 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         # Also limit concurrent Play downloads to avoid dispenser rate limit
         play_sem = asyncio.Semaphore(3)
 
-        async def _build_with_sem(app, combo, version, vc, arch):
+        async def _build_with_sem(app, combo, version, vc, arch, resolution):
             async with sem:
                 label = f"{short(app['package'])} {version} [{combo_id(combo)}/{arch}]"
                 try:
+                    # per-package locales override -> copy cfg with effective locales
+                    eff_cfg = cfg
+                    ov = overrides.get(app["package"]) if isinstance(overrides.get(app["package"]), dict) else None
+                    if ov and "locales" in ov:
+                        eff_cfg = {**cfg, "locales": ov["locales"]}
                     # Use play_sem for the fetch part inside build_one (via holder, but we wrap)
                     async with play_sem:
-                        await build_one(session, holder, cfg, state, app["package"], combo, version, vc, arch, summary)
+                        await build_one(session, holder, eff_cfg, state, app["package"], combo, version, vc, arch, summary, resolution)
                     log.info("built %s", label)
                     # Handle out latest-only: remove older version files for same package|cid|arch
                     try:
@@ -918,7 +965,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     log.error("failed %s: %s", label, exc)
                     summary["failed"].append((f"{app['package']}|{combo_id(combo)}|{arch}", str(exc)))
 
-        await asyncio.gather(*[_build_with_sem(a, c, v, vc, arch) for a, c, v, vc, arch in plan])
+        await asyncio.gather(*[_build_with_sem(a, c, v, vc, arch, res) for a, c, v, vc, arch, res in plan])
 
         if summary["built"] and (cfg.get("release") or release_override):
             pending_tag = "p" + time.strftime("%Y%m%d-%H%M%S")
