@@ -107,7 +107,6 @@ def clean_tmp(cfg: dict) -> None:
     size_mb = dir_size_mb(TMP)
     cutoff = now() - int(max_age_days * 86400)
     too_old = any(p.stat().st_mtime < cutoff for p in TMP.rglob("*") if p.is_file())
-    # Check free space
     try:
         free_gb = shutil.disk_usage(ROOT).free / (1024**3)
         low_space = free_gb < min_free_gb
@@ -127,14 +126,12 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     max_age_days = cfg.get("tmp_max_age_days", 7)
     cutoff = now() - int(max_age_days * 86400)
     files = [p for p in TMP.rglob("*") if p.is_file()]
-    # Sort by mtime (oldest first) for LRU
     files.sort(key=lambda p: p.stat().st_mtime)
     deleted = 0
     size_mb = dir_size_mb(TMP)
     for p in files:
         is_old = p.stat().st_mtime < cutoff
         is_dup = remove_dupes and p.suffix == ".part"
-        # Delete if old, or if dupes flag and it's a .part, or if size still over max
         if is_old or is_dup or size_mb > max_mb:
             if dry_run:
                 log.info("[dry-run] would delete tmp %s (old=%s dup=%s size=%.0fMB)", p, is_old, is_dup, size_mb)
@@ -147,11 +144,9 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
                     pass
             if not is_old and not is_dup and size_mb <= max_mb:
                 break
-    # Also handle morphe-data duplicate cache
     if remove_dupes:
         for dup in [ROOT / "morphe-data", ROOT / "bin" / "morphe-data"]:
             if dup.exists():
-                # Keep only bin/morphe-data as canonical, delete old morphe-data if duplicate
                 if dup == ROOT / "morphe-data" and (ROOT / "bin" / "morphe-data").exists():
                     if dry_run:
                         log.info("[dry-run] would delete duplicate %s", dup)
@@ -170,21 +165,16 @@ async def prune_out(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     """Ensure out/ only has latest APK per package|combo|arch. Returns deleted count."""
     from collections import defaultdict
     state = load_state()
-    # Group by package|cid|arch -> keep only latest per state, delete older version files
     keep = set()
     for e in state.get("builds", {}).values():
         apk = e.get("out")
         if apk:
             keep.add(apk)
-    # Also check actual files in out/
     deleted = 0
     for apk in OUT.glob("*.apk"):
         if apk.name not in keep:
-            # Check if it's an old version for a package that has newer in keep
-            # Use short to group
             is_old_dup = False
             if remove_dupes:
-                # If dupes flag, delete any file not in keep (old versions)
                 is_old_dup = True
             if is_old_dup or apk.name not in keep:
                 if dry_run:
@@ -195,16 +185,12 @@ async def prune_out(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
                         deleted += 1
                     except Exception:
                         pass
-    # Also handle duplicate old version files for same package (keep only latest per short|cid|arch)
-    if remove_dupes or True:  # always enforce latest-only
+    # keep only latest per short|cid|arch
         grouped = defaultdict(list)
         for apk in OUT.glob("*.apk"):
-            # Parse package short and version from filename: short-version-cid-arch.apk
-            # Use state to find latest, but fallback to mtime
             grouped[apk.name.split("-")[0]].append(apk)
         for short_name, files in grouped.items():
             if len(files) > 1:
-                # Keep only newest by mtime (which should correspond to latest state)
                 files.sort(key=lambda p: p.stat().st_mtime, reverse=True)
                 for old in files[1:]:
                     if old.name in keep:
@@ -439,24 +425,16 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
         return details, delivery
 
     profiles = [p for _, p in get_priority_profiles(arch)]
-    # resolution is just about which config.*dpi split we keep (xxxhdpi max)
-    # keep profile order as-is; filtering happens on delivery.splits below
-    # also include holder's cached profile first for speed
+
     tried: set[str] = set()
     details = delivery = None
     last_exc: Exception | None = None
-    # attempt up to 4 tries per profile, but overall try each profile
     for prof in profiles:
-        # try to get auth for this specific profile (bypass holder cache)
         try:
-            # _post_profile directly to avoid holder's first-profile bias
             auth = await play._post_profile(session, play.DISPENSER, prof)
             if not auth or isinstance(auth, play.PlayError):
-                # fall back to holder's generic token
                 auth = await holder.get(session, arch)
-            # quick check that this profile can see the package
             details, delivery = await flow(auth)
-            # cache successful auth for next time
             holder._auths[arch] = auth
             break
         except play.AuthExpiredError as e:
@@ -470,15 +448,12 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
             continue
         except (play.AppNotSupportedError, play.AppNotAvailableError) as exc:
             last_exc = exc
-            # try next profile for same arch before giving up
             log.debug("%s vc %d not supported on profile %s, trying next", short(package), vc, prof.get("deviceInfoProvider", {}).get("product", "?")[:20])
             continue
         except play.PlayError as e:
-            # unparseable delivery etc. — try next profile
             last_exc = e
             continue
     else:
-        # no profile succeeded, fall back to original 4-attempt logic with holder for RateLimit etc.
         for attempt in range(4):
             try:
                 auth = await holder.get(session, arch, refresh=attempt > 0 and details is None)
@@ -502,7 +477,6 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
 
     log.info("%s %s: %d splits (%s)", short(package), details.version_string or f"vc{vc}",
              len(delivery.splits), ", ".join(s.name for s in delivery.splits))
-    # resolution: pick highest available density split <= requested (xxxhdpi is max)
     requested = (resolution or cfg.get("resolution", "xxxhdpi") or "xxxhdpi").lower()
     if requested not in _RES_ORDER:
         requested = "xxxhdpi"
