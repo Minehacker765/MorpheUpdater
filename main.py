@@ -1,6 +1,8 @@
 import argparse
 import asyncio
 import logging
+import logging.handlers
+import re
 
 from morpheupdater import daemon
 from morpheupdater.settings import load_env
@@ -33,13 +35,12 @@ def main() -> None:
     )
     try:
         from pathlib import Path
-        import logging.handlers
         log_dir = Path(__file__).resolve().parent / "tmp" / "logs"
         log_dir.mkdir(parents=True, exist_ok=True)
         latest = log_dir / "latest.log"
         fh = logging.handlers.TimedRotatingFileHandler(str(latest), when="H", interval=1, backupCount=0, encoding="utf-8", utc=True)
         fh.suffix = "%Y-%m-%d_%H.log"
-        fh.extMatch = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}_\d{2}\.log$")
+        fh.extMatch = re.compile(r"^\d{4}-\d{2}-\d{2}_\d{2}\.log$")
         def namer(name):
             base = name.replace(str(latest) + ".", "")
             return str(log_dir / base)
