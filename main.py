@@ -40,7 +40,6 @@ def main() -> None:
         fh = logging.handlers.TimedRotatingFileHandler(str(latest), when="H", interval=1, backupCount=0, encoding="utf-8", utc=True)
         fh.suffix = "%Y-%m-%d_%H.log"
         fh.extMatch = __import__("re").compile(r"^\d{4}-\d{2}-\d{2}_\d{2}\.log$")
-        orig_namer = fh.namer
         def namer(name):
             base = name.replace(str(latest) + ".", "")
             return str(log_dir / base)
@@ -65,7 +64,6 @@ def main() -> None:
         raise SystemExit(1 if summary["failed"] else 0)
     if args.mode == "clean":
         # clean tmp/out/all with flags
-        import sys
         from morpheupdater.settings import load_config
         cfg = load_config()
         # allow --max-size to override tmp_max_mb, --old to override tmp_max_age_days, --min-free to override

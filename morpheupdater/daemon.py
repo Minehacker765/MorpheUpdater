@@ -421,7 +421,6 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
 
     profiles = [p for _, p in get_priority_profiles(arch)]
 
-    tried: set[str] = set()
     details = delivery = None
     last_exc: Exception | None = None
     for prof in profiles:
