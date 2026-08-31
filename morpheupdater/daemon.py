@@ -116,8 +116,25 @@ def clean_tmp(cfg: dict) -> None:
         free_gb = 0
     if size_mb > max_mb or too_old or low_space:
         log.info("wiping tmp/ (size=%.0fMB max=%dMB old=%s free=%.1fGB min=%dGB)", size_mb, max_mb, too_old, free_gb, min_free_gb)
+        # preserve logs
+        logs = TMP / "logs"
+        keep_logs = logs.exists()
+        tmp_logs_bak = None
+        if keep_logs:
+            tmp_logs_bak = TMP.with_name("tmp_logs_bak")
+            try:
+                if tmp_logs_bak.exists():
+                    shutil.rmtree(tmp_logs_bak)
+                shutil.move(str(logs), str(tmp_logs_bak))
+            except Exception:
+                tmp_logs_bak = None
         shutil.rmtree(TMP)
         TMP.mkdir(parents=True, exist_ok=True)
+        if tmp_logs_bak and tmp_logs_bak.exists():
+            try:
+                shutil.move(str(tmp_logs_bak), str(logs))
+            except Exception:
+                pass
 
 
 async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False) -> int:

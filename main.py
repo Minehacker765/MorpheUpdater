@@ -31,6 +31,16 @@ def main() -> None:
         format="%(asctime)s %(levelname)-7s %(name)s: %(message)s",
         datefmt="%H:%M:%S",
     )
+    try:
+        from pathlib import Path
+        log_dir = Path(__file__).resolve().parent / "tmp" / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        fh = logging.FileHandler(log_dir / "morpheupdater.log", encoding="utf-8")
+        fh.setLevel(logging.INFO)
+        fh.setFormatter(logging.Formatter("%(asctime)s %(levelname)-7s %(name)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
+        logging.getLogger().addHandler(fh)
+    except Exception:
+        pass
     load_env()
 
     commit = True if args.commit else None
