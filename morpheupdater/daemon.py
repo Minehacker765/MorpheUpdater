@@ -859,6 +859,8 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     continue
 
                 for arch in archs:
+                    # universal bundles all arch splits (arm64+tv) into one APK, compatible with separate per-arch builds
+                    is_universal = arch == "universal"
                     key = f"{package}|{combo_id(combo)}|{arch}"
                     prev = state["builds"].get(key)
                     out = OUT / f"{short(package)}-{version}-{combo_id(combo)}-{arch}.apk"
