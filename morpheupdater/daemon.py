@@ -52,13 +52,7 @@ def _enabled_archs(archs_cfg) -> list[str]:
     return ["arm64"]
 
 
-_RESOLUTION_DPI = {"ldpi": 120, "mdpi": 160, "hdpi": 240, "xhdpi": 320, "xxhdpi": 480, "xxxhdpi": 640}
-
-
-def _max_dpi_for(resolution: str | None) -> int:
-    if not resolution:
-        return 640
-    return _RESOLUTION_DPI.get(resolution.lower(), 640)
+_RES_ORDER = ["ldpi", "mdpi", "hdpi", "xhdpi", "xxhdpi", "xxxhdpi"]
 
 
 def _load_overrides() -> dict:
@@ -445,23 +439,8 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
         return details, delivery
 
     profiles = [p for _, p in get_priority_profiles(arch)]
-    # Filter by resolution (max DPI, closest without exceeding)
-    max_dpi = _max_dpi_for(resolution or cfg.get("resolution", "xxxhdpi"))
-    # Annotate with density for sorting, keep original priority for tie-break
-    def _dpi(p: dict) -> int:
-        try:
-            return int(p.get("Screen.Density", "0"))
-        except Exception:
-            return 0
-    # Keep only profiles with dpi <= max, sorted by dpi desc then original order
-    filtered = [p for p in profiles if _dpi(p) <= max_dpi]
-    if filtered:
-        # Sort by dpi desc, but stable keeps priority order for same dpi
-        filtered.sort(key=lambda p: _dpi(p), reverse=True)
-        profiles = filtered
-    else:
-        # Fallback: closest <= max not found, use lowest dpi available
-        profiles = sorted(profiles, key=lambda p: _dpi(p))
+    # resolution is just about which config.*dpi split we keep (xxxhdpi max)
+    # keep profile order as-is; filtering happens on delivery.splits below
     # also include holder's cached profile first for speed
     tried: set[str] = set()
     details = delivery = None
@@ -523,6 +502,35 @@ async def _fetch_splits(session: ClientSession, holder: AuthHolder, cfg: dict, p
 
     log.info("%s %s: %d splits (%s)", short(package), details.version_string or f"vc{vc}",
              len(delivery.splits), ", ".join(s.name for s in delivery.splits))
+    # resolution: pick highest available density split <= requested (xxxhdpi is max)
+    requested = (resolution or cfg.get("resolution", "xxxhdpi") or "xxxhdpi").lower()
+    if requested not in _RES_ORDER:
+        requested = "xxxhdpi"
+    req_idx = _RES_ORDER.index(requested)
+    density = []
+    other = []
+    for s in delivery.splits:
+        low = s.name.lower()
+        found = None
+        for d in _RES_ORDER:
+            if d in low:
+                found = d
+                break
+        if found:
+            density.append((s, _RES_ORDER.index(found)))
+        else:
+            other.append(s)
+    if density:
+        cand = [(s, i) for s, i in density if i <= req_idx]
+        if cand:
+            best = max(i for _, i in cand)
+            keep = [s for s, i in density if i == best]
+        else:
+            best = min(i for _, i in density)
+            keep = [s for s, i in density if i == best]
+        if len(keep) != len(density):
+            log.info("%s: resolution %s -> keeping %s (had %s)", short(package), requested, ",".join(k.name for k in keep), ",".join(k.name for k,_ in density))
+        delivery.splits = other + keep
 
     sem = asyncio.Semaphore(DOWNLOAD_CONCURRENCY)
     specs = []
