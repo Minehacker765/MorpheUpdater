@@ -1,33 +1,8 @@
 [
     {
         "meta": {
-            "created_at": "2026-09-01T04:09:42.824949745Z",
-            "updated_at": "2026-09-01T04:09:43.507667722Z",
-            "source": "v1.1.0-dev.1__patches-1.1.0-dev.1.mpp",
-            "sha256": "f405b29343e742e9a8501058f024ab0340e25d08c23718e9aa187f25d21ffd0a"
-        },
-        "patches": {
-            "Unlock premium": {
-                "enabled": true
-            },
-            "Disable tracking": {
-                "enabled": true
-            },
-            "Remove free accounts limit": {
-                "enabled": true
-            },
-            "Hide sidebar upselling": {
-                "enabled": true
-            },
-            "Remove 'Sent from' signature": {
-                "enabled": true
-            }
-        }
-    },
-    {
-        "meta": {
-            "created_at": "2026-09-01T04:09:42.824949745Z",
-            "updated_at": "2026-09-01T22:28:59.404813200Z",
+            "created_at": "2026-09-01T22:29:41.881718374Z",
+            "updated_at": "2026-09-01T22:29:43.076106842Z",
             "source": "v1.14.0__patches-1.14.0.mpp",
             "sha256": "2b76f192c0118b788590ecde8b1e1a1c67942ed5fbc795853025644ca14aeabd"
         },

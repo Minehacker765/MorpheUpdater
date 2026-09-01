@@ -1,5 +1,17 @@
 {
   "builds": {
+    "ai.perplexity.app.android|hxreborn|arm64": {
+      "app_name": "Perplexity - Ask Anything",
+      "arch": "arm64",
+      "at": 1788301728,
+      "out": "app.android-2.97.0-hxreborn-arm64.apk",
+      "package": "ai.perplexity.app.android",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 260647,
+      "version": "2.97.0"
+    },
     "all.in.one.calculator|hxreborn|arm64": {
       "app_name": "All-In-One Calculator",
       "arch": "arm64",
@@ -35,6 +47,18 @@
       },
       "vc": 38,
       "version": "3.2.2"
+    },
+    "app.rubberbands.fit|hxreborn|arm64": {
+      "app_name": "Rubber Bands",
+      "arch": "arm64",
+      "at": 1788301771,
+      "out": "fit-3.9-hxreborn-arm64.apk",
+      "package": "app.rubberbands.fit",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 291,
+      "version": "3.9"
     },
     "app.symfonik.music.player|hxreborn|arm64": {
       "app_name": "Symfonium: Music player & cast",
@@ -168,6 +192,18 @@
       "vc": 597,
       "version": "7.1.1"
     },
+    "com.amazon.mShop.android.shopping|de-vanced|arm64": {
+      "app_name": "Amazon Shopping",
+      "arch": "arm64",
+      "at": 1788301657,
+      "out": "shopping-32.13.0.100-de-vanced-arm64.apk",
+      "package": "com.amazon.mShop.android.shopping",
+      "tags": {
+        "de-vanced": "v1.3.1"
+      },
+      "vc": 1241320016,
+      "version": "32.13.0.100"
+    },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
@@ -219,14 +255,14 @@
     "com.audible.application|hxreborn|arm64": {
       "app_name": "Audible: Audiobooks & Podcasts",
       "arch": "arm64",
-      "at": 1788235705,
-      "out": "application-26.34.05-hxreborn-arm64.apk",
+      "at": 1788301749,
+      "out": "application-26.34.07-hxreborn-arm64.apk",
       "package": "com.audible.application",
       "tags": {
         "hxreborn": "v1.14.0"
       },
-      "vc": 2090263405,
-      "version": "26.34.05"
+      "vc": 2090263407,
+      "version": "26.34.07"
     },
     "com.avocards|hoodles|arm64": {
       "app_name": "",
@@ -531,11 +567,11 @@
     "com.goodreads|hoodles|arm64": {
       "app_name": "Goodreads: Book Tracker & More",
       "arch": "arm64",
-      "at": 1788206422,
+      "at": 1788301567,
       "out": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
       "package": "com.goodreads",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
       "vc": 1292076000,
       "version": "2.76.0 Build 0"
@@ -555,14 +591,14 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
-      "at": 1788205283,
-      "out": "photos-7.89.0.968035987-de-vanced-arm64.apk",
+      "at": 1788301643,
+      "out": "photos-7.90.0.971743778-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
-      "vc": 52244454,
-      "version": "7.89.0.968035987"
+      "vc": 52288916,
+      "version": "7.90.0.971743778"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
@@ -723,11 +759,11 @@
     "com.merriamwebster|hoodles|arm64": {
       "app_name": "Dictionary - Merriam-Webster",
       "arch": "arm64",
-      "at": 1788206454,
+      "at": 1788301634,
       "out": "merriamwebster-5.6.2-hoodles-arm64.apk",
       "package": "com.merriamwebster",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
       "vc": 560204,
       "version": "5.6.2"
@@ -792,6 +828,18 @@
       "vc": 17398,
       "version": "236.17398.20260827"
     },
+    "com.myprog.hexedit|de-vanced|arm64": {
+      "app_name": "HEX Editor",
+      "arch": "arm64",
+      "at": 1788301554,
+      "out": "hexedit-2.8.3-de-vanced-arm64.apk",
+      "package": "com.myprog.hexedit",
+      "tags": {
+        "de-vanced": "v1.3.1"
+      },
+      "vc": 120,
+      "version": "2.8.3"
+    },
     "com.myvitale.forus|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -816,6 +864,18 @@
       "vc": 3090511,
       "version": "3.9.5"
     },
+    "com.netflix.ninja|androidtv|tv": {
+      "app_name": "Netflix",
+      "arch": "tv",
+      "at": 1788301412,
+      "out": "ninja-13.0.1 build 25028-androidtv-tv.apk",
+      "package": "com.netflix.ninja",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 25028,
+      "version": "13.0.1 build 25028"
+    },
     "com.noctuasoftware.stellarium_free|xtra|arm64": {
       "app_name": "Stellarium - Star Map",
       "arch": "arm64",
@@ -829,13 +889,13 @@
       "version": "1.16.3"
     },
     "com.nothing.smartcenter|de-vanced|arm64": {
-      "app_name": "Nothing X",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788205552,
+      "at": 1788301175,
       "out": "smartcenter-3.8.0-de-vanced-arm64.apk",
       "package": "com.nothing.smartcenter",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 3080004,
       "version": "3.8.0"
@@ -843,11 +903,11 @@
     "com.pandora.android|hoodles|arm64": {
       "app_name": "Pandora - Music & Podcasts",
       "arch": "arm64",
-      "at": 1788206506,
+      "at": 1788301659,
       "out": "pandora.android-2608.1-hoodles-arm64.apk",
       "package": "com.pandora.android",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
       "vc": 26081001,
       "version": "2608.1"
@@ -1023,14 +1083,14 @@
     "com.streetwriters.notesnook|hxreborn|arm64": {
       "app_name": "Notesnook Secure Private Notes",
       "arch": "arm64",
-      "at": 1788235783,
-      "out": "notesnook-3.4.10-hxreborn-arm64.apk",
+      "at": 1788301739,
+      "out": "notesnook-3.4.11-hxreborn-arm64.apk",
       "package": "com.streetwriters.notesnook",
       "tags": {
         "hxreborn": "v1.14.0"
       },
-      "vc": 4197420,
-      "version": "3.4.10"
+      "vc": 4197421,
+      "version": "3.4.11"
     },
     "com.superchinese|hoodles|arm64": {
       "app_name": "SuperChinese: Learn Chinese",
@@ -1043,6 +1103,18 @@
       },
       "vc": 393,
       "version": "6.6.3"
+    },
+    "com.teslacoilsw.launcher|hoodles|arm64": {
+      "app_name": "Nova Launcher: Home Screen",
+      "arch": "arm64",
+      "at": 1788301706,
+      "out": "teslacoilsw.launcher-89000 (8.9.0)-hoodles-arm64.apk",
+      "package": "com.teslacoilsw.launcher",
+      "tags": {
+        "hoodles": "v1.44.0-dev.1"
+      },
+      "vc": 89000,
+      "version": "89000 (8.9.0)"
     },
     "com.thehungrywasp.iamsober|hoomans|arm64": {
       "app_name": "",
@@ -1187,6 +1259,18 @@
       },
       "vc": 2026061623,
       "version": "2.208"
+    },
+    "com.wbd.hbomax|androidtv|tv": {
+      "app_name": "HBO Max: Stream Movies & TV",
+      "arch": "tv",
+      "at": 1788301428,
+      "out": "hbomax-7.9.0.61-androidtv-tv.apk",
+      "package": "com.wbd.hbomax",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 1827090061,
+      "version": "7.9.0.61"
     },
     "com.windyty.android|hoodles|arm64": {
       "app_name": "Windy.com - Weather Forecast",
@@ -1512,6 +1596,18 @@
       "vc": 305191,
       "version": "3.5.19"
     },
+    "psyberia.alpinequest.free|hxreborn|arm64": {
+      "app_name": "AlpineQuest Explorer Lite",
+      "arch": "arm64",
+      "at": 1788301783,
+      "out": "free-2.4.0e-hxreborn-arm64.apk",
+      "package": "psyberia.alpinequest.free",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 412,
+      "version": "2.4.0e"
+    },
     "ru.iiec.pydroid3|hoodles|arm64": {
       "app_name": "Pydroid 3 - IDE for Python 3",
       "arch": "arm64",
@@ -1535,6 +1631,18 @@
       },
       "vc": 300500229,
       "version": "3.23.0"
+    },
+    "tv.pluto.android|androidtv|tv": {
+      "app_name": "PlutoTV: Stream Free Movies/TV",
+      "arch": "tv",
+      "at": 1788301422,
+      "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
+      "package": "tv.pluto.android",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 510400248,
+      "version": "5.66.0-leanback"
     },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
