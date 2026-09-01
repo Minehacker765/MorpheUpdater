@@ -18,11 +18,11 @@ from pathlib import Path
 from aiohttp import ClientSession, ClientTimeout
 
 from . import fdroid, pages, play, tools
-from .display import CLONE_PACKAGE_MAP, SHORT_TO_PACKAGE, TV_PACKAGES
+from .display import TV_PACKAGES
 from .profiles import get_priority_profiles
 from .settings import (
-    ICONS,
     MORPHE_DATA,
+    MORPHE_PATCHES,
     OPTIONS,
     OUT,
     ROOT,
@@ -35,11 +35,14 @@ from .settings import (
     short,
     validate_apps,
 )
-from .tools import apk_info
 
 log = logging.getLogger("daemon")
 
 DOWNLOAD_CONCURRENCY = 4
+SECONDS_PER_DAY = 86400
+PART_SUFFIX = ".part"
+LEGACY_MORPHE_DATA = ROOT / "morphe-data"
+
 ver_sem = asyncio.Semaphore(2)
 pure_sem = asyncio.Semaphore(4)
 play_ver_sem = asyncio.Semaphore(3)
@@ -109,7 +112,7 @@ def clean_tmp(cfg: dict) -> None:
     max_age_days = cfg.get("tmp_max_age_days", 7)
     min_free_gb = cfg.get("tmp_min_free_gb", cfg.get("clean", {}).get("tmp_min_free_gb", 5) if isinstance(cfg.get("clean"), dict) else 5)
     size_mb = dir_size_mb(TMP)
-    cutoff = now() - int(max_age_days * 86400)
+    cutoff = now() - int(max_age_days * SECONDS_PER_DAY)
     too_old = any(p.stat().st_mtime < cutoff for p in TMP.rglob("*") if p.is_file())
     try:
         free_gb = shutil.disk_usage(ROOT).free / (1024**3)
@@ -128,14 +131,14 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     TMP.mkdir(parents=True, exist_ok=True)
     max_mb = cfg.get("tmp_max_mb", 2048)
     max_age_days = cfg.get("tmp_max_age_days", 7)
-    cutoff = now() - int(max_age_days * 86400)
+    cutoff = now() - int(max_age_days * SECONDS_PER_DAY)
     files = [p for p in TMP.rglob("*") if p.is_file()]
     files.sort(key=lambda p: p.stat().st_mtime)
     deleted = 0
     size_mb = dir_size_mb(TMP)
     for p in files:
         is_old = p.stat().st_mtime < cutoff
-        is_dup = p.suffix == ".part"  # dedup always
+        is_dup = p.suffix == PART_SUFFIX  # dedup always
         if is_old or is_dup or size_mb > max_mb:
             if dry_run:
                 log.info("[dry-run] would delete tmp %s (old=%s dup=%s size=%.0fMB)", p, is_old, is_dup, size_mb)
@@ -149,17 +152,15 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
             if not is_old and not is_dup and size_mb <= max_mb:
                 break
     if remove_dupes:
-        for dup in [ROOT / "morphe-data", ROOT / "bin" / "morphe-data"]:
-            if dup.exists():
-                if dup == ROOT / "morphe-data" and (ROOT / "bin" / "morphe-data").exists():
-                    if dry_run:
-                        log.info("[dry-run] would delete duplicate %s", dup)
-                    else:
-                        try:
-                            shutil.rmtree(dup)
-                            deleted += 1
-                        except Exception:
-                            pass
+        if LEGACY_MORPHE_DATA.exists() and MORPHE_DATA.exists():
+            if dry_run:
+                log.info("[dry-run] would delete duplicate %s", LEGACY_MORPHE_DATA)
+            else:
+                try:
+                    shutil.rmtree(LEGACY_MORPHE_DATA)
+                    deleted += 1
+                except Exception:
+                    pass
     if deleted:
         log.info("prune_tmp deleted %d files", deleted)
     return deleted
@@ -227,23 +228,31 @@ def _bundle_prerelease(cfg: dict, name: str) -> bool:
     return bool(spec.get("prerelease", True))
 
 
-def _get_local_mpp(bundle_name: str, url: str, tag: str | None = None) -> Path | None:
+def _cache_dir(repo: str) -> Path:
+    return MORPHE_PATCHES / repo.replace("/", "-")
+
+
+def _is_mpp_candidate(p: Path) -> bool:
+    n = p.name.lower()
+    return not p.name.endswith(".part") and "sources" not in n and "javadoc" not in n
+
+
+def _get_local_mpp(url: str, tag: str | None = None) -> Path | None:
     """Return cached MPP file for bundle. If tag given, prefer exact tag match (no GitHub hit)."""
     if "github.com" not in url:
         return None
     try:
         repo = _repo_from_url(url) or ""
-        sanitized = repo.replace("/", "-")
-        cache_dir = MORPHE_DATA / "patches" / sanitized
+        cache_dir = _cache_dir(repo)
         if tag:
             # exact tag file: {tag}__*.mpp (e.g. v1.41.0__patches-1.41.0.mpp) – strict, no prefix fallback
-            cand = [p for p in cache_dir.glob(f"{tag}__*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
+            cand = [p for p in cache_dir.glob(f"{tag}__*.mpp") if _is_mpp_candidate(p)]
             if cand:
                 return cand[0]
             return None
         if not cache_dir.exists():
             return None
-        mpps = [p for p in cache_dir.glob("*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
+        mpps = [p for p in cache_dir.glob("*.mpp") if _is_mpp_candidate(p)]
         if not mpps:
             return None
         def _ver_key(p: Path):
@@ -272,7 +281,7 @@ def _get_patch_inputs(cfg: dict, combo: list[str], state: dict | None = None) ->
         if not url:
             continue
         tag = state.get("bundles", {}).get(b) if state else None
-        local = _get_local_mpp(b, url, tag) if tag else _get_local_mpp(b, url)
+        local = _get_local_mpp(url, tag) if tag else _get_local_mpp(url)
         if local and local.exists():
             inputs.append(str(local))
         else:
@@ -296,10 +305,9 @@ async def ensure_mpp_cache(session: ClientSession, cfg: dict, state: dict) -> No
         # microg is not a patches MPP repo (direct APK) – skip MPP download
         if repo.lower() == "morpheapp/microg-re":
             continue
-        sanitized = repo.replace("/", "-")
-        cache_dir = MORPHE_DATA / "patches" / sanitized
+        cache_dir = _cache_dir(repo)
         cache_dir.mkdir(parents=True, exist_ok=True)
-        existing = [p for p in cache_dir.glob(f"{tag}__*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
+        existing = [p for p in cache_dir.glob(f"{tag}__*.mpp") if _is_mpp_candidate(p)]
         if existing:
             continue
         # fetch release by tag (authenticated, no morphe tool involved)
@@ -342,49 +350,6 @@ async def ensure_mpp_cache(session: ClientSession, cfg: dict, state: dict) -> No
             log.info("MPP cached %s %s (%d bytes)", name, tag, dest.stat().st_size)
         except Exception as exc:
             log.error("MPP download failed %s %s: %s", name, tag, exc)
-
-
-def _enable_all_patches(options_file: Path) -> int:
-    """Set enabled=true for every patch in options file, except Clone and known broken. Returns count changed."""
-    BROKEN = {
-        "com.facebook.katana": {"Hide 'Sponsored Stories'"},
-        "com.facebook.orca": set(),
-    }
-    pkg_hint = options_file.name.split(".")[0]
-    broken_for_this = BROKEN.get(SHORT_TO_PACKAGE.get(pkg_hint, ""), set())
-    if not options_file.exists():
-        return 0
-    try:
-        data = json.loads(options_file.read_text())
-    except Exception:
-        return 0
-    changed = 0
-    entries = data if isinstance(data, list) else [data]
-    for entry in entries:
-        patches = entry.get("patches") if isinstance(entry, dict) else None
-        if not isinstance(patches, dict):
-            continue
-        for name, opts in patches.items():
-            if "Clone" in name or "Change package name" in name:
-                if isinstance(opts, dict) and opts.get("enabled"):
-                    opts["enabled"] = False
-                    changed += 1
-                continue
-            if name in broken_for_this:
-                if isinstance(opts, dict) and opts.get("enabled"):
-                    opts["enabled"] = False
-                    changed += 1
-                continue
-            if isinstance(opts, dict) and "enabled" in opts:
-                if not opts["enabled"]:
-                    opts["enabled"] = True
-                    changed += 1
-    if changed:
-        if isinstance(data, list):
-            options_file.write_text(json.dumps(data, indent=4) + "\n")
-        else:
-            options_file.write_text(json.dumps(data, indent=4) + "\n")
-    return changed
 
 
 async def check_bundles(session: ClientSession, cfg: dict, state: dict) -> dict[str, tuple]:
@@ -670,7 +635,7 @@ async def _fetch_microg(session: ClientSession, cfg: dict) -> tuple[str, int, pa
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    info = await apk_info(ROOT / "bin" / "apkeditor.jar", dest)
+    info = await tools.apk_info(ROOT / "bin" / "apkeditor.jar", dest)
     vc = info[2] if info else 0
     return ver, vc, dest
 
@@ -686,7 +651,7 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
             with open(dest, "wb") as f:
                 async for chunk in r.content.iter_chunked(1 << 20):
                     f.write(chunk)
-    info = await apk_info(ROOT / "bin" / "apkeditor.jar", dest)
+    info = await tools.apk_info(ROOT / "bin" / "apkeditor.jar", dest)
     if not info:
         raise RuntimeError("failed to get AdGuard info")
     pkg, ver, vc, _ = info
@@ -695,6 +660,20 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
         log.warning("AdGuard package mismatch: %s", pkg)
     return ver, vc, dest
 
+
+async def _materialize_direct(state: dict, summary: dict, package: str, combo: list[str], archs: list[str], version: str, vc: int, src: Path, out_prefix: str, app_name: str, tags: dict) -> None:
+    for arch in archs:
+        key = f"{package}|{combo_id(combo)}|{arch}"
+        prev = state["builds"].get(key)
+        out = OUT / f"{out_prefix}-{version}-{arch}.apk"
+        up_to_date = prev and prev.get("version") == version and out.exists()
+        if up_to_date:
+            log.info("%s %s [%s]: up to date", app_name, version, arch)
+            continue
+        shutil.copyfile(src, out)
+        state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": app_name, "tags": tags, "out": out.name, "at": now()}
+        save_state(state)
+        summary["built"].append(out.name)
 
 
 async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache, state):
@@ -928,47 +907,22 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                 # MicroG is direct GitHub, not Play
                 if package == "com.mgoogle.android.gms":
                     try:
-                        version, vc, _ = await _fetch_microg(session, cfg)
+                        version, vc, src = await _fetch_microg(session, cfg)
                     except Exception as exc:
                         for arch in archs:
                             summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
                         continue
-                    # MicroG has no arch splits, single apk
-                    for arch in archs:
-                        key = f"{package}|{combo_id(combo)}|{arch}"
-                        prev = state["builds"].get(key)
-                        # use version as-is, arch is still part of key for consistency
-                        out = OUT / f"microg-{version}-{arch}.apk"
-                        up_to_date = prev and prev.get("version") == version and out.exists()
-                        if up_to_date:
-                            log.info("MicroG %s [%s]: up to date", version, arch)
-                            continue
-                        # copy direct apk to out
-                        shutil.copyfile(_ , out)
-                        state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "MicroG", "tags": {"microg": version}, "out": out.name, "at": now()}
-                        save_state(state)
-                        summary["built"].append(out.name)
+                    await _materialize_direct(state, summary, package, combo, archs, version, vc, src, "microg", "MicroG", {"microg": version})
                     continue
                 # AdGuard is direct from adguardcdn.com (not on Play)
                 if package == "com.adguard.android":
                     try:
-                        version, vc, _ = await _fetch_adguard(session)
+                        version, vc, src = await _fetch_adguard(session)
                     except Exception as exc:
                         for arch in archs:
                             summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
                         continue
-                    for arch in archs:
-                        key = f"{package}|{combo_id(combo)}|{arch}"
-                        prev = state["builds"].get(key)
-                        out = OUT / f"adguard-{version}-{arch}.apk"
-                        up_to_date = prev and prev.get("version") == version and out.exists()
-                        if up_to_date:
-                            log.info("AdGuard %s [%s]: up to date", version, arch)
-                            continue
-                        shutil.copyfile(_, out)
-                        state["builds"][key] = {"package": package, "version": version, "vc": vc, "arch": arch, "app_name": "AdGuard", "tags": {"hoodles": state["bundles"].get("hoodles", "")}, "out": out.name, "at": now()}
-                        save_state(state)
-                        summary["built"].append(out.name)
+                    await _materialize_direct(state, summary, package, combo, archs, version, vc, src, "adguard", "AdGuard", {"hoodles": state["bundles"].get("hoodles", "")})
                     continue
 
                 version_targets.append((app, combo, archs, over))

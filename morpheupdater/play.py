@@ -4,10 +4,11 @@ and APKPure metadata API for version-string -> version-code resolution."""
 from __future__ import annotations
 
 import asyncio
-import re
-from dataclasses import dataclass, field
-
+import json
 import logging
+import re
+import time
+from dataclasses import dataclass, field
 
 from aiohttp import ClientSession, ClientTimeout
 
@@ -101,9 +102,6 @@ async def fetch_token(session: ClientSession, arch: str = "arm64") -> dict | Non
 
 
 async def ensure_auth(session: ClientSession, arch: str = "arm64") -> dict:
-    import json
-    import time
-
     cache = TMP / f"auth-{arch}.json"
     if cache.exists():
         try:
@@ -362,7 +360,6 @@ PURE_CACHE_TTL = 6 * 3600  # 6h – apkpure versions change slowly, avoids 166×
 def _load_pure_cache() -> dict:
     try:
         if PURE_CACHE.exists():
-            import json, time
             data = json.loads(PURE_CACHE.read_text())
             # {pkg: {"at": ts, "codes": {ver: vc}}}
             return data if isinstance(data, dict) else {}
@@ -373,7 +370,6 @@ def _load_pure_cache() -> dict:
 
 def _save_pure_cache(cache: dict) -> None:
     try:
-        import json
         PURE_CACHE.parent.mkdir(parents=True, exist_ok=True)
         # atomic write
         tmp = PURE_CACHE.with_suffix(".tmp")
@@ -385,7 +381,6 @@ def _save_pure_cache(cache: dict) -> None:
 
 async def fetch_version_codes(session: ClientSession, package: str, attempts: int = 3) -> dict[str, int]:
     # disk cache: 6h TTL, survives cycles, still respects 429 backoff
-    import time
     cache = _load_pure_cache()
     entry = cache.get(package)
     if entry and isinstance(entry, dict):
@@ -431,7 +426,7 @@ OVERRIDES_PATH = ROOT / "version_overrides.json"
 def _load_overrides() -> dict[str, dict[str, int]]:
     try:
         if OVERRIDES_PATH.exists():
-            data = __import__("json").loads(OVERRIDES_PATH.read_text())
+            data = json.loads(OVERRIDES_PATH.read_text())
             # normalize: {pkg: {ver: vc}}
             out: dict[str, dict[str, int]] = {}
             for pkg, mapping in data.items():
@@ -449,7 +444,7 @@ def _save_override(package: str, version: str, vc: int) -> None:
         data.setdefault(package, {})[str(version)] = int(vc)
         # sort for determinism
         sorted_data = {pkg: dict(sorted(m.items())) for pkg, m in sorted(data.items())}
-        OVERRIDES_PATH.write_text(__import__("json").dumps(sorted_data, indent=2, sort_keys=True) + "\n")
+        OVERRIDES_PATH.write_text(json.dumps(sorted_data, indent=2, sort_keys=True) + "\n")
     except Exception:
         pass
 

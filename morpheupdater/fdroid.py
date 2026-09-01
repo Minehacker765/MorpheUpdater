@@ -10,8 +10,10 @@ import hashlib
 import json
 import logging
 import re
+import shutil
 import struct
 import subprocess
+import tempfile
 import time
 import zipfile
 from pathlib import Path
@@ -131,7 +133,6 @@ _DPI_RANK = {"xxxhdpi": 5, "xxhdpi": 4, "xhdpi": 3, "hdpi": 2, "mdpi": 1, "ldpi"
 def _fallback_microg_icon(dest: Path) -> str | None:
     try:
         dest.parent.mkdir(parents=True, exist_ok=True)
-        import struct, zlib
         w = h = 512
         try:
             from PIL import Image, ImageDraw, ImageFont  # type: ignore
@@ -265,7 +266,6 @@ async def cert_fingerprint(creds: dict) -> tuple[str, str] | None:
 
 
 def sign_index(index_json: Path, creds: dict) -> None:
-    import tempfile
 
     jar_path = index_json.with_suffix(".jar")
     if not creds["alias"]:
@@ -304,7 +304,6 @@ def _ensure_repo_icon() -> str:
         # skip the generic mgoogle fallback if possible, pick first real
         if cand.name != "icon.png":
             try:
-                import shutil
                 shutil.copyfile(cand, repo_icon)
                 return repo_icon.name
             except Exception:

@@ -9,6 +9,7 @@ import logging
 import os
 import re
 import subprocess
+import zipfile
 from pathlib import Path
 
 from aiohttp import ClientSession
@@ -34,9 +35,7 @@ def _gh_headers() -> dict[str, str]:
     return headers
 
 
-async def gh_latest_prerelease(session: ClientSession, repo: str) -> dict:
-    """Newest prerelease, falling back to newest stable — mirrors how
-    morphe resolves --prerelease."""
+async def _gh_releases(session: ClientSession, repo: str) -> list[dict]:
     async with session.get(
         f"{GH_API}/repos/{repo}/releases?per_page=20",
         headers=_gh_headers(), timeout=None,
@@ -46,40 +45,20 @@ async def gh_latest_prerelease(session: ClientSession, repo: str) -> dict:
         releases = await resp.json()
     if not releases:
         raise RuntimeError(f"no releases for {repo}")
-    for release in releases:
-        if release.get("prerelease"):
-            return release
-    return releases[0]
+    return releases
+
 
 async def gh_latest_release(session: ClientSession, repo: str) -> dict:
     """Newest stable release (prerelease==false), falling back to prerelease."""
-    async with session.get(
-        f"{GH_API}/repos/{repo}/releases?per_page=20",
-        headers=_gh_headers(), timeout=None,
-    ) as resp:
-        if resp.status != 200:
-            raise RuntimeError(f"github HTTP {resp.status} for {repo}")
-        releases = await resp.json()
-    if not releases:
-        raise RuntimeError(f"no releases for {repo}")
-    for release in releases:
-        if not release.get("prerelease"):
-            return release
-    return releases[0]
+    for r in await _gh_releases(session, repo):
+        if not r.get("prerelease"):
+            return r
+    return (await _gh_releases(session, repo))[0]
 
 
 async def gh_latest(session: ClientSession, repo: str) -> dict:
     """Absolute latest release (prerelease or stable, whichever is newest)."""
-    async with session.get(
-        f"{GH_API}/repos/{repo}/releases?per_page=20",
-        headers=_gh_headers(), timeout=None,
-    ) as resp:
-        if resp.status != 200:
-            raise RuntimeError(f"github HTTP {resp.status} for {repo}")
-        releases = await resp.json()
-    if not releases:
-        raise RuntimeError(f"no releases for {repo}")
-    return releases[0]
+    return (await _gh_releases(session, repo))[0]
 
 
 
@@ -245,8 +224,6 @@ async def ensure_apksigner(session: ClientSession) -> Path:
         with open(zip_path, "wb") as f:
             async for chunk in resp.content.iter_chunked(1 << 20):
                 f.write(chunk)
-    import zipfile
-
     with zipfile.ZipFile(zip_path) as zf:
         member = next(n for n in zf.namelist() if n.endswith("/lib/apksigner.jar"))
         jar.parent.mkdir(parents=True, exist_ok=True)
@@ -426,7 +403,7 @@ async def patch(
         c = [java_bin(), "-Xmx4g", "-jar", str(jar), "patch"]
         for url in urls:
             c += ["-p", url]
-        c += ["--options-file", str(options_file), "--options-update", "-t", str(TMP / "morphe")]
+        c += ["--options-file", str(options_file), "--options-update", "-t", str(MORPHE_DATA / "tmp")]
         if pr:
             c.append("--prerelease")
         if not unsigned:

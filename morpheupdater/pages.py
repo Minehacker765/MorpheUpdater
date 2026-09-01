@@ -4,11 +4,10 @@ from __future__ import annotations
 
 import json
 import time
-from pathlib import Path
-
-from .display import PACKAGE_DISPLAY, TV_PACKAGES
-from .settings import ICONS, OUT, ROOT
 from string import Template
+
+from .display import CLONE_PACKAGE_MAP, PACKAGE_DISPLAY, TV_PACKAGES
+from .settings import ICONS, OUT, ROOT, short
 
 TEMPLATE = """<!doctype html>
 <html lang="en"><meta charset="utf-8">
@@ -78,14 +77,15 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
     # per-app cards from state builds (one per pkg|combo|arch)
     # Map original -> actual (e.g. com.mgoogle -> app.revanced) via APK inspection when possible
     try:
-        _idx2 = json.load(open(OUT / "index-v1.json"))
+        with open(OUT / "index-v1.json") as f:
+            _idx2 = json.load(f)
         _actual_map = {e["packageName"]: e["packageName"] for e in _idx2.get("apps", [])}
-        # Also map original package from state to actual via APK
         for _k, _b in state.get("builds", {}).items():
             _orig = _b.get("package", _k.split("|")[0])
-            # Find matching app in index by version/out
             for _a in _idx2.get("apps", []):
-                if _a["packageName"] in (_orig, _orig.replace("com.mgoogle", "app.revanced")):
+                # use CLONE_PACKAGE_MAP instead of hard-coded replace
+                _clone = CLONE_PACKAGE_MAP.get(_orig, _orig)
+                if _a["packageName"] in (_orig, _clone):
                     _actual_map[_orig] = _a["packageName"]
     except Exception:
         _actual_map = {}
@@ -105,18 +105,12 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
             patches_str += " · requires MicroG"
         # icons are named after the *actual* (cloned) package, not the original (now at icons/ at root, copied to out/icons for Pages)
         icon = ""
-        for cand in [pkg.replace("com.google.android.youtube", "app.morphe.android.youtube").replace("com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music").replace("com.chess", "com.chess.prathxm"), pkg]:
+        # try clone mapping first, then original
+        for cand in [CLONE_PACKAGE_MAP.get(pkg, pkg), pkg]:
             cand_path = f"icons/{cand}.png"
             if (ICONS / f"{cand}.png").exists() or (OUT / cand_path).exists():
                 icon = cand_path
                 break
-        # also try without the replace (for non-cloned)
-        if not icon:
-            for cand in [pkg, pkg.replace("com.chess", "com.chess.prathxm")]:
-                cand_path = f"icons/{cand}.png"
-                if (ICONS / f"{cand}.png").exists() or (OUT / cand_path).exists():
-                    icon = cand_path
-                    break
         if not icon:
             apk_file = OUT / apk if apk else None
             if apk_file and apk_file.exists():
@@ -133,7 +127,7 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         # Build patch dropdown for webpage
         patch_list_html = ""
         try:
-            for _opt in (ROOT / "options").glob(f"{pkg.split('.')[-1]}.*.json"):
+            for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
                 if not _opt.exists():
                     continue
                 _d = json.loads(_opt.read_text())
@@ -157,10 +151,12 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         cards_html += Template(CARD).substitute(icon=icon, name=name+tv_badge, pkg=pkg, ver=ver, arch=arch, patches=patches_str+patch_list_html, dl=dl)
 
     if not cards_html:
+        from morpheupdater.daemon import _enabled_archs
         for app in cfg.get("apps", []):
             pkg = app["package"]
             disp2 = PACKAGE_DISPLAY.get(pkg, pkg)
-            cards_html += Template(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(cfg.get("archs", [])), patches="—", dl="#")
+            archs = _enabled_archs(cfg.get("archs"))
+            cards_html += Template(CARD).substitute(icon=f"icons/{pkg}.png", name=disp2, pkg=pkg, ver="—", arch=",".join(archs), patches="—", dl="#")
 
     html = Template(TEMPLATE).substitute(title=title, description=desc, repo_url=repo_url, fingerprint=fp or "—", updated=time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), cards=cards_html, patches=patches)
     dest = OUT / "index.html"

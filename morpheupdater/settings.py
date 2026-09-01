@@ -13,9 +13,9 @@ STATE_PATH = ROOT / "state.json"
 TMP = ROOT / "tmp"
 OUT = ROOT / "out"
 ICONS = ROOT / "icons"
-BRANDING = ROOT / "branding"
 OPTIONS = ROOT / "options"
 MORPHE_DATA = ROOT / "bin" / "morphe-data"
+MORPHE_PATCHES = MORPHE_DATA / "patches"
 
 DEFAULT_CONFIG: dict = {
     "interval_minutes": 30,
@@ -81,19 +81,22 @@ def keystore() -> str:
     return raw if raw else "release.keystore"
 
 
+def _deep_merge(a: dict, b: dict) -> dict:
+    out = {**a}
+    for k, v in b.items():
+        if isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = _deep_merge(out[k], v)
+        else:
+            out[k] = v
+    return out
+
+
 def load_config() -> dict:
     if not CONFIG_PATH.exists():
         CONFIG_PATH.write_text(json.dumps(DEFAULT_CONFIG, indent=2) + "\n")
         log.info("created default config.json")
     cfg = json.loads(CONFIG_PATH.read_text())
-    # Deep merge for nested dicts (tools, fdroid, clean, archs, bundles)
-    merged = {**DEFAULT_CONFIG}
-    for k, v in cfg.items():
-        if isinstance(v, dict) and isinstance(merged.get(k), dict):
-            merged[k] = {**merged[k], **v}
-        else:
-            merged[k] = v
-    return merged
+    return _deep_merge(DEFAULT_CONFIG, cfg)
 
 
 def _empty_state() -> dict:
