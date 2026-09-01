@@ -1525,6 +1525,10 @@
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
   },
+  "fdroid": {
+    "cert_b64": "K02Rg2UjRdJxsLvGL3dYEJZZp3aqprdl0EymxihfAsc=",
+    "cert_sha256": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
+  },
   "tools": {
     "apkeditor": {
       "tag": "V1.4.9"

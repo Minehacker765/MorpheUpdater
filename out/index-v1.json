@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1788114772613,
+    "timestamp": 1788276685701,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -17,10 +17,21 @@
         "en-US": {
           "name": "AdGuard",
           "summary": "AdGuard patched with Morphe (10 patches)",
-          "description": "AdGuard \u2014 AdGuard patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.adguard.android \u2014 AdGuard is adguard with enhancements."
+          "description": "AdGuard \u2014 AdGuard patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.adguard.android \u2014 AdGuard is adguard with enhancements."
         }
       },
       "icon": "com.adguard.android.png"
+    },
+    {
+      "packageName": "com.dv.adm",
+      "name": "ADM",
+      "localized": {
+        "en-US": {
+          "name": "ADM",
+          "summary": "ADM patched with Morphe (10 patches)",
+          "description": "ADM \u2014 ADM patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.dv.adm \u2014 ADM is adm with enhancements."
+        }
+      }
     },
     {
       "packageName": "com.alltrails.alltrails",
@@ -30,6 +41,17 @@
           "name": "AllTrails",
           "summary": "AllTrails patched with Morphe (10 patches)",
           "description": "AllTrails \u2014 AllTrails patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.alltrails.alltrails \u2014 AllTrails is alltrails with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.alphaprogression.alphaprogression",
+      "name": "Alpha Progression",
+      "localized": {
+        "en-US": {
+          "name": "Alpha Progression",
+          "summary": "Alpha Progression patched with Morphe (10 patches)",
+          "description": "Alpha Progression \u2014 Alpha Progression patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.alphaprogression.alphaprogression \u2014 Alpha Progression is alpha progression with enhancements."
         }
       }
     },
@@ -46,6 +68,53 @@
       "icon": "com.amazon.mp3.png"
     },
     {
+      "packageName": "com.atmfee",
+      "name": "ATM Fee",
+      "localized": {
+        "en-US": {
+          "name": "ATM Fee",
+          "summary": "ATM Fee patched with Morphe (10 patches)",
+          "description": "ATM Fee \u2014 ATM Fee patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.atmfee \u2014 ATM Fee is atm fee with enhancements."
+        }
+      },
+      "icon": "com.atmfee.png"
+    },
+    {
+      "packageName": "com.audible.application",
+      "name": "Audible",
+      "localized": {
+        "en-US": {
+          "name": "Audible",
+          "summary": "Audible patched with Morphe (5 patches)",
+          "description": "Audible \u2014 Audible patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.audible.application \u2014 Audible is audible with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.llamalab.automate",
+      "name": "Automate",
+      "localized": {
+        "en-US": {
+          "name": "Automate",
+          "summary": "Automate patched with Morphe (10 patches)",
+          "description": "Automate \u2014 Automate patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.llamalab.automate \u2014 Automate is automate with enhancements."
+        }
+      },
+      "icon": "com.llamalab.automate.png"
+    },
+    {
+      "packageName": "com.ttxapps.autosync",
+      "name": "AutoSync",
+      "localized": {
+        "en-US": {
+          "name": "AutoSync",
+          "summary": "AutoSync patched with Morphe (10 patches)",
+          "description": "AutoSync \u2014 AutoSync patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.ttxapps.autosync \u2014 AutoSync is autosync with enhancements."
+        }
+      },
+      "icon": "com.ttxapps.autosync.png"
+    },
+    {
       "packageName": "com.avocards",
       "name": "Avocards",
       "localized": {
@@ -58,16 +127,74 @@
       "icon": "com.avocards.png"
     },
     {
+      "packageName": "com.backdrops.wallpapers",
+      "name": "Backdrops",
+      "localized": {
+        "en-US": {
+          "name": "Backdrops",
+          "summary": "Backdrops patched with Morphe (10 patches)",
+          "description": "Backdrops \u2014 Backdrops patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.backdrops.wallpapers \u2014 Backdrops is backdrops with enhancements."
+        }
+      },
+      "icon": "com.backdrops.wallpapers.png"
+    },
+    {
       "packageName": "com.bandcamp.android",
       "name": "Bandcamp",
       "localized": {
         "en-US": {
           "name": "Bandcamp",
           "summary": "Bandcamp patched with Morphe (10 patches)",
-          "description": "Bandcamp \u2014 Bandcamp patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.bandcamp.android \u2014 Bandcamp is bandcamp with enhancements."
+          "description": "Bandcamp \u2014 Bandcamp patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.bandcamp.android \u2014 Bandcamp is bandcamp with enhancements."
         }
       },
       "icon": "com.bandcamp.android.png"
+    },
+    {
+      "packageName": "com.bandlab.bandlab",
+      "name": "BandLab",
+      "localized": {
+        "en-US": {
+          "name": "BandLab",
+          "summary": "BandLab patched with Morphe (10 patches)",
+          "description": "BandLab \u2014 BandLab patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.bandlab.bandlab \u2014 BandLab is bandlab with enhancements."
+        }
+      },
+      "icon": "com.bandlab.bandlab.png"
+    },
+    {
+      "packageName": "bitpit.launcher",
+      "name": "Bitpit Launcher",
+      "localized": {
+        "en-US": {
+          "name": "Bitpit Launcher",
+          "summary": "Bitpit Launcher patched with Morphe (0 patches)",
+          "description": "Bitpit Launcher \u2014 Bitpit Launcher patched with Morphe (0 patches)\n\nOriginal: bitpit.launcher \u2014 Bitpit Launcher is bitpit launcher with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "io.funswitch.blocker",
+      "name": "Blocker",
+      "localized": {
+        "en-US": {
+          "name": "Blocker",
+          "summary": "Blocker patched with Morphe (10 patches)",
+          "description": "Blocker \u2014 Blocker patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: io.funswitch.blocker \u2014 Blocker is blocker with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.blockerhero",
+      "name": "BlockerHero",
+      "localized": {
+        "en-US": {
+          "name": "BlockerHero",
+          "summary": "BlockerHero patched with Morphe (10 patches)",
+          "description": "BlockerHero \u2014 BlockerHero patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.blockerhero \u2014 BlockerHero is blockerhero with enhancements."
+        }
+      },
+      "icon": "com.blockerhero.png"
     },
     {
       "packageName": "com.bunpoapp",
@@ -94,6 +221,18 @@
       "icon": "com.busuu.android.enc.png"
     },
     {
+      "packageName": "all.in.one.calculator",
+      "name": "Calculator",
+      "localized": {
+        "en-US": {
+          "name": "Calculator",
+          "summary": "Calculator patched with Morphe (5 patches)",
+          "description": "Calculator \u2014 Calculator patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: all.in.one.calculator \u2014 Calculator is calculator with enhancements."
+        }
+      },
+      "icon": "all.in.one.calculator.png"
+    },
+    {
       "packageName": "com.intsig.camscanner",
       "name": "CamScanner",
       "localized": {
@@ -106,16 +245,40 @@
       "icon": "com.intsig.camscanner.png"
     },
     {
-      "packageName": "com.chess",
-      "name": "Chess",
+      "packageName": "altergames.carlauncher",
+      "name": "Car Launcher",
       "localized": {
         "en-US": {
-          "name": "Chess",
-          "summary": "Chess patched with Morphe (6 patches)",
-          "description": "Chess \u2014 Chess patched with Morphe (6 patches)\n\nPatches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots\n\nOriginal: com.chess \u2014 Chess is chess with enhancements."
+          "name": "Car Launcher",
+          "summary": "Car Launcher patched with Morphe (10 patches)",
+          "description": "Car Launcher \u2014 Car Launcher patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: altergames.carlauncher \u2014 Car Launcher is car launcher with enhancements."
         }
       },
-      "icon": "com.chess.png"
+      "icon": "altergames.carlauncher.png"
+    },
+    {
+      "packageName": "com.cfdrink",
+      "name": "CF Drink",
+      "localized": {
+        "en-US": {
+          "name": "CF Drink",
+          "summary": "CF Drink patched with Morphe (10 patches)",
+          "description": "CF Drink \u2014 CF Drink patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.cfdrink \u2014 CF Drink is cf drink with enhancements."
+        }
+      },
+      "icon": "com.cfdrink.png"
+    },
+    {
+      "packageName": "studio.muggle.chatboost",
+      "name": "ChatBoost",
+      "localized": {
+        "en-US": {
+          "name": "ChatBoost",
+          "summary": "ChatBoost patched with Morphe (10 patches)",
+          "description": "ChatBoost \u2014 ChatBoost patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: studio.muggle.chatboost \u2014 ChatBoost is chatboost with enhancements."
+        }
+      },
+      "icon": "studio.muggle.chatboost.png"
     },
     {
       "packageName": "com.chess.prathxm",
@@ -130,16 +293,64 @@
       "icon": "com.chess.prathxm.png"
     },
     {
+      "packageName": "com.proto.circuitsimulator",
+      "name": "Circuit Simulator",
+      "localized": {
+        "en-US": {
+          "name": "Circuit Simulator",
+          "summary": "Circuit Simulator patched with Morphe (10 patches)",
+          "description": "Circuit Simulator \u2014 Circuit Simulator patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.proto.circuitsimulator \u2014 Circuit Simulator is circuit simulator with enhancements."
+        }
+      },
+      "icon": "com.proto.circuitsimulator.png"
+    },
+    {
+      "packageName": "com.collectrinc.collectr",
+      "name": "Collectr",
+      "localized": {
+        "en-US": {
+          "name": "Collectr",
+          "summary": "Collectr patched with Morphe (10 patches)",
+          "description": "Collectr \u2014 Collectr patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.collectrinc.collectr \u2014 Collectr is collectr with enhancements."
+        }
+      },
+      "icon": "com.collectrinc.collectr.png"
+    },
+    {
       "packageName": "com.cricbuzz.android",
       "name": "Cricbuzz",
       "localized": {
         "en-US": {
           "name": "Cricbuzz",
           "summary": "Cricbuzz patched with Morphe (10 patches)",
-          "description": "Cricbuzz \u2014 Cricbuzz patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.cricbuzz.android \u2014 Cricbuzz is cricbuzz with enhancements."
+          "description": "Cricbuzz \u2014 Cricbuzz patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.cricbuzz.android \u2014 Cricbuzz is cricbuzz with enhancements."
         }
       },
       "icon": "com.cricbuzz.android.png"
+    },
+    {
+      "packageName": "com.cronometer.android.gold",
+      "name": "Cronometer",
+      "localized": {
+        "en-US": {
+          "name": "Cronometer",
+          "summary": "Cronometer patched with Morphe (10 patches)",
+          "description": "Cronometer \u2014 Cronometer patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.cronometer.android.gold \u2014 Cronometer is cronometer with enhancements."
+        }
+      },
+      "icon": "com.cronometer.android.gold.png"
+    },
+    {
+      "packageName": "net.uniquegem.directchat",
+      "name": "DirectChat",
+      "localized": {
+        "en-US": {
+          "name": "DirectChat",
+          "summary": "DirectChat patched with Morphe (10 patches)",
+          "description": "DirectChat \u2014 DirectChat patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: net.uniquegem.directchat \u2014 DirectChat is directchat with enhancements."
+        }
+      },
+      "icon": "net.uniquegem.directchat.png"
     },
     {
       "packageName": "com.duolingo",
@@ -154,6 +365,40 @@
       "icon": "com.duolingo.png"
     },
     {
+      "packageName": "kr.eggbun.eggconvo",
+      "name": "EggBun",
+      "localized": {
+        "en-US": {
+          "name": "EggBun",
+          "summary": "EggBun patched with Morphe (10 patches)",
+          "description": "EggBun \u2014 EggBun patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: kr.eggbun.eggconvo \u2014 EggBun is eggbun with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.appfactory.essence",
+      "name": "Essence",
+      "localized": {
+        "en-US": {
+          "name": "Essence",
+          "summary": "Essence patched with Morphe (10 patches)",
+          "description": "Essence \u2014 Essence patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.appfactory.essence \u2014 Essence is essence with enhancements."
+        }
+      },
+      "icon": "com.appfactory.essence.png"
+    },
+    {
+      "packageName": "com.etsy.android",
+      "name": "Etsy",
+      "localized": {
+        "en-US": {
+          "name": "Etsy",
+          "summary": "Etsy patched with Morphe (10 patches)",
+          "description": "Etsy \u2014 Etsy patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.etsy.android \u2014 Etsy is etsy with enhancements."
+        }
+      }
+    },
+    {
       "packageName": "com.facebook.katana",
       "name": "Facebook",
       "localized": {
@@ -166,16 +411,76 @@
       "icon": "com.facebook.katana.png"
     },
     {
-      "packageName": "com.mobilefootie.wc2010",
-      "name": "FotMob",
+      "packageName": "com.cxinventor.file.explorer",
+      "name": "File Explorer",
       "localized": {
         "en-US": {
-          "name": "FotMob",
-          "summary": "FotMob patched with Morphe (10 patches)",
-          "description": "FotMob \u2014 FotMob patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.mobilefootie.wc2010 \u2014 FotMob is fotmob with enhancements."
+          "name": "File Explorer",
+          "summary": "File Explorer patched with Morphe (5 patches)",
+          "description": "File Explorer \u2014 File Explorer patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.cxinventor.file.explorer \u2014 File Explorer is file explorer with enhancements."
         }
       },
-      "icon": "com.mobilefootie.wc2010.png"
+      "icon": "com.cxinventor.file.explorer.png"
+    },
+    {
+      "packageName": "com.finch.finch",
+      "name": "Finch",
+      "localized": {
+        "en-US": {
+          "name": "Finch",
+          "summary": "Finch patched with Morphe (10 patches)",
+          "description": "Finch \u2014 Finch patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.finch.finch \u2014 Finch is finch with enhancements."
+        }
+      },
+      "icon": "com.finch.finch.png"
+    },
+    {
+      "packageName": "ginlemon.flowerfree",
+      "name": "FlowerFree",
+      "localized": {
+        "en-US": {
+          "name": "FlowerFree",
+          "summary": "FlowerFree patched with Morphe (10 patches)",
+          "description": "FlowerFree \u2014 FlowerFree patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: ginlemon.flowerfree \u2014 FlowerFree is flowerfree with enhancements."
+        }
+      },
+      "icon": "ginlemon.flowerfree.png"
+    },
+    {
+      "packageName": "dk.tacit.android.foldersync.lite",
+      "name": "FolderSync",
+      "localized": {
+        "en-US": {
+          "name": "FolderSync",
+          "summary": "FolderSync patched with Morphe (10 patches)",
+          "description": "FolderSync \u2014 FolderSync patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: dk.tacit.android.foldersync.lite \u2014 FolderSync is foldersync with enhancements."
+        }
+      },
+      "icon": "dk.tacit.android.foldersync.lite.png"
+    },
+    {
+      "packageName": "com.myvitale.forus",
+      "name": "Forus",
+      "localized": {
+        "en-US": {
+          "name": "Forus",
+          "summary": "Forus patched with Morphe (5 patches)",
+          "description": "Forus \u2014 Forus patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.myvitale.forus \u2014 Forus is forus with enhancements."
+        }
+      },
+      "icon": "com.myvitale.forus.png"
+    },
+    {
+      "packageName": "com.gamma.scan",
+      "name": "Gamma Scan",
+      "localized": {
+        "en-US": {
+          "name": "Gamma Scan",
+          "summary": "Gamma Scan patched with Morphe (5 patches)",
+          "description": "Gamma Scan \u2014 Gamma Scan patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.gamma.scan \u2014 Gamma Scan is gamma scan with enhancements."
+        }
+      },
+      "icon": "com.gamma.scan.png"
     },
     {
       "packageName": "com.github.android",
@@ -184,7 +489,7 @@
         "en-US": {
           "name": "GitHub",
           "summary": "GitHub patched with Morphe (10 patches)",
-          "description": "GitHub \u2014 GitHub patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.github.android \u2014 GitHub is github with enhancements."
+          "description": "GitHub \u2014 GitHub patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.github.android \u2014 GitHub is github with enhancements."
         }
       }
     },
@@ -199,6 +504,17 @@
         }
       },
       "icon": "de.gmx.mobile.android.mail.png"
+    },
+    {
+      "packageName": "com.goodreads",
+      "name": "Goodreads",
+      "localized": {
+        "en-US": {
+          "name": "Goodreads",
+          "summary": "Goodreads patched with Morphe (10 patches)",
+          "description": "Goodreads \u2014 Goodreads patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.goodreads \u2014 Goodreads is goodreads with enhancements."
+        }
+      }
     },
     {
       "packageName": "com.google.android.apps.magazines",
@@ -224,6 +540,18 @@
       "icon": "app.morphe.android.apps.photos.png"
     },
     {
+      "packageName": "com.qbis.guessthecountry",
+      "name": "Guess Country",
+      "localized": {
+        "en-US": {
+          "name": "Guess Country",
+          "summary": "Guess Country patched with Morphe (10 patches)",
+          "description": "Guess Country \u2014 Guess Country patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.qbis.guessthecountry \u2014 Guess Country is guess country with enhancements."
+        }
+      },
+      "icon": "com.qbis.guessthecountry.png"
+    },
+    {
       "packageName": "com.hellochinese",
       "name": "HelloChinese",
       "localized": {
@@ -236,16 +564,40 @@
       "icon": "com.hellochinese.png"
     },
     {
-      "packageName": "com.rp.hypertrophy",
-      "name": "Hypertrophy",
+      "packageName": "com.hevy",
+      "name": "Hevy",
       "localized": {
         "en-US": {
-          "name": "Hypertrophy",
-          "summary": "Hypertrophy patched with Morphe (10 patches)",
-          "description": "Hypertrophy \u2014 Hypertrophy patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.rp.hypertrophy \u2014 Hypertrophy is hypertrophy with enhancements."
+          "name": "Hevy",
+          "summary": "Hevy patched with Morphe (10 patches)",
+          "description": "Hevy \u2014 Hevy patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.hevy \u2014 Hevy is hevy with enhancements."
         }
       },
-      "icon": "com.rp.hypertrophy.png"
+      "icon": "com.hevy.png"
+    },
+    {
+      "packageName": "com.thehungrywasp.iamsober",
+      "name": "I Am Sober",
+      "localized": {
+        "en-US": {
+          "name": "I Am Sober",
+          "summary": "I Am Sober patched with Morphe (10 patches)",
+          "description": "I Am Sober \u2014 I Am Sober patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.thehungrywasp.iamsober \u2014 I Am Sober is i am sober with enhancements."
+        }
+      },
+      "icon": "com.thehungrywasp.iamsober.png"
+    },
+    {
+      "packageName": "jp.ne.ibis.ibispaintx.app",
+      "name": "ibisPaint X",
+      "localized": {
+        "en-US": {
+          "name": "ibisPaint X",
+          "summary": "ibisPaint X patched with Morphe (10 patches)",
+          "description": "ibisPaint X \u2014 ibisPaint X patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: jp.ne.ibis.ibispaintx.app \u2014 ibisPaint X is ibispaint x with enhancements."
+        }
+      },
+      "icon": "jp.ne.ibis.ibispaintx.app.png"
     },
     {
       "packageName": "ginlemon.iconpackstudio",
@@ -272,6 +624,42 @@
       "icon": "cn.ommiao.iconpacker.png"
     },
     {
+      "packageName": "com.camerasideas.instashot",
+      "name": "InShot",
+      "localized": {
+        "en-US": {
+          "name": "InShot",
+          "summary": "InShot patched with Morphe (10 patches)",
+          "description": "InShot \u2014 InShot patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.camerasideas.instashot \u2014 InShot is inshot with enhancements."
+        }
+      },
+      "icon": "com.camerasideas.instashot.png"
+    },
+    {
+      "packageName": "net.binarymode.android.irplus",
+      "name": "IRPlus",
+      "localized": {
+        "en-US": {
+          "name": "IRPlus",
+          "summary": "IRPlus patched with Morphe (10 patches)",
+          "description": "IRPlus \u2014 IRPlus patched with Morphe (10 patches)\n\nPatches (51): Add 'Give Kudos' button to 'Group Activity', Add activity export, Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads +41 more\n\nOriginal: net.binarymode.android.irplus \u2014 IRPlus is irplus with enhancements."
+        }
+      },
+      "icon": "net.binarymode.android.irplus.png"
+    },
+    {
+      "packageName": "com.kick.mobile",
+      "name": "Kick",
+      "localized": {
+        "en-US": {
+          "name": "Kick",
+          "summary": "Kick patched with Morphe (0 patches)",
+          "description": "Kick \u2014 Kick patched with Morphe (0 patches)\n\nOriginal: com.kick.mobile \u2014 Kick is kick with enhancements."
+        }
+      },
+      "icon": "com.kick.mobile.png"
+    },
+    {
       "packageName": "com.letterboxd.letterboxd",
       "name": "Letterboxd",
       "localized": {
@@ -296,6 +684,18 @@
       "icon": "com.adobe.lrmobile.png"
     },
     {
+      "packageName": "com.simyasolutions.ling.universal",
+      "name": "Ling Universal",
+      "localized": {
+        "en-US": {
+          "name": "Ling Universal",
+          "summary": "Ling Universal patched with Morphe (10 patches)",
+          "description": "Ling Universal \u2014 Ling Universal patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.simyasolutions.ling.universal \u2014 Ling Universal is ling universal with enhancements."
+        }
+      },
+      "icon": "com.simyasolutions.ling.universal.png"
+    },
+    {
       "packageName": "com.lingodeer",
       "name": "LingoDeer",
       "localized": {
@@ -308,6 +708,18 @@
       "icon": "com.lingodeer.png"
     },
     {
+      "packageName": "org.languageapp.lingory",
+      "name": "Lingory",
+      "localized": {
+        "en-US": {
+          "name": "Lingory",
+          "summary": "Lingory patched with Morphe (10 patches)",
+          "description": "Lingory \u2014 Lingory patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: org.languageapp.lingory \u2014 Lingory is lingory with enhancements."
+        }
+      },
+      "icon": "org.languageapp.lingory.png"
+    },
+    {
       "packageName": "com.lyfta",
       "name": "Lyfta",
       "localized": {
@@ -318,6 +730,30 @@
         }
       },
       "icon": "com.lyfta.png"
+    },
+    {
+      "packageName": "com.zombodroid.MemeGenerator",
+      "name": "Meme Generator",
+      "localized": {
+        "en-US": {
+          "name": "Meme Generator",
+          "summary": "Meme Generator patched with Morphe (10 patches)",
+          "description": "Meme Generator \u2014 Meme Generator patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.zombodroid.MemeGenerator \u2014 Meme Generator is meme generator with enhancements."
+        }
+      },
+      "icon": "com.zombodroid.MemeGenerator.png"
+    },
+    {
+      "packageName": "com.merriamwebster",
+      "name": "Merriam Webster",
+      "localized": {
+        "en-US": {
+          "name": "Merriam Webster",
+          "summary": "Merriam Webster patched with Morphe (10 patches)",
+          "description": "Merriam Webster \u2014 Merriam Webster patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.merriamwebster \u2014 Merriam Webster is merriam webster with enhancements."
+        }
+      },
+      "icon": "com.merriamwebster.png"
     },
     {
       "packageName": "com.facebook.orca",
@@ -357,38 +793,86 @@
     },
     {
       "packageName": "com.mirinae.mirinae",
-      "name": "mirinae",
+      "name": "Mirinae",
       "localized": {
         "en-US": {
-          "name": "mirinae",
-          "summary": "mirinae patched with Morphe (10 patches)",
-          "description": "mirinae \u2014 mirinae patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.mirinae.mirinae \u2014 mirinae is mirinae with enhancements."
+          "name": "Mirinae",
+          "summary": "Mirinae patched with Morphe (10 patches)",
+          "description": "Mirinae \u2014 Mirinae patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.mirinae.mirinae \u2014 Mirinae is mirinae with enhancements."
         }
       },
       "icon": "com.mirinae.mirinae.png"
     },
     {
-      "packageName": "com.myfitnesspal.android",
-      "name": "MyFitnessPal",
+      "packageName": "com.mobilefootie.wc2010",
+      "name": "MobileFootie",
       "localized": {
         "en-US": {
-          "name": "MyFitnessPal",
-          "summary": "MyFitnessPal patched with Morphe (10 patches)",
-          "description": "MyFitnessPal \u2014 MyFitnessPal patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.myfitnesspal.android \u2014 MyFitnessPal is myfitnesspal with enhancements."
+          "name": "MobileFootie",
+          "summary": "MobileFootie patched with Morphe (10 patches)",
+          "description": "MobileFootie \u2014 MobileFootie patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.mobilefootie.wc2010 \u2014 MobileFootie is mobilefootie with enhancements."
         }
       },
-      "icon": "com.myfitnesspal.android.png"
+      "icon": "com.mobilefootie.wc2010.png"
     },
     {
-      "packageName": "bitpit.launcher",
-      "name": "Niagara Launcher",
+      "packageName": "currency.converter.moneta",
+      "name": "Moneta",
       "localized": {
         "en-US": {
-          "name": "Niagara Launcher",
-          "summary": "Niagara Launcher patched with Morphe (0 patches)",
-          "description": "Niagara Launcher \u2014 Niagara Launcher patched with Morphe (0 patches)\n\nOriginal: bitpit.launcher \u2014 Niagara Launcher is niagara launcher with enhancements."
+          "name": "Moneta",
+          "summary": "Moneta patched with Morphe (10 patches)",
+          "description": "Moneta \u2014 Moneta patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: currency.converter.moneta \u2014 Moneta is moneta with enhancements."
+        }
+      },
+      "icon": "currency.converter.moneta.png"
+    },
+    {
+      "packageName": "com.realbyteapps.moneymanagerfree",
+      "name": "Money Manager",
+      "localized": {
+        "en-US": {
+          "name": "Money Manager",
+          "summary": "Money Manager patched with Morphe (10 patches)",
+          "description": "Money Manager \u2014 Money Manager patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.realbyteapps.moneymanagerfree \u2014 Money Manager is money manager with enhancements."
+        }
+      },
+      "icon": "com.realbyteapps.moneymanagerfree.png"
+    },
+    {
+      "packageName": "org.totschnig.myexpenses",
+      "name": "My Expenses",
+      "localized": {
+        "en-US": {
+          "name": "My Expenses",
+          "summary": "My Expenses patched with Morphe (10 patches)",
+          "description": "My Expenses \u2014 My Expenses patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: org.totschnig.myexpenses \u2014 My Expenses is my expenses with enhancements."
+        }
+      },
+      "icon": "org.totschnig.myexpenses.png"
+    },
+    {
+      "packageName": "me.mycake",
+      "name": "MyCake",
+      "localized": {
+        "en-US": {
+          "name": "MyCake",
+          "summary": "MyCake patched with Morphe (10 patches)",
+          "description": "MyCake \u2014 MyCake patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: me.mycake \u2014 MyCake is mycake with enhancements."
         }
       }
+    },
+    {
+      "packageName": "com.streetwriters.notesnook",
+      "name": "Notesnook",
+      "localized": {
+        "en-US": {
+          "name": "Notesnook",
+          "summary": "Notesnook patched with Morphe (5 patches)",
+          "description": "Notesnook \u2014 Notesnook patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.streetwriters.notesnook \u2014 Notesnook is notesnook with enhancements."
+        }
+      },
+      "icon": "com.streetwriters.notesnook.png"
     },
     {
       "packageName": "com.nothing.smartcenter",
@@ -403,15 +887,39 @@
       "icon": "com.nothing.smartcenter.png"
     },
     {
+      "packageName": "nl.sanomamedia.android.nu",
+      "name": "NU.nl",
+      "localized": {
+        "en-US": {
+          "name": "NU.nl",
+          "summary": "NU.nl patched with Morphe (10 patches)",
+          "description": "NU.nl \u2014 NU.nl patched with Morphe (10 patches)\n\nPatches (51): Add 'Give Kudos' button to 'Group Activity', Add activity export, Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads +41 more\n\nOriginal: nl.sanomamedia.android.nu \u2014 NU.nl is nu.nl with enhancements."
+        }
+      },
+      "icon": "nl.sanomamedia.android.nu.png"
+    },
+    {
       "packageName": "com.pandora.android",
       "name": "Pandora",
       "localized": {
         "en-US": {
           "name": "Pandora",
           "summary": "Pandora patched with Morphe (10 patches)",
-          "description": "Pandora \u2014 Pandora patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.pandora.android \u2014 Pandora is pandora with enhancements."
+          "description": "Pandora \u2014 Pandora patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.pandora.android \u2014 Pandora is pandora with enhancements."
         }
       }
+    },
+    {
+      "packageName": "photo.editor.photoeditor.photoeditorpro",
+      "name": "Photo Editor Pro",
+      "localized": {
+        "en-US": {
+          "name": "Photo Editor Pro",
+          "summary": "Photo Editor Pro patched with Morphe (5 patches)",
+          "description": "Photo Editor Pro \u2014 Photo Editor Pro patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: photo.editor.photoeditor.photoeditorpro \u2014 Photo Editor Pro is photo editor pro with enhancements."
+        }
+      },
+      "icon": "photo.editor.photoeditor.photoeditorpro.png"
     },
     {
       "packageName": "com.microblink.photomath",
@@ -432,7 +940,7 @@
         "en-US": {
           "name": "Pixiv",
           "summary": "Pixiv patched with Morphe (10 patches)",
-          "description": "Pixiv \u2014 Pixiv patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: jp.pxv.android \u2014 Pixiv is pixiv with enhancements."
+          "description": "Pixiv \u2014 Pixiv patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: jp.pxv.android \u2014 Pixiv is pixiv with enhancements."
         }
       },
       "icon": "jp.pxv.android.png"
@@ -449,16 +957,27 @@
       }
     },
     {
-      "packageName": "com.amazon.avod.thirdpartyclient",
-      "name": "Prime Video",
+      "packageName": "com.maxmpz.audioplayer",
+      "name": "Poweramp",
       "localized": {
         "en-US": {
-          "name": "Prime Video",
-          "summary": "Prime Video patched with Morphe (10 patches)",
-          "description": "Prime Video \u2014 Prime Video patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.amazon.avod.thirdpartyclient \u2014 Prime Video is prime video with enhancements."
+          "name": "Poweramp",
+          "summary": "Poweramp patched with Morphe (10 patches)",
+          "description": "Poweramp \u2014 Poweramp patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.maxmpz.audioplayer \u2014 Poweramp is poweramp with enhancements."
         }
       },
-      "icon": "com.amazon.avod.thirdpartyclient.png"
+      "icon": "com.maxmpz.audioplayer.png"
+    },
+    {
+      "packageName": "ch.protonmail.android",
+      "name": "Proton Mail",
+      "localized": {
+        "en-US": {
+          "name": "Proton Mail",
+          "summary": "Proton Mail patched with Morphe (10 patches)",
+          "description": "Proton Mail \u2014 Proton Mail patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: ch.protonmail.android \u2014 Proton Mail is proton mail with enhancements."
+        }
+      }
     },
     {
       "packageName": "ch.protonvpn.android",
@@ -467,7 +986,7 @@
         "en-US": {
           "name": "ProtonVPN",
           "summary": "ProtonVPN patched with Morphe (10 patches)",
-          "description": "ProtonVPN \u2014 ProtonVPN patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: ch.protonvpn.android \u2014 ProtonVPN is protonvpn with enhancements."
+          "description": "ProtonVPN \u2014 ProtonVPN patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: ch.protonvpn.android \u2014 ProtonVPN is protonvpn with enhancements."
         }
       },
       "icon": "ch.protonvpn.android.png"
@@ -483,6 +1002,28 @@
         }
       },
       "icon": "ru.iiec.pydroid3.png"
+    },
+    {
+      "packageName": "com.quizlet.quizletandroid",
+      "name": "Quizlet",
+      "localized": {
+        "en-US": {
+          "name": "Quizlet",
+          "summary": "Quizlet patched with Morphe (10 patches)",
+          "description": "Quizlet \u2014 Quizlet patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.quizlet.quizletandroid \u2014 Quizlet is quizlet with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "org.readera",
+      "name": "ReadEra",
+      "localized": {
+        "en-US": {
+          "name": "ReadEra",
+          "summary": "ReadEra patched with Morphe (5 patches)",
+          "description": "ReadEra \u2014 ReadEra patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: org.readera \u2014 ReadEra is readera with enhancements."
+        }
+      }
     },
     {
       "packageName": "com.google.android.apps.recorder",
@@ -508,6 +1049,42 @@
       "icon": "com.reddit.frontpage.morphe.png"
     },
     {
+      "packageName": "com.hv.replaio",
+      "name": "Replaio",
+      "localized": {
+        "en-US": {
+          "name": "Replaio",
+          "summary": "Replaio patched with Morphe (10 patches)",
+          "description": "Replaio \u2014 Replaio patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.hv.replaio \u2014 Replaio is replaio with enhancements."
+        }
+      },
+      "icon": "com.hv.replaio.png"
+    },
+    {
+      "packageName": "com.rp.hypertrophy",
+      "name": "RP Hypertrophy",
+      "localized": {
+        "en-US": {
+          "name": "RP Hypertrophy",
+          "summary": "RP Hypertrophy patched with Morphe (10 patches)",
+          "description": "RP Hypertrophy \u2014 RP Hypertrophy patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.rp.hypertrophy \u2014 RP Hypertrophy is rp hypertrophy with enhancements."
+        }
+      },
+      "icon": "com.rp.hypertrophy.png"
+    },
+    {
+      "packageName": "com.rumble.battles",
+      "name": "Rumble",
+      "localized": {
+        "en-US": {
+          "name": "Rumble",
+          "summary": "Rumble patched with Morphe (10 patches)",
+          "description": "Rumble \u2014 Rumble patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.rumble.battles \u2014 Rumble is rumble with enhancements."
+        }
+      },
+      "icon": "com.rumble.battles.png"
+    },
+    {
       "packageName": "com.sbs.diet",
       "name": "SBS Diet",
       "localized": {
@@ -519,16 +1096,72 @@
       }
     },
     {
-      "packageName": "videoeditor.videorecorder.screenrecorder",
-      "name": "Screen Recorder",
+      "packageName": "com.sbs.train",
+      "name": "SBS Train",
       "localized": {
         "en-US": {
-          "name": "Screen Recorder",
-          "summary": "Screen Recorder patched with Morphe (10 patches)",
-          "description": "Screen Recorder \u2014 Screen Recorder patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: videoeditor.videorecorder.screenrecorder \u2014 Screen Recorder is screen recorder with enhancements."
+          "name": "SBS Train",
+          "summary": "SBS Train patched with Morphe (10 patches)",
+          "description": "SBS Train \u2014 SBS Train patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.sbs.train \u2014 SBS Train is sbs train with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.michaldrabik.showly2",
+      "name": "Showly",
+      "localized": {
+        "en-US": {
+          "name": "Showly",
+          "summary": "Showly patched with Morphe (5 patches)",
+          "description": "Showly \u2014 Showly patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: com.michaldrabik.showly2 \u2014 Showly is showly with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.vitotechnology.sky.tonight.map.star.walk",
+      "name": "Sky Tonight",
+      "localized": {
+        "en-US": {
+          "name": "Sky Tonight",
+          "summary": "Sky Tonight patched with Morphe (10 patches)",
+          "description": "Sky Tonight \u2014 Sky Tonight patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.vitotechnology.sky.tonight.map.star.walk \u2014 Sky Tonight is sky tonight with enhancements."
         }
       },
-      "icon": "videoeditor.videorecorder.screenrecorder.png"
+      "icon": "com.vitotechnology.sky.tonight.map.star.walk.png"
+    },
+    {
+      "packageName": "com.urbandroid.sleep",
+      "name": "Sleep as Android",
+      "localized": {
+        "en-US": {
+          "name": "Sleep as Android",
+          "summary": "Sleep as Android patched with Morphe (10 patches)",
+          "description": "Sleep as Android \u2014 Sleep as Android patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.urbandroid.sleep \u2014 Sleep as Android is sleep as android with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.snorelab.app",
+      "name": "SnoreLab",
+      "localized": {
+        "en-US": {
+          "name": "SnoreLab",
+          "summary": "SnoreLab patched with Morphe (10 patches)",
+          "description": "SnoreLab \u2014 SnoreLab patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: com.snorelab.app \u2014 SnoreLab is snorelab with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.sofascore.results",
+      "name": "Sofascore",
+      "localized": {
+        "en-US": {
+          "name": "Sofascore",
+          "summary": "Sofascore patched with Morphe (10 patches)",
+          "description": "Sofascore \u2014 Sofascore patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.sofascore.results \u2014 Sofascore is sofascore with enhancements."
+        }
+      },
+      "icon": "com.sofascore.results.png"
     },
     {
       "packageName": "pl.solidexplorer2",
@@ -549,10 +1182,44 @@
         "en-US": {
           "name": "SoundCloud",
           "summary": "SoundCloud patched with Morphe (10 patches)",
-          "description": "SoundCloud \u2014 SoundCloud patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: com.soundcloud.android \u2014 SoundCloud is soundcloud with enhancements."
+          "description": "SoundCloud \u2014 SoundCloud patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.soundcloud.android \u2014 SoundCloud is soundcloud with enhancements."
         }
       },
       "icon": "com.soundcloud.android.png"
+    },
+    {
+      "packageName": "org.zwanoo.android.speedtest",
+      "name": "Speedtest",
+      "localized": {
+        "en-US": {
+          "name": "Speedtest",
+          "summary": "Speedtest patched with Morphe (10 patches)",
+          "description": "Speedtest \u2014 Speedtest patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: org.zwanoo.android.speedtest \u2014 Speedtest is speedtest with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "io.stashteam.games.tracker.stashapp",
+      "name": "Stash",
+      "localized": {
+        "en-US": {
+          "name": "Stash",
+          "summary": "Stash patched with Morphe (10 patches)",
+          "description": "Stash \u2014 Stash patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: io.stashteam.games.tracker.stashapp \u2014 Stash is stash with enhancements."
+        }
+      },
+      "icon": "io.stashteam.games.tracker.stashapp.png"
+    },
+    {
+      "packageName": "com.noctuasoftware.stellarium_free",
+      "name": "Stellarium",
+      "localized": {
+        "en-US": {
+          "name": "Stellarium",
+          "summary": "Stellarium patched with Morphe (10 patches)",
+          "description": "Stellarium \u2014 Stellarium patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.noctuasoftware.stellarium_free \u2014 Stellarium is stellarium with enhancements."
+        }
+      }
     },
     {
       "packageName": "com.strava",
@@ -567,16 +1234,98 @@
       "icon": "com.strava.png"
     },
     {
-      "packageName": "app.ttmikstories.android",
-      "name": "TTMIK Stories - Korean",
+      "packageName": "com.superchinese",
+      "name": "SuperChinese",
       "localized": {
         "en-US": {
-          "name": "TTMIK Stories - Korean",
-          "summary": "TTMIK Stories - Korean patched with Morphe (10 patches)",
-          "description": "TTMIK Stories - Korean \u2014 TTMIK Stories - Korean patched with Morphe (10 patches)\n\nPatches (54): Add 'Give Kudos' button to 'Group Activity', Add media download, Add route export, Always allow deep-linking, Auto claim channel points, Block Snowplow tracking, Block audio ads, Block embedded ads, Block video ads, Bypass login +44 more\n\nOriginal: app.ttmikstories.android \u2014 TTMIK Stories - Korean is ttmik stories - korean with enhancements."
+          "name": "SuperChinese",
+          "summary": "SuperChinese patched with Morphe (10 patches)",
+          "description": "SuperChinese \u2014 SuperChinese patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.superchinese \u2014 SuperChinese is superchinese with enhancements."
+        }
+      },
+      "icon": "com.superchinese.png"
+    },
+    {
+      "packageName": "app.symfonik.music.player",
+      "name": "Symfonik",
+      "localized": {
+        "en-US": {
+          "name": "Symfonik",
+          "summary": "Symfonik patched with Morphe (5 patches)",
+          "description": "Symfonik \u2014 Symfonik patched with Morphe (5 patches)\n\nPatches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium\n\nOriginal: app.symfonik.music.player \u2014 Symfonik is symfonik with enhancements."
+        }
+      },
+      "icon": "app.symfonik.music.player.png"
+    },
+    {
+      "packageName": "com.atomengineapps.teachmeanatomy",
+      "name": "TeachMeAnatomy",
+      "localized": {
+        "en-US": {
+          "name": "TeachMeAnatomy",
+          "summary": "TeachMeAnatomy patched with Morphe (10 patches)",
+          "description": "TeachMeAnatomy \u2014 TeachMeAnatomy patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.atomengineapps.teachmeanatomy \u2014 TeachMeAnatomy is teachmeanatomy with enhancements."
+        }
+      },
+      "icon": "com.atomengineapps.teachmeanatomy.png"
+    },
+    {
+      "packageName": "com.zhiliaoapp.musically",
+      "name": "TikTok",
+      "localized": {
+        "en-US": {
+          "name": "TikTok",
+          "summary": "TikTok patched with Morphe (10 patches)",
+          "description": "TikTok \u2014 TikTok patched with Morphe (10 patches)\n\nPatches (28): Always show publish date, Copy comments without username, Custom offline videos limit, Disable login requirement, Disable long-press quick share, Disable screen capture detection, Disable telemetry, Downloads, Enable Live search, Enable non-personalized search +18 more\n\nOriginal: com.zhiliaoapp.musically \u2014 TikTok is tiktok with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "com.todoist",
+      "name": "Todoist",
+      "localized": {
+        "en-US": {
+          "name": "Todoist",
+          "summary": "Todoist patched with Morphe (10 patches)",
+          "description": "Todoist \u2014 Todoist patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.todoist \u2014 Todoist is todoist with enhancements."
+        }
+      },
+      "icon": "com.todoist.png"
+    },
+    {
+      "packageName": "com.tracked.mobile",
+      "name": "Tracked",
+      "localized": {
+        "en-US": {
+          "name": "Tracked",
+          "summary": "Tracked patched with Morphe (0 patches)",
+          "description": "Tracked \u2014 Tracked patched with Morphe (0 patches)\n\nOriginal: com.tracked.mobile \u2014 Tracked is tracked with enhancements."
+        }
+      },
+      "icon": "com.tracked.mobile.png"
+    },
+    {
+      "packageName": "app.ttmikstories.android",
+      "name": "TTMik Stories",
+      "localized": {
+        "en-US": {
+          "name": "TTMik Stories",
+          "summary": "TTMik Stories patched with Morphe (10 patches)",
+          "description": "TTMik Stories \u2014 TTMik Stories patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: app.ttmikstories.android \u2014 TTMik Stories is ttmik stories with enhancements."
         }
       },
       "icon": "app.ttmikstories.android.png"
+    },
+    {
+      "packageName": "com.tumblr",
+      "name": "Tumblr",
+      "localized": {
+        "en-US": {
+          "name": "Tumblr",
+          "summary": "Tumblr patched with Morphe (10 patches)",
+          "description": "Tumblr \u2014 Tumblr patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.tumblr \u2014 Tumblr is tumblr with enhancements."
+        }
+      }
     },
     {
       "packageName": "tv.twitch.android.app",
@@ -584,23 +1333,119 @@
       "localized": {
         "en-US": {
           "name": "Twitch",
-          "summary": "Twitch patched with Morphe (10 patches)",
-          "description": "Twitch \u2014 Twitch patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: tv.twitch.android.app \u2014 Twitch is twitch with enhancements."
+          "summary": "Twitch [Android TV]  patched with Morphe (10 patches)",
+          "description": "Twitch [Android TV]  \u2014 Twitch [Android TV]  patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: tv.twitch.android.app \u2014 Twitch is twitch with enhancements."
         }
       },
       "icon": "tv.twitch.android.app.png"
     },
     {
-      "packageName": "com.qbis.guessthecountry",
-      "name": "World Map Quiz",
+      "packageName": "com.ufovpn.connect.velnet",
+      "name": "UFO VPN",
       "localized": {
         "en-US": {
-          "name": "World Map Quiz",
-          "summary": "World Map Quiz patched with Morphe (10 patches)",
-          "description": "World Map Quiz \u2014 World Map Quiz patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.qbis.guessthecountry \u2014 World Map Quiz is world map quiz with enhancements."
+          "name": "UFO VPN",
+          "summary": "UFO VPN patched with Morphe (10 patches)",
+          "description": "UFO VPN \u2014 UFO VPN patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.ufovpn.connect.velnet \u2014 UFO VPN is ufo vpn with enhancements."
         }
       },
-      "icon": "com.qbis.guessthecountry.png"
+      "icon": "com.ufovpn.connect.velnet.png"
+    },
+    {
+      "packageName": "cz.ackee.ventusky",
+      "name": "Ventusky",
+      "localized": {
+        "en-US": {
+          "name": "Ventusky",
+          "summary": "Ventusky patched with Morphe (10 patches)",
+          "description": "Ventusky \u2014 Ventusky patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: cz.ackee.ventusky \u2014 Ventusky is ventusky with enhancements."
+        }
+      },
+      "icon": "cz.ackee.ventusky.png"
+    },
+    {
+      "packageName": "app.remux.video.converter",
+      "name": "Video Converter",
+      "localized": {
+        "en-US": {
+          "name": "Video Converter",
+          "summary": "Video Converter patched with Morphe (0 patches)",
+          "description": "Video Converter \u2014 Video Converter patched with Morphe (0 patches)\n\nOriginal: app.remux.video.converter \u2014 Video Converter is video converter with enhancements."
+        }
+      },
+      "icon": "app.remux.video.converter.png"
+    },
+    {
+      "packageName": "com.vpn.free.hotspot.secure.vpnify",
+      "name": "VPNify",
+      "localized": {
+        "en-US": {
+          "name": "VPNify",
+          "summary": "VPNify patched with Morphe (10 patches)",
+          "description": "VPNify \u2014 VPNify patched with Morphe (10 patches)\n\nPatches (14): AdFree Account, Bypass Blocks Limit, Disable In-App Telemetry, Disable Logging(analytics), Disable Telemetry, Hide Location Permission Popup, Install Extended (Deep Sky) Catalog, Purchase All Items, Remove Ads, Skip Login +4 more\n\nOriginal: com.vpn.free.hotspot.secure.vpnify \u2014 VPNify is vpnify with enhancements."
+        }
+      },
+      "icon": "com.vpn.free.hotspot.secure.vpnify.png"
+    },
+    {
+      "packageName": "nom.vrd",
+      "name": "VRD",
+      "localized": {
+        "en-US": {
+          "name": "VRD",
+          "summary": "VRD patched with Morphe (10 patches)",
+          "description": "VRD \u2014 VRD patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: nom.vrd \u2014 VRD is vrd with enhancements."
+        }
+      },
+      "icon": "nom.vrd.png"
+    },
+    {
+      "packageName": "com.wallpaperscraft.wallpaper",
+      "name": "WallpapersCraft",
+      "localized": {
+        "en-US": {
+          "name": "WallpapersCraft",
+          "summary": "WallpapersCraft patched with Morphe (10 patches)",
+          "description": "WallpapersCraft \u2014 WallpapersCraft patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.wallpaperscraft.wallpaper \u2014 WallpapersCraft is wallpaperscraft with enhancements."
+        }
+      },
+      "icon": "com.wallpaperscraft.wallpaper.png"
+    },
+    {
+      "packageName": "com.wanderlog.android",
+      "name": "Wanderlog",
+      "localized": {
+        "en-US": {
+          "name": "Wanderlog",
+          "summary": "Wanderlog patched with Morphe (10 patches)",
+          "description": "Wanderlog \u2014 Wanderlog patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.wanderlog.android \u2014 Wanderlog is wanderlog with enhancements."
+        }
+      },
+      "icon": "com.wanderlog.android.png"
+    },
+    {
+      "packageName": "com.naver.linewebtoon",
+      "name": "Webtoon",
+      "localized": {
+        "en-US": {
+          "name": "Webtoon",
+          "summary": "Webtoon patched with Morphe (10 patches)",
+          "description": "Webtoon \u2014 Webtoon patched with Morphe (10 patches)\n\nPatches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads +15 more\n\nOriginal: com.naver.linewebtoon \u2014 Webtoon is webtoon with enhancements."
+        }
+      },
+      "icon": "com.naver.linewebtoon.png"
+    },
+    {
+      "packageName": "com.windyty.android",
+      "name": "Windy",
+      "localized": {
+        "en-US": {
+          "name": "Windy",
+          "summary": "Windy patched with Morphe (10 patches)",
+          "description": "Windy \u2014 Windy patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: com.windyty.android \u2014 Windy is windy with enhancements."
+        }
+      },
+      "icon": "com.windyty.android.png"
     },
     {
       "packageName": "cn.wps.moffice_eng",
@@ -614,16 +1459,27 @@
       }
     },
     {
-      "packageName": "app.morphe.android.youtube",
-      "name": "YouTube",
+      "packageName": "com.xodo.pdf.reader",
+      "name": "Xodo PDF",
       "localized": {
         "en-US": {
-          "name": "YouTube",
-          "summary": "YouTube patched with Morphe (10 patches)",
-          "description": "YouTube \u2014 YouTube patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.youtube \u2014 YouTube is youtube with enhancements."
+          "name": "Xodo PDF",
+          "summary": "Xodo PDF patched with Morphe (0 patches)",
+          "description": "Xodo PDF \u2014 Xodo PDF patched with Morphe (0 patches)\n\nOriginal: com.xodo.pdf.reader \u2014 Xodo PDF is xodo pdf with enhancements."
+        }
+      }
+    },
+    {
+      "packageName": "videoeditor.videorecorder.screenrecorder",
+      "name": "XRecorder",
+      "localized": {
+        "en-US": {
+          "name": "XRecorder",
+          "summary": "XRecorder patched with Morphe (10 patches)",
+          "description": "XRecorder \u2014 XRecorder patched with Morphe (10 patches)\n\nPatches (30): Block Permissions Request, Disable ads, Disable anti-tamper, Disable telemetry, Enable FotMob+, Enable Niagara Pro, Enable Peak membership, Enable Platinum, Enable Plus, Enable Premium +20 more\n\nOriginal: videoeditor.videorecorder.screenrecorder \u2014 XRecorder is xrecorder with enhancements."
         }
       },
-      "icon": "app.morphe.android.youtube.png"
+      "icon": "videoeditor.videorecorder.screenrecorder.png"
     },
     {
       "packageName": "app.morphe.android.apps.youtube.music",
@@ -639,9 +1495,26 @@
     }
   ],
   "packages": {
+    "com.zombodroid.MemeGenerator": [
+      {
+        "added": 1788276675459,
+        "apkName": "MemeGenerator-4.6826-hoodles-arm64.apk",
+        "hash": "65f7d27be7c51e8777e4324bff5938132d9b2ebd99751e63670e350dd794f309",
+        "hashType": "sha256",
+        "packageName": "com.zombodroid.MemeGenerator",
+        "versionCode": 46826,
+        "versionName": "4.6826",
+        "size": 92737759,
+        "appName": "Meme Generator",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.adguard.android": [
       {
-        "added": 1788114704844,
+        "added": 1788276675533,
         "apkName": "adguard-4.13.2-arm64.apk",
         "hash": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
         "hashType": "sha256",
@@ -656,31 +1529,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.dv.adm": [
+      {
+        "added": 1788276675627,
+        "apkName": "adm-14.0.39-hoomans-arm64.apk",
+        "hash": "3c5dac6fed81e60825d941b830e6962a6772c9fcd8b1e29b59d0d94549ac8ebb",
+        "hashType": "sha256",
+        "packageName": "com.dv.adm",
+        "versionCode": 140039,
+        "versionName": "14.0.39",
+        "size": 28026190,
+        "appName": "ADM",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 34,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.alltrails.alltrails": [
       {
-        "added": 1788114707018,
+        "added": 1788276675669,
         "apkName": "alltrails-26.8.40-hoodles-arm64.apk",
-        "hash": "1cba8af812960e4c9ff0fd74d109c060d6a5ae516dd3338577f7e03c464e368b",
+        "hash": "80c09751d9530259b553c4c0bb7d3163f36bcb50e07b6f5fbc234229a94c9751",
         "hashType": "sha256",
         "packageName": "com.alltrails.alltrails",
         "versionCode": 60505,
         "versionName": "26.8.40",
-        "size": 94718274,
-        "appName": "AllTrails",
-        "minSdkVersion": 28,
-        "targetSdkVersion": 36,
-        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
-        "sig": "2b4d9183"
-      },
-      {
-        "added": 1788114705887,
-        "apkName": "alltrails-26.8.30-hoodles-arm64.apk",
-        "hash": "81c393ed09c90b83dc134789c4f6f8a8c63d650d57df14a5d3306d52861e0fe3",
-        "hashType": "sha256",
-        "packageName": "com.alltrails.alltrails",
-        "versionCode": 60501,
-        "versionName": "26.8.30",
-        "size": 92474166,
+        "size": 94722362,
         "appName": "AllTrails",
         "minSdkVersion": 28,
         "targetSdkVersion": 36,
@@ -688,16 +1563,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.alphaprogression.alphaprogression": [
+      {
+        "added": 1788276675788,
+        "apkName": "alphaprogression-7.1.1-hoomans-arm64.apk",
+        "hash": "c97b9738a4404436b3b6049a3e564ea23ea5f34080cb47140f49e521555d100e",
+        "hashType": "sha256",
+        "packageName": "com.alphaprogression.alphaprogression",
+        "versionCode": 597,
+        "versionName": "7.1.1",
+        "size": 151927773,
+        "appName": "Alpha Progression",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "tv.twitch.android.app": [
       {
-        "added": 1788114709134,
-        "apkName": "android.app-30.7.2-hoomans-arm64.apk",
-        "hash": "7e9ae86861b59436ee28a8121e96ac0ccca0a7ff668807bf34de913e7cbe3422",
+        "added": 1788276675927,
+        "apkName": "android.app-29.9.1-hoomans-arm64.apk",
+        "hash": "d96e3bb1f3ae9aad9f260550368b0bb182c786bbcc6a09b563366067e8115c50",
         "hashType": "sha256",
         "packageName": "tv.twitch.android.app",
-        "versionCode": 3007026,
-        "versionName": "30.7.2",
-        "size": 97512162,
+        "versionCode": 2909016,
+        "versionName": "29.9.1",
+        "size": 97674128,
         "appName": "Twitch",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -705,16 +1597,101 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.audible.application": [
+      {
+        "added": 1788276676038,
+        "apkName": "application-26.34.05-hxreborn-arm64.apk",
+        "hash": "520efacabd861b79c4fd0ca1d9fbca986cd0f15fc705c2bb0f81473a1a1603a8",
+        "hashType": "sha256",
+        "packageName": "com.audible.application",
+        "versionCode": 2090263405,
+        "versionName": "26.34.05",
+        "size": 110667511,
+        "appName": "Audible",
+        "minSdkVersion": 28,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.atmfee": [
+      {
+        "added": 1788276676163,
+        "apkName": "atmfee-3.7.9-xtra-arm64.apk",
+        "hash": "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9",
+        "hashType": "sha256",
+        "packageName": "com.atmfee",
+        "versionCode": 58,
+        "versionName": "3.7.9",
+        "size": 14285335,
+        "appName": "ATM Fee",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.maxmpz.audioplayer": [
+      {
+        "added": 1788276676184,
+        "apkName": "audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
+        "hash": "2127019cb24bdf513af6f59c7b7958c63fe83e7f8daa82b66527e45a082517c6",
+        "hashType": "sha256",
+        "packageName": "com.maxmpz.audioplayer",
+        "versionCode": 1025004,
+        "versionName": "build-1025-bundle-play",
+        "size": 20803230,
+        "appName": "Poweramp",
+        "minSdkVersion": 21,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.llamalab.automate": [
+      {
+        "added": 1788276676211,
+        "apkName": "automate-1.51.1-xtra-arm64.apk",
+        "hash": "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad",
+        "hashType": "sha256",
+        "packageName": "com.llamalab.automate",
+        "versionCode": 262,
+        "versionName": "1.51.1",
+        "size": 9237791,
+        "appName": "Automate",
+        "minSdkVersion": 14,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.ttxapps.autosync": [
+      {
+        "added": 1788276676224,
+        "apkName": "autosync-7.5.10-xtra-arm64.apk",
+        "hash": "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3",
+        "hashType": "sha256",
+        "packageName": "com.ttxapps.autosync",
+        "versionCode": 2603201,
+        "versionName": "7.5.10",
+        "size": 34858392,
+        "appName": "AutoSync",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.avocards": [
       {
-        "added": 1788114710077,
+        "added": 1788276676265,
         "apkName": "avocards-3.0.18-hoodles-arm64.apk",
-        "hash": "4b7d789c60fd214128340750cf25b9885499f46ad6c4c7033875397abc0e744f",
+        "hash": "6f42539b5f7b4a666b7bcb8f939d2e08d545ab0ba85ec596b84cc5fd33c5a48e",
         "hashType": "sha256",
         "packageName": "com.avocards",
         "versionCode": 1698219898,
         "versionName": "3.0.18",
-        "size": 18476132,
+        "size": 18476124,
         "appName": "Avocards",
         "minSdkVersion": 26,
         "targetSdkVersion": 34,
@@ -724,14 +1701,14 @@
     ],
     "com.bandcamp.android": [
       {
-        "added": 1788114710992,
+        "added": 1788276676294,
         "apkName": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
-        "hash": "59639b9b6a33c5eedd3c42d1548432803fa52b30555001afae1c9490c0534089",
+        "hash": "451e2f88ac2cc94f896a1bfafd58ab28e4cbfae008b37362a48298890988f7ca",
         "hashType": "sha256",
         "packageName": "com.bandcamp.android",
         "versionCode": 220489,
         "versionName": "3.3.6",
-        "size": 13930871,
+        "size": 13955439,
         "appName": "Bandcamp",
         "minSdkVersion": 24,
         "targetSdkVersion": 36,
@@ -739,33 +1716,99 @@
         "sig": "2b4d9183"
       }
     ],
-    "bitpit.launcher": [
+    "com.bandlab.bandlab": [
       {
-        "added": 1788114712015,
-        "apkName": "bitpit.launcher-1.16.23-hoodles-arm64.apk",
-        "hash": "a8cdfe6508559477b536558c72c8f57bae14da801f5614537d2a5393327349c7",
+        "added": 1788276676311,
+        "apkName": "bandlab-11.25.3-hoomans-arm64.apk",
+        "hash": "b01d839ff36df5bc204595082f0855ebc42ac1e2ade11fc70141cdcbde21f398",
         "hashType": "sha256",
-        "packageName": "bitpit.launcher",
-        "versionCode": 1627,
-        "versionName": "1.16.23",
-        "size": 14536848,
-        "appName": "Niagara Launcher",
+        "packageName": "com.bandlab.bandlab",
+        "versionCode": 11250300,
+        "versionName": "11.25.3",
+        "size": 58408930,
+        "appName": "BandLab",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 37,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.rumble.battles": [
+      {
+        "added": 1788276676374,
+        "apkName": "battles-3.14.5-hoomans-arm64.apk",
+        "hash": "b767b71becbf4696ea55c38ce89669ccc6c92f7e24dd30d584d31923120120d6",
+        "hashType": "sha256",
+        "packageName": "com.rumble.battles",
+        "versionCode": 771,
+        "versionName": "3.14.5",
+        "size": 20462526,
+        "appName": "Rumble",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
+    "bitpit.launcher": [
+      {
+        "added": 1788276676399,
+        "apkName": "bitpit.launcher-1.16.24-hoodles-arm64.apk",
+        "hash": "ef0d09e2fa16591e49be50c9ebb98ab3fac7c8dbe59fc37fef4b4fcbb634cd58",
+        "hashType": "sha256",
+        "packageName": "bitpit.launcher",
+        "versionCode": 1628,
+        "versionName": "1.16.24",
+        "size": 14557306,
+        "appName": "Bitpit Launcher",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "io.funswitch.blocker": [
+      {
+        "added": 1788276676421,
+        "apkName": "blocker-5.0.67-xtra-arm64.apk",
+        "hash": "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9",
+        "hashType": "sha256",
+        "packageName": "io.funswitch.blocker",
+        "versionCode": 5067,
+        "versionName": "5.0.67",
+        "size": 85629557,
+        "appName": "Blocker",
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.blockerhero": [
+      {
+        "added": 1788276676500,
+        "apkName": "blockerhero-1.5.0-hoomans-arm64.apk",
+        "hash": "0b20ba89f6c9bd423ca8bed0ff9162b888a6978cbcd8c5c3277208a982e815dd",
+        "hashType": "sha256",
+        "packageName": "com.blockerhero",
+        "versionCode": 190,
+        "versionName": "1.5.0",
+        "size": 5702079,
+        "appName": "BlockerHero",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.bunpoapp": [
       {
-        "added": 1788114712793,
+        "added": 1788276676512,
         "apkName": "bunpoapp-3.21.0-hoodles-arm64.apk",
-        "hash": "b8583c08809e874ee9a3fbfe1f1396d17b339345b8680a937603099bc1a91632",
+        "hash": "fed0b9b1030e0bc2a3b2b1ab4906cca804c80a5da591dbe18dd864752f35cd08",
         "hashType": "sha256",
         "packageName": "com.bunpoapp",
         "versionCode": 200,
         "versionName": "3.21.0",
-        "size": 70699198,
+        "size": 70707382,
         "appName": "Bunpo",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -773,16 +1816,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "all.in.one.calculator": [
+      {
+        "added": 1788276676601,
+        "apkName": "calculator-3.4.0-hxreborn-arm64.apk",
+        "hash": "f76b2b4c670d17b6815db1d739aca8005c65959f4f2326f87cb64d8f38c912ea",
+        "hashType": "sha256",
+        "packageName": "all.in.one.calculator",
+        "versionCode": 340,
+        "versionName": "3.4.0",
+        "size": 41239125,
+        "appName": "Calculator",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.intsig.camscanner": [
       {
-        "added": 1788114714228,
+        "added": 1788276676672,
         "apkName": "camscanner-7.20.0.2606230000-hoodles-arm64.apk",
-        "hash": "63b3102e14f5da03803d8d4c73c671d6eb3a8d19272b83d911bc25bf12c3f0d5",
+        "hash": "e0398a5054efaa6abc9ef42b12654a5ed7463a78989e3a043b05221d0086013b",
         "hashType": "sha256",
         "packageName": "com.intsig.camscanner",
         "versionCode": 72002,
         "versionName": "7.20.0.2606230000",
-        "size": 153212651,
+        "size": 153224931,
         "appName": "CamScanner",
         "minSdkVersion": 21,
         "targetSdkVersion": 35,
@@ -790,16 +1850,67 @@
         "sig": "2b4d9183"
       }
     ],
-    "com.chess": [
+    "altergames.carlauncher": [
       {
-        "added": 1788114715515,
-        "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
-        "hash": "9b6772446767fe0b4c3ca1ac313e2061183c18361a2bf3e2167d5e283416d117",
+        "added": 1788276676821,
+        "apkName": "carlauncher-5.0.5-hoomans-arm64.apk",
+        "hash": "faea8e10cadafbd298886d41d599cd40b25177ced1f1a3eecd285a1039d53b50",
         "hashType": "sha256",
-        "packageName": "com.chess",
+        "packageName": "altergames.carlauncher",
+        "versionCode": 50052,
+        "versionName": "5.0.5",
+        "size": 13122697,
+        "appName": "Car Launcher",
+        "minSdkVersion": 21,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.cfdrink": [
+      {
+        "added": 1788276676837,
+        "apkName": "cfdrink-1.19.11-hoomans-arm64.apk",
+        "hash": "c7288b3377e4b8c9f3bd0004d17da8ac1b16213bfa262ed992edd876dc5a9a61",
+        "hashType": "sha256",
+        "packageName": "com.cfdrink",
+        "versionCode": 1019011,
+        "versionName": "1.19.11",
+        "size": 55703198,
+        "appName": "CF Drink",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "studio.muggle.chatboost": [
+      {
+        "added": 1788276676894,
+        "apkName": "chatboost-3.23.0-hoomans-arm64.apk",
+        "hash": "48e86f89fe776fb38a6d809e9503ee4edb09c131deefd8bf5b1ae59106a71dd2",
+        "hashType": "sha256",
+        "packageName": "studio.muggle.chatboost",
+        "versionCode": 300500229,
+        "versionName": "3.23.0",
+        "size": 20112868,
+        "appName": "ChatBoost",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.chess.prathxm": [
+      {
+        "added": 1788276676931,
+        "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
+        "hash": "47c8c6819780c4155a3a8203fc1c606551deb10710ddde4a96f78828069fa900",
+        "hashType": "sha256",
+        "packageName": "com.chess.prathxm",
         "versionCode": 268250,
         "versionName": "4.10.0-googleplay",
-        "size": 258532784,
+        "size": 258233666,
         "appName": "Chess",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -807,18 +1918,35 @@
         "sig": "2b4d9183"
       }
     ],
-    "com.chess.prathxm": [
+    "com.proto.circuitsimulator": [
       {
-        "added": 1788114717113,
-        "apkName": "chess-4.10.0-prathxm-arm64.apk",
-        "hash": "313f9c5db835f9e4b374e4dd436642fb9f34f39897801ef8a9f1a40d25acd118",
+        "added": 1788276677232,
+        "apkName": "circuitsimulator-1.49.0-xtra-arm64.apk",
+        "hash": "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8",
         "hashType": "sha256",
-        "packageName": "com.chess.prathxm",
-        "versionCode": 268250,
-        "versionName": "4.10.0-googleplay",
-        "size": 258532784,
-        "appName": "Chess",
-        "minSdkVersion": 26,
+        "packageName": "com.proto.circuitsimulator",
+        "versionCode": 94,
+        "versionName": "1.49.0",
+        "size": 25481173,
+        "appName": "Circuit Simulator",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.collectrinc.collectr": [
+      {
+        "added": 1788276677259,
+        "apkName": "collectr-2.5.0-hoomans-arm64.apk",
+        "hash": "f973148d1b95b0693bb960be2d1ba17460d1fe5a6a8c034fc8e7d03cea5abfac",
+        "hashType": "sha256",
+        "packageName": "com.collectrinc.collectr",
+        "versionCode": 713,
+        "versionName": "2.5.0",
+        "size": 73977430,
+        "appName": "Collectr",
+        "minSdkVersion": 24,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -826,14 +1954,14 @@
     ],
     "com.cricbuzz.android": [
       {
-        "added": 1788114718533,
+        "added": 1788276677347,
         "apkName": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
-        "hash": "20e5c1a203715aa0b16d07a1f5862f8178d33119620ff5219cf5f491887d9729",
+        "hash": "da14b36f6d522fa6409136ce67a3eef7a1c268d2488496b2a32b2d6748767f9f",
         "hashType": "sha256",
         "packageName": "com.cricbuzz.android",
         "versionCode": 1521062401,
         "versionName": "6.24.01",
-        "size": 25584298,
+        "size": 25612962,
         "appName": "Cricbuzz",
         "minSdkVersion": 21,
         "targetSdkVersion": 34,
@@ -843,14 +1971,14 @@
     ],
     "com.sbs.diet": [
       {
-        "added": 1788114719276,
+        "added": 1788276677379,
         "apkName": "diet-5.7.9-hoodles-arm64.apk",
-        "hash": "c712b4631dcb4bd98cbb9977fdc063d3bb6a6a6a3e102c38b4fd9f34597cbaa2",
+        "hash": "e90551ef176393c55284bd40986e0fa4e64da3b024ebcf55d2af7a3b7a1e3abf",
         "hashType": "sha256",
         "packageName": "com.sbs.diet",
         "versionCode": 850,
         "versionName": "5.7.9",
-        "size": 126089043,
+        "size": 126203723,
         "appName": "SBS Diet",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -858,33 +1986,67 @@
         "sig": "2b4d9183"
       }
     ],
+    "net.uniquegem.directchat": [
+      {
+        "added": 1788276677526,
+        "apkName": "directchat-1.9.8-hoomans-arm64.apk",
+        "hash": "1f645c908d8184922cbedffe83434dd6329352839e2f7b0ece63320d54fac3c3",
+        "hashType": "sha256",
+        "packageName": "net.uniquegem.directchat",
+        "versionCode": 125,
+        "versionName": "1.9.8",
+        "size": 17025225,
+        "appName": "DirectChat",
+        "minSdkVersion": 28,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.duolingo": [
       {
-        "added": 1788114721755,
+        "added": 1788276677570,
         "apkName": "duolingo-6.92.5-hoodles-arm64.apk",
-        "hash": "329e27790d8349dfee03ad89e643d393d5a631cbc2510c37b43ab93a60a51eee",
+        "hash": "3587aae48650abf63e50ebfed763df7427e3872f5110b913e3279964412a736e",
         "hashType": "sha256",
         "packageName": "com.duolingo",
         "versionCode": 2433,
         "versionName": "6.92.5",
-        "size": 137983723,
+        "size": 139028195,
         "appName": "Duolingo",
-        "minSdkVersion": 32,
+        "minSdkVersion": 29,
         "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "kr.eggbun.eggconvo": [
+      {
+        "added": 1788276677722,
+        "apkName": "eggconvo-4.12.19-hoodles-arm64.apk",
+        "hash": "81be10a320299f4e278a7015250c654f4126d7694523a2df3c45e3b714f0e98c",
+        "hashType": "sha256",
+        "packageName": "kr.eggbun.eggconvo",
+        "versionCode": 4121999,
+        "versionName": "4.12.19",
+        "size": 55117347,
+        "appName": "EggBun",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
     "com.busuu.android.enc": [
       {
-        "added": 1788114723240,
+        "added": 1788276677785,
         "apkName": "enc-32.46.0(1732689)-hoodles-arm64.apk",
-        "hash": "584f614e734c094849105a199d5e1de2e1732613cbee2e6faa6cc497f7deddf9",
+        "hash": "5615f4178d2285e8b258c29ad315436c8aec873f9f11d8bcc643e3a017fbad99",
         "hashType": "sha256",
         "packageName": "com.busuu.android.enc",
         "versionCode": 1732689,
         "versionName": "32.46.0(1732689)",
-        "size": 56057685,
+        "size": 56065869,
         "appName": "Busuu",
         "minSdkVersion": 28,
         "targetSdkVersion": 35,
@@ -892,16 +2054,118 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.appfactory.essence": [
+      {
+        "added": 1788276677852,
+        "apkName": "essence-4.2.8-hoomans-arm64.apk",
+        "hash": "25198ff2ead84bd0f01c5ba365f83cda667c5ec382245ceea079ef0ab12afc40",
+        "hashType": "sha256",
+        "packageName": "com.appfactory.essence",
+        "versionCode": 120,
+        "versionName": "4.2.8",
+        "size": 64333099,
+        "appName": "Essence",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.etsy.android": [
+      {
+        "added": 1788276677919,
+        "apkName": "etsy.android-7.93.0-hxreborn-arm64.apk",
+        "hash": "d6d8355a078658ce0c21295a61b45377e1a31389a96e8f576a28ce15ab3731bd",
+        "hashType": "sha256",
+        "packageName": "com.etsy.android",
+        "versionCode": 79300167,
+        "versionName": "7.93.0",
+        "size": 46834409,
+        "appName": "Etsy",
+        "minSdkVersion": 29,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.cxinventor.file.explorer": [
+      {
+        "added": 1788276677975,
+        "apkName": "explorer-2.7.8-hxreborn-arm64.apk",
+        "hash": "2368098a8455ae724392544daba86f911e6e2d5c1818ad875518a8b97c0f2318",
+        "hashType": "sha256",
+        "packageName": "com.cxinventor.file.explorer",
+        "versionCode": 278,
+        "versionName": "2.7.8",
+        "size": 11372500,
+        "appName": "File Explorer",
+        "minSdkVersion": 21,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.finch.finch": [
+      {
+        "added": 1788276678014,
+        "apkName": "finch-3.73.179-hoomans-arm64.apk",
+        "hash": "7d133acca2330de13c28c1f4311e40d6072f39888e9607d5904977d61a86fcb9",
+        "hashType": "sha256",
+        "packageName": "com.finch.finch",
+        "versionCode": 1487,
+        "versionName": "3.73.179",
+        "size": 201207455,
+        "appName": "Finch",
+        "minSdkVersion": 25,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "ginlemon.flowerfree": [
+      {
+        "added": 1788276678211,
+        "apkName": "flowerfree-6.6 build 017-hoodles-arm64.apk",
+        "hash": "f3c9e773d9ae7dc6deabd8c407283b0310e2395af6556338810afbea2010112e",
+        "hashType": "sha256",
+        "packageName": "ginlemon.flowerfree",
+        "versionCode": 660170,
+        "versionName": "6.6 build 017",
+        "size": 16255720,
+        "appName": "FlowerFree",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.myvitale.forus": [
+      {
+        "added": 1788276678231,
+        "apkName": "forus-3.0.16-hxreborn-arm64.apk",
+        "hash": "b15527ed2f039bb6ed9490e4b1371741c997b9be535507026778a56e8b9e00ab",
+        "hashType": "sha256",
+        "packageName": "com.myvitale.forus",
+        "versionCode": 97,
+        "versionName": "3.0.16",
+        "size": 94298863,
+        "appName": "Forus",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1788114724538,
+        "added": 1788276678333,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
-        "hash": "736795c76f97f94455731e49ae854602163837351d718750fba2fb75b8733e17",
+        "hash": "dbf21d05baf8b3928661a9078103ddf909f7169be4fe56a2be3256fd4e067180",
         "hashType": "sha256",
         "packageName": "com.reddit.frontpage.morphe",
         "versionCode": 2147483647,
         "versionName": "2026.14.0",
-        "size": 57405791,
+        "size": 57639255,
         "appName": "Reddit",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
@@ -911,16 +2175,16 @@
     ],
     "com.getmimo": [
       {
-        "added": 1788114725819,
+        "added": 1788276678406,
         "apkName": "getmimo-9.24-hoodles-arm64.apk",
-        "hash": "3b2218c676bffa3005e807b4ba23cc9c788c9386694753751aff4aee1622a79a",
+        "hash": "88fe2efccee7aca3a92157d38f6e2087a8689312c3a2541c6765f84d0e228ef5",
         "hashType": "sha256",
         "packageName": "com.getmimo",
         "versionCode": 1786101892,
         "versionName": "9.24",
-        "size": 81977531,
+        "size": 81998003,
         "appName": "Mimo",
-        "minSdkVersion": 29,
+        "minSdkVersion": 28,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -928,14 +2192,14 @@
     ],
     "com.github.android": [
       {
-        "added": 1788114726686,
+        "added": 1788276678481,
         "apkName": "github.android-1.271.1-hoodles-arm64.apk",
-        "hash": "83cf1864c19ff1f0b6f410ffe152ce5d8369cd8164cf7a3954d80617b36af498",
+        "hash": "5c1195e052aa681d3e39341a7559b5eb1af80c0daed84a475e3ff6eeac676c20",
         "hashType": "sha256",
         "packageName": "com.github.android",
         "versionCode": 942,
         "versionName": "1.271.1",
-        "size": 19968061,
+        "size": 19976245,
         "appName": "GitHub",
         "minSdkVersion": 32,
         "targetSdkVersion": 37,
@@ -943,17 +2207,51 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.cronometer.android.gold": [
+      {
+        "added": 1788276678514,
+        "apkName": "gold-4.56.0-hoomans-arm64.apk",
+        "hash": "3e749c063db16f2fd27ec4ebf00eb4af38ff2077f8f4076051ad447475b1e21c",
+        "hashType": "sha256",
+        "packageName": "com.cronometer.android.gold",
+        "versionCode": 3262,
+        "versionName": "4.56.0",
+        "size": 82784675,
+        "appName": "Cronometer",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.goodreads": [
+      {
+        "added": 1788276678601,
+        "apkName": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
+        "hash": "1f24b76429eed382ba3811ec21f9229c57d4f3db0c90f9fe2715f8b40fddf71d",
+        "hashType": "sha256",
+        "packageName": "com.goodreads",
+        "versionCode": 1292076000,
+        "versionName": "2.76.0 Build 0",
+        "size": 47975240,
+        "appName": "Goodreads",
+        "minSdkVersion": 29,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.qbis.guessthecountry": [
       {
-        "added": 1788114727277,
+        "added": 1788276678664,
         "apkName": "guessthecountry-3.34.2-hoodles-arm64.apk",
-        "hash": "930f8bfe56fa553b85c4b98ea0264d910e9775089858fc590a7a22bc4d12c7a0",
+        "hash": "f77af253c6305e6097468b3960069bfb0902f16c57f6d3c7d23de16caf503923",
         "hashType": "sha256",
         "packageName": "com.qbis.guessthecountry",
         "versionCode": 148,
         "versionName": "3.34.2",
-        "size": 47053493,
-        "appName": "World Map Quiz",
+        "size": 47073965,
+        "appName": "Guess Country",
         "minSdkVersion": 23,
         "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
@@ -962,14 +2260,14 @@
     ],
     "com.hellochinese": [
       {
-        "added": 1788114728236,
+        "added": 1788276678724,
         "apkName": "hellochinese-7.11.0-hoodles-arm64.apk",
-        "hash": "00d02b47f620b4de6446650811d8a10997a3ad41c859237e0299f7c24e0046d1",
+        "hash": "febdbc79b4cd9c0d0ca964ffa880b46610f062574ac6c316b62a3b56328437bd",
         "hashType": "sha256",
         "packageName": "com.hellochinese",
         "versionCode": 402,
         "versionName": "7.11.0",
-        "size": 61954867,
+        "size": 62049067,
         "appName": "HelloChinese",
         "minSdkVersion": 23,
         "targetSdkVersion": 35,
@@ -977,33 +2275,84 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.hevy": [
+      {
+        "added": 1788276678795,
+        "apkName": "hevy-3.1.0-hoomans-arm64.apk",
+        "hash": "412998711771a89d1bc6469e8f034675543d5cbecf978a3493604e134ff3467a",
+        "hashType": "sha256",
+        "packageName": "com.hevy",
+        "versionCode": 2092238,
+        "versionName": "3.1.0",
+        "size": 129995703,
+        "appName": "Hevy",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.rp.hypertrophy": [
       {
-        "added": 1788114728894,
+        "added": 1788276678923,
         "apkName": "hypertrophy-1.1.0-hoodles-arm64.apk",
-        "hash": "80059de2b7908c28839d18a8950c93ddf5d41b3ced5b564b824647dffca07e0b",
+        "hash": "2e906b451735c5d1aeffc3011c728ed910d023ac346f3f64f8e3ab26f0bf131a",
         "hashType": "sha256",
         "packageName": "com.rp.hypertrophy",
         "versionCode": 58,
         "versionName": "1.1.0",
-        "size": 4314317,
-        "appName": "Hypertrophy",
+        "size": 4322501,
+        "appName": "RP Hypertrophy",
         "minSdkVersion": 24,
         "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
+    "com.thehungrywasp.iamsober": [
+      {
+        "added": 1788276678930,
+        "apkName": "iamsober-8.6.7-hoomans-arm64.apk",
+        "hash": "798b922813e5e795e25e3e4860120cf8713743cc36b05ca39d33fcc998e09b2a",
+        "hashType": "sha256",
+        "packageName": "com.thehungrywasp.iamsober",
+        "versionCode": 1801726444,
+        "versionName": "8.6.7",
+        "size": 53281893,
+        "appName": "I Am Sober",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "jp.ne.ibis.ibispaintx.app": [
+      {
+        "added": 1788276678989,
+        "apkName": "ibispaintx.app-14.0.11-hoodles-arm64.apk",
+        "hash": "4ae6af9c78ffbb7fd8a51b39dc49b7055e74b8f8ee095aa703ea261c00927bb4",
+        "hashType": "sha256",
+        "packageName": "jp.ne.ibis.ibispaintx.app",
+        "versionCode": 1400110054,
+        "versionName": "14.0.11",
+        "size": 53373551,
+        "appName": "ibisPaint X",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "cn.ommiao.iconpacker": [
       {
-        "added": 1788114729429,
+        "added": 1788276679046,
         "apkName": "iconpacker-1.21.0-release-hoodles-arm64.apk",
-        "hash": "ae3daaaa2bcbae36fcc765a8ab72191ea67841dfa7a023397e882f4f844a68ed",
+        "hash": "4b8b34ec1a1f5ac07b5945a2f27ddbe2be17b804ca8a30b214abeca6feab8cfa",
         "hashType": "sha256",
         "packageName": "cn.ommiao.iconpacker",
         "versionCode": 35,
         "versionName": "1.21.0-release",
-        "size": 16020031,
+        "size": 16040503,
         "appName": "Icon Packer",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -1013,14 +2362,14 @@
     ],
     "ginlemon.iconpackstudio": [
       {
-        "added": 1788114730376,
+        "added": 1788276679089,
         "apkName": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
-        "hash": "18986ea34f87ed9b041345cfc55013f9fe98057f086bdb72775dc5df838fe61e",
+        "hash": "47c001eeb2f2db7842690919b7af55fafdf1ec2629f7f26989e92dfb23b9631e",
         "hashType": "sha256",
         "packageName": "ginlemon.iconpackstudio",
         "versionCode": 220160,
         "versionName": "2.2 build 016",
-        "size": 53411439,
+        "size": 53460583,
         "appName": "Icon Pack Studio",
         "minSdkVersion": 24,
         "targetSdkVersion": 33,
@@ -1028,16 +2377,50 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.camerasideas.instashot": [
+      {
+        "added": 1788276679142,
+        "apkName": "instashot-2.214.1539-hoomans-arm64.apk",
+        "hash": "9f016c336fbd83c33f341bbe002266b85c84361b525cc8eb8673d4c1c63f6800",
+        "hashType": "sha256",
+        "packageName": "com.camerasideas.instashot",
+        "versionCode": 1539,
+        "versionName": "2.214.1539",
+        "size": 68682740,
+        "appName": "InShot",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "net.binarymode.android.irplus": [
+      {
+        "added": 1788276679211,
+        "apkName": "irplus-1.9.13-de-vanced-arm64.apk",
+        "hash": "14c8ab3299ee8249552fa11c74f53f6b0ef443529199bb8cb30e60b20e0b4774",
+        "hashType": "sha256",
+        "packageName": "net.binarymode.android.irplus",
+        "versionCode": 307,
+        "versionName": "1.9.13",
+        "size": 6129085,
+        "appName": "IRPlus",
+        "minSdkVersion": 16,
+        "targetSdkVersion": 30,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.facebook.katana": [
       {
-        "added": 1788114731495,
+        "added": 1788276679231,
         "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
-        "hash": "95dbb53ff3fb25c074982ca3376330dcc6749fa6eb1f793ebbc597a248dbcb92",
+        "hash": "edf00439584e7b21c4b1ecb9fc87af3376a6525dcba8fa7900de20d5280ce36b",
         "hashType": "sha256",
         "packageName": "com.facebook.katana",
         "versionCode": 457019914,
         "versionName": "490.0.0.63.82",
-        "size": 88254842,
+        "size": 88271218,
         "appName": "Facebook",
         "minSdkVersion": 30,
         "targetSdkVersion": 34,
@@ -1045,16 +2428,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.kick.mobile": [
+      {
+        "added": 1788276679326,
+        "apkName": "kick.mobile-40.29.1-hxreborn-arm64.apk",
+        "hash": "c8abac478d27149d8a4d96a0f119f66544ee679c2498252a8c031b1c396527e9",
+        "hashType": "sha256",
+        "packageName": "com.kick.mobile",
+        "versionCode": 60006936,
+        "versionName": "40.29.1",
+        "size": 95208774,
+        "appName": "Kick",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.letterboxd.letterboxd": [
       {
-        "added": 1788114732428,
+        "added": 1788276679429,
         "apkName": "letterboxd-3.5.6-de-vanced-arm64.apk",
-        "hash": "1737a6bb943818bc36ce47292a20477c1c0100b1e5f0cf57502761192a1287d5",
+        "hash": "9a5984523e0d737267ddc92e27f2906a8e7011508e0f02d71d13033e226abd45",
         "hashType": "sha256",
         "packageName": "com.letterboxd.letterboxd",
         "versionCode": 498,
         "versionName": "3.5.6",
-        "size": 93081401,
+        "size": 93175601,
         "appName": "Letterboxd",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
@@ -1062,16 +2462,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.naver.linewebtoon": [
+      {
+        "added": 1788276679542,
+        "apkName": "linewebtoon-3.9.5-hoomans-arm64.apk",
+        "hash": "537600a865ba533e4f97448b12a633c38061bb298bde343b8f80b7f1121665d9",
+        "hashType": "sha256",
+        "packageName": "com.naver.linewebtoon",
+        "versionCode": 3090511,
+        "versionName": "3.9.5",
+        "size": 74576018,
+        "appName": "Webtoon",
+        "minSdkVersion": 28,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.lingodeer": [
       {
-        "added": 1788114733840,
+        "added": 1788276679626,
         "apkName": "lingodeer-2.99.412-hoodles-arm64.apk",
-        "hash": "9261626f57ea110c76936897f9c5bdd4d5dec162a15337029a71e4d3d7ec2903",
+        "hash": "595dd3023ae8f9f3e444c6e63407eb7467a0ae25209271a8af149e1f2a12e41d",
         "hashType": "sha256",
         "packageName": "com.lingodeer",
         "versionCode": 676,
         "versionName": "2.99.412",
-        "size": 61187671,
+        "size": 61212239,
         "appName": "LingoDeer",
         "minSdkVersion": 24,
         "targetSdkVersion": 36,
@@ -1079,16 +2496,50 @@
         "sig": "2b4d9183"
       }
     ],
+    "org.languageapp.lingory": [
+      {
+        "added": 1788276679692,
+        "apkName": "lingory-1.2.75-hoodles-arm64.apk",
+        "hash": "06a7417d5579a23b95dcd8a9689811838e3a116064bb70decff7c530c95be3e8",
+        "hashType": "sha256",
+        "packageName": "org.languageapp.lingory",
+        "versionCode": 177,
+        "versionName": "1.2.75",
+        "size": 52126628,
+        "appName": "Lingory",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "dk.tacit.android.foldersync.lite": [
+      {
+        "added": 1788276679749,
+        "apkName": "lite-4.9.3-hoomans-arm64.apk",
+        "hash": "09615305bef709f537a67a094faf09d39994c4324cabbfd0f38f4103309a8ef8",
+        "hashType": "sha256",
+        "packageName": "dk.tacit.android.foldersync.lite",
+        "versionCode": 2020100204,
+        "versionName": "4.9.3",
+        "size": 38012375,
+        "appName": "FolderSync",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 37,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.adobe.lrmobile": [
       {
-        "added": 1788114734868,
+        "added": 1788276679803,
         "apkName": "lrmobile-11.5.01-hoodles-arm64.apk",
-        "hash": "58690a0f200694b4993b5df4603d4d97613c20c458708c1406ea04d02fea3d19",
+        "hash": "da521d63b7d88ed52ef3233cc8f79c034d1018a70a4f84d9ef367b9353ab037d",
         "hashType": "sha256",
         "packageName": "com.adobe.lrmobile",
         "versionCode": 711105100,
         "versionName": "11.5.10",
-        "size": 232935840,
+        "size": 233705880,
         "appName": "Lightroom",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -1098,14 +2549,14 @@
     ],
     "com.lyfta": [
       {
-        "added": 1788114736657,
+        "added": 1788276680085,
         "apkName": "lyfta-1.551-hoodles-arm64.apk",
-        "hash": "e2d63bd70afac900ebbc7a67ad2d4b1a6071e2b31c27ada80c41f56cd6dc0df0",
+        "hash": "f218d1763e0c83bf8af3ea50d995ea3233946ea6646b8b81284d6ba93dd64bf4",
         "hashType": "sha256",
         "packageName": "com.lyfta",
         "versionCode": 551,
         "versionName": "1.551",
-        "size": 29816204,
+        "size": 29832580,
         "appName": "Lyfta",
         "minSdkVersion": 26,
         "targetSdkVersion": 35,
@@ -1115,14 +2566,14 @@
     ],
     "com.google.android.apps.magazines": [
       {
-        "added": 1788114737442,
+        "added": 1788276680127,
         "apkName": "magazines-5.161.0.931240252-hoodles-arm64.apk",
-        "hash": "9f6c0951c0697c026043b2864d7b4be505278c783db021c2a7d996447c1d6a31",
+        "hash": "552c74352cdacfb4fcb990c4e11806ff07c0c70e18868ece8d5cd30bc5bffb26",
         "hashType": "sha256",
         "packageName": "com.google.android.apps.magazines",
         "versionCode": 2022244226,
         "versionName": "5.161.0.931240252",
-        "size": 15294171,
+        "size": 15298259,
         "appName": "Google News",
         "minSdkVersion": 32,
         "targetSdkVersion": 37,
@@ -1132,14 +2583,14 @@
     ],
     "de.gmx.mobile.android.mail": [
       {
-        "added": 1788114738264,
+        "added": 1788276680157,
         "apkName": "mail-9.15.1-de-vanced-arm64.apk",
-        "hash": "8331d001565de82b6a96d683c9ba5c1c9c049c241d9bfe988c3328f1ddcd5ac9",
+        "hash": "130e02b3c8280c120658ba101a970d5af08808c7011fbc33d374acf23444e4ba",
         "hashType": "sha256",
         "packageName": "de.gmx.mobile.android.mail",
         "versionCode": 405203,
         "versionName": "9.15.1",
-        "size": 51988821,
+        "size": 52033869,
         "appName": "GMX Mail",
         "minSdkVersion": 28,
         "targetSdkVersion": 36,
@@ -1147,16 +2598,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.merriamwebster": [
+      {
+        "added": 1788276680215,
+        "apkName": "merriamwebster-5.6.2-hoodles-arm64.apk",
+        "hash": "69d0d18fe8f4e020ddd0d5285113ed1e87d10234fc9b5892b5f6bd285276528e",
+        "hashType": "sha256",
+        "packageName": "com.merriamwebster",
+        "versionCode": 560204,
+        "versionName": "5.6.2",
+        "size": 137749107,
+        "appName": "Merriam Webster",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "app.revanced.android.gms": [
       {
-        "added": 1788114739653,
-        "apkName": "microg-7.0.0-dev.4-arm64.apk",
-        "hash": "102d571466727a51f29853ac2762ef22938e2e48d73bc4ddcdbc2ea260c17585",
+        "added": 1788276680380,
+        "apkName": "microg-7.0.0-arm64.apk",
+        "hash": "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19",
         "hashType": "sha256",
         "packageName": "app.revanced.android.gms",
         "versionCode": 255070000,
-        "versionName": "7.0.0-dev.4",
-        "size": 95753899,
+        "versionName": "7.0.0",
+        "size": 44567249,
         "appName": "MicroG",
         "minSdkVersion": 21,
         "targetSdkVersion": 34,
@@ -1164,14 +2632,29 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1788114741018,
-        "apkName": "microg-7.0.0-dev.5-arm64.apk",
-        "hash": "f2f4c0a6a6e155e8969a069cd19d6018e104cb342143553bb9a572b16519d19f",
+        "added": 1788276680442,
+        "apkName": "microg-7.0.0-dev.6-arm64.apk",
+        "hash": "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4",
         "hashType": "sha256",
         "packageName": "app.revanced.android.gms",
         "versionCode": 255070000,
-        "versionName": "7.0.0-dev.5",
-        "size": 111476949,
+        "versionName": "7.0.0-dev.6",
+        "size": 44202649,
+        "appName": "MicroG",
+        "minSdkVersion": 21,
+        "targetSdkVersion": 34,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      },
+      {
+        "added": 1788276680502,
+        "apkName": "microg-7.0.0-dev.7-arm64.apk",
+        "hash": "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7",
+        "hashType": "sha256",
+        "packageName": "app.revanced.android.gms",
+        "versionCode": 255070000,
+        "versionName": "7.0.0-dev.7",
+        "size": 44260049,
         "appName": "MicroG",
         "minSdkVersion": 21,
         "targetSdkVersion": 34,
@@ -1181,15 +2664,15 @@
     ],
     "com.mirinae.mirinae": [
       {
-        "added": 1788114741842,
+        "added": 1788276680553,
         "apkName": "mirinae-2.2.2-hoodles-arm64.apk",
-        "hash": "e7e8cbe18f5e6dde32be35a6ae48f955a5d9d4ad87b5d40166ce406befeb1186",
+        "hash": "786d9590e620851effa79a757194d7daf89191518240829e6c47abf1fc7f1ca4",
         "hashType": "sha256",
         "packageName": "com.mirinae.mirinae",
         "versionCode": 198,
         "versionName": "2.2.2",
-        "size": 29466213,
-        "appName": "mirinae",
+        "size": 29499015,
+        "appName": "Mirinae",
         "minSdkVersion": 21,
         "targetSdkVersion": 34,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
@@ -1198,14 +2681,14 @@
     ],
     "cn.wps.moffice_eng": [
       {
-        "added": 1788114743852,
+        "added": 1788276680626,
         "apkName": "moffice_eng-18.24-hoodles-arm64.apk",
-        "hash": "80d88b49944b4f89ad2c4f618c46a5317e9e37bfb45b12adfeb4b686988d6b00",
+        "hash": "cd1891e2a44fc2e8b8dd0d2dec9d8f37ce6c3c4f91fa67644a8d85b8738940f5",
         "hashType": "sha256",
         "packageName": "cn.wps.moffice_eng",
         "versionCode": 1553,
         "versionName": "18.24",
-        "size": 125944491,
+        "size": 125882536,
         "appName": "WPS Office",
         "minSdkVersion": 24,
         "targetSdkVersion": 35,
@@ -1213,16 +2696,50 @@
         "sig": "2b4d9183"
       }
     ],
+    "currency.converter.moneta": [
+      {
+        "added": 1788276680807,
+        "apkName": "moneta-1.2.3-hoomans-arm64.apk",
+        "hash": "6896c11df7109cf3a4307bda907f625c55f2e9f640442d2947b4ae6ef906673a",
+        "hashType": "sha256",
+        "packageName": "currency.converter.moneta",
+        "versionCode": 178794402,
+        "versionName": "1.2.3",
+        "size": 51422230,
+        "appName": "Moneta",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.realbyteapps.moneymanagerfree": [
+      {
+        "added": 1788276680866,
+        "apkName": "moneymanagerfree-4.12.8 GF-hoomans-arm64.apk",
+        "hash": "79494d9b9d96b417d12fbd0509ffd2b14f982d2a079b6977b9b3b76aa80e5455",
+        "hashType": "sha256",
+        "packageName": "com.realbyteapps.moneymanagerfree",
+        "versionCode": 1197,
+        "versionName": "4.12.8 GF",
+        "size": 24046808,
+        "appName": "Money Manager",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.amazon.mp3": [
       {
-        "added": 1788114745890,
-        "apkName": "mp3-26.28.2-de-vanced-arm64.apk",
-        "hash": "168641e8fbd51b923031d2a47c4a50dd92f681fdf7e9754497867c9941a43b16",
+        "added": 1788276680902,
+        "apkName": "mp3-26.29.1-de-vanced-arm64.apk",
+        "hash": "559a8a234844fa26edf22fff5be033076f750ffca345fa32a25a5dfa847b4ea0",
         "hashType": "sha256",
         "packageName": "com.amazon.mp3",
-        "versionCode": 526280210,
-        "versionName": "26.28.2",
-        "size": 168722949,
+        "versionCode": 526290110,
+        "versionName": "26.29.1",
+        "size": 174270134,
         "appName": "Amazon Music",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
@@ -1232,48 +2749,116 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1788114747593,
+        "added": 1788276681085,
         "apkName": "music-9.15.51-morphe-arm64.apk",
-        "hash": "9cb3197f9932e174a9758685507b600818163c0cec93177f6e9bd475566b6abb",
+        "hash": "ecb780987c98c5ba74c420b0347e6ea820eb1c856b6bd214d88a086b800ddb4a",
         "hashType": "sha256",
         "packageName": "app.morphe.android.apps.youtube.music",
         "versionCode": 2147483647,
         "versionName": "9.15.51",
-        "size": 72062926,
+        "size": 72431355,
         "appName": "YouTube Music",
-        "minSdkVersion": 32,
+        "minSdkVersion": 29,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
-    "com.myfitnesspal.android": [
+    "com.zhiliaoapp.musically": [
       {
-        "added": 1788114748554,
-        "apkName": "myfitnesspal.android-26.31.0-hoodles-arm64.apk",
-        "hash": "e8ea891a6274884d162b83abcc632ebbe599233779b2938af29403d504e1e4c3",
+        "added": 1788276681202,
+        "apkName": "musically-46.2.3-tiktok-hx-arm64.apk",
+        "hash": "33f8fa6d97e8b00f8382d7bbcea46440e747d59191070fba26a003837596da42",
         "hashType": "sha256",
-        "packageName": "com.myfitnesspal.android",
-        "versionCode": 51226,
-        "versionName": "26.33.0",
-        "size": 44484194,
-        "appName": "MyFitnessPal",
-        "minSdkVersion": 33,
+        "packageName": "com.zhiliaoapp.musically",
+        "versionCode": 2024602030,
+        "versionName": "46.2.3",
+        "size": 205931433,
+        "appName": "TikTok",
+        "minSdkVersion": 23,
         "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "me.mycake": [
+      {
+        "added": 1788276681463,
+        "apkName": "mycake-6.4.0-hoodles-arm64.apk",
+        "hash": "6779e34cb334b885a7f65826ad76d824410cfa445df2336bc88b5349ea2903fd",
+        "hashType": "sha256",
+        "packageName": "me.mycake",
+        "versionCode": 306040001,
+        "versionName": "6.4.0",
+        "size": 33578030,
+        "appName": "MyCake",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "org.totschnig.myexpenses": [
+      {
+        "added": 1788276681513,
+        "apkName": "myexpenses-3.9.8-hoodles-arm64.apk",
+        "hash": "b8fbbe148eb41aad0fdfe700fc1cafa965f63b9fedee9bb7c3fb939ffcbd5e7f",
+        "hashType": "sha256",
+        "packageName": "org.totschnig.myexpenses",
+        "versionCode": 794,
+        "versionName": "3.9.8",
+        "size": 14382658,
+        "appName": "My Expenses",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 34,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.streetwriters.notesnook": [
+      {
+        "added": 1788276681535,
+        "apkName": "notesnook-3.4.10-hxreborn-arm64.apk",
+        "hash": "e11f371bb8a09aa50947d0623c9c8b92cff265e5eca7918ca8494d4bf9e92979",
+        "hashType": "sha256",
+        "packageName": "com.streetwriters.notesnook",
+        "versionCode": 4197420,
+        "versionName": "3.4.10",
+        "size": 67539831,
+        "appName": "Notesnook",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "nl.sanomamedia.android.nu": [
+      {
+        "added": 1788276681611,
+        "apkName": "nu-26.7.0-de-vanced-arm64.apk",
+        "hash": "ecf339d6d031df0c54677cb1e841655cbf29ec3bcd48f4ec4746610cf1d30e81",
+        "hashType": "sha256",
+        "packageName": "nl.sanomamedia.android.nu",
+        "versionCode": 210147,
+        "versionName": "26.7.0",
+        "size": 43697401,
+        "appName": "NU.nl",
+        "minSdkVersion": 29,
+        "targetSdkVersion": 37,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
     "com.facebook.orca": [
       {
-        "added": 1788114750125,
+        "added": 1788276681691,
         "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
-        "hash": "f7991b613f093f3b4bbb24cb08084829279c9017208137684b08979798c602fd",
+        "hash": "e84428db928460a0e42a921e40e5d8c1c4824427141e6168a1f8263e280b150f",
         "hashType": "sha256",
         "packageName": "com.facebook.orca",
         "versionCode": 2147483647,
         "versionName": "573.0.0.44.88",
-        "size": 95601495,
+        "size": 95634255,
         "appName": "Messenger",
         "minSdkVersion": 28,
         "targetSdkVersion": 36,
@@ -1283,14 +2868,14 @@
     ],
     "com.pandora.android": [
       {
-        "added": 1788114751401,
+        "added": 1788276681796,
         "apkName": "pandora.android-2608.1-hoodles-arm64.apk",
-        "hash": "d7327e47542ed5f1d372c3db1686797d185d24bf08f1fec302a307304ef9f5ef",
+        "hash": "778557df9501ab73c59115e7ba6a816cfe2bfd3e74fd191c25953b2e6cfebc6d",
         "hashType": "sha256",
         "packageName": "com.pandora.android",
         "versionCode": 26081001,
         "versionName": "2608.1",
-        "size": 65911521,
+        "size": 66013913,
         "appName": "Pandora",
         "minSdkVersion": 24,
         "targetSdkVersion": 35,
@@ -1298,16 +2883,50 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.xodo.pdf.reader": [
+      {
+        "added": 1788276681877,
+        "apkName": "pdf.reader-11.0.0-hoodles-arm64.apk",
+        "hash": "3e4ed8abb14f62bd729a5a5fd57126ddb132830c7959901054575093186e328c",
+        "hashType": "sha256",
+        "packageName": "com.xodo.pdf.reader",
+        "versionCode": 211000000,
+        "versionName": "11.0.0",
+        "size": 112323616,
+        "appName": "Xodo PDF",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "photo.editor.photoeditor.photoeditorpro": [
+      {
+        "added": 1788276682005,
+        "apkName": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
+        "hash": "2ca451e633646cbdcd9d443c69bb5224d506c178f0cf18d24f46fe2961ed2c5e",
+        "hashType": "sha256",
+        "packageName": "photo.editor.photoeditor.photoeditorpro",
+        "versionCode": 265100,
+        "versionName": "1.791.265",
+        "size": 40156551,
+        "appName": "Photo Editor Pro",
+        "minSdkVersion": 28,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.microblink.photomath": [
       {
-        "added": 1788114752489,
+        "added": 1788276682047,
         "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
-        "hash": "59f4cc365eaeb4281aae187867f7fecdf9c29e2590f38eb1c42c0e0272b6c509",
+        "hash": "d10f8638563af302a3a406ef35e39706c2496dc2d28f384babcb8c9dbf10a132",
         "hashType": "sha256",
         "packageName": "com.microblink.photomath",
         "versionCode": 70001016,
         "versionName": "8.48.0",
-        "size": 12218698,
+        "size": 12235074,
         "appName": "Photomath",
         "minSdkVersion": 21,
         "targetSdkVersion": 35,
@@ -1317,14 +2936,14 @@
     ],
     "app.morphe.android.apps.photos": [
       {
-        "added": 1788114754049,
+        "added": 1788276682075,
         "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
-        "hash": "efcd531c158d082559b47a80f25758db0003c59db3e9fed1d5c0a13f8d556b8f",
+        "hash": "2495398813de7940cd3a3bde1405796788c66151d0afd0bcf4d5d0623c5bd06e",
         "hashType": "sha256",
         "packageName": "app.morphe.android.apps.photos",
         "versionCode": 52244454,
         "versionName": "7.89.0.968035987",
-        "size": 74495582,
+        "size": 74507862,
         "appName": "Google Photos",
         "minSdkVersion": 32,
         "targetSdkVersion": 37,
@@ -1332,16 +2951,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "app.symfonik.music.player": [
+      {
+        "added": 1788276682158,
+        "apkName": "player-15.0.1-hxreborn-arm64.apk",
+        "hash": "486faaed53b2822eb84c73b315b437152cd2e94947aa79b9164651e063a6aed1",
+        "hashType": "sha256",
+        "packageName": "app.symfonik.music.player",
+        "versionCode": 127798,
+        "versionName": "15.0.1",
+        "size": 20055882,
+        "appName": "Symfonik",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.bambuna.podcastaddict": [
       {
-        "added": 1788114755512,
+        "added": 1788276682185,
         "apkName": "podcastaddict-2026.4-hoodles-arm64.apk",
-        "hash": "ec70760bc78dbe1e6e5c73c26dd51646feecdfa66e2f3b8c3f567951a1b357b5",
+        "hash": "b96b19255daf47d0b202ff3a31c4dc2f938c1afafc08bfd8b78ee9c629457a78",
         "hashType": "sha256",
         "packageName": "com.bambuna.podcastaddict",
         "versionCode": 21673,
         "versionName": "2026.4",
-        "size": 25339217,
+        "size": 25544009,
         "appName": "Podcast Addict",
         "minSdkVersion": 26,
         "targetSdkVersion": 35,
@@ -1349,16 +2985,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "ch.protonmail.android": [
+      {
+        "added": 1788276682232,
+        "apkName": "protonmail.android-4.15.0-hxreborn-arm64.apk",
+        "hash": "a11382c898e1977cea031738d108c1572a5d61b11f5193cc107285c0a8ff9bde",
+        "hashType": "sha256",
+        "packageName": "ch.protonmail.android",
+        "versionCode": 11782,
+        "versionName": "4.15.0",
+        "size": 83492294,
+        "appName": "Proton Mail",
+        "minSdkVersion": 28,
+        "targetSdkVersion": 34,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "ch.protonvpn.android": [
       {
-        "added": 1788114756455,
+        "added": 1788276682325,
         "apkName": "protonvpn.android-5.19.43.0-hoodles-arm64.apk",
-        "hash": "e322fbfa70550ce0d5cb1876f162185dc2360016e847982da3f5f89ea3e0eef2",
+        "hash": "f4e34db83d7f31fb7238cfe7bd7e19a623fc3a3114efa387caf50a521ae829cd",
         "hashType": "sha256",
         "packageName": "ch.protonvpn.android",
         "versionCode": 605194300,
         "versionName": "5.19.43.0",
-        "size": 36726155,
+        "size": 36324623,
         "appName": "ProtonVPN",
         "minSdkVersion": 26,
         "targetSdkVersion": 35,
@@ -1368,14 +3021,14 @@
     ],
     "jp.pxv.android": [
       {
-        "added": 1788114757525,
+        "added": 1788276682371,
         "apkName": "pxv.android-6.141.1-de-vanced-arm64.apk",
-        "hash": "edb9ca23b82b00b90998272ad9ba0c65728e1c880375eb13970bfa71b6dc774e",
+        "hash": "f79938d7f5cb5062211710d6088360c613053e227dde551fef511011a8cf772c",
         "hashType": "sha256",
         "packageName": "jp.pxv.android",
         "versionCode": 56869,
         "versionName": "6.141.1",
-        "size": 47434882,
+        "size": 47795322,
         "appName": "Pixiv",
         "minSdkVersion": 23,
         "targetSdkVersion": 34,
@@ -1385,14 +3038,14 @@
     ],
     "ru.iiec.pydroid3": [
       {
-        "added": 1788114758428,
-        "apkName": "pydroid3-8.3_arm64-hoodles-arm64.apk",
-        "hash": "489f4310359367bbedef659d8efecd97fdf30cbacbb84b783d9cebe4d18cc411",
+        "added": 1788276682423,
+        "apkName": "pydroid3-8.4_arm64-hoodles-arm64.apk",
+        "hash": "e87604dddec11aea11eefc3d375173018ab3cf733ba7939eeb964c962828b826",
         "hashType": "sha256",
         "packageName": "ru.iiec.pydroid3",
         "versionCode": 1131,
         "versionName": "8.4_arm64",
-        "size": 67984401,
+        "size": 67984393,
         "appName": "PyDroid3",
         "minSdkVersion": 23,
         "targetSdkVersion": 35,
@@ -1400,35 +3053,154 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.quizlet.quizletandroid": [
+      {
+        "added": 1788276682511,
+        "apkName": "quizletandroid-10.38.1-hoomans-arm64.apk",
+        "hash": "e2db3f1142a7e862116774bd0a46260af279a1214e74d84e843332487d290af8",
+        "hashType": "sha256",
+        "packageName": "com.quizlet.quizletandroid",
+        "versionCode": 2601771,
+        "versionName": "10.38.1",
+        "size": 26081730,
+        "appName": "Quizlet",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "org.readera": [
+      {
+        "added": 1788276682547,
+        "apkName": "readera-26.05.20+2300-hxreborn-arm64.apk",
+        "hash": "7881068545452f5e230d6270beb03c9ff85e265a0b1992db1bc9e360e7a99dcb",
+        "hashType": "sha256",
+        "packageName": "org.readera",
+        "versionCode": 2300,
+        "versionName": "26.05.20+2300",
+        "size": 13184410,
+        "appName": "ReadEra",
+        "minSdkVersion": 16,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.google.android.apps.recorder": [
       {
-        "added": 1788114759388,
-        "apkName": "recorder-4.2.20260709.960184543-de-vanced-arm64.apk",
-        "hash": "e2f487410cf6888efe459cc33029d2aae7e3dc84e6769440741c0e050f1009b2",
+        "added": 1788276682568,
+        "apkName": "recorder-4.2.20260709.968193888-de-vanced-arm64.apk",
+        "hash": "a7cfd6f4234787f4821946182347257c0db372620f6406513d3f00284ad063c4",
         "hashType": "sha256",
         "packageName": "com.google.android.apps.recorder",
-        "versionCode": 42422313,
-        "versionName": "4.2.20260709.960184543",
-        "size": 52210199,
+        "versionCode": 42422613,
+        "versionName": "4.2.20260709.968193888",
+        "size": 52898319,
         "appName": "Recorder",
-        "minSdkVersion": 32,
+        "minSdkVersion": 29,
         "targetSdkVersion": 37,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.hv.replaio": [
+      {
+        "added": 1788276682636,
+        "apkName": "replaio-3.3.9-hoomans-arm64.apk",
+        "hash": "ddc58b842137df14882c01a12b12ed3248d172b9cfcfaad5a397cf227c9646ee",
+        "hashType": "sha256",
+        "packageName": "com.hv.replaio",
+        "versionCode": 2500339,
+        "versionName": "3.3.9",
+        "size": 38439071,
+        "appName": "Replaio",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.sofascore.results": [
+      {
+        "added": 1788276682685,
+        "apkName": "results-26.06.23-hoomans-arm64.apk",
+        "hash": "474f1749fc076bec172c3dffe15c838ef8d7ca75fc7b5dbf3243764ab96b5793",
+        "hashType": "sha256",
+        "packageName": "com.sofascore.results",
+        "versionCode": 260623003,
+        "versionName": "26.06.23",
+        "size": 58067146,
+        "appName": "Sofascore",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.gamma.scan": [
+      {
+        "added": 1788276682744,
+        "apkName": "scan-2.2.224-hxreborn-arm64.apk",
+        "hash": "a0453120f366f247da0aaaa11edd2f483d632f9d6db50f327d06d14826c9b0ae",
+        "hashType": "sha256",
+        "packageName": "com.gamma.scan",
+        "versionCode": 224,
+        "versionName": "2.2.224",
+        "size": 15069960,
+        "appName": "Gamma Scan",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
     "videoeditor.videorecorder.screenrecorder": [
       {
-        "added": 1788114760447,
+        "added": 1788276682766,
         "apkName": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
-        "hash": "4bb770e94f63b4b83ab0ca1b65a550354f14c417f654f52701c10313d0848ee7",
+        "hash": "f6b33292eda4746f7fbe8ac300e20d398587a1ecb4c50a84cb91fb00615a918b",
         "hashType": "sha256",
         "packageName": "videoeditor.videorecorder.screenrecorder",
         "versionCode": 2511001,
         "versionName": "2.5.1.1",
-        "size": 22012480,
-        "appName": "Screen Recorder",
+        "size": 22012472,
+        "appName": "XRecorder",
         "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.michaldrabik.showly2": [
+      {
+        "added": 1788276682794,
+        "apkName": "showly2-3.70.0-hxreborn-arm64.apk",
+        "hash": "c97a3b9b5cb5f256e4115bc8cfe5c839cf68ce514c81256f9b73290a3fc2185d",
+        "hashType": "sha256",
+        "packageName": "com.michaldrabik.showly2",
+        "versionCode": 840,
+        "versionName": "3.70.0",
+        "size": 8058776,
+        "appName": "Showly",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.urbandroid.sleep": [
+      {
+        "added": 1788276682814,
+        "apkName": "sleep-20260816-hoodles-arm64.apk",
+        "hash": "8f79cad830a8d3cb68468022b70c8351e45e7f0e29b4f801b698daf7129c3137",
+        "hashType": "sha256",
+        "packageName": "com.urbandroid.sleep",
+        "versionCode": 231132,
+        "versionName": "20260816",
+        "size": 50845167,
+        "appName": "Sleep as Android",
+        "minSdkVersion": 24,
         "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -1436,14 +3208,14 @@
     ],
     "com.nothing.smartcenter": [
       {
-        "added": 1788114761498,
+        "added": 1788276682880,
         "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
-        "hash": "7dc2cc3b3580e9888502b8b5e3fd494523af28bfab014a7cc22b393c40baeb7a",
+        "hash": "54f0660d253ffdfb9bf0873e55c0188e2aba90fa948c299ef7d6a6bcd1d0b637",
         "hashType": "sha256",
         "packageName": "com.nothing.smartcenter",
         "versionCode": 3080004,
         "versionName": "3.8.0",
-        "size": 229906369,
+        "size": 230115257,
         "appName": "Nothing X",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -1451,16 +3223,33 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.snorelab.app": [
+      {
+        "added": 1788276683166,
+        "apkName": "snorelab.app-2.27.3.6291-hoodles-arm64.apk",
+        "hash": "ad6fece9c9531a752bb7f6346e3752fb18b6fe254d26dde8d8321f33252ea367",
+        "hashType": "sha256",
+        "packageName": "com.snorelab.app",
+        "versionCode": 62910,
+        "versionName": "2.27.3.6291",
+        "size": 57605675,
+        "appName": "SnoreLab",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "pl.solidexplorer2": [
       {
-        "added": 1788114763136,
+        "added": 1788276683237,
         "apkName": "solidexplorer2-3.5.19-hoodles-arm64.apk",
-        "hash": "826c982ea1599c682fd927c295a7581cc7191cd4e434a116342ac4a17aea87d0",
+        "hash": "25d8debe37b0f6fabdbe0820e90bff516a7b0b9952b36fb3d310894330159f9c",
         "hashType": "sha256",
         "packageName": "pl.solidexplorer2",
         "versionCode": 305191,
         "versionName": "3.5.19",
-        "size": 26594726,
+        "size": 26615198,
         "appName": "Solid Explorer",
         "minSdkVersion": 23,
         "targetSdkVersion": 36,
@@ -1470,16 +3259,67 @@
     ],
     "com.soundcloud.android": [
       {
-        "added": 1788114764334,
+        "added": 1788276683287,
         "apkName": "soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
-        "hash": "8baffcb1003b4ede56c97868a195a4f751c875327cdcae286c5698153fd80c08",
+        "hash": "24a5f704282a12db2d7cd5b8edd3f454bf619c02541e697b6e6f8cce80ef5536",
         "hashType": "sha256",
         "packageName": "com.soundcloud.android",
         "versionCode": 369070,
         "versionName": "2026.08.26-release",
-        "size": 54200352,
+        "size": 54802456,
         "appName": "SoundCloud",
-        "minSdkVersion": 32,
+        "minSdkVersion": 29,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "org.zwanoo.android.speedtest": [
+      {
+        "added": 1788276683353,
+        "apkName": "speedtest-7.0.4-xtra-arm64.apk",
+        "hash": "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7",
+        "hashType": "sha256",
+        "packageName": "org.zwanoo.android.speedtest",
+        "versionCode": 255938,
+        "versionName": "7.0.4",
+        "size": 28315126,
+        "appName": "Speedtest",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "io.stashteam.games.tracker.stashapp": [
+      {
+        "added": 1788276683388,
+        "apkName": "stashapp-2.48.2-hoomans-arm64.apk",
+        "hash": "4a0d36f468e750b1227adc99e528ee47b121b7803d152cc3145d70e3ab907c10",
+        "hashType": "sha256",
+        "packageName": "io.stashteam.games.tracker.stashapp",
+        "versionCode": 250,
+        "versionName": "2.48.2",
+        "size": 41933347,
+        "appName": "Stash",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.noctuasoftware.stellarium_free": [
+      {
+        "added": 1788276683437,
+        "apkName": "stellarium_free-1.16.3-xtra-arm64.apk",
+        "hash": "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6",
+        "hashType": "sha256",
+        "packageName": "com.noctuasoftware.stellarium_free",
+        "versionCode": 11200,
+        "versionName": "1.16.3",
+        "size": 129896566,
+        "appName": "Stellarium",
+        "minSdkVersion": 28,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -1487,14 +3327,14 @@
     ],
     "com.strava": [
       {
-        "added": 1788114765831,
+        "added": 1788276683583,
         "apkName": "strava-477.14-de-vanced-arm64.apk",
-        "hash": "cfa1a29b736d568a79e506c4ce65f14a1e7dee234a47e1ea1beecc810928336a",
+        "hash": "f868155891eb8fd4d7685289b510675d2aeddcde2eaa8f89f652b26aa9882937",
         "hashType": "sha256",
         "packageName": "com.strava",
         "versionCode": 12399244,
         "versionName": "477.14",
-        "size": 117491017,
+        "size": 117597505,
         "appName": "Strava",
         "minSdkVersion": 32,
         "targetSdkVersion": 35,
@@ -1502,68 +3342,323 @@
         "sig": "2b4d9183"
       }
     ],
-    "com.amazon.avod.thirdpartyclient": [
+    "com.superchinese": [
       {
-        "added": 1788114767557,
-        "apkName": "thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
-        "hash": "73f3d2e0eef6a2c34233d8921de3d5ed007bfd59311b0d2bc856f2a0e6160eb1",
+        "added": 1788276683712,
+        "apkName": "superchinese-6.6.3-hoodles-arm64.apk",
+        "hash": "f90006471147528dad70059662aaa9f85973f8eb7328abfc9c74b800145b28af",
         "hashType": "sha256",
-        "packageName": "com.amazon.avod.thirdpartyclient",
-        "versionCode": 470000357,
-        "versionName": "3.0.470.357",
-        "size": 126116546,
-        "appName": "Prime Video",
+        "packageName": "com.superchinese",
+        "versionCode": 393,
+        "versionName": "6.6.3",
+        "size": 152240161,
+        "appName": "SuperChinese",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.atomengineapps.teachmeanatomy": [
+      {
+        "added": 1788276683879,
+        "apkName": "teachmeanatomy-5.115-hoomans-arm64.apk",
+        "hash": "b543488b50aee127bf93e7d4aa4278b72eec5936fbc861f3a54bd8690318707a",
+        "hashType": "sha256",
+        "packageName": "com.atomengineapps.teachmeanatomy",
+        "versionCode": 186,
+        "versionName": "5.115",
+        "size": 141635595,
+        "appName": "TeachMeAnatomy",
         "minSdkVersion": 28,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
+    "com.todoist": [
+      {
+        "added": 1788276684040,
+        "apkName": "todoist-v12260-hoomans-arm64.apk",
+        "hash": "323f35f65387ed9eb17be3b6618e9da2fb109401c1472698d000630d6a78d776",
+        "hashType": "sha256",
+        "packageName": "com.todoist",
+        "versionCode": 12260,
+        "versionName": "v12260",
+        "size": 39014359,
+        "appName": "Todoist",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.tracked.mobile": [
+      {
+        "added": 1788276684080,
+        "apkName": "tracked.mobile-7.0.0-hoomans-arm64.apk",
+        "hash": "98732adbc94aa65d59b3c97d2e46bbbc98a31eb983ea12b31486af1c34e4ca98",
+        "hashType": "sha256",
+        "packageName": "com.tracked.mobile",
+        "versionCode": 125,
+        "versionName": "7.0.0",
+        "size": 102218063,
+        "appName": "Tracked",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.sbs.train": [
+      {
+        "added": 1788276684210,
+        "apkName": "train-1.2.1-hoodles-arm64.apk",
+        "hash": "f376ec96d54d2abfc76c41896dd3011683cb705cf7711f703ba0aad0d4092f96",
+        "hashType": "sha256",
+        "packageName": "com.sbs.train",
+        "versionCode": 85,
+        "versionName": "1.2.1",
+        "size": 212268259,
+        "appName": "SBS Train",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "app.ttmikstories.android": [
       {
-        "added": 1788114768663,
+        "added": 1788276684438,
         "apkName": "ttmikstories.android-1.16.0-hoodles-arm64.apk",
-        "hash": "d087c892d79e381386f6a3cc58bb44f21e404dcc9f4e3757b2c5c0cc85da6e0c",
+        "hash": "f993db3e0ebdf5c1e41d9e555c5c0490961511108ddf3a138747d9a075cbf9d7",
         "hashType": "sha256",
         "packageName": "app.ttmikstories.android",
         "versionCode": 605,
         "versionName": "1.16.0",
-        "size": 113754204,
-        "appName": "TTMIK Stories - Korean",
+        "size": 113881172,
+        "appName": "TTMik Stories",
         "minSdkVersion": 24,
         "targetSdkVersion": 35,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
-    "com.mobilefootie.wc2010": [
+    "com.tumblr": [
       {
-        "added": 1788114770509,
-        "apkName": "wc2010-236.17398.20260827-hoodles-arm64.apk",
-        "hash": "1c91e60ad66c702bc657c70affa3476f6900edd6a131b94c7a9239d1c41d7b13",
+        "added": 1788276684579,
+        "apkName": "tumblr-45.0.0.109-hoomans-arm64.apk",
+        "hash": "7c358009ad01bfaa000f533b5b657ea9a3c82cf6b56b59edfd1f03122c0238d4",
         "hashType": "sha256",
-        "packageName": "com.mobilefootie.wc2010",
-        "versionCode": 17398,
-        "versionName": "236.17398.20260827",
-        "size": 31830595,
-        "appName": "FotMob",
+        "packageName": "com.tumblr",
+        "versionCode": 1450000109,
+        "versionName": "45.0.0.109",
+        "size": 37785749,
+        "appName": "Tumblr",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.simyasolutions.ling.universal": [
+      {
+        "added": 1788276684633,
+        "apkName": "universal-8.4.4-hoodles-arm64.apk",
+        "hash": "89a81127e0410c13d26301aa3a1ed515f17bcce8891369c12bb2d15a037c9a40",
+        "hashType": "sha256",
+        "packageName": "com.simyasolutions.ling.universal",
+        "versionCode": 10110,
+        "versionName": "8.4.4",
+        "size": 96799142,
+        "appName": "Ling Universal",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.ufovpn.connect.velnet": [
+      {
+        "added": 1788276684739,
+        "apkName": "velnet-2.6.26-xtra-arm64.apk",
+        "hash": "69fc727d16d98244e9f1dd7976dd26992bade254e42f8d2b10ff9b70e39e8748",
+        "hashType": "sha256",
+        "packageName": "com.ufovpn.connect.velnet",
+        "versionCode": 2626,
+        "versionName": "2.6.26",
+        "size": 82729023,
+        "appName": "UFO VPN",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "cz.ackee.ventusky": [
+      {
+        "added": 1788276684833,
+        "apkName": "ventusky-53.1-hoodles-arm64.apk",
+        "hash": "45cdbbed19242dae4fb7ebccccfce8371408ff3910000a08837638f6ba50d321",
+        "hashType": "sha256",
+        "packageName": "cz.ackee.ventusky",
+        "versionCode": 53100,
+        "versionName": "53.1",
+        "size": 42329603,
+        "appName": "Ventusky",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
-    "app.morphe.android.youtube": [
+    "app.remux.video.converter": [
       {
-        "added": 1788114772331,
-        "apkName": "youtube-21.04.223-morphe-arm64.apk",
-        "hash": "fbc34122cee33dba9a20aa128c19a0ddd458c1a0f69028ab93dbfae0a9473a55",
+        "added": 1788276684876,
+        "apkName": "video.converter-3.2.2-hoomans-arm64.apk",
+        "hash": "14a24b30ad61b30af83821fe92138776782c93630c93694ea726cb49658c9ccf",
         "hashType": "sha256",
-        "packageName": "app.morphe.android.youtube",
-        "versionCode": 2147483647,
-        "versionName": "21.04.223",
-        "size": 114109310,
-        "appName": "YouTube",
+        "packageName": "app.remux.video.converter",
+        "versionCode": 38,
+        "versionName": "3.2.2",
+        "size": 104791216,
+        "appName": "Video Converter",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.vpn.free.hotspot.secure.vpnify": [
+      {
+        "added": 1788276684984,
+        "apkName": "vpnify-2.2.9-xtra-arm64.apk",
+        "hash": "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28",
+        "hashType": "sha256",
+        "packageName": "com.vpn.free.hotspot.secure.vpnify",
+        "versionCode": 2290052,
+        "versionName": "2.2.9",
+        "size": 25012455,
+        "appName": "VPNify",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "nom.vrd": [
+      {
+        "added": 1788276685015,
+        "apkName": "vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
+        "hash": "a6922c346d63cbd9099fba72b2cb667246814e7aabed3a90dbbb87ba2568787a",
+        "hashType": "sha256",
+        "packageName": "nom.vrd",
+        "versionCode": 49,
+        "versionName": "1.9.3-GooglePlay",
+        "size": 88277527,
+        "appName": "VRD",
+        "minSdkVersion": 24,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.vitotechnology.sky.tonight.map.star.walk": [
+      {
+        "added": 1788276685116,
+        "apkName": "walk-2.5.0-xtra-arm64.apk",
+        "hash": "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321",
+        "hashType": "sha256",
+        "packageName": "com.vitotechnology.sky.tonight.map.star.walk",
+        "versionCode": 20500135,
+        "versionName": "2.5.0",
+        "size": 229312951,
+        "appName": "Sky Tonight",
+        "minSdkVersion": 25,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.wallpaperscraft.wallpaper": [
+      {
+        "added": 1788276685347,
+        "apkName": "wallpaper-3.61.01-hoodles-arm64.apk",
+        "hash": "b8b2cbcea53548ca489adbbfc8a6c74ed41b84da780418519a3bcb95ffa84b4e",
+        "hashType": "sha256",
+        "packageName": "com.wallpaperscraft.wallpaper",
+        "versionCode": 36101,
+        "versionName": "3.61.01",
+        "size": 66714863,
+        "appName": "WallpapersCraft",
+        "minSdkVersion": 25,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.backdrops.wallpapers": [
+      {
+        "added": 1788276685422,
+        "apkName": "wallpapers-6.1.2-xtra-arm64.apk",
+        "hash": "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062",
+        "hashType": "sha256",
+        "packageName": "com.backdrops.wallpapers",
+        "versionCode": 286,
+        "versionName": "6.1.2",
+        "size": 25712102,
+        "appName": "Backdrops",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 35,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.wanderlog.android": [
+      {
+        "added": 1788276685456,
+        "apkName": "wanderlog.android-2.208-hoomans-arm64.apk",
+        "hash": "59d8c7de55e89ae7f502195c9f1e100dffa1ca84482d37458bcd90bbfa38143a",
+        "hashType": "sha256",
+        "packageName": "com.wanderlog.android",
+        "versionCode": 2026061623,
+        "versionName": "2.208",
+        "size": 143032204,
+        "appName": "Wanderlog",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.mobilefootie.wc2010": [
+      {
+        "added": 1788276685612,
+        "apkName": "wc2010-236.17398.20260827-hoodles-arm64.apk",
+        "hash": "004a1512dc3a70e8ac852db4b54b15f0253052e66e02d8edfb13686eae2d38fe",
+        "hashType": "sha256",
+        "packageName": "com.mobilefootie.wc2010",
+        "versionCode": 17398,
+        "versionName": "236.17398.20260827",
+        "size": 30728763,
+        "appName": "MobileFootie",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "com.windyty.android": [
+      {
+        "added": 1788276685662,
+        "apkName": "windyty.android-51.0.1-hoodles-arm64.apk",
+        "hash": "5e50057c8113a6b205e1acc47234c0fc93511d5fc4cce6dd9a7881c47f5ff6b0",
+        "hashType": "sha256",
+        "packageName": "com.windyty.android",
+        "versionCode": 5100010,
+        "versionName": "51.0.1",
+        "size": 43646401,
+        "appName": "Windy",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
