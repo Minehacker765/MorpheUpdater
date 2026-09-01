@@ -227,18 +227,23 @@ def _bundle_prerelease(cfg: dict, name: str) -> bool:
     return bool(spec.get("prerelease", True))
 
 
-def _get_local_mpp(bundle_name: str, url: str) -> Path | None:
-    """Return cached MPP file for bundle if present (avoids GitHub API rate limit)."""
+def _get_local_mpp(bundle_name: str, url: str, tag: str | None = None) -> Path | None:
+    """Return cached MPP file for bundle. If tag given, prefer exact tag match (no GitHub hit)."""
     if "github.com" not in url:
         return None
     try:
         repo = _repo_from_url(url) or ""
         sanitized = repo.replace("/", "-")
-        cache_dir = ROOT / "bin" / "morphe-data" / "patches" / sanitized
+        cache_dir = MORPHE_DATA / "patches" / sanitized
+        if tag:
+            # exact tag file: {tag}__*.mpp (e.g. v1.41.0__patches-1.41.0.mpp) – strict, no prefix fallback
+            cand = [p for p in cache_dir.glob(f"{tag}__*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
+            if cand:
+                return cand[0]
+            return None
         if not cache_dir.exists():
             return None
-        mpps = list(cache_dir.glob("*.mpp"))
-        mpps = [p for p in mpps if not p.name.endswith(".part")]
+        mpps = [p for p in cache_dir.glob("*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
         if not mpps:
             return None
         def _ver_key(p: Path):
@@ -258,20 +263,85 @@ def _get_local_mpp(bundle_name: str, url: str) -> Path | None:
         return None
 
 
-def _get_patch_inputs(cfg: dict, combo: list[str]) -> list[str]:
-    """Return patch inputs for morphe-desktop: prefer local MPP cache to avoid GitHub rate limit."""
+def _get_patch_inputs(cfg: dict, combo: list[str], state: dict | None = None) -> list[str]:
+    """Return local MPP paths for morphe-desktop. Never returns URL when tag is known (offline)."""
     inputs = []
     for b in combo:
         spec = cfg["bundles"].get(b, "")
         url = spec if isinstance(spec, str) else spec.get("url", "")
         if not url:
             continue
-        local = _get_local_mpp(b, url)
+        tag = state.get("bundles", {}).get(b) if state else None
+        local = _get_local_mpp(b, url, tag) if tag else _get_local_mpp(b, url)
         if local and local.exists():
             inputs.append(str(local))
         else:
+            # strict offline: do not fall back to URL – caller should have ensured cache
+            # keep fallback for first-run bootstrap where state empty
+            if tag:
+                log.warning("MPP missing for bundle %s tag %s (expected %s), falling back to URL (will hit GitHub!)", b, tag, local)
             inputs.append(url)
     return inputs
+
+
+async def ensure_mpp_cache(session: ClientSession, cfg: dict, state: dict) -> None:
+    """Download each bundle's MPP for its state tag via GitHub API directly (once per bundle).
+    Afterwards every morphe call uses local file -> zero GitHub hits for 164 list-versions."""
+    for name, spec in cfg["bundles"].items():
+        url = _bundle_url(spec)
+        repo = _repo_from_url(url)
+        tag = state["bundles"].get(name)
+        if not repo or not tag:
+            continue
+        # microg is not a patches MPP repo (direct APK) – skip MPP download
+        if repo.lower() == "morpheapp/microg-re":
+            continue
+        sanitized = repo.replace("/", "-")
+        cache_dir = MORPHE_DATA / "patches" / sanitized
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        existing = [p for p in cache_dir.glob(f"{tag}__*.mpp") if not p.name.endswith(".part") and "sources" not in p.name.lower() and "javadoc" not in p.name.lower()]
+        if existing:
+            continue
+        # fetch release by tag (authenticated, no morphe tool involved)
+        try:
+            gh_headers = tools._gh_headers()  # uses GITHUB_TOKEN from env/.env
+            async with session.get(f"{tools.GH_API}/repos/{repo}/releases/tags/{tag}", headers=gh_headers) as resp:
+                if resp.status != 200:
+                    # fallback: tag might be without v? try releases list
+                    log.warning("MPP %s: releases/tags/%s HTTP %s, trying releases list", name, tag, resp.status)
+                    async with session.get(f"{tools.GH_API}/repos/{repo}/releases?per_page=100", headers=gh_headers) as r2:
+                        r2.raise_for_status()
+                        releases = await r2.json()
+                        release = next((x for x in releases if x.get("tag_name") == tag), None)
+                        if not release:
+                            log.error("MPP %s: tag %s not found in releases list", name, tag)
+                            continue
+                else:
+                    release = await resp.json()
+            assets = [a for a in release.get("assets", []) if a.get("name", "").lower().endswith(".mpp") and "sources" not in a["name"].lower() and "javadoc" not in a["name"].lower()]
+            if not assets:
+                log.warning("MPP %s %s: no .mpp asset in release (assets=%s)", name, tag, [a.get("name") for a in release.get("assets", [])][:5])
+                continue
+            # pick main patches file (prefer patches-*.mpp, largest)
+            # morphe's choice is the primary bundle file
+            def _asset_rank(a):
+                n = a["name"].lower()
+                return (0 if n.startswith("patches") else 1, -a.get("size", 0))
+            assets.sort(key=_asset_rank)
+            asset = assets[0]
+            dl_url = asset["browser_download_url"]
+            dest = cache_dir / f"{tag}__{asset['name']}"
+            tmp = dest.with_suffix(dest.suffix + ".part")
+            log.info("downloading MPP %s %s -> %s", name, tag, dest.name)
+            async with session.get(dl_url, headers=gh_headers) as resp2:
+                resp2.raise_for_status()
+                with open(tmp, "wb") as f:
+                    async for chunk in resp2.content.iter_chunked(1 << 20):
+                        f.write(chunk)
+            tmp.replace(dest)
+            log.info("MPP cached %s %s (%d bytes)", name, tag, dest.stat().st_size)
+        except Exception as exc:
+            log.error("MPP download failed %s %s: %s", name, tag, exc)
 
 
 def _enable_all_patches(options_file: Path) -> int:
@@ -627,9 +697,9 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
 
 
 
-async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache):
-    # use cached MPP when available to avoid GitHub burst (same as patch)
-    urls = _get_patch_inputs(cfg, combo)
+async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache, state):
+    # strictly local MPP – ensure_mpp_cache already downloaded each bundle once
+    urls = _get_patch_inputs(cfg, combo, state)
     if len(urls) != len(combo):
         return (app, combo, None, None, f"unknown bundle name")
     if app["package"] in ("com.mgoogle.android.gms", "com.adguard.android"):
@@ -704,10 +774,14 @@ async def build_one(
     resolution: str | None = None,
 ) -> None:
     cid = combo_id(combo)
-    urls = _get_bundle_urls(cfg, combo)
+    # strictly local MPPs – ensure_mpp_cache downloaded them before any morphe call
+    urls = _get_patch_inputs(cfg, combo, state)
     missing = [b for b in combo if b not in cfg["bundles"]]
     if missing:
         raise RuntimeError(f"unknown bundle(s) in combo: {', '.join(missing)}")
+    # sanity: we should never pass a https:// URL to patch (would hit GitHub per-app)
+    if any(u.startswith("https://") for u in urls):
+        log.warning("build_one falling back to URL for %s %s (MPP cache miss)", package, cid)
 
     merged, details = await ensure_merged(session, holder, cfg, _jar(cfg, "apkeditor"), package, vc, arch, resolution)
     out = OUT / f"{short(package)}-{version}-{cid}-{arch}.apk"
@@ -887,30 +961,14 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
 
                 version_targets.append((app, combo, archs, over))
 
-        # warm MPP cache per bundle (one GitHub hit per bundle, not 164) so list-versions can run local
-        if version_targets:
-            unique_bundles: dict[str, str] = {}
-            for app, combo, _, _ in version_targets:
-                for b in combo:
-                    if b not in unique_bundles:
-                        unique_bundles[b] = app["package"]
-            for b, pkg in unique_bundles.items():
-                spec = cfg["bundles"].get(b, "")
-                url = spec if isinstance(spec, str) else spec.get("url", "")
-                if not url or _get_local_mpp(b, url) is not None:
-                    continue
-                log.info("warming MPP for bundle %s (%s)", b, pkg)
-                try:
-                    await tools.recommended_version(_jar(cfg, "morphe-desktop"), [url], pkg, cfg)
-                except Exception as e:
-                    # will be retried per-app with fallback, just warn here
-                    log.warning("warm MPP %s failed: %s", b, e)
+        # download each bundle's MPP once via GH API (local file) -> afterwards 164 list-versions use file, 0 GitHub
+        await ensure_mpp_cache(session, cfg, state)
 
         # ── parallel version+vc resolution (was sequential before) ─────────────
         if version_targets:
-            log.info("resolving %d version(s) in parallel (ver_sem=2, pure_sem=4, play_ver_sem=3)", len(version_targets))
+            log.info("resolving %d version(s) in parallel (ver_sem=2, pure_sem=4, play_ver_sem=3) [local MPP, no GitHub]", len(version_targets))
             tasks = [
-                _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache)
+                _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache, state)
                 for app, combo, _archs, _over in version_targets
             ]
             results = await asyncio.gather(*tasks)
