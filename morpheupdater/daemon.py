@@ -888,7 +888,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
 
         # ── parallel version+vc resolution (was sequential before) ─────────────
         if version_targets:
-            log.info("resolving %d version(s) in parallel (ver_sem=8)", len(version_targets))
+            log.info("resolving %d version(s) in parallel (ver_sem=4, pure_sem=4, play_ver_sem=3)", len(version_targets))
             tasks = [
                 _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache)
                 for app, combo, _archs, _over in version_targets
