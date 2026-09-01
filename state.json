@@ -1520,7 +1520,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.0",
     "microg": "7.0.0",
-    "morphe": "v1.41.0-dev.12",
+    "morphe": "v1.41.0",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
@@ -1535,7 +1535,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.15.0-dev.5"
+      "tag": "v1.15.0-dev.6"
     }
   }
 }
