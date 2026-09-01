@@ -1,9 +1,30 @@
 {
+  "ak.alizandro.smartaudiobookplayer": {
+    "11.7.8": 301178
+  },
   "ch.protonvpn.android": {
     "5.19.43.0": 605194300
   },
   "com.adobe.lrmobile": {
     "11.5.01": 711105100
+  },
+  "com.adobe.reader": {
+    "26.7.1.47181": 1931947181
+  },
+  "com.amazon.amazonvideo.livingroom": {
+    "6.23.23+v15.5.0.70-armv7a": 606023231
+  },
+  "com.amazon.avod.thirdpartyclient": {
+    "3.0.452.1047": 452001047
+  },
+  "com.budget.tracker_app": {
+    "6.6.11": 510
+  },
+  "com.busuu.android.enc": {
+    "32.30.0(1575420)": 1575420
+  },
+  "com.disney.disneyplus": {
+    "26.12.1+rc1-2026.07.15": 178407745
   },
   "com.facebook.katana": {
     "490.0.0.63.82": 457019914
@@ -11,25 +32,61 @@
   "com.facebook.orca": {
     "573.0.0.44.88": 344611864
   },
+  "com.fox.foxone": {
+    "1.9.2": 202412042
+  },
+  "com.google.android.youtube": {
+    "21.07.247": 1561056418
+  },
+  "com.maxmpz.audioplayer": {
+    "build-1025-bundle-play": 1025004
+  },
   "com.mobilefootie.wc2010": {
     "236.17398.20260827": 17398
+  },
+  "com.myfitnesspal.android": {
+    "26.31.0": 51132
   },
   "com.netflix.ninja": {
     "13.0.1 build 25028": 25028
   },
+  "com.paget96.batteryguru": {
+    "2.5.0.6": 721
+  },
+  "com.soepic.photogallery.release": {
+    "2.1.11": 251
+  },
   "com.soundcloud.android": {
     "2026.08.26-release": 369070
   },
-  "ginlemon.iconpackstudio": {
-    "2.2 build 016": 220160
+  "com.todoist": {
+    "v12190": 12190
+  },
+  "com.tubitv": {
+    "10.28.5000": 1029
+  },
+  "com.ufovpn.connect.velnet": {
+    "2.5.8": 2508
+  },
+  "com.univision.prendetv": {
+    "4.47.2_tv": 4407
+  },
+  "com.viber.voip": {
+    "26.1.2.0": 1261020
+  },
+  "ginlemon.flowerfree": {
+    "6.6 build 016": 660160
   },
   "jp.pxv.android": {
     "6.141.1": 56869
   },
+  "org.readera": {
+    "26.05.20+2300": 2300
+  },
+  "ru.iiec.pydroid3": {
+    "8.3_arm64": 1130
+  },
   "tv.twitch.android.app": {
     "25.3.0": 2503006
-  },
-  "com.google.android.youtube": {
-    "21.07.247": 1561056418
   }
 }
