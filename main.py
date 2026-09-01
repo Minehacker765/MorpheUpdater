@@ -40,7 +40,14 @@ def main() -> None:
         log_dir.mkdir(parents=True, exist_ok=True)
         dated = log_dir / time.strftime("%Y-%m-%d_%H.log", time.gmtime())
         latest = log_dir / "latest.log"
-        fh = logging.FileHandler(str(dated), encoding="utf-8")
+        class RobustFileHandler(logging.FileHandler):
+            def emit(self, record):
+                try:
+                    Path(self.baseFilename).parent.mkdir(parents=True, exist_ok=True)
+                except Exception:
+                    pass
+                super().emit(record)
+        fh = RobustFileHandler(str(dated), encoding="utf-8")
         fh.setLevel(logging.INFO)
         fh.setFormatter(logging.Formatter("%(asctime)s %(levelname)-7s %(name)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
         logging.getLogger().addHandler(fh)
@@ -49,11 +56,7 @@ def main() -> None:
                 latest.unlink()
             latest.symlink_to(dated.name)
         except Exception:
-            try:
-                import shutil
-                shutil.copyfile(dated, latest)
-            except Exception:
-                pass
+            pass
     except Exception:
         pass
     load_env()

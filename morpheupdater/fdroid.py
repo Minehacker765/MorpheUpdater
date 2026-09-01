@@ -4,6 +4,7 @@ icons at repo/icons/<pkg>.png (v1 top-level `icon` -> /icons/; v2 fileEntry)."""
 
 from __future__ import annotations
 
+import asyncio
 import base64
 import hashlib
 import json

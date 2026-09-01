@@ -40,6 +40,7 @@ from .tools import apk_info
 log = logging.getLogger("daemon")
 
 DOWNLOAD_CONCURRENCY = 4
+ver_sem = asyncio.Semaphore(8)
 
 
 def _enabled_archs(archs_cfg) -> list[str]:
@@ -571,7 +572,8 @@ def _jar(cfg: dict, tool: str) -> Path:
 async def _recommended(cfg: dict, urls: list[str], package: str, cache: dict) -> str | None:
     key = (frozenset(urls), package)
     if key not in cache:
-        cache[key] = await tools.recommended_version(_jar(cfg, "morphe-desktop"), urls, package, cfg)
+        async with ver_sem:
+            cache[key] = await tools.recommended_version(_jar(cfg, "morphe-desktop"), urls, package, cfg)
     return cache[key]
 
 
@@ -622,8 +624,43 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
     return ver, vc, dest
 
 
+
+async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache):
+    urls = _get_bundle_urls(cfg, combo)
+    if len(urls) != len(combo):
+        return (app, combo, None, None, f"unknown bundle name")
+    if app["package"] in ("com.mgoogle.android.gms", "com.adguard.android"):
+        return (app, combo, "direct", 0, None)
+    try:
+        version = await _recommended(cfg, urls, app["package"], ver_cache)
+        if not version or version.strip().lower() == "any":
+            arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
+            auth_tmp = await holder.get(session, arch0)
+            det_tmp = await play.get_details(session, auth_tmp, app["package"])
+            if not det_tmp.version_code:
+                return (app, combo, None, None, "no versions listed and Play details failed for universal patch")
+            version = det_tmp.version_string or str(det_tmp.version_code)
+        try:
+            arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
+            vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
+        except Exception as e:
+            if "no versions found" in str(e):
+                arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
+                auth_tmp = await holder.get(session, arch0)
+                det_tmp = await play.get_details(session, auth_tmp, app["package"])
+                if det_tmp.version_code:
+                    version = det_tmp.version_string
+                    vc = det_tmp.version_code
+                    vc_cache[app["package"]] = {version: vc}
+                else:
+                    return (app, combo, None, None, str(e))
+            else:
+                return (app, combo, None, None, str(e))
+        return (app, combo, version, vc, None)
+    except Exception as exc:
+        return (app, combo, None, None, str(exc))
+
 async def _resolve_vc(session: ClientSession, package: str, version: str, cache: dict, arch: str = "arm64") -> int:
-    # use fallback that handles no Pure history and brute-force for TV etc.
     try:
         vc, codes = await play.resolve_vc_with_fallback(session, package, version, arch)
     except Exception:
@@ -757,6 +794,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         pending_tag: str | None = None
         plan: list[tuple[dict, list[str], str, int, str, str | None]] = []
         seen: set[tuple] = set()
+        version_targets: list[tuple[dict, list[str], list[str], dict | None]] = []
         for app in cfg["apps"]:
             package = app["package"]
             over = overrides.get(package) if isinstance(overrides.get(package), dict) else None
@@ -841,37 +879,22 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                         summary["built"].append(out.name)
                     continue
 
-                try:
-                    version = await _recommended(cfg, urls, package, ver_cache)
-                    if not version or version.strip().lower() == "any":
-                        # universal patches (Any) -> use latest Play version
-                        auth_tmp = await holder.get(session, archs[0])
-                        det_tmp = await play.get_details(session, auth_tmp, package)
-                        if not det_tmp.version_code:
-                            raise RuntimeError("no versions listed and Play details failed for universal patch")
-                        version = det_tmp.version_string or str(det_tmp.version_code)
-                        log.info("%s: universal patches, using latest Play %s", short(package), version)
-                    try:
-                        vc = await _resolve_vc(session, package, version, vc_cache, archs[0])
-                    except Exception as e:
-                        # Pure has no history for this package (e.g. TV livingroom) -> fallback to latest Play
-                        if "no versions found" in str(e):
-                            auth_tmp = await holder.get(session, archs[0])
-                            det_tmp = await play.get_details(session, auth_tmp, package)
-                            if det_tmp.version_code:
-                                log.info("%s: no Pure history, using latest Play %s (%d) for %s", short(package), det_tmp.version_string, det_tmp.version_code, version)
-                                version = det_tmp.version_string
-                                vc = det_tmp.version_code
-                                vc_cache[package] = {version: vc}
-                            else:
-                                raise
-                        else:
-                            raise
-                except Exception as exc:
-                    for arch in archs:
-                        summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", str(exc)))
-                    continue
+                version_targets.append((app, combo, archs, over))
 
+        # ── parallel version+vc resolution (was sequential before) ─────────────
+        if version_targets:
+            log.info("resolving %d version(s) in parallel (ver_sem=8)", len(version_targets))
+            tasks = [
+                _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache)
+                for app, combo, _archs, _over in version_targets
+            ]
+            results = await asyncio.gather(*tasks)
+            for (app, combo, archs, over), (r_app, r_combo, version, vc, err) in zip(version_targets, results):
+                package = app["package"]
+                if err or not version or not vc:
+                    for arch in archs:
+                        summary["failed"].append((f"{package}|{combo_id(combo)}|{arch}", err or "version resolution failed"))
+                    continue
                 for arch in archs:
                     key = f"{package}|{combo_id(combo)}|{arch}"
                     prev = state["builds"].get(key)
@@ -886,7 +909,6 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     if up_to_date:
                         log.info("%s %s [%s/%s]: up to date", short(package), version, combo_id(combo), arch)
                         continue
-                    # per-package resolution override (overrides.json or app-specific), fallback to global
                     eff_res = (over.get("resolution") if over and "resolution" in over else None) or cfg.get("resolution", "xxxhdpi")
                     plan.append((app, combo, version, vc, arch, eff_res))
 
@@ -974,6 +996,7 @@ def _fmt_bundle_changes(changed: dict[str, tuple]) -> str:
 
 
 async def publish(summary: dict, commit: bool, release: bool, tag: str | None = None) -> None:
+    state = load_state()
     if not summary["built"] and not summary["bundles"] and not summary.get("fdroid") and not summary.get("pages"):
         log.info("nothing changed; no commit or release")
         return
