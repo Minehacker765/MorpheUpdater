@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1788290664778,
+    "timestamp": 1788300503843,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -113,6 +113,18 @@
         }
       },
       "icon": "com.ttxapps.autosync.png"
+    },
+    {
+      "packageName": "com.zenthek.autozen",
+      "name": "AutoZen",
+      "localized": {
+        "en-US": {
+          "name": "AutoZen",
+          "summary": "AutoZen patched with Morphe (10 patches)",
+          "description": "AutoZen \u2014 AutoZen patched with Morphe (10 patches)\n\nPatches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update +24 more\n\nOriginal: com.zenthek.autozen \u2014 AutoZen is autozen with enhancements."
+        }
+      },
+      "icon": "com.zenthek.autozen.png"
     },
     {
       "packageName": "com.avocards",
@@ -804,6 +816,18 @@
       "icon": "com.mirinae.mirinae.png"
     },
     {
+      "packageName": "com.bamnetworks.mobile.android.gameday.atbat",
+      "name": "MLB TV",
+      "localized": {
+        "en-US": {
+          "name": "MLB TV",
+          "summary": "MLB TV [Android TV]  patched with Morphe (10 patches)",
+          "description": "MLB TV [Android TV]  \u2014 MLB TV [Android TV]  patched with Morphe (10 patches)\n\nPatches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV +6 more\n\nOriginal: com.bamnetworks.mobile.android.gameday.atbat \u2014 MLB TV is mlb tv with enhancements."
+        }
+      },
+      "icon": "com.bamnetworks.mobile.android.gameday.atbat.png"
+    },
+    {
       "packageName": "com.mobilefootie.wc2010",
       "name": "MobileFootie",
       "localized": {
@@ -1305,6 +1329,17 @@
       "icon": "com.tracked.mobile.png"
     },
     {
+      "packageName": "com.thetrainline",
+      "name": "Trainline",
+      "localized": {
+        "en-US": {
+          "name": "Trainline",
+          "summary": "Trainline patched with Morphe (10 patches)",
+          "description": "Trainline \u2014 Trainline patched with Morphe (10 patches)\n\nPatches (22): AMOLED dark theme, Bypass signature check, Dark theme, Disable tracking, GmsCore support, Hide ads, Hide membership upselling, Hide upgrade upselling, Inspect AI requests, Open Library on launch +12 more\n\nOriginal: com.thetrainline \u2014 Trainline is trainline with enhancements."
+        }
+      }
+    },
+    {
       "packageName": "app.ttmikstories.android",
       "name": "TTMik Stories",
       "localized": {
@@ -1482,6 +1517,18 @@
       "icon": "videoeditor.videorecorder.screenrecorder.png"
     },
     {
+      "packageName": "app.morphe.android.youtube",
+      "name": "YouTube",
+      "localized": {
+        "en-US": {
+          "name": "YouTube",
+          "summary": "YouTube patched with Morphe (10 patches)",
+          "description": "YouTube \u2014 YouTube patched with Morphe (10 patches)\n\nPatches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source +100 more\n\nOriginal: app.morphe.android.youtube \u2014 YouTube is youtube with enhancements."
+        }
+      },
+      "icon": "app.morphe.android.youtube.png"
+    },
+    {
       "packageName": "app.morphe.android.apps.youtube.music",
       "name": "YouTube Music",
       "localized": {
@@ -1497,9 +1544,9 @@
   "packages": {
     "com.zombodroid.MemeGenerator": [
       {
-        "added": 1788290654196,
+        "added": 1788300493363,
         "apkName": "MemeGenerator-4.6826-hoodles-arm64.apk",
-        "hash": "65f7d27be7c51e8777e4324bff5938132d9b2ebd99751e63670e350dd794f309",
+        "hash": "c6235bb2b5e6b541c34e05d4204170bfebe896a5bdf50f54f6d67fa0712d7ef4",
         "hashType": "sha256",
         "packageName": "com.zombodroid.MemeGenerator",
         "versionCode": 46826,
@@ -1514,7 +1561,7 @@
     ],
     "com.adguard.android": [
       {
-        "added": 1788290654273,
+        "added": 1788300493450,
         "apkName": "adguard-4.13.2-arm64.apk",
         "hash": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
         "hashType": "sha256",
@@ -1531,7 +1578,7 @@
     ],
     "com.dv.adm": [
       {
-        "added": 1788290654365,
+        "added": 1788300493540,
         "apkName": "adm-14.0.39-hoomans-arm64.apk",
         "hash": "3c5dac6fed81e60825d941b830e6962a6772c9fcd8b1e29b59d0d94549ac8ebb",
         "hashType": "sha256",
@@ -1548,7 +1595,7 @@
     ],
     "com.alltrails.alltrails": [
       {
-        "added": 1788290654405,
+        "added": 1788300493730,
         "apkName": "alltrails-26.8.40-hoodles-arm64.apk",
         "hash": "80c09751d9530259b553c4c0bb7d3163f36bcb50e07b6f5fbc234229a94c9751",
         "hashType": "sha256",
@@ -1565,7 +1612,7 @@
     ],
     "com.alphaprogression.alphaprogression": [
       {
-        "added": 1788290654511,
+        "added": 1788300493845,
         "apkName": "alphaprogression-7.1.1-hoomans-arm64.apk",
         "hash": "c97b9738a4404436b3b6049a3e564ea23ea5f34080cb47140f49e521555d100e",
         "hashType": "sha256",
@@ -1582,14 +1629,14 @@
     ],
     "tv.twitch.android.app": [
       {
-        "added": 1788290654666,
-        "apkName": "android.app-29.9.1-hoomans-arm64.apk",
-        "hash": "d96e3bb1f3ae9aad9f260550368b0bb182c786bbcc6a09b563366067e8115c50",
+        "added": 1788300493994,
+        "apkName": "android.app-30.7.2-hoomans-arm64.apk",
+        "hash": "1bab7965dd3643cef7e93bf667ec7b61ae34190f610d9ffb4d43be58147db7f8",
         "hashType": "sha256",
         "packageName": "tv.twitch.android.app",
-        "versionCode": 2909016,
-        "versionName": "29.9.1",
-        "size": 97674128,
+        "versionCode": 3007026,
+        "versionName": "30.7.2",
+        "size": 97589978,
         "appName": "Twitch",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -1599,7 +1646,7 @@
     ],
     "com.audible.application": [
       {
-        "added": 1788290654785,
+        "added": 1788300494093,
         "apkName": "application-26.34.05-hxreborn-arm64.apk",
         "hash": "520efacabd861b79c4fd0ca1d9fbca986cd0f15fc705c2bb0f81473a1a1603a8",
         "hashType": "sha256",
@@ -1614,9 +1661,26 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.bamnetworks.mobile.android.gameday.atbat": [
+      {
+        "added": 1788300494220,
+        "apkName": "atbat-26.8.1.1-androidtv-tv.apk",
+        "hash": "7d4a9b0986b20f2752751d2bb73d873adf65dd70421a5a95b26d50df7f5e123a",
+        "hashType": "sha256",
+        "packageName": "com.bamnetworks.mobile.android.gameday.atbat",
+        "versionCode": 1750000022,
+        "versionName": "26.8.1.1",
+        "size": 36399225,
+        "appName": "MLB TV",
+        "minSdkVersion": 23,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.atmfee": [
       {
-        "added": 1788290654903,
+        "added": 1788300494270,
         "apkName": "atmfee-3.7.9-xtra-arm64.apk",
         "hash": "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9",
         "hashType": "sha256",
@@ -1633,7 +1697,7 @@
     ],
     "com.maxmpz.audioplayer": [
       {
-        "added": 1788290654920,
+        "added": 1788300494296,
         "apkName": "audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
         "hash": "2127019cb24bdf513af6f59c7b7958c63fe83e7f8daa82b66527e45a082517c6",
         "hashType": "sha256",
@@ -1650,7 +1714,7 @@
     ],
     "com.llamalab.automate": [
       {
-        "added": 1788290654942,
+        "added": 1788300494320,
         "apkName": "automate-1.51.1-xtra-arm64.apk",
         "hash": "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad",
         "hashType": "sha256",
@@ -1667,7 +1731,7 @@
     ],
     "com.ttxapps.autosync": [
       {
-        "added": 1788290654954,
+        "added": 1788300494333,
         "apkName": "autosync-7.5.10-xtra-arm64.apk",
         "hash": "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3",
         "hashType": "sha256",
@@ -1682,11 +1746,28 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.zenthek.autozen": [
+      {
+        "added": 1788300494384,
+        "apkName": "autozen-8.0.10-hoomans-arm64.apk",
+        "hash": "dfe755a54de6896d5c9f8deaeaf0cbb70e0ac3f754803555b980bf0b26c0e73a",
+        "hashType": "sha256",
+        "packageName": "com.zenthek.autozen",
+        "versionCode": 2648,
+        "versionName": "8.0.10",
+        "size": 162403859,
+        "appName": "AutoZen",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 37,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.avocards": [
       {
-        "added": 1788290654992,
+        "added": 1788300494562,
         "apkName": "avocards-3.0.18-hoodles-arm64.apk",
-        "hash": "6f42539b5f7b4a666b7bcb8f939d2e08d545ab0ba85ec596b84cc5fd33c5a48e",
+        "hash": "6b776152c491aa00dc95050426b685877a578202081cba1c6559d3bc33426f4e",
         "hashType": "sha256",
         "packageName": "com.avocards",
         "versionCode": 1698219898,
@@ -1701,7 +1782,7 @@
     ],
     "com.bandcamp.android": [
       {
-        "added": 1788290655019,
+        "added": 1788300494587,
         "apkName": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
         "hash": "451e2f88ac2cc94f896a1bfafd58ab28e4cbfae008b37362a48298890988f7ca",
         "hashType": "sha256",
@@ -1718,7 +1799,7 @@
     ],
     "com.bandlab.bandlab": [
       {
-        "added": 1788290655034,
+        "added": 1788300494608,
         "apkName": "bandlab-11.25.3-hoomans-arm64.apk",
         "hash": "b01d839ff36df5bc204595082f0855ebc42ac1e2ade11fc70141cdcbde21f398",
         "hashType": "sha256",
@@ -1735,7 +1816,7 @@
     ],
     "com.rumble.battles": [
       {
-        "added": 1788290655076,
+        "added": 1788300494674,
         "apkName": "battles-3.14.5-hoomans-arm64.apk",
         "hash": "b767b71becbf4696ea55c38ce89669ccc6c92f7e24dd30d584d31923120120d6",
         "hashType": "sha256",
@@ -1752,9 +1833,9 @@
     ],
     "bitpit.launcher": [
       {
-        "added": 1788290655099,
+        "added": 1788300494701,
         "apkName": "bitpit.launcher-1.16.24-hoodles-arm64.apk",
-        "hash": "ef0d09e2fa16591e49be50c9ebb98ab3fac7c8dbe59fc37fef4b4fcbb634cd58",
+        "hash": "15fe7376a83e2a384fde68d529b5a6819a8b7bbd780c925a91ef601c49985049",
         "hashType": "sha256",
         "packageName": "bitpit.launcher",
         "versionCode": 1628,
@@ -1769,7 +1850,7 @@
     ],
     "io.funswitch.blocker": [
       {
-        "added": 1788290655122,
+        "added": 1788300494722,
         "apkName": "blocker-5.0.67-xtra-arm64.apk",
         "hash": "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9",
         "hashType": "sha256",
@@ -1784,7 +1865,7 @@
     ],
     "com.blockerhero": [
       {
-        "added": 1788290655210,
+        "added": 1788300494805,
         "apkName": "blockerhero-1.5.0-hoomans-arm64.apk",
         "hash": "0b20ba89f6c9bd423ca8bed0ff9162b888a6978cbcd8c5c3277208a982e815dd",
         "hashType": "sha256",
@@ -1801,9 +1882,9 @@
     ],
     "com.bunpoapp": [
       {
-        "added": 1788290655222,
+        "added": 1788300494817,
         "apkName": "bunpoapp-3.21.0-hoodles-arm64.apk",
-        "hash": "fed0b9b1030e0bc2a3b2b1ab4906cca804c80a5da591dbe18dd864752f35cd08",
+        "hash": "0afeadf13af2940b0261009f717cfc2e0f41a3689f4fa9c7e802a7064d406c22",
         "hashType": "sha256",
         "packageName": "com.bunpoapp",
         "versionCode": 200,
@@ -1818,7 +1899,7 @@
     ],
     "all.in.one.calculator": [
       {
-        "added": 1788290655309,
+        "added": 1788300494893,
         "apkName": "calculator-3.4.0-hxreborn-arm64.apk",
         "hash": "f76b2b4c670d17b6815db1d739aca8005c65959f4f2326f87cb64d8f38c912ea",
         "hashType": "sha256",
@@ -1835,9 +1916,9 @@
     ],
     "com.intsig.camscanner": [
       {
-        "added": 1788290655374,
+        "added": 1788300494960,
         "apkName": "camscanner-7.20.0.2606230000-hoodles-arm64.apk",
-        "hash": "e0398a5054efaa6abc9ef42b12654a5ed7463a78989e3a043b05221d0086013b",
+        "hash": "238aefcc6c5dbe3f366427f8d03bb85222b21de02358b82998d7ae3495ae5b2f",
         "hashType": "sha256",
         "packageName": "com.intsig.camscanner",
         "versionCode": 72002,
@@ -1852,7 +1933,7 @@
     ],
     "altergames.carlauncher": [
       {
-        "added": 1788290655551,
+        "added": 1788300495111,
         "apkName": "carlauncher-5.0.5-hoomans-arm64.apk",
         "hash": "faea8e10cadafbd298886d41d599cd40b25177ced1f1a3eecd285a1039d53b50",
         "hashType": "sha256",
@@ -1869,7 +1950,7 @@
     ],
     "com.cfdrink": [
       {
-        "added": 1788290655576,
+        "added": 1788300495127,
         "apkName": "cfdrink-1.19.11-hoomans-arm64.apk",
         "hash": "c7288b3377e4b8c9f3bd0004d17da8ac1b16213bfa262ed992edd876dc5a9a61",
         "hashType": "sha256",
@@ -1886,7 +1967,7 @@
     ],
     "studio.muggle.chatboost": [
       {
-        "added": 1788290655637,
+        "added": 1788300495188,
         "apkName": "chatboost-3.23.0-hoomans-arm64.apk",
         "hash": "48e86f89fe776fb38a6d809e9503ee4edb09c131deefd8bf5b1ae59106a71dd2",
         "hashType": "sha256",
@@ -1903,7 +1984,7 @@
     ],
     "com.chess.prathxm": [
       {
-        "added": 1788290655672,
+        "added": 1788300495224,
         "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
         "hash": "47c8c6819780c4155a3a8203fc1c606551deb10710ddde4a96f78828069fa900",
         "hashType": "sha256",
@@ -1920,7 +2001,7 @@
     ],
     "com.proto.circuitsimulator": [
       {
-        "added": 1788290655977,
+        "added": 1788300495516,
         "apkName": "circuitsimulator-1.49.0-xtra-arm64.apk",
         "hash": "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8",
         "hashType": "sha256",
@@ -1937,14 +2018,14 @@
     ],
     "com.collectrinc.collectr": [
       {
-        "added": 1788290656007,
-        "apkName": "collectr-2.5.0-hoomans-arm64.apk",
-        "hash": "f973148d1b95b0693bb960be2d1ba17460d1fe5a6a8c034fc8e7d03cea5abfac",
+        "added": 1788300495546,
+        "apkName": "collectr-2.5.6-hoomans-arm64.apk",
+        "hash": "04b057f0596e8a22ed36ccd67d5085f501f355aac41263f78b4eba9fed89b451",
         "hashType": "sha256",
         "packageName": "com.collectrinc.collectr",
-        "versionCode": 713,
-        "versionName": "2.5.0",
-        "size": 73977430,
+        "versionCode": 737,
+        "versionName": "2.5.6",
+        "size": 74228033,
         "appName": "Collectr",
         "minSdkVersion": 24,
         "targetSdkVersion": 36,
@@ -1954,7 +2035,7 @@
     ],
     "com.cricbuzz.android": [
       {
-        "added": 1788290656096,
+        "added": 1788300495604,
         "apkName": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
         "hash": "da14b36f6d522fa6409136ce67a3eef7a1c268d2488496b2a32b2d6748767f9f",
         "hashType": "sha256",
@@ -1971,9 +2052,9 @@
     ],
     "com.sbs.diet": [
       {
-        "added": 1788290656133,
+        "added": 1788300495637,
         "apkName": "diet-5.7.9-hoodles-arm64.apk",
-        "hash": "e90551ef176393c55284bd40986e0fa4e64da3b024ebcf55d2af7a3b7a1e3abf",
+        "hash": "0ff2f6a291aea9b0ba2152f224e8646a34cafc0bbc0538ce615da1eadae27a3c",
         "hashType": "sha256",
         "packageName": "com.sbs.diet",
         "versionCode": 850,
@@ -1988,7 +2069,7 @@
     ],
     "net.uniquegem.directchat": [
       {
-        "added": 1788290656307,
+        "added": 1788300495781,
         "apkName": "directchat-1.9.8-hoomans-arm64.apk",
         "hash": "1f645c908d8184922cbedffe83434dd6329352839e2f7b0ece63320d54fac3c3",
         "hashType": "sha256",
@@ -2005,9 +2086,9 @@
     ],
     "com.duolingo": [
       {
-        "added": 1788290656356,
+        "added": 1788300495833,
         "apkName": "duolingo-6.92.5-hoodles-arm64.apk",
-        "hash": "3587aae48650abf63e50ebfed763df7427e3872f5110b913e3279964412a736e",
+        "hash": "fa8eaf8aef3b656d153365d47ad7dcb412e1475b07e022a8f4293f25a0477dd1",
         "hashType": "sha256",
         "packageName": "com.duolingo",
         "versionCode": 2433,
@@ -2022,9 +2103,9 @@
     ],
     "kr.eggbun.eggconvo": [
       {
-        "added": 1788290656535,
+        "added": 1788300495961,
         "apkName": "eggconvo-4.12.19-hoodles-arm64.apk",
-        "hash": "81be10a320299f4e278a7015250c654f4126d7694523a2df3c45e3b714f0e98c",
+        "hash": "f0c890063883088fd245706e596db2a8104fffc028370ed98bd3270af2d8dd6f",
         "hashType": "sha256",
         "packageName": "kr.eggbun.eggconvo",
         "versionCode": 4121999,
@@ -2039,7 +2120,7 @@
     ],
     "com.busuu.android.enc": [
       {
-        "added": 1788290656613,
+        "added": 1788300496028,
         "apkName": "enc-32.46.0(1732689)-hoodles-arm64.apk",
         "hash": "5615f4178d2285e8b258c29ad315436c8aec873f9f11d8bcc643e3a017fbad99",
         "hashType": "sha256",
@@ -2056,7 +2137,7 @@
     ],
     "com.appfactory.essence": [
       {
-        "added": 1788290656685,
+        "added": 1788300496094,
         "apkName": "essence-4.2.8-hoomans-arm64.apk",
         "hash": "25198ff2ead84bd0f01c5ba365f83cda667c5ec382245ceea079ef0ab12afc40",
         "hashType": "sha256",
@@ -2073,7 +2154,7 @@
     ],
     "com.etsy.android": [
       {
-        "added": 1788290656760,
+        "added": 1788300496161,
         "apkName": "etsy.android-7.93.0-hxreborn-arm64.apk",
         "hash": "d6d8355a078658ce0c21295a61b45377e1a31389a96e8f576a28ce15ab3731bd",
         "hashType": "sha256",
@@ -2090,7 +2171,7 @@
     ],
     "com.cxinventor.file.explorer": [
       {
-        "added": 1788290656820,
+        "added": 1788300496216,
         "apkName": "explorer-2.7.8-hxreborn-arm64.apk",
         "hash": "2368098a8455ae724392544daba86f911e6e2d5c1818ad875518a8b97c0f2318",
         "hashType": "sha256",
@@ -2107,7 +2188,7 @@
     ],
     "com.finch.finch": [
       {
-        "added": 1788290656862,
+        "added": 1788300496250,
         "apkName": "finch-3.73.179-hoomans-arm64.apk",
         "hash": "7d133acca2330de13c28c1f4311e40d6072f39888e9607d5904977d61a86fcb9",
         "hashType": "sha256",
@@ -2124,7 +2205,7 @@
     ],
     "ginlemon.flowerfree": [
       {
-        "added": 1788290657080,
+        "added": 1788300496431,
         "apkName": "flowerfree-6.6 build 017-hoodles-arm64.apk",
         "hash": "f3c9e773d9ae7dc6deabd8c407283b0310e2395af6556338810afbea2010112e",
         "hashType": "sha256",
@@ -2141,7 +2222,7 @@
     ],
     "com.myvitale.forus": [
       {
-        "added": 1788290657103,
+        "added": 1788300496453,
         "apkName": "forus-3.0.16-hxreborn-arm64.apk",
         "hash": "b15527ed2f039bb6ed9490e4b1371741c997b9be535507026778a56e8b9e00ab",
         "hashType": "sha256",
@@ -2158,14 +2239,14 @@
     ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1788290657211,
+        "added": 1788300496558,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
-        "hash": "dbf21d05baf8b3928661a9078103ddf909f7169be4fe56a2be3256fd4e067180",
+        "hash": "20beee4c4d7c78b7a3aab33b3751ecdca4f797b158ea2ab9d899cad15b5655c2",
         "hashType": "sha256",
         "packageName": "com.reddit.frontpage.morphe",
         "versionCode": 2147483647,
         "versionName": "2026.14.0",
-        "size": 57639255,
+        "size": 57676119,
         "appName": "Reddit",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
@@ -2175,16 +2256,16 @@
     ],
     "com.getmimo": [
       {
-        "added": 1788290657292,
+        "added": 1788300496630,
         "apkName": "getmimo-9.24-hoodles-arm64.apk",
-        "hash": "88fe2efccee7aca3a92157d38f6e2087a8689312c3a2541c6765f84d0e228ef5",
+        "hash": "6be4a989dd24445d7d74a5b4893c9eb522f2e91b1adf062207e8f7042e6945fd",
         "hashType": "sha256",
         "packageName": "com.getmimo",
         "versionCode": 1786101892,
         "versionName": "9.24",
-        "size": 81998003,
+        "size": 80998579,
         "appName": "Mimo",
-        "minSdkVersion": 28,
+        "minSdkVersion": 32,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -2192,7 +2273,7 @@
     ],
     "com.github.android": [
       {
-        "added": 1788290657390,
+        "added": 1788300496699,
         "apkName": "github.android-1.271.1-hoodles-arm64.apk",
         "hash": "5c1195e052aa681d3e39341a7559b5eb1af80c0daed84a475e3ff6eeac676c20",
         "hashType": "sha256",
@@ -2209,14 +2290,14 @@
     ],
     "com.cronometer.android.gold": [
       {
-        "added": 1788290657425,
-        "apkName": "gold-4.56.0-hoomans-arm64.apk",
-        "hash": "3e749c063db16f2fd27ec4ebf00eb4af38ff2077f8f4076051ad447475b1e21c",
+        "added": 1788300496735,
+        "apkName": "gold-4.57.2-hoomans-arm64.apk",
+        "hash": "8581e528f11621278a62b80a9cea69b384099c7b2f4781037b2f4bed84ef6cec",
         "hashType": "sha256",
         "packageName": "com.cronometer.android.gold",
-        "versionCode": 3262,
-        "versionName": "4.56.0",
-        "size": 82784675,
+        "versionCode": 3399,
+        "versionName": "4.57.2",
+        "size": 84845593,
         "appName": "Cronometer",
         "minSdkVersion": 26,
         "targetSdkVersion": 36,
@@ -2226,7 +2307,7 @@
     ],
     "com.goodreads": [
       {
-        "added": 1788290657518,
+        "added": 1788300496825,
         "apkName": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
         "hash": "1f24b76429eed382ba3811ec21f9229c57d4f3db0c90f9fe2715f8b40fddf71d",
         "hashType": "sha256",
@@ -2243,9 +2324,9 @@
     ],
     "com.qbis.guessthecountry": [
       {
-        "added": 1788290657586,
+        "added": 1788300496887,
         "apkName": "guessthecountry-3.34.2-hoodles-arm64.apk",
-        "hash": "f77af253c6305e6097468b3960069bfb0902f16c57f6d3c7d23de16caf503923",
+        "hash": "52525aea0db8e42d49ed009aa0f7acb5b2aa2044331a53513aebd2fbe96d9bdf",
         "hashType": "sha256",
         "packageName": "com.qbis.guessthecountry",
         "versionCode": 148,
@@ -2260,9 +2341,9 @@
     ],
     "com.hellochinese": [
       {
-        "added": 1788290657646,
+        "added": 1788300496944,
         "apkName": "hellochinese-7.11.0-hoodles-arm64.apk",
-        "hash": "febdbc79b4cd9c0d0ca964ffa880b46610f062574ac6c316b62a3b56328437bd",
+        "hash": "7f174b963c39b5d47db75c6a80c00d8a14337db29513474252d0c687ba4a7d4f",
         "hashType": "sha256",
         "packageName": "com.hellochinese",
         "versionCode": 402,
@@ -2277,7 +2358,7 @@
     ],
     "com.hevy": [
       {
-        "added": 1788290657722,
+        "added": 1788300497011,
         "apkName": "hevy-3.1.0-hoomans-arm64.apk",
         "hash": "412998711771a89d1bc6469e8f034675543d5cbecf978a3493604e134ff3467a",
         "hashType": "sha256",
@@ -2294,9 +2375,9 @@
     ],
     "com.rp.hypertrophy": [
       {
-        "added": 1788290657854,
+        "added": 1788300497140,
         "apkName": "hypertrophy-1.1.0-hoodles-arm64.apk",
-        "hash": "2e906b451735c5d1aeffc3011c728ed910d023ac346f3f64f8e3ab26f0bf131a",
+        "hash": "1b099620a1bff7963104355277ab88483ce671dd3d44a382696d89838f248449",
         "hashType": "sha256",
         "packageName": "com.rp.hypertrophy",
         "versionCode": 58,
@@ -2311,7 +2392,7 @@
     ],
     "com.thehungrywasp.iamsober": [
       {
-        "added": 1788290657862,
+        "added": 1788300497147,
         "apkName": "iamsober-8.6.7-hoomans-arm64.apk",
         "hash": "798b922813e5e795e25e3e4860120cf8713743cc36b05ca39d33fcc998e09b2a",
         "hashType": "sha256",
@@ -2328,7 +2409,7 @@
     ],
     "jp.ne.ibis.ibispaintx.app": [
       {
-        "added": 1788290657922,
+        "added": 1788300497206,
         "apkName": "ibispaintx.app-14.0.11-hoodles-arm64.apk",
         "hash": "4ae6af9c78ffbb7fd8a51b39dc49b7055e74b8f8ee095aa703ea261c00927bb4",
         "hashType": "sha256",
@@ -2345,9 +2426,9 @@
     ],
     "cn.ommiao.iconpacker": [
       {
-        "added": 1788290657982,
+        "added": 1788300497269,
         "apkName": "iconpacker-1.21.0-release-hoodles-arm64.apk",
-        "hash": "4b8b34ec1a1f5ac07b5945a2f27ddbe2be17b804ca8a30b214abeca6feab8cfa",
+        "hash": "267205bbc7e3b1c558f86b9370ad1037e0bc42d90b9337639ac6d4d983cfa5cc",
         "hashType": "sha256",
         "packageName": "cn.ommiao.iconpacker",
         "versionCode": 35,
@@ -2362,7 +2443,7 @@
     ],
     "ginlemon.iconpackstudio": [
       {
-        "added": 1788290658025,
+        "added": 1788300497303,
         "apkName": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
         "hash": "47c001eeb2f2db7842690919b7af55fafdf1ec2629f7f26989e92dfb23b9631e",
         "hashType": "sha256",
@@ -2379,7 +2460,7 @@
     ],
     "com.camerasideas.instashot": [
       {
-        "added": 1788290658080,
+        "added": 1788300497355,
         "apkName": "instashot-2.214.1539-hoomans-arm64.apk",
         "hash": "9f016c336fbd83c33f341bbe002266b85c84361b525cc8eb8673d4c1c63f6800",
         "hashType": "sha256",
@@ -2396,7 +2477,7 @@
     ],
     "net.binarymode.android.irplus": [
       {
-        "added": 1788290658153,
+        "added": 1788300497422,
         "apkName": "irplus-1.9.13-de-vanced-arm64.apk",
         "hash": "14c8ab3299ee8249552fa11c74f53f6b0ef443529199bb8cb30e60b20e0b4774",
         "hashType": "sha256",
@@ -2413,7 +2494,7 @@
     ],
     "com.facebook.katana": [
       {
-        "added": 1788290658173,
+        "added": 1788300497443,
         "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
         "hash": "edf00439584e7b21c4b1ecb9fc87af3376a6525dcba8fa7900de20d5280ce36b",
         "hashType": "sha256",
@@ -2430,7 +2511,7 @@
     ],
     "com.kick.mobile": [
       {
-        "added": 1788290658273,
+        "added": 1788300497539,
         "apkName": "kick.mobile-40.29.1-hxreborn-arm64.apk",
         "hash": "c8abac478d27149d8a4d96a0f119f66544ee679c2498252a8c031b1c396527e9",
         "hashType": "sha256",
@@ -2447,7 +2528,7 @@
     ],
     "com.letterboxd.letterboxd": [
       {
-        "added": 1788290658388,
+        "added": 1788300497644,
         "apkName": "letterboxd-3.5.6-de-vanced-arm64.apk",
         "hash": "9a5984523e0d737267ddc92e27f2906a8e7011508e0f02d71d13033e226abd45",
         "hashType": "sha256",
@@ -2464,7 +2545,7 @@
     ],
     "com.naver.linewebtoon": [
       {
-        "added": 1788290658507,
+        "added": 1788300497755,
         "apkName": "linewebtoon-3.9.5-hoomans-arm64.apk",
         "hash": "537600a865ba533e4f97448b12a633c38061bb298bde343b8f80b7f1121665d9",
         "hashType": "sha256",
@@ -2481,14 +2562,14 @@
     ],
     "com.lingodeer": [
       {
-        "added": 1788290658591,
+        "added": 1788300497844,
         "apkName": "lingodeer-2.99.412-hoodles-arm64.apk",
-        "hash": "595dd3023ae8f9f3e444c6e63407eb7467a0ae25209271a8af149e1f2a12e41d",
+        "hash": "33965ec29aecd628c8eb84ac08a570b140b31cf995b354a9108a86dd7ec87e7b",
         "hashType": "sha256",
         "packageName": "com.lingodeer",
         "versionCode": 676,
         "versionName": "2.99.412",
-        "size": 61212239,
+        "size": 61187611,
         "appName": "LingoDeer",
         "minSdkVersion": 24,
         "targetSdkVersion": 36,
@@ -2498,9 +2579,9 @@
     ],
     "org.languageapp.lingory": [
       {
-        "added": 1788290658658,
+        "added": 1788300497901,
         "apkName": "lingory-1.2.75-hoodles-arm64.apk",
-        "hash": "06a7417d5579a23b95dcd8a9689811838e3a116064bb70decff7c530c95be3e8",
+        "hash": "845cb6a4a8f7ddb65f50ea32dc97502b68b5e7e2df0b8710de921599b1dc3a9c",
         "hashType": "sha256",
         "packageName": "org.languageapp.lingory",
         "versionCode": 177,
@@ -2515,16 +2596,16 @@
     ],
     "dk.tacit.android.foldersync.lite": [
       {
-        "added": 1788290658718,
-        "apkName": "lite-4.9.3-hoomans-arm64.apk",
-        "hash": "09615305bef709f537a67a094faf09d39994c4324cabbfd0f38f4103309a8ef8",
+        "added": 1788300497962,
+        "apkName": "lite-4.12.0-hoomans-arm64.apk",
+        "hash": "abd46d7c21a57303e7bff33f55ca0300f841c074611ec10bdcc7b3ae6fc73bed",
         "hashType": "sha256",
         "packageName": "dk.tacit.android.foldersync.lite",
-        "versionCode": 2020100204,
-        "versionName": "4.9.3",
-        "size": 38012375,
+        "versionCode": 2020100209,
+        "versionName": "4.12.0",
+        "size": 38749879,
         "appName": "FolderSync",
-        "minSdkVersion": 26,
+        "minSdkVersion": 32,
         "targetSdkVersion": 37,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -2532,9 +2613,9 @@
     ],
     "com.adobe.lrmobile": [
       {
-        "added": 1788290658771,
+        "added": 1788300497999,
         "apkName": "lrmobile-11.5.01-hoodles-arm64.apk",
-        "hash": "da521d63b7d88ed52ef3233cc8f79c034d1018a70a4f84d9ef367b9353ab037d",
+        "hash": "98a0f1bec872e8c7c4a86b3ff0021a0a94d1847660d9d4636c33c66cdfbd5e95",
         "hashType": "sha256",
         "packageName": "com.adobe.lrmobile",
         "versionCode": 711105100,
@@ -2549,9 +2630,9 @@
     ],
     "com.lyfta": [
       {
-        "added": 1788290659052,
+        "added": 1788300498237,
         "apkName": "lyfta-1.551-hoodles-arm64.apk",
-        "hash": "f218d1763e0c83bf8af3ea50d995ea3233946ea6646b8b81284d6ba93dd64bf4",
+        "hash": "cc0c7bbca2f13f47ee06bf46d9a5762be54efca8a5b99ddcd360f2b9da23c957",
         "hashType": "sha256",
         "packageName": "com.lyfta",
         "versionCode": 551,
@@ -2566,9 +2647,9 @@
     ],
     "com.google.android.apps.magazines": [
       {
-        "added": 1788290659087,
+        "added": 1788300498267,
         "apkName": "magazines-5.161.0.931240252-hoodles-arm64.apk",
-        "hash": "552c74352cdacfb4fcb990c4e11806ff07c0c70e18868ece8d5cd30bc5bffb26",
+        "hash": "947c57160b46aeba1a0ce7c18f3926b847f8ec2cab3664b030feed132f3dd971",
         "hashType": "sha256",
         "packageName": "com.google.android.apps.magazines",
         "versionCode": 2022244226,
@@ -2583,7 +2664,7 @@
     ],
     "de.gmx.mobile.android.mail": [
       {
-        "added": 1788290659116,
+        "added": 1788300498294,
         "apkName": "mail-9.15.1-de-vanced-arm64.apk",
         "hash": "130e02b3c8280c120658ba101a970d5af08808c7011fbc33d374acf23444e4ba",
         "hashType": "sha256",
@@ -2600,7 +2681,7 @@
     ],
     "com.merriamwebster": [
       {
-        "added": 1788290659174,
+        "added": 1788300498350,
         "apkName": "merriamwebster-5.6.2-hoodles-arm64.apk",
         "hash": "69d0d18fe8f4e020ddd0d5285113ed1e87d10234fc9b5892b5f6bd285276528e",
         "hashType": "sha256",
@@ -2617,7 +2698,7 @@
     ],
     "app.revanced.android.gms": [
       {
-        "added": 1788290659344,
+        "added": 1788300498512,
         "apkName": "microg-7.0.0-arm64.apk",
         "hash": "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19",
         "hashType": "sha256",
@@ -2632,7 +2713,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1788290659394,
+        "added": 1788300498562,
         "apkName": "microg-7.0.0-dev.6-arm64.apk",
         "hash": "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4",
         "hashType": "sha256",
@@ -2647,7 +2728,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1788290659454,
+        "added": 1788300498616,
         "apkName": "microg-7.0.0-dev.7-arm64.apk",
         "hash": "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7",
         "hashType": "sha256",
@@ -2664,9 +2745,9 @@
     ],
     "com.mirinae.mirinae": [
       {
-        "added": 1788290659504,
+        "added": 1788300498663,
         "apkName": "mirinae-2.2.2-hoodles-arm64.apk",
-        "hash": "786d9590e620851effa79a757194d7daf89191518240829e6c47abf1fc7f1ca4",
+        "hash": "bc53e87dcd989649b0a90ce659e16ee58838238bc16d076b87a68e5d6fdcb766",
         "hashType": "sha256",
         "packageName": "com.mirinae.mirinae",
         "versionCode": 198,
@@ -2681,14 +2762,14 @@
     ],
     "cn.wps.moffice_eng": [
       {
-        "added": 1788290659579,
+        "added": 1788300498732,
         "apkName": "moffice_eng-18.24-hoodles-arm64.apk",
-        "hash": "cd1891e2a44fc2e8b8dd0d2dec9d8f37ce6c3c4f91fa67644a8d85b8738940f5",
+        "hash": "a349c4cb28e02148c07547b5e350cdedb9d44d6737cc5fb14d2b4894df8fe20a",
         "hashType": "sha256",
         "packageName": "cn.wps.moffice_eng",
         "versionCode": 1553,
         "versionName": "18.24",
-        "size": 125882536,
+        "size": 125993635,
         "appName": "WPS Office",
         "minSdkVersion": 24,
         "targetSdkVersion": 35,
@@ -2698,7 +2779,7 @@
     ],
     "currency.converter.moneta": [
       {
-        "added": 1788290659758,
+        "added": 1788300498895,
         "apkName": "moneta-1.2.3-hoomans-arm64.apk",
         "hash": "6896c11df7109cf3a4307bda907f625c55f2e9f640442d2947b4ae6ef906673a",
         "hashType": "sha256",
@@ -2715,7 +2796,7 @@
     ],
     "com.realbyteapps.moneymanagerfree": [
       {
-        "added": 1788290659822,
+        "added": 1788300498951,
         "apkName": "moneymanagerfree-4.12.8 GF-hoomans-arm64.apk",
         "hash": "79494d9b9d96b417d12fbd0509ffd2b14f982d2a079b6977b9b3b76aa80e5455",
         "hashType": "sha256",
@@ -2732,7 +2813,7 @@
     ],
     "com.amazon.mp3": [
       {
-        "added": 1788290659856,
+        "added": 1788300498984,
         "apkName": "mp3-26.29.1-de-vanced-arm64.apk",
         "hash": "559a8a234844fa26edf22fff5be033076f750ffca345fa32a25a5dfa847b4ea0",
         "hashType": "sha256",
@@ -2749,14 +2830,14 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1788290660049,
+        "added": 1788300499167,
         "apkName": "music-9.15.51-morphe-arm64.apk",
-        "hash": "ecb780987c98c5ba74c420b0347e6ea820eb1c856b6bd214d88a086b800ddb4a",
+        "hash": "ebfab4b90b354944daafcad9fa98309210b7a73c795898a864266e883b78ceb8",
         "hashType": "sha256",
         "packageName": "app.morphe.android.apps.youtube.music",
         "versionCode": 2147483647,
         "versionName": "9.15.51",
-        "size": 72431355,
+        "size": 72492795,
         "appName": "YouTube Music",
         "minSdkVersion": 29,
         "targetSdkVersion": 36,
@@ -2766,7 +2847,7 @@
     ],
     "com.zhiliaoapp.musically": [
       {
-        "added": 1788290660167,
+        "added": 1788300499280,
         "apkName": "musically-46.2.3-tiktok-hx-arm64.apk",
         "hash": "33f8fa6d97e8b00f8382d7bbcea46440e747d59191070fba26a003837596da42",
         "hashType": "sha256",
@@ -2783,9 +2864,9 @@
     ],
     "me.mycake": [
       {
-        "added": 1788290660434,
+        "added": 1788300499543,
         "apkName": "mycake-6.4.0-hoodles-arm64.apk",
-        "hash": "6779e34cb334b885a7f65826ad76d824410cfa445df2336bc88b5349ea2903fd",
+        "hash": "5b72c1f1fca95627796adbbeda86d0cefcaec2ecb01d90d348831aaeca30ac4e",
         "hashType": "sha256",
         "packageName": "me.mycake",
         "versionCode": 306040001,
@@ -2800,9 +2881,9 @@
     ],
     "org.totschnig.myexpenses": [
       {
-        "added": 1788290660481,
+        "added": 1788300499587,
         "apkName": "myexpenses-3.9.8-hoodles-arm64.apk",
-        "hash": "b8fbbe148eb41aad0fdfe700fc1cafa965f63b9fedee9bb7c3fb939ffcbd5e7f",
+        "hash": "b2a101a07a21d484a6dab1e9fb9dd3ab4132097cd5e35051f4e6651552a42d4b",
         "hashType": "sha256",
         "packageName": "org.totschnig.myexpenses",
         "versionCode": 794,
@@ -2817,7 +2898,7 @@
     ],
     "com.streetwriters.notesnook": [
       {
-        "added": 1788290660504,
+        "added": 1788300499607,
         "apkName": "notesnook-3.4.10-hxreborn-arm64.apk",
         "hash": "e11f371bb8a09aa50947d0623c9c8b92cff265e5eca7918ca8494d4bf9e92979",
         "hashType": "sha256",
@@ -2834,7 +2915,7 @@
     ],
     "nl.sanomamedia.android.nu": [
       {
-        "added": 1788290660588,
+        "added": 1788300499683,
         "apkName": "nu-26.7.0-de-vanced-arm64.apk",
         "hash": "ecf339d6d031df0c54677cb1e841655cbf29ec3bcd48f4ec4746610cf1d30e81",
         "hashType": "sha256",
@@ -2851,7 +2932,7 @@
     ],
     "com.facebook.orca": [
       {
-        "added": 1788290660666,
+        "added": 1788300499760,
         "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
         "hash": "e84428db928460a0e42a921e40e5d8c1c4824427141e6168a1f8263e280b150f",
         "hashType": "sha256",
@@ -2868,7 +2949,7 @@
     ],
     "com.pandora.android": [
       {
-        "added": 1788290660776,
+        "added": 1788300499865,
         "apkName": "pandora.android-2608.1-hoodles-arm64.apk",
         "hash": "778557df9501ab73c59115e7ba6a816cfe2bfd3e74fd191c25953b2e6cfebc6d",
         "hashType": "sha256",
@@ -2885,9 +2966,9 @@
     ],
     "com.xodo.pdf.reader": [
       {
-        "added": 1788290660870,
+        "added": 1788300499955,
         "apkName": "pdf.reader-11.0.0-hoodles-arm64.apk",
-        "hash": "3e4ed8abb14f62bd729a5a5fd57126ddb132830c7959901054575093186e328c",
+        "hash": "3cf760a94f64827eea7b4165a22a6627cabfb89211cff4b458531c6eea69227e",
         "hashType": "sha256",
         "packageName": "com.xodo.pdf.reader",
         "versionCode": 211000000,
@@ -2902,7 +2983,7 @@
     ],
     "photo.editor.photoeditor.photoeditorpro": [
       {
-        "added": 1788290660997,
+        "added": 1788300500082,
         "apkName": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
         "hash": "2ca451e633646cbdcd9d443c69bb5224d506c178f0cf18d24f46fe2961ed2c5e",
         "hashType": "sha256",
@@ -2919,7 +3000,7 @@
     ],
     "com.microblink.photomath": [
       {
-        "added": 1788290661039,
+        "added": 1788300500122,
         "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
         "hash": "d10f8638563af302a3a406ef35e39706c2496dc2d28f384babcb8c9dbf10a132",
         "hashType": "sha256",
@@ -2936,7 +3017,7 @@
     ],
     "app.morphe.android.apps.photos": [
       {
-        "added": 1788290661064,
+        "added": 1788300500145,
         "apkName": "photos-7.89.0.968035987-de-vanced-arm64.apk",
         "hash": "2495398813de7940cd3a3bde1405796788c66151d0afd0bcf4d5d0623c5bd06e",
         "hashType": "sha256",
@@ -2953,14 +3034,14 @@
     ],
     "app.symfonik.music.player": [
       {
-        "added": 1788290661151,
-        "apkName": "player-15.0.1-hxreborn-arm64.apk",
-        "hash": "486faaed53b2822eb84c73b315b437152cd2e94947aa79b9164651e063a6aed1",
+        "added": 1788300500227,
+        "apkName": "player-14.1.0-hxreborn-arm64.apk",
+        "hash": "a09bb8f1d3b591057435ed8fa68c9cb03b40c73522ece8b3cd3657a082107110",
         "hashType": "sha256",
         "packageName": "app.symfonik.music.player",
-        "versionCode": 127798,
-        "versionName": "15.0.1",
-        "size": 20055882,
+        "versionCode": 127734,
+        "versionName": "14.1.0",
+        "size": 17218684,
         "appName": "Symfonik",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
@@ -2970,9 +3051,9 @@
     ],
     "com.bambuna.podcastaddict": [
       {
-        "added": 1788290661179,
+        "added": 1788300500251,
         "apkName": "podcastaddict-2026.4-hoodles-arm64.apk",
-        "hash": "b96b19255daf47d0b202ff3a31c4dc2f938c1afafc08bfd8b78ee9c629457a78",
+        "hash": "73f20408ed6e7312f85ba47ab3748ed5546320dd5a213a779d3b95c47f599ccd",
         "hashType": "sha256",
         "packageName": "com.bambuna.podcastaddict",
         "versionCode": 21673,
@@ -2987,7 +3068,7 @@
     ],
     "ch.protonmail.android": [
       {
-        "added": 1788290661218,
+        "added": 1788300500286,
         "apkName": "protonmail.android-4.15.0-hxreborn-arm64.apk",
         "hash": "a11382c898e1977cea031738d108c1572a5d61b11f5193cc107285c0a8ff9bde",
         "hashType": "sha256",
@@ -3004,14 +3085,14 @@
     ],
     "ch.protonvpn.android": [
       {
-        "added": 1788290661325,
+        "added": 1788300500384,
         "apkName": "protonvpn.android-5.19.43.0-hoodles-arm64.apk",
-        "hash": "f4e34db83d7f31fb7238cfe7bd7e19a623fc3a3114efa387caf50a521ae829cd",
+        "hash": "29cfb4d78898e1a1ffc91b043a54ee62dea8347acd22fc339ca01e56bd9f8e4f",
         "hashType": "sha256",
         "packageName": "ch.protonvpn.android",
         "versionCode": 605194300,
         "versionName": "5.19.43.0",
-        "size": 36324623,
+        "size": 36730243,
         "appName": "ProtonVPN",
         "minSdkVersion": 26,
         "targetSdkVersion": 35,
@@ -3021,7 +3102,7 @@
     ],
     "jp.pxv.android": [
       {
-        "added": 1788290661375,
+        "added": 1788300500426,
         "apkName": "pxv.android-6.141.1-de-vanced-arm64.apk",
         "hash": "f79938d7f5cb5062211710d6088360c613053e227dde551fef511011a8cf772c",
         "hashType": "sha256",
@@ -3038,7 +3119,7 @@
     ],
     "ru.iiec.pydroid3": [
       {
-        "added": 1788290661427,
+        "added": 1788300500477,
         "apkName": "pydroid3-8.4_arm64-hoodles-arm64.apk",
         "hash": "e87604dddec11aea11eefc3d375173018ab3cf733ba7939eeb964c962828b826",
         "hashType": "sha256",
@@ -3055,7 +3136,7 @@
     ],
     "com.quizlet.quizletandroid": [
       {
-        "added": 1788290661514,
+        "added": 1788300500563,
         "apkName": "quizletandroid-10.38.1-hoomans-arm64.apk",
         "hash": "e2db3f1142a7e862116774bd0a46260af279a1214e74d84e843332487d290af8",
         "hashType": "sha256",
@@ -3072,7 +3153,7 @@
     ],
     "org.readera": [
       {
-        "added": 1788290661551,
+        "added": 1788300500599,
         "apkName": "readera-26.05.20+2300-hxreborn-arm64.apk",
         "hash": "7881068545452f5e230d6270beb03c9ff85e265a0b1992db1bc9e360e7a99dcb",
         "hashType": "sha256",
@@ -3089,7 +3170,7 @@
     ],
     "com.google.android.apps.recorder": [
       {
-        "added": 1788290661572,
+        "added": 1788300500620,
         "apkName": "recorder-4.2.20260709.968193888-de-vanced-arm64.apk",
         "hash": "a7cfd6f4234787f4821946182347257c0db372620f6406513d3f00284ad063c4",
         "hashType": "sha256",
@@ -3106,7 +3187,7 @@
     ],
     "com.hv.replaio": [
       {
-        "added": 1788290661639,
+        "added": 1788300500684,
         "apkName": "replaio-3.3.9-hoomans-arm64.apk",
         "hash": "ddc58b842137df14882c01a12b12ed3248d172b9cfcfaad5a397cf227c9646ee",
         "hashType": "sha256",
@@ -3123,7 +3204,7 @@
     ],
     "com.sofascore.results": [
       {
-        "added": 1788290661688,
+        "added": 1788300500733,
         "apkName": "results-26.06.23-hoomans-arm64.apk",
         "hash": "474f1749fc076bec172c3dffe15c838ef8d7ca75fc7b5dbf3243764ab96b5793",
         "hashType": "sha256",
@@ -3140,14 +3221,14 @@
     ],
     "com.gamma.scan": [
       {
-        "added": 1788290661743,
-        "apkName": "scan-2.2.224-hxreborn-arm64.apk",
-        "hash": "a0453120f366f247da0aaaa11edd2f483d632f9d6db50f327d06d14826c9b0ae",
+        "added": 1788300500787,
+        "apkName": "scan-2.2.221-hxreborn-arm64.apk",
+        "hash": "df8960f2b928874e4cfd46f63ba2cebf4c1a61c56a012403e962746f24b1efa3",
         "hashType": "sha256",
         "packageName": "com.gamma.scan",
-        "versionCode": 224,
-        "versionName": "2.2.224",
-        "size": 15069960,
+        "versionCode": 221,
+        "versionName": "2.2.221",
+        "size": 15528886,
         "appName": "Gamma Scan",
         "minSdkVersion": 24,
         "targetSdkVersion": 36,
@@ -3157,9 +3238,9 @@
     ],
     "videoeditor.videorecorder.screenrecorder": [
       {
-        "added": 1788290661766,
+        "added": 1788300500813,
         "apkName": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
-        "hash": "f6b33292eda4746f7fbe8ac300e20d398587a1ecb4c50a84cb91fb00615a918b",
+        "hash": "934153543e44f7c36c08d0bf9e299e7aca8ac58503206f9e4d755d6be68d304d",
         "hashType": "sha256",
         "packageName": "videoeditor.videorecorder.screenrecorder",
         "versionCode": 2511001,
@@ -3174,7 +3255,7 @@
     ],
     "com.michaldrabik.showly2": [
       {
-        "added": 1788290661796,
+        "added": 1788300500838,
         "apkName": "showly2-3.70.0-hxreborn-arm64.apk",
         "hash": "c97a3b9b5cb5f256e4115bc8cfe5c839cf68ce514c81256f9b73290a3fc2185d",
         "hashType": "sha256",
@@ -3191,9 +3272,9 @@
     ],
     "com.urbandroid.sleep": [
       {
-        "added": 1788290661816,
+        "added": 1788300500863,
         "apkName": "sleep-20260816-hoodles-arm64.apk",
-        "hash": "8f79cad830a8d3cb68468022b70c8351e45e7f0e29b4f801b698daf7129c3137",
+        "hash": "a730888009f909e66b8403defde5077508e558979ccfd63b91ea5253e6656ce9",
         "hashType": "sha256",
         "packageName": "com.urbandroid.sleep",
         "versionCode": 231132,
@@ -3208,7 +3289,7 @@
     ],
     "com.nothing.smartcenter": [
       {
-        "added": 1788290661885,
+        "added": 1788300500926,
         "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
         "hash": "54f0660d253ffdfb9bf0873e55c0188e2aba90fa948c299ef7d6a6bcd1d0b637",
         "hashType": "sha256",
@@ -3225,9 +3306,9 @@
     ],
     "com.snorelab.app": [
       {
-        "added": 1788290662154,
+        "added": 1788300501201,
         "apkName": "snorelab.app-2.27.3.6291-hoodles-arm64.apk",
-        "hash": "ad6fece9c9531a752bb7f6346e3752fb18b6fe254d26dde8d8321f33252ea367",
+        "hash": "d9967d1b03b5b88f7875aa490b548d1fef13fca99677af9b90e9e92b38fa4185",
         "hashType": "sha256",
         "packageName": "com.snorelab.app",
         "versionCode": 62910,
@@ -3242,9 +3323,9 @@
     ],
     "pl.solidexplorer2": [
       {
-        "added": 1788290662239,
+        "added": 1788300501271,
         "apkName": "solidexplorer2-3.5.19-hoodles-arm64.apk",
-        "hash": "25d8debe37b0f6fabdbe0820e90bff516a7b0b9952b36fb3d310894330159f9c",
+        "hash": "55d3d421554676792e5a249e74e5c2d69df56a3197fa08727418549a4e1830b5",
         "hashType": "sha256",
         "packageName": "pl.solidexplorer2",
         "versionCode": 305191,
@@ -3259,16 +3340,16 @@
     ],
     "com.soundcloud.android": [
       {
-        "added": 1788290662279,
+        "added": 1788300501307,
         "apkName": "soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
-        "hash": "24a5f704282a12db2d7cd5b8edd3f454bf619c02541e697b6e6f8cce80ef5536",
+        "hash": "d90111fe71f73b346bc1e534e2dd3baed2f3ffa9e5999e5e19c5768457a4e897",
         "hashType": "sha256",
         "packageName": "com.soundcloud.android",
         "versionCode": 369070,
         "versionName": "2026.08.26-release",
-        "size": 54802456,
+        "size": 54229016,
         "appName": "SoundCloud",
-        "minSdkVersion": 29,
+        "minSdkVersion": 32,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -3276,7 +3357,7 @@
     ],
     "org.zwanoo.android.speedtest": [
       {
-        "added": 1788290662350,
+        "added": 1788300501363,
         "apkName": "speedtest-7.0.4-xtra-arm64.apk",
         "hash": "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7",
         "hashType": "sha256",
@@ -3293,7 +3374,7 @@
     ],
     "io.stashteam.games.tracker.stashapp": [
       {
-        "added": 1788290662385,
+        "added": 1788300501396,
         "apkName": "stashapp-2.48.2-hoomans-arm64.apk",
         "hash": "4a0d36f468e750b1227adc99e528ee47b121b7803d152cc3145d70e3ab907c10",
         "hashType": "sha256",
@@ -3310,7 +3391,7 @@
     ],
     "com.noctuasoftware.stellarium_free": [
       {
-        "added": 1788290662440,
+        "added": 1788300501444,
         "apkName": "stellarium_free-1.16.3-xtra-arm64.apk",
         "hash": "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6",
         "hashType": "sha256",
@@ -3327,7 +3408,7 @@
     ],
     "com.strava": [
       {
-        "added": 1788290662595,
+        "added": 1788300501581,
         "apkName": "strava-477.14-de-vanced-arm64.apk",
         "hash": "f868155891eb8fd4d7685289b510675d2aeddcde2eaa8f89f652b26aa9882937",
         "hashType": "sha256",
@@ -3344,9 +3425,9 @@
     ],
     "com.superchinese": [
       {
-        "added": 1788290662724,
+        "added": 1788300501707,
         "apkName": "superchinese-6.6.3-hoodles-arm64.apk",
-        "hash": "f90006471147528dad70059662aaa9f85973f8eb7328abfc9c74b800145b28af",
+        "hash": "d1ec166e94b495deaead403d836cd265cda33eabeb6ea51217cf86499bab5b2b",
         "hashType": "sha256",
         "packageName": "com.superchinese",
         "versionCode": 393,
@@ -3361,7 +3442,7 @@
     ],
     "com.atomengineapps.teachmeanatomy": [
       {
-        "added": 1788290662882,
+        "added": 1788300501865,
         "apkName": "teachmeanatomy-5.115-hoomans-arm64.apk",
         "hash": "b543488b50aee127bf93e7d4aa4278b72eec5936fbc861f3a54bd8690318707a",
         "hashType": "sha256",
@@ -3376,9 +3457,26 @@
         "sig": "2b4d9183"
       }
     ],
+    "com.thetrainline": [
+      {
+        "added": 1788300502018,
+        "apkName": "thetrainline-407.0.0.178994-hxreborn-arm64.apk",
+        "hash": "6b6c65564027a7ca13b36fbb0b732d511ccd049dd8c6bde7b046c64812780508",
+        "hashType": "sha256",
+        "packageName": "com.thetrainline",
+        "versionCode": 1278994,
+        "versionName": "407.0.0.178994",
+        "size": 56853037,
+        "appName": "Trainline",
+        "minSdkVersion": 26,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
     "com.todoist": [
       {
-        "added": 1788290663035,
+        "added": 1788300502072,
         "apkName": "todoist-v12260-hoomans-arm64.apk",
         "hash": "323f35f65387ed9eb17be3b6618e9da2fb109401c1472698d000630d6a78d776",
         "hashType": "sha256",
@@ -3395,7 +3493,7 @@
     ],
     "com.tracked.mobile": [
       {
-        "added": 1788290663075,
+        "added": 1788300502115,
         "apkName": "tracked.mobile-7.0.0-hoomans-arm64.apk",
         "hash": "98732adbc94aa65d59b3c97d2e46bbbc98a31eb983ea12b31486af1c34e4ca98",
         "hashType": "sha256",
@@ -3412,9 +3510,9 @@
     ],
     "com.sbs.train": [
       {
-        "added": 1788290663199,
+        "added": 1788300502232,
         "apkName": "train-1.2.1-hoodles-arm64.apk",
-        "hash": "f376ec96d54d2abfc76c41896dd3011683cb705cf7711f703ba0aad0d4092f96",
+        "hash": "1573ea29422058c11c18d798bb745965aa3d93aa0932666754e3bafdb7f1600d",
         "hashType": "sha256",
         "packageName": "com.sbs.train",
         "versionCode": 85,
@@ -3429,9 +3527,9 @@
     ],
     "app.ttmikstories.android": [
       {
-        "added": 1788290663475,
+        "added": 1788300502448,
         "apkName": "ttmikstories.android-1.16.0-hoodles-arm64.apk",
-        "hash": "f993db3e0ebdf5c1e41d9e555c5c0490961511108ddf3a138747d9a075cbf9d7",
+        "hash": "60773a729aa4e8c11fd9d0f46c485d31db7c57d19b53028ccb9dc363b3c09b1c",
         "hashType": "sha256",
         "packageName": "app.ttmikstories.android",
         "versionCode": 605,
@@ -3446,26 +3544,26 @@
     ],
     "com.tumblr": [
       {
-        "added": 1788290663622,
-        "apkName": "tumblr-45.0.0.109-hoomans-arm64.apk",
-        "hash": "7c358009ad01bfaa000f533b5b657ea9a3c82cf6b56b59edfd1f03122c0238d4",
+        "added": 1788300502576,
+        "apkName": "tumblr-45.8.0.110-hoomans-arm64.apk",
+        "hash": "181308cf0d0ade1a302d784f7e10bfc8827ad7efe6b15691a737cdc98712da2c",
         "hashType": "sha256",
         "packageName": "com.tumblr",
-        "versionCode": 1450000109,
-        "versionName": "45.0.0.109",
-        "size": 37785749,
+        "versionCode": 1450800110,
+        "versionName": "45.8.0.110",
+        "size": 38118581,
         "appName": "Tumblr",
         "minSdkVersion": 26,
-        "targetSdkVersion": 35,
+        "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
       }
     ],
     "com.simyasolutions.ling.universal": [
       {
-        "added": 1788290663680,
+        "added": 1788300502630,
         "apkName": "universal-8.4.4-hoodles-arm64.apk",
-        "hash": "89a81127e0410c13d26301aa3a1ed515f17bcce8891369c12bb2d15a037c9a40",
+        "hash": "9a6abf79b90e790ccc13348aab2544b9ea0144e8fdc97983eade13ca2684d198",
         "hashType": "sha256",
         "packageName": "com.simyasolutions.ling.universal",
         "versionCode": 10110,
@@ -3480,7 +3578,7 @@
     ],
     "com.ufovpn.connect.velnet": [
       {
-        "added": 1788290663788,
+        "added": 1788300502740,
         "apkName": "velnet-2.6.26-xtra-arm64.apk",
         "hash": "69fc727d16d98244e9f1dd7976dd26992bade254e42f8d2b10ff9b70e39e8748",
         "hashType": "sha256",
@@ -3497,16 +3595,16 @@
     ],
     "cz.ackee.ventusky": [
       {
-        "added": 1788290663880,
+        "added": 1788300502828,
         "apkName": "ventusky-53.1-hoodles-arm64.apk",
-        "hash": "45cdbbed19242dae4fb7ebccccfce8371408ff3910000a08837638f6ba50d321",
+        "hash": "cf6d7839eef789f025a5c5dbd02a9b564b72956360f825cc8decea37ded99a04",
         "hashType": "sha256",
         "packageName": "cz.ackee.ventusky",
         "versionCode": 53100,
         "versionName": "53.1",
-        "size": 42329603,
+        "size": 42276454,
         "appName": "Ventusky",
-        "minSdkVersion": 29,
+        "minSdkVersion": 32,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -3514,7 +3612,7 @@
     ],
     "app.remux.video.converter": [
       {
-        "added": 1788290663925,
+        "added": 1788300502871,
         "apkName": "video.converter-3.2.2-hoomans-arm64.apk",
         "hash": "14a24b30ad61b30af83821fe92138776782c93630c93694ea726cb49658c9ccf",
         "hashType": "sha256",
@@ -3531,7 +3629,7 @@
     ],
     "com.vpn.free.hotspot.secure.vpnify": [
       {
-        "added": 1788290664050,
+        "added": 1788300502991,
         "apkName": "vpnify-2.2.9-xtra-arm64.apk",
         "hash": "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28",
         "hashType": "sha256",
@@ -3548,9 +3646,9 @@
     ],
     "nom.vrd": [
       {
-        "added": 1788290664079,
+        "added": 1788300503020,
         "apkName": "vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
-        "hash": "a6922c346d63cbd9099fba72b2cb667246814e7aabed3a90dbbb87ba2568787a",
+        "hash": "bde80b1dd86a14ca2a3f72de40904d3dddec87e62ba0a8f95976b6689d8a356d",
         "hashType": "sha256",
         "packageName": "nom.vrd",
         "versionCode": 49,
@@ -3565,7 +3663,7 @@
     ],
     "com.vitotechnology.sky.tonight.map.star.walk": [
       {
-        "added": 1788290664177,
+        "added": 1788300503117,
         "apkName": "walk-2.5.0-xtra-arm64.apk",
         "hash": "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321",
         "hashType": "sha256",
@@ -3582,9 +3680,9 @@
     ],
     "com.wallpaperscraft.wallpaper": [
       {
-        "added": 1788290664419,
+        "added": 1788300503350,
         "apkName": "wallpaper-3.61.01-hoodles-arm64.apk",
-        "hash": "b8b2cbcea53548ca489adbbfc8a6c74ed41b84da780418519a3bcb95ffa84b4e",
+        "hash": "8ccff2df3b2114123136863eb0bc4b73d49051eb71515cee46d91677f2939e80",
         "hashType": "sha256",
         "packageName": "com.wallpaperscraft.wallpaper",
         "versionCode": 36101,
@@ -3599,7 +3697,7 @@
     ],
     "com.backdrops.wallpapers": [
       {
-        "added": 1788290664497,
+        "added": 1788300503420,
         "apkName": "wallpapers-6.1.2-xtra-arm64.apk",
         "hash": "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062",
         "hashType": "sha256",
@@ -3616,7 +3714,7 @@
     ],
     "com.wanderlog.android": [
       {
-        "added": 1788290664527,
+        "added": 1788300503448,
         "apkName": "wanderlog.android-2.208-hoomans-arm64.apk",
         "hash": "59d8c7de55e89ae7f502195c9f1e100dffa1ca84482d37458bcd90bbfa38143a",
         "hashType": "sha256",
@@ -3633,16 +3731,16 @@
     ],
     "com.mobilefootie.wc2010": [
       {
-        "added": 1788290664688,
+        "added": 1788300503609,
         "apkName": "wc2010-236.17398.20260827-hoodles-arm64.apk",
-        "hash": "004a1512dc3a70e8ac852db4b54b15f0253052e66e02d8edfb13686eae2d38fe",
+        "hash": "197d1a4e761cb9b148f0dacf37ed336758015f648399ae405a0c1887acdc1d82",
         "hashType": "sha256",
         "packageName": "com.mobilefootie.wc2010",
         "versionCode": 17398,
         "versionName": "236.17398.20260827",
-        "size": 30728763,
+        "size": 31842875,
         "appName": "MobileFootie",
-        "minSdkVersion": 32,
+        "minSdkVersion": 29,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
         "sig": "2b4d9183"
@@ -3650,15 +3748,32 @@
     ],
     "com.windyty.android": [
       {
-        "added": 1788290664743,
+        "added": 1788300503668,
         "apkName": "windyty.android-51.0.1-hoodles-arm64.apk",
-        "hash": "5e50057c8113a6b205e1acc47234c0fc93511d5fc4cce6dd9a7881c47f5ff6b0",
+        "hash": "aae1dd3e5f31b62c093d7a058e52d7e7dcdf6e58fd64334e52fe7e4afbf06e9d",
         "hashType": "sha256",
         "packageName": "com.windyty.android",
         "versionCode": 5100010,
         "versionName": "51.0.1",
         "size": 43646401,
         "appName": "Windy",
+        "minSdkVersion": 32,
+        "targetSdkVersion": 36,
+        "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
+        "sig": "2b4d9183"
+      }
+    ],
+    "app.morphe.android.youtube": [
+      {
+        "added": 1788300503723,
+        "apkName": "youtube-21.07.247-morphe-arm64.apk",
+        "hash": "9ab1b851749c96eae89a45de280a575f46fc9642c75d73d0516fbf10728dd96a",
+        "hashType": "sha256",
+        "packageName": "app.morphe.android.youtube",
+        "versionCode": 2147483647,
+        "versionName": "21.07.247",
+        "size": 115589183,
+        "appName": "YouTube",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
         "signer": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7",
