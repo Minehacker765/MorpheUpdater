@@ -43,10 +43,41 @@ def main() -> None:
         class RobustFileHandler(logging.FileHandler):
             def emit(self, record):
                 try:
-                    Path(self.baseFilename).parent.mkdir(parents=True, exist_ok=True)
+                    p = Path(self.baseFilename)
+                    p.parent.mkdir(parents=True, exist_ok=True)
+                    if not p.exists():
+                        if self.stream:
+                            try:
+                                self.stream.close()
+                            except Exception:
+                                pass
+                            self.stream = None
+                        try:
+                            self.stream = self._open()
+                        except Exception:
+                            pass
+                    latest = p.parent / "latest.log"
+                    if not latest.exists() and not latest.is_symlink():
+                        try:
+                            latest.symlink_to(p.name)
+                        except Exception:
+                            pass
                 except Exception:
                     pass
-                super().emit(record)
+                try:
+                    super().emit(record)
+                except Exception:
+                    try:
+                        if self.stream:
+                            try:
+                                self.stream.close()
+                            except Exception:
+                                pass
+                            self.stream = None
+                        self.stream = self._open()
+                        super().emit(record)
+                    except Exception:
+                        pass
         fh = RobustFileHandler(str(dated), encoding="utf-8")
         fh.setLevel(logging.INFO)
         fh.setFormatter(logging.Formatter("%(asctime)s %(levelname)-7s %(name)s: %(message)s", datefmt="%Y-%m-%d %H:%M:%S"))
