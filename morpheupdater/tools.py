@@ -377,7 +377,11 @@ async def recommended_version(jar: Path, urls: list[str], package: str, cfg: dic
             # keep original error if fallback also fails
             pass
     if rc != 0:
-        raise RuntimeError(f"list-versions failed:\n{out[-800:]}")
+        # show head (actual error) + tail (help) instead of tail-only spam
+        head = out[:800]
+        tail = out[-800:]
+        snippet = head if head == tail else f"{head}\n...\n{tail}"
+        raise RuntimeError(f"list-versions failed (rc={rc} pr={use_prerelease} url={urls[0][:60] if urls else '?'}):\n{snippet}")
     highest: str | None = None
     for block in BLOCK_RE.finditer(out):
         if block.group("pkg") != package:

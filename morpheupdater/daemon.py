@@ -40,7 +40,7 @@ from .tools import apk_info
 log = logging.getLogger("daemon")
 
 DOWNLOAD_CONCURRENCY = 4
-ver_sem = asyncio.Semaphore(4)
+ver_sem = asyncio.Semaphore(2)
 pure_sem = asyncio.Semaphore(4)
 play_ver_sem = asyncio.Semaphore(3)
 
@@ -628,7 +628,8 @@ async def _fetch_adguard(session: ClientSession) -> tuple[str, int, pathlib.Path
 
 
 async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache):
-    urls = _get_bundle_urls(cfg, combo)
+    # use cached MPP when available to avoid GitHub burst (same as patch)
+    urls = _get_patch_inputs(cfg, combo)
     if len(urls) != len(combo):
         return (app, combo, None, None, f"unknown bundle name")
     if app["package"] in ("com.mgoogle.android.gms", "com.adguard.android"):
@@ -888,7 +889,7 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
 
         # ── parallel version+vc resolution (was sequential before) ─────────────
         if version_targets:
-            log.info("resolving %d version(s) in parallel (ver_sem=4, pure_sem=4, play_ver_sem=3)", len(version_targets))
+            log.info("resolving %d version(s) in parallel (ver_sem=2, pure_sem=4, play_ver_sem=3)", len(version_targets))
             tasks = [
                 _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_cache)
                 for app, combo, _archs, _over in version_targets
