@@ -7,11 +7,15 @@ import asyncio
 import re
 from dataclasses import dataclass, field
 
+import logging
+
 from aiohttp import ClientSession, ClientTimeout
 
 from . import pb
 from .profiles import get_priority_profiles
 from .settings import ROOT, TMP
+
+log = logging.getLogger("play")
 
 DISPENSER = "https://auroraoss.com/api/auth"
 FDFE = "https://android.clients.google.com/fdfe"
@@ -389,7 +393,9 @@ async def fetch_version_codes(session: ClientSession, package: str, attempts: in
         codes = entry.get("codes")
         if isinstance(codes, dict) and time.time() - at < PURE_CACHE_TTL:
             # normalize int
+            log.debug("%s: pure cache hit (%d versions, age %ds)", package, len(codes), int(time.time() - at))
             return {str(k): int(v) for k, v in codes.items() if str(v).isdigit()}
+    log.info("%s: getting version codes (pureapk)...", package)
     last_err: Exception | None = None
     for attempt in range(attempts):
         async with session.get(
@@ -400,17 +406,21 @@ async def fetch_version_codes(session: ClientSession, package: str, attempts: in
         ) as resp:
             if resp.status == 429:
                 wait = int(resp.headers.get("Retry-After") or 0) or 20 * (attempt + 1)
+                log.warning("%s: pure rate-limited (429), retrying in %ds (attempt %d/%d)", package, wait, attempt + 1, attempts)
                 last_err = PlayError(f"metadata source rate-limited {package}")
                 await asyncio.sleep(wait)
                 continue
             if resp.status != 200:
+                log.warning("%s: pure HTTP %s", package, resp.status)
                 raise PlayError(f"metadata source HTTP {resp.status} for {package}")
             codes = parse_version_codes(await resp.read())
             if not codes:
+                log.warning("%s: pure returned no versions", package)
                 raise PlayError(f"no versions found for {package}")
             # save to disk cache
             cache[package] = {"at": int(time.time()), "codes": codes}
             _save_pure_cache(cache)
+            log.info("%s: pure got %d versions", package, len(codes))
             return codes
     raise last_err or PlayError(f"metadata source failed for {package}")
 

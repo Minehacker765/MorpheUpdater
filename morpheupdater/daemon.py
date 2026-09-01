@@ -706,18 +706,30 @@ async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_ca
         return (app, combo, "direct", 0, None)
     try:
         version = await _recommended(cfg, urls, app["package"], ver_cache)
-        if not version or version.strip().lower() == "any":
+        is_any = not version or version.strip().lower() == "any"
+        det_for_any = None
+        if is_any:
             arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
+            log.info("%s: list-versions Any (universal), fetching Play details for vc [%s]", short(app["package"]), arch0)
             async with play_ver_sem:
                 auth_tmp = await holder.get(session, arch0)
                 det_tmp = await play.get_details(session, auth_tmp, app["package"])
             if not det_tmp.version_code:
                 return (app, combo, None, None, "no versions listed and Play details failed for universal patch")
             version = det_tmp.version_string or str(det_tmp.version_code)
+            det_for_any = det_tmp
+            log.info("%s: Any -> %s vc%d (Play, no pure needed)", short(app["package"]), version, det_tmp.version_code)
         try:
-            arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
-            async with pure_sem:
-                vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
+            if is_any and det_for_any is not None:
+                # use Play vc directly, no pure hit
+                vc = det_for_any.version_code
+                vc_cache[app["package"]] = {version: vc}
+            else:
+                arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
+                log.debug("%s: getting version codes for %s [%s]", short(app["package"]), version, arch0)
+                async with pure_sem:
+                    vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
+                log.debug("%s: %s -> vc%d", short(app["package"]), version, vc)
         except Exception as e:
             if "no versions found" in str(e):
                 arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
