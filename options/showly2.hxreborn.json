@@ -1,0 +1,27 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-09-01T04:09:07.081324564Z",
+            "updated_at": "2026-09-01T04:09:11.938279700Z",
+            "source": "v1.1.0-dev.1__patches-1.1.0-dev.1.mpp",
+            "sha256": "f405b29343e742e9a8501058f024ab0340e25d08c23718e9aa187f25d21ffd0a"
+        },
+        "patches": {
+            "Unlock premium": {
+                "enabled": true
+            },
+            "Disable tracking": {
+                "enabled": true
+            },
+            "Remove free accounts limit": {
+                "enabled": true
+            },
+            "Hide sidebar upselling": {
+                "enabled": true
+            },
+            "Remove 'Sent from' signature": {
+                "enabled": true
+            }
+        }
+    }
+]

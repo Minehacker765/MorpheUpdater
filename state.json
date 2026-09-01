@@ -1,5 +1,29 @@
 {
   "builds": {
+    "all.in.one.calculator|hxreborn|arm64": {
+      "app_name": "All-In-One Calculator",
+      "arch": "arm64",
+      "at": 1788235652,
+      "out": "calculator-3.4.0-hxreborn-arm64.apk",
+      "package": "all.in.one.calculator",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 340,
+      "version": "3.4.0"
+    },
+    "app.symfonik.music.player|hxreborn|arm64": {
+      "app_name": "Symfonium: Music player & cast",
+      "arch": "arm64",
+      "at": 1788235672,
+      "out": "player-15.0.1-hxreborn-arm64.apk",
+      "package": "app.symfonik.music.player",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 127798,
+      "version": "15.0.1"
+    },
     "app.ttmikstories.android|hoodles|arm64": {
       "app_name": "Korean Reading: TTMIK Stories",
       "arch": "arm64",
@@ -23,6 +47,18 @@
       },
       "vc": 1628,
       "version": "1.16.24"
+    },
+    "ch.protonmail.android|hxreborn|arm64": {
+      "app_name": "Proton Mail: Encrypted Email",
+      "arch": "arm64",
+      "at": 1788235717,
+      "out": "protonmail.android-4.15.0-hxreborn-arm64.apk",
+      "package": "ch.protonmail.android",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 11782,
+      "version": "4.15.0"
     },
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "Proton VPN: Fast & Secure VPN",
@@ -87,26 +123,50 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
-      "at": 1788206135,
-      "out": "alltrails-26.8.30-hoodles-arm64.apk",
+      "at": 1788235559,
+      "out": "alltrails-26.8.40-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.43.0"
       },
-      "vc": 60501,
-      "version": "26.8.30"
+      "vc": 60505,
+      "version": "26.8.40"
     },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1788205379,
+      "at": 1788235413,
       "out": "mp3-26.29.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 526290110,
       "version": "26.29.1"
+    },
+    "com.atmfee|xtra|arm64": {
+      "app_name": "ATM Fee Saver",
+      "arch": "arm64",
+      "at": 1788235575,
+      "out": "atmfee-3.7.9-xtra-arm64.apk",
+      "package": "com.atmfee",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 58,
+      "version": "3.7.9"
+    },
+    "com.audible.application|hxreborn|arm64": {
+      "app_name": "Audible: Audiobooks & Podcasts",
+      "arch": "arm64",
+      "at": 1788235705,
+      "out": "application-26.34.05-hxreborn-arm64.apk",
+      "package": "com.audible.application",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 2090263405,
+      "version": "26.34.05"
     },
     "com.avocards|hoodles|arm64": {
       "app_name": "Korean Flashcards & Vocabulary",
@@ -119,6 +179,18 @@
       },
       "vc": 1698219898,
       "version": "3.0.18"
+    },
+    "com.backdrops.wallpapers|xtra|arm64": {
+      "app_name": "Backdrops - Wallpapers",
+      "arch": "arm64",
+      "at": 1788235629,
+      "out": "wallpapers-6.1.2-xtra-arm64.apk",
+      "package": "com.backdrops.wallpapers",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 286,
+      "version": "6.1.2"
     },
     "com.bambuna.podcastaddict|hoodles|arm64": {
       "app_name": "Podcast Addict: Podcast player",
@@ -135,11 +207,11 @@
     "com.bandcamp.android|de-vanced|arm64": {
       "app_name": "Bandcamp",
       "arch": "arm64",
-      "at": 1788205449,
+      "at": 1788235382,
       "out": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
       "package": "com.bandcamp.android",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 220489,
       "version": "3.3.6"
@@ -183,14 +255,26 @@
     "com.cricbuzz.android|de-vanced|arm64": {
       "app_name": "Cricbuzz - Live Cricket Scores",
       "arch": "arm64",
-      "at": 1788205735,
+      "at": 1788235443,
       "out": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
       "package": "com.cricbuzz.android",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 1521062401,
       "version": "6.24.01"
+    },
+    "com.cxinventor.file.explorer|hxreborn|arm64": {
+      "app_name": "Cx File Explorer",
+      "arch": "arm64",
+      "at": 1788235703,
+      "out": "explorer-2.7.8-hxreborn-arm64.apk",
+      "package": "com.cxinventor.file.explorer",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 278,
+      "version": "2.7.8"
     },
     "com.duolingo|hoodles|arm64": {
       "app_name": "Duolingo: Language Lessons",
@@ -204,14 +288,26 @@
       "vc": 2433,
       "version": "6.92.5"
     },
+    "com.etsy.android|hxreborn|arm64": {
+      "app_name": "Etsy: Shop from Real People",
+      "arch": "arm64",
+      "at": 1788235728,
+      "out": "etsy.android-7.92.0-hxreborn-arm64.apk",
+      "package": "com.etsy.android",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 79200132,
+      "version": "7.92.0"
+    },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "Facebook",
       "arch": "arm64",
-      "at": 1788205479,
+      "at": 1788235363,
       "out": "katana-490.0.0.63.82-de-vanced-arm64.apk",
       "package": "com.facebook.katana",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 457019914,
       "version": "490.0.0.63.82"
@@ -219,14 +315,26 @@
     "com.facebook.orca|de-vanced|arm64": {
       "app_name": "Messenger",
       "arch": "arm64",
-      "at": 1788205493,
+      "at": 1788235449,
       "out": "orca-573.0.0.44.88-de-vanced-arm64.apk",
       "package": "com.facebook.orca",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 344611864,
       "version": "573.0.0.44.88"
+    },
+    "com.gamma.scan|hxreborn|arm64": {
+      "app_name": "QR & Barcode Scanner",
+      "arch": "arm64",
+      "at": 1788235739,
+      "out": "scan-2.2.224-hxreborn-arm64.apk",
+      "package": "com.gamma.scan",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 224,
+      "version": "2.2.224"
     },
     "com.getmimo|hoodles|arm64": {
       "app_name": "Learn Python Coding - Mimo",
@@ -291,11 +399,11 @@
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
       "arch": "arm64",
-      "at": 1788205710,
+      "at": 1788235482,
       "out": "recorder-4.2.20260709.968193888-de-vanced-arm64.apk",
       "package": "com.google.android.apps.recorder",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 42422613,
       "version": "4.2.20260709.968193888"
@@ -303,11 +411,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "YouTube Music",
       "arch": "arm64",
-      "at": 1788205180,
+      "at": 1788235280,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.41.0-dev.8"
+        "morphe": "v1.41.0-dev.9"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -336,14 +444,26 @@
       "vc": 72002,
       "version": "7.20.0.2606230000"
     },
+    "com.kick.mobile|hxreborn|arm64": {
+      "app_name": "KICK: Live Streaming",
+      "arch": "arm64",
+      "at": 1788235751,
+      "out": "kick.mobile-40.29.1-hxreborn-arm64.apk",
+      "package": "com.kick.mobile",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 60006936,
+      "version": "40.29.1"
+    },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
       "arch": "arm64",
-      "at": 1788205498,
+      "at": 1788235432,
       "out": "letterboxd-3.5.6-de-vanced-arm64.apk",
       "package": "com.letterboxd.letterboxd",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 498,
       "version": "3.5.6"
@@ -359,6 +479,18 @@
       },
       "vc": 676,
       "version": "2.99.412"
+    },
+    "com.llamalab.automate|xtra|arm64": {
+      "app_name": "Automate",
+      "arch": "arm64",
+      "at": 1788235582,
+      "out": "automate-1.51.1-xtra-arm64.apk",
+      "package": "com.llamalab.automate",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 262,
+      "version": "1.51.1"
     },
     "com.lyfta|hoodles|arm64": {
       "app_name": "Lyfta: Gym Log Workout Tracker",
@@ -396,14 +528,26 @@
       "vc": 255070000,
       "version": "7.0.0-dev.7"
     },
+    "com.michaldrabik.showly2|hxreborn|arm64": {
+      "app_name": "Series y Pel\u00edculas - Showly",
+      "arch": "arm64",
+      "at": 1788235751,
+      "out": "showly2-3.70.0-hxreborn-arm64.apk",
+      "package": "com.michaldrabik.showly2",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 840,
+      "version": "3.70.0"
+    },
     "com.microblink.photomath|de-vanced|arm64": {
       "app_name": "Photomath",
       "arch": "arm64",
-      "at": 1788205329,
+      "at": 1788235320,
       "out": "photomath-8.48.0-de-vanced-arm64.apk",
       "package": "com.microblink.photomath",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 70001016,
       "version": "8.48.0"
@@ -432,6 +576,18 @@
       "vc": 17398,
       "version": "236.17398.20260827"
     },
+    "com.noctuasoftware.stellarium_free|xtra|arm64": {
+      "app_name": "Stellarium - Star Map",
+      "arch": "arm64",
+      "at": 1788235592,
+      "out": "stellarium_free-1.16.3-xtra-arm64.apk",
+      "package": "com.noctuasoftware.stellarium_free",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 11200,
+      "version": "1.16.3"
+    },
     "com.nothing.smartcenter|de-vanced|arm64": {
       "app_name": "Nothing X",
       "arch": "arm64",
@@ -456,6 +612,18 @@
       "vc": 26081001,
       "version": "2608.1"
     },
+    "com.proto.circuitsimulator|xtra|arm64": {
+      "app_name": "PROTO - circuit simulator",
+      "arch": "arm64",
+      "at": 1788235595,
+      "out": "circuitsimulator-1.49.0-xtra-arm64.apk",
+      "package": "com.proto.circuitsimulator",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 94,
+      "version": "1.49.0"
+    },
     "com.qbis.guessthecountry|hoodles|arm64": {
       "app_name": "World Map Quiz",
       "arch": "arm64",
@@ -471,11 +639,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "Reddit",
       "arch": "arm64",
-      "at": 1788205237,
+      "at": 1788235345,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.41.0-dev.8"
+        "morphe": "v1.41.0-dev.9"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -555,14 +723,26 @@
     "com.strava|de-vanced|arm64": {
       "app_name": "Strava: Run, Bike, Walk",
       "arch": "arm64",
-      "at": 1788205298,
+      "at": 1788235314,
       "out": "strava-477.14-de-vanced-arm64.apk",
       "package": "com.strava",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 12399244,
       "version": "477.14"
+    },
+    "com.streetwriters.notesnook|hxreborn|arm64": {
+      "app_name": "Notesnook Secure Private Notes",
+      "arch": "arm64",
+      "at": 1788235783,
+      "out": "notesnook-3.4.10-hxreborn-arm64.apk",
+      "package": "com.streetwriters.notesnook",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 4197420,
+      "version": "3.4.10"
     },
     "com.superchinese|hoodles|arm64": {
       "app_name": "SuperChinese: Learn Chinese",
@@ -576,6 +756,30 @@
       "vc": 393,
       "version": "6.6.3"
     },
+    "com.ttxapps.autosync|xtra|arm64": {
+      "app_name": "Autosync - File Sync & Backup",
+      "arch": "arm64",
+      "at": 1788235601,
+      "out": "autosync-7.5.10-xtra-arm64.apk",
+      "package": "com.ttxapps.autosync",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 2603201,
+      "version": "7.5.10"
+    },
+    "com.ufovpn.connect.velnet|xtra|arm64": {
+      "app_name": "UFO VPN : Fastest Secure Proxy",
+      "arch": "arm64",
+      "at": 1788235615,
+      "out": "velnet-2.6.28-xtra-arm64.apk",
+      "package": "com.ufovpn.connect.velnet",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 2628,
+      "version": "2.6.28"
+    },
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
@@ -587,6 +791,30 @@
       },
       "vc": 231132,
       "version": "20260816"
+    },
+    "com.vitotechnology.sky.tonight.map.star.walk|xtra|arm64": {
+      "app_name": "Sky Tonight - Star Gazer Guide",
+      "arch": "arm64",
+      "at": 1788235627,
+      "out": "walk-2.5.0-xtra-arm64.apk",
+      "package": "com.vitotechnology.sky.tonight.map.star.walk",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 20500135,
+      "version": "2.5.0"
+    },
+    "com.vpn.free.hotspot.secure.vpnify|xtra|arm64": {
+      "app_name": "vpnify - Unlimited VPN Proxy",
+      "arch": "arm64",
+      "at": 1788235630,
+      "out": "vpnify-2.2.9-xtra-arm64.apk",
+      "package": "com.vpn.free.hotspot.secure.vpnify",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 2290052,
+      "version": "2.2.9"
     },
     "com.wallpaperscraft.wallpaper|hoodles|arm64": {
       "app_name": "Wallpaper 4K HD \u2013 Wallcraft",
@@ -651,11 +879,11 @@
     "de.gmx.mobile.android.mail|de-vanced|arm64": {
       "app_name": "GMX - Mail & Cloud",
       "arch": "arm64",
-      "at": 1788205401,
+      "at": 1788235410,
       "out": "mail-9.15.1-de-vanced-arm64.apk",
       "package": "de.gmx.mobile.android.mail",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 405203,
       "version": "9.15.1"
@@ -675,14 +903,26 @@
     "ginlemon.iconpackstudio|de-vanced|arm64": {
       "app_name": "Icon Pack Studio",
       "arch": "arm64",
-      "at": 1788205467,
+      "at": 1788235415,
       "out": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
       "package": "ginlemon.iconpackstudio",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 220160,
       "version": "2.2 build 016"
+    },
+    "io.funswitch.blocker|xtra|arm64": {
+      "app_name": "BlockerX: Content Blocker",
+      "arch": "arm64",
+      "at": 1788235653,
+      "out": "blocker-5.0.67-xtra-arm64.apk",
+      "package": "io.funswitch.blocker",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 5067,
+      "version": "5.0.67"
     },
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "ibis Paint X",
@@ -699,14 +939,26 @@
     "jp.pxv.android|de-vanced|arm64": {
       "app_name": "pixiv",
       "arch": "arm64",
-      "at": 1788205510,
+      "at": 1788235444,
       "out": "pxv.android-6.141.1-de-vanced-arm64.apk",
       "package": "jp.pxv.android",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 56869,
       "version": "6.141.1"
+    },
+    "kr.eggbun.eggconvo|hoodles|arm64": {
+      "app_name": "Eggbun: Learn Korean Fun",
+      "arch": "arm64",
+      "at": 1788235528,
+      "out": "eggconvo-4.12.19-hoodles-arm64.apk",
+      "package": "kr.eggbun.eggconvo",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 4121999,
+      "version": "4.12.19"
     },
     "me.mycake|hoodles|arm64": {
       "app_name": "Cake - Learn English & Korean",
@@ -723,26 +975,74 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "irplus - Infrared Remote",
       "arch": "arm64",
-      "at": 1788205844,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1788235481,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "nl.sanomamedia.android.nu|de-vanced|arm64": {
       "app_name": "NU.nl - Nieuws, Sport & meer",
       "arch": "arm64",
-      "at": 1788205873,
+      "at": 1788235498,
       "out": "nu-26.7.0-de-vanced-arm64.apk",
       "package": "nl.sanomamedia.android.nu",
       "tags": {
-        "de-vanced": "v1.3.0"
+        "de-vanced": "v1.3.1"
       },
       "vc": 210147,
       "version": "26.7.0"
+    },
+    "nom.vrd|hoodles|arm64": {
+      "app_name": "NOMone Desktop - Linux and VR",
+      "arch": "arm64",
+      "at": 1788235533,
+      "out": "vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
+      "package": "nom.vrd",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 49,
+      "version": "1.9.3-GooglePlay"
+    },
+    "org.languageapp.lingory|hoodles|arm64": {
+      "app_name": "Lingory - Learn Korean",
+      "arch": "arm64",
+      "at": 1788235566,
+      "out": "lingory-1.2.75-hoodles-arm64.apk",
+      "package": "org.languageapp.lingory",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 177,
+      "version": "1.2.75"
+    },
+    "org.totschnig.myexpenses|hoodles|arm64": {
+      "app_name": "My Expenses",
+      "arch": "arm64",
+      "at": 1788235578,
+      "out": "myexpenses-3.9.8-hoodles-arm64.apk",
+      "package": "org.totschnig.myexpenses",
+      "tags": {
+        "hoodles": "v1.43.0"
+      },
+      "vc": 794,
+      "version": "3.9.8"
+    },
+    "org.zwanoo.android.speedtest|xtra|arm64": {
+      "app_name": "Speedtest by Ookla",
+      "arch": "arm64",
+      "at": 1788235651,
+      "out": "speedtest-7.0.4-xtra-arm64.apk",
+      "package": "org.zwanoo.android.speedtest",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 255938,
+      "version": "7.0.4"
     },
     "pl.solidexplorer2|hoodles|arm64": {
       "app_name": "Solid Explorer File Manager",

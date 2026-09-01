@@ -1,0 +1,63 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-09-01T04:06:26.709925701Z",
+            "updated_at": "2026-09-01T04:06:32.873525992Z",
+            "source": "v2.12.0-dev.1__patches-2.12.0-dev.1.mpp",
+            "sha256": "4a70cfe77e28b79a274bf6a8581c9c51c06382d7ca6207426711acc30809b75f"
+        },
+        "patches": {
+            "Bypass ADB/Developer Options Detection": {
+                "enabled": false
+            },
+            "Disable Firebase(Google) Analytics": {
+                "enabled": false
+            },
+            "Disable Facebook SDK Tracking": {
+                "enabled": false
+            },
+            "Hide Location Permission Popup": {
+                "enabled": true
+            },
+            "Unlock Premium": {
+                "enabled": true
+            },
+            "Bypass Blocks Limit": {
+                "enabled": true
+            },
+            "Purchase All Items": {
+                "enabled": true
+            },
+            "Unlock All Features": {
+                "enabled": true
+            },
+            "Skip Login": {
+                "enabled": true
+            },
+            "Remove Ads": {
+                "enabled": true
+            },
+            "Disable In-App Telemetry": {
+                "enabled": true
+            },
+            "Disable Telemetry": {
+                "enabled": true
+            },
+            "Unlock Pro": {
+                "enabled": true
+            },
+            "Disable Logging(analytics)": {
+                "enabled": true
+            },
+            "AdFree Account": {
+                "enabled": true
+            },
+            "Install Extended (Deep Sky) Catalog": {
+                "enabled": true
+            },
+            "Unlock Plus": {
+                "enabled": true
+            }
+        }
+    }
+]
