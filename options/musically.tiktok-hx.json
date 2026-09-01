@@ -1,0 +1,99 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-09-01T12:43:55.793697024Z",
+            "updated_at": "2026-09-01T12:45:11.564709319Z",
+            "source": "v0.10.0-dev.1__patches-0.10.0-dev.1.mpp",
+            "sha256": "9bbae54cdc13eee4849811c86dc2e8f982044357f5c2095aadc2639fcce4a612"
+        },
+        "patches": {
+            "Hide CAPTCHA popups": {
+                "enabled": true
+            },
+            "Feed filter": {
+                "enabled": true
+            },
+            "Disable screen capture detection": {
+                "enabled": true
+            },
+            "Remember clear display": {
+                "enabled": true
+            },
+            "Downloads": {
+                "enabled": true
+            },
+            "Stop video looping": {
+                "enabled": true
+            },
+            "Custom offline videos limit": {
+                "enabled": true
+            },
+            "Always show publish date": {
+                "enabled": true
+            },
+            "Disable long-press quick share": {
+                "enabled": true
+            },
+            "Hide quick comment reactions": {
+                "enabled": true
+            },
+            "Resume videos after scrolling": {
+                "enabled": true
+            },
+            "Enable non-personalized search": {
+                "enabled": true
+            },
+            "Enable Live search": {
+                "enabled": true
+            },
+            "Show seekbar": {
+                "enabled": true
+            },
+            "Show seekbar thumbnail": {
+                "enabled": true
+            },
+            "Hold-and-slide 2x lock": {
+                "enabled": true
+            },
+            "Playback speed": {
+                "enabled": true
+            },
+            "Copy comments without username": {
+                "enabled": true
+            },
+            "Open external links directly": {
+                "enabled": true
+            },
+            "Feature Gate Lab": {
+                "enabled": true
+            },
+            "Disable login requirement": {
+                "enabled": true
+            },
+            "Fix Google login": {
+                "enabled": true
+            },
+            "Feed tab navigation": {
+                "enabled": true
+            },
+            "Diagnostic tools": {
+                "enabled": false
+            },
+            "Settings": {
+                "enabled": true
+            },
+            "Sanitize sharing links": {
+                "enabled": true
+            },
+            "SIM spoof": {
+                "enabled": true
+            },
+            "Disable telemetry": {
+                "enabled": true
+            },
+            "Translate comments": {
+                "enabled": true
+            }
+        }
+    }
+]

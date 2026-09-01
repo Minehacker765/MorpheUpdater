@@ -1,0 +1,90 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-09-01T12:46:00.339683975Z",
+            "updated_at": "2026-09-01T12:46:02.265727930Z",
+            "source": "v1.44.0-dev.4__patches-1.44.0-dev.4.mpp",
+            "sha256": "7df0c74e147abe58feab2c268ba276099f629a3efd057815af1e122f369bab26"
+        },
+        "patches": {
+            "Unlock Pro": {
+                "enabled": true
+            },
+            "Remove ads": {
+                "enabled": true
+            },
+            "Unlock Premium": {
+                "enabled": true
+            },
+            "Unlock Membership": {
+                "enabled": true
+            },
+            "Unlock PRO": {
+                "enabled": true
+            },
+            "Enable Premium": {
+                "enabled": true
+            },
+            "Unlock Full Version": {
+                "enabled": true
+            },
+            "Unlock Gold": {
+                "enabled": true
+            },
+            "Unlock Plus": {
+                "enabled": true
+            },
+            "Unlock aircraft data": {
+                "enabled": true
+            },
+            "Use your own Maps API key [REQUIRED]": {
+                "enabled": true,
+                "options": {
+                    "mapsApiKey": null
+                }
+            },
+            "Unlock Sober Plus": {
+                "enabled": true
+            },
+            "Unlock Moovit+": {
+                "enabled": true
+            },
+            "Unlock Full": {
+                "enabled": true
+            },
+            "Remove Ads": {
+                "enabled": true
+            },
+            "Disable ad-free banner": {
+                "enabled": true
+            },
+            "Disable in-app update": {
+                "enabled": true
+            },
+            "Disable blog notification reminder": {
+                "enabled": true
+            },
+            "Disable gift message popup": {
+                "enabled": true
+            },
+            "Disable Tumblr TV": {
+                "enabled": true
+            },
+            "Enable premium UI": {
+                "enabled": true
+            },
+            "Block live ads": {
+                "enabled": true
+            },
+            "Hide display ads": {
+                "enabled": true
+            },
+            "Auto claim channel points": {
+                "enabled": true
+            },
+            "Show deleted messages": {
+                "enabled": true
+            }
+        }
+    }
+]

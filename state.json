@@ -12,6 +12,30 @@
       "vc": 340,
       "version": "3.4.0"
     },
+    "altergames.carlauncher|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266714,
+      "out": "carlauncher-5.0.5-hoomans-arm64.apk",
+      "package": "altergames.carlauncher",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 50052,
+      "version": "5.0.5"
+    },
+    "app.remux.video.converter|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266716,
+      "out": "video.converter-3.2.2-hoomans-arm64.apk",
+      "package": "app.remux.video.converter",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 38,
+      "version": "3.2.2"
+    },
     "app.symfonik.music.player|hxreborn|arm64": {
       "app_name": "Symfonium: Music player & cast",
       "arch": "arm64",
@@ -132,6 +156,18 @@
       "vc": 60505,
       "version": "26.8.40"
     },
+    "com.alphaprogression.alphaprogression|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266739,
+      "out": "alphaprogression-7.1.1-hoomans-arm64.apk",
+      "package": "com.alphaprogression.alphaprogression",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 597,
+      "version": "7.1.1"
+    },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
@@ -144,6 +180,18 @@
       "vc": 526290110,
       "version": "26.29.1"
     },
+    "com.appfactory.essence|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266742,
+      "out": "essence-4.2.8-hoomans-arm64.apk",
+      "package": "com.appfactory.essence",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 120,
+      "version": "4.2.8"
+    },
     "com.atmfee|xtra|arm64": {
       "app_name": "ATM Fee Saver",
       "arch": "arm64",
@@ -155,6 +203,18 @@
       },
       "vc": 58,
       "version": "3.7.9"
+    },
+    "com.atomengineapps.teachmeanatomy|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266746,
+      "out": "teachmeanatomy-5.115-hoomans-arm64.apk",
+      "package": "com.atomengineapps.teachmeanatomy",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 186,
+      "version": "5.115"
     },
     "com.audible.application|hxreborn|arm64": {
       "app_name": "Audible: Audiobooks & Podcasts",
@@ -216,6 +276,30 @@
       "vc": 220489,
       "version": "3.3.6"
     },
+    "com.bandlab.bandlab|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266751,
+      "out": "bandlab-11.25.3-hoomans-arm64.apk",
+      "package": "com.bandlab.bandlab",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 11250300,
+      "version": "11.25.3"
+    },
+    "com.blockerhero|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266753,
+      "out": "blockerhero-1.5.0-hoomans-arm64.apk",
+      "package": "com.blockerhero",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 190,
+      "version": "1.5.0"
+    },
     "com.bunpoapp|hoodles|arm64": {
       "app_name": "Bunpo: Language Learning",
       "arch": "arm64",
@@ -240,6 +324,30 @@
       "vc": 1732689,
       "version": "32.46.0(1732689)"
     },
+    "com.camerasideas.instashot|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266762,
+      "out": "instashot-2.214.1539-hoomans-arm64.apk",
+      "package": "com.camerasideas.instashot",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1539,
+      "version": "2.214.1539"
+    },
+    "com.cfdrink|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266758,
+      "out": "cfdrink-1.19.11-hoomans-arm64.apk",
+      "package": "com.cfdrink",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1019011,
+      "version": "1.19.11"
+    },
     "com.chess|prathxm|arm64": {
       "app_name": "Chess.com - Do you miss us?",
       "arch": "arm64",
@@ -252,6 +360,18 @@
       "vc": 268250,
       "version": "4.10.0-googleplay"
     },
+    "com.collectrinc.collectr|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266762,
+      "out": "collectr-2.5.0-hoomans-arm64.apk",
+      "package": "com.collectrinc.collectr",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 713,
+      "version": "2.5.0"
+    },
     "com.cricbuzz.android|de-vanced|arm64": {
       "app_name": "Cricbuzz - Live Cricket Scores",
       "arch": "arm64",
@@ -263,6 +383,18 @@
       },
       "vc": 1521062401,
       "version": "6.24.01"
+    },
+    "com.cronometer.android.gold|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266764,
+      "out": "gold-4.56.0-hoomans-arm64.apk",
+      "package": "com.cronometer.android.gold",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 3262,
+      "version": "4.56.0"
     },
     "com.cxinventor.file.explorer|hxreborn|arm64": {
       "app_name": "Cx File Explorer",
@@ -288,17 +420,29 @@
       "vc": 2433,
       "version": "6.92.5"
     },
+    "com.dv.adm|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266767,
+      "out": "adm-14.0.39-hoomans-arm64.apk",
+      "package": "com.dv.adm",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 140039,
+      "version": "14.0.39"
+    },
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "Etsy: Shop from Real People",
       "arch": "arm64",
-      "at": 1788235728,
-      "out": "etsy.android-7.92.0-hxreborn-arm64.apk",
+      "at": 1788266625,
+      "out": "etsy.android-7.93.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.14.0"
       },
-      "vc": 79200132,
-      "version": "7.92.0"
+      "vc": 79300167,
+      "version": "7.93.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "Facebook",
@@ -323,6 +467,18 @@
       },
       "vc": 344611864,
       "version": "573.0.0.44.88"
+    },
+    "com.finch.finch|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266774,
+      "out": "finch-3.73.179-hoomans-arm64.apk",
+      "package": "com.finch.finch",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1487,
+      "version": "3.73.179"
     },
     "com.gamma.scan|hxreborn|arm64": {
       "app_name": "QR & Barcode Scanner",
@@ -432,6 +588,30 @@
       "vc": 402,
       "version": "7.11.0"
     },
+    "com.hevy|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266773,
+      "out": "hevy-3.1.0-hoomans-arm64.apk",
+      "package": "com.hevy",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 2092238,
+      "version": "3.1.0"
+    },
+    "com.hv.replaio|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266777,
+      "out": "replaio-3.3.9-hoomans-arm64.apk",
+      "package": "com.hv.replaio",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 2500339,
+      "version": "3.3.9"
+    },
     "com.intsig.camscanner|hoodles|arm64": {
       "app_name": "CamScanner- scanner, PDF maker",
       "arch": "arm64",
@@ -503,6 +683,18 @@
       },
       "vc": 551,
       "version": "1.551"
+    },
+    "com.maxmpz.audioplayer|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266778,
+      "out": "audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
+      "package": "com.maxmpz.audioplayer",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1025004,
+      "version": "build-1025-bundle-play"
     },
     "com.merriamwebster|hoodles|arm64": {
       "app_name": "Dictionary - Merriam-Webster",
@@ -576,6 +768,30 @@
       "vc": 17398,
       "version": "236.17398.20260827"
     },
+    "com.myvitale.forus|hxreborn|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266630,
+      "out": "forus-3.0.16-hxreborn-arm64.apk",
+      "package": "com.myvitale.forus",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 97,
+      "version": "3.0.16"
+    },
+    "com.naver.linewebtoon|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266784,
+      "out": "linewebtoon-3.9.5-hoomans-arm64.apk",
+      "package": "com.naver.linewebtoon",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 3090511,
+      "version": "3.9.5"
+    },
     "com.noctuasoftware.stellarium_free|xtra|arm64": {
       "app_name": "Stellarium - Star Map",
       "arch": "arm64",
@@ -636,6 +852,30 @@
       "vc": 148,
       "version": "3.34.2"
     },
+    "com.quizlet.quizletandroid|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266784,
+      "out": "quizletandroid-10.38.1-hoomans-arm64.apk",
+      "package": "com.quizlet.quizletandroid",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 2601771,
+      "version": "10.38.1"
+    },
+    "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266787,
+      "out": "moneymanagerfree-4.12.8 GF-hoomans-arm64.apk",
+      "package": "com.realbyteapps.moneymanagerfree",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1197,
+      "version": "4.12.8 GF"
+    },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "Reddit",
       "arch": "arm64",
@@ -659,6 +899,18 @@
       },
       "vc": 58,
       "version": "1.1.0"
+    },
+    "com.rumble.battles|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266789,
+      "out": "battles-3.14.5-hoomans-arm64.apk",
+      "package": "com.rumble.battles",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 771,
+      "version": "3.14.5"
     },
     "com.sbs.diet|hoodles|arm64": {
       "app_name": "MacroFactor - Macro Tracker",
@@ -708,6 +960,18 @@
       "vc": 62910,
       "version": "2.27.3.6291"
     },
+    "com.sofascore.results|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266794,
+      "out": "results-26.06.23-hoomans-arm64.apk",
+      "package": "com.sofascore.results",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 260623003,
+      "version": "26.06.23"
+    },
     "com.soundcloud.android|hoodles|arm64": {
       "app_name": "SoundCloud: The Music You Love",
       "arch": "arm64",
@@ -756,6 +1020,42 @@
       "vc": 393,
       "version": "6.6.3"
     },
+    "com.thehungrywasp.iamsober|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266792,
+      "out": "iamsober-8.6.7-hoomans-arm64.apk",
+      "package": "com.thehungrywasp.iamsober",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1801726444,
+      "version": "8.6.7"
+    },
+    "com.todoist|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266797,
+      "out": "todoist-v12260-hoomans-arm64.apk",
+      "package": "com.todoist",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 12260,
+      "version": "v12260"
+    },
+    "com.tracked.mobile|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266798,
+      "out": "tracked.mobile-7.0.0-hoomans-arm64.apk",
+      "package": "com.tracked.mobile",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 125,
+      "version": "7.0.0"
+    },
     "com.ttxapps.autosync|xtra|arm64": {
       "app_name": "Autosync - File Sync & Backup",
       "arch": "arm64",
@@ -768,17 +1068,29 @@
       "vc": 2603201,
       "version": "7.5.10"
     },
+    "com.tumblr|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266805,
+      "out": "tumblr-45.0.0.109-hoomans-arm64.apk",
+      "package": "com.tumblr",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1450000109,
+      "version": "45.0.0.109"
+    },
     "com.ufovpn.connect.velnet|xtra|arm64": {
       "app_name": "UFO VPN : Fastest Secure Proxy",
       "arch": "arm64",
-      "at": 1788235615,
-      "out": "velnet-2.6.28-xtra-arm64.apk",
+      "at": 1788266585,
+      "out": "velnet-2.6.26-xtra-arm64.apk",
       "package": "com.ufovpn.connect.velnet",
       "tags": {
         "xtra": "v2.12.0"
       },
-      "vc": 2628,
-      "version": "2.6.28"
+      "vc": 2626,
+      "version": "2.6.26"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "Sleep as Android: Smart alarm",
@@ -828,6 +1140,18 @@
       "vc": 36101,
       "version": "3.61.01"
     },
+    "com.wanderlog.android|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266808,
+      "out": "wanderlog.android-2.208-hoomans-arm64.apk",
+      "package": "com.wanderlog.android",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 2026061623,
+      "version": "2.208"
+    },
     "com.windyty.android|hoodles|arm64": {
       "app_name": "Windy.com - Weather Forecast",
       "arch": "arm64",
@@ -852,6 +1176,18 @@
       "vc": 211000000,
       "version": "11.0.0"
     },
+    "com.zhiliaoapp.musically|tiktok-hx|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266711,
+      "out": "musically-46.2.3-tiktok-hx-arm64.apk",
+      "package": "com.zhiliaoapp.musically",
+      "tags": {
+        "tiktok-hx": "v1.0.0"
+      },
+      "vc": 2024602030,
+      "version": "46.2.3"
+    },
     "com.zombodroid.MemeGenerator|hoodles|arm64": {
       "app_name": "Meme Generator",
       "arch": "arm64",
@@ -863,6 +1199,18 @@
       },
       "vc": 46826,
       "version": "4.6826"
+    },
+    "currency.converter.moneta|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266807,
+      "out": "moneta-1.2.3-hoomans-arm64.apk",
+      "package": "currency.converter.moneta",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 178794402,
+      "version": "1.2.3"
     },
     "cz.ackee.ventusky|hoodles|arm64": {
       "app_name": "Ventusky: Weather Forecast",
@@ -887,6 +1235,18 @@
       },
       "vc": 405203,
       "version": "9.15.1"
+    },
+    "dk.tacit.android.foldersync.lite|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266811,
+      "out": "lite-4.9.3-hoomans-arm64.apk",
+      "package": "dk.tacit.android.foldersync.lite",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 2020100204,
+      "version": "4.9.3"
     },
     "ginlemon.flowerfree|hoodles|arm64": {
       "app_name": "Smart Launcher 6 \u2027 Home Screen",
@@ -923,6 +1283,18 @@
       },
       "vc": 5067,
       "version": "5.0.67"
+    },
+    "io.stashteam.games.tracker.stashapp|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266813,
+      "out": "stashapp-2.48.2-hoomans-arm64.apk",
+      "package": "io.stashteam.games.tracker.stashapp",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 250,
+      "version": "2.48.2"
     },
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "ibis Paint X",
@@ -975,14 +1347,26 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "irplus - Infrared Remote",
       "arch": "arm64",
-      "at": 1788235481,
-      "out": "irplus-1.10-de-vanced-arm64.apk",
+      "at": 1788266555,
+      "out": "irplus-1.9.13-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 322,
-      "version": "1.10"
+      "vc": 307,
+      "version": "1.9.13"
+    },
+    "net.uniquegem.directchat|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266815,
+      "out": "directchat-1.9.8-hoomans-arm64.apk",
+      "package": "net.uniquegem.directchat",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 125,
+      "version": "1.9.8"
     },
     "nl.sanomamedia.android.nu|de-vanced|arm64": {
       "app_name": "NU.nl - Nieuws, Sport & meer",
@@ -1020,6 +1404,18 @@
       "vc": 177,
       "version": "1.2.75"
     },
+    "org.readera|hxreborn|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266632,
+      "out": "readera-26.05.20+2300-hxreborn-arm64.apk",
+      "package": "org.readera",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 2300,
+      "version": "26.05.20+2300"
+    },
     "org.totschnig.myexpenses|hoodles|arm64": {
       "app_name": "My Expenses",
       "arch": "arm64",
@@ -1044,6 +1440,18 @@
       "vc": 255938,
       "version": "7.0.4"
     },
+    "photo.editor.photoeditor.photoeditorpro|hxreborn|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266634,
+      "out": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
+      "package": "photo.editor.photoeditor.photoeditorpro",
+      "tags": {
+        "hxreborn": "v1.14.0"
+      },
+      "vc": 265100,
+      "version": "1.791.265"
+    },
     "pl.solidexplorer2|hoodles|arm64": {
       "app_name": "Solid Explorer File Manager",
       "arch": "arm64",
@@ -1067,6 +1475,18 @@
       },
       "vc": 1131,
       "version": "8.4_arm64"
+    },
+    "studio.muggle.chatboost|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788266817,
+      "out": "chatboost-3.23.0-hoomans-arm64.apk",
+      "package": "studio.muggle.chatboost",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 300500229,
+      "version": "3.23.0"
     },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
