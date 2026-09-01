@@ -691,8 +691,15 @@ async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_ca
         return (app, combo, None, None, f"unknown bundle name")
     if app["package"] in ("com.mgoogle.android.gms", "com.adguard.android"):
         return (app, combo, "direct", 0, None)
+    pkg_short = short(app["package"])
+    log.debug("%s: start list-versions [%s]", pkg_short, combo_id(combo))
     try:
-        version = await _recommended(cfg, urls, app["package"], ver_cache)
+        try:
+            version = await asyncio.wait_for(_recommended(cfg, urls, app["package"], ver_cache), timeout=120)
+        except asyncio.TimeoutError:
+            log.warning("%s: list-versions timeout 120s [%s] urls=%s", pkg_short, combo_id(combo), urls[:1])
+            return (app, combo, None, None, "list-versions timeout")
+        log.debug("%s: list-versions -> %s", pkg_short, version)
         is_any = not version or version.strip().lower() == "any"
         det_for_any = None
         if is_any:
@@ -713,10 +720,10 @@ async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_ca
                 vc_cache[app["package"]] = {version: vc}
             else:
                 arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
-                log.debug("%s: getting version codes for %s [%s]", short(app["package"]), version, arch0)
+                log.debug("%s: getting version codes for %s [%s]", pkg_short, version, arch0)
                 async with pure_sem:
-                    vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
-                log.debug("%s: %s -> vc%d", short(app["package"]), version, vc)
+                    vc = await asyncio.wait_for(_resolve_vc(session, app["package"], version, vc_cache, arch0), timeout=90)
+                log.debug("%s: %s -> vc%d", pkg_short, version, vc)
         except Exception as e:
             if "no versions found" in str(e):
                 arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
