@@ -887,6 +887,25 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
 
                 version_targets.append((app, combo, archs, over))
 
+        # warm MPP cache per bundle (one GitHub hit per bundle, not 164) so list-versions can run local
+        if version_targets:
+            unique_bundles: dict[str, str] = {}
+            for app, combo, _, _ in version_targets:
+                for b in combo:
+                    if b not in unique_bundles:
+                        unique_bundles[b] = app["package"]
+            for b, pkg in unique_bundles.items():
+                spec = cfg["bundles"].get(b, "")
+                url = spec if isinstance(spec, str) else spec.get("url", "")
+                if not url or _get_local_mpp(b, url) is not None:
+                    continue
+                log.info("warming MPP for bundle %s (%s)", b, pkg)
+                try:
+                    await tools.recommended_version(_jar(cfg, "morphe-desktop"), [url], pkg, cfg)
+                except Exception as e:
+                    # will be retried per-app with fallback, just warn here
+                    log.warning("warm MPP %s failed: %s", b, e)
+
         # ── parallel version+vc resolution (was sequential before) ─────────────
         if version_targets:
             log.info("resolving %d version(s) in parallel (ver_sem=2, pure_sem=4, play_ver_sem=3)", len(version_targets))
