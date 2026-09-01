@@ -711,14 +711,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1788208486,
-      "out": "microg-7.0.0-dev.7-arm64.apk",
+      "at": 1788268495,
+      "out": "microg-7.0.0-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.0.0-dev.7"
+        "microg": "7.0.0"
       },
       "vc": 255070000,
-      "version": "7.0.0-dev.7"
+      "version": "7.0.0"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "Series y Pel\u00edculas - Showly",
@@ -1516,11 +1516,11 @@
   "bundles": {
     "androidtv": "v1.30.3",
     "de-vanced": "v1.3.1",
-    "hoodles": "v1.43.0",
+    "hoodles": "v1.44.0-dev.1",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.0",
-    "microg": "7.0.0-dev.7",
-    "morphe": "v1.41.0-dev.9",
+    "microg": "7.0.0",
+    "morphe": "v1.41.0-dev.12",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
@@ -1531,7 +1531,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.15.0-dev.4"
+      "tag": "v1.15.0-dev.5"
     }
   }
 }
