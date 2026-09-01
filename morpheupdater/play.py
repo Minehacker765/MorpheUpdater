@@ -351,7 +351,45 @@ def parse_version_codes(raw: bytes) -> dict[str, int]:
     return codes
 
 
+PURE_CACHE = TMP / "pure-cache.json"
+PURE_CACHE_TTL = 6 * 3600  # 6h – apkpure versions change slowly, avoids 166×3s every 30min
+
+
+def _load_pure_cache() -> dict:
+    try:
+        if PURE_CACHE.exists():
+            import json, time
+            data = json.loads(PURE_CACHE.read_text())
+            # {pkg: {"at": ts, "codes": {ver: vc}}}
+            return data if isinstance(data, dict) else {}
+    except Exception:
+        pass
+    return {}
+
+
+def _save_pure_cache(cache: dict) -> None:
+    try:
+        import json
+        PURE_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        # atomic write
+        tmp = PURE_CACHE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(cache, sort_keys=True) + "\n")
+        tmp.replace(PURE_CACHE)
+    except Exception:
+        pass
+
+
 async def fetch_version_codes(session: ClientSession, package: str, attempts: int = 3) -> dict[str, int]:
+    # disk cache: 6h TTL, survives cycles, still respects 429 backoff
+    import time
+    cache = _load_pure_cache()
+    entry = cache.get(package)
+    if entry and isinstance(entry, dict):
+        at = entry.get("at", 0)
+        codes = entry.get("codes")
+        if isinstance(codes, dict) and time.time() - at < PURE_CACHE_TTL:
+            # normalize int
+            return {str(k): int(v) for k, v in codes.items() if str(v).isdigit()}
     last_err: Exception | None = None
     for attempt in range(attempts):
         async with session.get(
@@ -370,6 +408,9 @@ async def fetch_version_codes(session: ClientSession, package: str, attempts: in
             codes = parse_version_codes(await resp.read())
             if not codes:
                 raise PlayError(f"no versions found for {package}")
+            # save to disk cache
+            cache[package] = {"at": int(time.time()), "codes": codes}
+            _save_pure_cache(cache)
             return codes
     raise last_err or PlayError(f"metadata source failed for {package}")
 
