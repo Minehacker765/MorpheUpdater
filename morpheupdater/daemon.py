@@ -808,6 +808,7 @@ async def build_one(
             striplibs=cfg.get("striplibs", []),
             bytecode_mode=cfg.get("bytecode_mode", ""),
             cfg=cfg,
+            continue_on_error=cfg.get("continue_on_error", True),
         )
 
     try:

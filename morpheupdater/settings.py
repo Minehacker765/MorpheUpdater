@@ -23,6 +23,7 @@ DEFAULT_CONFIG: dict = {
     "resolution": "xxxhdpi",
     "locales": ["en-US", "es"],
     "force_patch": True,
+    "continue_on_error": True,
     "striplibs": [],
     "bytecode_mode": "",
     "bundles": {"morphe": "https://github.com/MorpheApp/morphe-patches"},

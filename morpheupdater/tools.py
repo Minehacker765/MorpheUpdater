@@ -393,6 +393,7 @@ async def patch(
     striplibs: list[str],
     bytecode_mode: str,
     cfg: dict | None = None,
+    continue_on_error: bool = False,
 ) -> None:
     use_prerelease = False
     if cfg is not None:
@@ -416,6 +417,8 @@ async def patch(
             c += ["--striplibs", ",".join(striplibs)]
         if bytecode_mode:
             c += ["--bytecode-mode", bytecode_mode]
+        if continue_on_error:
+            c.append("--continue-on-error")
         c += ["-o", str(apk_out), str(apk_in)]
         return c
     rc, output = await run(_build(use_prerelease), env=java_env(), cwd=ROOT)
