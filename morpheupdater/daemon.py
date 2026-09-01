@@ -40,7 +40,9 @@ from .tools import apk_info
 log = logging.getLogger("daemon")
 
 DOWNLOAD_CONCURRENCY = 4
-ver_sem = asyncio.Semaphore(8)
+ver_sem = asyncio.Semaphore(4)
+pure_sem = asyncio.Semaphore(4)
+play_ver_sem = asyncio.Semaphore(3)
 
 
 def _enabled_archs(archs_cfg) -> list[str]:
@@ -635,19 +637,22 @@ async def _fetch_version_task(session, holder, cfg, app, combo, ver_cache, vc_ca
         version = await _recommended(cfg, urls, app["package"], ver_cache)
         if not version or version.strip().lower() == "any":
             arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
-            auth_tmp = await holder.get(session, arch0)
-            det_tmp = await play.get_details(session, auth_tmp, app["package"])
+            async with play_ver_sem:
+                auth_tmp = await holder.get(session, arch0)
+                det_tmp = await play.get_details(session, auth_tmp, app["package"])
             if not det_tmp.version_code:
                 return (app, combo, None, None, "no versions listed and Play details failed for universal patch")
             version = det_tmp.version_string or str(det_tmp.version_code)
         try:
             arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
-            vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
+            async with pure_sem:
+                vc = await _resolve_vc(session, app["package"], version, vc_cache, arch0)
         except Exception as e:
             if "no versions found" in str(e):
                 arch0 = _enabled_archs(app.get("archs") or cfg.get("archs"))[0]
-                auth_tmp = await holder.get(session, arch0)
-                det_tmp = await play.get_details(session, auth_tmp, app["package"])
+                async with play_ver_sem:
+                    auth_tmp = await holder.get(session, arch0)
+                    det_tmp = await play.get_details(session, auth_tmp, app["package"])
                 if det_tmp.version_code:
                     version = det_tmp.version_string
                     vc = det_tmp.version_code

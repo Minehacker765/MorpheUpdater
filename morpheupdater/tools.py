@@ -359,13 +359,23 @@ async def recommended_version(jar: Path, urls: list[str], package: str, cfg: dic
         use_prerelease = any(_bundle_prerelease(cfg, u) for u in urls)
     else:
         use_prerelease = True
-    cmd = [java_bin(), "-jar", str(jar), "list-versions"]
-    if use_prerelease:
-        cmd.append("--prerelease")
-    for url in urls:
-        cmd += ["--patches", url]
-    cmd += ["-f", package]
-    rc, out = await run(cmd, env=java_env(), timeout_s=600)
+    async def _run(pr: bool):
+        c = [java_bin(), "-jar", str(jar), "list-versions"]
+        if pr:
+            c.append("--prerelease")
+        for url in urls:
+            c += ["--patches", url]
+        c += ["-f", package]
+        return await run(c, env=java_env(), timeout_s=600)
+    rc, out = await _run(use_prerelease)
+    if rc != 0 and use_prerelease and ("Could not get dev release" in out or "Failed to download patches" in out):
+        # fallback: dev release missing (e.g. androidtv has no prereleases), retry stable
+        rc2, out2 = await _run(False)
+        if rc2 == 0:
+            rc, out = rc2, out2
+        else:
+            # keep original error if fallback also fails
+            pass
     if rc != 0:
         raise RuntimeError(f"list-versions failed:\n{out[-800:]}")
     highest: str | None = None
@@ -408,24 +418,28 @@ async def patch(
         use_prerelease = any(_bundle_prerelease(cfg, u) for u in urls)
     else:
         use_prerelease = True
-    cmd = [java_bin(), "-Xmx4g", "-jar", str(jar), "patch"]
-    for url in urls:
-        cmd += ["-p", url]
-    cmd += ["--options-file", str(options_file), "--options-update", "-t", str(TMP / "morphe")]
-    if use_prerelease:
-        cmd.append("--prerelease")
-    if not unsigned:
-        cmd += signing_args()
-    if unsigned:
-        cmd.append("--unsigned")
-    if force:
-        cmd.append("--force")
-    if striplibs:
-        cmd += ["--striplibs", ",".join(striplibs)]
-    if bytecode_mode:
-        cmd += ["--bytecode-mode", bytecode_mode]
-    cmd += ["-o", str(apk_out), str(apk_in)]
-    rc, output = await run(cmd, env=java_env(), cwd=ROOT)
+    def _build(pr: bool):
+        c = [java_bin(), "-Xmx4g", "-jar", str(jar), "patch"]
+        for url in urls:
+            c += ["-p", url]
+        c += ["--options-file", str(options_file), "--options-update", "-t", str(TMP / "morphe")]
+        if pr:
+            c.append("--prerelease")
+        if not unsigned:
+            c += signing_args()
+        if unsigned:
+            c.append("--unsigned")
+        if force:
+            c.append("--force")
+        if striplibs:
+            c += ["--striplibs", ",".join(striplibs)]
+        if bytecode_mode:
+            c += ["--bytecode-mode", bytecode_mode]
+        c += ["-o", str(apk_out), str(apk_in)]
+        return c
+    rc, output = await run(_build(use_prerelease), env=java_env(), cwd=ROOT)
+    if rc != 0 and use_prerelease and ("Could not get dev release" in output or "Failed to download patches" in output):
+        rc, output = await run(_build(False), env=java_env(), cwd=ROOT)
     if rc != 0:
         tail = "\n".join(output.splitlines()[-30:])
         raise RuntimeError(f"patch failed ({rc}):\n{tail}")

@@ -26,7 +26,7 @@
     },
     "androidtv": {
       "url": "https://github.com/ajstrick81/morphe-androidtv-patches",
-      "prerelease": true
+      "prerelease": false
     },
     "hoodles": {
       "url": "https://github.com/hoo-dles/morphe-patches",
@@ -38,15 +38,15 @@
     },
     "hxreborn": {
       "url": "https://github.com/hxreborn/morphe-patches",
-      "prerelease": true
+      "prerelease": false
     },
     "tiktok-hx": {
       "url": "https://github.com/hxreborn/hxreborn-tiktok-patches",
-      "prerelease": true
+      "prerelease": false
     },
     "hoomans": {
       "url": "https://github.com/arandomhooman/hoomans-morphe-patches",
-      "prerelease": true
+      "prerelease": false
     }
   },
   "apps": [
