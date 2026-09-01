@@ -1477,16 +1477,16 @@
       "version": "6.4.0"
     },
     "net.binarymode.android.irplus|de-vanced|arm64": {
-      "app_name": "irplus - Infrared Remote",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788266555,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1788304681,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "",
