@@ -12,6 +12,18 @@
       "vc": 260647,
       "version": "2.97.0"
     },
+    "ak.alizandro.smartaudiobookplayer|hoomans|arm64": {
+      "app_name": "Smart AudioBook Player",
+      "arch": "arm64",
+      "at": 1788306809,
+      "out": "smartaudiobookplayer-11.7.8-hoomans-arm64.apk",
+      "package": "ak.alizandro.smartaudiobookplayer",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 301178,
+      "version": "11.7.8"
+    },
     "all.in.one.calculator|hxreborn|arm64": {
       "app_name": "All-In-One Calculator",
       "arch": "arm64",
@@ -97,16 +109,16 @@
       "version": "1.16.24"
     },
     "ch.protonmail.android|hxreborn|arm64": {
-      "app_name": "Proton Mail: Encrypted Email",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788235717,
-      "out": "protonmail.android-4.15.0-hxreborn-arm64.apk",
+      "at": 1788306802,
+      "out": "protonmail.android-7.11.4-hxreborn-arm64.apk",
       "package": "ch.protonmail.android",
       "tags": {
         "hxreborn": "v1.14.0"
       },
-      "vc": 11782,
-      "version": "4.15.0"
+      "vc": 18315,
+      "version": "7.11.4"
     },
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "",
@@ -168,6 +180,18 @@
       "vc": 711105100,
       "version": "11.5.01"
     },
+    "com.adobe.reader|hoomans|arm64": {
+      "app_name": "Adobe Acrobat Reader: Edit PDF",
+      "arch": "arm64",
+      "at": 1788306828,
+      "out": "adobe.reader-26.7.1.47181-hoomans-arm64.apk",
+      "package": "com.adobe.reader",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 1931947181,
+      "version": "26.7.1.47181"
+    },
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
@@ -191,6 +215,18 @@
       },
       "vc": 597,
       "version": "7.1.1"
+    },
+    "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
+      "app_name": "Prime Video",
+      "arch": "arm64",
+      "at": 1788306187,
+      "out": "thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
+      "package": "com.amazon.avod.thirdpartyclient",
+      "tags": {
+        "hoodles": "v1.44.0-dev.1"
+      },
+      "vc": 452001047,
+      "version": "3.0.452.1047"
     },
     "com.amazon.mShop.android.shopping|de-vanced|arm64": {
       "app_name": "Amazon Shopping",
@@ -348,6 +384,18 @@
       "vc": 190,
       "version": "1.5.0"
     },
+    "com.budget.tracker_app|hoomans|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788306820,
+      "out": "tracker_app-6.6.11-hoomans-arm64.apk",
+      "package": "com.budget.tracker_app",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 510,
+      "version": "6.6.11"
+    },
     "com.bunpoapp|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -363,14 +411,14 @@
     "com.busuu.android.enc|hoodles|arm64": {
       "app_name": "Busuu: Learn & Speak Languages",
       "arch": "arm64",
-      "at": 1788206317,
-      "out": "enc-32.46.0(1732689)-hoodles-arm64.apk",
+      "at": 1788306682,
+      "out": "enc-32.30.0(1575420)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 1732689,
-      "version": "32.46.0(1732689)"
+      "vc": 1575420,
+      "version": "32.30.0(1575420)"
     },
     "com.camerasideas.instashot|hoomans|arm64": {
       "app_name": "",
@@ -828,6 +876,18 @@
       "vc": 17398,
       "version": "236.17398.20260827"
     },
+    "com.myfitnesspal.android|hoodles|arm64": {
+      "app_name": "MyFitnessPal: Calorie Counter",
+      "arch": "arm64",
+      "at": 1788306150,
+      "out": "myfitnesspal.android-26.31.0-hoodles-arm64.apk",
+      "package": "com.myfitnesspal.android",
+      "tags": {
+        "hoodles": "v1.44.0-dev.1"
+      },
+      "vc": 51132,
+      "version": "26.31.0"
+    },
     "com.myprog.hexedit|de-vanced|arm64": {
       "app_name": "HEX Editor",
       "arch": "arm64",
@@ -899,6 +959,18 @@
       },
       "vc": 3080004,
       "version": "3.8.0"
+    },
+    "com.paget96.batteryguru|hoomans|arm64": {
+      "app_name": "Battery Guru: Battery Health",
+      "arch": "arm64",
+      "at": 1788306858,
+      "out": "batteryguru-2.5.0.6-hoomans-arm64.apk",
+      "package": "com.paget96.batteryguru",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 721,
+      "version": "2.5.0.6"
     },
     "com.pandora.android|hoodles|arm64": {
       "app_name": "Pandora - Music & Podcasts",
@@ -1044,6 +1116,18 @@
       "vc": 62910,
       "version": "2.27.3.6291"
     },
+    "com.soepic.photogallery.release|hoomans|arm64": {
+      "app_name": "Liquid Gallery: Photos Viewer",
+      "arch": "arm64",
+      "at": 1788306866,
+      "out": "release-2.1.11-hoomans-arm64.apk",
+      "package": "com.soepic.photogallery.release",
+      "tags": {
+        "hoomans": "v1.51.1"
+      },
+      "vc": 251,
+      "version": "2.1.11"
+    },
     "com.sofascore.results|hoomans|arm64": {
       "app_name": "",
       "arch": "arm64",
@@ -1141,16 +1225,16 @@
       "version": "407.0.0.178994"
     },
     "com.todoist|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Todoist: To Do List & Calendar",
       "arch": "arm64",
-      "at": 1788266797,
-      "out": "todoist-v12260-hoomans-arm64.apk",
+      "at": 1788306902,
+      "out": "todoist-v12190-hoomans-arm64.apk",
       "package": "com.todoist",
       "tags": {
         "hoomans": "v1.51.1"
       },
-      "vc": 12260,
-      "version": "v12260"
+      "vc": 12190,
+      "version": "v12190"
     },
     "com.tracked.mobile|hoomans|arm64": {
       "app_name": "",
@@ -1191,26 +1275,38 @@
     "com.ufovpn.connect.velnet|xtra|arm64": {
       "app_name": "UFO VPN : Fastest Secure Proxy",
       "arch": "arm64",
-      "at": 1788266585,
-      "out": "velnet-2.6.26-xtra-arm64.apk",
+      "at": 1788306818,
+      "out": "velnet-2.5.8-xtra-arm64.apk",
       "package": "com.ufovpn.connect.velnet",
       "tags": {
         "xtra": "v2.12.0"
       },
-      "vc": 2626,
-      "version": "2.6.26"
+      "vc": 2508,
+      "version": "2.5.8"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
-      "at": 1788300033,
-      "out": "sleep-20260816-hoodles-arm64.apk",
+      "at": 1788306724,
+      "out": "sleep-20260828-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 231132,
-      "version": "20260816"
+      "vc": 231142,
+      "version": "20260828"
+    },
+    "com.viber.voip|de-vanced|arm64": {
+      "app_name": "Rakuten Viber Messenger",
+      "arch": "arm64",
+      "at": 1788306791,
+      "out": "voip-26.1.2.0-de-vanced-arm64.apk",
+      "package": "com.viber.voip",
+      "tags": {
+        "de-vanced": "v1.3.1"
+      },
+      "vc": 1261020,
+      "version": "26.1.2.0"
     },
     "com.vitotechnology.sky.tonight.map.star.walk|xtra|arm64": {
       "app_name": "Sky Tonight - Star Gazer Guide",
@@ -1383,14 +1479,14 @@
     "ginlemon.flowerfree|hoodles|arm64": {
       "app_name": "Smart Launcher 6 \u2027 Home Screen",
       "arch": "arm64",
-      "at": 1788206842,
-      "out": "flowerfree-6.6 build 017-hoodles-arm64.apk",
+      "at": 1788306757,
+      "out": "flowerfree-6.6 build 016-hoodles-arm64.apk",
       "package": "ginlemon.flowerfree",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 660170,
-      "version": "6.6 build 017"
+      "vc": 660160,
+      "version": "6.6 build 016"
     },
     "ginlemon.iconpackstudio|de-vanced|arm64": {
       "app_name": "Icon Pack Studio",
@@ -1451,6 +1547,18 @@
       },
       "vc": 56869,
       "version": "6.141.1"
+    },
+    "kr.co.yjteam.dailypay|hoodles|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788306761,
+      "out": "dailypay-6.0.7-hoodles-arm64.apk",
+      "package": "kr.co.yjteam.dailypay",
+      "tags": {
+        "hoodles": "v1.44.0-dev.1"
+      },
+      "vc": 60007,
+      "version": "6.0.7"
     },
     "kr.eggbun.eggconvo|hoodles|arm64": {
       "app_name": "",
@@ -1611,14 +1719,14 @@
     "ru.iiec.pydroid3|hoodles|arm64": {
       "app_name": "Pydroid 3 - IDE for Python 3",
       "arch": "arm64",
-      "at": 1788205667,
-      "out": "pydroid3-8.4_arm64-hoodles-arm64.apk",
+      "at": 1788306132,
+      "out": "pydroid3-8.3_arm64-hoodles-arm64.apk",
       "package": "ru.iiec.pydroid3",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 1131,
-      "version": "8.4_arm64"
+      "vc": 1130,
+      "version": "8.3_arm64"
     },
     "studio.muggle.chatboost|hoomans|arm64": {
       "app_name": "",

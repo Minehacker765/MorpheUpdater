@@ -86,5 +86,120 @@
                 "enabled": true
             }
         }
+    },
+    {
+        "meta": {
+            "created_at": "2026-09-01T12:45:53.287296467Z",
+            "updated_at": "2026-09-01T23:53:40.846182576Z",
+            "source": "v1.51.1__patches-1.51.1.mpp",
+            "sha256": "b6de3a169031250bc3b27aafbc5df8bdb914cb9879b7ffbec1b9e760723f2f5a"
+        },
+        "patches": {
+            "Unlock Pro": {
+                "enabled": true
+            },
+            "Remove ads": {
+                "enabled": true
+            },
+            "Unlock Premium": {
+                "enabled": true
+            },
+            "Disable analytics": {
+                "enabled": true
+            },
+            "Unlock premium": {
+                "enabled": true
+            },
+            "Unlock Membership": {
+                "enabled": true
+            },
+            "Unlock PRO": {
+                "enabled": true
+            },
+            "Enable Premium": {
+                "enabled": true
+            },
+            "Unlock Full Version": {
+                "enabled": true
+            },
+            "Unlock Gold": {
+                "enabled": true
+            },
+            "Enable call recording": {
+                "enabled": true
+            },
+            "Unlock Plus": {
+                "enabled": true
+            },
+            "Unlock aircraft data": {
+                "enabled": true
+            },
+            "Use your own Maps API key [REQUIRED]": {
+                "enabled": true,
+                "options": {
+                    "mapsApiKey": null
+                }
+            },
+            "Unlock Sober Plus": {
+                "enabled": true
+            },
+            "Unlock Moovit+": {
+                "enabled": true
+            },
+            "Unlock Full": {
+                "enabled": true
+            },
+            "Remove Ads": {
+                "enabled": true
+            },
+            "Disable cloud sign-in prompt": {
+                "enabled": true
+            },
+            "Disable telemetry": {
+                "enabled": true
+            },
+            "No date first": {
+                "enabled": true
+            },
+            "Disable ad-free banner": {
+                "enabled": true
+            },
+            "Disable in-app update": {
+                "enabled": true
+            },
+            "Disable blog notification reminder": {
+                "enabled": true
+            },
+            "Disable gift message popup": {
+                "enabled": true
+            },
+            "Disable screenshot sharing": {
+                "enabled": true
+            },
+            "Disable Tumblr TV": {
+                "enabled": true
+            },
+            "Enable premium UI": {
+                "enabled": true
+            },
+            "Block live ads": {
+                "enabled": true
+            },
+            "Hide display ads": {
+                "enabled": true
+            },
+            "Auto claim channel points": {
+                "enabled": true
+            },
+            "Show deleted messages": {
+                "enabled": true
+            },
+            "7TV and BTTV emotes": {
+                "enabled": true
+            },
+            "Fix login": {
+                "enabled": true
+            }
+        }
     }
 ]
