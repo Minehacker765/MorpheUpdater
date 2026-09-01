@@ -122,8 +122,16 @@ def clean_tmp(cfg: dict) -> None:
         free_gb = 0
     if size_mb > max_mb or too_old or low_space:
         log.info("wiping tmp/ (size=%.0fMB max=%dMB old=%s free=%.1fGB min=%dGB)", size_mb, max_mb, too_old, free_gb, min_free_gb)
+        # preserve pure-cache.json across wipes (6h TTL, avoids 166× pure hits)
+        cache = TMP / "pure-cache.json"
+        cache_data = cache.read_bytes() if cache.exists() else None
         shutil.rmtree(TMP)
         TMP.mkdir(parents=True, exist_ok=True)
+        if cache_data is not None:
+            try:
+                (TMP / "pure-cache.json").write_bytes(cache_data)
+            except Exception:
+                pass
 
 
 async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False) -> int:
@@ -132,7 +140,7 @@ async def prune_tmp(cfg: dict, dry_run: bool = False, remove_dupes: bool = False
     max_mb = cfg.get("tmp_max_mb", 2048)
     max_age_days = cfg.get("tmp_max_age_days", 7)
     cutoff = now() - int(max_age_days * SECONDS_PER_DAY)
-    files = [p for p in TMP.rglob("*") if p.is_file()]
+    files = [p for p in TMP.rglob("*") if p.is_file() and p.name != "pure-cache.json"]
     files.sort(key=lambda p: p.stat().st_mtime)
     deleted = 0
     size_mb = dir_size_mb(TMP)
