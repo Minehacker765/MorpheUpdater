@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if(urlEl){
     const url=urlEl.textContent.trim();
     const qr=document.getElementById("qrcode");
-    if(qr) new QRCode(qr,{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
+    if(qr) new QRCode(qr,{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M});
     const btn=document.getElementById('addBtn');
     if(btn) btn.href="fdroidrepos://"+url.replace(/^https?:\\/\\//,"");
   }

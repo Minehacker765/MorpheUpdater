@@ -36,7 +36,7 @@ footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
 </style>
 <header>
   <h1>Morphe Updater</h1>
-  <small>Patched apps rebuilt automatically · updated 2026-09-02 20:52 UTC · 156 apps</small>
+  <small>Patched apps rebuilt automatically · updated 2026-09-02 21:03 UTC · 156 apps</small>
 </header>
 <main>
   <div class="fdr">
@@ -3186,7 +3186,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if(urlEl){
     const url=urlEl.textContent.trim();
     const qr=document.getElementById("qrcode");
-    if(qr) new QRCode(qr,{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
+    if(qr) new QRCode(qr,{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M});
     const btn=document.getElementById('addBtn');
     if(btn) btn.href="fdroidrepos://"+url.replace(/^https?:\/\//,"");
   }
