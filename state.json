@@ -253,16 +253,16 @@
       "version": "32.13.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "Amazon Music: Songs & Podcasts",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788308158,
-      "out": "mp3-26.30.1-de-vanced-arm64.apk",
+      "at": 1788311523,
+      "out": "mp3-26.29.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 526300110,
-      "version": "26.30.1"
+      "vc": 526290110,
+      "version": "26.29.1"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "",
