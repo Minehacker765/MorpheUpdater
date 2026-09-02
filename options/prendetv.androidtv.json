@@ -1,0 +1,78 @@
+[
+    {
+        "meta": {
+            "created_at": "2026-09-02T00:19:28.030874244Z",
+            "updated_at": "2026-09-02T00:19:36.004323515Z",
+            "source": "v1.30.3__patches-1.30.2.mpp",
+            "sha256": "0c3a7f245453f2bb6deea6d05f4198cd808074c0affbfd670b756e99aff11aa3"
+        },
+        "patches": {
+            "Skip ads": {
+                "enabled": true
+            },
+            "Clone Netflix": {
+                "enabled": true
+            },
+            "Suppress Household Prompt": {
+                "enabled": false
+            },
+            "Minimize Network Fingerprint": {
+                "enabled": false
+            },
+            "Disable Netflix CertCheck": {
+                "enabled": true
+            },
+            "Remove Netflix ads (bundle engine)": {
+                "enabled": true
+            },
+            "Remove Netflix ads (loader)": {
+                "enabled": true
+            },
+            "Clone Peacock": {
+                "enabled": false
+            },
+            "Disable auto-updates": {
+                "enabled": true
+            },
+            "Clone Pluto TV": {
+                "enabled": false
+            },
+            "Override certificate pinning": {
+                "enabled": true
+            },
+            "Clone Prime Video": {
+                "enabled": false
+            },
+            "Prime Video extension": {
+                "enabled": true
+            },
+            "Bundle native ad-strip hook": {
+                "enabled": true
+            },
+            "Load native ad-strip hook": {
+                "enabled": true
+            },
+            "Block TV ads": {
+                "enabled": true
+            },
+            "Disney+ Android TV": {
+                "enabled": true
+            },
+            "HBO Max - Disable Ads": {
+                "enabled": true
+            },
+            "HBO Max - Block SSAI Ad Origins": {
+                "enabled": false
+            },
+            "HBO Max - Prefer Ad-Free Stream": {
+                "enabled": true
+            },
+            "MLB At Bat Android TV": {
+                "enabled": true
+            },
+            "Paramount+ Android TV": {
+                "enabled": true
+            }
+        }
+    }
+]

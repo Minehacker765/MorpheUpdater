@@ -243,14 +243,14 @@
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1788235413,
-      "out": "mp3-26.29.1-de-vanced-arm64.apk",
+      "at": 1788308158,
+      "out": "mp3-26.30.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 526290110,
-      "version": "26.29.1"
+      "vc": 526300110,
+      "version": "26.30.1"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "",
@@ -503,6 +503,18 @@
       },
       "vc": 278,
       "version": "2.7.8"
+    },
+    "com.drinkplusplus.angulus|de-vanced|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788308353,
+      "out": "angulus-6.0.4-de-vanced-arm64.apk",
+      "package": "com.drinkplusplus.angulus",
+      "tags": {
+        "de-vanced": "v1.3.1"
+      },
+      "vc": 89,
+      "version": "6.0.4"
     },
     "com.duolingo|hoodles|arm64": {
       "app_name": "",
@@ -1260,6 +1272,18 @@
       "vc": 2603201,
       "version": "7.5.10"
     },
+    "com.tubitv|androidtv|tv": {
+      "app_name": "Tubi: Free Movies & Live TV",
+      "arch": "tv",
+      "at": 1788308175,
+      "out": "tubitv-10.28.5000-androidtv-tv.apk",
+      "package": "com.tubitv",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 1029,
+      "version": "10.28.5000"
+    },
     "com.tumblr|hoomans|arm64": {
       "app_name": "Tumblr: Social Media & Art",
       "arch": "arm64",
@@ -1284,17 +1308,29 @@
       "vc": 2508,
       "version": "2.5.8"
     },
+    "com.univision.prendetv|androidtv|tv": {
+      "app_name": "ViX: TV, Deportes y Noticias",
+      "arch": "tv",
+      "at": 1788308376,
+      "out": "prendetv-4.47.2_tv-androidtv-tv.apk",
+      "package": "com.univision.prendetv",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 4407,
+      "version": "4.47.2_tv"
+    },
     "com.urbandroid.sleep|hoodles|arm64": {
-      "app_name": "Sleep as Android: Smart alarm",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788306724,
-      "out": "sleep-20260828-hoodles-arm64.apk",
+      "at": 1788308357,
+      "out": "sleep-20260816-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 231142,
-      "version": "20260828"
+      "vc": 231132,
+      "version": "20260816"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "Rakuten Viber Messenger",
@@ -1307,6 +1343,18 @@
       },
       "vc": 1261020,
       "version": "26.1.2.0"
+    },
+    "com.vitotechnology.StarWalk2Free|xtra|arm64": {
+      "app_name": "",
+      "arch": "arm64",
+      "at": 1788308363,
+      "out": "StarWalk2Free-2.21.0-xtra-arm64.apk",
+      "package": "com.vitotechnology.StarWalk2Free",
+      "tags": {
+        "xtra": "v2.12.0"
+      },
+      "vc": 22100155,
+      "version": "2.21.0"
     },
     "com.vitotechnology.sky.tonight.map.star.walk|xtra|arm64": {
       "app_name": "Sky Tonight - Star Gazer Guide",
@@ -1587,14 +1635,14 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788304681,
-      "out": "irplus-1.10-de-vanced-arm64.apk",
+      "at": 1788308355,
+      "out": "irplus-1.9.13-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 322,
-      "version": "1.10"
+      "vc": 307,
+      "version": "1.9.13"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "",
@@ -1751,6 +1799,18 @@
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
+    },
+    "tv.twitch.android.app|androidtv|tv": {
+      "app_name": "Twitch: Live Streaming",
+      "arch": "tv",
+      "at": 1788308394,
+      "out": "android.app-13.0.0.2-androidtv-tv.apk",
+      "package": "tv.twitch.android.app",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 1100000018,
+      "version": "13.0.0.2"
     },
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
