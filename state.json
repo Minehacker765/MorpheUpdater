@@ -1359,14 +1359,14 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788315110,
-      "out": "sleep-20260828-hoodles-arm64.apk",
+      "at": 1788322538,
+      "out": "sleep-20260816-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 231142,
-      "version": "20260828"
+      "vc": 231132,
+      "version": "20260816"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "Rakuten Viber Messenger",
