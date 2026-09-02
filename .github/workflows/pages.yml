@@ -2,7 +2,6 @@ name: pages
 on:
   push:
     branches: [main]
-    paths: [out/**, icons/**, branding/**]
   workflow_dispatch:
 permissions:
   contents: read
