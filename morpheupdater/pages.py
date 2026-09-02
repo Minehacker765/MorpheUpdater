@@ -26,12 +26,8 @@ main{max-width:1100px;margin:auto;padding:1.5rem}
 .controls input[type=search]{flex:1;min-width:220px;background:#0e0e10;border:1px solid #2a2a30;color:#e6e6e6;border-radius:10px;padding:.6rem .8rem;font:inherit;outline:none}
 .controls input[type=search]:focus{border-color:#3a3a44}
 .controls select{background:#0e0e10;border:1px solid #2a2a30;color:#e6e6e6;border-radius:10px;padding:.55rem .7rem;font:inherit}
-.toggle{user-select:none;cursor:pointer;display:inline-flex;align-items:center;gap:.6rem;background:#2a2a30;border:1px solid #333;border-radius:12px;padding:.5rem .85rem;font-weight:700;transition:.18s;min-width:190px;justify-content:space-between}
+.toggle{user-select:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;background:#2a2a30;border:1px solid #3a3a44;border-radius:10px;padding:.6rem 1rem;font-weight:700;transition:.18s;min-width:190px}
 .toggle.on{background:#1a7f4a;border-color:#1a7f4a;color:#fff;box-shadow:0 2px 12px rgba(26,127,74,.35)}
-.toggle .box{width:36px;height:22px;border-radius:11px;background:#0e0e10;border:1px solid #444;position:relative;transition:.18s;flex-shrink:0}
-.toggle.on .box{background:#fff;border-color:#fff}
-.toggle .dot{position:absolute;top:1px;left:1px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.18s;box-shadow:0 1px 4px rgba(0,0,0,.3)}
-.toggle.on .dot{transform:translateX(14px);background:#1a7f4a}
 .bundle{margin:1.1rem 0;border:1px solid #2a2a30;border-radius:14px;background:#16161a;overflow:hidden}
 .bundle summary{list-style:none;cursor:pointer;padding:.85rem 1rem;font-weight:700;display:flex;justify-content:space-between;align-items:center;background:#1b1b20}
 .bundle summary::-webkit-details-marker{display:none}
@@ -68,7 +64,7 @@ footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
   <div class="controls">
     <input id="search" type="search" placeholder="Search apps, packages…">
     <select id="sort"><option value="name">Sort: Name ↑</option><option value="name_desc">Sort: Name ↓</option><option value="patches_desc">Sort: Patches ↓</option><option value="patches_asc">Sort: Patches ↑</option></select>
-    <div id="bundleToggle" class="toggle" role="button" tabindex="0" aria-pressed="false"><span class="label">Separate by bundle</span><span class="box"><span class="dot"></span></span></div>
+    <div id="bundleToggle" class="toggle" role="button" tabindex="0" aria-pressed="false">Separate by bundle</div>
   </div>
 
   <div id="grouped" style="display:none">${grouped}</div>
@@ -78,76 +74,72 @@ footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
 <footer>Built from <a href="https://github.com/Minehacker765/MorpheUpdater">Minehacker765/MorpheUpdater</a> · patches ${patches}</footer>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
-(function(){
-const urlEl=document.getElementById('repoUrl');
-if(urlEl){
-  const url=urlEl.textContent.trim();
-  new QRCode(document.getElementById("qrcode"),{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
-  document.getElementById('addBtn').href="fdroidrepos://"+url.replace(/^https?:\\/\\//,"");
-}
-const search=document.getElementById('search');
-const sort=document.getElementById('sort');
-const toggle=document.getElementById('bundleToggle');
-const grouped=document.getElementById('grouped');
-const flat=document.getElementById('flat');
-const empty=document.getElementById('empty');
-let separate=false;
-function visibleCards(){
-  const container=separate?grouped:flat;
-  return container.querySelectorAll('.card');
-}
-function apply(){
-  const q=(search.value||"").trim().toLowerCase();
-  let any=false;
-  visibleCards().forEach(c=>{
-    const hay=(c.dataset.name+" "+c.dataset.pkg+" "+c.dataset.bundle).toLowerCase();
-    const show=!q||hay.includes(q);
-    c.style.display=show?"":"none";
-    if(show) any=true;
-  });
-  // also hide empty bundles when searching
-  if(separate){
-    grouped.querySelectorAll('.bundle').forEach(b=>{
-      const vis=[...b.querySelectorAll('.card')].some(c=>c.style.display!=="none");
-      b.style.display=vis||!q?"":"none";
-      if(vis) any=true;
+document.addEventListener('DOMContentLoaded', function(){
+  const urlEl=document.getElementById('repoUrl');
+  if(urlEl){
+    const url=urlEl.textContent.trim();
+    const qr=document.getElementById("qrcode");
+    if(qr) new QRCode(qr,{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
+    const btn=document.getElementById('addBtn');
+    if(btn) btn.href="fdroidrepos://"+url.replace(/^https?:\\/\\//,"");
+  }
+  const search=document.getElementById('search');
+  const sort=document.getElementById('sort');
+  const toggle=document.getElementById('bundleToggle');
+  const grouped=document.getElementById('grouped');
+  const flat=document.getElementById('flat');
+  const empty=document.getElementById('empty');
+  let separate=false;
+  function apply(){
+    const q=(search.value||"").trim().toLowerCase();
+    let any=false;
+    const cards=(separate?grouped:flat).querySelectorAll('.card');
+    cards.forEach(c=>{
+      const hay=(c.dataset.name+" "+c.dataset.pkg+" "+c.dataset.bundle).toLowerCase();
+      const show=!q||hay.includes(q);
+      c.style.display=show?"":"none";
+      if(show) any=true;
+    });
+    if(separate){
+      grouped.querySelectorAll('.bundle').forEach(b=>{
+        const vis=[...b.querySelectorAll('.card')].some(c=>c.style.display!=="none");
+        b.style.display=vis||!q?"":"none";
+        if(vis) any=true;
+      });
+    }
+    empty.style.display=any?"none":"block";
+  }
+  function sortCards(){
+    const v=sort.value;
+    const cmp=(a,b)=>{
+      if(v==="name") return a.dataset.name.localeCompare(b.dataset.name);
+      if(v==="name_desc") return b.dataset.name.localeCompare(a.dataset.name);
+      if(v==="patches_desc") return (+b.dataset.patches)-(+a.dataset.patches);
+      if(v==="patches_asc") return (+a.dataset.patches)-(+b.dataset.patches);
+      return 0;
+    };
+    const flatCards=[...flat.children].filter(c=>c.classList.contains('card'));
+    flatCards.sort(cmp).forEach(c=>flat.appendChild(c));
+    grouped.querySelectorAll('.bundle .grid').forEach(g=>{
+      const cards=[...g.children].filter(c=>c.classList.contains('card'));
+      cards.sort(cmp).forEach(c=>g.appendChild(c));
     });
   }
-  empty.style.display=any?"none":"block";
-}
-function sortCards(){
-  const v=sort.value;
-  const cmp=(a,b)=>{
-    if(v==="name") return a.dataset.name.localeCompare(b.dataset.name);
-    if(v==="name_desc") return b.dataset.name.localeCompare(a.dataset.name);
-    if(v==="patches_desc") return (+b.dataset.patches)-(+a.dataset.patches);
-    if(v==="patches_asc") return (+a.dataset.patches)-(+b.dataset.patches);
-    return 0;
-  };
-  // sort flat
-  const flatCards=[...flat.children];
-  flatCards.sort(cmp).forEach(c=>flat.appendChild(c));
-  // sort each bundle grid
-  grouped.querySelectorAll('.bundle .grid').forEach(g=>{
-    const cards=[...g.children];
-    cards.sort(cmp).forEach(c=>g.appendChild(c));
-  });
-}
-if(search) search.addEventListener('input',apply);
-if(sort) sort.addEventListener('change',sortCards);
-if(toggle){
-  toggle.addEventListener('click',()=>{
-    separate=!separate;
-    toggle.classList.toggle('on',separate);
-    toggle.setAttribute('aria-pressed',separate);
-    grouped.style.display=separate?"":"none";
-    flat.style.display=separate?"none":"grid";
-    apply();
-  });
-  toggle.addEventListener('keydown',e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); toggle.click(); }});
-}
-sortCards(); apply();
-})();
+  if(search) search.addEventListener('input',apply);
+  if(sort) sort.addEventListener('change',sortCards);
+  if(toggle){
+    toggle.addEventListener('click',()=>{
+      separate=!separate;
+      toggle.classList.toggle('on',separate);
+      toggle.setAttribute('aria-pressed',separate);
+      grouped.style.display=separate?"":"none";
+      flat.style.display=separate?"none":"grid";
+      apply();
+    });
+    toggle.addEventListener('keydown',e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); toggle.click(); }});
+  }
+  sortCards(); apply();
+});
 </script>
 </html>
 """
@@ -162,6 +154,65 @@ CARD = """<div class="card" data-name="${name_attr}" data-pkg="${pkg}" data-bund
     <div style="margin-top:.45rem"><a href="${dl}">Download APK</a></div>
   </div>
 </div>"""
+
+
+def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, list[str]]:
+    """Map patch name -> compatible packages for a bundle MPP via list-patches."""
+    import re
+    import subprocess
+    from pathlib import Path
+    try:
+        jar = ROOT / "bin" / "morphe-desktop.jar"
+        if not Path(mpp_path).exists() or not jar.exists():
+            return {}
+        cmd = ["java", "-jar", str(jar), "list-patches", "--patches", mpp_path, "--with-packages", "--with-versions=false", "--with-descriptions=false", "--with-options=false"]
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        if out.returncode != 0:
+            return {}
+        compat: dict[str, list[str]] = {}
+        current = None
+        # state: wait for Name, then Compatible packages block
+        lines = out.stdout.splitlines()
+        i = 0
+        while i < len(lines):
+            raw = lines[i]
+            stripped = raw.strip()
+            # Name line: "Name: PatchName" or "1. PatchName"
+            if stripped.startswith("Name:"):
+                current = stripped.split("Name:", 1)[1].strip()
+                # init as universal until we see Compatible packages
+                if current not in compat:
+                    compat[current] = []
+            elif re.match(r'^\d+\.\s*.+', stripped):
+                # fallback for older format
+                m = re.match(r'^\d+\.\s*(.+)$', stripped)
+                if m:
+                    current = m.group(1).strip()
+                    if current not in compat:
+                        compat[current] = []
+            elif stripped == "Compatible packages:" and current:
+                # next lines are "Package name: xxx" until blank or next field
+                pkgs: list[str] = []
+                j = i + 1
+                while j < len(lines):
+                    nxt = lines[j].strip()
+                    if not nxt:
+                        j += 1
+                        continue
+                    if nxt.startswith("Package name:"):
+                        pkgs.append(nxt.split("Package name:", 1)[1].strip())
+                        j += 1
+                    elif nxt.startswith("Compatible") or nxt.startswith("Name:") or re.match(r'^\d+\.', nxt) or nxt.startswith("Index:"):
+                        break
+                    else:
+                        j += 1
+                compat[current] = pkgs
+                i = j - 1
+            i += 1
+        # patches with no Compatible packages entry are universal (empty list means universal)
+        return compat
+    except Exception:
+        return {}
 
 
 async def build_showcase(cfg: dict, state: dict) -> bool:
@@ -183,7 +234,6 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                 dest = OUT / "icons" / p.name
                 if not dest.exists() or p.stat().st_mtime > dest.stat().st_mtime:
                     shutil.copyfile(p, dest)
-            # ensure generic fallback exists as out/icons/icon.png but don't use for per-app fallback
             if (ICONS / "icon.png").exists() and not (OUT / "icons" / "icon.png").exists():
                 shutil.copyfile(ICONS / "icon.png", OUT / "icons" / "icon.png")
     except Exception:
@@ -203,6 +253,27 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
     except Exception:
         _actual_map = {}
 
+    # cache per-bundle patch compat
+    compat_cache: dict[str, dict[str, list[str]]] = {}
+    def get_compat(bundle: str) -> dict[str, list[str]]:
+        if bundle in compat_cache:
+            return compat_cache[bundle]
+        # find mpp for bundle
+        url = cfg.get("bundles", {}).get(bundle, "")
+        u = url if isinstance(url, str) else url.get("url", "")
+        mpp = None
+        if u and "github.com" in u:
+            from morpheupdater.daemon import _get_local_mpp
+            tag = state.get("bundles", {}).get(bundle)
+            p = _get_local_mpp(u, tag) if tag else _get_local_mpp(u)
+            if p and p.exists():
+                mpp = str(p)
+        if mpp:
+            compat_cache[bundle] = _load_patch_compat(bundle, mpp)
+        else:
+            compat_cache[bundle] = {}
+        return compat_cache[bundle]
+
     # collect cards data
     cards = []
     for key in sorted(state.get("builds", {})):
@@ -220,20 +291,18 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         if pkg in ("com.google.android.youtube", "app.morphe.android.youtube", "com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"):
             patches_str += " · requires MicroG"
 
-        # icon: try clone then original, else extract from apk, else generate placeholder
+        # icon: try clone then original, else extract from apk, else per-pkg placeholder
         icon = ""
         candidates = []
         clone = CLONE_PACKAGE_MAP.get(pkg)
         if clone:
             candidates.append(clone)
-        # also try original pkg if different
         if _orig_pkg != pkg and _orig_pkg not in candidates:
             candidates.append(_orig_pkg)
         candidates.append(pkg)
         for cand in candidates:
             cand_path = f"icons/{cand}.png"
             if (OUT / cand_path).exists() or (ICONS / f"{cand}.png").exists():
-                # ensure in out
                 try:
                     if (ICONS / f"{cand}.png").exists() and not (OUT / cand_path).exists():
                         (OUT / "icons").mkdir(parents=True, exist_ok=True)
@@ -247,7 +316,6 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
             if apk_file and apk_file.exists():
                 try:
                     from morpheupdater.fdroid import extract_icon
-                    # extract to ICONS first, then copy to OUT
                     tmp_icon = ICONS / f"{pkg}.png"
                     got = extract_icon(apk_file, tmp_icon)
                     if got and (ICONS / got).exists():
@@ -264,26 +332,18 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                 except Exception:
                     pass
         if not icon:
-            # generate a simple placeholder instead of generic youtube music icon
-            try:
-                from morpheupdater.fdroid import _fallback_microg_icon
-                # use a per-package placeholder name
-                ph = ICONS / f"{pkg}.png"
-                if not ph.exists():
-                    _fallback_microg_icon(ph)
-                dest = OUT / "icons" / ph.name
-                if ph.exists() and not dest.exists():
-                    shutil.copyfile(ph, dest)
-                icon = f"icons/{pkg}.png" if (OUT / f"icons/{pkg}.png").exists() else "icons/icon.png"
-            except Exception:
-                icon = "icons/icon.png"
+            # no icon found and apk extraction failed — leave hidden (no generic youtube music fallback)
+            icon = ""
 
         display = PACKAGE_DISPLAY
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package", "")) or pkg
+        # patch count for sort - only compatible patches
         patches_count = 0
         patch_list_html = ""
         try:
+            # build compat map for this bundle
+            compat = get_compat(bundle)
             for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
                 if not _opt.exists():
                     continue
@@ -291,7 +351,21 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                 _entries = _d if isinstance(_d, list) else [_d]
                 for _e in _entries:
                     _patches = _e.get("patches", {})
-                    _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
+                    # filter to compatible only
+                    _enabled = []
+                    for pn, pv in _patches.items():
+                        if not isinstance(pv, dict) or not pv.get("enabled"):
+                            continue
+                        # if compat known, check pkg in compat list or universal (empty)
+                        if compat:
+                            pkgs = compat.get(pn)
+                            if pkgs is not None:
+                                # empty list or contains pkg or universal
+                                if pkgs and pkg not in pkgs and _orig_pkg not in pkgs:
+                                    # check if universal (no packages)
+                                    if not any(p in ("*", "any") for p in pkgs):
+                                        continue
+                        _enabled.append(pn)
                     if _enabled:
                         patches_count = len(_enabled)
                         patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
@@ -301,6 +375,17 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                         break
                 if patch_list_html:
                     break
+            # if no compat filtering worked (compat empty), fallback to previous logic but still count
+            if not patch_list_html:
+                for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
+                    _d = json.loads(_opt.read_text())
+                    _entries = _d if isinstance(_d, list) else [_d]
+                    for _e in _entries:
+                        _patches = _e.get("patches", {})
+                        _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
+                        if _enabled:
+                            patches_count = len(_enabled)
+                            break
         except Exception:
             pass
         patches_html = patch_list_html if patch_list_html else f"<span class='muted'>{patches_str or '—'}</span>"
