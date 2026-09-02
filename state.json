@@ -216,6 +216,18 @@
       "vc": 597,
       "version": "7.1.1"
     },
+    "com.amazon.amazonvideo.livingroom|androidtv|tv": {
+      "app_name": "Prime Video",
+      "arch": "tv",
+      "at": 1788309721,
+      "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
+      "package": "com.amazon.amazonvideo.livingroom",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 606023231,
+      "version": "6.23.23+v15.5.0.70-armv7a"
+    },
     "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
       "app_name": "Prime Video",
       "arch": "arm64",
@@ -431,6 +443,18 @@
       },
       "vc": 1539,
       "version": "2.214.1539"
+    },
+    "com.cbs.ott|androidtv|tv": {
+      "app_name": "Paramount+",
+      "arch": "tv",
+      "at": 1788309735,
+      "out": "ott-16.19.0-androidtv-tv.apk",
+      "package": "com.cbs.ott",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 520000827,
+      "version": "16.19.0"
     },
     "com.cfdrink|hoomans|arm64": {
       "app_name": "",
@@ -995,6 +1019,18 @@
       },
       "vc": 26081001,
       "version": "2608.1"
+    },
+    "com.peacocktv.peacockandroid|androidtv|tv": {
+      "app_name": "Peacock TV: Stream TV & Movies",
+      "arch": "tv",
+      "at": 1788309711,
+      "out": "peacockandroid-7.6.100-androidtv-tv.apk",
+      "package": "com.peacocktv.peacockandroid",
+      "tags": {
+        "androidtv": "v1.30.3"
+      },
+      "vc": 230706100,
+      "version": "7.6.100"
     },
     "com.proto.circuitsimulator|xtra|arm64": {
       "app_name": "PROTO - circuit simulator",
