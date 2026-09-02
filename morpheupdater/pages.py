@@ -26,11 +26,12 @@ main{max-width:1100px;margin:auto;padding:1.5rem}
 .controls input[type=search]{flex:1;min-width:220px;background:#0e0e10;border:1px solid #2a2a30;color:#e6e6e6;border-radius:10px;padding:.6rem .8rem;font:inherit;outline:none}
 .controls input[type=search]:focus{border-color:#3a3a44}
 .controls select{background:#0e0e10;border:1px solid #2a2a30;color:#e6e6e6;border-radius:10px;padding:.55rem .7rem;font:inherit}
-.toggle{user-select:none;cursor:pointer;display:inline-flex;align-items:center;gap:.6rem;background:#24242a;border:1px solid #2a2a30;border-radius:999px;padding:.38rem .6rem .38rem .5rem;font-weight:600;transition:.18s}
-.toggle.on{background:#1a7f4a;border-color:#1a7f4a;color:#fff;box-shadow:0 2px 10px rgba(26,127,74,.35)}
-.toggle .dot{width:18px;height:18px;border-radius:50%;background:#fff;transition:.18s;box-shadow:0 1px 4px rgba(0,0,0,.3)}
-.toggle.on .dot{transform:translateX(2px)}
-.toggle .label{font-size:.92rem}
+.toggle{user-select:none;cursor:pointer;display:inline-flex;align-items:center;gap:.6rem;background:#2a2a30;border:1px solid #333;border-radius:12px;padding:.5rem .85rem;font-weight:700;transition:.18s;min-width:190px;justify-content:space-between}
+.toggle.on{background:#1a7f4a;border-color:#1a7f4a;color:#fff;box-shadow:0 2px 12px rgba(26,127,74,.35)}
+.toggle .box{width:36px;height:22px;border-radius:11px;background:#0e0e10;border:1px solid #444;position:relative;transition:.18s;flex-shrink:0}
+.toggle.on .box{background:#fff;border-color:#fff}
+.toggle .dot{position:absolute;top:1px;left:1px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.18s;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.toggle.on .dot{transform:translateX(14px);background:#1a7f4a}
 .bundle{margin:1.1rem 0;border:1px solid #2a2a30;border-radius:14px;background:#16161a;overflow:hidden}
 .bundle summary{list-style:none;cursor:pointer;padding:.85rem 1rem;font-weight:700;display:flex;justify-content:space-between;align-items:center;background:#1b1b20}
 .bundle summary::-webkit-details-marker{display:none}
@@ -67,39 +68,51 @@ footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
   <div class="controls">
     <input id="search" type="search" placeholder="Search apps, packages…">
     <select id="sort"><option value="name">Sort: Name ↑</option><option value="name_desc">Sort: Name ↓</option><option value="patches_desc">Sort: Patches ↓</option><option value="patches_asc">Sort: Patches ↑</option></select>
-    <div id="bundleToggle" class="toggle on" role="button" tabindex="0" aria-pressed="true"><span class="dot"></span><span class="label">Separate by bundle</span></div>
+    <div id="bundleToggle" class="toggle" role="button" tabindex="0" aria-pressed="false"><span class="label">Separate by bundle</span><span class="box"><span class="dot"></span></span></div>
   </div>
 
-  <div id="grouped">${grouped}</div>
-  <div id="flat" class="grid" style="display:none">${flat}</div>
+  <div id="grouped" style="display:none">${grouped}</div>
+  <div id="flat" class="grid">${flat}</div>
   <div id="empty" class="empty" style="display:none">No apps match.</div>
 </main>
 <footer>Built from <a href="https://github.com/Minehacker765/MorpheUpdater">Minehacker765/MorpheUpdater</a> · patches ${patches}</footer>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
-const url=document.getElementById('repoUrl').textContent.trim();
-new QRCode(document.getElementById("qrcode"),{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
-document.getElementById('addBtn').href="fdroidrepos://"+url.replace(/^https?:\\/\\//,"");
+(function(){
+const urlEl=document.getElementById('repoUrl');
+if(urlEl){
+  const url=urlEl.textContent.trim();
+  new QRCode(document.getElementById("qrcode"),{text:url,width:132,height:132,correctLevel:QRCode.CorrectLevel.M}});
+  document.getElementById('addBtn').href="fdroidrepos://"+url.replace(/^https?:\\/\\//,"");
+}
 const search=document.getElementById('search');
 const sort=document.getElementById('sort');
 const toggle=document.getElementById('bundleToggle');
 const grouped=document.getElementById('grouped');
 const flat=document.getElementById('flat');
 const empty=document.getElementById('empty');
-let separate=true;
+let separate=false;
+function visibleCards(){
+  const container=separate?grouped:flat;
+  return container.querySelectorAll('.card');
+}
 function apply(){
-  const q=search.value.trim().toLowerCase();
+  const q=(search.value||"").trim().toLowerCase();
   let any=false;
-  document.querySelectorAll('.card').forEach(c=>{
+  visibleCards().forEach(c=>{
     const hay=(c.dataset.name+" "+c.dataset.pkg+" "+c.dataset.bundle).toLowerCase();
     const show=!q||hay.includes(q);
     c.style.display=show?"":"none";
     if(show) any=true;
   });
-  document.querySelectorAll('.bundle').forEach(b=>{
-    const vis=[...b.querySelectorAll('.card')].some(c=>c.style.display!=="none");
-    b.style.display=vis||!q?"":"none";
-  });
+  // also hide empty bundles when searching
+  if(separate){
+    grouped.querySelectorAll('.bundle').forEach(b=>{
+      const vis=[...b.querySelectorAll('.card')].some(c=>c.style.display!=="none");
+      b.style.display=vis||!q?"":"none";
+      if(vis) any=true;
+    });
+  }
   empty.style.display=any?"none":"block";
 }
 function sortCards(){
@@ -111,27 +124,36 @@ function sortCards(){
     if(v==="patches_asc") return (+a.dataset.patches)-(+b.dataset.patches);
     return 0;
   };
-  document.querySelectorAll('.bundle .grid, #flat').forEach(g=>{
-    [...g.children].sort(cmp).forEach(c=>g.appendChild(c));
+  // sort flat
+  const flatCards=[...flat.children];
+  flatCards.sort(cmp).forEach(c=>flat.appendChild(c));
+  // sort each bundle grid
+  grouped.querySelectorAll('.bundle .grid').forEach(g=>{
+    const cards=[...g.children];
+    cards.sort(cmp).forEach(c=>g.appendChild(c));
   });
 }
-search.addEventListener('input',apply);
-sort.addEventListener('change',sortCards);
-toggle.addEventListener('click',()=>{
-  separate=!separate;
-  toggle.classList.toggle('on',separate);
-  toggle.setAttribute('aria-pressed',separate);
-  grouped.style.display=separate?"":"none";
-  flat.style.display=separate?"none":"grid";
-});
-toggle.addEventListener('keydown',e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); toggle.click(); }});
+if(search) search.addEventListener('input',apply);
+if(sort) sort.addEventListener('change',sortCards);
+if(toggle){
+  toggle.addEventListener('click',()=>{
+    separate=!separate;
+    toggle.classList.toggle('on',separate);
+    toggle.setAttribute('aria-pressed',separate);
+    grouped.style.display=separate?"":"none";
+    flat.style.display=separate?"none":"grid";
+    apply();
+  });
+  toggle.addEventListener('keydown',e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); toggle.click(); }});
+}
 sortCards(); apply();
+})();
 </script>
 </html>
 """
 
 CARD = """<div class="card" data-name="${name_attr}" data-pkg="${pkg}" data-bundle="${bundle}" data-patches="${patches_count}">
-  <img src="${icon}" loading="lazy" onerror="this.style.visibility='hidden'">
+  <img src="${icon}" loading="lazy" onerror="this.style.display='none'">
   <div style="min-width:0;flex:1">
     <h3>${name}</h3>
     <div class="muted">${pkg} · ${ver} · ${arch}</div>
@@ -156,9 +178,14 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         (OUT / "icons").mkdir(parents=True, exist_ok=True)
         if ICONS.exists():
             for p in ICONS.glob("*.png"):
+                if p.name == "icon.png":
+                    continue
                 dest = OUT / "icons" / p.name
                 if not dest.exists() or p.stat().st_mtime > dest.stat().st_mtime:
                     shutil.copyfile(p, dest)
+            # ensure generic fallback exists as out/icons/icon.png but don't use for per-app fallback
+            if (ICONS / "icon.png").exists() and not (OUT / "icons" / "icon.png").exists():
+                shutil.copyfile(ICONS / "icon.png", OUT / "icons" / "icon.png")
     except Exception:
         pass
 
@@ -186,7 +213,6 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         arch = b.get("arch", "")
         apk = b.get("out", "")
         dl = f"https://github.com/Minehacker765/MorpheUpdater/releases/latest/download/{apk}" if apk else "#"
-        # bundle label: first tag key or combo
         tags = b.get("tags", {})
         bundle = next(iter(tags.keys()), key.split("|")[1] if "|" in key else "—")
         bundle_label = ", ".join(f"{k}" for k in tags.keys()) or bundle
@@ -194,10 +220,26 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         if pkg in ("com.google.android.youtube", "app.morphe.android.youtube", "com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"):
             patches_str += " · requires MicroG"
 
+        # icon: try clone then original, else extract from apk, else generate placeholder
         icon = ""
-        for cand in [CLONE_PACKAGE_MAP.get(pkg, pkg), pkg]:
+        candidates = []
+        clone = CLONE_PACKAGE_MAP.get(pkg)
+        if clone:
+            candidates.append(clone)
+        # also try original pkg if different
+        if _orig_pkg != pkg and _orig_pkg not in candidates:
+            candidates.append(_orig_pkg)
+        candidates.append(pkg)
+        for cand in candidates:
             cand_path = f"icons/{cand}.png"
-            if (ICONS / f"{cand}.png").exists() or (OUT / cand_path).exists():
+            if (OUT / cand_path).exists() or (ICONS / f"{cand}.png").exists():
+                # ensure in out
+                try:
+                    if (ICONS / f"{cand}.png").exists() and not (OUT / cand_path).exists():
+                        (OUT / "icons").mkdir(parents=True, exist_ok=True)
+                        shutil.copyfile(ICONS / f"{cand}.png", OUT / cand_path)
+                except Exception:
+                    pass
                 icon = cand_path
                 break
         if not icon:
@@ -205,27 +247,40 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
             if apk_file and apk_file.exists():
                 try:
                     from morpheupdater.fdroid import extract_icon
-                    got = extract_icon(apk_file, ICONS / f"{pkg}.png")
-                    if got:
-                        # ensure copied to out/icons
-                        try:
-                            src = ICONS / got
-                            dst = OUT / "icons" / got
-                            if src.exists() and not dst.exists():
-                                dst.parent.mkdir(parents=True, exist_ok=True)
-                                shutil.copyfile(src, dst)
-                        except Exception:
-                            pass
+                    # extract to ICONS first, then copy to OUT
+                    tmp_icon = ICONS / f"{pkg}.png"
+                    got = extract_icon(apk_file, tmp_icon)
+                    if got and (ICONS / got).exists():
+                        dest = OUT / "icons" / got
+                        if not dest.exists():
+                            dest.parent.mkdir(parents=True, exist_ok=True)
+                            shutil.copyfile(ICONS / got, dest)
                         icon = f"icons/{got}"
+                    elif tmp_icon.exists():
+                        dest = OUT / "icons" / tmp_icon.name
+                        if not dest.exists():
+                            shutil.copyfile(tmp_icon, dest)
+                        icon = f"icons/{tmp_icon.name}"
                 except Exception:
                     pass
         if not icon:
-            icon = "icons/icon.png"
+            # generate a simple placeholder instead of generic youtube music icon
+            try:
+                from morpheupdater.fdroid import _fallback_microg_icon
+                # use a per-package placeholder name
+                ph = ICONS / f"{pkg}.png"
+                if not ph.exists():
+                    _fallback_microg_icon(ph)
+                dest = OUT / "icons" / ph.name
+                if ph.exists() and not dest.exists():
+                    shutil.copyfile(ph, dest)
+                icon = f"icons/{pkg}.png" if (OUT / f"icons/{pkg}.png").exists() else "icons/icon.png"
+            except Exception:
+                icon = "icons/icon.png"
 
         display = PACKAGE_DISPLAY
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package", "")) or pkg
-        # patch count for sort
         patches_count = 0
         patch_list_html = ""
         try:
@@ -248,16 +303,11 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                     break
         except Exception:
             pass
-        # also fallback count from tags if no options file
-        if patches_count == 0 and patch_list_html:
-            pass
-        # if no patch list, still show patches_str
         patches_html = patch_list_html if patch_list_html else f"<span class='muted'>{patches_str or '—'}</span>"
 
         is_tv = pkg in TV_PACKAGES
         tv_badge = " <span style='background:#2a2a30;padding:2px 6px;border-radius:4px;font-size:0.7rem'>TV</span>" if is_tv else ""
         name_html = name + tv_badge
-        # escape for data attr
         name_attr = name.replace('"', "&quot;")
         card_html = Template(CARD).substitute(
             icon=icon, name=name_html, name_attr=name_attr, pkg=pkg, ver=ver, arch=arch,
@@ -266,7 +316,6 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         )
         cards.append((bundle, card_html, name.lower(), patches_count))
 
-    # build grouped (by bundle) and flat
     from collections import defaultdict
     by_bundle: dict[str, list] = defaultdict(list)
     for bundle, html, lname, pc in cards:
@@ -274,11 +323,9 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
     grouped_html = ""
     for bundle in sorted(by_bundle.keys()):
         items = by_bundle[bundle]
-        # sort inside bundle by name for initial
         items.sort(key=lambda x: x[1])
         inner = "\n".join(h for h, _, _ in items)
         grouped_html += f'<details class="bundle" open><summary>{bundle} <span class="count">{len(items)}</span></summary><div class="grid">{inner}</div></details>\n'
-    # flat (no grouping)
     flat_sorted = sorted(cards, key=lambda x: x[2])
     flat_html = "\n".join(h for _, h, _, _ in flat_sorted)
 
