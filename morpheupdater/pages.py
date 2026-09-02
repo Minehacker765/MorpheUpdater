@@ -63,7 +63,7 @@ footer{text-align:center;color:#777;padding:2rem 1rem;font-size:.85rem}
 
   <div class="controls">
     <input id="search" type="search" placeholder="Search apps, packages…">
-    <select id="sort"><option value="name">Sort: Name ↑</option><option value="name_desc">Sort: Name ↓</option><option value="patches_desc">Sort: Patches ↓</option><option value="patches_asc">Sort: Patches ↑</option></select>
+    <select id="sort"><option value="name">Sort: Name A→Z</option><option value="name_desc">Sort: Name Z→A</option><option value="patches_desc">Sort: Most patches</option><option value="patches_asc">Sort: Fewest patches</option></select>
     <div id="bundleToggle" class="toggle" role="button" tabindex="0" aria-pressed="false">Separate by bundle</div>
   </div>
 
@@ -342,8 +342,15 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         patches_count = 0
         patch_list_html = ""
         try:
-            # build compat map for this bundle
             compat = get_compat(bundle)
+            # compatible patches for this pkg from MPP (for count/sort and fallback)
+            compat_for_pkg = []
+            if compat:
+                for pn, pkgs in compat.items():
+                    if not pkgs or pkg in pkgs or _orig_pkg in pkgs:
+                        compat_for_pkg.append(pn)
+            # try options file first (enabled only)
+            found_via_options = False
             for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
                 if not _opt.exists():
                     continue
@@ -351,20 +358,14 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                 _entries = _d if isinstance(_d, list) else [_d]
                 for _e in _entries:
                     _patches = _e.get("patches", {})
-                    # filter to compatible only
                     _enabled = []
                     for pn, pv in _patches.items():
                         if not isinstance(pv, dict) or not pv.get("enabled"):
                             continue
-                        # if compat known, check pkg in compat list or universal (empty)
                         if compat:
                             pkgs = compat.get(pn)
-                            if pkgs is not None:
-                                # empty list or contains pkg or universal
-                                if pkgs and pkg not in pkgs and _orig_pkg not in pkgs:
-                                    # check if universal (no packages)
-                                    if not any(p in ("*", "any") for p in pkgs):
-                                        continue
+                            if pkgs is not None and pkgs and pkg not in pkgs and _orig_pkg not in pkgs:
+                                continue
                         _enabled.append(pn)
                     if _enabled:
                         patches_count = len(_enabled)
@@ -372,12 +373,22 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                         for _pn in sorted(_enabled):
                             patch_list_html += f"<li>{_pn}</li>"
                         patch_list_html += "</ul></details>"
+                        found_via_options = True
                         break
                 if patch_list_html:
                     break
-            # if no compat filtering worked (compat empty), fallback to previous logic but still count
-            if not patch_list_html:
+            # fallback: if no enabled via options, show all compatible from MPP (so every app has a list)
+            if not patch_list_html and compat_for_pkg:
+                patches_count = len(compat_for_pkg)
+                patch_list_html = "<details><summary>" + str(patches_count) + " patches</summary><ul>"
+                for _pn in sorted(compat_for_pkg):
+                    patch_list_html += f"<li>{_pn}</li>"
+                patch_list_html += "</ul></details>"
+            elif not patch_list_html and not compat_for_pkg:
+                # last resort: show enabled without compat filter (for pkgs not in MPP compat list)
                 for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
+                    if not _opt.exists():
+                        continue
                     _d = json.loads(_opt.read_text())
                     _entries = _d if isinstance(_d, list) else [_d]
                     for _e in _entries:
@@ -385,7 +396,13 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
                         _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
                         if _enabled:
                             patches_count = len(_enabled)
+                            patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
+                            for _pn in sorted(_enabled):
+                                patch_list_html += f"<li>{_pn}</li>"
+                            patch_list_html += "</ul></details>"
                             break
+                    if patch_list_html:
+                        break
         except Exception:
             pass
         patches_html = patch_list_html if patch_list_html else f"<span class='muted'>{patches_str or '—'}</span>"

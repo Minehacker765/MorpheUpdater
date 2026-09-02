@@ -974,6 +974,17 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     if up_to_date:
                         log.info("%s %s [%s/%s]: up to date", short(package), version, combo_id(combo), arch)
                         continue
+                    # prevent downgrade to lower version unless patches changed
+                    if prev and prev.get("version"):
+                        try:
+                            from .tools import _version_key
+                            if _version_key(version) < _version_key(str(prev.get("version"))):
+                                patches_changed = any(prev.get("tags", {}).get(b) != state["bundles"].get(b, "") for b in combo)
+                                if not patches_changed:
+                                    log.info("%s %s [%s/%s]: skip downgrade from %s", short(package), version, combo_id(combo), arch, prev.get("version"))
+                                    continue
+                        except Exception:
+                            pass
                     eff_res = (over.get("resolution") if over and "resolution" in over else None) or cfg.get("resolution", "xxxhdpi")
                     plan.append((app, combo, version, vc, arch, eff_res))
 
