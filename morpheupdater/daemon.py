@@ -1122,11 +1122,26 @@ async def publish(summary: dict, commit: bool, release: bool, tag: str | None = 
         # Fallback: if state has no files on disk (e.g. after clean), use built list
         if not files:
             files = [OUT / name for name in summary["built"] if (OUT / name).exists()]
+        # Remember previous Latest so we can trim it to delta after the new full release lands.
+        # Old releases keep only their cycle's delta APKs; Latest always has the full set.
+        # This keeps per-version history (older versions installable via their tag URL)
+        # without duplicating all 150+ APKs in every release.
+        prev_tag: str | None = None
+        try:
+            prev_tag = await tools.get_latest_release_tag()
+        except Exception as exc:
+            log.warning("could not determine previous latest release: %s", exc)
         try:
             await tools.create_release(tag, f"Patched apps {stamp}", notes, files)
         except Exception as exc:
             log.error("release failed: %s", exc)
             summary["failed"].append(("release", str(exc)))
+            return
+        if prev_tag and prev_tag != tag:
+            try:
+                await tools.trim_release_to_delta(prev_tag)
+            except Exception as exc:
+                log.warning("trim old release %s failed: %s", prev_tag, exc)
 
 
 async def self_update(cfg: dict) -> bool:

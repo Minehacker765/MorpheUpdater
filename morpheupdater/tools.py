@@ -470,3 +470,97 @@ async def create_release(tag: str, title: str, notes: str, files: list[Path]) ->
     if rc != 0:
         raise RuntimeError(f"gh release failed:\n{out[-500:]}")
     log.info("release %s created with %d files", tag, len(files))
+
+
+def _parse_built_from_notes(notes: str) -> set[str]:
+    """Extract the `## Built` asset list from release notes (written by publish)."""
+    keep: set[str] = set()
+    in_built = False
+    for line in (notes or "").splitlines():
+        s = line.strip()
+        if s.startswith("## Built"):
+            in_built = True
+            continue
+        if in_built:
+            if s.startswith("## "):
+                break
+            if s.startswith("- "):
+                name = s[2:].strip()
+                if name:
+                    keep.add(name)
+            elif s == "" or s.startswith("Full release"):
+                continue
+            elif s and not s.startswith("-"):
+                # end of list once non-list, non-blank content appears
+                if keep:
+                    break
+    return keep
+
+
+async def get_latest_release_tag() -> str | None:
+    """Tag of the current `Latest` release, or None if none exists."""
+    rc, out = await run(
+        ["gh", "release", "list", "--limit", "1", "--json", "tagName,isLatest", "--jq", ".[0] | select(.isLatest==true) | .tagName"],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=60,
+    )
+    if rc != 0:
+        return None
+    tag = out.strip().strip('"')
+    return tag or None
+
+
+async def trim_release_to_delta(tag: str) -> int:
+    """Trim an old release to only its delta assets (parsed from its `## Built` notes).
+
+    Returns number of deleted assets. Never deletes the release itself; if the
+    built list can't be parsed, does nothing (safe: keeps full set)."""
+    rc, out = await run(
+        ["gh", "release", "view", tag, "--json", "body,assets", "--jq", "{body: .body, assets: [.assets[].name]}"],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=120,
+    )
+    if rc != 0:
+        log.warning("trim %s: cannot view release (%s)", tag, out[-200:])
+        return 0
+    try:
+        import json as _json
+        data = _json.loads(out)
+    except Exception as exc:
+        log.warning("trim %s: cannot parse release json (%s)", tag, exc)
+        return 0
+    keep = _parse_built_from_notes(data.get("body", ""))
+    if not keep:
+        log.warning("trim %s: no ## Built list in notes, keeping full set", tag)
+        return 0
+    deleted = 0
+    for asset in data.get("assets", []):
+        if asset not in keep:
+            rc2, out2 = await run(
+                ["gh", "release", "delete-asset", tag, asset, "--yes"],
+                env=os.environ.copy(), cwd=ROOT, timeout_s=300,
+            )
+            if rc2 != 0:
+                log.warning("trim %s: cannot delete asset %s (%s)", tag, asset, out2[-200:])
+            else:
+                deleted += 1
+    if deleted:
+        log.info("trim %s: deleted %d assets, kept %d (delta)", tag, deleted, len(keep))
+        # annotate notes so the history stays readable
+        rc3, _ = await run(
+            ["gh", "release", "view", tag, "--json", "body", "--jq", ".body"],
+            env=os.environ.copy(), cwd=ROOT, timeout_s=60,
+        )
+        if rc3 == 0:
+            note = "\n\n> Trimmed to delta: unchanged APKs moved to the newer `Latest` release; this release keeps only the APKs built in this cycle."
+            # gh release edit --notes replaces whole body, so re-fetch raw body first
+            rc4, body = await run(
+                ["gh", "api", f"repos/{{owner}}/{{repo}}/releases/tags/{tag}", "--jq", ".body"],
+                env=os.environ.copy(), cwd=ROOT, timeout_s=60,
+            )
+            if rc4 == 0 and "Trimmed to delta" not in body:
+                await run(
+                    ["gh", "release", "edit", tag, "--notes", body + note],
+                    env=os.environ.copy(), cwd=ROOT, timeout_s=60,
+                )
+    else:
+        log.info("trim %s: already delta (%d assets)", tag, len(keep))
+    return deleted
