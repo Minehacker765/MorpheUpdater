@@ -675,14 +675,14 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
-      "at": 1788301643,
-      "out": "photos-7.90.0.971743778-de-vanced-arm64.apk",
+      "at": 1788478222,
+      "out": "photos-7.91.0.973540846-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 52288916,
-      "version": "7.90.0.971743778"
+      "vc": 52331956,
+      "version": "7.91.0.973540846"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
