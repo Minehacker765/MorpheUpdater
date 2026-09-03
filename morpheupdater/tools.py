@@ -456,6 +456,27 @@ async def commit_and_push(message: str) -> bool:
     _rc, branch = await run(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=ROOT)
     branch = branch.strip() or "main"
     rc, out = await run(["git", "push", "origin", branch], env=_git_env(), cwd=ROOT)
+    if rc != 0 and ("fetch first" in out or "[rejected]" in out):
+        # Remote moved under us (human pushes from dev machine). Rebase our
+        # bot commit onto it and retry once instead of failing the cycle.
+        log.info("push rejected, rebasing onto origin/%s and retrying", branch)
+        await run(["git", "fetch", "origin"], cwd=ROOT, timeout_s=60)
+        rc2, out2 = await run(
+            ["git", "rebase", "--autostash", f"origin/{branch}"], cwd=ROOT, timeout_s=180
+        )
+        if rc2 != 0:
+            # generated out/ files may conflict with our own fix commits;
+            # favour remote for generated files, keep our commit
+            await run(
+                ["git", "checkout", "--theirs", "--", "out/index.html", "out/index-v1.json", "out/index-v2.json"],
+                cwd=ROOT, timeout_s=30,
+            )
+            await run(["git", "add", "-A", "out/"], cwd=ROOT, timeout_s=30)
+            rc3, _ = await run(["git", "rebase", "--continue"], cwd=ROOT, timeout_s=60)
+            if rc3 != 0:
+                await run(["git", "rebase", "--abort"], cwd=ROOT, timeout_s=30)
+                raise RuntimeError(f"git push failed:\n{out[-500:]}")
+        rc, out = await run(["git", "push", "origin", branch], env=_git_env(), cwd=ROOT)
     if rc != 0:
         raise RuntimeError(f"git push failed:\n{out[-500:]}")
     log.info("committed and pushed: %s", message)
