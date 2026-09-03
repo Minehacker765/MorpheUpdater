@@ -1142,6 +1142,24 @@ async def publish(summary: dict, commit: bool, release: bool, tag: str | None = 
                 await tools.trim_release_to_delta(prev_tag)
             except Exception as exc:
                 log.warning("trim old release %s failed: %s", prev_tag, exc)
+    elif release:
+        # Nothing new built (or a previous upload was killed by restart/timeout):
+        # make sure the newest release actually holds the full set, resume if not.
+        try:
+            newest = await tools.get_newest_release_tag()
+            if newest:
+                want = []
+                for e in state.get("builds", {}).values():
+                    apk = e.get("out")
+                    if apk and (OUT / apk).exists():
+                        want.append(OUT / apk)
+                if want:
+                    have = set(await tools.list_release_assets(newest))
+                    if any(f.name not in have for f in want):
+                        log.info("release %s incomplete (%d/%d assets), resuming upload", newest, len(have), len(want))
+                        await tools.ensure_release_complete(newest, want)
+        except Exception as exc:
+            log.warning("release resume check failed: %s", exc)
 
 
 async def self_update(cfg: dict) -> bool:

@@ -463,13 +463,77 @@ async def commit_and_push(message: str) -> bool:
 
 
 async def create_release(tag: str, title: str, notes: str, files: list[Path]) -> None:
-    cmd = ["gh", "release", "create", tag, "--title", title, "--notes", notes]
-    for f in files:
-        cmd.append(str(f))
-    rc, out = await run(cmd, env=os.environ.copy(), cwd=ROOT, timeout_s=1200)
+    # Create as draft first, upload assets, then publish. If the process is
+    # killed mid-upload (restart/timeout), the next cycle resumes via
+    # ensure_release_complete instead of leaving a half-filled Latest.
+    rc, out = await run(
+        ["gh", "release", "create", tag, "--draft", "--title", title, "--notes", notes],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=120,
+    )
     if rc != 0:
-        raise RuntimeError(f"gh release failed:\n{out[-500:]}")
-    log.info("release %s created with %d files", tag, len(files))
+        # may already exist from a killed previous attempt -> resume it
+        log.warning("release create %s: %s (will try to resume)", tag, out[-200:])
+    await upload_missing_assets(tag, files)
+    await publish_release(tag)
+    log.info("release %s published with %d files", tag, len(files))
+
+
+async def list_release_assets(tag: str) -> list[str]:
+    rc, out = await run(
+        ["gh", "release", "view", tag, "--json", "assets", "--jq", ".assets[].name"],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=120,
+    )
+    if rc != 0:
+        return []
+    return [l.strip() for l in out.splitlines() if l.strip()]
+
+
+async def upload_missing_assets(tag: str, files: list[Path]) -> None:
+    """Upload only assets missing from the release (resume-safe, idempotent)."""
+    existing = set(await list_release_assets(tag))
+    missing = [f for f in files if f.name not in existing and f.exists()]
+    if not missing:
+        log.info("release %s: all %d assets already present", tag, len(files))
+        return
+    log.info("release %s: uploading %d/%d missing assets", tag, len(missing), len(files))
+    # upload in chunks so a kill/timeout loses less progress and logs stay readable
+    for i in range(0, len(missing), 20):
+        chunk = missing[i : i + 20]
+        rc, out = await run(
+            ["gh", "release", "upload", tag, *[str(f) for f in chunk], "--clobber"],
+            env=os.environ.copy(), cwd=ROOT, timeout_s=1800,
+        )
+        if rc != 0:
+            raise RuntimeError(f"gh release upload failed ({tag}):\n{out[-500:]}")
+        log.info("release %s: uploaded chunk %d-%d", tag, i + 1, min(i + 20, len(missing)))
+
+
+async def publish_release(tag: str) -> None:
+    """Flip a draft release to published (Latest). No-op if already published."""
+    rc, out = await run(
+        ["gh", "release", "edit", tag, "--draft=false"],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=120,
+    )
+    if rc != 0:
+        raise RuntimeError(f"gh release publish failed ({tag}):\n{out[-500:]}")
+
+
+async def get_newest_release_tag() -> str | None:
+    """Tag of the most recently created release (draft or not), or None."""
+    rc, out = await run(
+        ["gh", "release", "list", "--limit", "1", "--json", "tagName", "--jq", ".[0].tagName"],
+        env=os.environ.copy(), cwd=ROOT, timeout_s=60,
+    )
+    if rc != 0:
+        return None
+    tag = out.strip().strip('"')
+    return tag or None
+
+
+async def ensure_release_complete(tag: str, files: list[Path]) -> None:
+    """Resume an interrupted release: upload missing assets, publish if draft."""
+    await upload_missing_assets(tag, files)
+    await publish_release(tag)
 
 
 def _parse_built_from_notes(notes: str) -> set[str]:

@@ -101,7 +101,10 @@
           "hoomans"
         ]
       ],
-      "display": "Twitch"
+      "display": "Twitch",
+      "archs": [
+        "arm64"
+      ]
     },
     {
       "package": "com.strava",
