@@ -19,6 +19,7 @@ MORPHE_PATCHES = MORPHE_DATA / "patches"
 
 DEFAULT_CONFIG: dict = {
     "interval_minutes": 30,
+    "self_update": True,
     "archs": {"arm64": True, "arm": False, "armv7": False, "x86": False, "x86_64": False, "tv": True, "universal": False},
     "resolution": "xxxhdpi",
     "locales": ["en-US", "es"],

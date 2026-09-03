@@ -1129,12 +1129,70 @@ async def publish(summary: dict, commit: bool, release: bool, tag: str | None = 
             summary["failed"].append(("release", str(exc)))
 
 
+async def self_update(cfg: dict) -> bool:
+    """Pull origin/main and restart if human commits landed (ignoring morpheupdater bot commits).
+
+    Returns True if restart was requested (caller should exit)."""
+    if not cfg.get("self_update", True):
+        return False
+    try:
+        # fetch only, no merge yet
+        rc, out = await tools.run(["git", "fetch", "origin"], cwd=ROOT, timeout_s=60)
+        if rc != 0:
+            return False
+        # list new origin/main commits not in HEAD, excluding bot
+        rc, log_out = await tools.run(
+            ["git", "log", "HEAD..origin/main", "--pretty=format:%H %an %s"], cwd=ROOT, timeout_s=30
+        )
+        if rc != 0 or not log_out.strip():
+            return False
+        human = [l for l in log_out.strip().splitlines() if "morpheupdater" not in l.lower()]
+        if not human:
+            # only bot commits (build/fdroid/pages) — we already have them via our own pushes
+            # still rebase to keep history linear
+            await tools.run(["git", "rebase", "origin/main"], cwd=ROOT, timeout_s=120)
+            return False
+        log.info("self-update: %d human commit(s) on origin/main, pulling", len(human))
+        # stash including untracked icons/out (autostash), favour remote for generated out/
+        await tools.run(["git", "stash", "push", "-m", "self-update", "--include-untracked"], cwd=ROOT, timeout_s=60)
+        rc, out = await tools.run(["git", "rebase", "origin/main"], cwd=ROOT, timeout_s=180)
+        if rc != 0:
+            # conflicts (usually out/index.html from bot) — take remote for code, keep stash for icons
+            log.warning("self-update rebase conflict, trying theirs for out/: %s", out[-300:])
+            await tools.run(["git", "checkout", "--theirs", "--", "out/index.html", "out/index-v1.json", "out/index-v2.json"], cwd=ROOT, timeout_s=30)
+            await tools.run(["git", "add", "-A", "out/"], cwd=ROOT, timeout_s=30)
+            rc2, _ = await tools.run(["git", "rebase", "--continue"], cwd=ROOT, timeout_s=60)
+            if rc2 != 0:
+                await tools.run(["git", "rebase", "--abort"], cwd=ROOT, timeout_s=30)
+                return False
+        # restore stashed icons (no clobber)
+        await tools.run(["git", "stash", "pop"], cwd=ROOT, timeout_s=60)
+        log.info("self-update: updated to origin/main, restarting")
+        # graceful restart: exit, systemd Restart=always will relaunch
+        import os as _os
+        import sys as _sys
+        _sys.stdout.flush()
+        _os._exit(42)
+    except Exception as exc:
+        log.warning("self-update failed: %s", exc)
+        return False
+    return False
+
+
 async def loop() -> None:
     while True:
         started = time.monotonic()
         try:
+            cfg = load_config()
+            if await self_update(cfg):
+                return
             await cycle()
         except KeyboardInterrupt:
+            raise
+        except SystemExit as e:
+            # self-update exit code
+            if e.code == 42:
+                return
             raise
         except Exception:
             log.exception("cycle crashed")
