@@ -1215,11 +1215,11 @@
     "com.streetwriters.notesnook|hxreborn|arm64": {
       "app_name": "Notesnook Secure Private Notes",
       "arch": "arm64",
-      "at": 1788301739,
+      "at": 1788476299,
       "out": "notesnook-3.4.11-hxreborn-arm64.apk",
       "package": "com.streetwriters.notesnook",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 4197421,
       "version": "3.4.11"
@@ -1357,16 +1357,16 @@
       "version": "4.47.2_tv"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
-      "at": 1788322538,
-      "out": "sleep-20260816-hoodles-arm64.apk",
+      "at": 1788476307,
+      "out": "sleep-20260828-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 231132,
-      "version": "20260816"
+      "vc": 231142,
+      "version": "20260828"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "Rakuten Viber Messenger",
