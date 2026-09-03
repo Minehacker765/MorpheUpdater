@@ -74,5 +74,81 @@
                 "enabled": true
             }
         }
+    },
+    {
+        "meta": {
+            "created_at": "2026-09-01T22:29:27.857864541Z",
+            "updated_at": "2026-09-03T22:28:13.733855327Z",
+            "source": "v1.14.1__patches-1.14.1.mpp",
+            "sha256": "1884f73c1b04df303ad9e584be41e724c20586ce0320e115d0152d0a3096c093"
+        },
+        "patches": {
+            "GmsCore support": {
+                "enabled": true
+            },
+            "Remove pairip protection": {
+                "enabled": true
+            },
+            "Unlock premium": {
+                "enabled": true
+            },
+            "Unlock full version": {
+                "enabled": true
+            },
+            "Bypass signature check": {
+                "enabled": true
+            },
+            "Hide membership upselling": {
+                "enabled": true
+            },
+            "Open Library on launch": {
+                "enabled": true
+            },
+            "AMOLED dark theme": {
+                "enabled": true
+            },
+            "Dark theme": {
+                "enabled": true
+            },
+            "Hide ads": {
+                "enabled": true
+            },
+            "Unlock pro": {
+                "enabled": true
+            },
+            "Show AI progress": {
+                "enabled": true
+            },
+            "Speed up AI tools": {
+                "enabled": true
+            },
+            "Inspect AI requests": {
+                "enabled": true
+            },
+            "Spoof iOS platform": {
+                "enabled": true
+            },
+            "Spoof signature": {
+                "enabled": true
+            },
+            "Disable tracking": {
+                "enabled": true
+            },
+            "Remove free accounts limit": {
+                "enabled": true
+            },
+            "Unlock custom time picker": {
+                "enabled": true
+            },
+            "Hide upgrade upselling": {
+                "enabled": true
+            },
+            "Remove 'Sent from' signature": {
+                "enabled": true
+            },
+            "Remove nags": {
+                "enabled": true
+            }
+        }
     }
 ]

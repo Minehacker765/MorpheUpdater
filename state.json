@@ -3,11 +3,11 @@
     "ai.perplexity.app.android|hxreborn|arm64": {
       "app_name": "Perplexity - Ask Anything",
       "arch": "arm64",
-      "at": 1788301728,
+      "at": 1788474496,
       "out": "app.android-2.97.0-hxreborn-arm64.apk",
       "package": "ai.perplexity.app.android",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 260647,
       "version": "2.97.0"
@@ -27,11 +27,11 @@
     "all.in.one.calculator|hxreborn|arm64": {
       "app_name": "All-In-One Calculator",
       "arch": "arm64",
-      "at": 1788235652,
+      "at": 1788474145,
       "out": "calculator-3.4.0-hxreborn-arm64.apk",
       "package": "all.in.one.calculator",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 340,
       "version": "3.4.0"
@@ -63,11 +63,11 @@
     "app.rubberbands.fit|hxreborn|arm64": {
       "app_name": "Rubber Bands",
       "arch": "arm64",
-      "at": 1788301771,
+      "at": 1788474493,
       "out": "fit-3.9-hxreborn-arm64.apk",
       "package": "app.rubberbands.fit",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 291,
       "version": "3.9"
@@ -75,11 +75,11 @@
     "app.symfonik.music.player|hxreborn|arm64": {
       "app_name": "Symfonium: Music player & cast",
       "arch": "arm64",
-      "at": 1788300108,
+      "at": 1788474156,
       "out": "player-14.1.0-hxreborn-arm64.apk",
       "package": "app.symfonik.music.player",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 127734,
       "version": "14.1.0"
@@ -109,16 +109,16 @@
       "version": "1.16.24"
     },
     "ch.protonmail.android|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "Proton Mail: Encrypted Email",
       "arch": "arm64",
-      "at": 1788306802,
-      "out": "protonmail.android-7.11.4-hxreborn-arm64.apk",
+      "at": 1788474180,
+      "out": "protonmail.android-7.10.4-hxreborn-arm64.apk",
       "package": "ch.protonmail.android",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
-      "vc": 18315,
-      "version": "7.11.4"
+      "vc": 17667,
+      "version": "7.10.4"
     },
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "",
@@ -253,16 +253,16 @@
       "version": "32.13.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1788311523,
-      "out": "mp3-26.29.1-de-vanced-arm64.apk",
+      "at": 1788474498,
+      "out": "mp3-26.30.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 526290110,
-      "version": "26.29.1"
+      "vc": 526300110,
+      "version": "26.30.1"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "",
@@ -303,11 +303,11 @@
     "com.audible.application|hxreborn|arm64": {
       "app_name": "Audible: Audiobooks & Podcasts",
       "arch": "arm64",
-      "at": 1788301749,
+      "at": 1788474522,
       "out": "application-26.34.07-hxreborn-arm64.apk",
       "package": "com.audible.application",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 2090263407,
       "version": "26.34.07"
@@ -519,11 +519,11 @@
     "com.cxinventor.file.explorer|hxreborn|arm64": {
       "app_name": "Cx File Explorer",
       "arch": "arm64",
-      "at": 1788235703,
+      "at": 1788474179,
       "out": "explorer-2.7.8-hxreborn-arm64.apk",
       "package": "com.cxinventor.file.explorer",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 278,
       "version": "2.7.8"
@@ -613,13 +613,13 @@
       "version": "3.73.179"
     },
     "com.gamma.scan|hxreborn|arm64": {
-      "app_name": "QR & Barcode Scanner",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788300121,
+      "at": 1788474499,
       "out": "scan-2.2.221-hxreborn-arm64.apk",
       "package": "com.gamma.scan",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 221,
       "version": "2.2.221"
@@ -697,25 +697,25 @@
       "version": "4.2.20260709.968193888"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube Music",
       "arch": "arm64",
-      "at": 1788299367,
+      "at": 1788474118,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.41.0"
+        "morphe": "v1.42.0-dev.1"
       },
       "vc": 91551240,
       "version": "9.15.51"
     },
     "com.google.android.youtube|morphe|arm64": {
-      "app_name": "YouTube",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788299478,
+      "at": 1788474472,
       "out": "youtube-21.07.247-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.41.0"
+        "morphe": "v1.42.0-dev.1"
       },
       "vc": 1561056418,
       "version": "21.07.247"
@@ -771,11 +771,11 @@
     "com.kick.mobile|hxreborn|arm64": {
       "app_name": "KICK: Live Streaming",
       "arch": "arm64",
-      "at": 1788235751,
+      "at": 1788474519,
       "out": "kick.mobile-40.29.1-hxreborn-arm64.apk",
       "package": "com.kick.mobile",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 60006936,
       "version": "40.29.1"
@@ -855,23 +855,23 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1788268495,
-      "out": "microg-7.0.0-arm64.apk",
+      "at": 1788473874,
+      "out": "microg-7.1.0-dev.2-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.0.0"
+        "microg": "7.1.0-dev.2"
       },
       "vc": 255070000,
-      "version": "7.0.0"
+      "version": "7.1.0-dev.2"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
-      "app_name": "Series y Pel\u00edculas - Showly",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788235751,
+      "at": 1788474505,
       "out": "showly2-3.70.0-hxreborn-arm64.apk",
       "package": "com.michaldrabik.showly2",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 840,
       "version": "3.70.0"
@@ -937,13 +937,13 @@
       "version": "2.8.3"
     },
     "com.myvitale.forus|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "ForusApp",
       "arch": "arm64",
-      "at": 1788266630,
+      "at": 1788474531,
       "out": "forus-3.0.16-hxreborn-arm64.apk",
       "package": "com.myvitale.forus",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 97,
       "version": "3.0.16"
@@ -1081,13 +1081,13 @@
       "version": "4.12.8 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "",
+      "app_name": "Reddit",
       "arch": "arm64",
-      "at": 1788299367,
+      "at": 1788474151,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.41.0"
+        "morphe": "v1.42.0-dev.1"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1263,11 +1263,11 @@
     "com.thetrainline|hxreborn|arm64": {
       "app_name": "Trainline: Train travel Europe",
       "arch": "arm64",
-      "at": 1788300202,
+      "at": 1788474533,
       "out": "thetrainline-407.0.0.178994-hxreborn-arm64.apk",
       "package": "com.thetrainline",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 1278994,
       "version": "407.0.0.178994"
@@ -1729,13 +1729,13 @@
       "version": "1.2.75"
     },
     "org.readera|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "ReadEra \u2013 book reader pdf epub",
       "arch": "arm64",
-      "at": 1788266632,
+      "at": 1788474531,
       "out": "readera-26.05.20+2300-hxreborn-arm64.apk",
       "package": "org.readera",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 2300,
       "version": "26.05.20+2300"
@@ -1765,13 +1765,13 @@
       "version": "7.0.4"
     },
     "photo.editor.photoeditor.photoeditorpro|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "Photo Editor - Polish",
       "arch": "arm64",
-      "at": 1788266634,
+      "at": 1788474556,
       "out": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
       "package": "photo.editor.photoeditor.photoeditorpro",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 265100,
       "version": "1.791.265"
@@ -1791,11 +1791,11 @@
     "psyberia.alpinequest.free|hxreborn|arm64": {
       "app_name": "AlpineQuest Explorer Lite",
       "arch": "arm64",
-      "at": 1788301783,
+      "at": 1788474546,
       "out": "free-2.4.0e-hxreborn-arm64.apk",
       "package": "psyberia.alpinequest.free",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 412,
       "version": "2.4.0e"
@@ -1878,9 +1878,9 @@
     "de-vanced": "v1.3.1",
     "hoodles": "v1.44.0-dev.1",
     "hoomans": "v1.51.1",
-    "hxreborn": "v1.14.0",
-    "microg": "7.0.0",
-    "morphe": "v1.41.0",
+    "hxreborn": "v1.14.1",
+    "microg": "7.1.0-dev.2",
+    "morphe": "v1.42.0-dev.1",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
@@ -1895,7 +1895,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.15.0-dev.6"
+      "tag": "v1.15.0"
     }
   }
 }
