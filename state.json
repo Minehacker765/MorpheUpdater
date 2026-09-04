@@ -447,11 +447,11 @@
     "com.cbs.ott|androidtv|tv": {
       "app_name": "Paramount+",
       "arch": "tv",
-      "at": 1788309735,
+      "at": 1788496218,
       "out": "ott-16.19.0-androidtv-tv.apk",
       "package": "com.cbs.ott",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 520000827,
       "version": "16.19.0"
@@ -1069,16 +1069,16 @@
       "version": "10.38.1"
     },
     "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Money Manager Expense & Budget",
       "arch": "arm64",
-      "at": 1788266787,
-      "out": "moneymanagerfree-4.12.8 GF-hoomans-arm64.apk",
+      "at": 1788496228,
+      "out": "moneymanagerfree-4.12.10 GF-hoomans-arm64.apk",
       "package": "com.realbyteapps.moneymanagerfree",
       "tags": {
         "hoomans": "v1.51.1"
       },
-      "vc": 1197,
-      "version": "4.12.8 GF"
+      "vc": 1201,
+      "version": "4.12.10 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "Reddit",
@@ -1695,14 +1695,14 @@
     "nl.sanomamedia.android.nu|de-vanced|arm64": {
       "app_name": "NU.nl - Nieuws, Sport & meer",
       "arch": "arm64",
-      "at": 1788235498,
-      "out": "nu-26.7.0-de-vanced-arm64.apk",
+      "at": 1788496226,
+      "out": "nu-26.8.0-de-vanced-arm64.apk",
       "package": "nl.sanomamedia.android.nu",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 210147,
-      "version": "26.7.0"
+      "vc": 210153,
+      "version": "26.8.0"
     },
     "nom.vrd|hoodles|arm64": {
       "app_name": "",
@@ -2027,7 +2027,7 @@
       68682740
     ],
     "com.cbs.ott": [
-      1788309735,
+      1788496218,
       26988091
     ],
     "com.cfdrink": [
@@ -2203,8 +2203,8 @@
       47073965
     ],
     "com.realbyteapps.moneymanagerfree": [
-      1788472477,
-      24046808
+      1788496228,
+      24067299
     ],
     "com.reddit.frontpage": [
       1788474151,
@@ -2371,8 +2371,8 @@
       17025225
     ],
     "nl.sanomamedia.android.nu": [
-      1788235497,
-      43697401
+      1788496226,
+      41520043
     ],
     "nom.vrd": [
       1788300093,
@@ -2419,8 +2419,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788490860,
-      56659147
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
