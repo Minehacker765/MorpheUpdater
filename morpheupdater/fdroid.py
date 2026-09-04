@@ -676,7 +676,8 @@ def _drawable_to_image(z, table, default_pid, dtype, udata, raw_s, size: int, tr
 
 
 def _render_xml_drawable(z, table, default_pid, path: str, size: int):
-    """Render a drawable XML (vector / shape / gradient / bitmap / layer-list)."""
+    """Render a drawable XML (vector / shape / gradient / bitmap / layer-list,
+    including nested adaptive-icon / inset structures)."""
     from PIL import Image  # type: ignore
 
     try:
@@ -684,59 +685,7 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
     except KeyError:
         return None
     if data[:2] == b"<?":
-        import xml.etree.ElementTree as _ET
-
-        try:
-            root = _ET.fromstring(data)
-        except Exception:
-            return None
-        tag = root.tag.split("}")[-1]
-        A = "http://schemas.android.com/apk/res/android"
-
-        def _a(el, name, default=None):
-            return el.attrib.get(f"{{{A}}}{name}", default)
-
-        if tag == "vector":
-            return _rasterize_vector_et(root, size)
-        if tag == "shape":
-            solid = root.find("solid")
-            if solid is not None:
-                col = _parse_hex_color(_a(solid, "color", "#00000000") or "#00000000")
-                if col:
-                    return Image.new("RGBA", (size, size), col)
-            return None
-        if tag == "gradient":
-            return _gradient_image(root, size)
-        if tag == "bitmap":
-            src = _a(root, "src")
-            if src and src.startswith("@"):
-                return _drawable_file_by_name(z, table, src, size)
-            if src:
-                im = _load_raster(z, src.lstrip("@"))
-                return im.resize((size, size), Image.LANCZOS) if im else None
-            return None
-        if tag in ("layer-list", "level-list"):
-            base = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-            for item in root:
-                layer = _render_et_item(item, z, table, size)
-                if layer is not None:
-                    base = Image.alpha_composite(base, layer.convert("RGBA").resize((size, size)))
-            return base
-        if tag in ("inset", "scale", "clip"):
-            for sub in root:
-                layer = _render_et_item(sub, z, table, size, nested=True)
-                if layer is not None:
-                    return layer
-            return None
-        if tag == "selector":
-            for item in root.iter("item"):
-                for k, v in item.attrib.items():
-                    if k.endswith("}color"):
-                        col = _parse_hex_color(v)
-                        if col:
-                            return Image.new("RGBA", (size, size), col)
-            return None
-        return None
+        return None  # APK resources are always binary; text only via fallback
     # binary AXML
     try:
         _, root = _axml_tree(data)
@@ -771,38 +720,100 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
         if cols:
             return _gradient_colors(cols, size)
         return None
+    # every other drawable kind goes through the shared recursive renderer
+    # (handles nesting: adaptive-in-inset, bitmap foregrounds, etc.)
+    return _render_drawable_node(z, table, default_pid, root, size)
+
+
+def _render_layer_node(z, table, default_pid, node, size: int):
+    """Render one drawable holder node (background/foreground/item/inset...):
+    explicit drawable attr first, else first nested drawable element. Applies
+    InsetDrawable shrinking when the node itself is an <inset>."""
+    inner = None
+    a = _android_attr(node, "drawable") or _android_attr(node, "color") or _android_attr(node, "src")
+    if a:
+        _dt, _ud, _rs = a
+        inner = _drawable_to_image(z, table, default_pid, _dt, _ud, _rs, size)
+    if inner is None:
+        for sub in node[2]:
+            if isinstance(sub, list) and sub[0] in _DRAWABLE_TAGS:
+                inner = _render_drawable_node(z, table, default_pid, sub, size)
+                if inner is not None:
+                    break
+    if inner is None:
+        return None
+    if node[0] == "inset":
+        def _in(name):
+            b = _android_attr(node, name)
+            if b is None:
+                return None
+            return _inset_px(*b, size)
+        allv = _android_attr(node, "inset")
+        allpx = _inset_px(*allv, size) if allv else 0
+        left = _in("insetLeft")
+        if left is None:
+            left = _in("insetStart")
+        top = _in("insetTop")
+        right = _in("insetRight")
+        if right is None:
+            right = _in("insetEnd")
+        bottom = _in("insetBottom")
+        left = allpx if left is None else left
+        top = allpx if top is None else top
+        right = allpx if right is None else right
+        bottom = allpx if bottom is None else bottom
+        if left or top or right or bottom:
+            inner = _apply_inset(inner, size, left, top, right, bottom)
+    return inner
+
+
+def _render_drawable_node(z, table, default_pid, node, size: int):
+    """Render any binary-AXML drawable node (recursive for nesting)."""
+    tag = node[0]
+    if tag == "vector":
+        return _rasterize_vector_node(node, size, z, table, default_pid)
+    if tag == "adaptive-icon":
+        return _render_adaptive_node(z, table, default_pid, node, size)
+    if tag == "shape":
+        for c in node[2]:
+            if c[0] == "solid":
+                a = _android_attr(c, "color")
+                if a:
+                    col = _color_of_value(table, default_pid, *a, z)
+                    if col and len(col) == 4:
+                        from PIL import Image  # type: ignore
+
+                        return Image.new("RGBA", (size, size), col)
+        return None
+    if tag == "gradient":
+        cols = []
+        for an in ("startColor", "centerColor", "endColor"):
+            a = _android_attr(node, an)
+            if a:
+                col = _color_of_value(table, default_pid, *a, z)
+                if col and len(col) == 4:
+                    cols.append(col)
+        return _gradient_colors(cols, size) if cols else None
     if tag == "bitmap":
+        a = _android_attr(node, "src")
+        if a:
+            return _drawable_to_image(z, table, default_pid, *a, size)
         return None
     if tag in ("layer-list", "level-list"):
         from PIL import Image  # type: ignore
 
         base = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-        for item in root[2]:
-            if item[0] != "item":
+        for item in node[2]:
+            if not isinstance(item, list):
                 continue
-            a = _android_attr(item, "drawable")
-            layer = None
-            if a:
-                layer = _drawable_to_image(z, table, default_pid, *a, size)
-            if layer is None:
-                for sub in item[2]:
-                    if sub[0] in ("shape", "vector", "gradient", "bitmap"):
-                        # render nested via temp recursion on rebuilt node
-                        layer = _render_xml_node(z, table, default_pid, sub, size)
-                        if layer:
-                            break
-            if layer:
+            layer = _render_layer_node(z, table, default_pid, item, size)
+            if layer is not None:
                 base = Image.alpha_composite(base, layer.convert("RGBA").resize((size, size)))
-        return base
+        return base if base.getbbox() else None
     if tag in ("inset", "scale", "clip"):
-        for sub in root[2]:
-            if isinstance(sub, list):
-                layer = _render_xml_node(z, table, default_pid, sub, size)
-                if layer:
-                    return layer
-        return None
+        return _render_layer_node(z, table, default_pid, node, size)
     if tag == "selector":
-        for item in _find_nodes(root, "item"):
+        for item in _find_nodes(node, "item"):
             a = _android_attr(item, "color")
             if a:
                 col = _color_of_value(table, default_pid, *a, z)
@@ -814,99 +825,26 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
     return None
 
 
-def _render_xml_node(z, table, default_pid, node, size: int):
-    if node[0] == "vector":
-        return _rasterize_vector_node(node, size, z, table, default_pid)
-    if node[0] == "shape":
-        for c in node[2]:
-            if c[0] == "solid":
-                a = _android_attr(c, "color")
-                if a:
-                    col = _color_of_value(table, default_pid, *a, z)
-                    if col and len(col) == 4:
-                        from PIL import Image  # type: ignore
-
-                        return Image.new("RGBA", (size, size), col)
-        return None
-    if node[0] == "gradient":
-        from PIL import Image  # type: ignore
-
-        cols = []
-        for an in ("startColor", "centerColor", "endColor"):
-            a = _android_attr(node, an)
-            if a:
-                col = _color_of_value(table, default_pid, *a, z)
-                if col and len(col) == 4:
-                    cols.append(col)
-        return _gradient_colors(cols, size) if cols else None
-    return None
-
-
-def _gradient_image(root, size: int):
+def _render_adaptive_node(z, table, default_pid, node, size: int):
+    """Composite an adaptive-icon node (background + foreground)."""
     from PIL import Image  # type: ignore
 
-    A = "http://schemas.android.com/apk/res/android"
-
-    def _a(name):
-        return root.attrib.get(f"{{{A}}}{name}")
-
-    cols = []
-    for n in ("startColor", "centerColor", "endColor"):
-        v = _a(n)
-        if v:
-            col = _parse_hex_color(v)
-            if col:
-                cols.append(col)
-    return _gradient_colors(cols, size) if cols else None
-
-
-def _render_et_item(el, z, table, size: int, nested=False):
-    """Render one text-XML drawable element (layer-list item child or nested)."""
-    from PIL import Image  # type: ignore
-
-    A = "http://schemas.android.com/apk/res/android"
-
-    def _a(name, default=None):
-        return el.attrib.get(f"{{{A}}}{name}", default)
-
-    tag = el.tag.split("}")[-1]
-    if not nested and tag == "item":
-        d = _a("drawable")
-        if d:
-            if d.startswith("#"):
-                col = _parse_hex_color(d)
-                return Image.new("RGBA", (size, size), col) if col else None
-            if d.startswith("@"):
-                return _drawable_file_by_name(z, table, d, size)
-            return None
-        for sub in el:
-            layer = _render_et_item(sub, z, table, size, nested=True)
-            if layer is not None:
-                return layer
+    bg = fg = None
+    for child in node[2]:
+        if not isinstance(child, list):
+            continue
+        if child[0] == "background" and bg is None:
+            bg = _render_layer_node(z, table, default_pid, child, size)
+        elif child[0] == "foreground" and fg is None:
+            fg = _render_layer_node(z, table, default_pid, child, size)
+    if bg is None:
+        bg = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    if fg is None or fg.convert("RGBA").getbbox() is None:
+        # no (visible) foreground: broken adaptive icon — fail so callers
+        # try the next source instead of emitting a flat square
         return None
-    if tag == "shape":
-        solid = el.find("solid")
-        if solid is not None:
-            col = _parse_hex_color(solid.attrib.get(f"{{{A}}}color", "#00000000"))
-            if col:
-                return Image.new("RGBA", (size, size), col)
-        grad = el.find("gradient")
-        if grad is not None:
-            return _gradient_image(grad, size)
-        return None
-    if tag == "gradient":
-        return _gradient_image(el, size)
-    if tag == "vector":
-        return _rasterize_vector_et(el, size)
-    if tag == "bitmap":
-        src = _a("src")
-        if src and src.startswith("@"):
-            return _drawable_file_by_name(z, table, src, size)
-        if src:
-            im = _load_raster(z, src)
-            return im.resize((size, size), Image.LANCZOS) if im else None
-        return None
-    return None
+    return Image.alpha_composite(bg.convert("RGBA"), fg.convert("RGBA").resize((size, size)))
+
 
 
 def _gradient_colors(cols: list, size: int):
@@ -1281,13 +1219,34 @@ def _fill_mask_device(tsubs, size: int, evenodd=False):
     return Image.frombytes("L", (size, size), bytes(mask))
 
 
+def _complex_float(udata) -> float:
+    """Decode Android complex packing (dimension or fraction) to float."""
+    mant = (udata >> 8) & 0xFFFFFF
+    if mant & 0x800000:
+        mant -= 0x1000000
+    radix = (udata >> 4) & 0x3
+    mult = (1.0, 1.0 / 128.0, 1.0 / 32768.0, 1.0 / 8388608.0)[radix]
+    return mant * mult
+
+
 def _num_attr(dtype, udata, raw_s, default: float) -> float:
     """Decode a numeric XML attribute in any binary/text encoding."""
+    import re as _re
     import struct as _st
 
     if dtype == _DTYPE_STR and raw_s:
+        s = raw_s.strip()
+        m = _re.match(r"^([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)\s*(dp|dip|sp|px|%)?$", s)
+        if m:
+            try:
+                v = float(m.group(1))
+            except Exception:
+                return default
+            if m.group(2) == "%":
+                return v / 100.0
+            return v
         try:
-            return float(raw_s)
+            return float(s)
         except Exception:
             return default
     if dtype == 0x04:  # float
@@ -1295,20 +1254,52 @@ def _num_attr(dtype, udata, raw_s, default: float) -> float:
             return float(_st.unpack("<f", _st.pack("<I", udata & 0xFFFFFFFF))[0])
         except Exception:
             return default
-    if dtype == 0x05:  # dimension complex
+    if dtype in (0x05, 0x06):  # dimension complex / fraction complex
         try:
-            mant = (udata >> 8) & 0xFFFFFF
-            if mant & 0x800000:
-                mant -= 0x1000000
-            radix = (udata >> 4) & 0x3
-            mult = (1.0, 1.0 / 128.0, 1.0 / 32768.0, 1.0 / 8388608.0)[radix]
-            return mant * mult
+            return _complex_float(udata)
         except Exception:
             return default
     if dtype == 0x10:  # int
         v = udata if udata < 0x80000000 else udata - 0x100000000
         return float(v)
     return default
+
+
+def _inset_px(dtype, udata, raw_s, size: int, viewport: float = 108.0) -> int:
+    """Inset amount in px for a `size` render. Fractions are relative to the
+    box; dp values are relative to the 108dp adaptive viewport."""
+    import re as _re
+
+    if dtype == _DTYPE_STR and isinstance(raw_s, str) and raw_s.strip().endswith("%"):
+        try:
+            return int(float(raw_s.strip()[:-1]) / 100.0 * size)
+        except Exception:
+            return 0
+    if dtype == 0x06:  # fraction complex: value is already a fraction
+        try:
+            return int(_complex_float(udata) * size)
+        except Exception:
+            return 0
+    return int(_num_attr(dtype, udata, raw_s, 0.0) / viewport * size)
+
+
+_DRAWABLE_TAGS = frozenset({
+    "vector", "shape", "gradient", "bitmap", "layer-list", "level-list",
+    "inset", "scale", "clip", "adaptive-icon", "selector",
+})
+
+
+def _apply_inset(inner, size: int, left: int, top: int, right: int, bottom: int):
+    """InsetDrawable semantics: content drawn in the shrunken box."""
+    from PIL import Image  # type: ignore
+
+    w, h = max(1, size - left - right), max(1, size - top - bottom)
+    small = inner.convert("RGBA")
+    if small.size != (w, h):
+        small = small.resize((w, h), Image.LANCZOS)
+    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    canvas.paste(small, (left, top), small)
+    return canvas
 
 
 def _collect_vector_paths(node, mat, out: list, z=None, table=None, pid: int = 0):
@@ -1464,137 +1455,24 @@ def _rasterize_vector_et(root, size: int):
 
 
 def _render_adaptive(z, table, default_pid, xml_path: str, size: int):
-    """Composite adaptive-icon (background + foreground) at `size`px."""
-    from PIL import Image  # type: ignore
+    """Composite adaptive-icon (background + foreground) at `size`px.
 
+    APK resources are always binary AXML (res/*.xml never ships as text),
+    so only the binary form is handled here; apkeditor-decoded text goes
+    through the fallback path's own renderer."""
     try:
         data = z.read(xml_path)
     except KeyError:
         return None
-    bg = fg = None
     if data[:2] == b"<?":
-        import xml.etree.ElementTree as _ET
-
-        try:
-            root = _ET.fromstring(data)
-        except Exception:
-            return None
-        A = "http://schemas.android.com/apk/res/android"
-        for child in root:
-            t = child.tag.split("}")[-1]
-            if t == "background":
-                v = child.attrib.get(f"{{{A}}}drawable", child.attrib.get(f"{{{A}}}color"))
-                bg = ("colorstr", v) if v and v.startswith("#") else ("refstr", v)
-            elif t == "foreground":
-                v = child.attrib.get(f"{{{A}}}drawable")
-                bg_fg = v
-                fg = ("refstr", bg_fg)
-    else:
-        try:
-            _, root = _axml_tree(data)
-        except Exception:
-            return None
-        if root is None:
-            return None
-        for child in root[2]:
-            if child[0] == "background":
-                a = _android_attr(child, "drawable") or _android_attr(child, "color")
-                bg = ("attr", a) if a else None
-            elif child[0] == "foreground":
-                a = _android_attr(child, "drawable")
-                fg = ("attr", a) if a else None
-
-    def _paint(spec, is_bg: bool):
-        if not spec:
-            return None
-        kind, v = spec
-        if kind == "colorstr":
-            col = _parse_hex_color(v)
-            return Image.new("RGBA", (size, size), col) if col else None
-        if kind == "refstr":
-            if not v:
-                return None
-            if v.startswith("#"):
-                col = _parse_hex_color(v)
-                return Image.new("RGBA", (size, size), col) if col else None
-            if v.startswith("@color/") or v.startswith("@android:color/"):
-                if v.startswith("@android:"):
-                    return None  # framework table not available
-                return _drawable_file_by_name(z, table, v, size)
-            if v.startswith("@"):
-                return _drawable_file_by_name(z, table, v, size)
-            return None
-        if kind == "attr":
-            _dt, _ud, _rs = v
-            return _drawable_to_image(z, table, default_pid, _dt, _ud, _rs, size)
         return None
-
-    bg_im = _paint(bg, True) or Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    fg_im = _paint(fg, False)
-    if fg_im is None or fg_im.convert("RGBA").getbbox() is None:
-        # no (visible) foreground: an adaptive icon without art is broken —
-        # fail so callers try the next source instead of a flat square
+    try:
+        _, root = _axml_tree(data)
+    except Exception:
         return None
-    return Image.alpha_composite(bg_im.convert("RGBA"), fg_im.convert("RGBA").resize((size, size)))
-
-
-def _drawable_file_by_name(z, table, ref: str, size: int):
-    """Resolve @type/name to an image by scanning arsc entries of that type/name."""
-    from PIL import Image  # type: ignore
-
-    if not ref or not ref.startswith("@"):
+    if root is None or root[0] != "adaptive-icon":
         return None
-    body = ref[1:]
-    if ":" in body:
-        body = body.split(":", 1)[1]
-    if "/" not in body:
-        return None
-    tname, ename = body.split("/", 1)
-    for p in table["packages"]:
-        if not p["types"] or not p["keys"]:
-            continue
-        try:
-            tid = p["types"].index(tname) + 1
-        except ValueError:
-            continue
-        try:
-            eid = p["keys"].index(ename)
-        except ValueError:
-            continue
-        lst = p["entries"].get((tid, eid), [])
-        # prefer raster files at max density, else first xml
-        best_raster = None
-        best_xml = None
-        for density, _sdk, val in lst:
-            if val[0] != "str":
-                if val[0] == "color" and tname == "color":
-                    c = val[1]
-                    return Image.new("RGBA", (size, size), ((c >> 16) & 0xFF, (c >> 8) & 0xFF, c & 0xFF, (c >> 24) & 0xFF))
-                continue
-            idx = val[1]
-            if not (0 <= idx < len(table["strings"])):
-                continue
-            fpath = table["strings"][idx]
-            low = fpath.lower()
-            if low.endswith((".png", ".webp", ".jpg", ".jpeg")):
-                score = 0xFFFF if density == _DENSITY_ANY else density
-                if best_raster is None or score > best_raster[0]:
-                    best_raster = (score, fpath)
-            elif low.endswith(".xml"):
-                if best_xml is None:
-                    best_xml = fpath
-        if best_raster:
-            im = _load_raster(z, best_raster[1])
-            if im:
-                return im.resize((size, size), Image.LANCZOS)
-        if best_xml:
-            low = best_xml.lower()
-            if "color" in tname:
-                col = _resolve_color_xml(z, best_xml)
-                if col:
-                    return Image.new("RGBA", (size, size), col)
-            return _render_xml_drawable(z, table, p["id"], best_xml, size)
-    return None
+    return _render_adaptive_node(z, table, default_pid, root, size)
 
 
 def _table_for_apk(apk: Path):
@@ -1766,27 +1644,226 @@ def _tree_float(val, default=0.0) -> float:
                 return float(_st.unpack(">f", _st.pack(">I", udata & 0xFFFFFFFF))[0])
             except Exception:
                 return default
-        if dtype == 0x05:  # dimension complex: value * radix_mult
-            mant = udata >> 8
-            if mant & 0x800000:
-                mant -= 0x1000000
-            radix = (udata >> 4) & 0x3
-            mult = (1.0, 1.0 / 128.0, 1.0 / 32768.0, 1.0 / 8388608.0)[radix]
-            return mant * mult
+        if dtype in (0x05, 0x06):  # dimension / fraction complex
+            try:
+                return _complex_float(udata)
+            except Exception:
+                return default
         if dtype == 0x10:
             v = udata if udata < 0x80000000 else udata - 0x100000000
             return float(v)
+    if val[0] == "str":
+        # "25%" fractions / "18dp" dimensions in plain-text trees
+        return _num_attr(0x03, 0, val[1], default)
     return default
 
 
+def _tree_ref_values(apk: Path, node, _depth: int = 0) -> dict[int, str]:
+    """Batch-resolve every drawable/color/src ref ID in an xmltree node via one
+    apkeditor -res call -> {rid: value}. Values are #hex or zip paths."""
+    if _depth > 4:
+        return {}
+    want: list[int] = []
+
+    def _walk(el):
+        for k, v in el[1].items():
+            if k in ("drawable", "color", "src") and isinstance(v, tuple) and v[0] == "int" and v[1] == 0x01:
+                if v[2] not in want:
+                    want.append(v[2])
+        for c in el[2]:
+            _walk(c)
+
+    _walk(node)
+    if not want:
+        return {}
+    out = _apkeditor_info(apk, *[a for rid in want for a in ("-res", hex(rid))], "-t", "text")
+    if not out:
+        return {}
+    vals: dict[int, str] = {}
+    lines = [l for l in out.splitlines() if l.strip().startswith("resource=")]
+    for rid, line in zip(want, lines):
+        m = re.match(r'resource="(.*)"\s*$', line.strip())
+        if m:
+            vals[rid] = m.group(1)
+    return vals
+
+
+def _render_text_node(apk: Path, z: zipfile.ZipFile, node, size: int, _depth: int = 0):
+    """Render an xmltree-text drawable node (recursive: adaptive/inset/bitmap/
+    vector/layer-list/shape/gradient/selector). Refs resolve via -res batch."""
+    from PIL import Image  # type: ignore
+
+    if _depth > 4:
+        return None
+    if _depth == 0:
+        # substitute every @color/ ref in the subtree once, up front
+        try:
+            _resolve_tree_refs(node, apk)
+        except Exception:
+            pass
+    tag = node[0]
+    if tag == "vector":
+        return _render_vector_treenode(node, size)
+    if tag == "adaptive-icon":
+        bg = fg = None
+        for child in node[2]:
+            if child[0] == "background" and bg is None:
+                bg = _render_text_layer(apk, z, child, size, _depth)
+            elif child[0] == "foreground" and fg is None:
+                fg = _render_text_layer(apk, z, child, size, _depth)
+        if bg is None:
+            bg = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        if fg is None or fg.convert("RGBA").getbbox() is None:
+            return None
+        return Image.alpha_composite(bg.convert("RGBA"), fg.convert("RGBA").resize((size, size)))
+    if tag in ("layer-list", "level-list"):
+        base = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        for item in node[2]:
+            layer = _render_text_layer(apk, z, item, size, _depth)
+            if layer is not None:
+                base = Image.alpha_composite(base, layer.convert("RGBA").resize((size, size)))
+        return base if base.getbbox() else None
+    if tag in ("inset", "scale", "clip"):
+        return _render_text_layer(apk, z, node, size, _depth)
+    if tag == "bitmap":
+        return _render_text_layer(apk, z, node, size, _depth)
+    if tag == "shape":
+        for c in node[2]:
+            if c[0] == "solid":
+                col = _tree_color(c[1].get("color"))
+                if col:
+                    return Image.new("RGBA", (size, size), col)
+        return None
+    if tag == "gradient":
+        cols = []
+        for an in ("startColor", "centerColor", "endColor"):
+            col = _tree_color(node[1].get(an))
+            if col:
+                cols.append(col)
+        return _gradient_colors(cols, size) if cols else None
+    if tag == "selector":
+        for item in node[2]:
+            if item[0] != "item":
+                continue
+            col = _tree_color(item[1].get("color"))
+            if col:
+                return Image.new("RGBA", (size, size), col)
+        return None
+    return None
+
+
+def _render_text_layer(apk: Path, z: zipfile.ZipFile, node, size: int, _depth: int = 0):
+    """Render one text-tree holder (background/foreground/item/inset/bitmap):
+    explicit drawable ref first, else nested drawable element."""
+    from PIL import Image  # type: ignore
+
+    for aname in ("drawable", "color", "src"):
+        aval = node[1].get(aname)
+        if aval is not None and aval[0] == "int" and aval[1] == 0x01:
+            img = _render_text_ref(apk, z, aval[2], size, _depth)
+            if img is not None:
+                break
+    else:
+        img = None
+    if img is None:
+        for sub in node[2]:
+            if sub[0] in _DRAWABLE_TAGS:
+                img = _render_text_node(apk, z, sub, size, _depth)
+                if img is not None:
+                    break
+    if img is None:
+        return None
+    if node[0] == "inset":
+        def _in(name):
+            return _tree_inset_px(node[1].get(name), size)
+
+        allv = _tree_inset_px(node[1].get("inset"), size)
+        left = _in("insetLeft")
+        if left is None:
+            left = _in("insetStart")
+        top = _in("insetTop")
+        right = _in("insetRight")
+        if right is None:
+            right = _in("insetEnd")
+        bottom = _in("insetBottom")
+        left = allv if left is None else left
+        top = allv if top is None else top
+        right = allv if right is None else right
+        bottom = allv if bottom is None else bottom
+        if left or top or right or bottom:
+            img = _apply_inset(img, size, left, top, right, bottom)
+    return img
+
+
+def _tree_inset_px(val, size: int) -> int | None:
+    """Inset amount from an xmltree attr (fraction of box, dp, or px)."""
+    if val is None:
+        return None
+    if val[0] == "str":
+        s = val[1].strip()
+        if s.endswith("%"):
+            try:
+                return int(float(s[:-1]) / 100.0 * size)
+            except Exception:
+                return None
+        return _inset_px(0x03, 0, s, size)
+    if val[0] == "int":
+        _t, dtype, udata = val
+        if dtype == 0x06:
+            try:
+                return int(_complex_float(udata) * size)
+            except Exception:
+                return None
+        return _inset_px(dtype, udata, None, size)
+    return None
+
+
+def _render_text_ref(apk: Path, z: zipfile.ZipFile, rid: int, size: int, _depth: int = 0):
+    """Render one ref ID from a text tree (batch-resolve, then draw)."""
+    from PIL import Image  # type: ignore
+
+    if _depth > 4:
+        return None
+    out = _apkeditor_info(apk, "-res", hex(rid), "-t", "text")
+    if not out:
+        return None
+    for line in out.splitlines():
+        m = re.match(r'resource="(.*)"\s*$', line.strip())
+        if not m:
+            continue
+        v = m.group(1)
+        if v.startswith("#"):
+            col = _parse_hex_color(v)
+            return Image.new("RGBA", (size, size), col) if col else None
+        low = v.lower()
+        if low.endswith((".png", ".webp", ".jpg", ".jpeg")):
+            im = _load_raster(z, v)
+            return im.resize((size, size), Image.LANCZOS) if im else None
+        if low.endswith(".xml"):
+            tree_out = _apkeditor_info(apk, "-xmltree", v, "-t", "text")
+            if not tree_out:
+                return None
+            root = _parse_xmltree(tree_out)
+            if root is None:
+                return None
+            if root[0] == "vector":
+                _resolve_tree_refs(root, apk)
+                return _render_vector_treenode(root, size)
+            _resolve_tree_refs(root, apk)
+            return _render_text_node(apk, z, root, size, _depth + 1)
+    return None
+
+
 def _resolve_tree_refs(root, apk: Path) -> None:
-    """Replace ("int", REF, rid) fill/stroke colors in an xmltree node with the
-    resolved #hex via one batched apkeditor -res call. Mutates in place."""
+    """Replace ("int", REF, rid) color attrs in an xmltree node with the
+    resolved #hex via one batched apkeditor -res call. Mutates in place.
+    Covers vector fills/strokes as well as shape/solid/gradient/item colors
+    (e.g. adaptive-icon backgrounds defined as <shape>)."""
     want: dict[int, list] = {}
 
     def _walk(el):
         for k, v in el[1].items():
-            if k in ("fillColor", "strokeColor") and isinstance(v, tuple) and v[0] == "int" and v[1] == 0x01:
+            if k in ("fillColor", "strokeColor", "color", "startColor", "centerColor", "endColor") and isinstance(v, tuple) and v[0] == "int" and v[1] == 0x01:
                 want.setdefault(v[2], []).append((el, k))
         for c in el[2]:
             _walk(c)
@@ -1892,44 +1969,9 @@ def _extract_icon_via_apkeditor(apk: Path) -> object:
         if root[0] == "vector":
             _resolve_tree_refs(root, apk)
             return _render_vector_treenode(root, RENDER)
-        if root[0] != "adaptive-icon":
-            return None
-        bg_id = fg_id = None
-        for child in root[2]:
-            for aname, aval in child[1].items():
-                if child[0] == "background" and aname == "drawable" and aval[0] == "int":
-                    bg_id = aval[2]
-                if child[0] == "foreground" and aname == "drawable" and aval[0] == "int":
-                    fg_id = aval[2]
-        # batch-resolve both refs in one JVM call
-        vals: dict[int, str] = {}
-        if bg_id is not None or fg_id is not None:
-            args: list[str] = []
-            order = []
-            for rid in (bg_id, fg_id):
-                if rid is not None:
-                    args += ["-res", hex(rid)]
-                    order.append(rid)
-            res_out = _apkeditor_info(apk, *args, "-t", "text")
-            if res_out:
-                lines = [l for l in res_out.splitlines() if l.strip().startswith("resource=")]
-                for rid, line in zip(order, lines):
-                    m = re.match(r'resource="(.*)"\s*$', line.strip())
-                    if m:
-                        vals[rid] = m.group(1)
-        bg_im = fg_im = None
-        if bg_id in vals:
-            bg_im = _value_to_image(z, vals[bg_id], RENDER)
-        if fg_id in vals:
-            fg_im = _value_to_image(z, vals[fg_id], RENDER)
-        if fg_im is None:
-            return None
-        if bg_im is None:
-            bg_im = Image.new("RGBA", fg_im.size, (0, 0, 0, 0))
-        w, h = fg_im.size
-        if bg_im.size != (w, h):
-            bg_im = bg_im.resize((w, h), Image.LANCZOS)
-        return Image.alpha_composite(bg_im.convert("RGBA"), fg_im.convert("RGBA"))
+        # adaptive-icon and any other drawable: recursive renderer (handles
+        # nested inset/adaptive/bitmap structures like Nova's icon)
+        return _render_text_node(apk, z, root, RENDER)
 
 
 def _value_to_image(z: zipfile.ZipFile, value: str, size: int, apk: Path | None = None):
@@ -1957,25 +1999,12 @@ def _value_to_image(z: zipfile.ZipFile, value: str, size: int, apk: Path | None 
         if not tree_out:
             return None
         root = _parse_xmltree(tree_out)
-        if root is None:
+        if root is None or apk is None or not apk.name:
             return None
         if root[0] == "vector":
-            if apk is not None and apk.name:
-                _resolve_tree_refs(root, apk)
+            _resolve_tree_refs(root, apk)
             return _render_vector_treenode(root, size)
-        if root[0] == "selector":
-            for item in root[2]:
-                if item[0] != "item":
-                    continue
-                for aname, aval in item[1].items():
-                    if aname == "color":
-                        if aval[0] == "str":
-                            col = _parse_hex_color(aval[1])
-                        else:
-                            col = _tree_color(aval)
-                        if col:
-                            return Image.new("RGBA", (size, size), col)
-            return None
+        return _render_text_node(apk, z, root, size)
     return None
 
 
