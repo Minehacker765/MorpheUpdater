@@ -2635,7 +2635,7 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
     return changed
 
 
-ICON_EXTRACTOR_VERSION = 3
+ICON_EXTRACTOR_VERSION = 4
 
 
 async def ensure_icons(state: dict) -> bool:
