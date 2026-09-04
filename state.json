@@ -219,11 +219,11 @@
     "com.amazon.amazonvideo.livingroom|androidtv|tv": {
       "app_name": "Prime Video",
       "arch": "tv",
-      "at": 1788309721,
+      "at": 1788490823,
       "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
       "package": "com.amazon.amazonvideo.livingroom",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 606023231,
       "version": "6.23.23+v15.5.0.70-armv7a"
@@ -351,11 +351,11 @@
     "com.bamnetworks.mobile.android.gameday.atbat|androidtv|tv": {
       "app_name": "MLB",
       "arch": "tv",
-      "at": 1788299718,
+      "at": 1788490839,
       "out": "atbat-26.8.1.1-androidtv-tv.apk",
       "package": "com.bamnetworks.mobile.android.gameday.atbat",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 1750000022,
       "version": "26.8.1.1"
@@ -963,11 +963,11 @@
     "com.netflix.ninja|androidtv|tv": {
       "app_name": "Netflix",
       "arch": "tv",
-      "at": 1788301412,
+      "at": 1788490827,
       "out": "ninja-13.0.1 build 25028-androidtv-tv.apk",
       "package": "com.netflix.ninja",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 25028,
       "version": "13.0.1 build 25028"
@@ -1311,11 +1311,11 @@
     "com.tubitv|androidtv|tv": {
       "app_name": "Tubi: Free Movies & Live TV",
       "arch": "tv",
-      "at": 1788308175,
+      "at": 1788490829,
       "out": "tubitv-10.28.5000-androidtv-tv.apk",
       "package": "com.tubitv",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 1029,
       "version": "10.28.5000"
@@ -1347,11 +1347,11 @@
     "com.univision.prendetv|androidtv|tv": {
       "app_name": "ViX: TV, Deportes y Noticias",
       "arch": "tv",
-      "at": 1788308376,
+      "at": 1788490850,
       "out": "prendetv-4.47.2_tv-androidtv-tv.apk",
       "package": "com.univision.prendetv",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 4407,
       "version": "4.47.2_tv"
@@ -1839,11 +1839,11 @@
     "tv.twitch.android.app|androidtv|tv": {
       "app_name": "Twitch: Live Streaming",
       "arch": "tv",
-      "at": 1788308394,
+      "at": 1788490860,
       "out": "android.app-13.0.0.2-androidtv-tv.apk",
       "package": "tv.twitch.android.app",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 1100000018,
       "version": "13.0.0.2"
@@ -1874,7 +1874,7 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.30.3",
+    "androidtv": "v1.30.4",
     "de-vanced": "v1.3.1",
     "hoodles": "v1.44.0-dev.1",
     "hoomans": "v1.51.1",
@@ -1959,8 +1959,8 @@
       134142836
     ],
     "com.amazon.amazonvideo.livingroom": [
-      1788309721,
-      26046571
+      1788490823,
+      26050667
     ],
     "com.amazon.mShop.android.shopping": [
       1788301657,
@@ -1995,7 +1995,7 @@
       25544009
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
-      1788299718,
+      1788490839,
       36399225
     ],
     "com.bandcamp.android": [
@@ -2171,7 +2171,7 @@
       74576018
     ],
     "com.netflix.ninja": [
-      1788301411,
+      1788490827,
       107928580
     ],
     "com.noctuasoftware.stellarium_free": [
@@ -2267,7 +2267,7 @@
       34858392
     ],
     "com.tubitv": [
-      1788308174,
+      1788490829,
       46141068
     ],
     "com.ufovpn.connect.velnet": [
@@ -2275,7 +2275,7 @@
       70027883
     ],
     "com.univision.prendetv": [
-      1788308375,
+      1788490850,
       40112897
     ],
     "com.urbandroid.sleep": [
@@ -2419,8 +2419,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788490860,
+      56659147
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
