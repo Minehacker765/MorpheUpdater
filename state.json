@@ -1023,11 +1023,11 @@
     "com.peacocktv.peacockandroid|androidtv|tv": {
       "app_name": "Peacock TV: Stream TV & Movies",
       "arch": "tv",
-      "at": 1788309711,
+      "at": 1788492615,
       "out": "peacockandroid-7.6.100-androidtv-tv.apk",
       "package": "com.peacocktv.peacockandroid",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 230706100,
       "version": "7.6.100"
@@ -1827,11 +1827,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "PlutoTV: Stream Free Movies/TV",
       "arch": "tv",
-      "at": 1788301422,
+      "at": 1788492627,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -2191,7 +2191,7 @@
       66013913
     ],
     "com.peacocktv.peacockandroid": [
-      1788309711,
+      1788492615,
       7916383
     ],
     "com.proto.circuitsimulator": [
@@ -2415,12 +2415,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1788301422,
+      1788492626,
       28861892
     ],
     "tv.twitch.android.app": [
-      1788490860,
-      56659147
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
