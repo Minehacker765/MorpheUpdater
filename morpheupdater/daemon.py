@@ -1174,15 +1174,20 @@ async def self_update(cfg: dict) -> bool:
     if not cfg.get("self_update", True):
         return False
     try:
-        # fetch only, no merge yet
+        # fetch only, no merge yet (failures logged: silent skips hide a stuck updater)
         rc, out = await tools.run(["git", "fetch", "origin"], cwd=ROOT, timeout_s=60)
         if rc != 0:
+            log.warning("self-update: git fetch failed: %s", out[-200:].strip())
             return False
         # list new origin/main commits not in HEAD, excluding bot
         rc, log_out = await tools.run(
             ["git", "log", "HEAD..origin/main", "--pretty=format:%H %an %s"], cwd=ROOT, timeout_s=30
         )
-        if rc != 0 or not log_out.strip():
+        if rc != 0:
+            log.warning("self-update: git log failed: %s", log_out[-200:].strip())
+            return False
+        if not log_out.strip():
+            log.debug("self-update: already on origin/main")
             return False
         human = [l for l in log_out.strip().splitlines() if "morpheupdater" not in l.lower()]
         if not human:
@@ -1204,7 +1209,9 @@ async def self_update(cfg: dict) -> bool:
                 await tools.run(["git", "rebase", "--abort"], cwd=ROOT, timeout_s=30)
                 return False
         # restore stashed icons (no clobber)
-        await tools.run(["git", "stash", "pop"], cwd=ROOT, timeout_s=60)
+        rc, out = await tools.run(["git", "stash", "pop"], cwd=ROOT, timeout_s=60)
+        if rc != 0:
+            log.warning("self-update: stash pop had conflicts (kept in stash): %s", out[-200:].strip())
         log.info("self-update: updated to origin/main, restarting")
         # graceful restart: exit, systemd Restart=always will relaunch
         import os as _os

@@ -156,8 +156,12 @@ CARD = """<div class="card" data-name="${name_attr}" data-pkg="${pkg}" data-bund
 </div>"""
 
 
-def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, list[str]]:
-    """Map patch name -> compatible packages for a bundle MPP via list-patches."""
+def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, set[str] | None]:
+    """Map patch name -> compatible packages for a bundle MPP via list-patches.
+
+    Same patch name can target several apps (e.g. "Skip ads" x6 in androidtv),
+    so packages UNION across duplicates. None = never seen with a packages
+    section (unknown, keep); empty set = universal (keep for all)."""
     import re
     import subprocess
     from pathlib import Path
@@ -166,10 +170,10 @@ def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, list[str]]:
         if not Path(mpp_path).exists() or not jar.exists():
             return {}
         cmd = ["java", "-jar", str(jar), "list-patches", "--patches", mpp_path, "--with-packages", "--with-versions=false", "--with-descriptions=false", "--with-options=false"]
-        out = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
         if out.returncode != 0:
             return {}
-        compat: dict[str, list[str]] = {}
+        compat: dict[str, set[str] | None] = {}
         current = None
         # state: wait for Name, then Compatible packages block
         lines = out.stdout.splitlines()
@@ -180,19 +184,16 @@ def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, list[str]]:
             # Name line: "Name: PatchName" or "1. PatchName"
             if stripped.startswith("Name:"):
                 current = stripped.split("Name:", 1)[1].strip()
-                # init as universal until we see Compatible packages
-                if current not in compat:
-                    compat[current] = []
+                compat.setdefault(current, None)
             elif re.match(r'^\d+\.\s*.+', stripped):
                 # fallback for older format
                 m = re.match(r'^\d+\.\s*(.+)$', stripped)
                 if m:
                     current = m.group(1).strip()
-                    if current not in compat:
-                        compat[current] = []
+                    compat.setdefault(current, None)
             elif stripped == "Compatible packages:" and current:
                 # next lines are "Package name: xxx" until blank or next field
-                pkgs: list[str] = []
+                pkgs: set[str] = set()
                 j = i + 1
                 while j < len(lines):
                     nxt = lines[j].strip()
@@ -200,19 +201,29 @@ def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, list[str]]:
                         j += 1
                         continue
                     if nxt.startswith("Package name:"):
-                        pkgs.append(nxt.split("Package name:", 1)[1].strip())
+                        pkgs.add(nxt.split("Package name:", 1)[1].strip())
                         j += 1
                     elif nxt.startswith("Compatible") or nxt.startswith("Name:") or re.match(r'^\d+\.', nxt) or nxt.startswith("Index:"):
                         break
                     else:
                         j += 1
-                compat[current] = pkgs
+                prev = compat.get(current)
+                compat[current] = (prev or set()) | pkgs
                 i = j - 1
             i += 1
-        # patches with no Compatible packages entry are universal (empty list means universal)
         return compat
     except Exception:
         return {}
+
+
+def _compat_allows(compat: dict, patch: str, pkg: str, orig_pkg: str) -> bool:
+    """True if the patch may apply to the package (unknown/universal keep)."""
+    if not compat:
+        return True
+    pkgs = compat.get(patch)
+    if pkgs is None or not pkgs:
+        return True
+    return pkg in pkgs or orig_pkg in pkgs
 
 
 async def build_showcase(cfg: dict, state: dict) -> bool:
@@ -338,71 +349,43 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
         display = PACKAGE_DISPLAY
         cfg_display = next((a.get("display") for a in cfg.get("apps", []) if a.get("package") == pkg), None)
         name = cfg_display or display.get(pkg) or display.get(b.get("package", "")) or pkg
-        # patch count for sort - only compatible patches
+        # patch count for sort - only patches compatible with THIS app.
+        # Options file is addressed exactly (short(pkg).combo.json, same as the
+        # patch run used) — never globbed, so colliding short names (android.app
+        # x2, app.* etc.) can't leak another app's list in.
         patches_count = 0
         patch_list_html = ""
         try:
             compat = get_compat(bundle)
-            # compatible patches for this pkg from MPP (for count/sort and fallback)
-            compat_for_pkg = []
-            if compat:
-                for pn, pkgs in compat.items():
-                    if not pkgs or pkg in pkgs or _orig_pkg in pkgs:
-                        compat_for_pkg.append(pn)
-            # try options file first (enabled only)
-            found_via_options = False
-            for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
-                if not _opt.exists():
-                    continue
+            compat_for_pkg = [pn for pn in compat if _compat_allows(compat, pn, pkg, _orig_pkg)]
+            # exact options file for this state entry (pkg|combo|arch)
+            cid = key.split("|")[1] if "|" in key else bundle
+            opt_files = [ROOT / "options" / f"{short(_orig_pkg)}.{cid}.json"]
+            _opt = next((p for p in opt_files if p.exists()), None)
+            if _opt is not None:
                 _d = json.loads(_opt.read_text())
                 _entries = _d if isinstance(_d, list) else [_d]
                 for _e in _entries:
                     _patches = _e.get("patches", {})
-                    _enabled = []
-                    for pn, pv in _patches.items():
-                        if not isinstance(pv, dict) or not pv.get("enabled"):
-                            continue
-                        if compat:
-                            pkgs = compat.get(pn)
-                            if pkgs is not None and pkgs and pkg not in pkgs and _orig_pkg not in pkgs:
-                                continue
-                        _enabled.append(pn)
+                    _enabled = [
+                        pn for pn, pv in _patches.items()
+                        if isinstance(pv, dict) and pv.get("enabled")
+                        and _compat_allows(compat, pn, pkg, _orig_pkg)
+                    ]
                     if _enabled:
                         patches_count = len(_enabled)
                         patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
                         for _pn in sorted(_enabled):
                             patch_list_html += f"<li>{_pn}</li>"
                         patch_list_html += "</ul></details>"
-                        found_via_options = True
                         break
-                if patch_list_html:
-                    break
-            # fallback: if no enabled via options, show all compatible from MPP (so every app has a list)
+            # fallback: no usable options file -> show MPP-compatible patches
             if not patch_list_html and compat_for_pkg:
                 patches_count = len(compat_for_pkg)
                 patch_list_html = "<details><summary>" + str(patches_count) + " patches</summary><ul>"
                 for _pn in sorted(compat_for_pkg):
                     patch_list_html += f"<li>{_pn}</li>"
                 patch_list_html += "</ul></details>"
-            elif not patch_list_html and not compat_for_pkg:
-                # last resort: show enabled without compat filter (for pkgs not in MPP compat list)
-                for _opt in (ROOT / "options").glob(f"{short(pkg)}.*.json"):
-                    if not _opt.exists():
-                        continue
-                    _d = json.loads(_opt.read_text())
-                    _entries = _d if isinstance(_d, list) else [_d]
-                    for _e in _entries:
-                        _patches = _e.get("patches", {})
-                        _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
-                        if _enabled:
-                            patches_count = len(_enabled)
-                            patch_list_html = "<details><summary>" + str(len(_enabled)) + " patches</summary><ul>"
-                            for _pn in sorted(_enabled):
-                                patch_list_html += f"<li>{_pn}</li>"
-                            patch_list_html += "</ul></details>"
-                            break
-                    if patch_list_html:
-                        break
         except Exception:
             pass
         patches_html = patch_list_html if patch_list_html else f"<span class='muted'>{patches_str or '—'}</span>"

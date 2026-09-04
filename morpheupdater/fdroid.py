@@ -36,6 +36,19 @@ def _sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+def _combos_for_package(state: dict, package: str) -> list[str]:
+    """Combo ids (the middle of state key pkg|combo|arch) for a package."""
+    out = []
+    try:
+        for k in state.get("builds", {}):
+            parts = k.split("|")
+            if len(parts) >= 2 and parts[0] == package and parts[1] not in out:
+                out.append(parts[1])
+    except Exception:
+        pass
+    return out
+
+
 def _file_entry(path: Path, name_override: str | None = None) -> dict:
     """Mimic fdroidserver/common.file_entry: {name, sha256, size} with leading slash."""
     sha = _sha256_file(path)
@@ -491,8 +504,11 @@ def _entry_file_candidates(table: dict, default_pid: int, resid: int) -> list[tu
     return cands
 
 
-def _color_of_value(table: dict, default_pid: int, dtype: int, udata: int, raw_s) -> tuple | None:
-    """-> (r, g, b, a) or None."""
+def _color_of_value(table: dict, default_pid: int, dtype: int, udata: int, raw_s, z=None, _depth: int = 0) -> tuple | None:
+    """-> (r, g, b, a), ("xmlcolor", path), or None. Color XML refs resolve
+    immediately when the zip is available (depth-capped)."""
+    if _depth > 3:
+        return None
     if 0x1C <= dtype <= 0x1F:
         a = (udata >> 24) & 0xFF
         return ((udata >> 16) & 0xFF, (udata >> 8) & 0xFF, udata & 0xFF, a)
@@ -508,6 +524,11 @@ def _color_of_value(table: dict, default_pid: int, dtype: int, udata: int, raw_s
                 if 0 <= idx < len(table["strings"]):
                     p = table["strings"][idx]
                     if p.lower().endswith(".xml"):
+                        if z is not None:
+                            got = _resolve_color_xml(z, p, table, default_pid, _depth + 1)
+                            if got:
+                                return got
+                            continue
                         return ("xmlcolor", p)
         return None
     return None
@@ -550,12 +571,30 @@ def _load_raster(z: zipfile.ZipFile, path: str):
     return im
 
 
-def _resolve_color_xml(z: zipfile.ZipFile, path: str):
-    """Default android:color from a ColorStateList XML (binary or text)."""
+def _resolve_color_xml(z: zipfile.ZipFile, path: str, table=None, pid: int = 0, _depth: int = 0):
+    """Default android:color from a ColorStateList XML (binary or text).
+
+    Item colors may themselves be @color/ refs — resolved recursively (depth
+    capped) when the resource table is available."""
+    if _depth > 3:
+        return None
     try:
         data = z.read(path)
     except KeyError:
         return None
+
+    def _col_of(c):
+        if isinstance(c, tuple):
+            _dt, _ud, _rs = c
+            if _dt == _DTYPE_STR and _rs:
+                return _parse_hex_color(_rs)
+            if _dt == _DTYPE_REF and table is not None:
+                return _color_of_value(table, pid, _dt, _ud, _rs, z, _depth + 1)
+            if 0x1C <= _dt <= 0x1F:
+                return ((_ud >> 16) & 0xFF, (_ud >> 8) & 0xFF, _ud & 0xFF, (_ud >> 24) & 0xFF)
+            return None
+        return _parse_hex_color(c)
+
     items = []
     if data[:2] != b"<?":
         try:
@@ -585,12 +624,12 @@ def _resolve_color_xml(z: zipfile.ZipFile, path: str):
                     items.append((has_state, v))
     for has_state, c in items:
         if not has_state:
-            col = _parse_hex_color(c[2] if isinstance(c, tuple) else c)
-            if col:
+            col = _col_of(c)
+            if col and len(col) == 4:
                 return col
     for has_state, c in items:
-        col = _parse_hex_color(c[2] if isinstance(c, tuple) else c)
-        if col:
+        col = _col_of(c)
+        if col and len(col) == 4:
             return col
     return None
 
@@ -600,7 +639,7 @@ def _drawable_to_image(z, table, default_pid, dtype, udata, raw_s, size: int, tr
     from PIL import Image  # type: ignore
 
     if 0x1C <= dtype <= 0x1F or (dtype == _DTYPE_STR and raw_s and raw_s.startswith("#")):
-        col = _color_of_value(table, default_pid, dtype, udata, raw_s)
+        col = _color_of_value(table, default_pid, dtype, udata, raw_s, z)
         if col and len(col) == 4:
             return Image.new("RGBA", (size, size), col)
         return None
@@ -707,13 +746,13 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
         return None
     tag = root[0]
     if tag == "vector":
-        return _rasterize_vector_node(root, size)
+        return _rasterize_vector_node(root, size, z, table, default_pid)
     if tag == "shape":
         for c in root[2]:
             if c[0] == "solid":
                 a = _android_attr(c, "color")
                 if a:
-                    col = _color_of_value(table, default_pid, *a)
+                    col = _color_of_value(table, default_pid, *a, z)
                     if col and len(col) == 4:
                         from PIL import Image  # type: ignore
 
@@ -726,7 +765,7 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
         for an in ("startColor", "centerColor", "endColor"):
             a = _android_attr(root, an)
             if a:
-                col = _color_of_value(table, default_pid, *a)
+                col = _color_of_value(table, default_pid, *a, z)
                 if col and len(col) == 4:
                     cols.append(col)
         if cols:
@@ -766,30 +805,24 @@ def _render_xml_drawable(z, table, default_pid, path: str, size: int):
         for item in _find_nodes(root, "item"):
             a = _android_attr(item, "color")
             if a:
-                col = _color_of_value(table, default_pid, *a)
+                col = _color_of_value(table, default_pid, *a, z)
                 if col and len(col) == 4:
                     from PIL import Image  # type: ignore
 
                     return Image.new("RGBA", (size, size), col)
-                if col and col[0] == "xmlcolor":
-                    col2 = _resolve_color_xml(z, col[1])
-                    if col2:
-                        from PIL import Image  # type: ignore
-
-                        return Image.new("RGBA", (size, size), col2)
         return None
     return None
 
 
 def _render_xml_node(z, table, default_pid, node, size: int):
     if node[0] == "vector":
-        return _rasterize_vector_node(node, size)
+        return _rasterize_vector_node(node, size, z, table, default_pid)
     if node[0] == "shape":
         for c in node[2]:
             if c[0] == "solid":
                 a = _android_attr(c, "color")
                 if a:
-                    col = _color_of_value(table, default_pid, *a)
+                    col = _color_of_value(table, default_pid, *a, z)
                     if col and len(col) == 4:
                         from PIL import Image  # type: ignore
 
@@ -802,7 +835,7 @@ def _render_xml_node(z, table, default_pid, node, size: int):
         for an in ("startColor", "centerColor", "endColor"):
             a = _android_attr(node, an)
             if a:
-                col = _color_of_value(table, default_pid, *a)
+                col = _color_of_value(table, default_pid, *a, z)
                 if col and len(col) == 4:
                     cols.append(col)
         return _gradient_colors(cols, size) if cols else None
@@ -1186,11 +1219,11 @@ def _rasterize_vector_paths(paths: list, size: int, vp_w: float, vp_h: float):
                            _mat_pt(mat, px, py)[1] * scale + oy) for px, py in s])
         layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
         if fill and fill[3] > 0:
-            # re-flatten in device space: simpler to scale raw then transform
             mask = _fill_mask_device(tsubs, size, evenodd)
-            solid = Image.new("RGBA", (size, size), fill)
-            solid.putalpha(mask)
-            # multiply global alpha already in fill
+            solid = Image.new("RGBA", (size, size), fill[:3])
+            # effective alpha = fill alpha * coverage mask
+            eff = mask.point(lambda v: v * fill[3] // 255)
+            solid.putalpha(eff)
             layer = Image.alpha_composite(layer, solid)
         if stroke and stroke[3] > 0 and sw > 0:
             dr = ImageDraw.Draw(layer)
@@ -1199,6 +1232,10 @@ def _rasterize_vector_paths(paths: list, size: int, vp_w: float, vp_h: float):
                 if len(s) > 1:
                     dr.line(s, fill=stroke, width=w, joint="curve")
         canvas = Image.alpha_composite(canvas, layer)
+    if paths and canvas.getbbox() is None:
+        # vector parsed but painted nothing (e.g. all fills unresolvable) —
+        # report failure so callers try the next source, not a blank image
+        return None
     return canvas
 
 
@@ -1244,36 +1281,51 @@ def _fill_mask_device(tsubs, size: int, evenodd=False):
     return Image.frombytes("L", (size, size), bytes(mask))
 
 
-def _collect_vector_paths(node, mat, out: list):
+def _num_attr(dtype, udata, raw_s, default: float) -> float:
+    """Decode a numeric XML attribute in any binary/text encoding."""
+    import struct as _st
+
+    if dtype == _DTYPE_STR and raw_s:
+        try:
+            return float(raw_s)
+        except Exception:
+            return default
+    if dtype == 0x04:  # float
+        try:
+            return float(_st.unpack("<f", _st.pack("<I", udata & 0xFFFFFFFF))[0])
+        except Exception:
+            return default
+    if dtype == 0x05:  # dimension complex
+        try:
+            mant = (udata >> 8) & 0xFFFFFF
+            if mant & 0x800000:
+                mant -= 0x1000000
+            radix = (udata >> 4) & 0x3
+            mult = (1.0, 1.0 / 128.0, 1.0 / 32768.0, 1.0 / 8388608.0)[radix]
+            return mant * mult
+        except Exception:
+            return default
+    if dtype == 0x10:  # int
+        v = udata if udata < 0x80000000 else udata - 0x100000000
+        return float(v)
+    return default
+
+
+def _collect_vector_paths(node, mat, out: list, z=None, table=None, pid: int = 0):
     """Walk vector/group/path nodes (binary-AXML node form)."""
     if node[0] == "group":
-        vals = {}
-
         def _f(name, default):
             a = _android_attr(node, name)
             if not a:
                 return default
-            _dt, ud, rs = a
-            if _dt == _DTYPE_STR and rs:
-                try:
-                    return float(rs)
-                except Exception:
-                    return default
-            if _dt == 0x10:
-                v = ud if ud < 0x80000000 else ud - 0x100000000
-                return float(v)
-            if _dt == 0x04:
-                import struct as _st
-
-                return float(_st.unpack("<f", _st.pack("<I", ud))[0])
-            return default
+            return _num_attr(*a, default)
 
         vals = {k: _f(k, d) for k, d in (
             ("translateX", 0.0), ("translateY", 0.0), ("scaleX", 1.0),
             ("scaleY", 1.0), ("rotation", 0.0), ("pivotX", 0.0), ("pivotY", 0.0))}
         mat = _mat_mul(mat, _group_matrix(vals))
         for c in node[2]:
-            _collect_vector_paths(c, mat, out)
+            _collect_vector_paths(c, mat, out, z, table, pid)
         return
     if node[0] == "path":
         d = fill = stroke = None
@@ -1285,33 +1337,28 @@ def _collect_vector_paths(node, mat, out: list):
             if aname == "pathData" and raw_s:
                 d = raw_s
             elif aname == "fillColor":
-                fill = _color_attr(dtype, udata, raw_s)
+                fill = _color_attr_full(z, table, pid, dtype, udata, raw_s)
             elif aname == "fillAlpha":
                 pass  # folded below
             elif aname == "strokeColor":
-                stroke = _color_attr(dtype, udata, raw_s)
+                stroke = _color_attr_full(z, table, pid, dtype, udata, raw_s)
             elif aname == "strokeWidth":
-                try:
-                    sw = float(raw_s) if raw_s else 1.0
-                except Exception:
-                    sw = 1.0
+                sw = _num_attr(dtype, udata, raw_s, 1.0)
             elif aname == "fillType" and raw_s == "evenOdd":
                 evenodd = True
         if d:
             fa = 1.0
             for ns, aname, dtype, udata, raw_s in node[1]:
-                if ns == ANDROID_NS and aname == "fillAlpha" and raw_s:
-                    try:
-                        fa = float(raw_s)
-                    except Exception:
-                        pass
+                if ns == ANDROID_NS and aname == "fillAlpha":
+                    fa = _num_attr(dtype, udata, raw_s, 1.0)
+                    break
             if fill is not None:
                 fill = (fill[0], fill[1], fill[2], int(fill[3] * fa))
             out.append((d, fill, stroke, sw, evenodd, mat))
         return
     if node[0] in ("vector", "adaptive-icon"):
         for c in node[2]:
-            _collect_vector_paths(c, mat, out)
+            _collect_vector_paths(c, mat, out, z, table, pid)
 
 
 def _color_attr(dtype, udata, raw_s):
@@ -1322,25 +1369,39 @@ def _color_attr(dtype, udata, raw_s):
     return None
 
 
-def _rasterize_vector_node(node, size: int):
+def _color_attr_full(z, table, pid: int, dtype, udata, raw_s):
+    """Like _color_attr but also resolves @color/ refs (dense tables + files)."""
+    got = _color_attr(dtype, udata, raw_s)
+    if got is not None:
+        return got
+    if dtype != _DTYPE_REF or table is None:
+        return None
+    col = _color_of_value(table, pid, dtype, udata, raw_s, z)
+    if col is None:
+        return None
+    if len(col) == 4:
+        return col
+    if col[0] == "xmlcolor" and z is not None:
+        try:
+            return _resolve_color_xml(z, col[1], table, pid)
+        except Exception:
+            return None
+    return None
+
+
+def _rasterize_vector_node(node, size: int, z=None, table=None, pid: int = 0):
     vw = vh = 24.0
     for ns, aname, dtype, udata, raw_s in node[1]:
         if ns != ANDROID_NS:
             continue
-        if aname == "viewportWidth" and raw_s:
-            try:
-                vw = float(raw_s)
-            except Exception:
-                pass
-        if aname == "viewportHeight" and raw_s:
-            try:
-                vh = float(raw_s)
-            except Exception:
-                pass
+        if aname == "viewportWidth":
+            vw = _num_attr(dtype, udata, raw_s, 24.0) or 24.0
+        if aname == "viewportHeight":
+            vh = _num_attr(dtype, udata, raw_s, 24.0) or 24.0
     ident = (1, 0, 0, 0, 1, 0, 0, 0, 1)
     paths: list = []
     for c in node[2]:
-        _collect_vector_paths(c, ident, paths)
+        _collect_vector_paths(c, ident, paths, z, table, pid)
     if not paths:
         return None
     return _rasterize_vector_paths(paths, size, vw, vh)
@@ -1470,7 +1531,9 @@ def _render_adaptive(z, table, default_pid, xml_path: str, size: int):
 
     bg_im = _paint(bg, True) or Image.new("RGBA", (size, size), (0, 0, 0, 0))
     fg_im = _paint(fg, False)
-    if fg_im is None:
+    if fg_im is None or fg_im.convert("RGBA").getbbox() is None:
+        # no (visible) foreground: an adaptive icon without art is broken —
+        # fail so callers try the next source instead of a flat square
         return None
     return Image.alpha_composite(bg_im.convert("RGBA"), fg_im.convert("RGBA").resize((size, size)))
 
@@ -1716,6 +1779,35 @@ def _tree_float(val, default=0.0) -> float:
     return default
 
 
+def _resolve_tree_refs(root, apk: Path) -> None:
+    """Replace ("int", REF, rid) fill/stroke colors in an xmltree node with the
+    resolved #hex via one batched apkeditor -res call. Mutates in place."""
+    want: dict[int, list] = {}
+
+    def _walk(el):
+        for k, v in el[1].items():
+            if k in ("fillColor", "strokeColor") and isinstance(v, tuple) and v[0] == "int" and v[1] == 0x01:
+                want.setdefault(v[2], []).append((el, k))
+        for c in el[2]:
+            _walk(c)
+
+    _walk(root)
+    if not want:
+        return
+    args: list[str] = []
+    for rid in want:
+        args += ["-res", hex(rid)]
+    out = _apkeditor_info(apk, *args, "-t", "text")
+    if not out:
+        return
+    lines = [l for l in out.splitlines() if l.strip().startswith("resource=")]
+    for rid, line in zip(want, lines):
+        m = re.match(r'resource="(.*)"\s*$', line.strip())
+        if m and m.group(1).startswith("#"):
+            for el, k in want[rid]:
+                el[1][k] = ("str", m.group(1))
+
+
 def _render_vector_treenode(root, size: int):
     """Rasterize an xmltree-parsed <vector> node."""
     vw = _tree_float(_tree_attr(root, "viewportWidth"), 24.0) or 24.0
@@ -1798,6 +1890,7 @@ def _extract_icon_via_apkeditor(apk: Path) -> object:
         if root is None:
             return None
         if root[0] == "vector":
+            _resolve_tree_refs(root, apk)
             return _render_vector_treenode(root, RENDER)
         if root[0] != "adaptive-icon":
             return None
@@ -1839,9 +1932,15 @@ def _extract_icon_via_apkeditor(apk: Path) -> object:
         return Image.alpha_composite(bg_im.convert("RGBA"), fg_im.convert("RGBA"))
 
 
-def _value_to_image(z: zipfile.ZipFile, value: str, size: int):
+def _value_to_image(z: zipfile.ZipFile, value: str, size: int, apk: Path | None = None):
     """Turn an apkeditor `-res` value (#hex | zip path) into an RGBA image."""
     from PIL import Image  # type: ignore
+
+    if apk is None:
+        try:
+            apk = Path(z.filename or "")
+        except Exception:
+            apk = None
 
     value = (value or "").strip()
     if not value:
@@ -1861,6 +1960,8 @@ def _value_to_image(z: zipfile.ZipFile, value: str, size: int):
         if root is None:
             return None
         if root[0] == "vector":
+            if apk is not None and apk.name:
+                _resolve_tree_refs(root, apk)
             return _render_vector_treenode(root, size)
         if root[0] == "selector":
             for item in root[2]:
@@ -2146,7 +2247,11 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                 if not (entry.get("package") and entry.get("version") and entry.get("vc")):
                     log.warning("index: skipping %s (no metadata)", apk.name)
                     continue
-                package, version, vc = entry["package"], entry["version"], int(entry["vc"])
+                try:
+                    package, version, vc = entry["package"], entry["version"], int(entry["vc"])
+                except (TypeError, ValueError):
+                    log.warning("index: skipping %s (bad versionCode %r)", apk.name, entry.get("vc"))
+                    continue
                 if package in CLONE_PACKAGE_MAP:
                     package = CLONE_PACKAGE_MAP[package]
                 disp_map2 = PACKAGE_DISPLAY
@@ -2202,35 +2307,29 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
                     break
 
             display = app_name.removesuffix(" Morphe")
-            # Enabled patch names for THIS app (short() avoids collisions like
-            # com.adguard.android matching android.*.json from other apps)
+            # Enabled patch names for THIS app only: exact options paths
+            # (short(pkg).combo.json, same files the patch runs used). Never
+            # globbed — short names collide (android.app x2, app.* etc.) and
+            # globbing leaks other apps' patch lists into this description.
             enabled_patches: list[str] = []
             try:
-                for _opt in (ROOT / "options").glob(f"{short(package)}.*.json"):
-                    if _opt.exists():
-                        _d = json.loads(_opt.read_text())
-                        _entries = _d if isinstance(_d, list) else [_d]
-                        for _e in _entries:
-                            _patches = _e.get("patches", {})
-                            _enabled = sorted(k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled"))
-                            if _enabled:
-                                enabled_patches = _enabled
-                                break
+                _raw_pkg = entry.get("package", package)
+                _combos = _combos_for_package(state, _raw_pkg) or _combos_for_package(state, package)
+                _opt_files = [ROOT / "options" / f"{short(_raw_pkg)}.{c}.json" for c in _combos]
+                _opt_files += [ROOT / "options" / f"{short(package)}.{c}.json" for c in _combos]
+                for _opt in dict.fromkeys(_opt_files):
+                    if not _opt.exists():
+                        continue
+                    _d = json.loads(_opt.read_text())
+                    _entries = _d if isinstance(_d, list) else [_d]
+                    for _e in _entries:
+                        _patches = _e.get("patches", {})
+                        _enabled = sorted(k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled"))
+                        if _enabled:
+                            enabled_patches = _enabled
+                            break
                     if enabled_patches:
                         break
-                if not enabled_patches:
-                    for _opt in (ROOT / "options").glob(f"{short(entry.get('package', package))}.*.json"):
-                        if _opt.exists():
-                            _d = json.loads(_opt.read_text())
-                            _entries = _d if isinstance(_d, list) else [_d]
-                            for _e in _entries:
-                                _patches = _e.get("patches", {})
-                                _enabled = sorted(k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled"))
-                                if _enabled:
-                                    enabled_patches = _enabled
-                                    break
-                        if enabled_patches:
-                            break
             except Exception:
                 pass
             # Check if this is Android TV
@@ -2505,7 +2604,7 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
     return changed
 
 
-ICON_EXTRACTOR_VERSION = 2
+ICON_EXTRACTOR_VERSION = 3
 
 
 async def ensure_icons(state: dict) -> bool:
