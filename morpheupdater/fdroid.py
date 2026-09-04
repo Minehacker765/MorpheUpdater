@@ -1574,7 +1574,9 @@ def _parse_xmltree(out: str):
     def _val(s: str):
         s = s.strip()
         if s.startswith('"'):
-            v = s.strip('"')
+            # first quoted string only: apkeditor appends (Raw: "...") suffixes
+            m = re.match(r'"((?:[^"\\]|\\.)*)"', s)
+            v = m.group(1) if m else s.strip('"')
             # unescape simple entities
             v = v.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")
             return ("str", v)
