@@ -20,7 +20,7 @@ from pathlib import Path
 
 from . import tools
 from .display import CLONE_PACKAGE_MAP, PACKAGE_DISPLAY, TV_PACKAGES
-from .settings import ICONS, OUT, ROOT
+from .settings import ICONS, OUT, ROOT, short
 
 log = logging.getLogger("fdroid")
 
@@ -2177,96 +2177,137 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             packages.setdefault(package, []).append(pkg_entry)
 
             icon_file = f"{package}.png"
-            icon_rel = icon_file
-            # ensure icon exists at out/icons/<package>.png
+            icon_rel = ""
+            # canonical icon locations (mirrors fdroidserver 2.x layout):
+            #   icons/<package>.png            (repo root, also used by website)
+            #   out/<package>/en-US/<package>.png  (per-app, referenced by index)
             icon_path = ICONS / icon_file
             if not icon_path.exists():
-                got = extract_icon(apk, icon_path)
-                if got:
-                    icon_rel = got
-                else:
-                    # keep icon_rel as filename; file may be fallback microg
-                    if icon_path.exists():
-                        icon_rel = icon_path.name
-                    else:
-                        icon_rel = ""
-            else:
-                icon_rel = icon_path.name
+                extract_icon(apk, icon_path)
+            per_app_dir = OUT / package / "en-US"
+            per_app_icon = per_app_dir / icon_file
+            if icon_path.exists():
+                try:
+                    per_app_dir.mkdir(parents=True, exist_ok=True)
+                    if not per_app_icon.exists() or icon_path.stat().st_mtime > per_app_icon.stat().st_mtime:
+                        shutil.copyfile(icon_path, per_app_icon)
+                    icon_rel = icon_file
+                except OSError:
+                    icon_rel = icon_file if icon_path.exists() else ""
+            # raw (store) package id for links; `package` may be a clone alias
+            store_pkg = entry.get("package", package)
+            for orig, alias in CLONE_PACKAGE_MAP.items():
+                if alias == package:
+                    store_pkg = orig
+                    break
 
             display = app_name.removesuffix(" Morphe")
-            # Build detailed description with patch list
-            # Try to load patch descriptions from options file
-            patch_desc = ""
+            # Enabled patch names for THIS app (short() avoids collisions like
+            # com.adguard.android matching android.*.json from other apps)
+            enabled_patches: list[str] = []
             try:
-                # find options file for this package
-                for _opt in (ROOT / "options").glob(f"{package.split('.')[-1]}.*.json"):
+                for _opt in (ROOT / "options").glob(f"{short(package)}.*.json"):
                     if _opt.exists():
                         _d = json.loads(_opt.read_text())
                         _entries = _d if isinstance(_d, list) else [_d]
                         for _e in _entries:
                             _patches = _e.get("patches", {})
-                            _enabled = [k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled")]
+                            _enabled = sorted(k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled"))
                             if _enabled:
-                                patch_desc = "\n\nPatches (" + str(len(_enabled)) + "): " + ", ".join(sorted(_enabled)[:10])
-                                if len(_enabled) > 10:
-                                    patch_desc += f" +{len(_enabled)-10} more"
+                                enabled_patches = _enabled
                                 break
-                        if patch_desc:
+                    if enabled_patches:
+                        break
+                if not enabled_patches:
+                    for _opt in (ROOT / "options").glob(f"{short(entry.get('package', package))}.*.json"):
+                        if _opt.exists():
+                            _d = json.loads(_opt.read_text())
+                            _entries = _d if isinstance(_d, list) else [_d]
+                            for _e in _entries:
+                                _patches = _e.get("patches", {})
+                                _enabled = sorted(k for k, v in _patches.items() if isinstance(v, dict) and v.get("enabled"))
+                                if _enabled:
+                                    enabled_patches = _enabled
+                                    break
+                        if enabled_patches:
                             break
             except Exception:
                 pass
             # Check if this is Android TV
             is_tv = package in TV_PACKAGES
-            tv_note = " [Android TV] " if is_tv else ""
-            summary = f"{display}{tv_note} patched with Morphe ({len(patch_desc.split(',')) if patch_desc else 0} patches)"
-            # For universal, keep it short; for specific, include patch count
-            desc = f"{display}{tv_note} — {summary}{patch_desc}\n\nOriginal: {package} — {display} is {display.lower()} with enhancements."
+            tv_note = " [Android TV]" if is_tv else ""
+            bundle_tags = entry.get("bundle_tags") or {}
+            if not bundle_tags and isinstance(entry.get("tags"), dict):
+                bundle_tags = entry["tags"]
+            bundle_str = ", ".join(f"{k} {v}" for k, v in sorted(bundle_tags.items()))
+            summary = f"{display}{tv_note} patched with Morphe"
+            desc_lines = [f"{summary}."]
+            if bundle_str:
+                desc_lines.append(f"Patches: {bundle_str}.")
+            if enabled_patches:
+                desc_lines.append(f"Enabled patches ({len(enabled_patches)}): " + ", ".join(enabled_patches) + ".")
+            desc_lines.append(f"Original app: {store_pkg} {version} (patched APK signed with the F-Droid repo key).")
+            if package in ("com.google.android.youtube", "app.morphe.android.youtube", "com.google.android.apps.youtube.music", "app.morphe.android.apps.youtube.music"):
+                desc_lines.append("Requires MicroG for login and playback.")
+            desc = "\n\n".join(desc_lines)
             # Keep it brief for F-Droid (max 4000 chars)
             if len(desc) > 3500:
                 desc = desc[:3500]
-            # For v1, prefer top-level `icon` (legacy /icons/ path) and keep
-            # localized without icon so fdroidclient doesn't look in /$pkg/en-US/
-            en: dict = {"name": app_name, "summary": summary, "description": desc}
+            # Bundle source URL for the sourceCode link (first known bundle)
+            bundle_url = ""
+            try:
+                bundles_cfg = cfg.get("bundles", {})
+                for b in sorted(bundle_tags):
+                    spec = bundles_cfg.get(b, "")
+                    u = spec if isinstance(spec, str) else spec.get("url", "")
+                    if u:
+                        bundle_url = u
+                        break
+            except Exception:
+                pass
+            app_entry: dict = {
+                "packageName": package,
+                "name": app_name,
+                "summary": summary,
+                "description": desc,
+                "categories": ["Other"],
+                "license": "Unknown",
+                "added": pkg_entry["added"],
+                "lastUpdated": pkg_entry["added"],
+                "webSite": f"https://play.google.com/store/apps/details?id={store_pkg}",
+                "sourceCode": bundle_url or "https://github.com/Minehacker765/MorpheUpdater",
+                "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
+                "issueTracker": "https://github.com/Minehacker765/MorpheUpdater/issues",
+                "localized": {"en-US": {"name": app_name}},
+            }
+            if icon_rel:
+                # icon lives at out/<pkg>/en-US/<file>, like fdroidserver 2.x
+                app_entry["localized"]["en-US"]["icon"] = icon_rel
             if package not in apps:
-                apps[package] = {
-                    "packageName": package,
-                    "name": app_name,
-                    "localized": {"en-US": en},
-                }
-                if icon_rel:
-                    apps[package]["icon"] = icon_rel
+                apps[package] = app_entry
             else:
-                # ensure icon present if missing earlier
-                if icon_rel and "icon" not in apps[package]:
-                    apps[package]["icon"] = icon_rel
+                # merge: keep earliest added, newest metadata
+                prev = apps[package]
+                try:
+                    app_entry["added"] = min(int(prev.get("added", app_entry["added"])), int(app_entry["added"]))
+                except Exception:
+                    pass
+                try:
+                    app_entry["lastUpdated"] = max(int(prev.get("lastUpdated", 0)), int(app_entry["lastUpdated"]))
+                except Exception:
+                    pass
+                if not icon_rel and prev.get("localized", {}).get("en-US", {}).get("icon"):
+                    app_entry["localized"]["en-US"]["icon"] = prev["localized"]["en-US"]["icon"]
+                apps[package] = app_entry
 
-    # If we fell back to prev_packages path above, ensure apps have icon fields
+    # If we fell back to prev_packages path above, drop legacy top-level icon
+    # fields: clients resolve localized en-US icons to /<pkg>/en-US/<file>,
+    # a bare top-level filename points nowhere.
     if not packages and prev_packages:
         packages = prev_packages
         apps = prev_apps
-        # retro-fix missing top-level icon for apps that only have localized.icon
-        for pkg, app in list(apps.items()):
-            loc_icon = app.get("localized", {}).get("en-US", {}).get("icon")
-            if loc_icon and "icon" not in app:
-                # move from localized to top-level if file is in icons/
-                if (ICONS / loc_icon).exists():
-                    app["icon"] = loc_icon
-                    # remove from localized to avoid fdroidclient's /$pkg/en-US/ lookup
-                    app["localized"]["en-US"].pop("icon", None)
-            # ensure icon file exists; no fake placeholders — a missing icon
-            # entry is better than a wrong one (clients show a default)
-            if "icon" not in app:
-                icon_path = ICONS / f"{pkg}.png"
-                if icon_path.exists():
-                    app["icon"] = icon_path.name
-
-    # Ensure every app has a top-level icon pointing to icons/...
-    for pkg, app in apps.items():
-        if "icon" not in app:
-            # try to find existing icon file
-            icon_path = ICONS / f"{pkg}.png"
-            if icon_path.exists():
-                app["icon"] = icon_path.name
+        for _pkg, _app in list(apps.items()):
+            _app.pop("icon", None)
 
     repo_icon = _ensure_repo_icon()
     repo: dict = {
@@ -2283,6 +2324,12 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
     # sort packages for determinism
     for k in packages:
         packages[k] = sorted(packages[k], key=lambda p: p["versionCode"], reverse=True)
+    for pkg, app in apps.items():
+        try:
+            if packages.get(pkg):
+                app["suggestedVersionCode"] = packages[pkg][0]["versionCode"]
+        except Exception:
+            pass
     apps_list = sorted(apps.values(), key=lambda a: a["name"].lower())
     # ensure localized.name matches top-level for clients that use localized
     for a in apps_list:
@@ -2351,39 +2398,25 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
         pkg_list = packages_v1.get(pkg, [])
         if not pkg_list:
             continue
-        # metadata
+        # metadata (summary/description live top-level in v1; mirror into maps)
         loc = app.get("localized", {}).get("en-US", {})
-        icon_name = app.get("icon")
+        # per-package icon dir, like fdroidserver 2.x: out/<pkg>/en-US/<file>
+        icon_name = loc.get("icon") or app.get("icon")
         if icon_name:
-            icon_path = ICONS / icon_name
-            if icon_path.exists():
-                icon_entry = _file_entry(icon_path, f"/icons/{icon_name}")
-            else:
-                icon_entry = {"name": f"/icons/{icon_name}", "sha256": "0"*64, "size": 0}
-        elif loc.get("icon"):
-            # fallback if we still have localized icon (legacy)
-            p = ICONS / loc["icon"]
+            p = OUT / pkg / "en-US" / icon_name
+            if not p.exists():
+                p = ICONS / icon_name
             if p.exists():
-                icon_entry = _file_entry(p, f"/icons/{p.name}")
+                icon_entry = _file_entry(p, f"/{pkg}/en-US/{icon_name}")
             else:
-                # try per-package path
-                p2 = OUT / pkg / "en-US" / loc["icon"]
-                if p2.exists():
-                    icon_entry = _file_entry(p2, f"/{pkg}/en-US/{loc['icon']}")
-                else:
-                    icon_entry = {"name": f"/{pkg}/en-US/{loc['icon']}", "sha256": "0"*64, "size": 0}
+                icon_entry = {"name": f"/{pkg}/en-US/{icon_name}", "sha256": "0"*64, "size": 0}
         else:
-            # synthesize fallback microg
-            p = ICONS / f"{pkg}.png"
-            if p.exists():
-                icon_entry = _file_entry(p, f"/icons/{p.name}")
-            else:
-                icon_entry = {"name": f"/icons/{pkg}.png", "sha256": "0"*64, "size": 0}
+            icon_entry = {"name": f"/{pkg}/en-US/{pkg}.png", "sha256": "0"*64, "size": 0}
 
         metadata = {
-            "name": {"en-US": app.get("name", pkg)},
-            "summary": {"en-US": loc.get("summary", app.get("name", ""))},
-            "description": {"en-US": loc.get("description", "")},
+            "name": {"en-US": loc.get("name", app.get("name", pkg))},
+            "summary": {"en-US": app.get("summary", loc.get("summary", app.get("name", "")))},
+            "description": {"en-US": app.get("description", loc.get("description", ""))},
             "icon": {"en-US": icon_entry},
             "categories": app.get("categories", ["Other"]),
             "license": app.get("license", "Unknown"),
