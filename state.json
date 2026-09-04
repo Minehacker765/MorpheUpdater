@@ -3,14 +3,14 @@
     "ai.perplexity.app.android|hxreborn|arm64": {
       "app_name": "Perplexity - Ask Anything",
       "arch": "arm64",
-      "at": 1788474496,
-      "out": "app.android-2.97.0-hxreborn-arm64.apk",
+      "at": 1788557827,
+      "out": "app.android-2.98.0-hxreborn-arm64.apk",
       "package": "ai.perplexity.app.android",
       "tags": {
         "hxreborn": "v1.14.1"
       },
-      "vc": 260647,
-      "version": "2.97.0"
+      "vc": 260653,
+      "version": "2.98.0"
     },
     "ak.alizandro.smartaudiobookplayer|hoomans|arm64": {
       "app_name": "Smart AudioBook Player",
@@ -1891,8 +1891,8 @@
   },
   "icons": {
     "ai.perplexity.app.android": [
-      1788474495,
-      171747063
+      1788557827,
+      174827470
     ],
     "all.in.one.calculator": [
       1788474143,
@@ -2443,8 +2443,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788490860,
+      56659147
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
