@@ -675,13 +675,13 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
-      "at": 1788478222,
+      "at": 1788487238,
       "out": "photos-7.91.0.973540846-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 52331956,
+      "vc": 52331974,
       "version": "7.91.0.973540846"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
@@ -2099,8 +2099,8 @@
       15298259
     ],
     "com.google.android.apps.photos": [
-      1788478222,
-      74858631
+      1788487237,
+      131889078
     ],
     "com.hellochinese": [
       1788299791,
@@ -2415,8 +2415,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788308394,
+      56659147
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
