@@ -1443,11 +1443,11 @@
     "com.wbd.hbomax|androidtv|tv": {
       "app_name": "HBO Max: Stream Movies & TV",
       "arch": "tv",
-      "at": 1788301428,
+      "at": 1788508912,
       "out": "hbomax-7.9.0.61-androidtv-tv.apk",
       "package": "com.wbd.hbomax",
       "tags": {
-        "androidtv": "v1.30.3"
+        "androidtv": "v1.30.4"
       },
       "vc": 1827090061,
       "version": "7.9.0.61"
@@ -2303,7 +2303,7 @@
       143032204
     ],
     "com.wbd.hbomax": [
-      1788301428,
+      1788508912,
       68258818
     ],
     "com.xodo.pdf.reader": [
@@ -2419,8 +2419,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788490860,
+      56659147
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
