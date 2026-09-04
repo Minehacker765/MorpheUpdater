@@ -855,14 +855,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1788473874,
-      "out": "microg-7.1.0-dev.2-arm64.apk",
+      "at": 1788539483,
+      "out": "microg-7.1.0-dev.3-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.1.0-dev.2"
+        "microg": "7.1.0-dev.3"
       },
       "vc": 255070000,
-      "version": "7.1.0-dev.2"
+      "version": "7.1.0-dev.3"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "",
@@ -1879,7 +1879,7 @@
     "hoodles": "v1.44.0-dev.1",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.1",
-    "microg": "7.1.0-dev.2",
+    "microg": "7.1.0-dev.3",
     "morphe": "v1.42.0-dev.2",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
@@ -1915,8 +1915,8 @@
       104791216
     ],
     "app.revanced.android.gms": [
-      1788473874,
-      44776519
+      1788539483,
+      44756039
     ],
     "app.rubberbands.fit": [
       1788474493,
@@ -2419,8 +2419,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788490860,
-      56659147
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
