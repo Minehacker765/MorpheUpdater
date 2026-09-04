@@ -443,7 +443,7 @@ def _git_env() -> dict:
 
 
 async def commit_and_push(message: str) -> bool:
-    paths = ["state.json", "options", "out/index-v1.json", "out/index-v1.jar", "out/index-v2.json", "out/index-v2.jar", "out/entry.json", "out/entry.jar", "out/icons", "out/index.html"]
+    paths = ["state.json", "options", "icons", "out/index-v1.json", "out/index-v1.jar", "out/index-v2.json", "out/index-v2.jar", "out/entry.json", "out/entry.jar", "out/icons", "out/index.html"]
     existing = [p for p in paths if (ROOT / p).exists()]
     await run(["git", "add", "--", *existing], cwd=ROOT)
     rc, out = await run(["git", "diff", "--cached", "--quiet"], cwd=ROOT)

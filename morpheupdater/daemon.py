@@ -1040,6 +1040,11 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
         if summary["built"] and (cfg.get("release") or release_override):
             pending_tag = "p" + time.strftime("%Y%m%d-%H%M%S")
         try:
+            if await fdroid.ensure_icons(state):
+                save_state(state)
+        except Exception as exc:
+            log.warning("icon backfill failed: %s", exc)
+        try:
             if await fdroid.update(cfg, state, pending_tag):
                 summary["fdroid"] = True
                 summary["fdroid_url"] = (cfg.get("fdroid") or {}).get("url", "")
