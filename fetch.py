@@ -26,7 +26,7 @@ from aiohttp import ClientSession, ClientTimeout
 
 from morpheupdater.daemon import AuthHolder, ensure_merged
 from morpheupdater import play
-from morpheupdater.settings import ROOT, TMP, load_config, load_env
+from morpheupdater.settings import ROOT, load_config, load_env
 
 log = logging.getLogger("fetch")
 
@@ -65,7 +65,6 @@ async def _resolve_version(
         # try to reverse-lookup dotted for nice naming, best-effort
         try:
             codes = await play.fetch_version_codes(session, package)
-            rev = {v: k for k, v in codes.items()}
             # there may be multiple dotted for same vc (store variants); pick first
             dotted = next((k for k, v in codes.items() if v == vc), version_arg)
             if dotted != version_arg:
@@ -163,11 +162,11 @@ def main() -> None:
             # dotted + explicit vc -> save mapping
             try:
                 vc = int(args.version_code)
-                if args.save or True:  # always save when explicit vc given with dotted
-                    from morpheupdater.play import _save_override
+                # always persist an explicit vc so future cycles reuse it
+                from morpheupdater.play import _save_override
 
-                    _save_override(args.package, version_arg, vc)
-                    print(f"saved override {args.package} {version_arg} -> {vc} to version_overrides.json", file=sys.stderr)
+                _save_override(args.package, version_arg, vc)
+                print(f"saved override {args.package} {version_arg} -> {vc} to version_overrides.json", file=sys.stderr)
                 version_arg = str(vc)  # use vc directly for fetch
             except ValueError:
                 p.error("--version-code must be numeric")

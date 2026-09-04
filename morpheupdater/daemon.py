@@ -9,6 +9,7 @@ import logging
 import os
 import re
 import shutil
+import sys
 import time
 import zlib
 from base64 import urlsafe_b64encode
@@ -910,6 +911,9 @@ async def cycle(commit_override: bool | None = None, release_override: bool | No
                     archs = [a for a in archs if a not in rm]
             if "tv" in archs and package not in TV_PACKAGES and not app.get("archs") and not (over and "archs" in over):
                 archs = [a for a in archs if a != "tv"]
+            if not archs:
+                log.warning("%s: no archs enabled, skipping", package)
+                continue
             for combo in app["combos"]:
                 ident = (package, tuple(sorted(combo)))
                 if ident in seen:
@@ -1214,10 +1218,8 @@ async def self_update(cfg: dict) -> bool:
             log.warning("self-update: stash pop had conflicts (kept in stash): %s", out[-200:].strip())
         log.info("self-update: updated to origin/main, restarting")
         # graceful restart: exit, systemd Restart=always will relaunch
-        import os as _os
-        import sys as _sys
-        _sys.stdout.flush()
-        _os._exit(42)
+        sys.stdout.flush()
+        os._exit(42)
     except Exception as exc:
         log.warning("self-update failed: %s", exc)
         return False

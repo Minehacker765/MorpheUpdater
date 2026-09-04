@@ -1,8 +1,6 @@
 import argparse
 import asyncio
 import logging
-import logging.handlers
-import re
 
 from morpheupdater import daemon
 from morpheupdater.settings import load_env

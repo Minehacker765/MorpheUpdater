@@ -405,6 +405,12 @@ async def fetch_version_codes(session: ClientSession, package: str, attempts: in
                 last_err = PlayError(f"metadata source rate-limited {package}")
                 await asyncio.sleep(wait)
                 continue
+            if resp.status in (500, 502, 503, 504):
+                wait = 5 * (attempt + 1)
+                log.warning("%s: pure HTTP %s, retrying in %ds (attempt %d/%d)", package, resp.status, wait, attempt + 1, attempts)
+                last_err = PlayError(f"metadata source HTTP {resp.status} for {package}")
+                await asyncio.sleep(wait)
+                continue
             if resp.status != 200:
                 log.warning("%s: pure HTTP %s", package, resp.status)
                 raise PlayError(f"metadata source HTTP {resp.status} for {package}")
@@ -447,6 +453,9 @@ def _save_override(package: str, version: str, vc: int) -> None:
         OVERRIDES_PATH.write_text(json.dumps(sorted_data, indent=2, sort_keys=True) + "\n")
     except Exception:
         pass
+
+
+MAX_BRUTE_FORCE_ATTEMPTS = 60  # each guess costs 2 Play API calls; never storm the API
 
 
 def guess_version_codes(dotted: str) -> list[int]:
@@ -544,11 +553,18 @@ async def resolve_vc_with_fallback(
                 return vc, codes
         except Exception:
             pass
-        # mirror* 2: brute-force guess against Play (requires auth, try)
+        # mirror* 2: brute-force guess against Play (requires auth, try).
+        # Strictly budgeted: each guess costs 2 API calls, and auth/rate-limit
+        # errors abort immediately instead of burning the whole budget.
         try:
             # need a valid auth token for this arch
             auth = await ensure_auth(session, arch)
+            tried = 0
             for guess in guess_version_codes(version):
+                if tried >= MAX_BRUTE_FORCE_ATTEMPTS:
+                    log.warning("%s %s: brute-force budget (%d) exhausted", package, version, MAX_BRUTE_FORCE_ATTEMPTS)
+                    break
+                tried += 1
                 try:
                     # purchase is cheap, check if Play serves this vc
                     token = await purchase(session, auth, package, guess)
@@ -560,8 +576,14 @@ async def resolve_vc_with_fallback(
                     codes = await fetch_version_codes(session, package)
                     codes[version] = guess
                     return guess, codes
-                except (AppNotSupportedError, PlayError):
+                except (AuthExpiredError, RateLimitError):
+                    raise
+                except PlayError:
                     continue
+        except (AuthExpiredError, RateLimitError):
+            raise
+        except PlayError:
+            pass
         except Exception:
             pass
         # re-raise original with hint

@@ -8,7 +8,6 @@ import asyncio
 import logging
 import os
 import re
-import subprocess
 import zipfile
 from pathlib import Path
 
@@ -128,6 +127,10 @@ async def run(cmd: list[str], env: dict | None = None, cwd: Path | None = None, 
         stdout, _ = await asyncio.wait_for(proc.communicate(), timeout_s)
     except TimeoutError:
         proc.kill()
+        try:
+            await asyncio.wait_for(proc.wait(), 5)
+        except Exception:
+            pass
         raise RuntimeError(f"timeout running {' '.join(cmd[:4])}...")
     return proc.returncode or 0, stdout.decode("utf-8", "replace")
 
@@ -246,11 +249,9 @@ async def sign_apk(apk_in: Path, apk_out: Path, creds: dict) -> None:
         cmd += ["--ks-key-alias", creds["alias"]]
     if creds["entry_pw"]:
         cmd += ["--key-pass", "env:KEY_PASS"]
-    rc, out = await run(
-        cmd,
-        env={"KS_PASS": creds["store_pw"], "KEY_PASS": creds["entry_pw"]},
-        timeout_s=600,
-    )
+    env = os.environ.copy()
+    env.update({"KS_PASS": creds["store_pw"], "KEY_PASS": creds["entry_pw"]})
+    rc, out = await run(cmd, env=env, timeout_s=600)
     if rc != 0:
         raise RuntimeError(f"apksigner failed:\n{out[-500:]}")
     log.info("signed %s", apk_out.name)
@@ -280,7 +281,10 @@ async def apk_info(jar: Path, apk: Path) -> tuple[str, str, int, str] | None:
 def signing_args() -> list[str]:
     args: list[str] = []
     ks = keystore()
-    if ks and Path(ks).exists():
+    ks_path = Path(ks)
+    if not ks_path.is_absolute():
+        ks_path = ROOT / ks_path
+    if ks and ks_path.exists():
         c = resolve_signing()
         args += ["--keystore", ks]
         if c["store_pw"]:
@@ -300,6 +304,9 @@ def signing_args() -> list[str]:
 
 
 def _version_key(version: str) -> tuple:
+    # strip parenthesized suffixes like Play's "32.30.0(1575420)" labels so a
+    # stale versionCode can't outrank a genuinely newer dotted version
+    version = re.sub(r"\(.*\)", "", version)
     parts = []
     for chunk in re.split(r"[.\-_+]", version):
         digits = re.sub(r"\D", "", chunk)
@@ -631,23 +638,18 @@ async def trim_release_to_delta(tag: str) -> int:
                 deleted += 1
     if deleted:
         log.info("trim %s: deleted %d assets, kept %d (delta)", tag, deleted, len(keep))
-        # annotate notes so the history stays readable
-        rc3, _ = await run(
-            ["gh", "release", "view", tag, "--json", "body", "--jq", ".body"],
+        # annotate notes so the history stays readable (gh release edit
+        # --notes replaces the whole body, so re-fetch the raw body first)
+        note = "\n\n> Trimmed to delta: unchanged APKs moved to the newer `Latest` release; this release keeps only the APKs built in this cycle."
+        rc4, body = await run(
+            ["gh", "api", f"repos/{{owner}}/{{repo}}/releases/tags/{tag}", "--jq", ".body"],
             env=os.environ.copy(), cwd=ROOT, timeout_s=60,
         )
-        if rc3 == 0:
-            note = "\n\n> Trimmed to delta: unchanged APKs moved to the newer `Latest` release; this release keeps only the APKs built in this cycle."
-            # gh release edit --notes replaces whole body, so re-fetch raw body first
-            rc4, body = await run(
-                ["gh", "api", f"repos/{{owner}}/{{repo}}/releases/tags/{tag}", "--jq", ".body"],
+        if rc4 == 0 and "Trimmed to delta" not in body:
+            await run(
+                ["gh", "release", "edit", tag, "--notes", body + note],
                 env=os.environ.copy(), cwd=ROOT, timeout_s=60,
             )
-            if rc4 == 0 and "Trimmed to delta" not in body:
-                await run(
-                    ["gh", "release", "edit", tag, "--notes", body + note],
-                    env=os.environ.copy(), cwd=ROOT, timeout_s=60,
-                )
     else:
         log.info("trim %s: already delta (%d assets)", tag, len(keep))
     return deleted

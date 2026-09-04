@@ -76,7 +76,8 @@ def get_priority_profiles(arch: str = "arm64") -> list[tuple[str, dict[str, str]
     elif arch in ("arm64", "armv7"):
         pool = list(_of_arch(arch))
     else:
-        pool = _supporting(ABI_TOKENS[arch])
+        # unknown arch keys (e.g. legacy "arm") fall back to arm64 devices
+        pool = _supporting(ABI_TOKENS.get(arch, "arm64-v8a"))
     seen: set[str] = set()
     result: list[tuple[str, dict[str, str]]] = []
     for key in priority:
@@ -105,18 +106,3 @@ def get_compat_profiles(arch: str = "arm64") -> list[tuple[str, dict[str, str]]]
 
     return sorted(pool, key=sort_key)
 
-
-def get_discovery_profiles(arch: str = "arm64") -> list[tuple[str, dict[str, str]]]:
-    tv = [(k, p) for k, (a, p) in _ALL.items()
-          if "android.software.leanback" in p.get("Features", "")]
-    candidates = get_compat_profiles(arch)[:1] + tv
-    for other in ("armv7", "arm64", "x86_64"):
-        if other != arch:
-            candidates += get_compat_profiles(other)[:1]
-    seen: set[str] = set()
-    result = []
-    for key, profile in candidates:
-        if key not in seen:
-            seen.add(key)
-            result.append((key, profile))
-    return result

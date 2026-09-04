@@ -200,10 +200,3 @@ CLONE_PACKAGE_MAP: dict[str, str] = {
     "com.chess": "com.chess.prathxm",
 }
 
-# Short name collision map for options files (hint -> package)
-SHORT_TO_PACKAGE: dict[str, str] = {
-    "katana": "com.facebook.katana",
-    "orca": "com.facebook.orca",
-    "facebook": "com.facebook.katana",
-    "messenger": "com.facebook.orca",
-}

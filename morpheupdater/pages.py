@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import shutil
 import time
@@ -156,12 +157,14 @@ CARD = """<div class="card" data-name="${name_attr}" data-pkg="${pkg}" data-bund
 </div>"""
 
 
-def _load_patch_compat(bundle_name: str, mpp_path: str) -> dict[str, set[str] | None]:
+def _load_patch_compat(mpp_path: str) -> dict[str, set[str] | None]:
     """Map patch name -> compatible packages for a bundle MPP via list-patches.
 
     Same patch name can target several apps (e.g. "Skip ads" x6 in androidtv),
     so packages UNION across duplicates. None = never seen with a packages
-    section (unknown, keep); empty set = universal (keep for all)."""
+    section (unknown, keep); empty set = universal (keep for all).
+
+    Runs a JVM subprocess; callers should run it in a worker thread."""
     import re
     import subprocess
     from pathlib import Path
@@ -264,26 +267,40 @@ async def build_showcase(cfg: dict, state: dict) -> bool:
     except Exception:
         _actual_map = {}
 
-    # cache per-bundle patch compat
-    compat_cache: dict[str, dict[str, list[str]]] = {}
-    def get_compat(bundle: str) -> dict[str, list[str]]:
-        if bundle in compat_cache:
-            return compat_cache[bundle]
-        # find mpp for bundle
+    # per-bundle patch compat, loaded concurrently off the event loop
+    # (each load spawns a JVM via list-patches)
+    from morpheupdater.daemon import _get_local_mpp
+
+    def _mpp_for(bundle: str) -> str | None:
         url = cfg.get("bundles", {}).get(bundle, "")
         u = url if isinstance(url, str) else url.get("url", "")
-        mpp = None
         if u and "github.com" in u:
-            from morpheupdater.daemon import _get_local_mpp
             tag = state.get("bundles", {}).get(bundle)
             p = _get_local_mpp(u, tag) if tag else _get_local_mpp(u)
             if p and p.exists():
-                mpp = str(p)
-        if mpp:
-            compat_cache[bundle] = _load_patch_compat(bundle, mpp)
-        else:
-            compat_cache[bundle] = {}
-        return compat_cache[bundle]
+                return str(p)
+        return None
+
+    bundles_needed: set[str] = set()
+    for _b in state.get("builds", {}).values():
+        _tags = _b.get("tags", {}) or {}
+        bundles_needed.update(_tags.keys())
+
+    async def _load_one(bundle: str) -> tuple[str, dict[str, set[str] | None]]:
+        mpp = _mpp_for(bundle)
+        if not mpp:
+            return bundle, {}
+        try:
+            return bundle, await asyncio.to_thread(_load_patch_compat, mpp)
+        except Exception:
+            return bundle, {}
+
+    compat_cache: dict[str, dict[str, set[str] | None]] = dict(
+        await asyncio.gather(*[_load_one(bn) for bn in sorted(bundles_needed)])
+    )
+
+    def get_compat(bundle: str) -> dict[str, set[str] | None]:
+        return compat_cache.get(bundle, {})
 
     # collect cards data
     cards = []

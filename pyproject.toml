@@ -1,7 +1,7 @@
 [project]
 name = "morpheupdater"
 version = "0.1.0"
-description = "Add your description here"
+description = "Async daemon that patches Play APKs with Morphe and publishes an F-Droid repo"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

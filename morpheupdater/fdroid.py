@@ -83,6 +83,8 @@ def _pool_strings(data: bytes, off: int) -> list[str]:
     string_count, _styles, flags, strings_start, _ss = struct.unpack_from(
         "<IIIII", data, off + 8
     )
+    if string_count > 200_000:
+        raise ValueError(f"implausible string pool ({string_count})")
     utf8 = bool(flags & 0x100)
     offsets = struct.unpack_from(f"<{string_count}I", data, off + 28)
     base = off + strings_start
@@ -103,38 +105,44 @@ def _pool_strings(data: bytes, off: int) -> list[str]:
 
 
 def parse_manifest_sdk(apk: Path) -> tuple[int | None, int | None]:
-    """(minSdkVersion, targetSdkVersion) from AndroidManifest.xml."""
+    """(minSdkVersion, targetSdkVersion) from AndroidManifest.xml.
+
+    Never raises: a malformed manifest just yields (None, None) so one bad
+    APK can't take down the whole index build."""
     try:
         with zipfile.ZipFile(apk) as z:
             data = z.read("AndroidManifest.xml")
     except Exception:
         return None, None
 
-    strings: list[str] = []
-    pos = 8
-    while pos + 8 <= len(data):
-        ctype, _hdr, size = struct.unpack_from("<HHI", data, pos)
-        if size <= 0 or pos + size > len(data):
-            break
-        if ctype == RES_STRING_POOL and not strings:
-            strings = _pool_strings(data, pos)
-        elif ctype == RES_XML_START_ELEMENT and strings:
-            _ns, name_idx, attr_start, attr_size, attr_count = struct.unpack_from(
-                "<IIHHH", data, pos + 16
-            )
-            name = strings[name_idx] if name_idx < len(strings) else ""
-            if name == "uses-sdk":
-                found: dict[str, int] = {}
-                for i in range(attr_count):
-                    base = pos + 16 + attr_start + i * attr_size
-                    _a_ns, a_name, _raw = struct.unpack_from("<III", data, base)
-                    _tsize, _tres, dtype = struct.unpack_from("<HBB", data, base + 12)
-                    tdata = struct.unpack_from("<I", data, base + 16)[0]
-                    key = strings[a_name] if a_name < len(strings) else ""
-                    if dtype == 0x10 and key:
-                        found[key] = tdata
-                return found.get("minSdkVersion"), found.get("targetSdkVersion")
-        pos += size
+    try:
+        strings: list[str] = []
+        pos = 8
+        while pos + 8 <= len(data):
+            ctype, _hdr, size = struct.unpack_from("<HHI", data, pos)
+            if size <= 0 or pos + size > len(data):
+                break
+            if ctype == RES_STRING_POOL and not strings:
+                strings = _pool_strings(data, pos)
+            elif ctype == RES_XML_START_ELEMENT and strings:
+                _ns, name_idx, attr_start, attr_size, attr_count = struct.unpack_from(
+                    "<IIHHH", data, pos + 16
+                )
+                name = strings[name_idx] if name_idx < len(strings) else ""
+                if name == "uses-sdk":
+                    found: dict[str, int] = {}
+                    for i in range(attr_count):
+                        base = pos + 16 + attr_start + i * attr_size
+                        _a_ns, a_name, _raw = struct.unpack_from("<III", data, base)
+                        _tsize, _tres, dtype = struct.unpack_from("<HBB", data, base + 12)
+                        tdata = struct.unpack_from("<I", data, base + 16)[0]
+                        key = strings[a_name] if a_name < len(strings) else ""
+                        if dtype == 0x10 and key:
+                            found[key] = tdata
+                    return found.get("minSdkVersion"), found.get("targetSdkVersion")
+            pos += size
+    except Exception:
+        return None, None
     return None, None
 
 
@@ -848,19 +856,23 @@ def _render_adaptive_node(z, table, default_pid, node, size: int):
 
 
 def _gradient_colors(cols: list, size: int):
+    """Vertical gradient (top -> bottom; centerColor folds like before).
+
+    Renders a 1px-wide column and stretches it: O(size) instead of O(size^2)
+    Python-level pixel writes."""
     from PIL import Image  # type: ignore
 
     if len(cols) == 1:
         cols = [cols[0], cols[0]]
     top, bot = cols[0], cols[-1]
-    im = Image.new("RGBA", (size, size))
-    px = im.load()
+    if top == bot:
+        return Image.new("RGBA", (size, size), top)
+    col = Image.new("RGBA", (1, size))
+    px = col.load()
     for y in range(size):
         t = y / max(1, size - 1)
-        px_line = tuple(int(top[i] + (bot[i] - top[i]) * t) for i in range(4))
-        for x in range(size):
-            px[x, y] = px_line
-    return im
+        px[0, y] = tuple(int(top[i] + (bot[i] - top[i]) * t) for i in range(4))
+    return col.resize((size, size), Image.BILINEAR)
 
 
 # ── VectorDrawable rasterizer ──────────────────────────────────────────────
@@ -896,6 +908,8 @@ def _parse_path_data(d: str) -> list[tuple[str, list[float]]]:
             cur = t
             buf = []
         else:
+            if cur is None:
+                continue  # stray number before any command; ignore
             buf.append(float(t))
             n = counts[cur.upper()]
             while cur is not None and n and len(buf) >= n:
@@ -1116,16 +1130,17 @@ def _mat_pt(m, x, y):
     return (m[0] * x + m[1] * y + m[2], m[3] * x + m[4] * y + m[5])
 
 
-def _group_matrix(get, pivot_default=(0.0, 0.0)):
+def _group_matrix(vals, pivot_default=(0.0, 0.0)):
+    """Affine matrix for a vector <group> from its {translate,scale,rotation,pivot} values."""
     import math as _m
 
-    tx = get("translateX", 0.0)
-    ty = get("translateY", 0.0)
-    sx = get("scaleX", 1.0)
-    sy = get("scaleY", 1.0)
-    rot = get("rotation", 0.0)
-    px = get("pivotX", pivot_default[0])
-    py = get("pivotY", pivot_default[1])
+    tx = vals.get("translateX", 0.0)
+    ty = vals.get("translateY", 0.0)
+    sx = vals.get("scaleX", 1.0)
+    sy = vals.get("scaleY", 1.0)
+    rot = vals.get("rotation", 0.0)
+    px = vals.get("pivotX", pivot_default[0])
+    py = vals.get("pivotY", pivot_default[1])
     r = _m.radians(rot)
     c, s = _m.cos(r), _m.sin(r)
     m = (1, 0, tx + px, 0, 1, ty + py, 0, 0, 1)
@@ -1398,62 +1413,6 @@ def _rasterize_vector_node(node, size: int, z=None, table=None, pid: int = 0):
     return _rasterize_vector_paths(paths, size, vw, vh)
 
 
-def _rasterize_vector_et(root, size: int):
-    A = "http://schemas.android.com/apk/res/android"
-
-    def _a(el, name, default=None):
-        return el.attrib.get(f"{{{A}}}{name}", default)
-
-    try:
-        vw = float(_a(root, "viewportWidth", "24"))
-        vh = float(_a(root, "viewportHeight", "24"))
-    except Exception:
-        vw = vh = 24.0
-    ident = (1, 0, 0, 0, 1, 0, 0, 0, 1)
-    paths = []
-
-    def _walk(el, mat):
-        tag = el.tag.split("}")[-1]
-        if tag == "group":
-            def _f(n, d):
-                try:
-                    return float(_a(el, n, d))
-                except Exception:
-                    return d
-
-            m = _group_matrix({"translateX": _f("translateX", 0.0), "translateY": _f("translateY", 0.0),
-                               "scaleX": _f("scaleX", 1.0), "scaleY": _f("scaleY", 1.0),
-                               "rotation": _f("rotation", 0.0), "pivotX": _f("pivotX", 0.0),
-                               "pivotY": _f("pivotY", 0.0)})
-            for c in el:
-                _walk(c, _mat_mul(mat, m))
-        elif tag == "path":
-            d = _a(el, "pathData")
-            if not d:
-                return
-            fill = _parse_hex_color(_a(el, "fillColor", "") or "")
-            sc = _a(el, "strokeColor")
-            stroke = _parse_hex_color(sc) if sc else None
-            try:
-                sw = float(_a(el, "strokeWidth", "1"))
-            except Exception:
-                sw = 1.0
-            if fill is not None:
-                try:
-                    fa = float(_a(el, "fillAlpha", "1"))
-                except Exception:
-                    fa = 1.0
-                fill = (fill[0], fill[1], fill[2], int(fill[3] * fa))
-            evenodd = _a(el, "fillType") == "evenOdd"
-            paths.append((d, fill, stroke, sw, evenodd, mat))
-
-    for c in root:
-        _walk(c, ident)
-    if not paths:
-        return None
-    return _rasterize_vector_paths(paths, size, vw, vh)
-
-
 def _render_adaptive(z, table, default_pid, xml_path: str, size: int):
     """Composite adaptive-icon (background + foreground) at `size`px.
 
@@ -1654,40 +1613,7 @@ def _tree_float(val, default=0.0) -> float:
         if dtype == 0x10:
             v = udata if udata < 0x80000000 else udata - 0x100000000
             return float(v)
-    if val[0] == "str":
-        # "25%" fractions / "18dp" dimensions in plain-text trees
-        return _num_attr(0x03, 0, val[1], default)
     return default
-
-
-def _tree_ref_values(apk: Path, node, _depth: int = 0) -> dict[int, str]:
-    """Batch-resolve every drawable/color/src ref ID in an xmltree node via one
-    apkeditor -res call -> {rid: value}. Values are #hex or zip paths."""
-    if _depth > 4:
-        return {}
-    want: list[int] = []
-
-    def _walk(el):
-        for k, v in el[1].items():
-            if k in ("drawable", "color", "src") and isinstance(v, tuple) and v[0] == "int" and v[1] == 0x01:
-                if v[2] not in want:
-                    want.append(v[2])
-        for c in el[2]:
-            _walk(c)
-
-    _walk(node)
-    if not want:
-        return {}
-    out = _apkeditor_info(apk, *[a for rid in want for a in ("-res", hex(rid))], "-t", "text")
-    if not out:
-        return {}
-    vals: dict[int, str] = {}
-    lines = [l for l in out.splitlines() if l.strip().startswith("resource=")]
-    for rid, line in zip(want, lines):
-        m = re.match(r'resource="(.*)"\s*$', line.strip())
-        if m:
-            vals[rid] = m.group(1)
-    return vals
 
 
 def _render_text_node(apk: Path, z: zipfile.ZipFile, node, size: int, _depth: int = 0):
@@ -1976,40 +1902,6 @@ def _extract_icon_via_apkeditor(apk: Path) -> object:
         return _render_text_node(apk, z, root, RENDER)
 
 
-def _value_to_image(z: zipfile.ZipFile, value: str, size: int, apk: Path | None = None):
-    """Turn an apkeditor `-res` value (#hex | zip path) into an RGBA image."""
-    from PIL import Image  # type: ignore
-
-    if apk is None:
-        try:
-            apk = Path(z.filename or "")
-        except Exception:
-            apk = None
-
-    value = (value or "").strip()
-    if not value:
-        return None
-    if value.startswith("#"):
-        col = _parse_hex_color(value)
-        return Image.new("RGBA", (size, size), col) if col else None
-    low = value.lower()
-    if low.endswith((".png", ".webp", ".jpg", ".jpeg")):
-        im = _load_raster(z, value)
-        return im.resize((size, size), Image.LANCZOS) if im else None
-    if low.endswith(".xml"):
-        tree_out = _apkeditor_info(Path(z.filename or ""), "-xmltree", value, "-t", "text")
-        if not tree_out:
-            return None
-        root = _parse_xmltree(tree_out)
-        if root is None or apk is None or not apk.name:
-            return None
-        if root[0] == "vector":
-            _resolve_tree_refs(root, apk)
-            return _render_vector_treenode(root, size)
-        return _render_text_node(apk, z, root, size)
-    return None
-
-
 def extract_icon(apk: Path, dest: Path) -> str | None:
     """Extract the real launcher icon at web-friendly resolution.
 
@@ -2117,7 +2009,8 @@ async def cert_fingerprint(creds: dict) -> tuple[str, str] | None:
     rc, out = await tools.run(cmd)
     m = re.search(r"SHA256:\s*([0-9A-Fa-f:]+)", out)
     if rc != 0 or not m:
-        log.warning("could not read repo certificate: %s", out.strip().splitlines()[-1][:120])
+        lines = out.strip().splitlines()
+        log.warning("could not read repo certificate: %s", lines[-1][:120] if lines else "no output")
         return None
     hex_fp = m.group(1).replace(":", "").lower()
     b64 = base64.b64encode(bytes.fromhex(hex_fp)).decode()
@@ -2366,9 +2259,7 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
             # Check if this is Android TV
             is_tv = package in TV_PACKAGES
             tv_note = " [Android TV]" if is_tv else ""
-            bundle_tags = entry.get("bundle_tags") or {}
-            if not bundle_tags and isinstance(entry.get("tags"), dict):
-                bundle_tags = entry["tags"]
+            bundle_tags = entry.get("tags") if isinstance(entry.get("tags"), dict) else {}
             bundle_str = ", ".join(f"{k} {v}" for k, v in sorted(bundle_tags.items()))
             summary = f"{display}{tv_note} patched with Morphe"
             desc_lines = [f"{summary}."]
@@ -2483,17 +2374,17 @@ async def build_index(cfg: dict, state: dict, tag: str | None = None) -> bool:
 
     if changed_v1:
         existing.write_text(json.dumps(index, indent=2))
-        sign_index(existing, creds)
+        await asyncio.to_thread(sign_index, existing, creds)
         fp = (state.get("fdroid") or {}).get("cert_sha256", "")
         log.info("f-droid index-v1 written (%d apks)%s", len(packages), f"; repo fp {fp}" if fp else "")
 
     # ── index-v2 generation (modern, with fileEntry for icons) ──────────────
-    changed_v2 = _build_index_v2(index, creds)
+    changed_v2 = await _build_index_v2(index, creds)
 
     return changed_v1 or changed_v2
 
 
-def _build_index_v2(index_v1: dict, creds: dict) -> bool:
+async def _build_index_v2(index_v1: dict, creds: dict) -> bool:
     """Generate index-v2.json (+ .jar) from the v1 index. Returns True if changed."""
     repo_v1 = index_v1.get("repo", {})
     apps_v1 = index_v1.get("apps", [])
@@ -2611,7 +2502,7 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
             pass
     if changed:
         out_path.write_text(json.dumps(output, indent=2))
-        sign_index(out_path, creds)
+        await asyncio.to_thread(sign_index, out_path, creds)
         log.info("f-droid index-v2 written (%d packages)", len(packages_v2))
         # also write entry.json minimal (like fdroidserver)
         entry = {
@@ -2622,14 +2513,8 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
         entry["index"]["numPackages"] = len(packages_v2)
         (OUT / "entry.json").write_text(json.dumps(entry, indent=2))
         try:
-            sign_index(OUT / "entry.json", creds)
-            # entry.jar is the signed entry; fdroidserver signs entry.json as entry.jar
-            # our sign_index creates entry.jar from entry.json
-            if (OUT / "entry.jar").exists():
-                pass
-            else:
-                # rename if sign created entry.json.jar
-                pass
+            # sign_index writes the signed artifact as entry.jar
+            await asyncio.to_thread(sign_index, OUT / "entry.json", creds)
         except Exception as exc:
             log.warning("entry.json signing failed: %s", exc)
     return changed
@@ -2638,13 +2523,20 @@ def _build_index_v2(index_v1: dict, creds: dict) -> bool:
 ICON_EXTRACTOR_VERSION = 4
 
 
+ICON_RETRY_SECONDS = 24 * 3600  # backoff before retrying a failed extraction
+
+
 async def ensure_icons(state: dict) -> bool:
     """(Re)extract launcher icons from OUT APKs into ICONS/. Returns True if
     state changed. Tracks per-package (mtime, size) plus a global extractor
     version in state.json, so old placeholder icons are replaced exactly once
-    and new/changed APKs always refresh their icon."""
+    and new/changed APKs always refresh their icon. Permanently failing APKs
+    back off for 24h instead of spawning JVMs every cycle."""
     from .settings import OUT as _OUT
 
+    ver_bump = state.get("icons_version") != ICON_EXTRACTOR_VERSION
+    failed: dict = state.get("icons_failed") or {}
+    now_ts = time.time()
     jobs: list[tuple[str, Path, Path, tuple]] = []
     for key, entry in state.get("builds", {}).items():
         apk_name = entry.get("out") or ""
@@ -2661,15 +2553,12 @@ async def ensure_icons(state: dict) -> bool:
             continue
         dest = ICONS / f"{pkg}.png"
         rec = (state.get("icons") or {}).get(pkg)
-        if (
-            state.get("icons_version") != ICON_EXTRACTOR_VERSION
-            or rec is None
-            or tuple(rec) != cur
-            or not dest.exists()
-        ):
-            jobs.append((pkg, src, dest, cur))
+        apk_changed = rec is None or tuple(rec) != cur
+        if ver_bump or apk_changed or not dest.exists():
+            if dest.exists() or ver_bump or apk_changed or now_ts - failed.get(pkg, 0) > ICON_RETRY_SECONDS:
+                jobs.append((pkg, src, dest, cur))
     if not jobs:
-        if state.get("icons_version") != ICON_EXTRACTOR_VERSION:
+        if ver_bump:
             state["icons_version"] = ICON_EXTRACTOR_VERSION
             return True
         return False
@@ -2688,6 +2577,10 @@ async def ensure_icons(state: dict) -> bool:
     for pkg, cur in await asyncio.gather(*[_one(*j) for j in jobs]):
         if cur is not None:
             state.setdefault("icons", {})[pkg] = list(cur)
+            failed.pop(pkg, None)
+        else:
+            failed[pkg] = now_ts
+    state["icons_failed"] = failed
     state["icons_version"] = ICON_EXTRACTOR_VERSION
     return True
 
