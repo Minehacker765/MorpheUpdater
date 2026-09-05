@@ -193,16 +193,16 @@
       "version": "26.7.1.47181"
     },
     "com.alltrails.alltrails|hoodles|arm64": {
-      "app_name": "AllTrails: Hike, Bike & Run",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788639812,
-      "out": "alltrails-26.8.40-hoodles-arm64.apk",
+      "at": 1788648656,
+      "out": "alltrails-26.8.41-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.44.0-dev.2"
       },
-      "vc": 60505,
-      "version": "26.8.40"
+      "vc": 60515,
+      "version": "26.8.41"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -1669,16 +1669,16 @@
       "version": "6.4.0"
     },
     "net.binarymode.android.irplus|de-vanced|arm64": {
-      "app_name": "irplus - Infrared Remote",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788621789,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1788648640,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.3.2-dev.1"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "",
@@ -1967,8 +1967,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1788639812,
-      94931258
+      1788648656,
+      94984506
     ],
     "com.alphaprogression.alphaprogression": [
       1788266739,
@@ -2447,8 +2447,8 @@
       33746024
     ],
     "net.binarymode.android.irplus": [
-      1788621789,
-      6129085
+      1788648640,
+      7617891
     ],
     "net.uniquegem.directchat": [
       1788266815,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788639732,
