@@ -927,11 +927,11 @@
     "com.myprog.hexedit|de-vanced|arm64": {
       "app_name": "HEX Editor",
       "arch": "arm64",
-      "at": 1788301554,
+      "at": 1788623484,
       "out": "hexedit-2.8.3-de-vanced-arm64.apk",
       "package": "com.myprog.hexedit",
       "tags": {
-        "de-vanced": "v1.3.1"
+        "de-vanced": "v1.3.2-dev.1"
       },
       "vc": 120,
       "version": "2.8.3"
@@ -2199,7 +2199,7 @@
       44709136
     ],
     "com.myprog.hexedit": [
-      1788301554,
+      1788623484,
       4143288
     ],
     "com.myvitale.forus": [
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
