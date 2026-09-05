@@ -127,5 +127,137 @@
                 "enabled": true
             }
         }
+    },
+    {
+        "meta": {
+            "created_at": "2026-09-01T22:28:23.438983515Z",
+            "updated_at": "2026-09-05T20:27:16.775467643Z",
+            "source": "v1.44.0-dev.2__patches-1.44.0-dev.2.mpp",
+            "sha256": "b4f6be5916544d60630974860e739c08013452ff0dcb245066ace829ed9baa42"
+        },
+        "patches": {
+            "Enable Premium": {
+                "enabled": true
+            },
+            "Hide app icon": {
+                "enabled": false
+            },
+            "Enable debug": {
+                "enabled": false
+            },
+            "Change package name": {
+                "enabled": false,
+                "options": {
+                    "packageName": "Default",
+                    "updatePermissions": false,
+                    "updateProviders": false
+                }
+            },
+            "MicroG integration": {
+                "enabled": true
+            },
+            "Disable Pairip license check": {
+                "enabled": false
+            },
+            "Spoof signature": {
+                "enabled": false
+            },
+            "Enable Peak membership": {
+                "enabled": true
+            },
+            "Enable Platinum": {
+                "enabled": true
+            },
+            "Enable Plus": {
+                "enabled": true
+            },
+            "Disable telemetry": {
+                "enabled": true
+            },
+            "Enable debug mode": {
+                "enabled": false
+            },
+            "Disable dynamic app icon": {
+                "enabled": false
+            },
+            "Force Native Keyboard": {
+                "enabled": true
+            },
+            "Enable FotMob+": {
+                "enabled": true
+            },
+            "AMOLED dark theme": {
+                "enabled": false
+            },
+            "Disable ads": {
+                "enabled": true
+            },
+            "Enable custom tabs": {
+                "enabled": true
+            },
+            "Enable Prime membership": {
+                "enabled": true
+            },
+            "Unlock premium features": {
+                "enabled": true
+            },
+            "Bypass login": {
+                "enabled": false
+            },
+            "Enable Pro": {
+                "enabled": true
+            },
+            "Enable Premium (ROOT)": {
+                "enabled": true
+            },
+            "Block Permissions Request": {
+                "enabled": true
+            },
+            "Enable Premium+": {
+                "enabled": true
+            },
+            "Enable Niagara Pro": {
+                "enabled": true
+            },
+            "Remove trial limit": {
+                "enabled": true
+            },
+            "Enable Prime": {
+                "enabled": true
+            },
+            "Unlimited skips": {
+                "enabled": true
+            },
+            "Skip ads": {
+                "enabled": true
+            },
+            "Rename shared permissions": {
+                "enabled": true
+            },
+            "Enable speed control": {
+                "enabled": true
+            },
+            "Unlock custom DNS": {
+                "enabled": true
+            },
+            "Remove delay": {
+                "enabled": true
+            },
+            "Unlock LAN connections": {
+                "enabled": true
+            },
+            "Unlock split tunneling": {
+                "enabled": true
+            },
+            "Enable SoundCloud Go": {
+                "enabled": true
+            },
+            "Unlock all lessons": {
+                "enabled": true
+            },
+            "Disable anti-tamper": {
+                "enabled": true
+            }
+        }
     }
 ]
