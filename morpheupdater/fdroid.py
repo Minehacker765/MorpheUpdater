@@ -2526,12 +2526,27 @@ ICON_EXTRACTOR_VERSION = 4
 ICON_RETRY_SECONDS = 24 * 3600  # backoff before retrying a failed extraction
 
 
+def _is_blank_png(path: Path) -> bool:
+    """True when an icon file is missing, unreadable, or fully transparent."""
+    from PIL import Image  # type: ignore
+
+    try:
+        with Image.open(path) as im:
+            return im.convert("RGBA").getbbox() is None
+    except Exception:
+        return True
+
+
 async def ensure_icons(state: dict) -> bool:
     """(Re)extract launcher icons from OUT APKs into ICONS/. Returns True if
     state changed. Tracks per-package (mtime, size) plus a global extractor
     version in state.json, so old placeholder icons are replaced exactly once
-    and new/changed APKs always refresh their icon. Permanently failing APKs
-    back off for 24h instead of spawning JVMs every cycle."""
+    and new/changed APKs always refresh their icon.
+
+    Self-healing: a blank icon file (fully transparent residue from an old
+    run) is retried subject to backoff. A usable icon that extraction can't
+    reproduce (e.g. manually provided) is adopted as-is and only retried
+    when its APK changes — never blanked, never hot-looped."""
     from .settings import OUT as _OUT
 
     ver_bump = state.get("icons_version") != ICON_EXTRACTOR_VERSION
@@ -2557,6 +2572,10 @@ async def ensure_icons(state: dict) -> bool:
         if ver_bump or apk_changed or not dest.exists():
             if dest.exists() or ver_bump or apk_changed or now_ts - failed.get(pkg, 0) > ICON_RETRY_SECONDS:
                 jobs.append((pkg, src, dest, cur))
+        elif _is_blank_png(dest):
+            # recorded as done but the file is blank: retry subject to backoff
+            if now_ts - failed.get(pkg, 0) > ICON_RETRY_SECONDS:
+                jobs.append((pkg, src, dest, cur))
     if not jobs:
         if ver_bump:
             state["icons_version"] = ICON_EXTRACTOR_VERSION
@@ -2574,9 +2593,16 @@ async def ensure_icons(state: dict) -> bool:
                 return pkg, None
             return pkg, cur if got else None
 
+    by_pkg = {pkg: (src, dest, cur) for pkg, src, dest, cur in jobs}
     for pkg, cur in await asyncio.gather(*[_one(*j) for j in jobs]):
+        _s, dest, scur = by_pkg[pkg]
         if cur is not None:
             state.setdefault("icons", {})[pkg] = list(cur)
+            failed.pop(pkg, None)
+        elif not _is_blank_png(dest):
+            # extraction failed but a usable icon is in place: adopt it so
+            # the APK-change check (not a daily retry) governs the next run
+            state.setdefault("icons", {})[pkg] = list(scur)
             failed.pop(pkg, None)
         else:
             failed[pkg] = now_ts

@@ -221,6 +221,23 @@ class IconHelperTests(unittest.TestCase):
         self.assertIsNotNone(root)
         self.assertEqual(root[1]["pathData"], ("str", "M1,2 L3,4"))
 
+    def test_is_blank_png(self):
+        import tempfile
+        from pathlib import Path
+
+        from morpheupdater.fdroid import _is_blank_png
+
+        with tempfile.TemporaryDirectory() as td:
+            blank = Path(td) / "blank.png"
+            solid = Path(td) / "solid.png"
+            from PIL import Image
+
+            Image.new("RGBA", (16, 16), (0, 0, 0, 0)).save(blank)
+            Image.new("RGBA", (16, 16), (10, 20, 30, 255)).save(solid)
+            self.assertTrue(_is_blank_png(blank))
+            self.assertFalse(_is_blank_png(solid))
+            self.assertTrue(_is_blank_png(Path(td) / "missing.png"))
+
     def test_gradient_fast_path(self):
         from morpheupdater.fdroid import _gradient_colors
 
