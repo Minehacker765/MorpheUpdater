@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
-      "at": 1788235559,
-      "out": "alltrails-26.8.40-hoodles-arm64.apk",
+      "at": 1788600126,
+      "out": "alltrails-26.8.41-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
-      "vc": 60505,
-      "version": "26.8.40"
+      "vc": 60515,
+      "version": "26.8.41"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -567,11 +567,11 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "Etsy: Shop from Real People",
       "arch": "arm64",
-      "at": 1788266625,
+      "at": 1788600140,
       "out": "etsy.android-7.93.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
-        "hxreborn": "v1.14.0"
+        "hxreborn": "v1.14.1"
       },
       "vc": 79300167,
       "version": "7.93.0"
@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788523607,
+      "at": 1788600082,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.42.0-dev.2"
+        "morphe": "v1.42.0-dev.3"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -711,11 +711,11 @@
     "com.google.android.youtube|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788523644,
+      "at": 1788600121,
       "out": "youtube-21.07.247-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.42.0-dev.2"
+        "morphe": "v1.42.0-dev.3"
       },
       "vc": 1561056418,
       "version": "21.07.247"
@@ -1083,11 +1083,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788523604,
+      "at": 1788600081,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.42.0-dev.2"
+        "morphe": "v1.42.0-dev.3"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1513,16 +1513,16 @@
       "version": "4.6826"
     },
     "currency.converter.moneta|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Currency Converter - Moneta",
       "arch": "arm64",
-      "at": 1788266807,
-      "out": "moneta-1.2.3-hoomans-arm64.apk",
+      "at": 1788600141,
+      "out": "moneta-1.2.4-hoomans-arm64.apk",
       "package": "currency.converter.moneta",
       "tags": {
         "hoomans": "v1.51.1"
       },
-      "vc": 178794402,
-      "version": "1.2.3"
+      "vc": 178811769,
+      "version": "1.2.4"
     },
     "cz.ackee.ventusky|hoodles|arm64": {
       "app_name": "Ventusky: Weather Forecast",
@@ -1611,11 +1611,11 @@
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "ibis Paint X",
       "arch": "arm64",
-      "at": 1788206857,
+      "at": 1788600109,
       "out": "ibispaintx.app-14.0.11-hoodles-arm64.apk",
       "package": "jp.ne.ibis.ibispaintx.app",
       "tags": {
-        "hoodles": "v1.43.0"
+        "hoodles": "v1.44.0-dev.1"
       },
       "vc": 1400110054,
       "version": "14.0.11"
@@ -1880,7 +1880,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.1",
     "microg": "7.1.0-dev.4",
-    "morphe": "v1.42.0-dev.2",
+    "morphe": "v1.42.0-dev.3",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.0.0",
     "xtra": "v2.12.0"
@@ -1894,6 +1894,10 @@
       1788557827,
       174827470
     ],
+    "ak.alizandro.smartaudiobookplayer": [
+      1788306809,
+      4930922
+    ],
     "all.in.one.calculator": [
       1788474143,
       36256439
@@ -1903,12 +1907,12 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1788523607,
-      72505083
+      1788600082,
+      72484603
     ],
     "app.morphe.android.youtube": [
-      1788523644,
-      116150335
+      1788600121,
+      116301887
     ],
     "app.remux.video.converter": [
       1788266716,
@@ -1934,6 +1938,10 @@
       1788299752,
       14557306
     ],
+    "ch.protonmail.android": [
+      1788474180,
+      131536923
+    ],
     "ch.protonvpn.android": [
       1788299440,
       36730243
@@ -1958,9 +1966,21 @@
       1788306828,
       134142836
     ],
+    "com.alltrails.alltrails": [
+      1788600126,
+      94771514
+    ],
+    "com.alphaprogression.alphaprogression": [
+      1788266739,
+      151927773
+    ],
     "com.amazon.amazonvideo.livingroom": [
       1788490823,
       26050667
+    ],
+    "com.amazon.avod.thirdpartyclient": [
+      1788306187,
+      108066515
     ],
     "com.amazon.mShop.android.shopping": [
       1788301657,
@@ -2071,8 +2091,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1788266625,
-      46834409
+      1788600140,
+      47325987
     ],
     "com.facebook.katana": [
       1788235363,
@@ -2093,6 +2113,10 @@
     "com.getmimo": [
       1788299786,
       80998579
+    ],
+    "com.github.android": [
+      1788299739,
+      19976245
     ],
     "com.goodreads": [
       1788301567,
@@ -2117,6 +2141,10 @@
     "com.hevy": [
       1788266772,
       129995703
+    ],
+    "com.hv.replaio": [
+      1788266777,
+      38439071
     ],
     "com.intsig.camscanner": [
       1788299890,
@@ -2214,12 +2242,16 @@
       1788299997,
       47073965
     ],
+    "com.quizlet.quizletandroid": [
+      1788266784,
+      26081730
+    ],
     "com.realbyteapps.moneymanagerfree": [
       1788496228,
       24067299
     ],
     "com.reddit.frontpage": [
-      1788523603,
+      1788600081,
       57680215
     ],
     "com.rp.hypertrophy": [
@@ -2229,6 +2261,14 @@
     "com.rumble.battles": [
       1788266789,
       20462526
+    ],
+    "com.sbs.diet": [
+      1788299980,
+      126203723
+    ],
+    "com.sbs.train": [
+      1788300014,
+      212268259
     ],
     "com.simyasolutions.ling.universal": [
       1788300000,
@@ -2269,6 +2309,10 @@
     "com.thehungrywasp.iamsober": [
       1788266792,
       53281893
+    ],
+    "com.thetrainline": [
+      1788474533,
+      56853037
     ],
     "com.todoist": [
       1788306902,
@@ -2318,6 +2362,10 @@
       1788235630,
       25012455
     ],
+    "com.wallpaperscraft.wallpaper": [
+      1788300064,
+      66714863
+    ],
     "com.wanderlog.android": [
       1788266808,
       143032204
@@ -2325,6 +2373,10 @@
     "com.wbd.hbomax": [
       1788508912,
       68258818
+    ],
+    "com.windyty.android": [
+      1788300043,
+      43646401
     ],
     "com.xodo.pdf.reader": [
       1788300058,
@@ -2343,8 +2395,8 @@
       92737759
     ],
     "currency.converter.moneta": [
-      1788266807,
-      51422230
+      1788600141,
+      51971246
     ],
     "cz.ackee.ventusky": [
       1788300097,
@@ -2366,8 +2418,16 @@
       1788235415,
       53460583
     ],
+    "io.funswitch.blocker": [
+      1788235653,
+      85629557
+    ],
+    "io.stashteam.games.tracker.stashapp": [
+      1788266813,
+      41933347
+    ],
     "jp.ne.ibis.ibispaintx.app": [
-      1788206857,
+      1788600109,
       53373551
     ],
     "jp.pxv.android": [
@@ -2443,14 +2503,15 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788490860,
-      56659147
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
       22012472
     ]
   },
+  "icons_failed": {},
   "icons_version": 4,
   "tools": {
     "apkeditor": {
