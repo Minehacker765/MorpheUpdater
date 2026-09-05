@@ -673,16 +673,16 @@
       "version": "5.161.0.931240252"
     },
     "com.google.android.apps.photos|de-vanced|arm64": {
-      "app_name": "Google Photos",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788621695,
-      "out": "photos-7.90.0.971743778-de-vanced-arm64.apk",
+      "at": 1788627056,
+      "out": "photos-7.91.0.973540846-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.2-dev.1"
       },
-      "vc": 52288916,
-      "version": "7.90.0.971743778"
+      "vc": 52331974,
+      "version": "7.91.0.973540846"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
@@ -2127,8 +2127,8 @@
       15298259
     ],
     "com.google.android.apps.photos": [
-      1788621695,
-      131869537
+      1788627056,
+      131884982
     ],
     "com.google.android.apps.recorder": [
       1788621757,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,
