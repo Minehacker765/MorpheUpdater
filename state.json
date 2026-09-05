@@ -1489,13 +1489,13 @@
       "version": "8.0.10"
     },
     "com.zhiliaoapp.musically|tiktok-hx|arm64": {
-      "app_name": "",
+      "app_name": "TikTok: videos, LIVEs, m\u00fasica",
       "arch": "arm64",
-      "at": 1788266711,
+      "at": 1788601937,
       "out": "musically-46.2.3-tiktok-hx-arm64.apk",
       "package": "com.zhiliaoapp.musically",
       "tags": {
-        "tiktok-hx": "v1.0.0"
+        "tiktok-hx": "v1.1.0"
       },
       "vc": 2024602030,
       "version": "46.2.3"
@@ -1575,14 +1575,14 @@
     "ginlemon.iconpackstudio|de-vanced|arm64": {
       "app_name": "Icon Pack Studio",
       "arch": "arm64",
-      "at": 1788235415,
-      "out": "iconpackstudio-2.2 build 016-de-vanced-arm64.apk",
+      "at": 1788601855,
+      "out": "iconpackstudio-2.4 build 001-de-vanced-arm64.apk",
       "package": "ginlemon.iconpackstudio",
       "tags": {
         "de-vanced": "v1.3.1"
       },
-      "vc": 220160,
-      "version": "2.2 build 016"
+      "vc": 240010,
+      "version": "2.4 build 001"
     },
     "io.funswitch.blocker|xtra|arm64": {
       "app_name": "BlockerX: Content Blocker",
@@ -1882,7 +1882,7 @@
     "microg": "7.1.0-dev.4",
     "morphe": "v1.42.0-dev.3",
     "prathxm": "v1.13.1-dev.4",
-    "tiktok-hx": "v1.0.0",
+    "tiktok-hx": "v1.1.0",
     "xtra": "v2.12.0"
   },
   "fdroid": {
@@ -2387,8 +2387,8 @@
       162403859
     ],
     "com.zhiliaoapp.musically": [
-      1788266711,
-      205931433
+      1788601937,
+      202834857
     ],
     "com.zombodroid.MemeGenerator": [
       1788300098,
@@ -2415,8 +2415,8 @@
       16494367
     ],
     "ginlemon.iconpackstudio": [
-      1788235415,
-      53460583
+      1788601855,
+      55858995
     ],
     "io.funswitch.blocker": [
       1788235653,
@@ -2503,8 +2503,8 @@
       28861892
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788490860,
+      56659147
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788299467,

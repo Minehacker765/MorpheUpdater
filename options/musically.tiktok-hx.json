@@ -95,5 +95,117 @@
                 "enabled": true
             }
         }
+    },
+    {
+        "meta": {
+            "created_at": "2026-09-01T12:43:55.793697024Z",
+            "updated_at": "2026-09-05T09:52:17.371218364Z",
+            "source": "v1.1.0__patches-1.1.0.mpp",
+            "sha256": "ee49b21dcbed5aa43863c67035e540d6c1c4d6e36bb2c49909ee01f922821208"
+        },
+        "patches": {
+            "Hide BdTuring CAPTCHA popups": {
+                "enabled": true
+            },
+            "Hide CAPTCHA popups": {
+                "enabled": true
+            },
+            "Feed filter": {
+                "enabled": true
+            },
+            "Expand activity list": {
+                "enabled": true
+            },
+            "Hide inbox stories": {
+                "enabled": true
+            },
+            "Hide suggested accounts": {
+                "enabled": true
+            },
+            "Disable screen capture detection": {
+                "enabled": true
+            },
+            "Remember clear display": {
+                "enabled": true
+            },
+            "Downloads": {
+                "enabled": true
+            },
+            "Stop video looping": {
+                "enabled": true
+            },
+            "Custom offline videos limit": {
+                "enabled": true
+            },
+            "Always show publish date": {
+                "enabled": true
+            },
+            "Disable long-press quick share": {
+                "enabled": true
+            },
+            "Disable long-press repost": {
+                "enabled": true
+            },
+            "Hide quick comment reactions": {
+                "enabled": true
+            },
+            "Resume videos after scrolling": {
+                "enabled": true
+            },
+            "Enable non-personalized search": {
+                "enabled": true
+            },
+            "Enable Live search": {
+                "enabled": true
+            },
+            "Show seekbar": {
+                "enabled": true
+            },
+            "Show seekbar thumbnail": {
+                "enabled": true
+            },
+            "Hold-and-slide 2x lock": {
+                "enabled": true
+            },
+            "Playback speed": {
+                "enabled": true
+            },
+            "Copy comments without username": {
+                "enabled": true
+            },
+            "Open external links directly": {
+                "enabled": true
+            },
+            "Feature Gate Lab": {
+                "enabled": true
+            },
+            "Disable login requirement": {
+                "enabled": true
+            },
+            "Fix Google login": {
+                "enabled": true
+            },
+            "Feed tab navigation": {
+                "enabled": true
+            },
+            "Diagnostic tools": {
+                "enabled": false
+            },
+            "Settings": {
+                "enabled": true
+            },
+            "Sanitize sharing links": {
+                "enabled": true
+            },
+            "Region spoof": {
+                "enabled": true
+            },
+            "Disable telemetry": {
+                "enabled": true
+            },
+            "Translate comments": {
+                "enabled": true
+            }
+        }
     }
 ]
