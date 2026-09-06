@@ -87,11 +87,11 @@
     "app.ttmikstories.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664942,
+      "at": 1788670347,
       "out": "ttmikstories.android-1.16.0-hoodles-arm64.apk",
       "package": "app.ttmikstories.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 605,
       "version": "1.16.0"
@@ -99,11 +99,11 @@
     "bitpit.launcher|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664939,
+      "at": 1788670344,
       "out": "bitpit.launcher-1.16.24-hoodles-arm64.apk",
       "package": "bitpit.launcher",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1628,
       "version": "1.16.24"
@@ -123,11 +123,11 @@
     "ch.protonvpn.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664884,
+      "at": 1788670290,
       "out": "protonvpn.android-5.19.43.0-hoodles-arm64.apk",
       "package": "ch.protonvpn.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 605194300,
       "version": "5.19.43.0"
@@ -135,11 +135,11 @@
     "cn.ommiao.iconpacker|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664934,
+      "at": 1788670341,
       "out": "iconpacker-1.21.0-release-hoodles-arm64.apk",
       "package": "cn.ommiao.iconpacker",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 35,
       "version": "1.21.0-release"
@@ -147,11 +147,11 @@
     "cn.wps.moffice_eng|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788666704,
+      "at": 1788670391,
       "out": "moffice_eng-18.24-hoodles-arm64.apk",
       "package": "cn.wps.moffice_eng",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1553,
       "version": "18.24"
@@ -171,11 +171,11 @@
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664869,
+      "at": 1788670275,
       "out": "lrmobile-11.5.01-hoodles-arm64.apk",
       "package": "com.adobe.lrmobile",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 711105100,
       "version": "11.5.01"
@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788666696,
-      "out": "alltrails-26.8.41-hoodles-arm64.apk",
+      "at": 1788670378,
+      "out": "alltrails-26.8.40-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
-      "vc": 60515,
-      "version": "26.8.41"
+      "vc": 60505,
+      "version": "26.8.40"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -231,11 +231,11 @@
     "com.amazon.avod.thirdpartyclient|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664870,
+      "at": 1788670283,
       "out": "thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
       "package": "com.amazon.avod.thirdpartyclient",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 452001047,
       "version": "3.0.452.1047"
@@ -315,11 +315,11 @@
     "com.avocards|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664957,
+      "at": 1788670361,
       "out": "avocards-3.0.18-hoodles-arm64.apk",
       "package": "com.avocards",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1698219898,
       "version": "3.0.18"
@@ -339,11 +339,11 @@
     "com.bambuna.podcastaddict|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664989,
+      "at": 1788670379,
       "out": "podcastaddict-2026.10.1-hoodles-arm64.apk",
       "package": "com.bambuna.podcastaddict",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 21757,
       "version": "2026.10.1"
@@ -411,11 +411,11 @@
     "com.bunpoapp|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665010,
+      "at": 1788670394,
       "out": "bunpoapp-3.21.0-hoodles-arm64.apk",
       "package": "com.bunpoapp",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 200,
       "version": "3.21.0"
@@ -423,11 +423,11 @@
     "com.busuu.android.enc|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665014,
+      "at": 1788670400,
       "out": "enc-32.30.0(1575420)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1575420,
       "version": "32.30.0(1575420)"
@@ -543,11 +543,11 @@
     "com.duolingo|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664885,
+      "at": 1788670297,
       "out": "duolingo-6.95.4-hoodles-arm64.apk",
       "package": "com.duolingo",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 2451,
       "version": "6.95.4"
@@ -627,11 +627,11 @@
     "com.getmimo|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665052,
+      "at": 1788670414,
       "out": "getmimo-9.24-hoodles-arm64.apk",
       "package": "com.getmimo",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1786101892,
       "version": "9.24"
@@ -639,11 +639,11 @@
     "com.github.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664925,
+      "at": 1788670332,
       "out": "github.android-1.271.1-hoodles-arm64.apk",
       "package": "com.github.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 942,
       "version": "1.271.1"
@@ -651,11 +651,11 @@
     "com.goodreads|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788666684,
+      "at": 1788670411,
       "out": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
       "package": "com.goodreads",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1292076000,
       "version": "2.76.0 Build 0"
@@ -663,11 +663,11 @@
     "com.google.android.apps.magazines|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664920,
+      "at": 1788670327,
       "out": "magazines-5.161.0.931240252-hoodles-arm64.apk",
       "package": "com.google.android.apps.magazines",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 2022244226,
       "version": "5.161.0.931240252"
@@ -723,11 +723,11 @@
     "com.hellochinese|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665051,
+      "at": 1788670422,
       "out": "hellochinese-7.11.0-hoodles-arm64.apk",
       "package": "com.hellochinese",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 402,
       "version": "7.11.0"
@@ -759,11 +759,11 @@
     "com.intsig.camscanner|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665079,
+      "at": 1788670462,
       "out": "camscanner-7.20.0.2606230000-hoodles-arm64.apk",
       "package": "com.intsig.camscanner",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 72002,
       "version": "7.20.0.2606230000"
@@ -795,11 +795,11 @@
     "com.lingodeer|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665072,
+      "at": 1788670435,
       "out": "lingodeer-2.99.412-hoodles-arm64.apk",
       "package": "com.lingodeer",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 676,
       "version": "2.99.412"
@@ -819,11 +819,11 @@
     "com.lyfta|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665071,
+      "at": 1788670447,
       "out": "lyfta-1.551-hoodles-arm64.apk",
       "package": "com.lyfta",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 551,
       "version": "1.551"
@@ -843,11 +843,11 @@
     "com.merriamwebster|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665085,
+      "at": 1788670461,
       "out": "merriamwebster-5.6.2-hoodles-arm64.apk",
       "package": "com.merriamwebster",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 560204,
       "version": "5.6.2"
@@ -891,11 +891,11 @@
     "com.mirinae.mirinae|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665081,
+      "at": 1788670457,
       "out": "mirinae-2.2.2-hoodles-arm64.apk",
       "package": "com.mirinae.mirinae",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 198,
       "version": "2.2.2"
@@ -903,11 +903,11 @@
     "com.mobilefootie.wc2010|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665101,
+      "at": 1788670474,
       "out": "wc2010-236.17398.20260827-hoodles-arm64.apk",
       "package": "com.mobilefootie.wc2010",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 17398,
       "version": "236.17398.20260827"
@@ -915,11 +915,11 @@
     "com.myfitnesspal.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664923,
+      "at": 1788670329,
       "out": "myfitnesspal.android-26.31.0-hoodles-arm64.apk",
       "package": "com.myfitnesspal.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 51132,
       "version": "26.31.0"
@@ -1011,11 +1011,11 @@
     "com.pandora.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665112,
+      "at": 1788670486,
       "out": "pandora.android-2608.1-hoodles-arm64.apk",
       "package": "com.pandora.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 26081001,
       "version": "2608.1"
@@ -1047,11 +1047,11 @@
     "com.qbis.guessthecountry|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665094,
+      "at": 1788670471,
       "out": "guessthecountry-3.34.2-hoodles-arm64.apk",
       "package": "com.qbis.guessthecountry",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 148,
       "version": "3.34.2"
@@ -1095,11 +1095,11 @@
     "com.rp.hypertrophy|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665103,
+      "at": 1788670477,
       "out": "hypertrophy-1.1.0-hoodles-arm64.apk",
       "package": "com.rp.hypertrophy",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 58,
       "version": "1.1.0"
@@ -1119,11 +1119,11 @@
     "com.sbs.diet|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665121,
+      "at": 1788670500,
       "out": "diet-5.7.9-hoodles-arm64.apk",
       "package": "com.sbs.diet",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 850,
       "version": "5.7.9"
@@ -1131,11 +1131,11 @@
     "com.sbs.train|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665125,
+      "at": 1788670505,
       "out": "train-1.2.1-hoodles-arm64.apk",
       "package": "com.sbs.train",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 85,
       "version": "1.2.1"
@@ -1143,11 +1143,11 @@
     "com.simyasolutions.ling.universal|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665130,
+      "at": 1788670506,
       "out": "universal-8.4.4-hoodles-arm64.apk",
       "package": "com.simyasolutions.ling.universal",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 10110,
       "version": "8.4.4"
@@ -1155,11 +1155,11 @@
     "com.snorelab.app|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665136,
+      "at": 1788670510,
       "out": "snorelab.app-2.27.3.6291-hoodles-arm64.apk",
       "package": "com.snorelab.app",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 62910,
       "version": "2.27.3.6291"
@@ -1191,11 +1191,11 @@
     "com.soundcloud.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664893,
+      "at": 1788670303,
       "out": "soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
       "package": "com.soundcloud.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 369070,
       "version": "2026.08.26-release"
@@ -1227,11 +1227,11 @@
     "com.superchinese|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665146,
+      "at": 1788670526,
       "out": "superchinese-6.6.3-hoodles-arm64.apk",
       "package": "com.superchinese",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 393,
       "version": "6.6.3"
@@ -1239,11 +1239,11 @@
     "com.teslacoilsw.launcher|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665155,
+      "at": 1788670529,
       "out": "teslacoilsw.launcher-89000 (8.9.0)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 89000,
       "version": "89000 (8.9.0)"
@@ -1359,11 +1359,11 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665162,
+      "at": 1788670534,
       "out": "sleep-20260828-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 231142,
       "version": "20260828"
@@ -1419,11 +1419,11 @@
     "com.wallpaperscraft.wallpaper|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665167,
+      "at": 1788670547,
       "out": "wallpaper-3.61.01-hoodles-arm64.apk",
       "package": "com.wallpaperscraft.wallpaper",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 36101,
       "version": "3.61.01"
@@ -1455,11 +1455,11 @@
     "com.windyty.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665168,
+      "at": 1788670542,
       "out": "windyty.android-51.0.1-hoodles-arm64.apk",
       "package": "com.windyty.android",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 5100010,
       "version": "51.0.1"
@@ -1467,11 +1467,11 @@
     "com.xodo.pdf.reader|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665182,
+      "at": 1788670552,
       "out": "pdf.reader-11.0.0-hoodles-arm64.apk",
       "package": "com.xodo.pdf.reader",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 211000000,
       "version": "11.0.0"
@@ -1503,11 +1503,11 @@
     "com.zombodroid.MemeGenerator|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665187,
+      "at": 1788670557,
       "out": "MemeGenerator-4.6826-hoodles-arm64.apk",
       "package": "com.zombodroid.MemeGenerator",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 46826,
       "version": "4.6826"
@@ -1527,11 +1527,11 @@
     "cz.ackee.ventusky|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665183,
+      "at": 1788670559,
       "out": "ventusky-53.1-hoodles-arm64.apk",
       "package": "cz.ackee.ventusky",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 53100,
       "version": "53.1"
@@ -1563,11 +1563,11 @@
     "ginlemon.flowerfree|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665193,
+      "at": 1788670563,
       "out": "flowerfree-6.6 build 016-hoodles-arm64.apk",
       "package": "ginlemon.flowerfree",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 660160,
       "version": "6.6 build 016"
@@ -1611,11 +1611,11 @@
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665203,
+      "at": 1788670575,
       "out": "ibispaintx.app-14.0.11-hoodles-arm64.apk",
       "package": "jp.ne.ibis.ibispaintx.app",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1400110054,
       "version": "14.0.11"
@@ -1635,11 +1635,11 @@
     "kr.co.yjteam.dailypay|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665198,
+      "at": 1788670569,
       "out": "dailypay-6.0.7-hoodles-arm64.apk",
       "package": "kr.co.yjteam.dailypay",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 60007,
       "version": "6.0.7"
@@ -1647,11 +1647,11 @@
     "kr.eggbun.eggconvo|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665212,
+      "at": 1788670582,
       "out": "eggconvo-4.12.19-hoodles-arm64.apk",
       "package": "kr.eggbun.eggconvo",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 4121999,
       "version": "4.12.19"
@@ -1659,11 +1659,11 @@
     "me.mycake|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665210,
+      "at": 1788670580,
       "out": "mycake-6.4.0-hoodles-arm64.apk",
       "package": "me.mycake",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 306040001,
       "version": "6.4.0"
@@ -1707,11 +1707,11 @@
     "nom.vrd|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665211,
+      "at": 1788670586,
       "out": "vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
       "package": "nom.vrd",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 49,
       "version": "1.9.3-GooglePlay"
@@ -1719,11 +1719,11 @@
     "org.languageapp.lingory|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665221,
+      "at": 1788670594,
       "out": "lingory-1.2.75-hoodles-arm64.apk",
       "package": "org.languageapp.lingory",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 177,
       "version": "1.2.75"
@@ -1743,11 +1743,11 @@
     "org.totschnig.myexpenses|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788665224,
+      "at": 1788670595,
       "out": "myexpenses-4.1.1.2-hoodles-arm64.apk",
       "package": "org.totschnig.myexpenses",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 879,
       "version": "4.1.1.2"
@@ -1779,11 +1779,11 @@
     "pl.solidexplorer2|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664905,
+      "at": 1788670308,
       "out": "solidexplorer2-3.5.20-hoodles-arm64.apk",
       "package": "pl.solidexplorer2",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 305201,
       "version": "3.5.20"
@@ -1803,11 +1803,11 @@
     "ru.iiec.pydroid3|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664906,
+      "at": 1788670315,
       "out": "pydroid3-8.3_arm64-hoodles-arm64.apk",
       "package": "ru.iiec.pydroid3",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 1130,
       "version": "8.3_arm64"
@@ -1863,11 +1863,11 @@
     "videoeditor.videorecorder.screenrecorder|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664902,
+      "at": 1788670311,
       "out": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
       "package": "videoeditor.videorecorder.screenrecorder",
       "tags": {
-        "hoodles": "v1.44.0-dev.3"
+        "hoodles": "v1.44.0-dev.2"
       },
       "vc": 2511001,
       "version": "2.5.1.1"
@@ -1876,7 +1876,7 @@
   "bundles": {
     "androidtv": "v1.31.0",
     "de-vanced": "v1.3.2-dev.1",
-    "hoodles": "v1.44.0-dev.3",
+    "hoodles": "v1.44.0-dev.2",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.1",
     "microg": "7.1.0-dev.5",
@@ -1931,11 +1931,11 @@
       17218684
     ],
     "app.ttmikstories.android": [
-      1788664942,
+      1788670347,
       114065550
     ],
     "bitpit.launcher": [
-      1788664939,
+      1788670344,
       14680186
     ],
     "ch.protonmail.android": [
@@ -1943,15 +1943,15 @@
       131536923
     ],
     "ch.protonvpn.android": [
-      1788664884,
+      1788670290,
       36820355
     ],
     "cn.ommiao.iconpacker": [
-      1788664934,
+      1788670341,
       16126519
     ],
     "cn.wps.moffice_eng": [
-      1788666703,
+      1788670390,
       126235299
     ],
     "com.adguard.android": [
@@ -1959,7 +1959,7 @@
       77088550
     ],
     "com.adobe.lrmobile": [
-      1788664868,
+      1788670275,
       233865624
     ],
     "com.adobe.reader": [
@@ -1967,8 +1967,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1788666696,
-      94984506
+      1788670377,
+      94931258
     ],
     "com.alphaprogression.alphaprogression": [
       1788266739,
@@ -1979,7 +1979,7 @@
       26071147
     ],
     "com.amazon.avod.thirdpartyclient": [
-      1788664870,
+      1788670283,
       108148435
     ],
     "com.amazon.mShop.android.shopping": [
@@ -2007,7 +2007,7 @@
       110700337
     ],
     "com.avocards": [
-      1788664957,
+      1788670360,
       18652252
     ],
     "com.backdrops.wallpapers": [
@@ -2015,7 +2015,7 @@
       25712102
     ],
     "com.bambuna.podcastaddict": [
-      1788664989,
+      1788670378,
       24635820
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
@@ -2039,11 +2039,11 @@
       42976428
     ],
     "com.bunpoapp": [
-      1788665010,
+      1788670393,
       70793398
     ],
     "com.busuu.android.enc": [
-      1788665013,
+      1788670400,
       54145922
     ],
     "com.camerasideas.instashot": [
@@ -2083,7 +2083,7 @@
       38705214
     ],
     "com.duolingo": [
-      1788664884,
+      1788670296,
       141636454
     ],
     "com.dv.adm": [
@@ -2111,19 +2111,19 @@
       15528886
     ],
     "com.getmimo": [
-      1788665052,
+      1788670414,
       82137267
     ],
     "com.github.android": [
-      1788664925,
+      1788670332,
       20459631
     ],
     "com.goodreads": [
-      1788666684,
+      1788670411,
       48053064
     ],
     "com.google.android.apps.magazines": [
-      1788664920,
+      1788670326,
       15302355
     ],
     "com.google.android.apps.photos": [
@@ -2135,7 +2135,7 @@
       52271631
     ],
     "com.hellochinese": [
-      1788665050,
+      1788670422,
       62184235
     ],
     "com.hevy": [
@@ -2147,7 +2147,7 @@
       38439071
     ],
     "com.intsig.camscanner": [
-      1788665079,
+      1788670461,
       153327331
     ],
     "com.kick.mobile": [
@@ -2159,7 +2159,7 @@
       93175601
     ],
     "com.lingodeer": [
-      1788665072,
+      1788670435,
       61400655
     ],
     "com.llamalab.automate": [
@@ -2167,7 +2167,7 @@
       9237791
     ],
     "com.lyfta": [
-      1788665071,
+      1788670447,
       30025092
     ],
     "com.maxmpz.audioplayer": [
@@ -2175,7 +2175,7 @@
       20803230
     ],
     "com.merriamwebster": [
-      1788665085,
+      1788670460,
       137876083
     ],
     "com.michaldrabik.showly2": [
@@ -2187,15 +2187,15 @@
       12235074
     ],
     "com.mirinae.mirinae": [
-      1788665081,
+      1788670457,
       29556359
     ],
     "com.mobilefootie.wc2010": [
-      1788665100,
+      1788670474,
       32051771
     ],
     "com.myfitnesspal.android": [
-      1788664923,
+      1788670329,
       45430032
     ],
     "com.myprog.hexedit": [
@@ -2227,7 +2227,7 @@
       8932883
     ],
     "com.pandora.android": [
-      1788665111,
+      1788670486,
       66214617
     ],
     "com.peacocktv.peacockandroid": [
@@ -2239,7 +2239,7 @@
       25481173
     ],
     "com.qbis.guessthecountry": [
-      1788665094,
+      1788670470,
       47180461
     ],
     "com.quizlet.quizletandroid": [
@@ -2255,7 +2255,7 @@
       57680215
     ],
     "com.rp.hypertrophy": [
-      1788665103,
+      1788670477,
       4383941
     ],
     "com.rumble.battles": [
@@ -2263,19 +2263,19 @@
       20462526
     ],
     "com.sbs.diet": [
-      1788665121,
+      1788670500,
       126322507
     ],
     "com.sbs.train": [
-      1788665125,
+      1788670505,
       212378851
     ],
     "com.simyasolutions.ling.universal": [
-      1788665130,
+      1788670505,
       96991712
     ],
     "com.snorelab.app": [
-      1788665136,
+      1788670510,
       57802283
     ],
     "com.soepic.photogallery.release": [
@@ -2287,7 +2287,7 @@
       58067146
     ],
     "com.soundcloud.android": [
-      1788664893,
+      1788670303,
       54921240
     ],
     "com.strava": [
@@ -2299,11 +2299,11 @@
       67998641
     ],
     "com.superchinese": [
-      1788665146,
+      1788670526,
       152367137
     ],
     "com.teslacoilsw.launcher": [
-      1788665154,
+      1788670529,
       37590515
     ],
     "com.thehungrywasp.iamsober": [
@@ -2343,7 +2343,7 @@
       40125185
     ],
     "com.urbandroid.sleep": [
-      1788665162,
+      1788670533,
       51013103
     ],
     "com.viber.voip": [
@@ -2363,7 +2363,7 @@
       25012455
     ],
     "com.wallpaperscraft.wallpaper": [
-      1788665167,
+      1788670546,
       66960623
     ],
     "com.wanderlog.android": [
@@ -2375,11 +2375,11 @@
       68283394
     ],
     "com.windyty.android": [
-      1788665168,
+      1788670542,
       44023233
     ],
     "com.xodo.pdf.reader": [
-      1788665181,
+      1788670551,
       112512032
     ],
     "com.zenthek.autozen": [
@@ -2391,7 +2391,7 @@
       202834857
     ],
     "com.zombodroid.MemeGenerator": [
-      1788665187,
+      1788670557,
       92922079
     ],
     "currency.converter.moneta": [
@@ -2399,7 +2399,7 @@
       51971246
     ],
     "cz.ackee.ventusky": [
-      1788665182,
+      1788670558,
       42698342
     ],
     "de.gmx.mobile.android.mail": [
@@ -2411,7 +2411,7 @@
       38749879
     ],
     "ginlemon.flowerfree": [
-      1788665193,
+      1788670563,
       16711455
     ],
     "ginlemon.iconpackstudio": [
@@ -2427,7 +2427,7 @@
       41933347
     ],
     "jp.ne.ibis.ibispaintx.app": [
-      1788665203,
+      1788670575,
       53512873
     ],
     "jp.pxv.android": [
@@ -2435,15 +2435,15 @@
       47795322
     ],
     "kr.co.yjteam.dailypay": [
-      1788665198,
+      1788670569,
       18281247
     ],
     "kr.eggbun.eggconvo": [
-      1788665211,
+      1788670581,
       55322147
     ],
     "me.mycake": [
-      1788665210,
+      1788670580,
       33746024
     ],
     "net.binarymode.android.irplus": [
@@ -2459,11 +2459,11 @@
       41520043
     ],
     "nom.vrd": [
-      1788665211,
+      1788670585,
       88351255
     ],
     "org.languageapp.lingory": [
-      1788665220,
+      1788670594,
       52278238
     ],
     "org.readera": [
@@ -2471,7 +2471,7 @@
       13204948
     ],
     "org.totschnig.myexpenses": [
-      1788665224,
+      1788670595,
       13884955
     ],
     "org.zwanoo.android.speedtest": [
@@ -2483,7 +2483,7 @@
       40902081
     ],
     "pl.solidexplorer2": [
-      1788664904,
+      1788670307,
       26631571
     ],
     "psyberia.alpinequest.free": [
@@ -2491,7 +2491,7 @@
       8923419
     ],
     "ru.iiec.pydroid3": [
-      1788664906,
+      1788670315,
       68140041
     ],
     "studio.muggle.chatboost": [
@@ -2503,11 +2503,11 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
-      1788664902,
+      1788670311,
       22061624
     ]
   },
