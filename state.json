@@ -1489,13 +1489,13 @@
       "version": "8.0.10"
     },
     "com.zhiliaoapp.musically|tiktok-hx|arm64": {
-      "app_name": "TikTok: videos, LIVEs, m\u00fasica",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788601937,
+      "at": 1788722510,
       "out": "musically-46.2.3-tiktok-hx-arm64.apk",
       "package": "com.zhiliaoapp.musically",
       "tags": {
-        "tiktok-hx": "v1.1.0"
+        "tiktok-hx": "v1.2.0"
       },
       "vc": 2024602030,
       "version": "46.2.3"
@@ -1882,7 +1882,7 @@
     "microg": "7.1.0",
     "morphe": "v1.42.0-dev.6",
     "prathxm": "v1.13.1-dev.4",
-    "tiktok-hx": "v1.1.0",
+    "tiktok-hx": "v1.2.0",
     "xtra": "v2.12.0"
   },
   "fdroid": {
@@ -2387,8 +2387,8 @@
       162403859
     ],
     "com.zhiliaoapp.musically": [
-      1788601937,
-      202834857
+      1788722510,
+      202920873
     ],
     "com.zombodroid.MemeGenerator": [
       1788670557,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788619873,
-      56675531
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788670311,
@@ -2518,8 +2518,8 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "external",
-      "tag": "v1.15.1-dev.3"
+      "signing": "internal",
+      "tag": "v1.15.1-dev.4"
     }
   }
 }
