@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788670378,
-      "out": "alltrails-26.8.40-hoodles-arm64.apk",
+      "at": 1788673855,
+      "out": "alltrails-26.8.41-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.44.0-dev.2"
       },
-      "vc": 60505,
-      "version": "26.8.40"
+      "vc": 60515,
+      "version": "26.8.41"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -1967,8 +1967,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1788670377,
-      94931258
+      1788673855,
+      94984506
     ],
     "com.alphaprogression.alphaprogression": [
       1788266739,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788670311,
