@@ -1671,14 +1671,14 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788684710,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1788738651,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "",
@@ -2447,8 +2447,8 @@
       33746024
     ],
     "net.binarymode.android.irplus": [
-      1788684710,
-      6129093
+      1788738651,
+      7617891
     ],
     "net.uniquegem.directchat": [
       1788266815,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788670311,
