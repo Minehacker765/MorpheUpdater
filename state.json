@@ -145,13 +145,13 @@
       "version": "1.21.0-release"
     },
     "cn.wps.moffice_eng|hoodles|arm64": {
-      "app_name": "WPS Office-PDF, Word, Sheet",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788639835,
+      "at": 1788666704,
       "out": "moffice_eng-18.24-hoodles-arm64.apk",
       "package": "cn.wps.moffice_eng",
       "tags": {
-        "hoodles": "v1.44.0-dev.2"
+        "hoodles": "v1.44.0-dev.3"
       },
       "vc": 1553,
       "version": "18.24"
@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788664988,
-      "out": "alltrails-26.8.40-hoodles-arm64.apk",
+      "at": 1788666696,
+      "out": "alltrails-26.8.41-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.44.0-dev.3"
       },
-      "vc": 60505,
-      "version": "26.8.40"
+      "vc": 60515,
+      "version": "26.8.41"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -649,13 +649,13 @@
       "version": "1.271.1"
     },
     "com.goodreads|hoodles|arm64": {
-      "app_name": "Goodreads: Book Tracker & More",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788639868,
+      "at": 1788666684,
       "out": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
       "package": "com.goodreads",
       "tags": {
-        "hoodles": "v1.44.0-dev.2"
+        "hoodles": "v1.44.0-dev.3"
       },
       "vc": 1292076000,
       "version": "2.76.0 Build 0"
@@ -1951,8 +1951,8 @@
       16126519
     ],
     "cn.wps.moffice_eng": [
-      1788665021,
-      124466103
+      1788666703,
+      126235299
     ],
     "com.adguard.android": [
       1788184518,
@@ -1967,8 +1967,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1788664981,
-      94931258
+      1788666696,
+      94984506
     ],
     "com.alphaprogression.alphaprogression": [
       1788266739,
@@ -2119,7 +2119,7 @@
       20459631
     ],
     "com.goodreads": [
-      1788639868,
+      1788666684,
       48053064
     ],
     "com.google.android.apps.magazines": [
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788619873,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788664902,
