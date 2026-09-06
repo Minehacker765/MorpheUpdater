@@ -675,13 +675,13 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788688297,
+      "at": 1788700856,
       "out": "photos-7.90.0.971743778-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 52288916,
+      "vc": 52288898,
       "version": "7.90.0.971743778"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
@@ -2127,8 +2127,8 @@
       15302355
     ],
     "com.google.android.apps.photos": [
-      1788688297,
-      131861353
+      1788700856,
+      74777658
     ],
     "com.google.android.apps.recorder": [
       1788688282,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788619873,
-      56675531
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788670311,
