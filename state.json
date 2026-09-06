@@ -219,11 +219,11 @@
     "com.amazon.amazonvideo.livingroom|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619846,
+      "at": 1788735045,
       "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
       "package": "com.amazon.amazonvideo.livingroom",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 606023231,
       "version": "6.23.23+v15.5.0.70-armv7a"
@@ -351,11 +351,11 @@
     "com.bamnetworks.mobile.android.gameday.atbat|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619861,
+      "at": 1788735059,
       "out": "atbat-26.8.1.1-androidtv-tv.apk",
       "package": "com.bamnetworks.mobile.android.gameday.atbat",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 1750000022,
       "version": "26.8.1.1"
@@ -447,11 +447,11 @@
     "com.cbs.ott|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619862,
+      "at": 1788735063,
       "out": "ott-16.19.0-androidtv-tv.apk",
       "package": "com.cbs.ott",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 520000827,
       "version": "16.19.0"
@@ -963,11 +963,11 @@
     "com.netflix.ninja|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619849,
+      "at": 1788735048,
       "out": "ninja-13.0.1 build 25028-androidtv-tv.apk",
       "package": "com.netflix.ninja",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 25028,
       "version": "13.0.1 build 25028"
@@ -1021,16 +1021,16 @@
       "version": "2608.1"
     },
     "com.peacocktv.peacockandroid|androidtv|tv": {
-      "app_name": "",
+      "app_name": "Peacock TV: Stream TV & Movies",
       "arch": "tv",
-      "at": 1788619856,
-      "out": "peacockandroid-7.6.100-androidtv-tv.apk",
+      "at": 1788735061,
+      "out": "peacockandroid-7.8.100-androidtv-tv.apk",
       "package": "com.peacocktv.peacockandroid",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
-      "vc": 230706100,
-      "version": "7.6.100"
+      "vc": 230708100,
+      "version": "7.8.100"
     },
     "com.proto.circuitsimulator|xtra|arm64": {
       "app_name": "PROTO - circuit simulator",
@@ -1311,11 +1311,11 @@
     "com.tubitv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619859,
+      "at": 1788735057,
       "out": "tubitv-10.28.5000-androidtv-tv.apk",
       "package": "com.tubitv",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 1029,
       "version": "10.28.5000"
@@ -1347,11 +1347,11 @@
     "com.univision.prendetv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619870,
+      "at": 1788735071,
       "out": "prendetv-4.47.2_tv-androidtv-tv.apk",
       "package": "com.univision.prendetv",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 4407,
       "version": "4.47.2_tv"
@@ -1443,11 +1443,11 @@
     "com.wbd.hbomax|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619854,
+      "at": 1788735052,
       "out": "hbomax-7.9.0.61-androidtv-tv.apk",
       "package": "com.wbd.hbomax",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 1827090061,
       "version": "7.9.0.61"
@@ -1827,11 +1827,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619851,
+      "at": 1788735050,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -1839,11 +1839,11 @@
     "tv.twitch.android.app|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788619873,
+      "at": 1788735074,
       "out": "android.app-13.0.0.2-androidtv-tv.apk",
       "package": "tv.twitch.android.app",
       "tags": {
-        "androidtv": "v1.31.0"
+        "androidtv": "v1.32.0"
       },
       "vc": 1100000018,
       "version": "13.0.0.2"
@@ -1874,7 +1874,7 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.31.0",
+    "androidtv": "v1.32.0",
     "de-vanced": "v1.3.2",
     "hoodles": "v1.44.0-dev.2",
     "hoomans": "v1.51.1",
@@ -1975,7 +1975,7 @@
       151927773
     ],
     "com.amazon.amazonvideo.livingroom": [
-      1788619846,
+      1788735045,
       26071147
     ],
     "com.amazon.avod.thirdpartyclient": [
@@ -2019,7 +2019,7 @@
       24635820
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
-      1788619861,
+      1788735059,
       36411513
     ],
     "com.bandcamp.android": [
@@ -2051,7 +2051,7 @@
       68682740
     ],
     "com.cbs.ott": [
-      1788619862,
+      1788735063,
       26988091
     ],
     "com.cfdrink": [
@@ -2211,7 +2211,7 @@
       74576018
     ],
     "com.netflix.ninja": [
-      1788619849,
+      1788735048,
       107928580
     ],
     "com.noctuasoftware.stellarium_free": [
@@ -2231,8 +2231,8 @@
       66214617
     ],
     "com.peacocktv.peacockandroid": [
-      1788619856,
-      7928671
+      1788735061,
+      8055647
     ],
     "com.proto.circuitsimulator": [
       1788235595,
@@ -2327,7 +2327,7 @@
       34858392
     ],
     "com.tubitv": [
-      1788619859,
+      1788735057,
       46141068
     ],
     "com.tumblr": [
@@ -2339,7 +2339,7 @@
       70027883
     ],
     "com.univision.prendetv": [
-      1788619870,
+      1788735071,
       40125185
     ],
     "com.urbandroid.sleep": [
@@ -2371,7 +2371,7 @@
       143032204
     ],
     "com.wbd.hbomax": [
-      1788619854,
+      1788735052,
       68283394
     ],
     "com.windyty.android": [
@@ -2499,12 +2499,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1788619851,
+      1788735050,
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788670311,
