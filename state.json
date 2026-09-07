@@ -253,16 +253,16 @@
       "version": "32.13.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1788684677,
-      "out": "mp3-26.30.1-de-vanced-arm64.apk",
+      "at": 1788756685,
+      "out": "mp3-26.31.0-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 526300110,
-      "version": "26.30.1"
+      "vc": 526310010,
+      "version": "26.31.0"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "",
@@ -1359,14 +1359,14 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788744314,
-      "out": "sleep-20260828-hoodles-arm64.apk",
+      "at": 1788756651,
+      "out": "sleep-20260901-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 231142,
-      "version": "20260828"
+      "vc": 231163,
+      "version": "20260901"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "",
@@ -1987,8 +1987,8 @@
       137695204
     ],
     "com.amazon.mp3": [
-      1788684677,
-      173931452
+      1788756685,
+      174193948
     ],
     "com.appfactory.essence": [
       1788266742,
@@ -2343,8 +2343,8 @@
       40125185
     ],
     "com.urbandroid.sleep": [
-      1788744314,
-      51013103
+      1788756651,
+      50192578
     ],
     "com.viber.voip": [
       1788684718,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
