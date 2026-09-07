@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788699108,
+      "at": 1788785616,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.42.0-dev.6"
+        "morphe": "v1.42.0-dev.7"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -711,11 +711,11 @@
     "com.google.android.youtube|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788699144,
+      "at": 1788785655,
       "out": "youtube-21.07.247-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.42.0-dev.6"
+        "morphe": "v1.42.0-dev.7"
       },
       "vc": 1561056418,
       "version": "21.07.247"
@@ -1083,11 +1083,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788699107,
+      "at": 1788785613,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.42.0-dev.6"
+        "morphe": "v1.42.0-dev.7"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1880,7 +1880,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.14.1",
     "microg": "7.1.0",
-    "morphe": "v1.42.0-dev.6",
+    "morphe": "v1.42.0-dev.7",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1907,12 +1907,12 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1788699108,
-      72288003
+      1788785616,
+      72509179
     ],
     "app.morphe.android.youtube": [
-      1788699144,
-      116031559
+      1788785655,
+      116342847
     ],
     "app.remux.video.converter": [
       1788266716,
@@ -2251,8 +2251,8 @@
       24067299
     ],
     "com.reddit.frontpage": [
-      1788699106,
-      57655647
+      1788785613,
+      57692503
     ],
     "com.rp.hypertrophy": [
       1788744261,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
