@@ -1491,11 +1491,11 @@
     "com.zhiliaoapp.musically|tiktok-hx|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788722510,
+      "at": 1788772911,
       "out": "musically-46.2.3-tiktok-hx-arm64.apk",
       "package": "com.zhiliaoapp.musically",
       "tags": {
-        "tiktok-hx": "v1.2.0"
+        "tiktok-hx": "v1.3.0"
       },
       "vc": 2024602030,
       "version": "46.2.3"
@@ -1882,7 +1882,7 @@
     "microg": "7.1.0",
     "morphe": "v1.42.0-dev.6",
     "prathxm": "v1.13.1-dev.4",
-    "tiktok-hx": "v1.2.0",
+    "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
   },
   "fdroid": {
@@ -2387,7 +2387,7 @@
       162403859
     ],
     "com.zhiliaoapp.musically": [
-      1788722510,
+      1788772911,
       202920873
     ],
     "com.zombodroid.MemeGenerator": [
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788735074,
-      56675531
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
