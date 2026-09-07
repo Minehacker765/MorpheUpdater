@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788744161,
-      "out": "alltrails-26.8.40-hoodles-arm64.apk",
+      "at": 1788774675,
+      "out": "alltrails-26.8.41-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 60505,
-      "version": "26.8.40"
+      "vc": 60515,
+      "version": "26.8.41"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "",
@@ -1237,16 +1237,16 @@
       "version": "6.6.3"
     },
     "com.teslacoilsw.launcher|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Nova Launcher: Home Screen",
       "arch": "arm64",
-      "at": 1788744309,
-      "out": "teslacoilsw.launcher-89000 (8.9.0)-hoodles-arm64.apk",
+      "at": 1788774680,
+      "out": "teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 89000,
-      "version": "89000 (8.9.0)"
+      "vc": 89200,
+      "version": "89200 (8.9.2)"
     },
     "com.thehungrywasp.iamsober|hoomans|arm64": {
       "app_name": "",
@@ -1967,8 +1967,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1788744161,
-      94931258
+      1788774675,
+      94984506
     ],
     "com.alphaprogression.alphaprogression": [
       1788266739,
@@ -2303,8 +2303,8 @@
       152367137
     ],
     "com.teslacoilsw.launcher": [
-      1788744308,
-      37590515
+      1788774680,
+      37240198
     ],
     "com.thehungrywasp.iamsober": [
       1788266792,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
