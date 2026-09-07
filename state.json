@@ -1609,16 +1609,16 @@
       "version": "2.48.2"
     },
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "ibis Paint X",
       "arch": "arm64",
-      "at": 1788744354,
-      "out": "ibispaintx.app-14.0.11-hoodles-arm64.apk",
+      "at": 1788753076,
+      "out": "ibispaintx.app-14.1.0-hoodles-arm64.apk",
       "package": "jp.ne.ibis.ibispaintx.app",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 1400110054,
-      "version": "14.0.11"
+      "vc": 1401000058,
+      "version": "14.1.0"
     },
     "jp.pxv.android|de-vanced|arm64": {
       "app_name": "",
@@ -2427,8 +2427,8 @@
       41933347
     ],
     "jp.ne.ibis.ibispaintx.app": [
-      1788744354,
-      53512873
+      1788753076,
+      74493668
     ],
     "jp.pxv.android": [
       1788684697,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788735074,
+      56675531
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
