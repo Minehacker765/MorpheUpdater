@@ -939,14 +939,14 @@
     "com.myvitale.forus|hxreborn|arm64": {
       "app_name": "ForusApp",
       "arch": "arm64",
-      "at": 1788474531,
-      "out": "forus-3.0.16-hxreborn-arm64.apk",
+      "at": 1788776463,
+      "out": "forus-3.0.17-hxreborn-arm64.apk",
       "package": "com.myvitale.forus",
       "tags": {
         "hxreborn": "v1.14.1"
       },
-      "vc": 97,
-      "version": "3.0.16"
+      "vc": 98,
+      "version": "3.0.17"
     },
     "com.naver.linewebtoon|hoomans|arm64": {
       "app_name": "",
@@ -2203,8 +2203,8 @@
       4143296
     ],
     "com.myvitale.forus": [
-      1788474531,
-      94298863
+      1788776463,
+      94298949
     ],
     "com.naver.linewebtoon": [
       1788266784,
@@ -2503,8 +2503,8 @@
       28894660
     ],
     "tv.twitch.android.app": [
-      1788735074,
-      56675531
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
