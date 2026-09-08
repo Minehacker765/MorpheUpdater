@@ -219,11 +219,11 @@
     "com.amazon.amazonvideo.livingroom|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822057,
+      "at": 1788831657,
       "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
       "package": "com.amazon.amazonvideo.livingroom",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 606023231,
       "version": "6.23.23+v15.5.0.70-armv7a"
@@ -963,11 +963,11 @@
     "com.netflix.ninja|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822059,
+      "at": 1788831661,
       "out": "ninja-13.0.1 build 25028-androidtv-tv.apk",
       "package": "com.netflix.ninja",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 25028,
       "version": "13.0.1 build 25028"
@@ -1021,13 +1021,13 @@
       "version": "2608.1"
     },
     "com.peacocktv.peacockandroid|androidtv|tv": {
-      "app_name": "Peacock TV: Stream TV & Movies",
+      "app_name": "",
       "arch": "tv",
-      "at": 1788822171,
+      "at": 1788831664,
       "out": "peacockandroid-7.8.100-androidtv-tv.apk",
       "package": "com.peacocktv.peacockandroid",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 230708100,
       "version": "7.8.100"
@@ -1311,11 +1311,11 @@
     "com.tubitv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822067,
+      "at": 1788831669,
       "out": "tubitv-10.28.5000-androidtv-tv.apk",
       "package": "com.tubitv",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 1029,
       "version": "10.28.5000"
@@ -1347,11 +1347,11 @@
     "com.univision.prendetv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822081,
+      "at": 1788831673,
       "out": "prendetv-4.47.2_tv-androidtv-tv.apk",
       "package": "com.univision.prendetv",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 4407,
       "version": "4.47.2_tv"
@@ -1825,13 +1825,13 @@
       "version": "3.23.0"
     },
     "tv.pluto.android|androidtv|tv": {
-      "app_name": "PlutoTV: Stream Free Movies/TV",
+      "app_name": "",
       "arch": "tv",
-      "at": 1788822171,
+      "at": 1788831663,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -1874,7 +1874,7 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.34.1",
+    "androidtv": "v1.35.0",
     "de-vanced": "v1.3.2",
     "hoodles": "v1.44.0",
     "hoomans": "v1.51.1",
@@ -1975,7 +1975,7 @@
       151927773
     ],
     "com.amazon.amazonvideo.livingroom": [
-      1788822057,
+      1788831657,
       26079339
     ],
     "com.amazon.avod.thirdpartyclient": [
@@ -2211,7 +2211,7 @@
       74576018
     ],
     "com.netflix.ninja": [
-      1788822059,
+      1788831661,
       107928580
     ],
     "com.noctuasoftware.stellarium_free": [
@@ -2231,7 +2231,7 @@
       66214617
     ],
     "com.peacocktv.peacockandroid": [
-      1788822171,
+      1788831664,
       8063839
     ],
     "com.proto.circuitsimulator": [
@@ -2327,7 +2327,7 @@
       34858392
     ],
     "com.tubitv": [
-      1788822067,
+      1788831669,
       46141068
     ],
     "com.tumblr": [
@@ -2339,7 +2339,7 @@
       70027883
     ],
     "com.univision.prendetv": [
-      1788822081,
+      1788831673,
       40125185
     ],
     "com.urbandroid.sleep": [
@@ -2499,12 +2499,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1788822171,
-      28923332
+      1788831662,
+      28947908
     ],
     "tv.twitch.android.app": [
-      1788822092,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
