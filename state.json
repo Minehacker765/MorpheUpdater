@@ -351,11 +351,11 @@
     "com.bamnetworks.mobile.android.gameday.atbat|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822071,
+      "at": 1788838031,
       "out": "atbat-26.8.1.1-androidtv-tv.apk",
       "package": "com.bamnetworks.mobile.android.gameday.atbat",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 1750000022,
       "version": "26.8.1.1"
@@ -447,11 +447,11 @@
     "com.cbs.ott|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822074,
+      "at": 1788838030,
       "out": "ott-16.19.0-androidtv-tv.apk",
       "package": "com.cbs.ott",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 520000827,
       "version": "16.19.0"
@@ -565,16 +565,16 @@
       "version": "14.0.39"
     },
     "com.etsy.android|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "Etsy: Shop from Real People",
       "arch": "arm64",
-      "at": 1788812606,
-      "out": "etsy.android-7.93.0-hxreborn-arm64.apk",
+      "at": 1788838050,
+      "out": "etsy.android-7.94.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.15.0"
       },
-      "vc": 79300167,
-      "version": "7.93.0"
+      "vc": 79400154,
+      "version": "7.94.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "",
@@ -1443,11 +1443,11 @@
     "com.wbd.hbomax|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822062,
+      "at": 1788838032,
       "out": "hbomax-7.9.0.61-androidtv-tv.apk",
       "package": "com.wbd.hbomax",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 1827090061,
       "version": "7.9.0.61"
@@ -2019,7 +2019,7 @@
       24635820
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
-      1788822071,
+      1788838031,
       36423801
     ],
     "com.bandcamp.android": [
@@ -2051,7 +2051,7 @@
       68682740
     ],
     "com.cbs.ott": [
-      1788822074,
+      1788838030,
       26988091
     ],
     "com.cfdrink": [
@@ -2091,8 +2091,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1788812606,
-      47325987
+      1788838050,
+      47453395
     ],
     "com.facebook.katana": [
       1788684651,
@@ -2371,8 +2371,8 @@
       143032204
     ],
     "com.wbd.hbomax": [
-      1788822062,
-      68291586
+      1788838032,
+      68295682
     ],
     "com.windyty.android": [
       1788744323,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788837318,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
