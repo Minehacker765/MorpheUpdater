@@ -565,16 +565,16 @@
       "version": "14.0.39"
     },
     "com.etsy.android|hxreborn|arm64": {
-      "app_name": "Etsy: Shop from Real People",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1788862291,
-      "out": "etsy.android-7.93.0-hxreborn-arm64.apk",
+      "at": 1788869445,
+      "out": "etsy.android-7.94.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.16.0"
       },
-      "vc": 79300167,
-      "version": "7.93.0"
+      "vc": 79400154,
+      "version": "7.94.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "",
@@ -2091,8 +2091,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1788862291,
-      47325987
+      1788869445,
+      47453395
     ],
     "com.facebook.katana": [
       1788684651,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788837318,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
