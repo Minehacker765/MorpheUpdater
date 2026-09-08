@@ -1213,16 +1213,16 @@
       "version": "477.14"
     },
     "com.streetwriters.notesnook|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "Notesnook Secure Private Notes",
       "arch": "arm64",
-      "at": 1788812622,
-      "out": "notesnook-3.4.11-hxreborn-arm64.apk",
+      "at": 1788843460,
+      "out": "notesnook-3.4.12-hxreborn-arm64.apk",
       "package": "com.streetwriters.notesnook",
       "tags": {
         "hxreborn": "v1.15.0"
       },
-      "vc": 4197421,
-      "version": "3.4.11"
+      "vc": 4197422,
+      "version": "3.4.12"
     },
     "com.superchinese|hoodles|arm64": {
       "app_name": "",
@@ -2295,7 +2295,7 @@
       117601601
     ],
     "com.streetwriters.notesnook": [
-      1788812621,
+      1788843460,
       67994545
     ],
     "com.superchinese": [
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788837318,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
