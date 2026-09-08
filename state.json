@@ -1839,11 +1839,11 @@
     "tv.twitch.android.app|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1788822092,
+      "at": 1788837318,
       "out": "android.app-13.0.0.2-androidtv-tv.apk",
       "package": "tv.twitch.android.app",
       "tags": {
-        "androidtv": "v1.34.1"
+        "androidtv": "v1.35.0"
       },
       "vc": 1100000018,
       "version": "13.0.0.2"
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788837318,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
