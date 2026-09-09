@@ -63,14 +63,14 @@
     "app.rubberbands.fit|hxreborn|arm64": {
       "app_name": "Rubber Bands",
       "arch": "arm64",
-      "at": 1788862243,
-      "out": "fit-3.9-hxreborn-arm64.apk",
+      "at": 1788914623,
+      "out": "fit-3.10-hxreborn-arm64.apk",
       "package": "app.rubberbands.fit",
       "tags": {
         "hxreborn": "v1.16.0"
       },
-      "vc": 291,
-      "version": "3.9"
+      "vc": 296,
+      "version": "3.10"
     },
     "app.symfonik.music.player|hxreborn|arm64": {
       "app_name": "Symfonium: Music player & cast",
@@ -1923,8 +1923,8 @@
       44780615
     ],
     "app.rubberbands.fit": [
-      1788862243,
-      76093752
+      1788914623,
+      74172315
     ],
     "app.symfonik.music.player": [
       1788862253,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788837318,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
