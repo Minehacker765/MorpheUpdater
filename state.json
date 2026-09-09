@@ -699,26 +699,26 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788873245,
+      "at": 1788941675,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.42.0-dev.8"
+        "morphe": "v1.42.0-dev.9"
       },
       "vc": 91551240,
       "version": "9.15.51"
     },
     "com.google.android.youtube|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube",
       "arch": "arm64",
-      "at": 1788873282,
-      "out": "youtube-21.07.247-morphe-arm64.apk",
+      "at": 1788941703,
+      "out": "youtube-21.13.164-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.42.0-dev.8"
+        "morphe": "v1.42.0-dev.9"
       },
-      "vc": 1561056418,
-      "version": "21.07.247"
+      "vc": 1561063732,
+      "version": "21.13.164"
     },
     "com.hellochinese|hoodles|arm64": {
       "app_name": "",
@@ -855,14 +855,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1788686390,
-      "out": "microg-7.1.0-arm64.apk",
+      "at": 1788941566,
+      "out": "microg-7.1.1-dev.1-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.1.0"
+        "microg": "7.1.1-dev.1"
       },
       "vc": 255070106,
-      "version": "7.1.0"
+      "version": "7.1.1-dev.1"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "Series y Pel\u00edculas - Showly",
@@ -1083,11 +1083,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788873243,
+      "at": 1788941670,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.42.0-dev.8"
+        "morphe": "v1.42.0-dev.9"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1879,8 +1879,8 @@
     "hoodles": "v1.44.0",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.16.0",
-    "microg": "7.1.0",
-    "morphe": "v1.42.0-dev.8",
+    "microg": "7.1.1-dev.1",
+    "morphe": "v1.42.0-dev.9",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1907,19 +1907,19 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1788873244,
+      1788941674,
       72509179
     ],
     "app.morphe.android.youtube": [
-      1788873282,
-      116342847
+      1788941703,
+      122274310
     ],
     "app.remux.video.converter": [
       1788266716,
       104791216
     ],
     "app.revanced.android.gms": [
-      1788686390,
+      1788941566,
       44780615
     ],
     "app.rubberbands.fit": [
@@ -2251,7 +2251,7 @@
       24079587
     ],
     "com.reddit.frontpage": [
-      1788873243,
+      1788941670,
       57692503
     ],
     "com.rp.hypertrophy": [
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
@@ -2519,7 +2519,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.15.1-dev.4"
+      "tag": "v1.15.1-dev.6"
     }
   }
 }
