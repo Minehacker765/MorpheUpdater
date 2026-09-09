@@ -675,13 +675,13 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1788948839,
+      "at": 1788956063,
       "out": "photos-7.91.0.973540846-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 52331974,
+      "vc": 52331956,
       "version": "7.91.0.973540846"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
@@ -1539,14 +1539,14 @@
     "de.gmx.mobile.android.mail|de-vanced|arm64": {
       "app_name": "GMX - Mail & Cloud",
       "arch": "arm64",
-      "at": 1788767481,
-      "out": "mail-9.16.1-de-vanced-arm64.apk",
+      "at": 1788956066,
+      "out": "mail-9.16.2-de-vanced-arm64.apk",
       "package": "de.gmx.mobile.android.mail",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 405205,
-      "version": "9.16.1"
+      "vc": 405206,
+      "version": "9.16.2"
     },
     "dk.tacit.android.foldersync.lite|hoomans|arm64": {
       "app_name": "FolderSync",
@@ -2127,8 +2127,8 @@
       15302355
     ],
     "com.google.android.apps.photos": [
-      1788948839,
-      131884982
+      1788956063,
+      74858631
     ],
     "com.google.android.apps.recorder": [
       1788789477,
@@ -2403,7 +2403,7 @@
       42698342
     ],
     "de.gmx.mobile.android.mail": [
-      1788767481,
+      1788956066,
       52418650
     ],
     "dk.tacit.android.foldersync.lite": [
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
