@@ -303,14 +303,14 @@
     "com.audible.application|hxreborn|arm64": {
       "app_name": "Audible: Audiobooks & Podcasts",
       "arch": "arm64",
-      "at": 1788862288,
-      "out": "application-26.34.07-hxreborn-arm64.apk",
+      "at": 1789010092,
+      "out": "application-26.36.09-hxreborn-arm64.apk",
       "package": "com.audible.application",
       "tags": {
         "hxreborn": "v1.16.0"
       },
-      "vc": 2090263407,
-      "version": "26.34.07"
+      "vc": 2090263609,
+      "version": "26.36.09"
     },
     "com.avocards|hoodles|arm64": {
       "app_name": "",
@@ -2003,8 +2003,8 @@
       141635595
     ],
     "com.audible.application": [
-      1788862288,
-      110700337
+      1789010092,
+      116416340
     ],
     "com.avocards": [
       1788744146,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
