@@ -675,14 +675,14 @@
     "com.google.android.apps.photos|de-vanced|arm64": {
       "app_name": "Google Photos",
       "arch": "arm64",
-      "at": 1788990247,
-      "out": "photos-7.91.0.978065458-de-vanced-arm64.apk",
+      "at": 1789026279,
+      "out": "photos-7.92.0.977185651-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
         "de-vanced": "v1.3.2"
       },
-      "vc": 52334332,
-      "version": "7.91.0.978065458"
+      "vc": 52372388,
+      "version": "7.92.0.977185651"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
@@ -855,14 +855,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1788941566,
-      "out": "microg-7.1.1-dev.1-arm64.apk",
+      "at": 1789026166,
+      "out": "microg-7.1.1-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.1.1-dev.1"
+        "microg": "7.1.1"
       },
       "vc": 255070106,
-      "version": "7.1.1-dev.1"
+      "version": "7.1.1"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "Series y Pel\u00edculas - Showly",
@@ -1879,7 +1879,7 @@
     "hoodles": "v1.44.0",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.16.0",
-    "microg": "7.1.1-dev.1",
+    "microg": "7.1.1",
     "morphe": "v1.42.0",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
@@ -1919,8 +1919,8 @@
       104791216
     ],
     "app.revanced.android.gms": [
-      1788941566,
-      44780615
+      1789026166,
+      44821575
     ],
     "app.rubberbands.fit": [
       1788914623,
@@ -2127,8 +2127,8 @@
       15302355
     ],
     "com.google.android.apps.photos": [
-      1788990247,
-      131884982
+      1789026279,
+      131639024
     ],
     "com.google.android.apps.recorder": [
       1788789477,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788918241,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
@@ -2519,7 +2519,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.15.1-dev.6"
+      "tag": "v1.15.1-dev.7"
     }
   }
 }
