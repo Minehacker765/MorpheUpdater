@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789076646,
+      "at": 1789123455,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.42.1-dev.1"
+        "morphe": "v1.42.1-dev.2"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -711,11 +711,11 @@
     "com.google.android.youtube|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789076663,
+      "at": 1789123475,
       "out": "youtube-21.13.164-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.42.1-dev.1"
+        "morphe": "v1.42.1-dev.2"
       },
       "vc": 1561063732,
       "version": "21.13.164"
@@ -1083,11 +1083,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789076645,
+      "at": 1789123452,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.42.1-dev.1"
+        "morphe": "v1.42.1-dev.2"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1611,14 +1611,14 @@
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "ibis Paint X",
       "arch": "arm64",
-      "at": 1788753076,
-      "out": "ibispaintx.app-14.1.0-hoodles-arm64.apk",
+      "at": 1789123483,
+      "out": "ibispaintx.app-14.1.1-hoodles-arm64.apk",
       "package": "jp.ne.ibis.ibispaintx.app",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 1401000058,
-      "version": "14.1.0"
+      "vc": 1401010060,
+      "version": "14.1.1"
     },
     "jp.pxv.android|de-vanced|arm64": {
       "app_name": "",
@@ -1880,7 +1880,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.17.0",
     "microg": "7.1.1",
-    "morphe": "v1.42.1-dev.1",
+    "morphe": "v1.42.1-dev.2",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1907,12 +1907,12 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789076646,
+      1789123455,
       72574715
     ],
     "app.morphe.android.youtube": [
-      1789076662,
-      122409478
+      1789123474,
+      122417670
     ],
     "app.remux.video.converter": [
       1788266716,
@@ -2251,7 +2251,7 @@
       24079587
     ],
     "com.reddit.frontpage": [
-      1789076644,
+      1789123452,
       57708887
     ],
     "com.rp.hypertrophy": [
@@ -2427,7 +2427,7 @@
       41933347
     ],
     "jp.ne.ibis.ibispaintx.app": [
-      1788753076,
+      1789123483,
       74493668
     ],
     "jp.pxv.android": [
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788918241,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
