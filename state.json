@@ -253,16 +253,16 @@
       "version": "32.17.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "Amazon Music: Songs & Podcasts",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789141505,
-      "out": "mp3-26.31.0-de-vanced-arm64.apk",
+      "at": 1789145030,
+      "out": "mp3-26.32.0-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.3.4"
       },
-      "vc": 526310010,
-      "version": "26.31.0"
+      "vc": 526320010,
+      "version": "26.32.0"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "",
@@ -1987,8 +1987,8 @@
       128170133
     ],
     "com.amazon.mp3": [
-      1789141505,
-      174169372
+      1789145030,
+      174079804
     ],
     "com.appfactory.essence": [
       1788266742,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788918241,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
