@@ -241,16 +241,16 @@
       "version": "3.0.452.1047"
     },
     "com.amazon.mShop.android.shopping|de-vanced|arm64": {
-      "app_name": "Amazon Shopping",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789147004,
-      "out": "shopping-32.13.0.100-de-vanced-arm64.apk",
+      "at": 1789163037,
+      "out": "shopping-32.17.0.100-de-vanced-arm64.apk",
       "package": "com.amazon.mShop.android.shopping",
       "tags": {
         "de-vanced": "v1.4.0"
       },
-      "vc": 1241320016,
-      "version": "32.13.0.100"
+      "vc": 1243230206,
+      "version": "32.17.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "",
@@ -1983,8 +1983,8 @@
       108148435
     ],
     "com.amazon.mShop.android.shopping": [
-      1789147004,
-      137166828
+      1789163037,
+      127662237
     ],
     "com.amazon.mp3": [
       1789146903,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1788918241,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
