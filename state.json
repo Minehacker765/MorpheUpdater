@@ -1359,13 +1359,13 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789204422,
+      "at": 1789211623,
       "out": "sleep-20260901-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 2311692,
+      "vc": 231166,
       "version": "20260901"
     },
     "com.viber.voip|de-vanced|arm64": {
@@ -2343,7 +2343,7 @@
       40125185
     ],
     "com.urbandroid.sleep": [
-      1789204422,
+      1789211623,
       50110666
     ],
     "com.viber.voip": [
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
