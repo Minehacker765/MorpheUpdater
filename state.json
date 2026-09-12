@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789200848,
+      "at": 1789251252,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.43.0-dev.1"
+        "morphe": "v1.43.0-dev.2"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -711,11 +711,11 @@
     "com.google.android.youtube|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789200863,
+      "at": 1789251269,
       "out": "youtube-21.13.164-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.43.0-dev.1"
+        "morphe": "v1.43.0-dev.2"
       },
       "vc": 1561063732,
       "version": "21.13.164"
@@ -1083,11 +1083,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789200843,
+      "at": 1789251250,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.43.0-dev.1"
+        "morphe": "v1.43.0-dev.2"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1880,7 +1880,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.20.0",
     "microg": "7.1.1",
-    "morphe": "v1.43.0-dev.1",
+    "morphe": "v1.43.0-dev.2",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1907,12 +1907,12 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789200848,
-      72378115
+      1789251252,
+      72587003
     ],
     "app.morphe.android.youtube": [
-      1789200863,
-      122151438
+      1789251269,
+      122511878
     ],
     "app.remux.video.converter": [
       1788266716,
@@ -2251,8 +2251,8 @@
       24079587
     ],
     "com.reddit.frontpage": [
-      1789200843,
-      57692511
+      1789251249,
+      57725271
     ],
     "com.rp.hypertrophy": [
       1788744261,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
@@ -2518,8 +2518,8 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "external",
-      "tag": "v1.15.2-dev.1"
+      "signing": "internal",
+      "tag": "v1.15.2-dev.2"
     }
   }
 }
