@@ -1359,13 +1359,13 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
-      "at": 1788887671,
+      "at": 1789182840,
       "out": "sleep-20260901-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 231166,
+      "vc": 2311692,
       "version": "20260901"
     },
     "com.viber.voip|de-vanced|arm64": {
@@ -2343,8 +2343,8 @@
       40125185
     ],
     "com.urbandroid.sleep": [
-      1788887671,
-      50196674
+      1789182840,
+      50110666
     ],
     "com.viber.voip": [
       1789146935,
@@ -2503,8 +2503,8 @@
       28947908
     ],
     "tv.twitch.android.app": [
-      1788918241,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
