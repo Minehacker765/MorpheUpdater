@@ -1669,16 +1669,16 @@
       "version": "6.4.0"
     },
     "net.binarymode.android.irplus|de-vanced|arm64": {
-      "app_name": "irplus - Infrared Remote",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789476073,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1789513711,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.4.2"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "",
@@ -2447,8 +2447,8 @@
       33746024
     ],
     "net.binarymode.android.irplus": [
-      1789476073,
-      6129093
+      1789513711,
+      7617899
     ],
     "net.uniquegem.directchat": [
       1788266815,
@@ -2503,8 +2503,8 @@
       28931524
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1789433068,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
