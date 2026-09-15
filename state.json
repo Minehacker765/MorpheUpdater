@@ -697,25 +697,25 @@
       "version": "4.2.20260709.976121876"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube Music",
       "arch": "arm64",
-      "at": 1789391659,
+      "at": 1789463662,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.43.0"
+        "morphe": "v1.43.1-dev.1"
       },
       "vc": 91551240,
       "version": "9.15.51"
     },
     "com.google.android.youtube|morphe|arm64": {
-      "app_name": "",
+      "app_name": "YouTube",
       "arch": "arm64",
-      "at": 1789391678,
+      "at": 1789463713,
       "out": "youtube-21.13.164-morphe-arm64.apk",
       "package": "com.google.android.youtube",
       "tags": {
-        "morphe": "v1.43.0"
+        "morphe": "v1.43.1-dev.1"
       },
       "vc": 1561063732,
       "version": "21.13.164"
@@ -1081,13 +1081,13 @@
       "version": "4.12.12 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "",
+      "app_name": "Reddit",
       "arch": "arm64",
-      "at": 1789391657,
+      "at": 1789463664,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.43.0"
+        "morphe": "v1.43.1-dev.1"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1359,13 +1359,13 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789452855,
+      "at": 1789463678,
       "out": "sleep-20260901-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 231166,
+      "vc": 2311692,
       "version": "20260901"
     },
     "com.viber.voip|de-vanced|arm64": {
@@ -1880,7 +1880,7 @@
     "hoomans": "v1.51.1",
     "hxreborn": "v1.23.0",
     "microg": "7.1.2-dev.2",
-    "morphe": "v1.43.0",
+    "morphe": "v1.43.1-dev.1",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1907,12 +1907,12 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789391659,
+      1789463661,
       72582907
     ],
     "app.morphe.android.youtube": [
-      1789391677,
-      122556934
+      1789463712,
+      122257934
     ],
     "app.remux.video.converter": [
       1788266716,
@@ -2251,7 +2251,7 @@
       24079587
     ],
     "com.reddit.frontpage": [
-      1789391656,
+      1789463664,
       57737559
     ],
     "com.rp.hypertrophy": [
@@ -2343,7 +2343,7 @@
       40108801
     ],
     "com.urbandroid.sleep": [
-      1789452855,
+      1789463676,
       50176194
     ],
     "com.viber.voip": [
@@ -2503,8 +2503,8 @@
       28931524
     ],
     "tv.twitch.android.app": [
-      1789433068,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
@@ -2518,7 +2518,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "internal",
+      "signing": "external",
       "tag": "v1.16.0"
     }
   }
