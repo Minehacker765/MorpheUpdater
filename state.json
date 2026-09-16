@@ -1239,11 +1239,11 @@
     "com.teslacoilsw.launcher|hoodles|arm64": {
       "app_name": "Nova Launcher: Home Screen",
       "arch": "arm64",
-      "at": 1788774680,
+      "at": 1789600133,
       "out": "teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
-        "hoodles": "v1.44.0"
+        "hoodles": "v1.44.1-dev.1"
       },
       "vc": 89200,
       "version": "89200 (8.9.2)"
@@ -1611,11 +1611,11 @@
     "jp.ne.ibis.ibispaintx.app|hoodles|arm64": {
       "app_name": "ibis Paint X",
       "arch": "arm64",
-      "at": 1789123483,
+      "at": 1789600133,
       "out": "ibispaintx.app-14.1.1-hoodles-arm64.apk",
       "package": "jp.ne.ibis.ibispaintx.app",
       "tags": {
-        "hoodles": "v1.44.0"
+        "hoodles": "v1.44.1-dev.1"
       },
       "vc": 1401010060,
       "version": "14.1.1"
@@ -2303,8 +2303,8 @@
       152182825
     ],
     "com.teslacoilsw.launcher": [
-      1788774680,
-      37240198
+      1789600133,
+      37072270
     ],
     "com.thehungrywasp.iamsober": [
       1788266792,
@@ -2427,8 +2427,8 @@
       41933347
     ],
     "jp.ne.ibis.ibispaintx.app": [
-      1789123483,
-      74493668
+      1789600133,
+      74489580
     ],
     "jp.pxv.android": [
       1789476032,
@@ -2503,8 +2503,8 @@
       28890572
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1789587546,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789598409,
