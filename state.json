@@ -771,14 +771,14 @@
     "com.kick.mobile|hxreborn|arm64": {
       "app_name": "KICK: Live Streaming",
       "arch": "arm64",
-      "at": 1789452924,
-      "out": "kick.mobile-40.30.1-hxreborn-arm64.apk",
+      "at": 1789531777,
+      "out": "kick.mobile-40.30.2-hxreborn-arm64.apk",
       "package": "com.kick.mobile",
       "tags": {
         "hxreborn": "v1.23.0"
       },
-      "vc": 60006942,
-      "version": "40.30.1"
+      "vc": 60006946,
+      "version": "40.30.2"
     },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "",
@@ -1359,13 +1359,13 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789528164,
+      "at": 1789531754,
       "out": "sleep-20260901-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.44.0"
       },
-      "vc": 2311692,
+      "vc": 231166,
       "version": "20260901"
     },
     "com.viber.voip|de-vanced|arm64": {
@@ -2151,8 +2151,8 @@
       153327331
     ],
     "com.kick.mobile": [
-      1789452924,
-      95631470
+      1789531777,
+      94992430
     ],
     "com.letterboxd.letterboxd": [
       1789476026,
@@ -2343,7 +2343,7 @@
       40108801
     ],
     "com.urbandroid.sleep": [
-      1789528164,
+      1789531754,
       50110666
     ],
     "com.viber.voip": [
@@ -2503,8 +2503,8 @@
       28931524
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1789433068,
+      56683723
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
