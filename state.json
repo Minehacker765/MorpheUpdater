@@ -1515,13 +1515,13 @@
     "currency.converter.moneta|hoomans|arm64": {
       "app_name": "Currency Converter - Moneta",
       "arch": "arm64",
-      "at": 1789299889,
+      "at": 1789540751,
       "out": "moneta-1.3.0-hoomans-arm64.apk",
       "package": "currency.converter.moneta",
       "tags": {
         "hoomans": "v1.51.1"
       },
-      "vc": 178927410,
+      "vc": 178953601,
       "version": "1.3.0"
     },
     "cz.ackee.ventusky|hoodles|arm64": {
@@ -2395,8 +2395,8 @@
       92922079
     ],
     "currency.converter.moneta": [
-      1789299889,
-      51905710
+      1789540751,
+      51877046
     ],
     "cz.ackee.ventusky": [
       1788744339,
@@ -2503,8 +2503,8 @@
       28931524
     ],
     "tv.twitch.android.app": [
-      1789433068,
-      56683723
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1788744093,
