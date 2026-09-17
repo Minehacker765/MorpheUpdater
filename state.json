@@ -855,14 +855,14 @@
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
       "arch": "arm64",
-      "at": 1789501065,
-      "out": "microg-7.1.2-dev.3-arm64.apk",
+      "at": 1789643264,
+      "out": "microg-7.2.1-dev.1-arm64.apk",
       "package": "com.mgoogle.android.gms",
       "tags": {
-        "microg": "7.1.2-dev.3"
+        "microg": "7.2.1-dev.1"
       },
-      "vc": 255070123,
-      "version": "7.1.2-dev.3"
+      "vc": 255070211,
+      "version": "7.2.1-dev.1"
     },
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "Series y Pel\u00edculas - Showly",
@@ -1879,7 +1879,7 @@
     "hoodles": "v1.44.1-dev.1",
     "hoomans": "v1.51.1",
     "hxreborn": "v1.23.0",
-    "microg": "7.1.2-dev.3",
+    "microg": "7.2.1-dev.1",
     "morphe": "v1.44.0-dev.2",
     "prathxm": "v1.13.1-dev.4",
     "tiktok-hx": "v1.3.0",
@@ -1919,8 +1919,8 @@
       104791216
     ],
     "app.revanced.android.gms": [
-      1789501065,
-      44829767
+      1789643264,
+      44837959
     ],
     "app.rubberbands.fit": [
       1789452857,
@@ -2503,8 +2503,8 @@
       28890572
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1789587546,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789598409,
