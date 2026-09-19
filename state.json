@@ -469,13 +469,13 @@
       "version": "1.19.11"
     },
     "com.chess|prathxm|arm64": {
-      "app_name": "Chess.com - Do you miss us?",
+      "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
-      "at": 1788205135,
+      "at": 1789836941,
       "out": "chess-4.10.0-googleplay-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
-        "prathxm": "v1.13.1-dev.4"
+        "prathxm": "v1.13.1"
       },
       "vc": 268250,
       "version": "4.10.0-googleplay"
@@ -1881,7 +1881,7 @@
     "hxreborn": "v1.25.0",
     "microg": "7.2.1-dev.2",
     "morphe": "v1.44.0-dev.9",
-    "prathxm": "v1.13.1-dev.4",
+    "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
   },
@@ -2059,8 +2059,8 @@
       55703198
     ],
     "com.chess.prathxm": [
-      1788205134,
-      258233666
+      1789836939,
+      258524584
     ],
     "com.collectrinc.collectr": [
       1788300185,
@@ -2503,8 +2503,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789783934,
-      56687819
+      1788299416,
+      97589978
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789684570,

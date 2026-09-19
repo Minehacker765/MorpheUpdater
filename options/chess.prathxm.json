@@ -29,5 +29,36 @@
                 "enabled": true
             }
         }
+    },
+    {
+        "meta": {
+            "created_at": "2026-08-26T00:38:12.028095844Z",
+            "updated_at": "2026-09-19T16:55:41.513835183Z",
+            "source": "v1.13.1__patches-1.13.1.mpp",
+            "sha256": "87270fc8bf24f8d209e0a81129e3cf4b1cc12a1fa524cf110015e93b938df04d"
+        },
+        "patches": {
+            "Ad-Free": {
+                "enabled": true
+            },
+            "Unlock All Bots": {
+                "enabled": true
+            },
+            "Lichess Puzzles": {
+                "enabled": true
+            },
+            "Clone Chess.com": {
+                "enabled": false
+            },
+            "Global Crash Handler": {
+                "enabled": true
+            },
+            "Custom Titles": {
+                "enabled": true
+            },
+            "Local Stockfish Analysis": {
+                "enabled": true
+            }
+        }
     }
 ]
