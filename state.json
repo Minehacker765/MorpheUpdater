@@ -159,14 +159,14 @@
     "com.adguard.android|hoodles|arm64": {
       "app_name": "AdGuard",
       "arch": "arm64",
-      "at": 1789420369,
-      "out": "adguard-4.14.0-arm64.apk",
+      "at": 1789865624,
+      "out": "adguard-4.14.1-arm64.apk",
       "package": "com.adguard.android",
       "tags": {
-        "hoodles": "v1.44.0"
+        "hoodles": "v1.44.2-dev.1"
       },
-      "vc": 42218017,
-      "version": "4.14.0"
+      "vc": 42219001,
+      "version": "4.14.1"
     },
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "",
@@ -1955,7 +1955,7 @@
       126235299
     ],
     "com.adguard.android": [
-      1789420369,
+      1789865624,
       79955109
     ],
     "com.adobe.lrmobile": [
@@ -2503,8 +2503,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789863927,
-      97536738
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789684570,
