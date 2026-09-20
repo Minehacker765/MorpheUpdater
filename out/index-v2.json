@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1789862456786,
+    "timestamp": 1789864241172,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -44,13 +44,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441062,
-        "lastUpdated": 1789862441153,
+        "added": 1789864227786,
+        "lastUpdated": 1789864227880,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "05784b0592ace307d96a975062e0752940795ce3c18a05e5820e8aad702f7c1a": {
-          "added": 1789862441153,
+          "added": 1789864227880,
           "file": {
             "name": "/adguard-4.14.0-arm64.apk",
             "sha256": "05784b0592ace307d96a975062e0752940795ce3c18a05e5820e8aad702f7c1a",
@@ -71,7 +71,7 @@
           }
         },
         "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6": {
-          "added": 1789862441062,
+          "added": 1789864227786,
           "file": {
             "name": "/adguard-4.13.2-arm64.apk",
             "sha256": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
@@ -102,7 +102,7 @@
           "en-US": "ADM patched with Morphe"
         },
         "description": {
-          "en-US": "ADM patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.dv.adm 14.0.39 (patched APK signed with the F-Droid repo key)."
+          "en-US": "ADM patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.dv.adm 14.0.39 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -115,17 +115,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441233,
-        "lastUpdated": 1789862441233,
+        "added": 1789864227972,
+        "lastUpdated": 1789864227972,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "3c5dac6fed81e60825d941b830e6962a6772c9fcd8b1e29b59d0d94549ac8ebb": {
-          "added": 1789862441233,
+        "8ba6dac7730832375a042bd37c348287656a81c34384cd283ed49105d616fa5b": {
+          "added": 1789864227972,
           "file": {
             "name": "/adm-14.0.39-hoomans-arm64.apk",
-            "sha256": "3c5dac6fed81e60825d941b830e6962a6772c9fcd8b1e29b59d0d94549ac8ebb",
-            "size": 28026190
+            "sha256": "8ba6dac7730832375a042bd37c348287656a81c34384cd283ed49105d616fa5b",
+            "size": 27972950
           },
           "manifest": {
             "versionName": "14.0.39",
@@ -152,7 +152,7 @@
           "en-US": "Adobe Reader patched with Morphe"
         },
         "description": {
-          "en-US": "Adobe Reader patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.adobe.reader 26.7.1.47181 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Adobe Reader patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.adobe.reader 26.7.1.47181 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -165,17 +165,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441278,
-        "lastUpdated": 1789862441278,
+        "added": 1789864228014,
+        "lastUpdated": 1789864228014,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "bc2dc9f74167ea2b1e7f30ea9e22b1aac45be87f9660ae6ea2a60b6c6abf8a74": {
-          "added": 1789862441278,
+        "9ba55a1d1bf1410f328b17dca1657e41df31a6ac119ee92f1b1f6df676be6f99": {
+          "added": 1789864228014,
           "file": {
             "name": "/adobe.reader-26.7.1.47181-hoomans-arm64.apk",
-            "sha256": "bc2dc9f74167ea2b1e7f30ea9e22b1aac45be87f9660ae6ea2a60b6c6abf8a74",
-            "size": 134142836
+            "sha256": "9ba55a1d1bf1410f328b17dca1657e41df31a6ac119ee92f1b1f6df676be6f99",
+            "size": 133979004
           },
           "manifest": {
             "versionName": "26.7.1.47181",
@@ -215,13 +215,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441458,
-        "lastUpdated": 1789862441458,
+        "added": 1789864228157,
+        "lastUpdated": 1789864228157,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0bfa5098e2b0673753a4fef9b3174664f0e7b43f7c4084c779060864f92de998": {
-          "added": 1789862441458,
+          "added": 1789864228157,
           "file": {
             "name": "/alltrails-26.9.30-hoodles-arm64.apk",
             "sha256": "0bfa5098e2b0673753a4fef9b3174664f0e7b43f7c4084c779060864f92de998",
@@ -252,7 +252,7 @@
           "en-US": "Alpha Progression patched with Morphe"
         },
         "description": {
-          "en-US": "Alpha Progression patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.alphaprogression.alphaprogression 7.1.1 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Alpha Progression patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.alphaprogression.alphaprogression 7.1.1 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -265,17 +265,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441573,
-        "lastUpdated": 1789862441573,
+        "added": 1789864228274,
+        "lastUpdated": 1789864228274,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "c97b9738a4404436b3b6049a3e564ea23ea5f34080cb47140f49e521555d100e": {
-          "added": 1789862441573,
+        "165af9e53f4e73a150999dbebba18b5dc708fc5b3d18f2cd9ad4c13a5c387a85": {
+          "added": 1789864228274,
           "file": {
             "name": "/alphaprogression-7.1.1-hoomans-arm64.apk",
-            "sha256": "c97b9738a4404436b3b6049a3e564ea23ea5f34080cb47140f49e521555d100e",
-            "size": 151927773
+            "sha256": "165af9e53f4e73a150999dbebba18b5dc708fc5b3d18f2cd9ad4c13a5c387a85",
+            "size": 151903205
           },
           "manifest": {
             "versionName": "7.1.1",
@@ -315,13 +315,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444953,
-        "lastUpdated": 1789862444953,
+        "added": 1789864231525,
+        "lastUpdated": 1789864231525,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f63f29927fc13c4a6b310cacf478fd8b4a233ef1dc744778816e674503befe0b": {
-          "added": 1789862444953,
+          "added": 1789864231525,
           "file": {
             "name": "/free-2.4.0e-hxreborn-arm64.apk",
             "sha256": "f63f29927fc13c4a6b310cacf478fd8b4a233ef1dc744778816e674503befe0b",
@@ -365,13 +365,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862448942,
-        "lastUpdated": 1789862448942,
+        "added": 1789864235147,
+        "lastUpdated": 1789864235147,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8738cad84728615961b06258d5af90a9b251a3607fe89acf4fb63067c4944546": {
-          "added": 1789862448942,
+          "added": 1789864235147,
           "file": {
             "name": "/mp3-26.32.0-de-vanced-arm64.apk",
             "sha256": "8738cad84728615961b06258d5af90a9b251a3607fe89acf4fb63067c4944546",
@@ -415,13 +415,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453121,
-        "lastUpdated": 1789862453121,
+        "added": 1789864237463,
+        "lastUpdated": 1789864237463,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "675494e128669228aed39143481d8382ae968103f895a847a9c63e1c0d951c7e": {
-          "added": 1789862453121,
+          "added": 1789864237463,
           "file": {
             "name": "/shopping-32.17.0.100-de-vanced-arm64.apk",
             "sha256": "675494e128669228aed39143481d8382ae968103f895a847a9c63e1c0d951c7e",
@@ -465,13 +465,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441924,
-        "lastUpdated": 1789862441924,
+        "added": 1789864228571,
+        "lastUpdated": 1789864228571,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7d89981c59689b422cc4a0c27eb3d1a9a79ddfd5d25171a48ab1fc60075a7ec8": {
-          "added": 1789862441924,
+          "added": 1789864228571,
           "file": {
             "name": "/angulus-6.0.4-de-vanced-arm64.apk",
             "sha256": "7d89981c59689b422cc4a0c27eb3d1a9a79ddfd5d25171a48ab1fc60075a7ec8",
@@ -515,13 +515,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442342,
-        "lastUpdated": 1789862442342,
+        "added": 1789864228994,
+        "lastUpdated": 1789864228994,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9": {
-          "added": 1789862442342,
+          "added": 1789864228994,
           "file": {
             "name": "/atmfee-3.7.9-xtra-arm64.apk",
             "sha256": "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9",
@@ -565,13 +565,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442176,
-        "lastUpdated": 1789862442176,
+        "added": 1789864228828,
+        "lastUpdated": 1789864228828,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f82b68d0b202d4f76e908ba67e084ba0b629d52dacbb68639cab4353141f351a": {
-          "added": 1789862442176,
+          "added": 1789864228828,
           "file": {
             "name": "/application-26.30.05-hxreborn-arm64.apk",
             "sha256": "f82b68d0b202d4f76e908ba67e084ba0b629d52dacbb68639cab4353141f351a",
@@ -615,13 +615,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442396,
-        "lastUpdated": 1789862442396,
+        "added": 1789864229040,
+        "lastUpdated": 1789864229040,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad": {
-          "added": 1789862442396,
+          "added": 1789864229040,
           "file": {
             "name": "/automate-1.51.1-xtra-arm64.apk",
             "sha256": "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad",
@@ -665,13 +665,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442411,
-        "lastUpdated": 1789862442411,
+        "added": 1789864229055,
+        "lastUpdated": 1789864229055,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3": {
-          "added": 1789862442411,
+          "added": 1789864229055,
           "file": {
             "name": "/autosync-7.5.10-xtra-arm64.apk",
             "sha256": "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3",
@@ -702,7 +702,7 @@
           "en-US": "AutoZen patched with Morphe"
         },
         "description": {
-          "en-US": "AutoZen patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.zenthek.autozen 8.0.10 (patched APK signed with the F-Droid repo key)."
+          "en-US": "AutoZen patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.zenthek.autozen 8.0.10 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -715,17 +715,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442473,
-        "lastUpdated": 1789862442473,
+        "added": 1789864229108,
+        "lastUpdated": 1789864229108,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "dfe755a54de6896d5c9f8deaeaf0cbb70e0ac3f754803555b980bf0b26c0e73a": {
-          "added": 1789862442473,
+        "259409e9e818827d98e9c6adc19d9905dc346805e098b2d6db784daa922dd54c": {
+          "added": 1789864229108,
           "file": {
             "name": "/autozen-8.0.10-hoomans-arm64.apk",
-            "sha256": "dfe755a54de6896d5c9f8deaeaf0cbb70e0ac3f754803555b980bf0b26c0e73a",
-            "size": 162403859
+            "sha256": "259409e9e818827d98e9c6adc19d9905dc346805e098b2d6db784daa922dd54c",
+            "size": 162301467
           },
           "manifest": {
             "versionName": "8.0.10",
@@ -765,13 +765,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442654,
-        "lastUpdated": 1789862442654,
+        "added": 1789864229276,
+        "lastUpdated": 1789864229276,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8cb39aa60505aab5aaa7f17469eec3c767f2c97503db231eb2e41f45fc2dba72": {
-          "added": 1789862442654,
+          "added": 1789864229276,
           "file": {
             "name": "/avocards-3.0.18-hoodles-arm64.apk",
             "sha256": "8cb39aa60505aab5aaa7f17469eec3c767f2c97503db231eb2e41f45fc2dba72",
@@ -815,13 +815,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456353,
-        "lastUpdated": 1789862456353,
+        "added": 1789864240734,
+        "lastUpdated": 1789864240734,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062": {
-          "added": 1789862456353,
+          "added": 1789864240734,
           "file": {
             "name": "/wallpapers-6.1.2-xtra-arm64.apk",
             "sha256": "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062",
@@ -865,13 +865,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442681,
-        "lastUpdated": 1789862442681,
+        "added": 1789864229306,
+        "lastUpdated": 1789864229306,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7ece1612115d0209c09ce2b7d16f6d3609d94fe10afe3d34f74d3cce30804d27": {
-          "added": 1789862442681,
+          "added": 1789864229306,
           "file": {
             "name": "/bandcamp.android-3.3.6-de-vanced-arm64.apk",
             "sha256": "7ece1612115d0209c09ce2b7d16f6d3609d94fe10afe3d34f74d3cce30804d27",
@@ -902,7 +902,7 @@
           "en-US": "BandLab patched with Morphe"
         },
         "description": {
-          "en-US": "BandLab patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.bandlab.bandlab 11.25.3 (patched APK signed with the F-Droid repo key)."
+          "en-US": "BandLab patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.bandlab.bandlab 11.25.3 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -915,17 +915,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442701,
-        "lastUpdated": 1789862442701,
+        "added": 1789864229325,
+        "lastUpdated": 1789864229325,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "b01d839ff36df5bc204595082f0855ebc42ac1e2ade11fc70141cdcbde21f398": {
-          "added": 1789862442701,
+        "a971fafd1a48d28610b36da58396e316e99d331f74bd9c23c6a5e15f3921752d": {
+          "added": 1789864229325,
           "file": {
             "name": "/bandlab-11.25.3-hoomans-arm64.apk",
-            "sha256": "b01d839ff36df5bc204595082f0855ebc42ac1e2ade11fc70141cdcbde21f398",
-            "size": 58408930
+            "sha256": "a971fafd1a48d28610b36da58396e316e99d331f74bd9c23c6a5e15f3921752d",
+            "size": 58322922
           },
           "manifest": {
             "versionName": "11.25.3",
@@ -952,7 +952,7 @@
           "en-US": "Battery Guru patched with Morphe"
         },
         "description": {
-          "en-US": "Battery Guru patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.paget96.batteryguru 2.5.0.6 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Battery Guru patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.paget96.batteryguru 2.5.0.6 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -965,17 +965,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442770,
-        "lastUpdated": 1789862442770,
+        "added": 1789864229389,
+        "lastUpdated": 1789864229389,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "5bfd1ddd809723f7e3bf1ab820f2937bf29b5c01dc9c81520d9232a9598eec46": {
-          "added": 1789862442770,
+        "237e6dee5d8e3c4df9fbc8e40ab5f6b7fa6c50255aed3a99fd0a0ba45e671fe8": {
+          "added": 1789864229389,
           "file": {
             "name": "/batteryguru-2.5.0.6-hoomans-arm64.apk",
-            "sha256": "5bfd1ddd809723f7e3bf1ab820f2937bf29b5c01dc9c81520d9232a9598eec46",
-            "size": 8932883
+            "sha256": "237e6dee5d8e3c4df9fbc8e40ab5f6b7fa6c50255aed3a99fd0a0ba45e671fe8",
+            "size": 8928795
           },
           "manifest": {
             "versionName": "2.5.0.6",
@@ -1015,13 +1015,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442818,
-        "lastUpdated": 1789862442818,
+        "added": 1789864229427,
+        "lastUpdated": 1789864229427,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "90f199478ea19e310c8e26a83fb69d2cad00a97e97e4f7755362bf02d87ecfed": {
-          "added": 1789862442818,
+          "added": 1789864229427,
           "file": {
             "name": "/bitpit.launcher-1.16.24-hoodles-arm64.apk",
             "sha256": "90f199478ea19e310c8e26a83fb69d2cad00a97e97e4f7755362bf02d87ecfed",
@@ -1065,13 +1065,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442843,
-        "lastUpdated": 1789862442843,
+        "added": 1789864229451,
+        "lastUpdated": 1789864229451,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9": {
-          "added": 1789862442843,
+          "added": 1789864229451,
           "file": {
             "name": "/blocker-5.0.67-xtra-arm64.apk",
             "sha256": "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9",
@@ -1098,7 +1098,7 @@
           "en-US": "BlockerHero patched with Morphe"
         },
         "description": {
-          "en-US": "BlockerHero patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.blockerhero 1.5.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "BlockerHero patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.blockerhero 1.5.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1111,17 +1111,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442944,
-        "lastUpdated": 1789862442944,
+        "added": 1789864229549,
+        "lastUpdated": 1789864229549,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "0b20ba89f6c9bd423ca8bed0ff9162b888a6978cbcd8c5c3277208a982e815dd": {
-          "added": 1789862442944,
+        "063e96788550169804d45bfff462274228b8bc9307948be01b5dc726f7d574e3": {
+          "added": 1789864229549,
           "file": {
             "name": "/blockerhero-1.5.0-hoomans-arm64.apk",
-            "sha256": "0b20ba89f6c9bd423ca8bed0ff9162b888a6978cbcd8c5c3277208a982e815dd",
-            "size": 5702079
+            "sha256": "063e96788550169804d45bfff462274228b8bc9307948be01b5dc726f7d574e3",
+            "size": 5702087
           },
           "manifest": {
             "versionName": "1.5.0",
@@ -1148,7 +1148,7 @@
           "en-US": "Budget Tracker patched with Morphe"
         },
         "description": {
-          "en-US": "Budget Tracker patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.budget.tracker_app 6.6.11 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Budget Tracker patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.budget.tracker_app 6.6.11 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1161,17 +1161,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454852,
-        "lastUpdated": 1789862454852,
+        "added": 1789864239211,
+        "lastUpdated": 1789864239211,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "2a2ccd8e8f2149d9859105e1648a0f9e233273c4af035b71f2e840a90b5a00bd": {
-          "added": 1789862454852,
+        "389d245dc8e8a2a20a909cbeb9c13c341fe2c2e48f3812ced8f600e1d04d7931": {
+          "added": 1789864239211,
           "file": {
             "name": "/tracker_app-6.6.11-hoomans-arm64.apk",
-            "sha256": "2a2ccd8e8f2149d9859105e1648a0f9e233273c4af035b71f2e840a90b5a00bd",
-            "size": 42976428
+            "sha256": "389d245dc8e8a2a20a909cbeb9c13c341fe2c2e48f3812ced8f600e1d04d7931",
+            "size": 42960052
           },
           "manifest": {
             "versionName": "6.6.11",
@@ -1211,13 +1211,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442957,
-        "lastUpdated": 1789862442957,
+        "added": 1789864229576,
+        "lastUpdated": 1789864229576,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a0d521f151fb083a81ba7f760841bbb84f94393ec2c22a14eecd31918d1c017e": {
-          "added": 1789862442957,
+          "added": 1789864229576,
           "file": {
             "name": "/bunpoapp-3.21.0-hoodles-arm64.apk",
             "sha256": "a0d521f151fb083a81ba7f760841bbb84f94393ec2c22a14eecd31918d1c017e",
@@ -1261,13 +1261,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444294,
-        "lastUpdated": 1789862444294,
+        "added": 1789864230911,
+        "lastUpdated": 1789864230911,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "597ad42b9e1eee49049bc388b54a79e324cefcfd4a32d662bf4b2e85f6d2c368": {
-          "added": 1789862444294,
+          "added": 1789864230911,
           "file": {
             "name": "/enc-32.30.0(1575420)-hoodles-arm64.apk",
             "sha256": "597ad42b9e1eee49049bc388b54a79e324cefcfd4a32d662bf4b2e85f6d2c368",
@@ -1311,13 +1311,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443042,
-        "lastUpdated": 1789862443042,
+        "added": 1789864229658,
+        "lastUpdated": 1789864229658,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5a5a23296caae1dce74513015e3474c160a964ddd7184606aa38630f86772999": {
-          "added": 1789862443042,
+          "added": 1789864229658,
           "file": {
             "name": "/calculator-3.4.0-hxreborn-arm64.apk",
             "sha256": "5a5a23296caae1dce74513015e3474c160a964ddd7184606aa38630f86772999",
@@ -1361,13 +1361,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443119,
-        "lastUpdated": 1789862443119,
+        "added": 1789864229720,
+        "lastUpdated": 1789864229720,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "29ac0e5409ae6e15dd972cc0be3c19f656336174af0d8c85f6a79facf2762753": {
-          "added": 1789862443119,
+          "added": 1789864229720,
           "file": {
             "name": "/camscanner-7.20.0.2606230000-hoodles-arm64.apk",
             "sha256": "29ac0e5409ae6e15dd972cc0be3c19f656336174af0d8c85f6a79facf2762753",
@@ -1398,7 +1398,7 @@
           "en-US": "Car Launcher patched with Morphe"
         },
         "description": {
-          "en-US": "Car Launcher patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: altergames.carlauncher 5.0.5 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Car Launcher patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: altergames.carlauncher 5.0.5 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1411,17 +1411,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443289,
-        "lastUpdated": 1789862443289,
+        "added": 1789864229890,
+        "lastUpdated": 1789864229890,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "faea8e10cadafbd298886d41d599cd40b25177ced1f1a3eecd285a1039d53b50": {
-          "added": 1789862443289,
+        "ceaac19f3f8b9eea57c928784787405759937ae39fab17dc5cbdb703b0390a98": {
+          "added": 1789864229890,
           "file": {
             "name": "/carlauncher-5.0.5-hoomans-arm64.apk",
-            "sha256": "faea8e10cadafbd298886d41d599cd40b25177ced1f1a3eecd285a1039d53b50",
-            "size": 13122697
+            "sha256": "ceaac19f3f8b9eea57c928784787405759937ae39fab17dc5cbdb703b0390a98",
+            "size": 13114513
           },
           "manifest": {
             "versionName": "5.0.5",
@@ -1448,7 +1448,7 @@
           "en-US": "CF Drink patched with Morphe"
         },
         "description": {
-          "en-US": "CF Drink patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.cfdrink 1.19.11 (patched APK signed with the F-Droid repo key)."
+          "en-US": "CF Drink patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.cfdrink 1.19.11 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1461,17 +1461,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443312,
-        "lastUpdated": 1789862443312,
+        "added": 1789864229909,
+        "lastUpdated": 1789864229909,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "c7288b3377e4b8c9f3bd0004d17da8ac1b16213bfa262ed992edd876dc5a9a61": {
-          "added": 1789862443312,
+        "5a34ae90a45a43125d2574c3c2165001ef0928cc8331094e64a2aca868ebf8ad": {
+          "added": 1789864229909,
           "file": {
             "name": "/cfdrink-1.19.11-hoomans-arm64.apk",
-            "sha256": "c7288b3377e4b8c9f3bd0004d17da8ac1b16213bfa262ed992edd876dc5a9a61",
-            "size": 55703198
+            "sha256": "5a34ae90a45a43125d2574c3c2165001ef0928cc8331094e64a2aca868ebf8ad",
+            "size": 55514790
           },
           "manifest": {
             "versionName": "1.19.11",
@@ -1498,7 +1498,7 @@
           "en-US": "ChatBoost patched with Morphe"
         },
         "description": {
-          "en-US": "ChatBoost patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: studio.muggle.chatboost 3.23.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "ChatBoost patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: studio.muggle.chatboost 3.23.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1511,17 +1511,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443379,
-        "lastUpdated": 1789862443379,
+        "added": 1789864229966,
+        "lastUpdated": 1789864229966,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "48e86f89fe776fb38a6d809e9503ee4edb09c131deefd8bf5b1ae59106a71dd2": {
-          "added": 1789862443379,
+        "215d7034fcf744b6796a2faa8fc900414aefb67b9bdcb67009119ea8d3124745": {
+          "added": 1789864229966,
           "file": {
             "name": "/chatboost-3.23.0-hoomans-arm64.apk",
-            "sha256": "48e86f89fe776fb38a6d809e9503ee4edb09c131deefd8bf5b1ae59106a71dd2",
-            "size": 20112868
+            "sha256": "215d7034fcf744b6796a2faa8fc900414aefb67b9bdcb67009119ea8d3124745",
+            "size": 20100588
           },
           "manifest": {
             "versionName": "3.23.0",
@@ -1561,13 +1561,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443422,
-        "lastUpdated": 1789862443422,
+        "added": 1789864230002,
+        "lastUpdated": 1789864230002,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9a979221c654a2a6bbb28964270358a14f6abc45e41ae07e4a972ff9f6dcd6b0": {
-          "added": 1789862443422,
+          "added": 1789864230002,
           "file": {
             "name": "/chess-4.10.0-googleplay-prathxm-arm64.apk",
             "sha256": "9a979221c654a2a6bbb28964270358a14f6abc45e41ae07e4a972ff9f6dcd6b0",
@@ -1611,13 +1611,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443697,
-        "lastUpdated": 1789862443697,
+        "added": 1789864230280,
+        "lastUpdated": 1789864230280,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8": {
-          "added": 1789862443697,
+          "added": 1789864230280,
           "file": {
             "name": "/circuitsimulator-1.49.0-xtra-arm64.apk",
             "sha256": "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8",
@@ -1648,7 +1648,7 @@
           "en-US": "Collectr patched with Morphe"
         },
         "description": {
-          "en-US": "Collectr patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.collectrinc.collectr 2.5.6 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Collectr patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.collectrinc.collectr 2.5.6 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1661,17 +1661,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443730,
-        "lastUpdated": 1789862443730,
+        "added": 1789864230314,
+        "lastUpdated": 1789864230314,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "04b057f0596e8a22ed36ccd67d5085f501f355aac41263f78b4eba9fed89b451": {
-          "added": 1789862443730,
+        "8366176effb5d489e997b1734c72116b65b65e97a33549ff1e146a346db4ecb7": {
+          "added": 1789864230314,
           "file": {
             "name": "/collectr-2.5.6-hoomans-arm64.apk",
-            "sha256": "04b057f0596e8a22ed36ccd67d5085f501f355aac41263f78b4eba9fed89b451",
-            "size": 74228033
+            "sha256": "8366176effb5d489e997b1734c72116b65b65e97a33549ff1e146a346db4ecb7",
+            "size": 74207561
           },
           "manifest": {
             "versionName": "2.5.6",
@@ -1711,13 +1711,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443819,
-        "lastUpdated": 1789862443819,
+        "added": 1789864230399,
+        "lastUpdated": 1789864230399,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2da132192d21ab0c5227dd6caf833e7dcf024f3c19d2b9a385ea833c67216c08": {
-          "added": 1789862443819,
+          "added": 1789864230399,
           "file": {
             "name": "/cricbuzz.android-6.24.01-de-vanced-arm64.apk",
             "sha256": "2da132192d21ab0c5227dd6caf833e7dcf024f3c19d2b9a385ea833c67216c08",
@@ -1748,7 +1748,7 @@
           "en-US": "Cronometer patched with Morphe"
         },
         "description": {
-          "en-US": "Cronometer patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.cronometer.android.gold 4.57.2 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Cronometer patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.cronometer.android.gold 4.57.2 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1761,17 +1761,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445161,
-        "lastUpdated": 1789862445161,
+        "added": 1789864231756,
+        "lastUpdated": 1789864231756,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "8581e528f11621278a62b80a9cea69b384099c7b2f4781037b2f4bed84ef6cec": {
-          "added": 1789862445161,
+        "3f292143445e9f26002f8443eef1706a7d478a88ce7ca38656381a1b3c92b1be": {
+          "added": 1789864231756,
           "file": {
             "name": "/gold-4.57.2-hoomans-arm64.apk",
-            "sha256": "8581e528f11621278a62b80a9cea69b384099c7b2f4781037b2f4bed84ef6cec",
-            "size": 84845593
+            "sha256": "3f292143445e9f26002f8443eef1706a7d478a88ce7ca38656381a1b3c92b1be",
+            "size": 84808737
           },
           "manifest": {
             "versionName": "4.57.2",
@@ -1811,13 +1811,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443846,
-        "lastUpdated": 1789862443846,
+        "added": 1789864230429,
+        "lastUpdated": 1789864230429,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "30ab9b780de48077915b5cbb5f6a7980033bd4b9d84c14655bcf1198a52fa24f": {
-          "added": 1789862443846,
+          "added": 1789864230429,
           "file": {
             "name": "/dailypay-6.0.7-hoodles-arm64.apk",
             "sha256": "30ab9b780de48077915b5cbb5f6a7980033bd4b9d84c14655bcf1198a52fa24f",
@@ -1848,7 +1848,7 @@
           "en-US": "DirectChat patched with Morphe"
         },
         "description": {
-          "en-US": "DirectChat patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: net.uniquegem.directchat 1.9.8 (patched APK signed with the F-Droid repo key)."
+          "en-US": "DirectChat patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: net.uniquegem.directchat 1.9.8 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1861,17 +1861,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444021,
-        "lastUpdated": 1789862444021,
+        "added": 1789864230611,
+        "lastUpdated": 1789864230611,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "1f645c908d8184922cbedffe83434dd6329352839e2f7b0ece63320d54fac3c3": {
-          "added": 1789862444021,
+        "b7856f77e177b21a2fd7d23b5239c504bd526436ebcd3a0f22541bfacd19c1a2": {
+          "added": 1789864230611,
           "file": {
             "name": "/directchat-1.9.8-hoomans-arm64.apk",
-            "sha256": "1f645c908d8184922cbedffe83434dd6329352839e2f7b0ece63320d54fac3c3",
-            "size": 17025225
+            "sha256": "b7856f77e177b21a2fd7d23b5239c504bd526436ebcd3a0f22541bfacd19c1a2",
+            "size": 17008849
           },
           "manifest": {
             "versionName": "1.9.8",
@@ -1911,13 +1911,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444071,
-        "lastUpdated": 1789862444071,
+        "added": 1789864230674,
+        "lastUpdated": 1789864230674,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5128033f519dc4a56d54e77a652648f85312f3fd93f8253abfd10b4601a8e7b2": {
-          "added": 1789862444071,
+          "added": 1789864230674,
           "file": {
             "name": "/duolingo-6.95.4-hoodles-arm64.apk",
             "sha256": "5128033f519dc4a56d54e77a652648f85312f3fd93f8253abfd10b4601a8e7b2",
@@ -1961,13 +1961,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444233,
-        "lastUpdated": 1789862444233,
+        "added": 1789864230847,
+        "lastUpdated": 1789864230847,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "604b1fb401b2350566965e2c2a46ba999031764bc5cbdc5009cd5269be37e221": {
-          "added": 1789862444233,
+          "added": 1789864230847,
           "file": {
             "name": "/eggconvo-4.12.19-hoodles-arm64.apk",
             "sha256": "604b1fb401b2350566965e2c2a46ba999031764bc5cbdc5009cd5269be37e221",
@@ -1998,7 +1998,7 @@
           "en-US": "Essence patched with Morphe"
         },
         "description": {
-          "en-US": "Essence patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.appfactory.essence 4.2.8 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Essence patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.appfactory.essence 4.2.8 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2011,17 +2011,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444361,
-        "lastUpdated": 1789862444361,
+        "added": 1789864230977,
+        "lastUpdated": 1789864230977,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "25198ff2ead84bd0f01c5ba365f83cda667c5ec382245ceea079ef0ab12afc40": {
-          "added": 1789862444361,
+        "adb7fe608318024082383e7d5ce3fe53bd4d4487bd14e4317bc47332bf60ea63": {
+          "added": 1789864230977,
           "file": {
             "name": "/essence-4.2.8-hoomans-arm64.apk",
-            "sha256": "25198ff2ead84bd0f01c5ba365f83cda667c5ec382245ceea079ef0ab12afc40",
-            "size": 64333099
+            "sha256": "adb7fe608318024082383e7d5ce3fe53bd4d4487bd14e4317bc47332bf60ea63",
+            "size": 64316723
           },
           "manifest": {
             "versionName": "4.2.8",
@@ -2061,13 +2061,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444430,
-        "lastUpdated": 1789862444430,
+        "added": 1789864231045,
+        "lastUpdated": 1789864231045,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "da7b966b7fcce3e65875ddf0d97463b8e4685656a6a03f315855daf37f57b3a5": {
-          "added": 1789862444430,
+          "added": 1789864231045,
           "file": {
             "name": "/etsy.android-7.95.0-hxreborn-arm64.apk",
             "sha256": "da7b966b7fcce3e65875ddf0d97463b8e4685656a6a03f315855daf37f57b3a5",
@@ -2111,13 +2111,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446063,
-        "lastUpdated": 1789862446063,
+        "added": 1789864232626,
+        "lastUpdated": 1789864232626,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4797b3743f789d6b375f5eb0365214fcd0e452ddf943877c139e1fbe7cf1fa0c": {
-          "added": 1789862446063,
+          "added": 1789864232626,
           "file": {
             "name": "/katana-490.0.0.63.82-de-vanced-arm64.apk",
             "sha256": "4797b3743f789d6b375f5eb0365214fcd0e452ddf943877c139e1fbe7cf1fa0c",
@@ -2161,13 +2161,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444481,
-        "lastUpdated": 1789862444481,
+        "added": 1789864231099,
+        "lastUpdated": 1789864231099,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "373e58360c4385721d90f4107407a19c24a28919a8565b44ca524bc2ad80b4ff": {
-          "added": 1789862444481,
+          "added": 1789864231099,
           "file": {
             "name": "/explorer-2.7.8-hxreborn-arm64.apk",
             "sha256": "373e58360c4385721d90f4107407a19c24a28919a8565b44ca524bc2ad80b4ff",
@@ -2198,7 +2198,7 @@
           "en-US": "Finch patched with Morphe"
         },
         "description": {
-          "en-US": "Finch patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.finch.finch 3.73.179 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Finch patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.finch.finch 3.73.179 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2211,17 +2211,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444533,
-        "lastUpdated": 1789862444533,
+        "added": 1789864231134,
+        "lastUpdated": 1789864231134,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "7d133acca2330de13c28c1f4311e40d6072f39888e9607d5904977d61a86fcb9": {
-          "added": 1789862444533,
+        "47c009eef4e9484fc3bf80951ccd5e6aff429f4f073fda99ce397cf9d30c9e65": {
+          "added": 1789864231134,
           "file": {
             "name": "/finch-3.73.179-hoomans-arm64.apk",
-            "sha256": "7d133acca2330de13c28c1f4311e40d6072f39888e9607d5904977d61a86fcb9",
-            "size": 201207455
+            "sha256": "47c009eef4e9484fc3bf80951ccd5e6aff429f4f073fda99ce397cf9d30c9e65",
+            "size": 201141927
           },
           "manifest": {
             "versionName": "3.73.179",
@@ -2261,13 +2261,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444831,
-        "lastUpdated": 1789862444831,
+        "added": 1789864231400,
+        "lastUpdated": 1789864231400,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d8caee12560917fdeddb5828e1cea85fee2888aee3023f40c50022ce0a947738": {
-          "added": 1789862444831,
+          "added": 1789864231400,
           "file": {
             "name": "/flowerfree-6.6 build 016-hoodles-arm64.apk",
             "sha256": "d8caee12560917fdeddb5828e1cea85fee2888aee3023f40c50022ce0a947738",
@@ -2298,7 +2298,7 @@
           "en-US": "FolderSync patched with Morphe"
         },
         "description": {
-          "en-US": "FolderSync patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: dk.tacit.android.foldersync.lite 4.12.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "FolderSync patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: dk.tacit.android.foldersync.lite 4.12.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2311,17 +2311,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446614,
-        "lastUpdated": 1789862446614,
+        "added": 1789864233176,
+        "lastUpdated": 1789864233176,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "abd46d7c21a57303e7bff33f55ca0300f841c074611ec10bdcc7b3ae6fc73bed": {
-          "added": 1789862446614,
+        "b66c2a7e69a1c53fb1bc5325f4d7cd58652ad4ce6e3d96726e1753d2de56881f": {
+          "added": 1789864233176,
           "file": {
             "name": "/lite-4.12.0-hoomans-arm64.apk",
-            "sha256": "abd46d7c21a57303e7bff33f55ca0300f841c074611ec10bdcc7b3ae6fc73bed",
-            "size": 38749879
+            "sha256": "b66c2a7e69a1c53fb1bc5325f4d7cd58652ad4ce6e3d96726e1753d2de56881f",
+            "size": 38749887
           },
           "manifest": {
             "versionName": "4.12.0",
@@ -2361,13 +2361,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444851,
-        "lastUpdated": 1789862444851,
+        "added": 1789864231423,
+        "lastUpdated": 1789864231423,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a0d0e1353fb6f5f32b2c654bbcd9bad5a35a4105b24776a07bf2f337195b1e20": {
-          "added": 1789862444851,
+          "added": 1789864231423,
           "file": {
             "name": "/forus-3.0.15-hxreborn-arm64.apk",
             "sha256": "a0d0e1353fb6f5f32b2c654bbcd9bad5a35a4105b24776a07bf2f337195b1e20",
@@ -2411,13 +2411,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453048,
-        "lastUpdated": 1789862453048,
+        "added": 1789864237399,
+        "lastUpdated": 1789864237399,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e53b26048310f557a5fd6032a0d9304c4c6b0bd01d9a569918db45eb2bd322f9": {
-          "added": 1789862453048,
+          "added": 1789864237399,
           "file": {
             "name": "/scan-2.2.221-hxreborn-arm64.apk",
             "sha256": "e53b26048310f557a5fd6032a0d9304c4c6b0bd01d9a569918db45eb2bd322f9",
@@ -2461,13 +2461,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445132,
-        "lastUpdated": 1789862445132,
+        "added": 1789864231726,
+        "lastUpdated": 1789864231726,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "91798eb5dbcc975ccf4a20e5f13562b6c10777e8431c35c1b0fa83d9a85253a1": {
-          "added": 1789862445132,
+          "added": 1789864231726,
           "file": {
             "name": "/github.android-1.271.1-hoodles-arm64.apk",
             "sha256": "91798eb5dbcc975ccf4a20e5f13562b6c10777e8431c35c1b0fa83d9a85253a1",
@@ -2511,13 +2511,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862447039,
-        "lastUpdated": 1789862447039,
+        "added": 1789864233628,
+        "lastUpdated": 1789864233628,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c08178d95ca3fbec971936802ef084416855cf443c52584fd706c1c8eace76fd": {
-          "added": 1789862447039,
+          "added": 1789864233628,
           "file": {
             "name": "/mail-9.16.2-de-vanced-arm64.apk",
             "sha256": "c08178d95ca3fbec971936802ef084416855cf443c52584fd706c1c8eace76fd",
@@ -2561,13 +2561,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445265,
-        "lastUpdated": 1789862445265,
+        "added": 1789864231849,
+        "lastUpdated": 1789864231849,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "66275c667c54c0d4c8e1546a46c60d35c5ad0aeb9493d581f81a11f31b7d776d": {
-          "added": 1789862445265,
+          "added": 1789864231849,
           "file": {
             "name": "/goodreads-2.76.0 Build 0-hoodles-arm64.apk",
             "sha256": "66275c667c54c0d4c8e1546a46c60d35c5ad0aeb9493d581f81a11f31b7d776d",
@@ -2611,13 +2611,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862447016,
-        "lastUpdated": 1789862447016,
+        "added": 1789864233589,
+        "lastUpdated": 1789864233589,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5675b403dc2c69d4fef74bdfe15c40b9366c069a347fb7d6fd03111ae1f51979": {
-          "added": 1789862447016,
+          "added": 1789864233589,
           "file": {
             "name": "/magazines-5.161.0.931240252-hoodles-arm64.apk",
             "sha256": "5675b403dc2c69d4fef74bdfe15c40b9366c069a347fb7d6fd03111ae1f51979",
@@ -2661,13 +2661,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451627,
-        "lastUpdated": 1789862451627,
+        "added": 1789864236533,
+        "lastUpdated": 1789864236533,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9ee299b1d4c7e308f5eb9bf9324bce1af2891a78ccb5a2e60dd9decc7949d0c5": {
-          "added": 1789862451627,
+          "added": 1789864236533,
           "file": {
             "name": "/photos-7.92.0.977185651-de-vanced-arm64.apk",
             "sha256": "9ee299b1d4c7e308f5eb9bf9324bce1af2891a78ccb5a2e60dd9decc7949d0c5",
@@ -2711,13 +2711,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445325,
-        "lastUpdated": 1789862445325,
+        "added": 1789864231908,
+        "lastUpdated": 1789864231908,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "73cad337f16f8e6d2b5d55040b2b03238fbdbe25803e638f1d403b87b2c58764": {
-          "added": 1789862445325,
+          "added": 1789864231908,
           "file": {
             "name": "/guessthecountry-3.34.2-hoodles-arm64.apk",
             "sha256": "73cad337f16f8e6d2b5d55040b2b03238fbdbe25803e638f1d403b87b2c58764",
@@ -2748,7 +2748,7 @@
           "en-US": "HBO Max TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "HBO Max TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.wbd.hbomax 7.9.0.61 (patched APK signed with the F-Droid repo key)."
+          "en-US": "HBO Max TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.wbd.hbomax 7.9.0.61 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2761,17 +2761,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445393,
-        "lastUpdated": 1789862445393,
+        "added": 1789864231974,
+        "lastUpdated": 1789864231974,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "d8cbf1500951c91279742320b75aaae53b8d820d43a2aade5f68bff96036657c": {
-          "added": 1789862445393,
+        "3675f003b8212e9544f4f8a54165e75676a7c0a8554991503915dfd2a7e6f6b1": {
+          "added": 1789864231974,
           "file": {
             "name": "/hbomax-7.9.0.61-androidtv-tv.apk",
-            "sha256": "d8cbf1500951c91279742320b75aaae53b8d820d43a2aade5f68bff96036657c",
-            "size": 68291586
+            "sha256": "3675f003b8212e9544f4f8a54165e75676a7c0a8554991503915dfd2a7e6f6b1",
+            "size": 68283402
           },
           "manifest": {
             "versionName": "7.9.0.61",
@@ -2811,13 +2811,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445477,
-        "lastUpdated": 1789862445477,
+        "added": 1789864232064,
+        "lastUpdated": 1789864232064,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d34363c30d8acfb2207bc876c6ae3304328a1cb38dea8fa466c90e935e347ec2": {
-          "added": 1789862445477,
+          "added": 1789864232064,
           "file": {
             "name": "/hellochinese-7.11.0-hoodles-arm64.apk",
             "sha256": "d34363c30d8acfb2207bc876c6ae3304328a1cb38dea8fa466c90e935e347ec2",
@@ -2848,7 +2848,7 @@
           "en-US": "Hevy patched with Morphe"
         },
         "description": {
-          "en-US": "Hevy patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.hevy 3.1.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Hevy patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.hevy 3.1.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2861,17 +2861,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445553,
-        "lastUpdated": 1789862445553,
+        "added": 1789864232144,
+        "lastUpdated": 1789864232144,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "412998711771a89d1bc6469e8f034675543d5cbecf978a3493604e134ff3467a": {
-          "added": 1789862445553,
+        "a4305d32c6f4aa505b7c1b1a860def73b086d2d42c8e5499b9692a9bf45cf6d5": {
+          "added": 1789864232144,
           "file": {
             "name": "/hevy-3.1.0-hoomans-arm64.apk",
-            "sha256": "412998711771a89d1bc6469e8f034675543d5cbecf978a3493604e134ff3467a",
-            "size": 129995703
+            "sha256": "a4305d32c6f4aa505b7c1b1a860def73b086d2d42c8e5499b9692a9bf45cf6d5",
+            "size": 129819583
           },
           "manifest": {
             "versionName": "3.1.0",
@@ -2911,13 +2911,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445694,
-        "lastUpdated": 1789862445694,
+        "added": 1789864232277,
+        "lastUpdated": 1789864232277,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "837c9574f3e820ad2aca6e4a78fe57fd477edf9ea8902611341dec6563dd8f6d": {
-          "added": 1789862445694,
+          "added": 1789864232277,
           "file": {
             "name": "/hexedit-2.8.3-de-vanced-arm64.apk",
             "sha256": "837c9574f3e820ad2aca6e4a78fe57fd477edf9ea8902611341dec6563dd8f6d",
@@ -2948,7 +2948,7 @@
           "en-US": "I Am Sober patched with Morphe"
         },
         "description": {
-          "en-US": "I Am Sober patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.thehungrywasp.iamsober 8.6.7 (patched APK signed with the F-Droid repo key)."
+          "en-US": "I Am Sober patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.thehungrywasp.iamsober 8.6.7 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -2961,17 +2961,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445710,
-        "lastUpdated": 1789862445710,
+        "added": 1789864232293,
+        "lastUpdated": 1789864232293,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "798b922813e5e795e25e3e4860120cf8713743cc36b05ca39d33fcc998e09b2a": {
-          "added": 1789862445710,
+        "219329d167815597798bf0099728a63cf30058096a94fb1e27fcf8231bba218f": {
+          "added": 1789864232293,
           "file": {
             "name": "/iamsober-8.6.7-hoomans-arm64.apk",
-            "sha256": "798b922813e5e795e25e3e4860120cf8713743cc36b05ca39d33fcc998e09b2a",
-            "size": 53281893
+            "sha256": "219329d167815597798bf0099728a63cf30058096a94fb1e27fcf8231bba218f",
+            "size": 53195885
           },
           "manifest": {
             "versionName": "8.6.7",
@@ -3011,13 +3011,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445773,
-        "lastUpdated": 1789862445773,
+        "added": 1789864232354,
+        "lastUpdated": 1789864232354,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9e2ca998c5c9748dd6ed87ebea70b90f322725bc923d6abf8a42018973c705ae": {
-          "added": 1789862445773,
+          "added": 1789864232354,
           "file": {
             "name": "/ibispaintx.app-14.1.1-hoodles-arm64.apk",
             "sha256": "9e2ca998c5c9748dd6ed87ebea70b90f322725bc923d6abf8a42018973c705ae",
@@ -3061,13 +3061,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445889,
-        "lastUpdated": 1789862445889,
+        "added": 1789864232466,
+        "lastUpdated": 1789864232466,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e3e18ee4d4cded040710e2c747809d3bbc0b11aff25879b18202a8a2f87d9e04": {
-          "added": 1789862445889,
+          "added": 1789864232466,
           "file": {
             "name": "/iconpackstudio-2.4 build 001-de-vanced-arm64.apk",
             "sha256": "e3e18ee4d4cded040710e2c747809d3bbc0b11aff25879b18202a8a2f87d9e04",
@@ -3111,13 +3111,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445848,
-        "lastUpdated": 1789862445848,
+        "added": 1789864232441,
+        "lastUpdated": 1789864232441,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9859abf78b624ecad7141b92bc165c9672794eb8e396a33fa42127ca0237a501": {
-          "added": 1789862445848,
+          "added": 1789864232441,
           "file": {
             "name": "/iconpacker-1.21.0-release-hoodles-arm64.apk",
             "sha256": "9859abf78b624ecad7141b92bc165c9672794eb8e396a33fa42127ca0237a501",
@@ -3148,7 +3148,7 @@
           "en-US": "InShot patched with Morphe"
         },
         "description": {
-          "en-US": "InShot patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.camerasideas.instashot 2.214.1539 (patched APK signed with the F-Droid repo key)."
+          "en-US": "InShot patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.camerasideas.instashot 2.214.1539 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -3161,17 +3161,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445960,
-        "lastUpdated": 1789862445960,
+        "added": 1789864232532,
+        "lastUpdated": 1789864232532,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "9f016c336fbd83c33f341bbe002266b85c84361b525cc8eb8673d4c1c63f6800": {
-          "added": 1789862445960,
+        "3510287976b55f2384ce44525e3f61afc0e104be5727426e5323570e4e5114ef": {
+          "added": 1789864232532,
           "file": {
             "name": "/instashot-2.214.1539-hoomans-arm64.apk",
-            "sha256": "9f016c336fbd83c33f341bbe002266b85c84361b525cc8eb8673d4c1c63f6800",
-            "size": 68682740
+            "sha256": "3510287976b55f2384ce44525e3f61afc0e104be5727426e5323570e4e5114ef",
+            "size": 68666364
           },
           "manifest": {
             "versionName": "2.214.1539",
@@ -3211,13 +3211,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446040,
-        "lastUpdated": 1789862446040,
+        "added": 1789864232601,
+        "lastUpdated": 1789864232601,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a3863aacf5bedaec79dcf84908e862d71725aadbc2a32633b93d8c586f5ea26d": {
-          "added": 1789862446040,
+          "added": 1789864232601,
           "file": {
             "name": "/irplus-1.10-de-vanced-arm64.apk",
             "sha256": "a3863aacf5bedaec79dcf84908e862d71725aadbc2a32633b93d8c586f5ea26d",
@@ -3261,13 +3261,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446157,
-        "lastUpdated": 1789862446157,
+        "added": 1789864232724,
+        "lastUpdated": 1789864232724,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5c2f387e4a95bbe38be29558fd6c9506f239543998bf0d3eafb296eaff37c0fd": {
-          "added": 1789862446157,
+          "added": 1789864232724,
           "file": {
             "name": "/kick.mobile-40.30.3-hxreborn-arm64.apk",
             "sha256": "5c2f387e4a95bbe38be29558fd6c9506f239543998bf0d3eafb296eaff37c0fd",
@@ -3311,13 +3311,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446270,
-        "lastUpdated": 1789862446270,
+        "added": 1789864232840,
+        "lastUpdated": 1789864232840,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "663b9472abfcbb2868109d38e58f019085d59edd1321b72c10dd59532480dc6a": {
-          "added": 1789862446270,
+          "added": 1789864232840,
           "file": {
             "name": "/letterboxd-3.5.7-de-vanced-arm64.apk",
             "sha256": "663b9472abfcbb2868109d38e58f019085d59edd1321b72c10dd59532480dc6a",
@@ -3361,13 +3361,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446703,
-        "lastUpdated": 1789862446703,
+        "added": 1789864233265,
+        "lastUpdated": 1789864233265,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5a52bbb11254350ae763aabf0ecfed184c1321ba8fd1e5fed3457b2449f29106": {
-          "added": 1789862446703,
+          "added": 1789864233265,
           "file": {
             "name": "/lrmobile-11.5.31-hoodles-arm64.apk",
             "sha256": "5a52bbb11254350ae763aabf0ecfed184c1321ba8fd1e5fed3457b2449f29106",
@@ -3411,13 +3411,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455376,
-        "lastUpdated": 1789862455376,
+        "added": 1789864239720,
+        "lastUpdated": 1789864239720,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7906d439dc7ceabb5b74ff05c6666e523fe7c214d6ed7e0a2fc6a0517454a602": {
-          "added": 1789862455376,
+          "added": 1789864239720,
           "file": {
             "name": "/universal-8.4.4-hoodles-arm64.apk",
             "sha256": "7906d439dc7ceabb5b74ff05c6666e523fe7c214d6ed7e0a2fc6a0517454a602",
@@ -3461,13 +3461,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446470,
-        "lastUpdated": 1789862446470,
+        "added": 1789864233031,
+        "lastUpdated": 1789864233031,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "558b5c7915525504128a1b6966a513f979f90303969fa9e6aa9a4c51b59749d1": {
-          "added": 1789862446470,
+          "added": 1789864233031,
           "file": {
             "name": "/lingodeer-2.99.412-hoodles-arm64.apk",
             "sha256": "558b5c7915525504128a1b6966a513f979f90303969fa9e6aa9a4c51b59749d1",
@@ -3511,13 +3511,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446543,
-        "lastUpdated": 1789862446543,
+        "added": 1789864233110,
+        "lastUpdated": 1789864233110,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e25be8c862ed34cebc231875e13f244e11cb947de387a319dc9d0bc682447932": {
-          "added": 1789862446543,
+          "added": 1789864233110,
           "file": {
             "name": "/lingory-1.2.75-hoodles-arm64.apk",
             "sha256": "e25be8c862ed34cebc231875e13f244e11cb947de387a319dc9d0bc682447932",
@@ -3561,13 +3561,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446976,
-        "lastUpdated": 1789862446976,
+        "added": 1789864233543,
+        "lastUpdated": 1789864233543,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b1bfee02342c3a97fad6aacfaf70cb4e84b4cc9cce9d76c384f7e043b4ec12e1": {
-          "added": 1789862446976,
+          "added": 1789864233543,
           "file": {
             "name": "/lyfta-1.551-hoodles-arm64.apk",
             "sha256": "b1bfee02342c3a97fad6aacfaf70cb4e84b4cc9cce9d76c384f7e043b4ec12e1",
@@ -3611,13 +3611,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862440772,
-        "lastUpdated": 1789862440772,
+        "added": 1789864227467,
+        "lastUpdated": 1789864227467,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8a975d55d9e14e9abccb2553712b741f0a732b5a876288e9c5fe7bebfed6e8fc": {
-          "added": 1789862440772,
+          "added": 1789864227467,
           "file": {
             "name": "/MemeGenerator-4.6826-hoodles-arm64.apk",
             "sha256": "8a975d55d9e14e9abccb2553712b741f0a732b5a876288e9c5fe7bebfed6e8fc",
@@ -3661,13 +3661,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862447102,
-        "lastUpdated": 1789862447102,
+        "added": 1789864233687,
+        "lastUpdated": 1789864233687,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "29ffe83374b2e915e599de25b256937401b348bc2d990c0c20f55bdb1b96055e": {
-          "added": 1789862447102,
+          "added": 1789864233687,
           "file": {
             "name": "/merriamwebster-5.6.2-hoodles-arm64.apk",
             "sha256": "29ffe83374b2e915e599de25b256937401b348bc2d990c0c20f55bdb1b96055e",
@@ -3711,13 +3711,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450831,
-        "lastUpdated": 1789862450831,
+        "added": 1789864236079,
+        "lastUpdated": 1789864236079,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4afa360074edc79596fc9ad5a1bfe1858dc99719caf69b57028e2db9c1126f21": {
-          "added": 1789862450831,
+          "added": 1789864236079,
           "file": {
             "name": "/orca-573.0.0.44.88-de-vanced-arm64.apk",
             "sha256": "4afa360074edc79596fc9ad5a1bfe1858dc99719caf69b57028e2db9c1126f21",
@@ -3761,13 +3761,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862447268,
-        "lastUpdated": 1789862448322,
+        "added": 1789864233851,
+        "lastUpdated": 1789864234767,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "779c5bc0acced5b0b875842003e2ac0b25a75dfbe4fc706855a18d6b76ac718e": {
-          "added": 1789862448322,
+          "added": 1789864234767,
           "file": {
             "name": "/microg-7.2.1-dev.2-arm64.apk",
             "sha256": "779c5bc0acced5b0b875842003e2ac0b25a75dfbe4fc706855a18d6b76ac718e",
@@ -3788,7 +3788,7 @@
           }
         },
         "c3c1936f75897bbd4d5be0f50cd3c5105aa633f0a309b1aeaea21016e786f76b": {
-          "added": 1789862448220,
+          "added": 1789864234705,
           "file": {
             "name": "/microg-7.2.1-dev.1-arm64.apk",
             "sha256": "c3c1936f75897bbd4d5be0f50cd3c5105aa633f0a309b1aeaea21016e786f76b",
@@ -3809,7 +3809,7 @@
           }
         },
         "ee8c8c3618821ecd4d73f3251277cf027409ff3a868455a3f9c904612d472b30": {
-          "added": 1789862448116,
+          "added": 1789864234646,
           "file": {
             "name": "/microg-7.1.2-dev.3-arm64.apk",
             "sha256": "ee8c8c3618821ecd4d73f3251277cf027409ff3a868455a3f9c904612d472b30",
@@ -3830,7 +3830,7 @@
           }
         },
         "60d430f1aff31417a7ddf78a13060e9f2f09a2ebf782aec1a92cbc44b48131b9": {
-          "added": 1789862448014,
+          "added": 1789864234583,
           "file": {
             "name": "/microg-7.1.2-dev.2-arm64.apk",
             "sha256": "60d430f1aff31417a7ddf78a13060e9f2f09a2ebf782aec1a92cbc44b48131b9",
@@ -3851,7 +3851,7 @@
           }
         },
         "4083d85d6e2db8bab4b01fe1213901430b273cdc1450523c931ba2f91a397c80": {
-          "added": 1789862447940,
+          "added": 1789864234522,
           "file": {
             "name": "/microg-7.1.2-dev.1-arm64.apk",
             "sha256": "4083d85d6e2db8bab4b01fe1213901430b273cdc1450523c931ba2f91a397c80",
@@ -3872,7 +3872,7 @@
           }
         },
         "13d8839fc0d4d9fa53bb36ae82d59120141123b05f67f1e41b0843b4019e8579": {
-          "added": 1789862447464,
+          "added": 1789864234029,
           "file": {
             "name": "/microg-7.1.0-arm64.apk",
             "sha256": "13d8839fc0d4d9fa53bb36ae82d59120141123b05f67f1e41b0843b4019e8579",
@@ -3893,7 +3893,7 @@
           }
         },
         "98122cc39bd3e9c06216f44acce19e552cf27778827f6c6fe506320c7ee0c9b0": {
-          "added": 1789862447821,
+          "added": 1789864234398,
           "file": {
             "name": "/microg-7.1.1-arm64.apk",
             "sha256": "98122cc39bd3e9c06216f44acce19e552cf27778827f6c6fe506320c7ee0c9b0",
@@ -3914,7 +3914,7 @@
           }
         },
         "8989aa2ceea84a8bba82fad0de570c463ae1484ac73fd423e8c26c9bd9fd5fcb": {
-          "added": 1789862447880,
+          "added": 1789864234461,
           "file": {
             "name": "/microg-7.1.1-dev.1-arm64.apk",
             "sha256": "8989aa2ceea84a8bba82fad0de570c463ae1484ac73fd423e8c26c9bd9fd5fcb",
@@ -3935,7 +3935,7 @@
           }
         },
         "8ab6587ada77cc1947e2adc44acaeeb8f66255c8c848e3b576fb031770091034": {
-          "added": 1789862447757,
+          "added": 1789864234336,
           "file": {
             "name": "/microg-7.1.0-dev.5-arm64.apk",
             "sha256": "8ab6587ada77cc1947e2adc44acaeeb8f66255c8c848e3b576fb031770091034",
@@ -3956,7 +3956,7 @@
           }
         },
         "8afc7d14610075807848cdd73a225065139ecf8243f7a340a8e3626fafce652d": {
-          "added": 1789862447700,
+          "added": 1789864234269,
           "file": {
             "name": "/microg-7.1.0-dev.4-arm64.apk",
             "sha256": "8afc7d14610075807848cdd73a225065139ecf8243f7a340a8e3626fafce652d",
@@ -3977,7 +3977,7 @@
           }
         },
         "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19": {
-          "added": 1789862447268,
+          "added": 1789864233851,
           "file": {
             "name": "/microg-7.0.0-arm64.apk",
             "sha256": "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19",
@@ -3998,7 +3998,7 @@
           }
         },
         "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4": {
-          "added": 1789862447330,
+          "added": 1789864233909,
           "file": {
             "name": "/microg-7.0.0-dev.6-arm64.apk",
             "sha256": "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4",
@@ -4019,7 +4019,7 @@
           }
         },
         "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7": {
-          "added": 1789862447390,
+          "added": 1789864233970,
           "file": {
             "name": "/microg-7.0.0-dev.7-arm64.apk",
             "sha256": "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7",
@@ -4040,7 +4040,7 @@
           }
         },
         "72f5b3d37224d9dee2b09783bf251fcb7a977d3a64cf259773cf8634f589adc7": {
-          "added": 1789862447522,
+          "added": 1789864234091,
           "file": {
             "name": "/microg-7.1.0-dev.1-arm64.apk",
             "sha256": "72f5b3d37224d9dee2b09783bf251fcb7a977d3a64cf259773cf8634f589adc7",
@@ -4061,7 +4061,7 @@
           }
         },
         "9886455c98f180d7810a4b26982a2cbb097680ecb185d1e5f3438545971035cc": {
-          "added": 1789862447581,
+          "added": 1789864234152,
           "file": {
             "name": "/microg-7.1.0-dev.2-arm64.apk",
             "sha256": "9886455c98f180d7810a4b26982a2cbb097680ecb185d1e5f3438545971035cc",
@@ -4082,7 +4082,7 @@
           }
         },
         "2abb3de5ee93927c1ac14efb33c6a30d0b30803c3038db9c12b7bb558dd5eb92": {
-          "added": 1789862447640,
+          "added": 1789864234212,
           "file": {
             "name": "/microg-7.1.0-dev.3-arm64.apk",
             "sha256": "2abb3de5ee93927c1ac14efb33c6a30d0b30803c3038db9c12b7bb558dd5eb92",
@@ -4126,13 +4126,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445053,
-        "lastUpdated": 1789862445053,
+        "added": 1789864231630,
+        "lastUpdated": 1789864231630,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "855f34827d7c81d2d027fae285b281329a8460331cc3188834a60b1f6ad356e1": {
-          "added": 1789862445053,
+          "added": 1789864231630,
           "file": {
             "name": "/getmimo-9.24-hoodles-arm64.apk",
             "sha256": "855f34827d7c81d2d027fae285b281329a8460331cc3188834a60b1f6ad356e1",
@@ -4176,13 +4176,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862448410,
-        "lastUpdated": 1789862448410,
+        "added": 1789864234819,
+        "lastUpdated": 1789864234819,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c050780931017ad5fb5b1d111600bbdbde79540e46ede9ee11509aa9f58ef73b": {
-          "added": 1789862448410,
+          "added": 1789864234819,
           "file": {
             "name": "/mirinae-2.2.2-hoodles-arm64.apk",
             "sha256": "c050780931017ad5fb5b1d111600bbdbde79540e46ede9ee11509aa9f58ef73b",
@@ -4213,7 +4213,7 @@
           "en-US": "MLB TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "MLB TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.bamnetworks.mobile.android.gameday.atbat 26.8.1.1 (patched APK signed with the F-Droid repo key)."
+          "en-US": "MLB TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.bamnetworks.mobile.android.gameday.atbat 26.8.1.1 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4226,17 +4226,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442300,
-        "lastUpdated": 1789862442300,
+        "added": 1789864228952,
+        "lastUpdated": 1789864228952,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "0eddd19567c51f8a911592d1e9c3f6a0b23011a6deba376999bb93232f017702": {
-          "added": 1789862442300,
+        "37038f1aebeba428ea9c960727010b9e6a0f41d36c77b0f77aebbad658326a26": {
+          "added": 1789864228952,
           "file": {
             "name": "/atbat-26.8.1.1-androidtv-tv.apk",
-            "sha256": "0eddd19567c51f8a911592d1e9c3f6a0b23011a6deba376999bb93232f017702",
-            "size": 36423801
+            "sha256": "37038f1aebeba428ea9c960727010b9e6a0f41d36c77b0f77aebbad658326a26",
+            "size": 36419713
           },
           "manifest": {
             "versionName": "26.8.1.1",
@@ -4276,13 +4276,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456567,
-        "lastUpdated": 1789862456567,
+        "added": 1789864240921,
+        "lastUpdated": 1789864240921,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e4b63f4b3aa912331a63609ed61549b3550be252cdeedd87d4586c83bd4564cb": {
-          "added": 1789862456567,
+          "added": 1789864240921,
           "file": {
             "name": "/wc2010-236.17398.20260827-hoodles-arm64.apk",
             "sha256": "e4b63f4b3aa912331a63609ed61549b3550be252cdeedd87d4586c83bd4564cb",
@@ -4313,7 +4313,7 @@
           "en-US": "Moneta patched with Morphe"
         },
         "description": {
-          "en-US": "Moneta patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: currency.converter.moneta 1.3.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Moneta patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: currency.converter.moneta 1.3.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4326,16 +4326,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862448756,
-        "lastUpdated": 1789862448756,
+        "added": 1789864235051,
+        "lastUpdated": 1789864235051,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "78a81fb47d46c66961cf8c7e8d14d7d379f4c82c6383c68e2638385acef4a90d": {
-          "added": 1789862448756,
+        "f4e86a98a7a22c3645eb49000fbbf81efda5a24243f056b77e59ce8516ffdf1e": {
+          "added": 1789864235051,
           "file": {
             "name": "/moneta-1.3.0-hoomans-arm64.apk",
-            "sha256": "78a81fb47d46c66961cf8c7e8d14d7d379f4c82c6383c68e2638385acef4a90d",
+            "sha256": "f4e86a98a7a22c3645eb49000fbbf81efda5a24243f056b77e59ce8516ffdf1e",
             "size": 51877046
           },
           "manifest": {
@@ -4363,7 +4363,7 @@
           "en-US": "Money Manager patched with Morphe"
         },
         "description": {
-          "en-US": "Money Manager patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.realbyteapps.moneymanagerfree 4.12.12 GF (patched APK signed with the F-Droid repo key)."
+          "en-US": "Money Manager patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.realbyteapps.moneymanagerfree 4.12.12 GF (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4376,17 +4376,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862448866,
-        "lastUpdated": 1789862448866,
+        "added": 1789864235111,
+        "lastUpdated": 1789864235111,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "4ff857da48f13f81f2f372255506f74e7bd582be53b35148184056a15fdd9fef": {
-          "added": 1789862448866,
+        "951c6580ffb3703ba51e14541d02fbb95255f02bd95d69038963250b95e011c4": {
+          "added": 1789864235111,
           "file": {
             "name": "/moneymanagerfree-4.12.12 GF-hoomans-arm64.apk",
-            "sha256": "4ff857da48f13f81f2f372255506f74e7bd582be53b35148184056a15fdd9fef",
-            "size": 24079587
+            "sha256": "951c6580ffb3703ba51e14541d02fbb95255f02bd95d69038963250b95e011c4",
+            "size": 24059115
           },
           "manifest": {
             "versionName": "4.12.12 GF",
@@ -4426,13 +4426,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450145,
-        "lastUpdated": 1789862450145,
+        "added": 1789864235716,
+        "lastUpdated": 1789864235716,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0aaacd96ea6d2cdcd3ae3c88a996fdd862cbd7976593690e2b53e1bf906fb06d": {
-          "added": 1789862450145,
+          "added": 1789864235716,
           "file": {
             "name": "/myexpenses-4.1.1.2-hoodles-arm64.apk",
             "sha256": "0aaacd96ea6d2cdcd3ae3c88a996fdd862cbd7976593690e2b53e1bf906fb06d",
@@ -4476,13 +4476,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450056,
-        "lastUpdated": 1789862450056,
+        "added": 1789864235676,
+        "lastUpdated": 1789864235676,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0b47014fd0d6a06807372eb96a8ce29ee90903d80f625c4c6e0750cc9324f467": {
-          "added": 1789862450056,
+          "added": 1789864235676,
           "file": {
             "name": "/mycake-6.4.0-hoodles-arm64.apk",
             "sha256": "0b47014fd0d6a06807372eb96a8ce29ee90903d80f625c4c6e0750cc9324f467",
@@ -4526,13 +4526,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450183,
-        "lastUpdated": 1789862450183,
+        "added": 1789864235742,
+        "lastUpdated": 1789864235742,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "46a2ec89a2779e1ddd9cb7ed32cd50569a1ebc8a48ae2996e59eb1bb14d7b6b3": {
-          "added": 1789862450183,
+          "added": 1789864235742,
           "file": {
             "name": "/myfitnesspal.android-26.31.0-hoodles-arm64.apk",
             "sha256": "46a2ec89a2779e1ddd9cb7ed32cd50569a1ebc8a48ae2996e59eb1bb14d7b6b3",
@@ -4563,7 +4563,7 @@
           "en-US": "Netflix patched with Morphe"
         },
         "description": {
-          "en-US": "Netflix patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.netflix.ninja 13.0.1 build 25028 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Netflix patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.netflix.ninja 13.0.1 build 25028 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4576,17 +4576,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450290,
-        "lastUpdated": 1789862450290,
+        "added": 1789864235797,
+        "lastUpdated": 1789864235797,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "38a12b9ffb6bd7db1eae66597c56ce66955c9951e86f1b77aa7c31bea6243aa2": {
-          "added": 1789862450290,
+        "f3d5722176db09c6dedc72642c606990f6cf02bc4b46fb4bc64781e08bd211d6": {
+          "added": 1789864235797,
           "file": {
             "name": "/ninja-13.0.1 build 25028-androidtv-tv.apk",
-            "sha256": "38a12b9ffb6bd7db1eae66597c56ce66955c9951e86f1b77aa7c31bea6243aa2",
-            "size": 107916292
+            "sha256": "f3d5722176db09c6dedc72642c606990f6cf02bc4b46fb4bc64781e08bd211d6",
+            "size": 107912204
           },
           "manifest": {
             "versionName": "13.0.1 build 25028",
@@ -4626,13 +4626,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450531,
-        "lastUpdated": 1789862450531,
+        "added": 1789864235910,
+        "lastUpdated": 1789864235910,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2eeaa03004851afa640e1521f9e64af72b465562361351fcdc65d74db31d755d": {
-          "added": 1789862450531,
+          "added": 1789864235910,
           "file": {
             "name": "/notesnook-3.4.12-hxreborn-arm64.apk",
             "sha256": "2eeaa03004851afa640e1521f9e64af72b465562361351fcdc65d74db31d755d",
@@ -4676,13 +4676,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453339,
-        "lastUpdated": 1789862453339,
+        "added": 1789864237696,
+        "lastUpdated": 1789864237696,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "255952e6adf034440f6aad3ea3a4cc6402bb42b140d0d1e84d8cba80a3ecc1a4": {
-          "added": 1789862453339,
+          "added": 1789864237696,
           "file": {
             "name": "/smartcenter-3.8.0-de-vanced-arm64.apk",
             "sha256": "255952e6adf034440f6aad3ea3a4cc6402bb42b140d0d1e84d8cba80a3ecc1a4",
@@ -4726,13 +4726,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862450687,
-        "lastUpdated": 1789862450687,
+        "added": 1789864235985,
+        "lastUpdated": 1789864235985,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "39d40995b82ea6a193161022200cdb75aa02e34b553410a64c3e6eec210db0a0": {
-          "added": 1789862450687,
+          "added": 1789864235985,
           "file": {
             "name": "/nu-26.8.0-de-vanced-arm64.apk",
             "sha256": "39d40995b82ea6a193161022200cdb75aa02e34b553410a64c3e6eec210db0a0",
@@ -4776,13 +4776,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451100,
-        "lastUpdated": 1789862451100,
+        "added": 1789864236221,
+        "lastUpdated": 1789864236221,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a9c7aad669d5670715c71c096d885243c124df034423d924ea572fdfd812c0da": {
-          "added": 1789862451100,
+          "added": 1789864236221,
           "file": {
             "name": "/pandora.android-2608.1-hoodles-arm64.apk",
             "sha256": "a9c7aad669d5670715c71c096d885243c124df034423d924ea572fdfd812c0da",
@@ -4813,7 +4813,7 @@
           "en-US": "Paramount TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Paramount TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.cbs.ott 16.19.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Paramount TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.cbs.ott 16.19.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4826,17 +4826,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451030,
-        "lastUpdated": 1789862451030,
+        "added": 1789864236182,
+        "lastUpdated": 1789864236182,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "61607ca839104b8f25a360c631e287dde888f122299b1755f40636a928a12994": {
-          "added": 1789862451030,
+        "fdc26160705876162e15ce238359a03aeda3799655dcea8b1fe33d4dd255e3cb": {
+          "added": 1789864236182,
           "file": {
             "name": "/ott-16.19.0-androidtv-tv.apk",
-            "sha256": "61607ca839104b8f25a360c631e287dde888f122299b1755f40636a928a12994",
-            "size": 26988091
+            "sha256": "fdc26160705876162e15ce238359a03aeda3799655dcea8b1fe33d4dd255e3cb",
+            "size": 26955331
           },
           "manifest": {
             "versionName": "16.19.0",
@@ -4863,7 +4863,7 @@
           "en-US": "Peacock TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Peacock TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.peacocktv.peacockandroid 7.8.100 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Peacock TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.peacocktv.peacockandroid 7.8.100 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -4876,17 +4876,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451468,
-        "lastUpdated": 1789862451468,
+        "added": 1789864236433,
+        "lastUpdated": 1789864236433,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "d28800838e6e5cb453dceabe89ea54a7468105c4ed9152b8bdc6599b3de71049": {
-          "added": 1789862451468,
+        "34c7000aa5e7db0f391b8dba0aa23336038525b89e95ec9e60d11ffa75636a4d": {
+          "added": 1789864236433,
           "file": {
             "name": "/peacockandroid-7.8.100-androidtv-tv.apk",
-            "sha256": "d28800838e6e5cb453dceabe89ea54a7468105c4ed9152b8bdc6599b3de71049",
-            "size": 8067935
+            "sha256": "34c7000aa5e7db0f391b8dba0aa23336038525b89e95ec9e60d11ffa75636a4d",
+            "size": 8063847
           },
           "manifest": {
             "versionName": "7.8.100",
@@ -4926,13 +4926,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441970,
-        "lastUpdated": 1789862441970,
+        "added": 1789864228618,
+        "lastUpdated": 1789864228618,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "20680ee3f7000e4297c0ef91973fdb44ec3db57ca9596df682c5d8a33627b32d": {
-          "added": 1789862441970,
+          "added": 1789864228618,
           "file": {
             "name": "/app.android-2.98.0-hxreborn-arm64.apk",
             "sha256": "20680ee3f7000e4297c0ef91973fdb44ec3db57ca9596df682c5d8a33627b32d",
@@ -4976,13 +4976,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451498,
-        "lastUpdated": 1789862451498,
+        "added": 1789864236450,
+        "lastUpdated": 1789864236450,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "523c30da1990df85cdd290f2a87142af55a4a34414625a1212a01405f6b845b0": {
-          "added": 1789862451498,
+          "added": 1789864236450,
           "file": {
             "name": "/photoeditorpro-1.791.265-hxreborn-arm64.apk",
             "sha256": "523c30da1990df85cdd290f2a87142af55a4a34414625a1212a01405f6b845b0",
@@ -5013,7 +5013,7 @@
           "en-US": "Photo Gallery patched with Morphe"
         },
         "description": {
-          "en-US": "Photo Gallery patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.soepic.photogallery.release 2.1.11 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Photo Gallery patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.soepic.photogallery.release 2.1.11 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5026,17 +5026,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452863,
-        "lastUpdated": 1789862452863,
+        "added": 1789864237242,
+        "lastUpdated": 1789864237242,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "c0171aae97f5a99439d773ba89295890c643664e63aa6116b3d3561798af043d": {
-          "added": 1789862452863,
+        "d04758910f4331257696b75074f99b3bdaecfff1b9128fff91200b5e83cea87c": {
+          "added": 1789864237242,
           "file": {
             "name": "/release-2.1.11-hoomans-arm64.apk",
-            "sha256": "c0171aae97f5a99439d773ba89295890c643664e63aa6116b3d3561798af043d",
-            "size": 45658386
+            "sha256": "d04758910f4331257696b75074f99b3bdaecfff1b9128fff91200b5e83cea87c",
+            "size": 45564186
           },
           "manifest": {
             "versionName": "2.1.11",
@@ -5076,13 +5076,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451591,
-        "lastUpdated": 1789862451591,
+        "added": 1789864236504,
+        "lastUpdated": 1789864236504,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "85474ecc4a9791d8794dceca189d23324422990b3b68b66824ca8ca4c30a6543": {
-          "added": 1789862451591,
+          "added": 1789864236504,
           "file": {
             "name": "/photomath-8.48.0-de-vanced-arm64.apk",
             "sha256": "85474ecc4a9791d8794dceca189d23324422990b3b68b66824ca8ca4c30a6543",
@@ -5126,13 +5126,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452489,
-        "lastUpdated": 1789862452489,
+        "added": 1789864236989,
+        "lastUpdated": 1789864236989,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "35fdf8faf43625973d96880af270883fda18b69919f4923294033564e673b088": {
-          "added": 1789862452489,
+          "added": 1789864236989,
           "file": {
             "name": "/pxv.android-6.196.0-de-vanced-arm64.apk",
             "sha256": "35fdf8faf43625973d96880af270883fda18b69919f4923294033564e673b088",
@@ -5163,7 +5163,7 @@
           "en-US": "Pluto TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Pluto TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: tv.pluto.android 5.66.0-leanback (patched APK signed with the F-Droid repo key)."
+          "en-US": "Pluto TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: tv.pluto.android 5.66.0-leanback (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5176,16 +5176,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451814,
-        "lastUpdated": 1789862451814,
+        "added": 1789864236644,
+        "lastUpdated": 1789864236644,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "f8c2b01743742d389c38e1f01600788140837c36e76ad06c81a1efc11c641371": {
-          "added": 1789862451814,
+        "708cdb5ea4e8769fe8ea53ae9f7f342a619c1336bb6341aa8869c375b29acafd": {
+          "added": 1789864236644,
           "file": {
             "name": "/pluto.android-5.66.0-leanback-androidtv-tv.apk",
-            "sha256": "f8c2b01743742d389c38e1f01600788140837c36e76ad06c81a1efc11c641371",
+            "sha256": "708cdb5ea4e8769fe8ea53ae9f7f342a619c1336bb6341aa8869c375b29acafd",
             "size": 28927428
           },
           "manifest": {
@@ -5226,13 +5226,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451888,
-        "lastUpdated": 1789862451888,
+        "added": 1789864236683,
+        "lastUpdated": 1789864236683,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "18d65575c64c9ef12c2c80578fcbefb08406c8c50265e7de8bba0091d3deeb92": {
-          "added": 1789862451888,
+          "added": 1789864236683,
           "file": {
             "name": "/podcastaddict-2026.10.1-hoodles-arm64.apk",
             "sha256": "18d65575c64c9ef12c2c80578fcbefb08406c8c50265e7de8bba0091d3deeb92",
@@ -5263,7 +5263,7 @@
           "en-US": "Poweramp patched with Morphe"
         },
         "description": {
-          "en-US": "Poweramp patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.maxmpz.audioplayer build-1025-bundle-play (patched APK signed with the F-Droid repo key)."
+          "en-US": "Poweramp patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.maxmpz.audioplayer build-1025-bundle-play (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5276,17 +5276,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442365,
-        "lastUpdated": 1789862442365,
+        "added": 1789864229015,
+        "lastUpdated": 1789864229015,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "2127019cb24bdf513af6f59c7b7958c63fe83e7f8daa82b66527e45a082517c6": {
-          "added": 1789862442365,
+        "6538cbf024bc2b169148cabb4e6a8ef68c5973c8dfeb0fabff00beb5f3ae5051": {
+          "added": 1789864229015,
           "file": {
             "name": "/audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
-            "sha256": "2127019cb24bdf513af6f59c7b7958c63fe83e7f8daa82b66527e45a082517c6",
-            "size": 20803230
+            "sha256": "6538cbf024bc2b169148cabb4e6a8ef68c5973c8dfeb0fabff00beb5f3ae5051",
+            "size": 20795046
           },
           "manifest": {
             "versionName": "build-1025-bundle-play",
@@ -5326,13 +5326,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454563,
-        "lastUpdated": 1789862454563,
+        "added": 1789864238934,
+        "lastUpdated": 1789864238934,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b215c84204814df84e7de44783b3ef88f7a1997f107964cafb4fb297d09d0add": {
-          "added": 1789862454563,
+          "added": 1789864238934,
           "file": {
             "name": "/thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
             "sha256": "b215c84204814df84e7de44783b3ef88f7a1997f107964cafb4fb297d09d0add",
@@ -5363,7 +5363,7 @@
           "en-US": "Prime Video TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Prime Video TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.amazon.amazonvideo.livingroom 6.23.23+v15.5.0.70-armv7a (patched APK signed with the F-Droid repo key)."
+          "en-US": "Prime Video TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.amazon.amazonvideo.livingroom 6.23.23+v15.5.0.70-armv7a (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5376,16 +5376,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446662,
-        "lastUpdated": 1789862446662,
+        "added": 1789864233220,
+        "lastUpdated": 1789864233220,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "6629565067558ca3263159f07a091379a7e6b3e166d7bec2e985ef0e5c669ad8": {
-          "added": 1789862446662,
+        "7e07101fcc4ba72b61c6a480171080cfa91a00c36744514bc280c0b7b9f4aec6": {
+          "added": 1789864233220,
           "file": {
             "name": "/livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
-            "sha256": "6629565067558ca3263159f07a091379a7e6b3e166d7bec2e985ef0e5c669ad8",
+            "sha256": "7e07101fcc4ba72b61c6a480171080cfa91a00c36744514bc280c0b7b9f4aec6",
             "size": 26079339
           },
           "manifest": {
@@ -5426,13 +5426,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452041,
-        "lastUpdated": 1789862452041,
+        "added": 1789864236765,
+        "lastUpdated": 1789864236765,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "dbc6df58b9068fbbb55c5127de9ba984feb50c79437f06480acecb696ecb6b9f": {
-          "added": 1789862452041,
+          "added": 1789864236765,
           "file": {
             "name": "/protonmail.android-7.11.5-hxreborn-arm64.apk",
             "sha256": "dbc6df58b9068fbbb55c5127de9ba984feb50c79437f06480acecb696ecb6b9f",
@@ -5476,13 +5476,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452405,
-        "lastUpdated": 1789862452405,
+        "added": 1789864236940,
+        "lastUpdated": 1789864236940,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1748e86acf74b4fb448446c04f217672e4bc7cf08384bda218fe0b5513c2540e": {
-          "added": 1789862452405,
+          "added": 1789864236940,
           "file": {
             "name": "/protonvpn.android-5.19.43.0-hoodles-arm64.apk",
             "sha256": "1748e86acf74b4fb448446c04f217672e4bc7cf08384bda218fe0b5513c2540e",
@@ -5526,13 +5526,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452577,
-        "lastUpdated": 1789862452577,
+        "added": 1789864237034,
+        "lastUpdated": 1789864237034,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "397a3f691c7743feb56142acf2dbc8124d5b378536b5667f03618f3e3f31bb22": {
-          "added": 1789862452577,
+          "added": 1789864237034,
           "file": {
             "name": "/pydroid3-8.3_arm64-hoodles-arm64.apk",
             "sha256": "397a3f691c7743feb56142acf2dbc8124d5b378536b5667f03618f3e3f31bb22",
@@ -5563,7 +5563,7 @@
           "en-US": "Quizlet patched with Morphe"
         },
         "description": {
-          "en-US": "Quizlet patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.quizlet.quizletandroid 10.38.1 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Quizlet patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.quizlet.quizletandroid 10.38.1 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5576,17 +5576,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452717,
-        "lastUpdated": 1789862452717,
+        "added": 1789864237120,
+        "lastUpdated": 1789864237120,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "e2db3f1142a7e862116774bd0a46260af279a1214e74d84e843332487d290af8": {
-          "added": 1789862452717,
+        "4708ff61ad75fa7ca00b3a186ce9be6becf4cba7ea590cbb3c0248aa74dc96c5": {
+          "added": 1789864237120,
           "file": {
             "name": "/quizletandroid-10.38.1-hoomans-arm64.apk",
-            "sha256": "e2db3f1142a7e862116774bd0a46260af279a1214e74d84e843332487d290af8",
-            "size": 26081730
+            "sha256": "4708ff61ad75fa7ca00b3a186ce9be6becf4cba7ea590cbb3c0248aa74dc96c5",
+            "size": 26065354
           },
           "manifest": {
             "versionName": "10.38.1",
@@ -5626,13 +5626,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452789,
-        "lastUpdated": 1789862452789,
+        "added": 1789864237151,
+        "lastUpdated": 1789864237151,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1d028dfacfe6b43b9c1bc79ff86b047f513a5e647744ede54c0077156b201a0a": {
-          "added": 1789862452789,
+          "added": 1789864237151,
           "file": {
             "name": "/readera-26.05.20+2300-hxreborn-arm64.apk",
             "sha256": "1d028dfacfe6b43b9c1bc79ff86b047f513a5e647744ede54c0077156b201a0a",
@@ -5676,13 +5676,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452805,
-        "lastUpdated": 1789862452805,
+        "added": 1789864237183,
+        "lastUpdated": 1789864237183,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5921f4adeb4ac270a5759e9599e0d464920a7cd0a1f2cf1cf9bd93fafd1819c0": {
-          "added": 1789862452805,
+          "added": 1789864237183,
           "file": {
             "name": "/recorder-4.2.20260709.976121876-de-vanced-arm64.apk",
             "sha256": "5921f4adeb4ac270a5759e9599e0d464920a7cd0a1f2cf1cf9bd93fafd1819c0",
@@ -5726,13 +5726,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444971,
-        "lastUpdated": 1789862444971,
+        "added": 1789864231544,
+        "lastUpdated": 1789864231544,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9dc95a8f759ae97492d1b61cf793b50f9017ba524f262d710a31ab2bd1af4efd": {
-          "added": 1789862444971,
+          "added": 1789864231544,
           "file": {
             "name": "/frontpage-2026.14.0-morphe-arm64.apk",
             "sha256": "9dc95a8f759ae97492d1b61cf793b50f9017ba524f262d710a31ab2bd1af4efd",
@@ -5763,7 +5763,7 @@
           "en-US": "Replaio patched with Morphe"
         },
         "description": {
-          "en-US": "Replaio patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.hv.replaio 3.3.9 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Replaio patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.hv.replaio 3.3.9 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5776,17 +5776,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452926,
-        "lastUpdated": 1789862452926,
+        "added": 1789864237295,
+        "lastUpdated": 1789864237295,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "ddc58b842137df14882c01a12b12ed3248d172b9cfcfaad5a397cf227c9646ee": {
-          "added": 1789862452926,
+        "d95660886cd2fe012fd7a15e582d60192995dfef681a2bc223a5c75946f60420": {
+          "added": 1789864237295,
           "file": {
             "name": "/replaio-3.3.9-hoomans-arm64.apk",
-            "sha256": "ddc58b842137df14882c01a12b12ed3248d172b9cfcfaad5a397cf227c9646ee",
-            "size": 38439071
+            "sha256": "d95660886cd2fe012fd7a15e582d60192995dfef681a2bc223a5c75946f60420",
+            "size": 38324391
           },
           "manifest": {
             "versionName": "3.3.9",
@@ -5826,13 +5826,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862445701,
-        "lastUpdated": 1789862445701,
+        "added": 1789864232284,
+        "lastUpdated": 1789864232284,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "eea77f7e1c6ca01915f2ef7cf2560f5fe08a447cdd55b25b618e2a02d7d9b601": {
-          "added": 1789862445701,
+          "added": 1789864232284,
           "file": {
             "name": "/hypertrophy-1.1.0-hoodles-arm64.apk",
             "sha256": "eea77f7e1c6ca01915f2ef7cf2560f5fe08a447cdd55b25b618e2a02d7d9b601",
@@ -5876,13 +5876,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862444751,
-        "lastUpdated": 1789862444751,
+        "added": 1789864231318,
+        "lastUpdated": 1789864231318,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "756cb83548bde25dca69d641e1a11a2a3a28c6b8076e2306ae9ec557d66a2897": {
-          "added": 1789862444751,
+          "added": 1789864231318,
           "file": {
             "name": "/fit-3.9-hxreborn-arm64.apk",
             "sha256": "756cb83548bde25dca69d641e1a11a2a3a28c6b8076e2306ae9ec557d66a2897",
@@ -5913,30 +5913,30 @@
           "en-US": "Rumble patched with Morphe"
         },
         "description": {
-          "en-US": "Rumble patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.rumble.battles 3.14.5 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Rumble patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.rumble.battles 3.14.5 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
             "name": "/com.rumble.battles/en-US/com.rumble.battles.png",
-            "sha256": "2c4fdd905dbbe43ecdb8643f065c8aaec6d299eabcebf5077e5a325e2a033acf",
-            "size": 5597
+            "sha256": "d840549c9aec0564db087fcc35727d664d6df58f58ea257af6cd3ef89b2fef4e",
+            "size": 5824
           }
         },
         "categories": [
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862442787,
-        "lastUpdated": 1789862442787,
+        "added": 1789864229402,
+        "lastUpdated": 1789864229402,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "b767b71becbf4696ea55c38ce89669ccc6c92f7e24dd30d584d31923120120d6": {
-          "added": 1789862442787,
+        "1a2fe8cc94ad9b2394603844f752c3761c275a8aef4314081b73370e2b4668cd": {
+          "added": 1789864229402,
           "file": {
             "name": "/battles-3.14.5-hoomans-arm64.apk",
-            "sha256": "b767b71becbf4696ea55c38ce89669ccc6c92f7e24dd30d584d31923120120d6",
-            "size": 20462526
+            "sha256": "1a2fe8cc94ad9b2394603844f752c3761c275a8aef4314081b73370e2b4668cd",
+            "size": 20442054
           },
           "manifest": {
             "versionName": "3.14.5",
@@ -5976,13 +5976,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862443874,
-        "lastUpdated": 1789862443874,
+        "added": 1789864230457,
+        "lastUpdated": 1789864230457,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4398cf9a2b3138ad804e0b896b2120e70e0dc2cec1fae02536201c6b46ef338f": {
-          "added": 1789862443874,
+          "added": 1789864230457,
           "file": {
             "name": "/diet-5.7.9-hoodles-arm64.apk",
             "sha256": "4398cf9a2b3138ad804e0b896b2120e70e0dc2cec1fae02536201c6b46ef338f",
@@ -6026,13 +6026,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454913,
-        "lastUpdated": 1789862454913,
+        "added": 1789864239265,
+        "lastUpdated": 1789864239265,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "758c71bb44fdeb2e2c5ff6c65964914df6a04a25b0253bd48a3c11e3fd8808e8": {
-          "added": 1789862454913,
+          "added": 1789864239265,
           "file": {
             "name": "/train-1.2.1-hoodles-arm64.apk",
             "sha256": "758c71bb44fdeb2e2c5ff6c65964914df6a04a25b0253bd48a3c11e3fd8808e8",
@@ -6076,13 +6076,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453249,
-        "lastUpdated": 1789862453249,
+        "added": 1789864237599,
+        "lastUpdated": 1789864237599,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9def7d2b543008678304a7b097501d611156323f85beadd1dc45e1f9026681f4": {
-          "added": 1789862453249,
+          "added": 1789864237599,
           "file": {
             "name": "/showly2-3.70.0-hxreborn-arm64.apk",
             "sha256": "9def7d2b543008678304a7b097501d611156323f85beadd1dc45e1f9026681f4",
@@ -6126,13 +6126,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456018,
-        "lastUpdated": 1789862456018,
+        "added": 1789864240387,
+        "lastUpdated": 1789864240387,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321": {
-          "added": 1789862456018,
+          "added": 1789864240387,
           "file": {
             "name": "/walk-2.5.0-xtra-arm64.apk",
             "sha256": "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321",
@@ -6176,13 +6176,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453267,
-        "lastUpdated": 1789862453267,
+        "added": 1789864237618,
+        "lastUpdated": 1789864237618,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "79dd07361f92eab0cf5200ddd66b215d6aea29a4cccf0efda1a08a05d6cd87b5": {
-          "added": 1789862453267,
+          "added": 1789864237618,
           "file": {
             "name": "/sleep-20260916-hoodles-arm64.apk",
             "sha256": "79dd07361f92eab0cf5200ddd66b215d6aea29a4cccf0efda1a08a05d6cd87b5",
@@ -6213,7 +6213,7 @@
           "en-US": "Smart AudioBook patched with Morphe"
         },
         "description": {
-          "en-US": "Smart AudioBook patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: ak.alizandro.smartaudiobookplayer 11.7.8 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Smart AudioBook patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (34): 7TV and BTTV emotes, Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable analytics, Disable blog notification reminder, Disable cloud sign-in prompt, Disable gift message popup, Disable in-app update, Disable screenshot sharing, Disable telemetry, Enable Premium, Enable call recording, Enable premium UI, Fix login, Hide display ads, No date first, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Unlock premium, Use your own Maps API key [REQUIRED].\n\nOriginal app: ak.alizandro.smartaudiobookplayer 11.7.8 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -6226,17 +6226,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453325,
-        "lastUpdated": 1789862453325,
+        "added": 1789864237681,
+        "lastUpdated": 1789864237681,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "53061f7a51a681c9227dd2ea40f4f85efc9386b72757609e9219db6f3557d19c": {
-          "added": 1789862453325,
+        "a0123b05bc778b26b586acb7559e4891cd64b00fefc6d1e1706a9ebd692cdb15": {
+          "added": 1789864237681,
           "file": {
             "name": "/smartaudiobookplayer-11.7.8-hoomans-arm64.apk",
-            "sha256": "53061f7a51a681c9227dd2ea40f4f85efc9386b72757609e9219db6f3557d19c",
-            "size": 4930922
+            "sha256": "a0123b05bc778b26b586acb7559e4891cd64b00fefc6d1e1706a9ebd692cdb15",
+            "size": 4857202
           },
           "manifest": {
             "versionName": "11.7.8",
@@ -6276,13 +6276,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453575,
-        "lastUpdated": 1789862453575,
+        "added": 1789864237934,
+        "lastUpdated": 1789864237934,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d49899ede24aabc34be1361fd6c8b200904a0157754d843b92380d785cb2fd45": {
-          "added": 1789862453575,
+          "added": 1789864237934,
           "file": {
             "name": "/snorelab.app-2.27.3.6291-hoodles-arm64.apk",
             "sha256": "d49899ede24aabc34be1361fd6c8b200904a0157754d843b92380d785cb2fd45",
@@ -6313,30 +6313,30 @@
           "en-US": "Sofascore patched with Morphe"
         },
         "description": {
-          "en-US": "Sofascore patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.sofascore.results 26.06.23 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Sofascore patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.sofascore.results 26.06.23 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
             "name": "/com.sofascore.results/en-US/com.sofascore.results.png",
-            "sha256": "d8e0f07e23b40319d8918d243ecde5a57a0362a5516570446ce70830f48cdbf7",
-            "size": 2686
+            "sha256": "31d6376463c51350212601b723a10b23fdaaaf7308261ebf4e5ab9f71f1157a0",
+            "size": 1743
           }
         },
         "categories": [
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862452982,
-        "lastUpdated": 1789862452982,
+        "added": 1789864237344,
+        "lastUpdated": 1789864237344,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "474f1749fc076bec172c3dffe15c838ef8d7ca75fc7b5dbf3243764ab96b5793": {
-          "added": 1789862452982,
+        "8389a3e31ee96e34c0c163b202141fade2467164fdd25e7b8d58235edd53ba5e": {
+          "added": 1789864237344,
           "file": {
             "name": "/results-26.06.23-hoomans-arm64.apk",
-            "sha256": "474f1749fc076bec172c3dffe15c838ef8d7ca75fc7b5dbf3243764ab96b5793",
-            "size": 58067146
+            "sha256": "8389a3e31ee96e34c0c163b202141fade2467164fdd25e7b8d58235edd53ba5e",
+            "size": 58013906
           },
           "manifest": {
             "versionName": "26.06.23",
@@ -6376,13 +6376,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453653,
-        "lastUpdated": 1789862453653,
+        "added": 1789864238011,
+        "lastUpdated": 1789864238011,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7d4b4f75ce2aca3fbfa4293bb7425ba05fc54ccfffca8602a6f26f84b37533f8": {
-          "added": 1789862453653,
+          "added": 1789864238011,
           "file": {
             "name": "/solidexplorer2-3.5.20-hoodles-arm64.apk",
             "sha256": "7d4b4f75ce2aca3fbfa4293bb7425ba05fc54ccfffca8602a6f26f84b37533f8",
@@ -6426,13 +6426,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453695,
-        "lastUpdated": 1789862453695,
+        "added": 1789864238053,
+        "lastUpdated": 1789864238053,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4561c41140cd120455be0c777a3d97dcca114fc29197e69cc3327607118add87": {
-          "added": 1789862453695,
+          "added": 1789864238053,
           "file": {
             "name": "/soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
             "sha256": "4561c41140cd120455be0c777a3d97dcca114fc29197e69cc3327607118add87",
@@ -6476,13 +6476,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453759,
-        "lastUpdated": 1789862453759,
+        "added": 1789864238117,
+        "lastUpdated": 1789864238117,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7": {
-          "added": 1789862453759,
+          "added": 1789864238117,
           "file": {
             "name": "/speedtest-7.0.4-xtra-arm64.apk",
             "sha256": "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7",
@@ -6526,13 +6526,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862440857,
-        "lastUpdated": 1789862440857,
+        "added": 1789864227555,
+        "lastUpdated": 1789864227555,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "11faf52939b1c1cfb526af66c773af82e0a703ebe3dc21f6e2eb41b7f18c7642": {
-          "added": 1789862440857,
+          "added": 1789864227555,
           "file": {
             "name": "/StarWalk2Free-2.21.0-xtra-arm64.apk",
             "sha256": "11faf52939b1c1cfb526af66c773af82e0a703ebe3dc21f6e2eb41b7f18c7642",
@@ -6563,7 +6563,7 @@
           "en-US": "Stash patched with Morphe"
         },
         "description": {
-          "en-US": "Stash patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: io.stashteam.games.tracker.stashapp 2.48.2 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Stash patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: io.stashteam.games.tracker.stashapp 2.48.2 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -6576,23 +6576,23 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453795,
-        "lastUpdated": 1789862453795,
+        "added": 1789864238151,
+        "lastUpdated": 1789864238151,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "4a0d36f468e750b1227adc99e528ee47b121b7803d152cc3145d70e3ab907c10": {
-          "added": 1789862453795,
+        "f86acdc2f8e89569743846192d3cfc1433772aa4913cd379a1eb5caefec238e8": {
+          "added": 1789864238151,
           "file": {
             "name": "/stashapp-2.48.2-hoomans-arm64.apk",
-            "sha256": "4a0d36f468e750b1227adc99e528ee47b121b7803d152cc3145d70e3ab907c10",
-            "size": 41933347
+            "sha256": "f86acdc2f8e89569743846192d3cfc1433772aa4913cd379a1eb5caefec238e8",
+            "size": 41740843
           },
           "manifest": {
             "versionName": "2.48.2",
             "versionCode": 250,
             "usesSdk": {
-              "minSdkVersion": 26,
+              "minSdkVersion": 32,
               "targetSdkVersion": 35
             },
             "signer": {
@@ -6626,13 +6626,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453848,
-        "lastUpdated": 1789862453848,
+        "added": 1789864238202,
+        "lastUpdated": 1789864238202,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6": {
-          "added": 1789862453848,
+          "added": 1789864238202,
           "file": {
             "name": "/stellarium_free-1.16.3-xtra-arm64.apk",
             "sha256": "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6",
@@ -6676,13 +6676,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453995,
-        "lastUpdated": 1789862453995,
+        "added": 1789864238360,
+        "lastUpdated": 1789864238360,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "ea77dcbee98f4e41d2f201cc243997c914511aca6e25224f412b13be347f2685": {
-          "added": 1789862453995,
+          "added": 1789864238360,
           "file": {
             "name": "/strava-477.14-de-vanced-arm64.apk",
             "sha256": "ea77dcbee98f4e41d2f201cc243997c914511aca6e25224f412b13be347f2685",
@@ -6726,13 +6726,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454120,
-        "lastUpdated": 1789862454120,
+        "added": 1789864238489,
+        "lastUpdated": 1789864238489,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f1f00273de9ea6269b187743107478493604f9abba06e1d54ac1d602088f4917": {
-          "added": 1789862454120,
+          "added": 1789864238489,
           "file": {
             "name": "/superchinese-6.6.3-hoodles-arm64.apk",
             "sha256": "f1f00273de9ea6269b187743107478493604f9abba06e1d54ac1d602088f4917",
@@ -6776,13 +6776,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451769,
-        "lastUpdated": 1789862451769,
+        "added": 1789864236612,
+        "lastUpdated": 1789864236612,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fe5423113cb047835acc46d7d16a38a9a3aab657083352ca0a199cccdc136acc": {
-          "added": 1789862451769,
+          "added": 1789864236612,
           "file": {
             "name": "/player-15.0.1-hxreborn-arm64.apk",
             "sha256": "fe5423113cb047835acc46d7d16a38a9a3aab657083352ca0a199cccdc136acc",
@@ -6813,30 +6813,30 @@
           "en-US": "TeachMeAnatomy patched with Morphe"
         },
         "description": {
-          "en-US": "TeachMeAnatomy patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.atomengineapps.teachmeanatomy 5.115 (patched APK signed with the F-Droid repo key)."
+          "en-US": "TeachMeAnatomy patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.atomengineapps.teachmeanatomy 5.115 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
             "name": "/com.atomengineapps.teachmeanatomy/en-US/com.atomengineapps.teachmeanatomy.png",
-            "sha256": "7902153532767caccc4819c77fc3401314b61861b269ee59bc0debfc956e681f",
-            "size": 6647
+            "sha256": "b788598f5d45e5ff534256024378de1b71f314f590a1749c773e2dd313db8b1a",
+            "size": 6468
           }
         },
         "categories": [
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454274,
-        "lastUpdated": 1789862454274,
+        "added": 1789864238661,
+        "lastUpdated": 1789864238661,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "b543488b50aee127bf93e7d4aa4278b72eec5936fbc861f3a54bd8690318707a": {
-          "added": 1789862454274,
+        "0fa17b8b8a1945d46a8127f449622aa90709ba104bc410338386fc87c0d76a96": {
+          "added": 1789864238661,
           "file": {
             "name": "/teachmeanatomy-5.115-hoomans-arm64.apk",
-            "sha256": "b543488b50aee127bf93e7d4aa4278b72eec5936fbc861f3a54bd8690318707a",
-            "size": 141635595
+            "sha256": "0fa17b8b8a1945d46a8127f449622aa90709ba104bc410338386fc87c0d76a96",
+            "size": 141602835
           },
           "manifest": {
             "versionName": "5.115",
@@ -6876,13 +6876,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454423,
-        "lastUpdated": 1789862454423,
+        "added": 1789864238808,
+        "lastUpdated": 1789864238808,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fada2f0050c110f8e08b464086a38254449b826dd8d5a3771e299884a3486ce3": {
-          "added": 1789862454423,
+          "added": 1789864238808,
           "file": {
             "name": "/teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
             "sha256": "fada2f0050c110f8e08b464086a38254449b826dd8d5a3771e299884a3486ce3",
@@ -6926,13 +6926,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862449591,
-        "lastUpdated": 1789862449591,
+        "added": 1789864235452,
+        "lastUpdated": 1789864235452,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "68114de924014471105bc7dd71e291907e17997e7fc5b5a9a775b5db1cebc957": {
-          "added": 1789862449591,
+          "added": 1789864235452,
           "file": {
             "name": "/musically-46.2.3-tiktok-hx-arm64.apk",
             "sha256": "68114de924014471105bc7dd71e291907e17997e7fc5b5a9a775b5db1cebc957",
@@ -6963,7 +6963,7 @@
           "en-US": "Todoist patched with Morphe"
         },
         "description": {
-          "en-US": "Todoist patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.todoist v12190 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Todoist patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.todoist v12190 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -6976,17 +6976,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454689,
-        "lastUpdated": 1789862454689,
+        "added": 1789864239060,
+        "lastUpdated": 1789864239060,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "9d56c01f90497984446f2cd779c8f474142a1a9f550344c11634709d0823153f": {
-          "added": 1789862454689,
+        "cf1de1d304e33e037853dcc4f115986b4c7cd8e60f1f71af8ee7b73293567950": {
+          "added": 1789864239060,
           "file": {
             "name": "/todoist-v12190-hoomans-arm64.apk",
-            "sha256": "9d56c01f90497984446f2cd779c8f474142a1a9f550344c11634709d0823153f",
-            "size": 38545217
+            "sha256": "cf1de1d304e33e037853dcc4f115986b4c7cd8e60f1f71af8ee7b73293567950",
+            "size": 38545225
           },
           "manifest": {
             "versionName": "v12190",
@@ -7013,7 +7013,7 @@
           "en-US": "Tracked patched with Morphe"
         },
         "description": {
-          "en-US": "Tracked patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.tracked.mobile 7.0.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Tracked patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.tracked.mobile 7.0.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7026,17 +7026,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454736,
-        "lastUpdated": 1789862454736,
+        "added": 1789864239098,
+        "lastUpdated": 1789864239098,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "98732adbc94aa65d59b3c97d2e46bbbc98a31eb983ea12b31486af1c34e4ca98": {
-          "added": 1789862454736,
+        "521e41662b67927684cd812ca1bd84208279a1c5acdd7a75f2a856c70b80559e": {
+          "added": 1789864239098,
           "file": {
             "name": "/tracked.mobile-7.0.0-hoomans-arm64.apk",
-            "sha256": "98732adbc94aa65d59b3c97d2e46bbbc98a31eb983ea12b31486af1c34e4ca98",
-            "size": 102218063
+            "sha256": "521e41662b67927684cd812ca1bd84208279a1c5acdd7a75f2a856c70b80559e",
+            "size": 101976407
           },
           "manifest": {
             "versionName": "7.0.0",
@@ -7076,13 +7076,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862454472,
-        "lastUpdated": 1789862454472,
+        "added": 1789864238858,
+        "lastUpdated": 1789864238858,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8dbda61c6e71936353678179e8b18cf8fce82ba598145520f73b6b200c464fb6": {
-          "added": 1789862454472,
+          "added": 1789864238858,
           "file": {
             "name": "/thetrainline-407.0.0.178994-hxreborn-arm64.apk",
             "sha256": "8dbda61c6e71936353678179e8b18cf8fce82ba598145520f73b6b200c464fb6",
@@ -7126,13 +7126,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455126,
-        "lastUpdated": 1789862455126,
+        "added": 1789864239483,
+        "lastUpdated": 1789864239483,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "363a57231be862a808803cf677be4be4f8ab4cae18e715cae224199b4eeca899": {
-          "added": 1789862455126,
+          "added": 1789864239483,
           "file": {
             "name": "/ttmikstories.android-1.16.0-hoodles-arm64.apk",
             "sha256": "363a57231be862a808803cf677be4be4f8ab4cae18e715cae224199b4eeca899",
@@ -7163,7 +7163,7 @@
           "en-US": "Tubi TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Tubi TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.tubitv 10.28.5000 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Tubi TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.tubitv 10.28.5000 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7176,17 +7176,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455263,
-        "lastUpdated": 1789862455263,
+        "added": 1789864239619,
+        "lastUpdated": 1789864239619,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "b20e9cf85d791d648dfef6c9f5e682aa6c231044315a971995b82b6fe1f6b3bc": {
-          "added": 1789862455263,
+        "65eb37cd2bbdbf539566b103fc03026b1f333013bbfc47e3a9e52bc5d03f0b45": {
+          "added": 1789864239619,
           "file": {
             "name": "/tubitv-10.28.5000-androidtv-tv.apk",
-            "sha256": "b20e9cf85d791d648dfef6c9f5e682aa6c231044315a971995b82b6fe1f6b3bc",
-            "size": 46141068
+            "sha256": "65eb37cd2bbdbf539566b103fc03026b1f333013bbfc47e3a9e52bc5d03f0b45",
+            "size": 46083732
           },
           "manifest": {
             "versionName": "10.28.5000",
@@ -7213,7 +7213,7 @@
           "en-US": "Tumblr patched with Morphe"
         },
         "description": {
-          "en-US": "Tumblr patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.tumblr 45.8.0.110 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Tumblr patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.tumblr 45.8.0.110 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7226,17 +7226,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455320,
-        "lastUpdated": 1789862455320,
+        "added": 1789864239671,
+        "lastUpdated": 1789864239671,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "181308cf0d0ade1a302d784f7e10bfc8827ad7efe6b15691a737cdc98712da2c": {
-          "added": 1789862455320,
+        "9d39b42ea10890ab85ffc91f174d9d88a905300de63d939d4d3629d244782626": {
+          "added": 1789864239671,
           "file": {
             "name": "/tumblr-45.8.0.110-hoomans-arm64.apk",
-            "sha256": "181308cf0d0ade1a302d784f7e10bfc8827ad7efe6b15691a737cdc98712da2c",
-            "size": 38118581
+            "sha256": "9d39b42ea10890ab85ffc91f174d9d88a905300de63d939d4d3629d244782626",
+            "size": 38053053
           },
           "manifest": {
             "versionName": "45.8.0.110",
@@ -7263,7 +7263,7 @@
           "en-US": "Twitch [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "Twitch [Android TV] patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: tv.twitch.android.app 30.7.2 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Twitch [Android TV] patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: tv.twitch.android.app 30.7.2 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7276,17 +7276,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862441732,
-        "lastUpdated": 1789862441813,
+        "added": 1789864228410,
+        "lastUpdated": 1789864228477,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "5aa4d110efe35949157810b9ac25ad22b90166a2c2134c12b45651ef360dabb8": {
-          "added": 1789862441732,
+        "03f4427df07bc9cda62a389dbdb95489deafa9b442191764093d993b389b42c8": {
+          "added": 1789864228410,
           "file": {
             "name": "/android.app-13.0.0.2-androidtv-tv.apk",
-            "sha256": "5aa4d110efe35949157810b9ac25ad22b90166a2c2134c12b45651ef360dabb8",
-            "size": 56687819
+            "sha256": "03f4427df07bc9cda62a389dbdb95489deafa9b442191764093d993b389b42c8",
+            "size": 56671443
           },
           "manifest": {
             "versionName": "13.0.0.2",
@@ -7302,12 +7302,12 @@
             }
           }
         },
-        "1bab7965dd3643cef7e93bf667ec7b61ae34190f610d9ffb4d43be58147db7f8": {
-          "added": 1789862441813,
+        "1b048984c43f08d6a92b99a1478adaf2aaf350c7b85fdde8402654bf1489b78e": {
+          "added": 1789864228477,
           "file": {
             "name": "/android.app-30.7.2-hoomans-arm64.apk",
-            "sha256": "1bab7965dd3643cef7e93bf667ec7b61ae34190f610d9ffb4d43be58147db7f8",
-            "size": 97589978
+            "sha256": "1b048984c43f08d6a92b99a1478adaf2aaf350c7b85fdde8402654bf1489b78e",
+            "size": 97536738
           },
           "manifest": {
             "versionName": "30.7.2",
@@ -7347,13 +7347,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455497,
-        "lastUpdated": 1789862455497,
+        "added": 1789864239829,
+        "lastUpdated": 1789864239829,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "3812cb6e00a56858cf5f9ac9c28cc752f7dee2e92bf608e03112f4d0ccdc8268": {
-          "added": 1789862455497,
+          "added": 1789864239829,
           "file": {
             "name": "/velnet-2.5.8-xtra-arm64.apk",
             "sha256": "3812cb6e00a56858cf5f9ac9c28cc752f7dee2e92bf608e03112f4d0ccdc8268",
@@ -7397,13 +7397,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455582,
-        "lastUpdated": 1789862455582,
+        "added": 1789864239917,
+        "lastUpdated": 1789864239917,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b6ff6af6f86c9207defafe0c520203f610d8bc1d3a9f9a23ddc85005accd91de": {
-          "added": 1789862455582,
+          "added": 1789864239917,
           "file": {
             "name": "/ventusky-53.1-hoodles-arm64.apk",
             "sha256": "b6ff6af6f86c9207defafe0c520203f610d8bc1d3a9f9a23ddc85005accd91de",
@@ -7447,13 +7447,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455768,
-        "lastUpdated": 1789862455768,
+        "added": 1789864240110,
+        "lastUpdated": 1789864240110,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1d72679d3bed86ae3bd883df5c59f32aec87c2e13b7d2f6ce992b959d93ac53b": {
-          "added": 1789862455768,
+          "added": 1789864240110,
           "file": {
             "name": "/voip-26.1.2.0-de-vanced-arm64.apk",
             "sha256": "1d72679d3bed86ae3bd883df5c59f32aec87c2e13b7d2f6ce992b959d93ac53b",
@@ -7484,7 +7484,7 @@
           "en-US": "Video Converter patched with Morphe"
         },
         "description": {
-          "en-US": "Video Converter patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: app.remux.video.converter 3.2.2 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Video Converter patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: app.remux.video.converter 3.2.2 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7497,17 +7497,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455625,
-        "lastUpdated": 1789862455625,
+        "added": 1789864239962,
+        "lastUpdated": 1789864239962,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "14a24b30ad61b30af83821fe92138776782c93630c93694ea726cb49658c9ccf": {
-          "added": 1789862455625,
+        "396ad47cf22bcf65c7650fbec534ffc9297572973dd296f6314e03c8507b6a6a": {
+          "added": 1789864239962,
           "file": {
             "name": "/video.converter-3.2.2-hoomans-arm64.apk",
-            "sha256": "14a24b30ad61b30af83821fe92138776782c93630c93694ea726cb49658c9ccf",
-            "size": 104791216
+            "sha256": "396ad47cf22bcf65c7650fbec534ffc9297572973dd296f6314e03c8507b6a6a",
+            "size": 104701112
           },
           "manifest": {
             "versionName": "3.2.2",
@@ -7534,7 +7534,7 @@
           "en-US": "ViX TV [Android TV] patched with Morphe"
         },
         "description": {
-          "en-US": "ViX TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.3.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.univision.prendetv 4.47.2_tv (patched APK signed with the F-Droid repo key)."
+          "en-US": "ViX TV [Android TV] patched with Morphe.\n\nPatches: androidtv v1.37.4.\n\nEnabled patches (16): Block TV ads, Bundle native ad-strip hook, Clone Netflix, Disable Netflix CertCheck, Disable auto-updates, Disney+ Android TV, HBO Max - Disable Ads, HBO Max - Prefer Ad-Free Stream, Load native ad-strip hook, MLB At Bat Android TV, Override certificate pinning, Paramount+ Android TV, Prime Video extension, Remove Netflix ads (bundle engine), Remove Netflix ads (loader), Skip ads.\n\nOriginal app: com.univision.prendetv 4.47.2_tv (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7547,17 +7547,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451952,
-        "lastUpdated": 1789862451952,
+        "added": 1789864236720,
+        "lastUpdated": 1789864236720,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "f73ea8df900eae61555926fbac9434486180bd15df88948f6e918b3fffed6912": {
-          "added": 1789862451952,
+        "062ac217a2e62b9188dd6ee4392c3c90bd3a29386fe2db43786b8fa750b90615": {
+          "added": 1789864236720,
           "file": {
             "name": "/prendetv-4.47.2_tv-androidtv-tv.apk",
-            "sha256": "f73ea8df900eae61555926fbac9434486180bd15df88948f6e918b3fffed6912",
-            "size": 40116993
+            "sha256": "062ac217a2e62b9188dd6ee4392c3c90bd3a29386fe2db43786b8fa750b90615",
+            "size": 40092425
           },
           "manifest": {
             "versionName": "4.47.2_tv",
@@ -7597,13 +7597,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455890,
-        "lastUpdated": 1789862455890,
+        "added": 1789864240243,
+        "lastUpdated": 1789864240243,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28": {
-          "added": 1789862455890,
+          "added": 1789864240243,
           "file": {
             "name": "/vpnify-2.2.9-xtra-arm64.apk",
             "sha256": "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28",
@@ -7647,13 +7647,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862455923,
-        "lastUpdated": 1789862455923,
+        "added": 1789864240280,
+        "lastUpdated": 1789864240280,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "209abedda269d3cc26869e71cf607101254021c0d3eadf76090d1cfa640286c0": {
-          "added": 1789862455923,
+          "added": 1789864240280,
           "file": {
             "name": "/vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
             "sha256": "209abedda269d3cc26869e71cf607101254021c0d3eadf76090d1cfa640286c0",
@@ -7697,13 +7697,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456283,
-        "lastUpdated": 1789862456283,
+        "added": 1789864240650,
+        "lastUpdated": 1789864240650,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "50b5656ed9eff3ac98255f22a13ae637320ee567921b0020c1445946ab33e088": {
-          "added": 1789862456283,
+          "added": 1789864240650,
           "file": {
             "name": "/wallpaper-3.61.01-hoodles-arm64.apk",
             "sha256": "50b5656ed9eff3ac98255f22a13ae637320ee567921b0020c1445946ab33e088",
@@ -7734,7 +7734,7 @@
           "en-US": "Wanderlog patched with Morphe"
         },
         "description": {
-          "en-US": "Wanderlog patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.wanderlog.android 2.208 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Wanderlog patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.wanderlog.android 2.208 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7747,17 +7747,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456391,
-        "lastUpdated": 1789862456391,
+        "added": 1789864240769,
+        "lastUpdated": 1789864240769,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "59d8c7de55e89ae7f502195c9f1e100dffa1ca84482d37458bcd90bbfa38143a": {
-          "added": 1789862456391,
+        "2f562228bacd0d5c4191ed004447355262fa94da5a114cac39264ef7b175fa9f": {
+          "added": 1789864240769,
           "file": {
             "name": "/wanderlog.android-2.208-hoomans-arm64.apk",
-            "sha256": "59d8c7de55e89ae7f502195c9f1e100dffa1ca84482d37458bcd90bbfa38143a",
-            "size": 143032204
+            "sha256": "2f562228bacd0d5c4191ed004447355262fa94da5a114cac39264ef7b175fa9f",
+            "size": 142802836
           },
           "manifest": {
             "versionName": "2.208",
@@ -7784,7 +7784,7 @@
           "en-US": "Webtoon patched with Morphe"
         },
         "description": {
-          "en-US": "Webtoon patched with Morphe.\n\nPatches: hoomans v1.51.1.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.naver.linewebtoon 3.9.5 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Webtoon patched with Morphe.\n\nPatches: hoomans v1.52.0.\n\nEnabled patches (25): Auto claim channel points, Block live ads, Disable Tumblr TV, Disable ad-free banner, Disable blog notification reminder, Disable gift message popup, Disable in-app update, Enable Premium, Enable premium UI, Hide display ads, Remove Ads, Remove ads, Show deleted messages, Unlock Full, Unlock Full Version, Unlock Gold, Unlock Membership, Unlock Moovit+, Unlock PRO, Unlock Plus, Unlock Premium, Unlock Pro, Unlock Sober Plus, Unlock aircraft data, Use your own Maps API key [REQUIRED].\n\nOriginal app: com.naver.linewebtoon 3.9.5 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -7797,17 +7797,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862446378,
-        "lastUpdated": 1789862446378,
+        "added": 1789864232946,
+        "lastUpdated": 1789864232946,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "537600a865ba533e4f97448b12a633c38061bb298bde343b8f80b7f1121665d9": {
-          "added": 1789862446378,
+        "c4d4d6bea2dfe146f82f8a4bf8192a0c0651675d66896c1cd338bcd0177a30dc": {
+          "added": 1789864232946,
           "file": {
             "name": "/linewebtoon-3.9.5-hoomans-arm64.apk",
-            "sha256": "537600a865ba533e4f97448b12a633c38061bb298bde343b8f80b7f1121665d9",
-            "size": 74576018
+            "sha256": "c4d4d6bea2dfe146f82f8a4bf8192a0c0651675d66896c1cd338bcd0177a30dc",
+            "size": 74465434
           },
           "manifest": {
             "versionName": "3.9.5",
@@ -7847,13 +7847,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456625,
-        "lastUpdated": 1789862456625,
+        "added": 1789864240976,
+        "lastUpdated": 1789864240976,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "98ebe23ea9325249364161a3994c1b5edfd99e3c57cdc7fb1ac76dbc5fb3a081": {
-          "added": 1789862456625,
+          "added": 1789864240976,
           "file": {
             "name": "/windyty.android-51.0.1-hoodles-arm64.apk",
             "sha256": "98ebe23ea9325249364161a3994c1b5edfd99e3c57cdc7fb1ac76dbc5fb3a081",
@@ -7897,13 +7897,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862448506,
-        "lastUpdated": 1789862448506,
+        "added": 1789864234906,
+        "lastUpdated": 1789864234906,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7466981439fbc361c9ce61b447b60ff047824ed153c581c0a9948610054bb87c": {
-          "added": 1789862448506,
+          "added": 1789864234906,
           "file": {
             "name": "/moffice_eng-18.24-hoodles-arm64.apk",
             "sha256": "7466981439fbc361c9ce61b447b60ff047824ed153c581c0a9948610054bb87c",
@@ -7947,13 +7947,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862451241,
-        "lastUpdated": 1789862451241,
+        "added": 1789864236304,
+        "lastUpdated": 1789864236304,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9b313cd0c38866ac1c7acebc09293f6bd54e210326f3a9a2b2414c3c36258753": {
-          "added": 1789862451241,
+          "added": 1789864236304,
           "file": {
             "name": "/pdf.reader-11.0.0-hoodles-arm64.apk",
             "sha256": "9b313cd0c38866ac1c7acebc09293f6bd54e210326f3a9a2b2414c3c36258753",
@@ -7997,13 +7997,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862453084,
-        "lastUpdated": 1789862453084,
+        "added": 1789864237424,
+        "lastUpdated": 1789864237424,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "6a412d10be695169e9b2d457cf50c3a88c1bb212760364bb7dfda7c491ac8e8f": {
-          "added": 1789862453084,
+          "added": 1789864237424,
           "file": {
             "name": "/screenrecorder-2.5.1.1-hoodles-arm64.apk",
             "sha256": "6a412d10be695169e9b2d457cf50c3a88c1bb212760364bb7dfda7c491ac8e8f",
@@ -8047,13 +8047,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862456674,
-        "lastUpdated": 1789862456674,
+        "added": 1789864241040,
+        "lastUpdated": 1789864241040,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0bb47950c4f32044fa78cdd248a13116b81bce21d54ba9062664e513045d6c98": {
-          "added": 1789862456674,
+          "added": 1789864241040,
           "file": {
             "name": "/youtube-21.13.164-morphe-arm64.apk",
             "sha256": "0bb47950c4f32044fa78cdd248a13116b81bce21d54ba9062664e513045d6c98",
@@ -8097,13 +8097,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1789862449381,
-        "lastUpdated": 1789862449381,
+        "added": 1789864235330,
+        "lastUpdated": 1789864235330,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d190ee24ac2d92b1c79952585c175cdb00da7ec6d12366b24ac5b6f0f67a07ec": {
-          "added": 1789862449381,
+          "added": 1789864235330,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
             "sha256": "d190ee24ac2d92b1c79952585c175cdb00da7ec6d12366b24ac5b6f0f67a07ec",

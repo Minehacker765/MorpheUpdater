@@ -15,11 +15,11 @@
     "ak.alizandro.smartaudiobookplayer|hoomans|arm64": {
       "app_name": "Smart AudioBook Player",
       "arch": "arm64",
-      "at": 1788306809,
+      "at": 1789863935,
       "out": "smartaudiobookplayer-11.7.8-hoomans-arm64.apk",
       "package": "ak.alizandro.smartaudiobookplayer",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 301178,
       "version": "11.7.8"
@@ -37,25 +37,25 @@
       "version": "3.4.0"
     },
     "altergames.carlauncher|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "AGAMA Car Launcher",
       "arch": "arm64",
-      "at": 1788266714,
+      "at": 1789863939,
       "out": "carlauncher-5.0.5-hoomans-arm64.apk",
       "package": "altergames.carlauncher",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 50052,
       "version": "5.0.5"
     },
     "app.remux.video.converter|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Video Converter - Remux",
       "arch": "arm64",
-      "at": 1788266716,
+      "at": 1789863947,
       "out": "video.converter-3.2.2-hoomans-arm64.apk",
       "package": "app.remux.video.converter",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 38,
       "version": "3.2.2"
@@ -183,11 +183,11 @@
     "com.adobe.reader|hoomans|arm64": {
       "app_name": "Adobe Acrobat Reader: Edit PDF",
       "arch": "arm64",
-      "at": 1788306828,
+      "at": 1789863957,
       "out": "adobe.reader-26.7.1.47181-hoomans-arm64.apk",
       "package": "com.adobe.reader",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1931947181,
       "version": "26.7.1.47181"
@@ -205,13 +205,13 @@
       "version": "26.9.30"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Alpha Progression Gym Tracker",
       "arch": "arm64",
-      "at": 1788266739,
+      "at": 1789863983,
       "out": "alphaprogression-7.1.1-hoomans-arm64.apk",
       "package": "com.alphaprogression.alphaprogression",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 597,
       "version": "7.1.1"
@@ -219,11 +219,11 @@
     "com.amazon.amazonvideo.livingroom|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783905,
+      "at": 1789863900,
       "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
       "package": "com.amazon.amazonvideo.livingroom",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 606023231,
       "version": "6.23.23+v15.5.0.70-armv7a"
@@ -265,13 +265,13 @@
       "version": "26.32.0"
     },
     "com.appfactory.essence|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Essence: Quit Addiction",
       "arch": "arm64",
-      "at": 1788266742,
+      "at": 1789863962,
       "out": "essence-4.2.8-hoomans-arm64.apk",
       "package": "com.appfactory.essence",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 120,
       "version": "4.2.8"
@@ -289,13 +289,13 @@
       "version": "3.7.9"
     },
     "com.atomengineapps.teachmeanatomy|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Teach Me Anatomy",
       "arch": "arm64",
-      "at": 1788266746,
+      "at": 1789863986,
       "out": "teachmeanatomy-5.115-hoomans-arm64.apk",
       "package": "com.atomengineapps.teachmeanatomy",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 186,
       "version": "5.115"
@@ -351,11 +351,11 @@
     "com.bamnetworks.mobile.android.gameday.atbat|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783921,
+      "at": 1789863924,
       "out": "atbat-26.8.1.1-androidtv-tv.apk",
       "package": "com.bamnetworks.mobile.android.gameday.atbat",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 1750000022,
       "version": "26.8.1.1"
@@ -373,37 +373,37 @@
       "version": "3.3.6"
     },
     "com.bandlab.bandlab|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "BandLab \u2013 Music Making Studio",
       "arch": "arm64",
-      "at": 1788266751,
+      "at": 1789863978,
       "out": "bandlab-11.25.3-hoomans-arm64.apk",
       "package": "com.bandlab.bandlab",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 11250300,
       "version": "11.25.3"
     },
     "com.blockerhero|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "BlockerHero - Content Blocker",
       "arch": "arm64",
-      "at": 1788266753,
+      "at": 1789863984,
       "out": "blockerhero-1.5.0-hoomans-arm64.apk",
       "package": "com.blockerhero",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 190,
       "version": "1.5.0"
     },
     "com.budget.tracker_app|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Cashew\u2014Expense Budget Tracker",
       "arch": "arm64",
-      "at": 1788306820,
+      "at": 1789863991,
       "out": "tracker_app-6.6.11-hoomans-arm64.apk",
       "package": "com.budget.tracker_app",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 510,
       "version": "6.6.11"
@@ -433,13 +433,13 @@
       "version": "32.30.0(1575420)"
     },
     "com.camerasideas.instashot|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Video Editor & Maker - InShot",
       "arch": "arm64",
-      "at": 1788266762,
+      "at": 1789864005,
       "out": "instashot-2.214.1539-hoomans-arm64.apk",
       "package": "com.camerasideas.instashot",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1539,
       "version": "2.214.1539"
@@ -447,23 +447,23 @@
     "com.cbs.ott|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783923,
+      "at": 1789863928,
       "out": "ott-16.19.0-androidtv-tv.apk",
       "package": "com.cbs.ott",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 520000827,
       "version": "16.19.0"
     },
     "com.cfdrink|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Mixel: Cocktail Recipes & Bar",
       "arch": "arm64",
-      "at": 1788266758,
+      "at": 1789863996,
       "out": "cfdrink-1.19.11-hoomans-arm64.apk",
       "package": "com.cfdrink",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1019011,
       "version": "1.19.11"
@@ -483,11 +483,11 @@
     "com.collectrinc.collectr|hoomans|arm64": {
       "app_name": "Collectr - TCG Collector App",
       "arch": "arm64",
-      "at": 1788300185,
+      "at": 1789864005,
       "out": "collectr-2.5.6-hoomans-arm64.apk",
       "package": "com.collectrinc.collectr",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 737,
       "version": "2.5.6"
@@ -507,11 +507,11 @@
     "com.cronometer.android.gold|hoomans|arm64": {
       "app_name": "Cronometer: Calorie Counter",
       "arch": "arm64",
-      "at": 1788300159,
+      "at": 1789864009,
       "out": "gold-4.57.2-hoomans-arm64.apk",
       "package": "com.cronometer.android.gold",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 3399,
       "version": "4.57.2"
@@ -553,13 +553,13 @@
       "version": "6.95.4"
     },
     "com.dv.adm|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Advanced Download Manager",
       "arch": "arm64",
-      "at": 1788266767,
+      "at": 1789864018,
       "out": "adm-14.0.39-hoomans-arm64.apk",
       "package": "com.dv.adm",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 140039,
       "version": "14.0.39"
@@ -601,13 +601,13 @@
       "version": "573.0.0.44.88"
     },
     "com.finch.finch|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Finch: Self-Care Pet",
       "arch": "arm64",
-      "at": 1788266774,
+      "at": 1789864045,
       "out": "finch-3.73.179-hoomans-arm64.apk",
       "package": "com.finch.finch",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1487,
       "version": "3.73.179"
@@ -733,25 +733,25 @@
       "version": "7.11.0"
     },
     "com.hevy|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Hevy - Gym Log Workout Tracker",
       "arch": "arm64",
-      "at": 1788266773,
+      "at": 1789864040,
       "out": "hevy-3.1.0-hoomans-arm64.apk",
       "package": "com.hevy",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2092238,
       "version": "3.1.0"
     },
     "com.hv.replaio|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Replaio Radio",
       "arch": "arm64",
-      "at": 1788266777,
+      "at": 1789864038,
       "out": "replaio-3.3.9-hoomans-arm64.apk",
       "package": "com.hv.replaio",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2500339,
       "version": "3.3.9"
@@ -829,13 +829,13 @@
       "version": "1.551"
     },
     "com.maxmpz.audioplayer|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Poweramp Music Player",
       "arch": "arm64",
-      "at": 1788266778,
+      "at": 1789864048,
       "out": "audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
       "package": "com.maxmpz.audioplayer",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1025004,
       "version": "build-1025-bundle-play"
@@ -949,13 +949,13 @@
       "version": "3.0.15"
     },
     "com.naver.linewebtoon|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "WEBTOON: Manga, Comics, Manhwa",
       "arch": "arm64",
-      "at": 1788266784,
+      "at": 1789864069,
       "out": "linewebtoon-3.9.5-hoomans-arm64.apk",
       "package": "com.naver.linewebtoon",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 3090511,
       "version": "3.9.5"
@@ -963,11 +963,11 @@
     "com.netflix.ninja|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783906,
+      "at": 1789863907,
       "out": "ninja-13.0.1 build 25028-androidtv-tv.apk",
       "package": "com.netflix.ninja",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 25028,
       "version": "13.0.1 build 25028"
@@ -999,11 +999,11 @@
     "com.paget96.batteryguru|hoomans|arm64": {
       "app_name": "Battery Guru: Battery Health",
       "arch": "arm64",
-      "at": 1788306858,
+      "at": 1789864053,
       "out": "batteryguru-2.5.0.6-hoomans-arm64.apk",
       "package": "com.paget96.batteryguru",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 721,
       "version": "2.5.0.6"
@@ -1023,11 +1023,11 @@
     "com.peacocktv.peacockandroid|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783914,
+      "at": 1789863917,
       "out": "peacockandroid-7.8.100-androidtv-tv.apk",
       "package": "com.peacocktv.peacockandroid",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 230708100,
       "version": "7.8.100"
@@ -1057,13 +1057,13 @@
       "version": "3.34.2"
     },
     "com.quizlet.quizletandroid|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Quizlet: More than Flashcards",
       "arch": "arm64",
-      "at": 1788266784,
+      "at": 1789864069,
       "out": "quizletandroid-10.38.1-hoomans-arm64.apk",
       "package": "com.quizlet.quizletandroid",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2601771,
       "version": "10.38.1"
@@ -1071,11 +1071,11 @@
     "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
       "app_name": "Money Manager Expense & Budget",
       "arch": "arm64",
-      "at": 1789020861,
+      "at": 1789864078,
       "out": "moneymanagerfree-4.12.12 GF-hoomans-arm64.apk",
       "package": "com.realbyteapps.moneymanagerfree",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1203,
       "version": "4.12.12 GF"
@@ -1105,13 +1105,13 @@
       "version": "1.1.0"
     },
     "com.rumble.battles|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Rumble: Stream & Watch Videos",
       "arch": "arm64",
-      "at": 1788266789,
+      "at": 1789864082,
       "out": "battles-3.14.5-hoomans-arm64.apk",
       "package": "com.rumble.battles",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 771,
       "version": "3.14.5"
@@ -1167,23 +1167,23 @@
     "com.soepic.photogallery.release|hoomans|arm64": {
       "app_name": "Liquid Gallery: Photos Viewer",
       "arch": "arm64",
-      "at": 1788306866,
+      "at": 1789864084,
       "out": "release-2.1.11-hoomans-arm64.apk",
       "package": "com.soepic.photogallery.release",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 251,
       "version": "2.1.11"
     },
     "com.sofascore.results|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Sofascore: Live Sports Scores",
       "arch": "arm64",
-      "at": 1788266794,
+      "at": 1789864105,
       "out": "results-26.06.23-hoomans-arm64.apk",
       "package": "com.sofascore.results",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 260623003,
       "version": "26.06.23"
@@ -1249,13 +1249,13 @@
       "version": "89200 (8.9.2)"
     },
     "com.thehungrywasp.iamsober|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "I Am Sober",
       "arch": "arm64",
-      "at": 1788266792,
+      "at": 1789864094,
       "out": "iamsober-8.6.7-hoomans-arm64.apk",
       "package": "com.thehungrywasp.iamsober",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1801726444,
       "version": "8.6.7"
@@ -1275,23 +1275,23 @@
     "com.todoist|hoomans|arm64": {
       "app_name": "Todoist: To Do List & Calendar",
       "arch": "arm64",
-      "at": 1788306902,
+      "at": 1789864097,
       "out": "todoist-v12190-hoomans-arm64.apk",
       "package": "com.todoist",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 12190,
       "version": "v12190"
     },
     "com.tracked.mobile|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Tracked \u2022 Workout & Nutrition",
       "arch": "arm64",
-      "at": 1788266798,
+      "at": 1789864112,
       "out": "tracked.mobile-7.0.0-hoomans-arm64.apk",
       "package": "com.tracked.mobile",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 125,
       "version": "7.0.0"
@@ -1311,11 +1311,11 @@
     "com.tubitv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783916,
+      "at": 1789863922,
       "out": "tubitv-10.28.5000-androidtv-tv.apk",
       "package": "com.tubitv",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 1029,
       "version": "10.28.5000"
@@ -1323,11 +1323,11 @@
     "com.tumblr|hoomans|arm64": {
       "app_name": "Tumblr: Social Media & Art",
       "arch": "arm64",
-      "at": 1788300233,
+      "at": 1789864119,
       "out": "tumblr-45.8.0.110-hoomans-arm64.apk",
       "package": "com.tumblr",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 1450800110,
       "version": "45.8.0.110"
@@ -1347,11 +1347,11 @@
     "com.univision.prendetv|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783926,
+      "at": 1789863932,
       "out": "prendetv-4.47.2_tv-androidtv-tv.apk",
       "package": "com.univision.prendetv",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 4407,
       "version": "4.47.2_tv"
@@ -1429,13 +1429,13 @@
       "version": "3.61.01"
     },
     "com.wanderlog.android|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Wanderlog - Trip Planner App",
       "arch": "arm64",
-      "at": 1788266808,
+      "at": 1789864128,
       "out": "wanderlog.android-2.208-hoomans-arm64.apk",
       "package": "com.wanderlog.android",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2026061623,
       "version": "2.208"
@@ -1443,11 +1443,11 @@
     "com.wbd.hbomax|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783914,
+      "at": 1789863915,
       "out": "hbomax-7.9.0.61-androidtv-tv.apk",
       "package": "com.wbd.hbomax",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 1827090061,
       "version": "7.9.0.61"
@@ -1479,11 +1479,11 @@
     "com.zenthek.autozen|hoomans|arm64": {
       "app_name": "AutoZen-Car Dashboard&Launcher",
       "arch": "arm64",
-      "at": 1788300232,
+      "at": 1789864135,
       "out": "autozen-8.0.10-hoomans-arm64.apk",
       "package": "com.zenthek.autozen",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2648,
       "version": "8.0.10"
@@ -1513,13 +1513,13 @@
       "version": "4.6826"
     },
     "currency.converter.moneta|hoomans|arm64": {
-      "app_name": "Currency Converter - Moneta",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789540751,
+      "at": 1789864124,
       "out": "moneta-1.3.0-hoomans-arm64.apk",
       "package": "currency.converter.moneta",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 178953601,
       "version": "1.3.0"
@@ -1551,11 +1551,11 @@
     "dk.tacit.android.foldersync.lite|hoomans|arm64": {
       "app_name": "FolderSync",
       "arch": "arm64",
-      "at": 1788300237,
+      "at": 1789864137,
       "out": "lite-4.12.0-hoomans-arm64.apk",
       "package": "dk.tacit.android.foldersync.lite",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 2020100209,
       "version": "4.12.0"
@@ -1597,13 +1597,13 @@
       "version": "5.0.67"
     },
     "io.stashteam.games.tracker.stashapp|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "Stash - Track Video Games",
       "arch": "arm64",
-      "at": 1788266813,
+      "at": 1789864142,
       "out": "stashapp-2.48.2-hoomans-arm64.apk",
       "package": "io.stashteam.games.tracker.stashapp",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 250,
       "version": "2.48.2"
@@ -1681,13 +1681,13 @@
       "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "DirectChat (ChatHeads/Bubbles)",
       "arch": "arm64",
-      "at": 1788266815,
+      "at": 1789864146,
       "out": "directchat-1.9.8-hoomans-arm64.apk",
       "package": "net.uniquegem.directchat",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 125,
       "version": "1.9.8"
@@ -1813,13 +1813,13 @@
       "version": "8.3_arm64"
     },
     "studio.muggle.chatboost|hoomans|arm64": {
-      "app_name": "",
+      "app_name": "ChatBoost: AI Agent Client",
       "arch": "arm64",
-      "at": 1788266817,
+      "at": 1789864150,
       "out": "chatboost-3.23.0-hoomans-arm64.apk",
       "package": "studio.muggle.chatboost",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 300500229,
       "version": "3.23.0"
@@ -1827,11 +1827,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783908,
+      "at": 1789863908,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -1839,11 +1839,11 @@
     "tv.twitch.android.app|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1789783934,
+      "at": 1789864145,
       "out": "android.app-13.0.0.2-androidtv-tv.apk",
       "package": "tv.twitch.android.app",
       "tags": {
-        "androidtv": "v1.37.3"
+        "androidtv": "v1.37.4"
       },
       "vc": 1100000018,
       "version": "13.0.0.2"
@@ -1851,11 +1851,11 @@
     "tv.twitch.android.app|hoomans|arm64": {
       "app_name": "Twitch: Live Streaming",
       "arch": "arm64",
-      "at": 1788299416,
+      "at": 1789863927,
       "out": "android.app-30.7.2-hoomans-arm64.apk",
       "package": "tv.twitch.android.app",
       "tags": {
-        "hoomans": "v1.51.1"
+        "hoomans": "v1.52.0"
       },
       "vc": 3007026,
       "version": "30.7.2"
@@ -1874,10 +1874,10 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.37.3",
+    "androidtv": "v1.37.4",
     "de-vanced": "v1.4.3",
     "hoodles": "v1.44.2-dev.1",
-    "hoomans": "v1.51.1",
+    "hoomans": "v1.52.0",
     "hxreborn": "v1.25.0",
     "microg": "7.2.1-dev.2",
     "morphe": "v1.44.0-dev.9",
@@ -1895,16 +1895,16 @@
       174827470
     ],
     "ak.alizandro.smartaudiobookplayer": [
-      1788306809,
-      4930922
+      1789863935,
+      4857202
     ],
     "all.in.one.calculator": [
       1789818088,
       36301495
     ],
     "altergames.carlauncher": [
-      1788266714,
-      13122697
+      1789863939,
+      13114513
     ],
     "app.morphe.android.apps.youtube.music": [
       1789831498,
@@ -1915,8 +1915,8 @@
       120799750
     ],
     "app.remux.video.converter": [
-      1788266716,
-      104791216
+      1789863945,
+      104701112
     ],
     "app.revanced.android.gms": [
       1789684459,
@@ -1963,19 +1963,19 @@
       236359629
     ],
     "com.adobe.reader": [
-      1788306828,
-      134142836
+      1789863957,
+      133979004
     ],
     "com.alltrails.alltrails": [
       1789688119,
       96281193
     ],
     "com.alphaprogression.alphaprogression": [
-      1788266739,
-      151927773
+      1789863983,
+      151903205
     ],
     "com.amazon.amazonvideo.livingroom": [
-      1789783904,
+      1789863900,
       26079339
     ],
     "com.amazon.avod.thirdpartyclient": [
@@ -1991,16 +1991,16 @@
       174411572
     ],
     "com.appfactory.essence": [
-      1788266742,
-      64333099
+      1789863962,
+      64316723
     ],
     "com.atmfee": [
       1788235575,
       14285335
     ],
     "com.atomengineapps.teachmeanatomy": [
-      1788266746,
-      141635595
+      1789863986,
+      141602835
     ],
     "com.audible.application": [
       1789818101,
@@ -2019,24 +2019,24 @@
       24644012
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
-      1789783921,
-      36423801
+      1789863924,
+      36419713
     ],
     "com.bandcamp.android": [
       1789856703,
       13955439
     ],
     "com.bandlab.bandlab": [
-      1788266751,
-      58408930
+      1789863978,
+      58322922
     ],
     "com.blockerhero": [
-      1788266753,
-      5702079
+      1789863984,
+      5702087
     ],
     "com.budget.tracker_app": [
-      1788306820,
-      42976428
+      1789863991,
+      42960052
     ],
     "com.bunpoapp": [
       1789684649,
@@ -2047,32 +2047,32 @@
       54141826
     ],
     "com.camerasideas.instashot": [
-      1788266761,
-      68682740
+      1789864005,
+      68666364
     ],
     "com.cbs.ott": [
-      1789783923,
-      26988091
+      1789863928,
+      26955331
     ],
     "com.cfdrink": [
-      1788266758,
-      55703198
+      1789863996,
+      55514790
     ],
     "com.chess.prathxm": [
       1789836939,
       258524584
     ],
     "com.collectrinc.collectr": [
-      1788300185,
-      74228033
+      1789864005,
+      74207561
     ],
     "com.cricbuzz.android": [
       1789856742,
       25612962
     ],
     "com.cronometer.android.gold": [
-      1788300159,
-      84845593
+      1789864009,
+      84808737
     ],
     "com.cxinventor.file.explorer": [
       1789818104,
@@ -2087,8 +2087,8 @@
       140505958
     ],
     "com.dv.adm": [
-      1788266767,
-      28026190
+      1789864018,
+      27972950
     ],
     "com.etsy.android": [
       1789818111,
@@ -2103,8 +2103,8 @@
       95556431
     ],
     "com.finch.finch": [
-      1788266774,
-      201207455
+      1789864045,
+      201141927
     ],
     "com.gamma.scan": [
       1789818109,
@@ -2139,12 +2139,12 @@
       62171947
     ],
     "com.hevy": [
-      1788266772,
-      129995703
+      1789864040,
+      129819583
     ],
     "com.hv.replaio": [
-      1788266777,
-      38439071
+      1789864036,
+      38324391
     ],
     "com.intsig.camscanner": [
       1789684693,
@@ -2171,8 +2171,8 @@
       30016900
     ],
     "com.maxmpz.audioplayer": [
-      1788266778,
-      20803230
+      1789864048,
+      20795046
     ],
     "com.merriamwebster": [
       1789684695,
@@ -2207,12 +2207,12 @@
       94294767
     ],
     "com.naver.linewebtoon": [
-      1788266784,
-      74576018
+      1789864069,
+      74465434
     ],
     "com.netflix.ninja": [
-      1789783906,
-      107916292
+      1789863907,
+      107912204
     ],
     "com.noctuasoftware.stellarium_free": [
       1788235592,
@@ -2223,16 +2223,16 @@
       230078393
     ],
     "com.paget96.batteryguru": [
-      1788306858,
-      8932883
+      1789864053,
+      8928795
     ],
     "com.pandora.android": [
       1789684719,
       66206425
     ],
     "com.peacocktv.peacockandroid": [
-      1789783913,
-      8067935
+      1789863917,
+      8063847
     ],
     "com.proto.circuitsimulator": [
       1788235595,
@@ -2243,12 +2243,12 @@
       47180461
     ],
     "com.quizlet.quizletandroid": [
-      1788266784,
-      26081730
+      1789864068,
+      26065354
     ],
     "com.realbyteapps.moneymanagerfree": [
-      1789020861,
-      24079587
+      1789864078,
+      24059115
     ],
     "com.reddit.frontpage": [
       1789831497,
@@ -2259,8 +2259,8 @@
       4363421
     ],
     "com.rumble.battles": [
-      1788266789,
-      20462526
+      1789864082,
+      20442054
     ],
     "com.sbs.diet": [
       1789684728,
@@ -2279,12 +2279,12 @@
       57802283
     ],
     "com.soepic.photogallery.release": [
-      1788306866,
-      45658386
+      1789864084,
+      45564186
     ],
     "com.sofascore.results": [
-      1788266794,
-      58067146
+      1789864105,
+      58013906
     ],
     "com.soundcloud.android": [
       1789684566,
@@ -2307,40 +2307,40 @@
       37236102
     ],
     "com.thehungrywasp.iamsober": [
-      1788266792,
-      53281893
+      1789864094,
+      53195885
     ],
     "com.thetrainline": [
       1789818134,
       56853037
     ],
     "com.todoist": [
-      1788306902,
-      38545217
+      1789864097,
+      38545225
     ],
     "com.tracked.mobile": [
-      1788266798,
-      102218063
+      1789864112,
+      101976407
     ],
     "com.ttxapps.autosync": [
       1788235601,
       34858392
     ],
     "com.tubitv": [
-      1789783916,
-      46141068
+      1789863922,
+      46083732
     ],
     "com.tumblr": [
-      1788300233,
-      38118581
+      1789864118,
+      38053053
     ],
     "com.ufovpn.connect.velnet": [
       1788306818,
       70027883
     ],
     "com.univision.prendetv": [
-      1789783926,
-      40116993
+      1789863932,
+      40092425
     ],
     "com.urbandroid.sleep": [
       1789698927,
@@ -2367,12 +2367,12 @@
       66952431
     ],
     "com.wanderlog.android": [
-      1788266808,
-      143032204
+      1789864128,
+      142802836
     ],
     "com.wbd.hbomax": [
-      1789783913,
-      68291586
+      1789863915,
+      68283402
     ],
     "com.windyty.android": [
       1789684775,
@@ -2383,8 +2383,8 @@
       112499744
     ],
     "com.zenthek.autozen": [
-      1788300232,
-      162403859
+      1789864135,
+      162301467
     ],
     "com.zhiliaoapp.musically": [
       1788772911,
@@ -2395,7 +2395,7 @@
       92913887
     ],
     "currency.converter.moneta": [
-      1789540751,
+      1789864124,
       51877046
     ],
     "cz.ackee.ventusky": [
@@ -2407,8 +2407,8 @@
       52418650
     ],
     "dk.tacit.android.foldersync.lite": [
-      1788300237,
-      38749879
+      1789864137,
+      38749887
     ],
     "ginlemon.flowerfree": [
       1789684793,
@@ -2423,8 +2423,8 @@
       85629557
     ],
     "io.stashteam.games.tracker.stashapp": [
-      1788266813,
-      41933347
+      1789864142,
+      41740843
     ],
     "jp.ne.ibis.ibispaintx.app": [
       1789684805,
@@ -2451,8 +2451,8 @@
       7617891
     ],
     "net.uniquegem.directchat": [
-      1788266815,
-      17025225
+      1789864145,
+      17008849
     ],
     "nl.sanomamedia.android.nu": [
       1789856758,
@@ -2495,16 +2495,16 @@
       68164617
     ],
     "studio.muggle.chatboost": [
-      1788266817,
-      20112868
+      1789864149,
+      20100588
     ],
     "tv.pluto.android": [
-      1789783908,
+      1789863908,
       28927428
     ],
     "tv.twitch.android.app": [
-      1788299416,
-      97589978
+      1789863927,
+      97536738
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789684570,
@@ -2518,7 +2518,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "internal",
+      "signing": "external",
       "tag": "v1.17.0-dev.2"
     }
   }
