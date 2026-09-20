@@ -241,25 +241,25 @@
       "version": "3.0.452.1047"
     },
     "com.amazon.mShop.android.shopping|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Amazon Shopping",
       "arch": "arm64",
-      "at": 1789856752,
+      "at": 1789948657,
       "out": "shopping-32.17.0.100-de-vanced-arm64.apk",
       "package": "com.amazon.mShop.android.shopping",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 1243230206,
       "version": "32.17.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1789856727,
+      "at": 1789948577,
       "out": "mp3-26.32.0-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 526320010,
       "version": "26.32.0"
@@ -361,13 +361,13 @@
       "version": "26.8.1.1"
     },
     "com.bandcamp.android|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Bandcamp",
       "arch": "arm64",
-      "at": 1789856703,
+      "at": 1789948548,
       "out": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
       "package": "com.bandcamp.android",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 220489,
       "version": "3.3.6"
@@ -493,13 +493,13 @@
       "version": "2.5.6"
     },
     "com.cricbuzz.android|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Cricbuzz - Live Cricket Scores",
       "arch": "arm64",
-      "at": 1789856742,
+      "at": 1789948625,
       "out": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
       "package": "com.cricbuzz.android",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 1521062401,
       "version": "6.24.01"
@@ -529,13 +529,13 @@
       "version": "2.7.8"
     },
     "com.drinkplusplus.angulus|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Angulus Pro - Precision Angle",
       "arch": "arm64",
-      "at": 1789856744,
+      "at": 1789948634,
       "out": "angulus-6.0.4-de-vanced-arm64.apk",
       "package": "com.drinkplusplus.angulus",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 89,
       "version": "6.0.4"
@@ -577,25 +577,25 @@
       "version": "7.95.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Facebook",
       "arch": "arm64",
-      "at": 1789856696,
+      "at": 1789948559,
       "out": "katana-490.0.0.63.82-de-vanced-arm64.apk",
       "package": "com.facebook.katana",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 457019914,
       "version": "490.0.0.63.82"
     },
     "com.facebook.orca|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Messenger",
       "arch": "arm64",
-      "at": 1789856739,
+      "at": 1789948611,
       "out": "orca-573.0.0.44.88-de-vanced-arm64.apk",
       "package": "com.facebook.orca",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 344611864,
       "version": "573.0.0.44.88"
@@ -673,37 +673,37 @@
       "version": "5.161.0.931240252"
     },
     "com.google.android.apps.photos|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Google Photos",
       "arch": "arm64",
-      "at": 1789856700,
+      "at": 1789948540,
       "out": "photos-7.92.0.977185651-de-vanced-arm64.apk",
       "package": "com.google.android.apps.photos",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 52372370,
       "version": "7.92.0.977185651"
     },
     "com.google.android.apps.recorder|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Recorder",
       "arch": "arm64",
-      "at": 1789856742,
+      "at": 1789948626,
       "out": "recorder-4.2.20260709.976121876-de-vanced-arm64.apk",
       "package": "com.google.android.apps.recorder",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 42423113,
       "version": "4.2.20260709.976121876"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
-      "app_name": "YouTube Music",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789939526,
+      "at": 1789948514,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.44.0-dev.12"
+        "morphe": "v1.44.0-dev.13"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -793,13 +793,13 @@
       "version": "40.30.3"
     },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Letterboxd",
       "arch": "arm64",
-      "at": 1789856730,
+      "at": 1789948608,
       "out": "letterboxd-3.5.7-de-vanced-arm64.apk",
       "package": "com.letterboxd.letterboxd",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 503,
       "version": "3.5.7"
@@ -889,13 +889,13 @@
       "version": "3.70.0"
     },
     "com.microblink.photomath|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Photomath",
       "arch": "arm64",
-      "at": 1789856682,
+      "at": 1789948526,
       "out": "photomath-8.48.0-de-vanced-arm64.apk",
       "package": "com.microblink.photomath",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 70001016,
       "version": "8.48.0"
@@ -937,13 +937,13 @@
       "version": "26.31.0"
     },
     "com.myprog.hexedit|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "HEX Editor",
       "arch": "arm64",
-      "at": 1789856747,
+      "at": 1789948639,
       "out": "hexedit-2.8.3-de-vanced-arm64.apk",
       "package": "com.myprog.hexedit",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 120,
       "version": "2.8.3"
@@ -997,13 +997,13 @@
       "version": "1.16.3"
     },
     "com.nothing.smartcenter|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Nothing X",
       "arch": "arm64",
-      "at": 1789856735,
+      "at": 1789948610,
       "out": "smartcenter-3.8.0-de-vanced-arm64.apk",
       "package": "com.nothing.smartcenter",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 3080004,
       "version": "3.8.0"
@@ -1093,13 +1093,13 @@
       "version": "4.12.12 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "Reddit",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789939534,
+      "at": 1789948512,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.44.0-dev.12"
+        "morphe": "v1.44.0-dev.13"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1213,13 +1213,13 @@
       "version": "2026.08.26-release"
     },
     "com.strava|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Strava: Run, Bike, Walk",
       "arch": "arm64",
-      "at": 1789856697,
+      "at": 1789948530,
       "out": "strava-477.14-de-vanced-arm64.apk",
       "package": "com.strava",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 12399244,
       "version": "477.14"
@@ -1381,13 +1381,13 @@
       "version": "20260916"
     },
     "com.viber.voip|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Rakuten Viber Messenger",
       "arch": "arm64",
-      "at": 1789856757,
+      "at": 1789948670,
       "out": "voip-26.1.2.0-de-vanced-arm64.apk",
       "package": "com.viber.voip",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 1261020,
       "version": "26.1.2.0"
@@ -1549,13 +1549,13 @@
       "version": "53.1"
     },
     "de.gmx.mobile.android.mail|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "GMX - Mail & Cloud",
       "arch": "arm64",
-      "at": 1789856712,
+      "at": 1789948572,
       "out": "mail-9.16.2-de-vanced-arm64.apk",
       "package": "de.gmx.mobile.android.mail",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 405206,
       "version": "9.16.2"
@@ -1585,13 +1585,13 @@
       "version": "6.6 build 016"
     },
     "ginlemon.iconpackstudio|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Icon Pack Studio",
       "arch": "arm64",
-      "at": 1789856711,
+      "at": 1789948575,
       "out": "iconpackstudio-2.4 build 001-de-vanced-arm64.apk",
       "package": "ginlemon.iconpackstudio",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 240010,
       "version": "2.4 build 001"
@@ -1633,13 +1633,13 @@
       "version": "14.1.1"
     },
     "jp.pxv.android|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "pixiv",
       "arch": "arm64",
-      "at": 1789856736,
+      "at": 1789948621,
       "out": "pxv.android-6.196.0-de-vanced-arm64.apk",
       "package": "jp.pxv.android",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 68251,
       "version": "6.196.0"
@@ -1681,16 +1681,16 @@
       "version": "6.4.0"
     },
     "net.binarymode.android.irplus|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "irplus - Infrared Remote",
       "arch": "arm64",
-      "at": 1789860316,
-      "out": "irplus-1.10-de-vanced-arm64.apk",
+      "at": 1789948648,
+      "out": "irplus-1.9.13-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
-      "vc": 322,
-      "version": "1.10"
+      "vc": 307,
+      "version": "1.9.13"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "DirectChat (ChatHeads/Bubbles)",
@@ -1705,13 +1705,13 @@
       "version": "1.9.8"
     },
     "nl.sanomamedia.android.nu|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "NU.nl - Nieuws, Sport & meer",
       "arch": "arm64",
-      "at": 1789856759,
+      "at": 1789948671,
       "out": "nu-26.8.0-de-vanced-arm64.apk",
       "package": "nl.sanomamedia.android.nu",
       "tags": {
-        "de-vanced": "v1.4.3"
+        "de-vanced": "v1.4.4"
       },
       "vc": 210153,
       "version": "26.8.0"
@@ -1887,12 +1887,12 @@
   },
   "bundles": {
     "androidtv": "v1.37.4",
-    "de-vanced": "v1.4.3",
+    "de-vanced": "v1.4.4",
     "hoodles": "v1.44.2-dev.1",
     "hoomans": "v1.52.0",
     "hxreborn": "v1.26.0",
     "microg": "7.2.1-dev.2",
-    "morphe": "v1.44.0-dev.12",
+    "morphe": "v1.44.0-dev.13",
     "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1919,7 +1919,7 @@
       13114513
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789939526,
+      1789948513,
       72140539
     ],
     "app.morphe.android.youtube": [
@@ -1995,11 +1995,11 @@
       108140243
     ],
     "com.amazon.mShop.android.shopping": [
-      1789856749,
+      1789948657,
       128170133
     ],
     "com.amazon.mp3": [
-      1789856723,
+      1789948577,
       174411572
     ],
     "com.appfactory.essence": [
@@ -2035,7 +2035,7 @@
       36419713
     ],
     "com.bandcamp.android": [
-      1789856703,
+      1789948548,
       13955439
     ],
     "com.bandlab.bandlab": [
@@ -2079,7 +2079,7 @@
       74207561
     ],
     "com.cricbuzz.android": [
-      1789856742,
+      1789948624,
       25612962
     ],
     "com.cronometer.android.gold": [
@@ -2091,7 +2091,7 @@
       12199950
     ],
     "com.drinkplusplus.angulus": [
-      1789856744,
+      1789948634,
       38705214
     ],
     "com.duolingo": [
@@ -2107,11 +2107,11 @@
       47658195
     ],
     "com.facebook.katana": [
-      1789856696,
+      1789948557,
       88271218
     ],
     "com.facebook.orca": [
-      1789856738,
+      1789948611,
       95556431
     ],
     "com.finch.finch": [
@@ -2139,11 +2139,11 @@
       14380755
     ],
     "com.google.android.apps.photos": [
-      1789856700,
+      1789948539,
       72454081
     ],
     "com.google.android.apps.recorder": [
-      1789856742,
+      1789948626,
       52308495
     ],
     "com.google.android.dialer": [
@@ -2171,7 +2171,7 @@
       104863731
     ],
     "com.letterboxd.letterboxd": [
-      1789856730,
+      1789948607,
       95018377
     ],
     "com.lingodeer": [
@@ -2199,7 +2199,7 @@
       8054680
     ],
     "com.microblink.photomath": [
-      1789856682,
+      1789948526,
       12235074
     ],
     "com.mirinae.mirinae": [
@@ -2215,7 +2215,7 @@
       44934416
     ],
     "com.myprog.hexedit": [
-      1789856746,
+      1789948639,
       4143288
     ],
     "com.myvitale.forus": [
@@ -2235,7 +2235,7 @@
       129896566
     ],
     "com.nothing.smartcenter": [
-      1789856735,
+      1789948610,
       230078393
     ],
     "com.paget96.batteryguru": [
@@ -2267,7 +2267,7 @@
       24059115
     ],
     "com.reddit.frontpage": [
-      1789939534,
+      1789948512,
       57733463
     ],
     "com.rp.hypertrophy": [
@@ -2307,7 +2307,7 @@
       54351896
     ],
     "com.strava": [
-      1789856697,
+      1789948530,
       116495681
     ],
     "com.streetwriters.notesnook": [
@@ -2363,7 +2363,7 @@
       50204866
     ],
     "com.viber.voip": [
-      1789856757,
+      1789948668,
       123144126
     ],
     "com.vitotechnology.StarWalk2Free": [
@@ -2419,7 +2419,7 @@
       42485350
     ],
     "de.gmx.mobile.android.mail": [
-      1789856712,
+      1789948572,
       52418650
     ],
     "dk.tacit.android.foldersync.lite": [
@@ -2431,7 +2431,7 @@
       16432927
     ],
     "ginlemon.iconpackstudio": [
-      1789856710,
+      1789948575,
       55858995
     ],
     "io.funswitch.blocker": [
@@ -2447,7 +2447,7 @@
       74231524
     ],
     "jp.pxv.android": [
-      1789856736,
+      1789948621,
       39728658
     ],
     "kr.co.yjteam.dailypay": [
@@ -2463,15 +2463,15 @@
       33750120
     ],
     "net.binarymode.android.irplus": [
-      1789860316,
-      7617891
+      1789948648,
+      6129085
     ],
     "net.uniquegem.directchat": [
       1789864145,
       17008849
     ],
     "nl.sanomamedia.android.nu": [
-      1789856758,
+      1789948670,
       41483179
     ],
     "nom.vrd": [
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789863927,
-      97536738
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789684570,
