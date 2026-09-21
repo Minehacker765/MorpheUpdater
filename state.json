@@ -531,14 +531,14 @@
     "com.drinkplusplus.angulus|de-vanced|arm64": {
       "app_name": "Angulus Pro - Precision Angle",
       "arch": "arm64",
-      "at": 1789948634,
-      "out": "angulus-6.0.4-de-vanced-arm64.apk",
+      "at": 1789998886,
+      "out": "angulus-6.1.0-de-vanced-arm64.apk",
       "package": "com.drinkplusplus.angulus",
       "tags": {
         "de-vanced": "v1.4.4"
       },
-      "vc": 89,
-      "version": "6.0.4"
+      "vc": 91,
+      "version": "6.1.0"
     },
     "com.duolingo|hoodles|arm64": {
       "app_name": "Duolingo: Language Lessons",
@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789997094,
+      "at": 1789998884,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.44.0-dev.18"
+        "morphe": "v1.44.0-dev.19"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -1095,11 +1095,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789997093,
+      "at": 1789998883,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.44.0-dev.18"
+        "morphe": "v1.44.0-dev.19"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1892,7 +1892,7 @@
     "hoomans": "v1.53.0",
     "hxreborn": "v1.27.0",
     "microg": "7.2.1-dev.2",
-    "morphe": "v1.44.0-dev.18",
+    "morphe": "v1.44.0-dev.19",
     "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1919,7 +1919,7 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789997094,
+      1789998884,
       72234747
     ],
     "app.morphe.android.youtube": [
@@ -2091,8 +2091,8 @@
       12199950
     ],
     "com.drinkplusplus.angulus": [
-      1789948634,
-      38705214
+      1789998886,
+      58027194
     ],
     "com.duolingo": [
       1789971918,
@@ -2267,7 +2267,7 @@
       24083683
     ],
     "com.reddit.frontpage": [
-      1789997093,
+      1789998883,
       57733463
     ],
     "com.rp.hypertrophy": [
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789971947,
