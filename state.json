@@ -1083,11 +1083,11 @@
     "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
       "app_name": "Money Manager Expense & Budget",
       "arch": "arm64",
-      "at": 1789864078,
+      "at": 1789952095,
       "out": "moneymanagerfree-4.12.12 GF-hoomans-arm64.apk",
       "package": "com.realbyteapps.moneymanagerfree",
       "tags": {
-        "hoomans": "v1.52.0"
+        "hoomans": "v1.53.0"
       },
       "vc": 1203,
       "version": "4.12.12 GF"
@@ -1683,14 +1683,14 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "irplus - Infrared Remote",
       "arch": "arm64",
-      "at": 1789948648,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1789952086,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.4.4"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "DirectChat (ChatHeads/Bubbles)",
@@ -2263,8 +2263,8 @@
       26081730
     ],
     "com.realbyteapps.moneymanagerfree": [
-      1789864078,
-      24059115
+      1789952095,
+      25111779
     ],
     "com.reddit.frontpage": [
       1789948512,
@@ -2463,8 +2463,8 @@
       33750120
     ],
     "net.binarymode.android.irplus": [
-      1789948648,
-      6129085
+      1789952086,
+      7617891
     ],
     "net.uniquegem.directchat": [
       1789950445,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789684570,
