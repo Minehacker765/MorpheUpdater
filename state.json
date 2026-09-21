@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1789980905,
+      "at": 1789988087,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.44.0-dev.15"
+        "morphe": "v1.44.0-dev.17"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -783,14 +783,14 @@
     "com.kick.mobile|hxreborn|arm64": {
       "app_name": "KICK: Live Streaming",
       "arch": "arm64",
-      "at": 1789923359,
-      "out": "kick.mobile-40.30.3-hxreborn-arm64.apk",
+      "at": 1789988101,
+      "out": "kick.mobile-40.30.4-hxreborn-arm64.apk",
       "package": "com.kick.mobile",
       "tags": {
         "hxreborn": "v1.26.0"
       },
-      "vc": 60006947,
-      "version": "40.30.3"
+      "vc": 60006950,
+      "version": "40.30.4"
     },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
@@ -1093,13 +1093,13 @@
       "version": "4.12.13 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "Reddit",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1789986298,
+      "at": 1789988086,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.44.0-dev.16"
+        "morphe": "v1.44.0-dev.17"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1892,7 +1892,7 @@
     "hoomans": "v1.53.0",
     "hxreborn": "v1.26.0",
     "microg": "7.2.1-dev.2",
-    "morphe": "v1.44.0-dev.16",
+    "morphe": "v1.44.0-dev.17",
     "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1919,8 +1919,8 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1789980904,
-      72136443
+      1789988087,
+      72120059
     ],
     "app.morphe.android.youtube": [
       1789718750,
@@ -2167,8 +2167,8 @@
       153601763
     ],
     "com.kick.mobile": [
-      1789923359,
-      104863731
+      1789988100,
+      104994803
     ],
     "com.letterboxd.letterboxd": [
       1789948607,
@@ -2267,7 +2267,7 @@
       24083683
     ],
     "com.reddit.frontpage": [
-      1789986298,
+      1789988086,
       57733463
     ],
     "com.rp.hypertrophy": [
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1789971947,
