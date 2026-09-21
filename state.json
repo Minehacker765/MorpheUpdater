@@ -1107,11 +1107,11 @@
     "com.rp.hypertrophy|hoodles|arm64": {
       "app_name": "RP Hypertrophy",
       "arch": "arm64",
-      "at": 1789972204,
+      "at": 1790029473,
       "out": "hypertrophy-1.1.0-hoodles-arm64.apk",
       "package": "com.rp.hypertrophy",
       "tags": {
-        "hoodles": "v1.45.0-dev.1"
+        "hoodles": "v1.45.0-dev.2"
       },
       "vc": 58,
       "version": "1.1.0"
@@ -2271,8 +2271,8 @@
       57733463
     ],
     "com.rp.hypertrophy": [
-      1789972204,
-      4375749
+      1790029473,
+      4367565
     ],
     "com.rumble.battles": [
       1789950386,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789864145,
-      56671443
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
