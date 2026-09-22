@@ -2,7 +2,7 @@
   "repo": {
     "name": "Morphe Updater",
     "description": "Patched apps rebuilt automatically",
-    "timestamp": 1790087480640,
+    "timestamp": 1790089367139,
     "version": 20001,
     "maxage": 0,
     "packages": {},
@@ -19,8 +19,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466022,
-      "lastUpdated": 1790087466220,
+      "added": 1790089352547,
+      "lastUpdated": 1790089352740,
       "webSite": "https://play.google.com/store/apps/details?id=com.adguard.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -42,8 +42,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466313,
-      "lastUpdated": 1790087466313,
+      "added": 1790089352839,
+      "lastUpdated": 1790089352839,
       "webSite": "https://play.google.com/store/apps/details?id=com.dv.adm",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -65,8 +65,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466361,
-      "lastUpdated": 1790087466361,
+      "added": 1790089352886,
+      "lastUpdated": 1790089352886,
       "webSite": "https://play.google.com/store/apps/details?id=com.adobe.reader",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -88,8 +88,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466516,
-      "lastUpdated": 1790087466516,
+      "added": 1790089353032,
+      "lastUpdated": 1790089353032,
       "webSite": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -111,8 +111,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466640,
-      "lastUpdated": 1790087466640,
+      "added": 1790089353148,
+      "lastUpdated": 1790089353148,
       "webSite": "https://play.google.com/store/apps/details?id=com.alphaprogression.alphaprogression",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -134,8 +134,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470411,
-      "lastUpdated": 1790087470411,
+      "added": 1790089356700,
+      "lastUpdated": 1790089356700,
       "webSite": "https://play.google.com/store/apps/details?id=psyberia.alpinequest.free",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -157,8 +157,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474193,
-      "lastUpdated": 1790087474193,
+      "added": 1790089360367,
+      "lastUpdated": 1790089360367,
       "webSite": "https://play.google.com/store/apps/details?id=com.amazon.mp3",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -180,8 +180,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476677,
-      "lastUpdated": 1790087476677,
+      "added": 1790089362687,
+      "lastUpdated": 1790089362687,
       "webSite": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -203,8 +203,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467035,
-      "lastUpdated": 1790087467035,
+      "added": 1790089353487,
+      "lastUpdated": 1790089353487,
       "webSite": "https://play.google.com/store/apps/details?id=com.drinkplusplus.angulus",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -226,8 +226,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467556,
-      "lastUpdated": 1790087467556,
+      "added": 1790089353988,
+      "lastUpdated": 1790089353988,
       "webSite": "https://play.google.com/store/apps/details?id=com.atmfee",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -244,13 +244,13 @@
       "packageName": "com.audible.application",
       "name": "Audible",
       "summary": "Audible patched with Morphe",
-      "description": "Audible patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.audible.application 26.30.05 (patched APK signed with the F-Droid repo key).",
+      "description": "Audible patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.audible.application 26.30.05 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467367,
-      "lastUpdated": 1790087467367,
+      "added": 1790089353799,
+      "lastUpdated": 1790089353799,
       "webSite": "https://play.google.com/store/apps/details?id=com.audible.application",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -272,8 +272,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467614,
-      "lastUpdated": 1790087467614,
+      "added": 1790089354053,
+      "lastUpdated": 1790089354053,
       "webSite": "https://play.google.com/store/apps/details?id=com.llamalab.automate",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -295,8 +295,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467632,
-      "lastUpdated": 1790087467632,
+      "added": 1790089354068,
+      "lastUpdated": 1790089354068,
       "webSite": "https://play.google.com/store/apps/details?id=com.ttxapps.autosync",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -318,8 +318,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467691,
-      "lastUpdated": 1790087467691,
+      "added": 1790089354123,
+      "lastUpdated": 1790089354123,
       "webSite": "https://play.google.com/store/apps/details?id=com.zenthek.autozen",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -341,8 +341,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467891,
-      "lastUpdated": 1790087467891,
+      "added": 1790089354312,
+      "lastUpdated": 1790089354312,
       "webSite": "https://play.google.com/store/apps/details?id=com.avocards",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -364,8 +364,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480165,
-      "lastUpdated": 1790087480165,
+      "added": 1790089366659,
+      "lastUpdated": 1790089366659,
       "webSite": "https://play.google.com/store/apps/details?id=com.backdrops.wallpapers",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -387,8 +387,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467921,
-      "lastUpdated": 1790087467921,
+      "added": 1790089354339,
+      "lastUpdated": 1790089354339,
       "webSite": "https://play.google.com/store/apps/details?id=com.bandcamp.android",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -410,8 +410,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467944,
-      "lastUpdated": 1790087467944,
+      "added": 1790089354360,
+      "lastUpdated": 1790089354360,
       "webSite": "https://play.google.com/store/apps/details?id=com.bandlab.bandlab",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -433,8 +433,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468019,
-      "lastUpdated": 1790087468019,
+      "added": 1790089354438,
+      "lastUpdated": 1790089354438,
       "webSite": "https://play.google.com/store/apps/details?id=com.paget96.batteryguru",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -456,8 +456,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468069,
-      "lastUpdated": 1790087468069,
+      "added": 1790089354480,
+      "lastUpdated": 1790089354480,
       "webSite": "https://play.google.com/store/apps/details?id=bitpit.launcher",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -479,8 +479,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468094,
-      "lastUpdated": 1790087468094,
+      "added": 1790089354502,
+      "lastUpdated": 1790089354502,
       "webSite": "https://play.google.com/store/apps/details?id=io.funswitch.blocker",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -502,8 +502,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468201,
-      "lastUpdated": 1790087468201,
+      "added": 1790089354603,
+      "lastUpdated": 1790089354603,
       "webSite": "https://play.google.com/store/apps/details?id=com.blockerhero",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -525,8 +525,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478582,
-      "lastUpdated": 1790087478582,
+      "added": 1790089365100,
+      "lastUpdated": 1790089365100,
       "webSite": "https://play.google.com/store/apps/details?id=com.budget.tracker_app",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -548,8 +548,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468216,
-      "lastUpdated": 1790087468216,
+      "added": 1790089354621,
+      "lastUpdated": 1790089354621,
       "webSite": "https://play.google.com/store/apps/details?id=com.bunpoapp",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -571,8 +571,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469695,
-      "lastUpdated": 1790087469695,
+      "added": 1790089356036,
+      "lastUpdated": 1790089356036,
       "webSite": "https://play.google.com/store/apps/details?id=com.busuu.android.enc",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -589,13 +589,13 @@
       "packageName": "all.in.one.calculator",
       "name": "Calculator",
       "summary": "Calculator patched with Morphe",
-      "description": "Calculator patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: all.in.one.calculator 3.4.0 (patched APK signed with the F-Droid repo key).",
+      "description": "Calculator patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: all.in.one.calculator 3.4.0 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468314,
-      "lastUpdated": 1790087468314,
+      "added": 1790089354710,
+      "lastUpdated": 1790089354710,
       "webSite": "https://play.google.com/store/apps/details?id=all.in.one.calculator",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -617,8 +617,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468386,
-      "lastUpdated": 1790087468386,
+      "added": 1790089354783,
+      "lastUpdated": 1790089354783,
       "webSite": "https://play.google.com/store/apps/details?id=com.intsig.camscanner",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -640,8 +640,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468555,
-      "lastUpdated": 1790087468555,
+      "added": 1790089354942,
+      "lastUpdated": 1790089354942,
       "webSite": "https://play.google.com/store/apps/details?id=altergames.carlauncher",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -663,8 +663,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468582,
-      "lastUpdated": 1790087468582,
+      "added": 1790089354969,
+      "lastUpdated": 1790089354969,
       "webSite": "https://play.google.com/store/apps/details?id=com.cfdrink",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -686,8 +686,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468656,
-      "lastUpdated": 1790087468656,
+      "added": 1790089355040,
+      "lastUpdated": 1790089355040,
       "webSite": "https://play.google.com/store/apps/details?id=studio.muggle.chatboost",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -709,8 +709,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468727,
-      "lastUpdated": 1790087468727,
+      "added": 1790089355082,
+      "lastUpdated": 1790089355082,
       "webSite": "https://play.google.com/store/apps/details?id=com.chess",
       "sourceCode": "https://github.com/PrathxmOp/Prathxm-Patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -732,8 +732,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469035,
-      "lastUpdated": 1790087469035,
+      "added": 1790089355389,
+      "lastUpdated": 1790089355389,
       "webSite": "https://play.google.com/store/apps/details?id=com.proto.circuitsimulator",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -755,8 +755,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469068,
-      "lastUpdated": 1790087469068,
+      "added": 1790089355424,
+      "lastUpdated": 1790089355424,
       "webSite": "https://play.google.com/store/apps/details?id=com.collectrinc.collectr",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -778,8 +778,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469166,
-      "lastUpdated": 1790087469166,
+      "added": 1790089355534,
+      "lastUpdated": 1790089355534,
       "webSite": "https://play.google.com/store/apps/details?id=com.cricbuzz.android",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -801,8 +801,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470633,
-      "lastUpdated": 1790087470633,
+      "added": 1790089356919,
+      "lastUpdated": 1790089356919,
       "webSite": "https://play.google.com/store/apps/details?id=com.cronometer.android.gold",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -824,8 +824,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469198,
-      "lastUpdated": 1790087469198,
+      "added": 1790089355565,
+      "lastUpdated": 1790089355565,
       "webSite": "https://play.google.com/store/apps/details?id=kr.co.yjteam.dailypay",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -847,8 +847,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469405,
-      "lastUpdated": 1790087469405,
+      "added": 1790089355765,
+      "lastUpdated": 1790089355765,
       "webSite": "https://play.google.com/store/apps/details?id=net.uniquegem.directchat",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -870,8 +870,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469461,
-      "lastUpdated": 1790087469461,
+      "added": 1790089355819,
+      "lastUpdated": 1790089355819,
       "webSite": "https://play.google.com/store/apps/details?id=com.duolingo",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -893,8 +893,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469615,
-      "lastUpdated": 1790087469615,
+      "added": 1790089355964,
+      "lastUpdated": 1790089355964,
       "webSite": "https://play.google.com/store/apps/details?id=kr.eggbun.eggconvo",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -916,8 +916,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469760,
-      "lastUpdated": 1790087469760,
+      "added": 1790089356097,
+      "lastUpdated": 1790089356097,
       "webSite": "https://play.google.com/store/apps/details?id=com.appfactory.essence",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -934,13 +934,13 @@
       "packageName": "com.etsy.android",
       "name": "Etsy",
       "summary": "Etsy patched with Morphe",
-      "description": "Etsy patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.etsy.android 7.96.0 (patched APK signed with the F-Droid repo key).",
+      "description": "Etsy patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.etsy.android 7.95.0 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469834,
-      "lastUpdated": 1790087469834,
+      "added": 1790089356167,
+      "lastUpdated": 1790089356167,
       "webSite": "https://play.google.com/store/apps/details?id=com.etsy.android",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -951,7 +951,7 @@
           "icon": "com.etsy.android.png"
         }
       },
-      "suggestedVersionCode": 79600135
+      "suggestedVersionCode": 79500148
     },
     {
       "packageName": "com.facebook.katana",
@@ -962,8 +962,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471606,
-      "lastUpdated": 1790087471606,
+      "added": 1790089357850,
+      "lastUpdated": 1790089357850,
       "webSite": "https://play.google.com/store/apps/details?id=com.facebook.katana",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -980,13 +980,13 @@
       "packageName": "com.cxinventor.file.explorer",
       "name": "File Explorer",
       "summary": "File Explorer patched with Morphe",
-      "description": "File Explorer patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.cxinventor.file.explorer 2.7.8 (patched APK signed with the F-Droid repo key).",
+      "description": "File Explorer patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.cxinventor.file.explorer 2.7.8 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469889,
-      "lastUpdated": 1790087469889,
+      "added": 1790089356222,
+      "lastUpdated": 1790089356222,
       "webSite": "https://play.google.com/store/apps/details?id=com.cxinventor.file.explorer",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1008,8 +1008,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469930,
-      "lastUpdated": 1790087469930,
+      "added": 1790089356262,
+      "lastUpdated": 1790089356262,
       "webSite": "https://play.google.com/store/apps/details?id=com.finch.finch",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1031,8 +1031,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470281,
-      "lastUpdated": 1790087470281,
+      "added": 1790089356574,
+      "lastUpdated": 1790089356574,
       "webSite": "https://play.google.com/store/apps/details?id=ginlemon.flowerfree",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1054,8 +1054,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472196,
-      "lastUpdated": 1790087472196,
+      "added": 1790089358454,
+      "lastUpdated": 1790089358454,
       "webSite": "https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.lite",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1072,13 +1072,13 @@
       "packageName": "com.myvitale.forus",
       "name": "Forus",
       "summary": "Forus patched with Morphe",
-      "description": "Forus patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.myvitale.forus 3.0.15 (patched APK signed with the F-Droid repo key).",
+      "description": "Forus patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.myvitale.forus 3.0.15 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470305,
-      "lastUpdated": 1790087470305,
+      "added": 1790089356597,
+      "lastUpdated": 1790089356597,
       "webSite": "https://play.google.com/store/apps/details?id=com.myvitale.forus",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1095,13 +1095,13 @@
       "packageName": "com.gamma.scan",
       "name": "Gamma Scan",
       "summary": "Gamma Scan patched with Morphe",
-      "description": "Gamma Scan patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.gamma.scan 2.2.221 (patched APK signed with the F-Droid repo key).",
+      "description": "Gamma Scan patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.gamma.scan 2.2.221 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476612,
-      "lastUpdated": 1790087476612,
+      "added": 1790089362625,
+      "lastUpdated": 1790089362625,
       "webSite": "https://play.google.com/store/apps/details?id=com.gamma.scan",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1123,8 +1123,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470602,
-      "lastUpdated": 1790087470602,
+      "added": 1790089356891,
+      "lastUpdated": 1790089356891,
       "webSite": "https://play.google.com/store/apps/details?id=com.github.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1146,8 +1146,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472621,
-      "lastUpdated": 1790087472621,
+      "added": 1790089358850,
+      "lastUpdated": 1790089358850,
       "webSite": "https://play.google.com/store/apps/details?id=de.gmx.mobile.android.mail",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1169,8 +1169,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470738,
-      "lastUpdated": 1790087470738,
+      "added": 1790089357023,
+      "lastUpdated": 1790089357023,
       "webSite": "https://play.google.com/store/apps/details?id=com.goodreads",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1192,8 +1192,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472597,
-      "lastUpdated": 1790087472597,
+      "added": 1790089358829,
+      "lastUpdated": 1790089358829,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.apps.magazines",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1215,8 +1215,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475661,
-      "lastUpdated": 1790087475661,
+      "added": 1790089361753,
+      "lastUpdated": 1790089361753,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.apps.photos",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1238,8 +1238,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470799,
-      "lastUpdated": 1790087470799,
+      "added": 1790089357082,
+      "lastUpdated": 1790089357082,
       "webSite": "https://play.google.com/store/apps/details?id=com.qbis.guessthecountry",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1261,8 +1261,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470863,
-      "lastUpdated": 1790087470863,
+      "added": 1790089357144,
+      "lastUpdated": 1790089357144,
       "webSite": "https://play.google.com/store/apps/details?id=com.wbd.hbomax",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1284,8 +1284,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470959,
-      "lastUpdated": 1790087470959,
+      "added": 1790089357234,
+      "lastUpdated": 1790089357234,
       "webSite": "https://play.google.com/store/apps/details?id=com.hellochinese",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1307,8 +1307,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471036,
-      "lastUpdated": 1790087471036,
+      "added": 1790089357306,
+      "lastUpdated": 1790089357306,
       "webSite": "https://play.google.com/store/apps/details?id=com.hevy",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1330,8 +1330,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471188,
-      "lastUpdated": 1790087471188,
+      "added": 1790089357453,
+      "lastUpdated": 1790089357453,
       "webSite": "https://play.google.com/store/apps/details?id=com.myprog.hexedit",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1353,8 +1353,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471204,
-      "lastUpdated": 1790087471204,
+      "added": 1790089357471,
+      "lastUpdated": 1790089357471,
       "webSite": "https://play.google.com/store/apps/details?id=com.thehungrywasp.iamsober",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1376,8 +1376,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471276,
-      "lastUpdated": 1790087471276,
+      "added": 1790089357535,
+      "lastUpdated": 1790089357535,
       "webSite": "https://play.google.com/store/apps/details?id=jp.ne.ibis.ibispaintx.app",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1399,8 +1399,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471390,
-      "lastUpdated": 1790087471390,
+      "added": 1790089357640,
+      "lastUpdated": 1790089357640,
       "webSite": "https://play.google.com/store/apps/details?id=ginlemon.iconpackstudio",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1422,8 +1422,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471359,
-      "lastUpdated": 1790087471359,
+      "added": 1790089357613,
+      "lastUpdated": 1790089357613,
       "webSite": "https://play.google.com/store/apps/details?id=cn.ommiao.iconpacker",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1445,8 +1445,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471473,
-      "lastUpdated": 1790087471473,
+      "added": 1790089357726,
+      "lastUpdated": 1790089357726,
       "webSite": "https://play.google.com/store/apps/details?id=com.camerasideas.instashot",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1468,8 +1468,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471558,
-      "lastUpdated": 1790087471558,
+      "added": 1790089357822,
+      "lastUpdated": 1790089357822,
       "webSite": "https://play.google.com/store/apps/details?id=net.binarymode.android.irplus",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1486,13 +1486,13 @@
       "packageName": "com.kick.mobile",
       "name": "Kick",
       "summary": "Kick patched with Morphe",
-      "description": "Kick patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.kick.mobile 40.30.4 (patched APK signed with the F-Droid repo key).",
+      "description": "Kick patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.kick.mobile 40.30.4 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471707,
-      "lastUpdated": 1790087471707,
+      "added": 1790089357947,
+      "lastUpdated": 1790089357947,
       "webSite": "https://play.google.com/store/apps/details?id=com.kick.mobile",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1514,8 +1514,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471828,
-      "lastUpdated": 1790087471828,
+      "added": 1790089358091,
+      "lastUpdated": 1790089358091,
       "webSite": "https://play.google.com/store/apps/details?id=com.letterboxd.letterboxd",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1537,8 +1537,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472293,
-      "lastUpdated": 1790087472293,
+      "added": 1790089358546,
+      "lastUpdated": 1790089358546,
       "webSite": "https://play.google.com/store/apps/details?id=com.adobe.lrmobile",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1560,8 +1560,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479146,
-      "lastUpdated": 1790087479146,
+      "added": 1790089365646,
+      "lastUpdated": 1790089365646,
       "webSite": "https://play.google.com/store/apps/details?id=com.simyasolutions.ling.universal",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1583,8 +1583,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472052,
-      "lastUpdated": 1790087472052,
+      "added": 1790089358315,
+      "lastUpdated": 1790089358315,
       "webSite": "https://play.google.com/store/apps/details?id=com.lingodeer",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1606,8 +1606,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472131,
-      "lastUpdated": 1790087472131,
+      "added": 1790089358388,
+      "lastUpdated": 1790089358388,
       "webSite": "https://play.google.com/store/apps/details?id=org.languageapp.lingory",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1629,8 +1629,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472559,
-      "lastUpdated": 1790087472559,
+      "added": 1790089358793,
+      "lastUpdated": 1790089358793,
       "webSite": "https://play.google.com/store/apps/details?id=com.lyfta",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1652,8 +1652,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087465704,
-      "lastUpdated": 1790087465704,
+      "added": 1790089352241,
+      "lastUpdated": 1790089352241,
       "webSite": "https://play.google.com/store/apps/details?id=com.zombodroid.MemeGenerator",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1675,8 +1675,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472687,
-      "lastUpdated": 1790087472687,
+      "added": 1790089358915,
+      "lastUpdated": 1790089358915,
       "webSite": "https://play.google.com/store/apps/details?id=com.merriamwebster",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1698,8 +1698,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475203,
-      "lastUpdated": 1790087475203,
+      "added": 1790089361310,
+      "lastUpdated": 1790089361310,
       "webSite": "https://play.google.com/store/apps/details?id=com.facebook.orca",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1721,8 +1721,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472850,
-      "lastUpdated": 1790087473816,
+      "added": 1790089359076,
+      "lastUpdated": 1790089359996,
       "webSite": "https://play.google.com/store/apps/details?id=com.mgoogle.android.gms",
       "sourceCode": "https://github.com/MorpheApp/MicroG-RE",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1744,8 +1744,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470513,
-      "lastUpdated": 1790087470513,
+      "added": 1790089356809,
+      "lastUpdated": 1790089356809,
       "webSite": "https://play.google.com/store/apps/details?id=com.getmimo",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1767,8 +1767,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087473876,
-      "lastUpdated": 1790087473876,
+      "added": 1790089360047,
+      "lastUpdated": 1790089360047,
       "webSite": "https://play.google.com/store/apps/details?id=com.mirinae.mirinae",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1790,8 +1790,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467507,
-      "lastUpdated": 1790087467507,
+      "added": 1790089353925,
+      "lastUpdated": 1790089353925,
       "webSite": "https://play.google.com/store/apps/details?id=com.bamnetworks.mobile.android.gameday.atbat",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1813,8 +1813,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480370,
-      "lastUpdated": 1790087480370,
+      "added": 1790089366869,
+      "lastUpdated": 1790089366869,
       "webSite": "https://play.google.com/store/apps/details?id=com.mobilefootie.wc2010",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1836,8 +1836,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474070,
-      "lastUpdated": 1790087474070,
+      "added": 1790089360260,
+      "lastUpdated": 1790089360260,
       "webSite": "https://play.google.com/store/apps/details?id=currency.converter.moneta",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1859,8 +1859,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474150,
-      "lastUpdated": 1790087474150,
+      "added": 1790089360327,
+      "lastUpdated": 1790089360327,
       "webSite": "https://play.google.com/store/apps/details?id=com.realbyteapps.moneymanagerfree",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1882,8 +1882,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474827,
-      "lastUpdated": 1790087474827,
+      "added": 1790089360951,
+      "lastUpdated": 1790089360951,
       "webSite": "https://play.google.com/store/apps/details?id=org.totschnig.myexpenses",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1905,8 +1905,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474786,
-      "lastUpdated": 1790087474786,
+      "added": 1790089360913,
+      "lastUpdated": 1790089360913,
       "webSite": "https://play.google.com/store/apps/details?id=me.mycake",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1928,8 +1928,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474851,
-      "lastUpdated": 1790087474851,
+      "added": 1790089360975,
+      "lastUpdated": 1790089360975,
       "webSite": "https://play.google.com/store/apps/details?id=com.myfitnesspal.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1951,8 +1951,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474904,
-      "lastUpdated": 1790087474904,
+      "added": 1790089361025,
+      "lastUpdated": 1790089361025,
       "webSite": "https://play.google.com/store/apps/details?id=com.netflix.ninja",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1969,13 +1969,13 @@
       "packageName": "com.streetwriters.notesnook",
       "name": "Notesnook",
       "summary": "Notesnook patched with Morphe",
-      "description": "Notesnook patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.streetwriters.notesnook 3.4.12 (patched APK signed with the F-Droid repo key).",
+      "description": "Notesnook patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.streetwriters.notesnook 3.4.12 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475042,
-      "lastUpdated": 1790087475042,
+      "added": 1790089361151,
+      "lastUpdated": 1790089361151,
       "webSite": "https://play.google.com/store/apps/details?id=com.streetwriters.notesnook",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -1997,8 +1997,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476925,
-      "lastUpdated": 1790087476925,
+      "added": 1790089362941,
+      "lastUpdated": 1790089362941,
       "webSite": "https://play.google.com/store/apps/details?id=com.nothing.smartcenter",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2020,8 +2020,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475122,
-      "lastUpdated": 1790087475122,
+      "added": 1790089361229,
+      "lastUpdated": 1790089361229,
       "webSite": "https://play.google.com/store/apps/details?id=nl.sanomamedia.android.nu",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2043,8 +2043,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475338,
-      "lastUpdated": 1790087475338,
+      "added": 1790089361450,
+      "lastUpdated": 1790089361450,
       "webSite": "https://play.google.com/store/apps/details?id=com.pandora.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2066,8 +2066,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475302,
-      "lastUpdated": 1790087475302,
+      "added": 1790089361408,
+      "lastUpdated": 1790089361408,
       "webSite": "https://play.google.com/store/apps/details?id=com.cbs.ott",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2089,8 +2089,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475529,
-      "lastUpdated": 1790087475529,
+      "added": 1790089361642,
+      "lastUpdated": 1790089361642,
       "webSite": "https://play.google.com/store/apps/details?id=com.peacocktv.peacockandroid",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2112,8 +2112,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467118,
-      "lastUpdated": 1790087467118,
+      "added": 1790089353576,
+      "lastUpdated": 1790089353576,
       "webSite": "https://play.google.com/store/apps/details?id=ai.perplexity.app.android",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2135,8 +2135,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469227,
-      "lastUpdated": 1790087469227,
+      "added": 1790089355592,
+      "lastUpdated": 1790089355592,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.dialer",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2153,13 +2153,13 @@
       "packageName": "photo.editor.photoeditor.photoeditorpro",
       "name": "Photo Editor Pro",
       "summary": "Photo Editor Pro patched with Morphe",
-      "description": "Photo Editor Pro patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: photo.editor.photoeditor.photoeditorpro 1.791.265 (patched APK signed with the F-Droid repo key).",
+      "description": "Photo Editor Pro patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: photo.editor.photoeditor.photoeditorpro 1.791.265 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475548,
-      "lastUpdated": 1790087475548,
+      "added": 1790089361676,
+      "lastUpdated": 1790089361676,
       "webSite": "https://play.google.com/store/apps/details?id=photo.editor.photoeditor.photoeditorpro",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2181,8 +2181,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476402,
-      "lastUpdated": 1790087476402,
+      "added": 1790089362440,
+      "lastUpdated": 1790089362440,
       "webSite": "https://play.google.com/store/apps/details?id=com.soepic.photogallery.release",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2204,8 +2204,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475629,
-      "lastUpdated": 1790087475629,
+      "added": 1790089361720,
+      "lastUpdated": 1790089361720,
       "webSite": "https://play.google.com/store/apps/details?id=com.microblink.photomath",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2227,8 +2227,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476147,
-      "lastUpdated": 1790087476147,
+      "added": 1790089362198,
+      "lastUpdated": 1790089362198,
       "webSite": "https://play.google.com/store/apps/details?id=jp.pxv.android",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2250,8 +2250,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475780,
-      "lastUpdated": 1790087475780,
+      "added": 1790089361860,
+      "lastUpdated": 1790089361860,
       "webSite": "https://play.google.com/store/apps/details?id=tv.pluto.android",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2273,8 +2273,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475826,
-      "lastUpdated": 1790087475826,
+      "added": 1790089361902,
+      "lastUpdated": 1790089361902,
       "webSite": "https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2296,8 +2296,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087467579,
-      "lastUpdated": 1790087467579,
+      "added": 1790089354015,
+      "lastUpdated": 1790089354015,
       "webSite": "https://play.google.com/store/apps/details?id=com.maxmpz.audioplayer",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2319,8 +2319,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478270,
-      "lastUpdated": 1790087478270,
+      "added": 1790089364794,
+      "lastUpdated": 1790089364794,
       "webSite": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2342,8 +2342,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087472247,
-      "lastUpdated": 1790087472247,
+      "added": 1790089358501,
+      "lastUpdated": 1790089358501,
       "webSite": "https://play.google.com/store/apps/details?id=com.amazon.amazonvideo.livingroom",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2360,13 +2360,13 @@
       "packageName": "ch.protonmail.android",
       "name": "Proton Mail",
       "summary": "Proton Mail patched with Morphe",
-      "description": "Proton Mail patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: ch.protonmail.android 7.11.5 (patched APK signed with the F-Droid repo key).",
+      "description": "Proton Mail patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: ch.protonmail.android 7.11.5 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475916,
-      "lastUpdated": 1790087475916,
+      "added": 1790089361985,
+      "lastUpdated": 1790089361985,
       "webSite": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2388,8 +2388,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476097,
-      "lastUpdated": 1790087476097,
+      "added": 1790089362149,
+      "lastUpdated": 1790089362149,
       "webSite": "https://play.google.com/store/apps/details?id=ch.protonvpn.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2411,8 +2411,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476194,
-      "lastUpdated": 1790087476194,
+      "added": 1790089362243,
+      "lastUpdated": 1790089362243,
       "webSite": "https://play.google.com/store/apps/details?id=ru.iiec.pydroid3",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2434,8 +2434,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476283,
-      "lastUpdated": 1790087476283,
+      "added": 1790089362326,
+      "lastUpdated": 1790089362326,
       "webSite": "https://play.google.com/store/apps/details?id=com.quizlet.quizletandroid",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2452,13 +2452,13 @@
       "packageName": "org.readera",
       "name": "ReadEra",
       "summary": "ReadEra patched with Morphe",
-      "description": "ReadEra patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: org.readera 26.05.20+2300 (patched APK signed with the F-Droid repo key).",
+      "description": "ReadEra patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: org.readera 26.05.20+2300 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476322,
-      "lastUpdated": 1790087476322,
+      "added": 1790089362362,
+      "lastUpdated": 1790089362362,
       "webSite": "https://play.google.com/store/apps/details?id=org.readera",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2480,8 +2480,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476341,
-      "lastUpdated": 1790087476341,
+      "added": 1790089362382,
+      "lastUpdated": 1790089362382,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.apps.recorder",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2498,13 +2498,13 @@
       "packageName": "com.reddit.frontpage.morphe",
       "name": "Reddit",
       "summary": "Reddit patched with Morphe",
-      "description": "Reddit patched with Morphe.\n\nPatches: morphe v1.45.0-dev.1.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.reddit.frontpage 2026.14.0 (patched APK signed with the F-Droid repo key).",
+      "description": "Reddit patched with Morphe.\n\nPatches: morphe v1.45.0-dev.2.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.reddit.frontpage 2026.14.0 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470431,
-      "lastUpdated": 1790087470431,
+      "added": 1790089356734,
+      "lastUpdated": 1790089356734,
       "webSite": "https://play.google.com/store/apps/details?id=com.reddit.frontpage",
       "sourceCode": "https://github.com/MorpheApp/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2526,8 +2526,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476467,
-      "lastUpdated": 1790087476467,
+      "added": 1790089362500,
+      "lastUpdated": 1790089362500,
       "webSite": "https://play.google.com/store/apps/details?id=com.hv.replaio",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2549,8 +2549,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471195,
-      "lastUpdated": 1790087471195,
+      "added": 1790089357461,
+      "lastUpdated": 1790089357461,
       "webSite": "https://play.google.com/store/apps/details?id=com.rp.hypertrophy",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2567,13 +2567,13 @@
       "packageName": "app.rubberbands.fit",
       "name": "Rubberbands",
       "summary": "Rubberbands patched with Morphe",
-      "description": "Rubberbands patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (22): AMOLED dark theme, Bypass signature check, Dark theme, Disable tracking, GmsCore support, Hide ads, Hide membership upselling, Hide upgrade upselling, Inspect AI requests, Open Library on launch, Remove 'Sent from' signature, Remove free accounts limit, Remove nags, Remove pairip protection, Show AI progress, Speed up AI tools, Spoof iOS platform, Spoof signature, Unlock custom time picker, Unlock full version, Unlock premium, Unlock pro.\n\nOriginal app: app.rubberbands.fit 3.9 (patched APK signed with the F-Droid repo key).",
+      "description": "Rubberbands patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (22): AMOLED dark theme, Bypass signature check, Dark theme, Disable tracking, GmsCore support, Hide ads, Hide membership upselling, Hide upgrade upselling, Inspect AI requests, Open Library on launch, Remove 'Sent from' signature, Remove free accounts limit, Remove nags, Remove pairip protection, Show AI progress, Speed up AI tools, Spoof iOS platform, Spoof signature, Unlock custom time picker, Unlock full version, Unlock premium, Unlock pro.\n\nOriginal app: app.rubberbands.fit 3.9 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087470165,
-      "lastUpdated": 1790087470165,
+      "added": 1790089356487,
+      "lastUpdated": 1790089356487,
       "webSite": "https://play.google.com/store/apps/details?id=app.rubberbands.fit",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2595,8 +2595,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087468036,
-      "lastUpdated": 1790087468036,
+      "added": 1790089354453,
+      "lastUpdated": 1790089354453,
       "webSite": "https://play.google.com/store/apps/details?id=com.rumble.battles",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2618,8 +2618,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087469264,
-      "lastUpdated": 1790087469264,
+      "added": 1790089355629,
+      "lastUpdated": 1790089355629,
       "webSite": "https://play.google.com/store/apps/details?id=com.sbs.diet",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2641,8 +2641,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478642,
-      "lastUpdated": 1790087478642,
+      "added": 1790089365161,
+      "lastUpdated": 1790089365161,
       "webSite": "https://play.google.com/store/apps/details?id=com.sbs.train",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2659,13 +2659,13 @@
       "packageName": "com.michaldrabik.showly2",
       "name": "Showly",
       "summary": "Showly patched with Morphe",
-      "description": "Showly patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.michaldrabik.showly2 3.70.0 (patched APK signed with the F-Droid repo key).",
+      "description": "Showly patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: com.michaldrabik.showly2 3.70.0 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476824,
-      "lastUpdated": 1790087476824,
+      "added": 1790089362842,
+      "lastUpdated": 1790089362842,
       "webSite": "https://play.google.com/store/apps/details?id=com.michaldrabik.showly2",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2687,8 +2687,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479825,
-      "lastUpdated": 1790087479825,
+      "added": 1790089366314,
+      "lastUpdated": 1790089366314,
       "webSite": "https://play.google.com/store/apps/details?id=com.vitotechnology.sky.tonight.map.star.walk",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2710,8 +2710,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476843,
-      "lastUpdated": 1790087476843,
+      "added": 1790089362861,
+      "lastUpdated": 1790089362861,
       "webSite": "https://play.google.com/store/apps/details?id=com.urbandroid.sleep",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2733,8 +2733,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476909,
-      "lastUpdated": 1790087476909,
+      "added": 1790089362925,
+      "lastUpdated": 1790089362925,
       "webSite": "https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2756,8 +2756,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477211,
-      "lastUpdated": 1790087477211,
+      "added": 1790089363214,
+      "lastUpdated": 1790089363214,
       "webSite": "https://play.google.com/store/apps/details?id=com.snorelab.app",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2779,8 +2779,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476529,
-      "lastUpdated": 1790087476529,
+      "added": 1790089362555,
+      "lastUpdated": 1790089362555,
       "webSite": "https://play.google.com/store/apps/details?id=com.sofascore.results",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2802,8 +2802,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477281,
-      "lastUpdated": 1790087477281,
+      "added": 1790089363285,
+      "lastUpdated": 1790089363285,
       "webSite": "https://play.google.com/store/apps/details?id=pl.solidexplorer2",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2825,8 +2825,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477320,
-      "lastUpdated": 1790087477320,
+      "added": 1790089363326,
+      "lastUpdated": 1790089363326,
       "webSite": "https://play.google.com/store/apps/details?id=com.soundcloud.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2848,8 +2848,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477386,
-      "lastUpdated": 1790087477386,
+      "added": 1790089363397,
+      "lastUpdated": 1790089363397,
       "webSite": "https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2871,8 +2871,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087465804,
-      "lastUpdated": 1790087465804,
+      "added": 1790089352338,
+      "lastUpdated": 1790089352338,
       "webSite": "https://play.google.com/store/apps/details?id=com.vitotechnology.StarWalk2Free",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2894,8 +2894,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477422,
-      "lastUpdated": 1790087477422,
+      "added": 1790089363476,
+      "lastUpdated": 1790089363476,
       "webSite": "https://play.google.com/store/apps/details?id=io.stashteam.games.tracker.stashapp",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2917,8 +2917,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477479,
-      "lastUpdated": 1790087477479,
+      "added": 1790089363589,
+      "lastUpdated": 1790089363589,
       "webSite": "https://play.google.com/store/apps/details?id=com.noctuasoftware.stellarium_free",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2940,8 +2940,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477642,
-      "lastUpdated": 1790087477642,
+      "added": 1790089363931,
+      "lastUpdated": 1790089363931,
       "webSite": "https://play.google.com/store/apps/details?id=com.strava",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2963,8 +2963,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477796,
-      "lastUpdated": 1790087477796,
+      "added": 1790089364230,
+      "lastUpdated": 1790089364230,
       "webSite": "https://play.google.com/store/apps/details?id=com.superchinese",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -2981,13 +2981,13 @@
       "packageName": "app.symfonik.music.player",
       "name": "Symfonik",
       "summary": "Symfonik patched with Morphe",
-      "description": "Symfonik patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: app.symfonik.music.player 15.0.1 (patched APK signed with the F-Droid repo key).",
+      "description": "Symfonik patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (5): Disable tracking, Hide sidebar upselling, Remove 'Sent from' signature, Remove free accounts limit, Unlock premium.\n\nOriginal app: app.symfonik.music.player 15.0.1 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475745,
-      "lastUpdated": 1790087475745,
+      "added": 1790089361831,
+      "lastUpdated": 1790089361831,
       "webSite": "https://play.google.com/store/apps/details?id=app.symfonik.music.player",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3009,8 +3009,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087477970,
-      "lastUpdated": 1790087477970,
+      "added": 1790089364498,
+      "lastUpdated": 1790089364498,
       "webSite": "https://play.google.com/store/apps/details?id=com.atomengineapps.teachmeanatomy",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3032,8 +3032,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478147,
-      "lastUpdated": 1790087478147,
+      "added": 1790089364669,
+      "lastUpdated": 1790089364669,
       "webSite": "https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3055,8 +3055,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474562,
-      "lastUpdated": 1790087474562,
+      "added": 1790089360688,
+      "lastUpdated": 1790089360688,
       "webSite": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
       "sourceCode": "https://github.com/hxreborn/hxreborn-tiktok-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3078,8 +3078,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478405,
-      "lastUpdated": 1790087478405,
+      "added": 1790089364925,
+      "lastUpdated": 1790089364925,
       "webSite": "https://play.google.com/store/apps/details?id=com.todoist",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3101,8 +3101,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478462,
-      "lastUpdated": 1790087478462,
+      "added": 1790089364982,
+      "lastUpdated": 1790089364982,
       "webSite": "https://play.google.com/store/apps/details?id=com.tracked.mobile",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3119,13 +3119,13 @@
       "packageName": "com.thetrainline",
       "name": "Trainline",
       "summary": "Trainline patched with Morphe",
-      "description": "Trainline patched with Morphe.\n\nPatches: hxreborn v1.27.1.\n\nEnabled patches (22): AMOLED dark theme, Bypass signature check, Dark theme, Disable tracking, GmsCore support, Hide ads, Hide membership upselling, Hide upgrade upselling, Inspect AI requests, Open Library on launch, Remove 'Sent from' signature, Remove free accounts limit, Remove nags, Remove pairip protection, Show AI progress, Speed up AI tools, Spoof iOS platform, Spoof signature, Unlock custom time picker, Unlock full version, Unlock premium, Unlock pro.\n\nOriginal app: com.thetrainline 407.0.0.178994 (patched APK signed with the F-Droid repo key).",
+      "description": "Trainline patched with Morphe.\n\nPatches: hxreborn v1.28.0.\n\nEnabled patches (22): AMOLED dark theme, Bypass signature check, Dark theme, Disable tracking, GmsCore support, Hide ads, Hide membership upselling, Hide upgrade upselling, Inspect AI requests, Open Library on launch, Remove 'Sent from' signature, Remove free accounts limit, Remove nags, Remove pairip protection, Show AI progress, Speed up AI tools, Spoof iOS platform, Spoof signature, Unlock custom time picker, Unlock full version, Unlock premium, Unlock pro.\n\nOriginal app: com.thetrainline 407.0.0.178994 (patched APK signed with the F-Droid repo key).",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478197,
-      "lastUpdated": 1790087478197,
+      "added": 1790089364722,
+      "lastUpdated": 1790089364722,
       "webSite": "https://play.google.com/store/apps/details?id=com.thetrainline",
       "sourceCode": "https://github.com/hxreborn/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3147,8 +3147,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087478852,
-      "lastUpdated": 1790087478852,
+      "added": 1790089365400,
+      "lastUpdated": 1790089365400,
       "webSite": "https://play.google.com/store/apps/details?id=app.ttmikstories.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3170,8 +3170,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479010,
-      "lastUpdated": 1790087479010,
+      "added": 1790089365527,
+      "lastUpdated": 1790089365527,
       "webSite": "https://play.google.com/store/apps/details?id=com.tubitv",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3193,8 +3193,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479088,
-      "lastUpdated": 1790087479088,
+      "added": 1790089365590,
+      "lastUpdated": 1790089365590,
       "webSite": "https://play.google.com/store/apps/details?id=com.tumblr",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3216,8 +3216,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087466827,
-      "lastUpdated": 1790087466915,
+      "added": 1790089353304,
+      "lastUpdated": 1790089353384,
       "webSite": "https://play.google.com/store/apps/details?id=tv.twitch.android.app",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3239,8 +3239,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479257,
-      "lastUpdated": 1790087479257,
+      "added": 1790089365752,
+      "lastUpdated": 1790089365752,
       "webSite": "https://play.google.com/store/apps/details?id=com.ufovpn.connect.velnet",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3262,8 +3262,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479354,
-      "lastUpdated": 1790087479354,
+      "added": 1790089365839,
+      "lastUpdated": 1790089365839,
       "webSite": "https://play.google.com/store/apps/details?id=cz.ackee.ventusky",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3285,8 +3285,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479540,
-      "lastUpdated": 1790087479540,
+      "added": 1790089366030,
+      "lastUpdated": 1790089366030,
       "webSite": "https://play.google.com/store/apps/details?id=com.viber.voip",
       "sourceCode": "https://github.com/RookieEnough/De-Vanced",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3308,8 +3308,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479400,
-      "lastUpdated": 1790087479400,
+      "added": 1790089365883,
+      "lastUpdated": 1790089365883,
       "webSite": "https://play.google.com/store/apps/details?id=app.remux.video.converter",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3331,8 +3331,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475862,
-      "lastUpdated": 1790087475862,
+      "added": 1790089361939,
+      "lastUpdated": 1790089361939,
       "webSite": "https://play.google.com/store/apps/details?id=com.univision.prendetv",
       "sourceCode": "https://github.com/ajstrick81/morphe-androidtv-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3354,8 +3354,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479683,
-      "lastUpdated": 1790087479683,
+      "added": 1790089366175,
+      "lastUpdated": 1790089366175,
       "webSite": "https://play.google.com/store/apps/details?id=com.vpn.free.hotspot.secure.vpnify",
       "sourceCode": "https://github.com/BholeyKaBhakt/android-patches-xtra",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3377,8 +3377,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087479718,
-      "lastUpdated": 1790087479718,
+      "added": 1790089366211,
+      "lastUpdated": 1790089366211,
       "webSite": "https://play.google.com/store/apps/details?id=nom.vrd",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3400,8 +3400,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480089,
-      "lastUpdated": 1790087480089,
+      "added": 1790089366584,
+      "lastUpdated": 1790089366584,
       "webSite": "https://play.google.com/store/apps/details?id=com.wallpaperscraft.wallpaper",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3423,8 +3423,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480200,
-      "lastUpdated": 1790087480200,
+      "added": 1790089366697,
+      "lastUpdated": 1790089366697,
       "webSite": "https://play.google.com/store/apps/details?id=com.wanderlog.android",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3446,8 +3446,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087471952,
-      "lastUpdated": 1790087471952,
+      "added": 1790089358219,
+      "lastUpdated": 1790089358219,
       "webSite": "https://play.google.com/store/apps/details?id=com.naver.linewebtoon",
       "sourceCode": "https://github.com/arandomhooman/hoomans-morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3469,8 +3469,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480429,
-      "lastUpdated": 1790087480429,
+      "added": 1790089366926,
+      "lastUpdated": 1790089366926,
       "webSite": "https://play.google.com/store/apps/details?id=com.windyty.android",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3492,8 +3492,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087473946,
-      "lastUpdated": 1790087473946,
+      "added": 1790089360131,
+      "lastUpdated": 1790089360131,
       "webSite": "https://play.google.com/store/apps/details?id=cn.wps.moffice_eng",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3515,8 +3515,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087475409,
-      "lastUpdated": 1790087475409,
+      "added": 1790089361522,
+      "lastUpdated": 1790089361522,
       "webSite": "https://play.google.com/store/apps/details?id=com.xodo.pdf.reader",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3538,8 +3538,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087476638,
-      "lastUpdated": 1790087476638,
+      "added": 1790089362649,
+      "lastUpdated": 1790089362649,
       "webSite": "https://play.google.com/store/apps/details?id=videoeditor.videorecorder.screenrecorder",
       "sourceCode": "https://github.com/hoo-dles/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3561,8 +3561,8 @@
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087480503,
-      "lastUpdated": 1790087480503,
+      "added": 1790089367005,
+      "lastUpdated": 1790089367005,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
       "sourceCode": "https://github.com/MorpheApp/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3579,13 +3579,13 @@
       "packageName": "app.morphe.android.apps.youtube.music",
       "name": "YouTube Music",
       "summary": "YouTube Music patched with Morphe",
-      "description": "YouTube Music patched with Morphe.\n\nPatches: morphe v1.45.0-dev.1.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.google.android.apps.youtube.music 9.15.51 (patched APK signed with the F-Droid repo key).\n\nRequires MicroG for login and playback.",
+      "description": "YouTube Music patched with Morphe.\n\nPatches: morphe v1.45.0-dev.2.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.google.android.apps.youtube.music 9.15.51 (patched APK signed with the F-Droid repo key).\n\nRequires MicroG for login and playback.",
       "categories": [
         "Other"
       ],
       "license": "Unknown",
-      "added": 1790087474409,
-      "lastUpdated": 1790087474409,
+      "added": 1790089360559,
+      "lastUpdated": 1790089360559,
       "webSite": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music",
       "sourceCode": "https://github.com/MorpheApp/morphe-patches",
       "changelog": "https://github.com/Minehacker765/MorpheUpdater/releases",
@@ -3602,7 +3602,7 @@
   "packages": {
     "com.zombodroid.MemeGenerator": [
       {
-        "added": 1790087465704,
+        "added": 1790089352241,
         "apkName": "MemeGenerator-4.6826-hoodles-arm64.apk",
         "hash": "205cb81d6749f4dd83c80f0ed73a8caa679c202bade74c72495ff54e6760dced",
         "hashType": "sha256",
@@ -3619,7 +3619,7 @@
     ],
     "com.vitotechnology.StarWalk2Free": [
       {
-        "added": 1790087465804,
+        "added": 1790089352338,
         "apkName": "StarWalk2Free-2.21.0-xtra-arm64.apk",
         "hash": "11faf52939b1c1cfb526af66c773af82e0a703ebe3dc21f6e2eb41b7f18c7642",
         "hashType": "sha256",
@@ -3636,7 +3636,7 @@
     ],
     "com.adguard.android": [
       {
-        "added": 1790087466220,
+        "added": 1790089352740,
         "apkName": "adguard-4.14.1-arm64.apk",
         "hash": "feeac0f16286ebe6cb1dc3aa22ae60c1792d35ff68f618294483b3a10402b6f2",
         "hashType": "sha256",
@@ -3651,7 +3651,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087466120,
+        "added": 1790089352640,
         "apkName": "adguard-4.14.0-arm64.apk",
         "hash": "05784b0592ace307d96a975062e0752940795ce3c18a05e5820e8aad702f7c1a",
         "hashType": "sha256",
@@ -3666,7 +3666,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087466022,
+        "added": 1790089352547,
         "apkName": "adguard-4.13.2-arm64.apk",
         "hash": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
         "hashType": "sha256",
@@ -3683,7 +3683,7 @@
     ],
     "com.dv.adm": [
       {
-        "added": 1790087466313,
+        "added": 1790089352839,
         "apkName": "adm-14.0.39-hoomans-arm64.apk",
         "hash": "d3be35a3c8607050eb78c6236d1cfd8ae3f9f1da655a95bff002c1db8a7f52a7",
         "hashType": "sha256",
@@ -3700,7 +3700,7 @@
     ],
     "com.adobe.reader": [
       {
-        "added": 1790087466361,
+        "added": 1790089352886,
         "apkName": "adobe.reader-26.7.1.47181-hoomans-arm64.apk",
         "hash": "905890351964ba5bb9c937f1124d0466657efb2b65797f31fd11a10597765f37",
         "hashType": "sha256",
@@ -3717,7 +3717,7 @@
     ],
     "com.alltrails.alltrails": [
       {
-        "added": 1790087466516,
+        "added": 1790089353032,
         "apkName": "alltrails-26.9.30-hoodles-arm64.apk",
         "hash": "6bd4533193bd312eba6d061d0e5be24a8397a96f3330e7fb83c5c8c123f90dc9",
         "hashType": "sha256",
@@ -3734,7 +3734,7 @@
     ],
     "com.alphaprogression.alphaprogression": [
       {
-        "added": 1790087466640,
+        "added": 1790089353148,
         "apkName": "alphaprogression-7.1.1-hoomans-arm64.apk",
         "hash": "a6736ff6d31deed690ac990a0eedc2a87de47bc474214b001b8a084234233f87",
         "hashType": "sha256",
@@ -3751,7 +3751,7 @@
     ],
     "tv.twitch.android.app": [
       {
-        "added": 1790087466827,
+        "added": 1790089353304,
         "apkName": "android.app-13.0.0.2-androidtv-tv.apk",
         "hash": "03f4427df07bc9cda62a389dbdb95489deafa9b442191764093d993b389b42c8",
         "hashType": "sha256",
@@ -3766,7 +3766,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087466915,
+        "added": 1790089353384,
         "apkName": "android.app-30.7.2-hoomans-arm64.apk",
         "hash": "449c8619c343f4e21ae04dc1915b9095419fc4195bbd7840e4a42695d856e393",
         "hashType": "sha256",
@@ -3783,7 +3783,7 @@
     ],
     "com.drinkplusplus.angulus": [
       {
-        "added": 1790087467035,
+        "added": 1790089353487,
         "apkName": "angulus-6.1.0-de-vanced-arm64.apk",
         "hash": "b7e5aa553d7f628efb54c8c0d8880b4fb16e41f4fde74c69576e007c4104e102",
         "hashType": "sha256",
@@ -3800,7 +3800,7 @@
     ],
     "ai.perplexity.app.android": [
       {
-        "added": 1790087467118,
+        "added": 1790089353576,
         "apkName": "app.android-2.98.0-hxreborn-arm64.apk",
         "hash": "20680ee3f7000e4297c0ef91973fdb44ec3db57ca9596df682c5d8a33627b32d",
         "hashType": "sha256",
@@ -3817,9 +3817,9 @@
     ],
     "com.audible.application": [
       {
-        "added": 1790087467367,
+        "added": 1790089353799,
         "apkName": "application-26.30.05-hxreborn-arm64.apk",
-        "hash": "ae90240380e2e06a580e0e51cd12ed61515c898c286b4b0d1bbf239c504677d6",
+        "hash": "3a4776360ff00d59cfdc6caaa68ed5c7a7fcf52990ccdbcdd44cc6224e350f3d",
         "hashType": "sha256",
         "packageName": "com.audible.application",
         "versionCode": 2090263005,
@@ -3834,7 +3834,7 @@
     ],
     "com.bamnetworks.mobile.android.gameday.atbat": [
       {
-        "added": 1790087467507,
+        "added": 1790089353925,
         "apkName": "atbat-26.8.1.1-androidtv-tv.apk",
         "hash": "37038f1aebeba428ea9c960727010b9e6a0f41d36c77b0f77aebbad658326a26",
         "hashType": "sha256",
@@ -3851,7 +3851,7 @@
     ],
     "com.atmfee": [
       {
-        "added": 1790087467556,
+        "added": 1790089353988,
         "apkName": "atmfee-3.7.9-xtra-arm64.apk",
         "hash": "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9",
         "hashType": "sha256",
@@ -3868,7 +3868,7 @@
     ],
     "com.maxmpz.audioplayer": [
       {
-        "added": 1790087467579,
+        "added": 1790089354015,
         "apkName": "audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
         "hash": "65d0551c493634218a7513f1c8dae5aeab9bb8029b06234f3d6bbd1e1b2fde86",
         "hashType": "sha256",
@@ -3885,7 +3885,7 @@
     ],
     "com.llamalab.automate": [
       {
-        "added": 1790087467614,
+        "added": 1790089354053,
         "apkName": "automate-1.51.1-xtra-arm64.apk",
         "hash": "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad",
         "hashType": "sha256",
@@ -3902,7 +3902,7 @@
     ],
     "com.ttxapps.autosync": [
       {
-        "added": 1790087467632,
+        "added": 1790089354068,
         "apkName": "autosync-7.5.10-xtra-arm64.apk",
         "hash": "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3",
         "hashType": "sha256",
@@ -3919,7 +3919,7 @@
     ],
     "com.zenthek.autozen": [
       {
-        "added": 1790087467691,
+        "added": 1790089354123,
         "apkName": "autozen-8.0.10-hoomans-arm64.apk",
         "hash": "c3884650e5cc30bcd14db6412af7ff58725b0c4e823cd6ac28df4b99e6380aaf",
         "hashType": "sha256",
@@ -3936,7 +3936,7 @@
     ],
     "com.avocards": [
       {
-        "added": 1790087467891,
+        "added": 1790089354312,
         "apkName": "avocards-3.0.18-hoodles-arm64.apk",
         "hash": "850bfd2a46ad2a995ae734dcff88434bf470f6f312d671d3fd941d72a96df358",
         "hashType": "sha256",
@@ -3953,7 +3953,7 @@
     ],
     "com.bandcamp.android": [
       {
-        "added": 1790087467921,
+        "added": 1790089354339,
         "apkName": "bandcamp.android-3.3.6-de-vanced-arm64.apk",
         "hash": "61dabcdc58b83a95a4e2c714c02f222d8a7e29a6c33100036b5a83f90eaac42c",
         "hashType": "sha256",
@@ -3970,7 +3970,7 @@
     ],
     "com.bandlab.bandlab": [
       {
-        "added": 1790087467944,
+        "added": 1790089354360,
         "apkName": "bandlab-11.25.3-hoomans-arm64.apk",
         "hash": "9fbb1417f7e72fbbe1e28e6652b21258802784ba8cd36f023e7201c297f0e844",
         "hashType": "sha256",
@@ -3987,7 +3987,7 @@
     ],
     "com.paget96.batteryguru": [
       {
-        "added": 1790087468019,
+        "added": 1790089354438,
         "apkName": "batteryguru-2.5.0.6-hoomans-arm64.apk",
         "hash": "1a33e101ff8223ce151a8b0ee7367bbfda0508e3a424f1c2f1685942b3b5915e",
         "hashType": "sha256",
@@ -4004,7 +4004,7 @@
     ],
     "com.rumble.battles": [
       {
-        "added": 1790087468036,
+        "added": 1790089354453,
         "apkName": "battles-3.14.5-hoomans-arm64.apk",
         "hash": "b24dd01dd6a30256c5f533aacd850280f1553a075ac7984217ea895184560624",
         "hashType": "sha256",
@@ -4021,7 +4021,7 @@
     ],
     "bitpit.launcher": [
       {
-        "added": 1790087468069,
+        "added": 1790089354480,
         "apkName": "bitpit.launcher-1.16.24-hoodles-arm64.apk",
         "hash": "5e1e836d1c4759481439163d11ff389abdb52377479934c48ddc5f7dbc7a7ef4",
         "hashType": "sha256",
@@ -4038,7 +4038,7 @@
     ],
     "io.funswitch.blocker": [
       {
-        "added": 1790087468094,
+        "added": 1790089354502,
         "apkName": "blocker-5.0.67-xtra-arm64.apk",
         "hash": "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9",
         "hashType": "sha256",
@@ -4053,7 +4053,7 @@
     ],
     "com.blockerhero": [
       {
-        "added": 1790087468201,
+        "added": 1790089354603,
         "apkName": "blockerhero-1.5.0-hoomans-arm64.apk",
         "hash": "bb1be52f48f3c04354cefb9e376c1696dfc5afbbdaa6d5c4f33142e6ce31c5e2",
         "hashType": "sha256",
@@ -4070,7 +4070,7 @@
     ],
     "com.bunpoapp": [
       {
-        "added": 1790087468216,
+        "added": 1790089354621,
         "apkName": "bunpoapp-3.23.1-hoodles-arm64.apk",
         "hash": "8958ccbee9d46deff64ce5cdf4ff1c258249ed2be498cf68978bd2d2a4c0d768",
         "hashType": "sha256",
@@ -4087,9 +4087,9 @@
     ],
     "all.in.one.calculator": [
       {
-        "added": 1790087468314,
+        "added": 1790089354710,
         "apkName": "calculator-3.4.0-hxreborn-arm64.apk",
-        "hash": "d4a927c5188bfecf21d7f74879c0037bb3b7d3377ccbdf7d0997bbf5e7cb76ba",
+        "hash": "668e87e10f55847d8e5527c52b1abe4c10f41f8e81f07eba26ab8776379feb5f",
         "hashType": "sha256",
         "packageName": "all.in.one.calculator",
         "versionCode": 340,
@@ -4104,7 +4104,7 @@
     ],
     "com.intsig.camscanner": [
       {
-        "added": 1790087468386,
+        "added": 1790089354783,
         "apkName": "camscanner-7.20.0.2606230000-hoodles-arm64.apk",
         "hash": "50bc47a3fce166a006f4652e81cc24e4b0f882519f43ea378f404cebd3acb072",
         "hashType": "sha256",
@@ -4121,7 +4121,7 @@
     ],
     "altergames.carlauncher": [
       {
-        "added": 1790087468555,
+        "added": 1790089354942,
         "apkName": "carlauncher-5.0.5-hoomans-arm64.apk",
         "hash": "5e634d3787618f2d7471a00307d11450eb6a1d8df3ac19156c218ee041dadca1",
         "hashType": "sha256",
@@ -4138,7 +4138,7 @@
     ],
     "com.cfdrink": [
       {
-        "added": 1790087468582,
+        "added": 1790089354969,
         "apkName": "cfdrink-1.19.11-hoomans-arm64.apk",
         "hash": "dbad2d3188586d959386ce03a7a9e49e2b76b57abb57d9e360658ca36eabe19f",
         "hashType": "sha256",
@@ -4155,7 +4155,7 @@
     ],
     "studio.muggle.chatboost": [
       {
-        "added": 1790087468656,
+        "added": 1790089355040,
         "apkName": "chatboost-3.23.0-hoomans-arm64.apk",
         "hash": "fffa9da636443840e8f56ddecefe70e044b1777b5c51610ebdcc958c71c3bab9",
         "hashType": "sha256",
@@ -4172,7 +4172,7 @@
     ],
     "com.chess.prathxm": [
       {
-        "added": 1790087468727,
+        "added": 1790089355082,
         "apkName": "chess-4.10.0-googleplay-prathxm-arm64.apk",
         "hash": "9a979221c654a2a6bbb28964270358a14f6abc45e41ae07e4a972ff9f6dcd6b0",
         "hashType": "sha256",
@@ -4189,7 +4189,7 @@
     ],
     "com.proto.circuitsimulator": [
       {
-        "added": 1790087469035,
+        "added": 1790089355389,
         "apkName": "circuitsimulator-1.49.0-xtra-arm64.apk",
         "hash": "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8",
         "hashType": "sha256",
@@ -4206,7 +4206,7 @@
     ],
     "com.collectrinc.collectr": [
       {
-        "added": 1790087469068,
+        "added": 1790089355424,
         "apkName": "collectr-2.5.6-hoomans-arm64.apk",
         "hash": "30c68a45c04a9f7b477ff77661725620c29fed032ca4a441365169f59d50bb6f",
         "hashType": "sha256",
@@ -4223,7 +4223,7 @@
     ],
     "com.cricbuzz.android": [
       {
-        "added": 1790087469166,
+        "added": 1790089355534,
         "apkName": "cricbuzz.android-6.24.01-de-vanced-arm64.apk",
         "hash": "24af41cdf3f18352cebf24a5eda2dbe4fc81c0e4ade455ce54511bd419f99fee",
         "hashType": "sha256",
@@ -4240,7 +4240,7 @@
     ],
     "kr.co.yjteam.dailypay": [
       {
-        "added": 1790087469198,
+        "added": 1790089355565,
         "apkName": "dailypay-6.0.7-hoodles-arm64.apk",
         "hash": "a970a000a42c6d58b96273f31de373970ea13f18e2a1ef27074f6be1c2235080",
         "hashType": "sha256",
@@ -4257,7 +4257,7 @@
     ],
     "com.google.android.dialer": [
       {
-        "added": 1790087469227,
+        "added": 1790089355592,
         "apkName": "dialer-161.0.726587057-downloadable-hoomans-arm64.apk",
         "hash": "30a0773a5a17869291b25ca3fc33acb2cb72b9ea339f8877ff1da128cf4d7b2f",
         "hashType": "sha256",
@@ -4274,7 +4274,7 @@
     ],
     "com.sbs.diet": [
       {
-        "added": 1790087469264,
+        "added": 1790089355629,
         "apkName": "diet-5.7.9-hoodles-arm64.apk",
         "hash": "ced54cc8726c53ceb49b3e48102213f4ff95b6bebe4eb6a8d271d54f1cb4028f",
         "hashType": "sha256",
@@ -4291,7 +4291,7 @@
     ],
     "net.uniquegem.directchat": [
       {
-        "added": 1790087469405,
+        "added": 1790089355765,
         "apkName": "directchat-1.9.8-hoomans-arm64.apk",
         "hash": "ebad476c76abd833835e0d795ec4e10e01987c058561c3e5e81e714f2b496404",
         "hashType": "sha256",
@@ -4308,7 +4308,7 @@
     ],
     "com.duolingo": [
       {
-        "added": 1790087469461,
+        "added": 1790089355819,
         "apkName": "duolingo-6.95.4-hoodles-arm64.apk",
         "hash": "59848e5394f028ed2a3cb98a18f8e774ccb42771b8ad00bc8cb5041499a2ba39",
         "hashType": "sha256",
@@ -4325,7 +4325,7 @@
     ],
     "kr.eggbun.eggconvo": [
       {
-        "added": 1790087469615,
+        "added": 1790089355964,
         "apkName": "eggconvo-4.12.19-hoodles-arm64.apk",
         "hash": "081af781dc8e606e686dc9cfd65ba38d2e8e2b63586f91359005d754838f035c",
         "hashType": "sha256",
@@ -4342,7 +4342,7 @@
     ],
     "com.busuu.android.enc": [
       {
-        "added": 1790087469695,
+        "added": 1790089356036,
         "apkName": "enc-32.47.0(1754308)-hoodles-arm64.apk",
         "hash": "586ecd91cf342eea8904985a690ac8fbdbf135cd9c3e5df774033d8a5e37548a",
         "hashType": "sha256",
@@ -4359,7 +4359,7 @@
     ],
     "com.appfactory.essence": [
       {
-        "added": 1790087469760,
+        "added": 1790089356097,
         "apkName": "essence-4.2.8-hoomans-arm64.apk",
         "hash": "e6d5ffa6efa27f581808a836d5d5e2b2d5c79e6b3024b49e8de0d0fabd386c23",
         "hashType": "sha256",
@@ -4376,14 +4376,14 @@
     ],
     "com.etsy.android": [
       {
-        "added": 1790087469834,
-        "apkName": "etsy.android-7.96.0-hxreborn-arm64.apk",
-        "hash": "77dfb38768407559b41541226222927b2b08eb3b8e00822f7af520b0e1f48967",
+        "added": 1790089356167,
+        "apkName": "etsy.android-7.95.0-hxreborn-arm64.apk",
+        "hash": "7a3ff6b821e6b3e68a9e306692c5df1ea8b744bda740aa155dca9f66e453b13a",
         "hashType": "sha256",
         "packageName": "com.etsy.android",
-        "versionCode": 79600135,
-        "versionName": "7.96.0",
-        "size": 47646166,
+        "versionCode": 79500148,
+        "versionName": "7.95.0",
+        "size": 47658195,
         "appName": "Etsy",
         "minSdkVersion": 32,
         "targetSdkVersion": 36,
@@ -4393,9 +4393,9 @@
     ],
     "com.cxinventor.file.explorer": [
       {
-        "added": 1790087469889,
+        "added": 1790089356222,
         "apkName": "explorer-2.7.8-hxreborn-arm64.apk",
-        "hash": "64a2c91056caeb261c278f07bb15b7a201b0ef1b0b277ce6150abd2564cad7ef",
+        "hash": "aac94fd75dba1aeefebc35943717a24e333ae568732880ffdfb338e210700b4d",
         "hashType": "sha256",
         "packageName": "com.cxinventor.file.explorer",
         "versionCode": 278,
@@ -4410,7 +4410,7 @@
     ],
     "com.finch.finch": [
       {
-        "added": 1790087469930,
+        "added": 1790089356262,
         "apkName": "finch-3.73.179-hoomans-arm64.apk",
         "hash": "82460b804d7eecd9d45ab6c0a3c556e1f76cb4654a77447eeee19d8233808747",
         "hashType": "sha256",
@@ -4427,9 +4427,9 @@
     ],
     "app.rubberbands.fit": [
       {
-        "added": 1790087470165,
+        "added": 1790089356487,
         "apkName": "fit-3.9-hxreborn-arm64.apk",
-        "hash": "13afc1fddc73146ca9473c8c3a14320d39d46630f35a990762db0b4f313482ff",
+        "hash": "adda59f2784ee23fcf73758f0a3c6b8d834a40b31a9f2d88538e54c268bb18c1",
         "hashType": "sha256",
         "packageName": "app.rubberbands.fit",
         "versionCode": 291,
@@ -4444,7 +4444,7 @@
     ],
     "ginlemon.flowerfree": [
       {
-        "added": 1790087470281,
+        "added": 1790089356574,
         "apkName": "flowerfree-6.6 build 016-hoodles-arm64.apk",
         "hash": "43d79821dbbe13559a2b2f31ca2671e32e9afdebfd79a993ebb1d914613c9d4c",
         "hashType": "sha256",
@@ -4461,9 +4461,9 @@
     ],
     "com.myvitale.forus": [
       {
-        "added": 1790087470305,
+        "added": 1790089356597,
         "apkName": "forus-3.0.15-hxreborn-arm64.apk",
-        "hash": "5d3e67d42cccd67f80683c9806b2f9dc1ca51b3a87a58fd1ac17bb011f89e543",
+        "hash": "4b609ce0fc8236f59865c6e1c1036805f08da92105d731aaf34f6790aa380d0c",
         "hashType": "sha256",
         "packageName": "com.myvitale.forus",
         "versionCode": 96,
@@ -4478,7 +4478,7 @@
     ],
     "psyberia.alpinequest.free": [
       {
-        "added": 1790087470411,
+        "added": 1790089356700,
         "apkName": "free-2.4.0e-hxreborn-arm64.apk",
         "hash": "f63f29927fc13c4a6b310cacf478fd8b4a233ef1dc744778816e674503befe0b",
         "hashType": "sha256",
@@ -4495,9 +4495,9 @@
     ],
     "com.reddit.frontpage.morphe": [
       {
-        "added": 1790087470431,
+        "added": 1790089356734,
         "apkName": "frontpage-2026.14.0-morphe-arm64.apk",
-        "hash": "d1c6e6e1efd024513114e07784ca5b0e67fae6adb2110c4546009d9f4ea4c53b",
+        "hash": "e9f0fa65a95b5b17997b74545016c93eb9d02744f63924241baa00d1b5eebdf0",
         "hashType": "sha256",
         "packageName": "com.reddit.frontpage.morphe",
         "versionCode": 2147483647,
@@ -4512,7 +4512,7 @@
     ],
     "com.getmimo": [
       {
-        "added": 1790087470513,
+        "added": 1790089356809,
         "apkName": "getmimo-9.24-hoodles-arm64.apk",
         "hash": "008f3fa629ee9585e4f8e5caed7a1e6bdd70d50c794eb7236af1942ad71bbff4",
         "hashType": "sha256",
@@ -4529,7 +4529,7 @@
     ],
     "com.github.android": [
       {
-        "added": 1790087470602,
+        "added": 1790089356891,
         "apkName": "github.android-1.271.1-hoodles-arm64.apk",
         "hash": "35031ce6d03936c3f1473bb207a7273047e7ef1fd11e772e46b656ebfa6841eb",
         "hashType": "sha256",
@@ -4546,7 +4546,7 @@
     ],
     "com.cronometer.android.gold": [
       {
-        "added": 1790087470633,
+        "added": 1790089356919,
         "apkName": "gold-4.57.2-hoomans-arm64.apk",
         "hash": "2e64964265f95302bfde88fc985416bb88b289ba2cb78fd55f7df762e1adae00",
         "hashType": "sha256",
@@ -4563,7 +4563,7 @@
     ],
     "com.goodreads": [
       {
-        "added": 1790087470738,
+        "added": 1790089357023,
         "apkName": "goodreads-2.76.0 Build 0-hoodles-arm64.apk",
         "hash": "53324197c776770e18ac72d30b880a05de76128be872e1f91447546551cfe2f6",
         "hashType": "sha256",
@@ -4580,7 +4580,7 @@
     ],
     "com.qbis.guessthecountry": [
       {
-        "added": 1790087470799,
+        "added": 1790089357082,
         "apkName": "guessthecountry-3.34.2-hoodles-arm64.apk",
         "hash": "e0bc8175f1bd9fe30c730782bfba36ac180ea3ad798651170ea48ae3dc9f657c",
         "hashType": "sha256",
@@ -4597,7 +4597,7 @@
     ],
     "com.wbd.hbomax": [
       {
-        "added": 1790087470863,
+        "added": 1790089357144,
         "apkName": "hbomax-7.9.0.61-androidtv-tv.apk",
         "hash": "3675f003b8212e9544f4f8a54165e75676a7c0a8554991503915dfd2a7e6f6b1",
         "hashType": "sha256",
@@ -4614,7 +4614,7 @@
     ],
     "com.hellochinese": [
       {
-        "added": 1790087470959,
+        "added": 1790089357234,
         "apkName": "hellochinese-7.11.0-hoodles-arm64.apk",
         "hash": "759c6e7376a81df1fc057924d417aecdfd4a66586e324600c0afaaedacaf473e",
         "hashType": "sha256",
@@ -4631,7 +4631,7 @@
     ],
     "com.hevy": [
       {
-        "added": 1790087471036,
+        "added": 1790089357306,
         "apkName": "hevy-3.1.0-hoomans-arm64.apk",
         "hash": "3a92281104a7a912d94f2841fa94a742173df902cf522803eb61e05faebef8ca",
         "hashType": "sha256",
@@ -4648,7 +4648,7 @@
     ],
     "com.myprog.hexedit": [
       {
-        "added": 1790087471188,
+        "added": 1790089357453,
         "apkName": "hexedit-2.8.3-de-vanced-arm64.apk",
         "hash": "da3a9f6da6ef93ed365be3be0fa5cd2c1847bc4b924c358eb3e0e05ba22f4bc0",
         "hashType": "sha256",
@@ -4665,7 +4665,7 @@
     ],
     "com.rp.hypertrophy": [
       {
-        "added": 1790087471195,
+        "added": 1790089357461,
         "apkName": "hypertrophy-1.1.0-hoodles-arm64.apk",
         "hash": "2568deab87aa567dbda8c35edce9044ebc3a9331ae99e87e119731d7981b3a82",
         "hashType": "sha256",
@@ -4682,7 +4682,7 @@
     ],
     "com.thehungrywasp.iamsober": [
       {
-        "added": 1790087471204,
+        "added": 1790089357471,
         "apkName": "iamsober-8.6.7-hoomans-arm64.apk",
         "hash": "a3aa10f4351b30ef2b0ea962748cb09116386e50d25ed056a0505d2fba2f0e9b",
         "hashType": "sha256",
@@ -4699,7 +4699,7 @@
     ],
     "jp.ne.ibis.ibispaintx.app": [
       {
-        "added": 1790087471276,
+        "added": 1790089357535,
         "apkName": "ibispaintx.app-14.1.1-hoodles-arm64.apk",
         "hash": "7a59bb88a7201b925344756e6785488e4a28f9f9dd978eb66362c9314081199c",
         "hashType": "sha256",
@@ -4716,7 +4716,7 @@
     ],
     "cn.ommiao.iconpacker": [
       {
-        "added": 1790087471359,
+        "added": 1790089357613,
         "apkName": "iconpacker-1.21.0-release-hoodles-arm64.apk",
         "hash": "ae1c9c797f7d5b7f5731c5a25bb7cf3cc4f5ce973f259fdcc3f2fc23a6092edf",
         "hashType": "sha256",
@@ -4733,7 +4733,7 @@
     ],
     "ginlemon.iconpackstudio": [
       {
-        "added": 1790087471390,
+        "added": 1790089357640,
         "apkName": "iconpackstudio-2.4 build 001-de-vanced-arm64.apk",
         "hash": "4d26cc7de4f9b2abb7f83a15a39aa7b696302723350667512dee50f230eb8916",
         "hashType": "sha256",
@@ -4750,7 +4750,7 @@
     ],
     "com.camerasideas.instashot": [
       {
-        "added": 1790087471473,
+        "added": 1790089357726,
         "apkName": "instashot-2.214.1539-hoomans-arm64.apk",
         "hash": "c8bef28dbb39afb46a7e27816eeda1e3b7deff491f8253555944308fe11dc63e",
         "hashType": "sha256",
@@ -4767,7 +4767,7 @@
     ],
     "net.binarymode.android.irplus": [
       {
-        "added": 1790087471558,
+        "added": 1790089357822,
         "apkName": "irplus-1.10-de-vanced-arm64.apk",
         "hash": "7c36b93ad56de50290307d612fadf662b8acdd7c03f919a8169630c3ae119e5e",
         "hashType": "sha256",
@@ -4784,7 +4784,7 @@
     ],
     "com.facebook.katana": [
       {
-        "added": 1790087471606,
+        "added": 1790089357850,
         "apkName": "katana-490.0.0.63.82-de-vanced-arm64.apk",
         "hash": "b290ef13c7167addf4a44edfceae65373175343d756b8d07bbc4fc25ea52c01b",
         "hashType": "sha256",
@@ -4801,9 +4801,9 @@
     ],
     "com.kick.mobile": [
       {
-        "added": 1790087471707,
+        "added": 1790089357947,
         "apkName": "kick.mobile-40.30.4-hxreborn-arm64.apk",
-        "hash": "f0c1bb27aa50d4b39acb8f894d86e2671553186908494173acb6b92c0fdf8391",
+        "hash": "9109124194b054cdf1b3638c7d0ac9a49ebef6eeb90d87a8ec5597560d8bc868",
         "hashType": "sha256",
         "packageName": "com.kick.mobile",
         "versionCode": 60006950,
@@ -4818,7 +4818,7 @@
     ],
     "com.letterboxd.letterboxd": [
       {
-        "added": 1790087471828,
+        "added": 1790089358091,
         "apkName": "letterboxd-3.5.7-de-vanced-arm64.apk",
         "hash": "4327b114b076bd7805f44ec875ec983ebd6a0dfaa888424743a9d0ac048c228e",
         "hashType": "sha256",
@@ -4835,7 +4835,7 @@
     ],
     "com.naver.linewebtoon": [
       {
-        "added": 1790087471952,
+        "added": 1790089358219,
         "apkName": "linewebtoon-3.9.5-hoomans-arm64.apk",
         "hash": "4b40b343351801ada9943403f8addb2e85aa0237c4b4ad6c54ffe2ae7afb8ed0",
         "hashType": "sha256",
@@ -4852,7 +4852,7 @@
     ],
     "com.lingodeer": [
       {
-        "added": 1790087472052,
+        "added": 1790089358315,
         "apkName": "lingodeer-2.99.413-hoodles-arm64.apk",
         "hash": "3ee79bab677d3442f8cc5f9af91816b18e8948ef186296b3aa1f37182e837b02",
         "hashType": "sha256",
@@ -4869,7 +4869,7 @@
     ],
     "org.languageapp.lingory": [
       {
-        "added": 1790087472131,
+        "added": 1790089358388,
         "apkName": "lingory-1.2.75-hoodles-arm64.apk",
         "hash": "1bc577166d7feb4a3fb1787cc8201c122d58526de9f395fdde13076f712e27e8",
         "hashType": "sha256",
@@ -4886,7 +4886,7 @@
     ],
     "dk.tacit.android.foldersync.lite": [
       {
-        "added": 1790087472196,
+        "added": 1790089358454,
         "apkName": "lite-4.12.0-hoomans-arm64.apk",
         "hash": "f105d21447f84df384d7e4fc037d2ab4ee73da970ddb283eb99619e20dee30aa",
         "hashType": "sha256",
@@ -4903,7 +4903,7 @@
     ],
     "com.amazon.amazonvideo.livingroom": [
       {
-        "added": 1790087472247,
+        "added": 1790089358501,
         "apkName": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
         "hash": "7e07101fcc4ba72b61c6a480171080cfa91a00c36744514bc280c0b7b9f4aec6",
         "hashType": "sha256",
@@ -4920,7 +4920,7 @@
     ],
     "com.adobe.lrmobile": [
       {
-        "added": 1790087472293,
+        "added": 1790089358546,
         "apkName": "lrmobile-11.5.31-hoodles-arm64.apk",
         "hash": "a1bbbc15b15c7e4c9ce99834269c3ae71c35d923fad9c20e0822db605f7f1b7e",
         "hashType": "sha256",
@@ -4937,7 +4937,7 @@
     ],
     "com.lyfta": [
       {
-        "added": 1790087472559,
+        "added": 1790089358793,
         "apkName": "lyfta-1.551-hoodles-arm64.apk",
         "hash": "be568d7c7aeb00bba1dc6d0f29685fc71dfb98f719edf625a7515f83d70c2964",
         "hashType": "sha256",
@@ -4954,7 +4954,7 @@
     ],
     "com.google.android.apps.magazines": [
       {
-        "added": 1790087472597,
+        "added": 1790089358829,
         "apkName": "magazines-5.161.0.931240252-hoodles-arm64.apk",
         "hash": "1cd3f06a5f8b7d5bfa2785624f58831c0ad6627daeca54a25af8b39493ddb81d",
         "hashType": "sha256",
@@ -4971,7 +4971,7 @@
     ],
     "de.gmx.mobile.android.mail": [
       {
-        "added": 1790087472621,
+        "added": 1790089358850,
         "apkName": "mail-9.17.2-de-vanced-arm64.apk",
         "hash": "cb9083ebba1d10f962d71f18aa9be59b3be8990f849cf83c96f3a6f1010f6d0a",
         "hashType": "sha256",
@@ -4988,7 +4988,7 @@
     ],
     "com.merriamwebster": [
       {
-        "added": 1790087472687,
+        "added": 1790089358915,
         "apkName": "merriamwebster-5.6.2-hoodles-arm64.apk",
         "hash": "e3e7145e5a4c3cbce77d8551c109ed569aa7686d9f51371ef97cb23a1c84423c",
         "hashType": "sha256",
@@ -5005,7 +5005,7 @@
     ],
     "app.revanced.android.gms": [
       {
-        "added": 1790087473816,
+        "added": 1790089359996,
         "apkName": "microg-7.2.1-dev.2-arm64.apk",
         "hash": "779c5bc0acced5b0b875842003e2ac0b25a75dfbe4fc706855a18d6b76ac718e",
         "hashType": "sha256",
@@ -5020,7 +5020,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473760,
+        "added": 1790089359936,
         "apkName": "microg-7.2.1-dev.1-arm64.apk",
         "hash": "c3c1936f75897bbd4d5be0f50cd3c5105aa633f0a309b1aeaea21016e786f76b",
         "hashType": "sha256",
@@ -5035,7 +5035,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473699,
+        "added": 1790089359878,
         "apkName": "microg-7.1.2-dev.3-arm64.apk",
         "hash": "ee8c8c3618821ecd4d73f3251277cf027409ff3a868455a3f9c904612d472b30",
         "hashType": "sha256",
@@ -5050,7 +5050,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473631,
+        "added": 1790089359820,
         "apkName": "microg-7.1.2-dev.2-arm64.apk",
         "hash": "60d430f1aff31417a7ddf78a13060e9f2f09a2ebf782aec1a92cbc44b48131b9",
         "hashType": "sha256",
@@ -5065,7 +5065,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473562,
+        "added": 1790089359760,
         "apkName": "microg-7.1.2-dev.1-arm64.apk",
         "hash": "4083d85d6e2db8bab4b01fe1213901430b273cdc1450523c931ba2f91a397c80",
         "hashType": "sha256",
@@ -5080,7 +5080,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473040,
+        "added": 1790089359258,
         "apkName": "microg-7.1.0-arm64.apk",
         "hash": "13d8839fc0d4d9fa53bb36ae82d59120141123b05f67f1e41b0843b4019e8579",
         "hashType": "sha256",
@@ -5095,7 +5095,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473417,
+        "added": 1790089359621,
         "apkName": "microg-7.1.1-arm64.apk",
         "hash": "98122cc39bd3e9c06216f44acce19e552cf27778827f6c6fe506320c7ee0c9b0",
         "hashType": "sha256",
@@ -5110,7 +5110,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473478,
+        "added": 1790089359682,
         "apkName": "microg-7.1.1-dev.1-arm64.apk",
         "hash": "8989aa2ceea84a8bba82fad0de570c463ae1484ac73fd423e8c26c9bd9fd5fcb",
         "hashType": "sha256",
@@ -5125,7 +5125,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473353,
+        "added": 1790089359560,
         "apkName": "microg-7.1.0-dev.5-arm64.apk",
         "hash": "8ab6587ada77cc1947e2adc44acaeeb8f66255c8c848e3b576fb031770091034",
         "hashType": "sha256",
@@ -5140,7 +5140,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473290,
+        "added": 1790089359501,
         "apkName": "microg-7.1.0-dev.4-arm64.apk",
         "hash": "8afc7d14610075807848cdd73a225065139ecf8243f7a340a8e3626fafce652d",
         "hashType": "sha256",
@@ -5155,7 +5155,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087472850,
+        "added": 1790089359076,
         "apkName": "microg-7.0.0-arm64.apk",
         "hash": "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19",
         "hashType": "sha256",
@@ -5170,7 +5170,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087472911,
+        "added": 1790089359135,
         "apkName": "microg-7.0.0-dev.6-arm64.apk",
         "hash": "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4",
         "hashType": "sha256",
@@ -5185,7 +5185,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087472975,
+        "added": 1790089359196,
         "apkName": "microg-7.0.0-dev.7-arm64.apk",
         "hash": "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7",
         "hashType": "sha256",
@@ -5200,7 +5200,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473103,
+        "added": 1790089359320,
         "apkName": "microg-7.1.0-dev.1-arm64.apk",
         "hash": "72f5b3d37224d9dee2b09783bf251fcb7a977d3a64cf259773cf8634f589adc7",
         "hashType": "sha256",
@@ -5215,7 +5215,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473166,
+        "added": 1790089359380,
         "apkName": "microg-7.1.0-dev.2-arm64.apk",
         "hash": "9886455c98f180d7810a4b26982a2cbb097680ecb185d1e5f3438545971035cc",
         "hashType": "sha256",
@@ -5230,7 +5230,7 @@
         "sig": "2b4d9183"
       },
       {
-        "added": 1790087473228,
+        "added": 1790089359440,
         "apkName": "microg-7.1.0-dev.3-arm64.apk",
         "hash": "2abb3de5ee93927c1ac14efb33c6a30d0b30803c3038db9c12b7bb558dd5eb92",
         "hashType": "sha256",
@@ -5247,7 +5247,7 @@
     ],
     "com.mirinae.mirinae": [
       {
-        "added": 1790087473876,
+        "added": 1790089360047,
         "apkName": "mirinae-2.2.2-hoodles-arm64.apk",
         "hash": "e21566262d7709a89b7bdbbba5f4678470a631e4699a303fcfc61184ae01bb6d",
         "hashType": "sha256",
@@ -5264,7 +5264,7 @@
     ],
     "cn.wps.moffice_eng": [
       {
-        "added": 1790087473946,
+        "added": 1790089360131,
         "apkName": "moffice_eng-18.24-hoodles-arm64.apk",
         "hash": "d654e0f9d82ca2550f4a3a9c22b9219d2b2670ad9d7b1c0dc2cf22963d67aedf",
         "hashType": "sha256",
@@ -5281,7 +5281,7 @@
     ],
     "currency.converter.moneta": [
       {
-        "added": 1790087474070,
+        "added": 1790089360260,
         "apkName": "moneta-1.3.0-hoomans-arm64.apk",
         "hash": "97214f0d85c28907eebe45ce15ce0de92c76fe7bff31307643d1194b65298930",
         "hashType": "sha256",
@@ -5298,7 +5298,7 @@
     ],
     "com.realbyteapps.moneymanagerfree": [
       {
-        "added": 1790087474150,
+        "added": 1790089360327,
         "apkName": "moneymanagerfree-4.12.13 GF-hoomans-arm64.apk",
         "hash": "fb9735c4237032f37b967f38e7814b945346eed82a9145559056b4ca2f306d69",
         "hashType": "sha256",
@@ -5315,7 +5315,7 @@
     ],
     "com.amazon.mp3": [
       {
-        "added": 1790087474193,
+        "added": 1790089360367,
         "apkName": "mp3-26.32.0-de-vanced-arm64.apk",
         "hash": "6b4afd196511dc41067287c2edface27ade24ed858ad60cf38558f5862e814f6",
         "hashType": "sha256",
@@ -5332,9 +5332,9 @@
     ],
     "app.morphe.android.apps.youtube.music": [
       {
-        "added": 1790087474409,
+        "added": 1790089360559,
         "apkName": "music-9.15.51-morphe-arm64.apk",
-        "hash": "a332c83e470020a673d5d5f717d64777d435146d159786f1fe027c53ac6f67d8",
+        "hash": "f715a2e31333e1192a521bc53ed07a694d54fb5ac23a2b46b6fd3058d4f65afc",
         "hashType": "sha256",
         "packageName": "app.morphe.android.apps.youtube.music",
         "versionCode": 2147483647,
@@ -5349,7 +5349,7 @@
     ],
     "com.zhiliaoapp.musically": [
       {
-        "added": 1790087474562,
+        "added": 1790089360688,
         "apkName": "musically-46.2.3-tiktok-hx-arm64.apk",
         "hash": "68114de924014471105bc7dd71e291907e17997e7fc5b5a9a775b5db1cebc957",
         "hashType": "sha256",
@@ -5366,7 +5366,7 @@
     ],
     "me.mycake": [
       {
-        "added": 1790087474786,
+        "added": 1790089360913,
         "apkName": "mycake-6.4.0-hoodles-arm64.apk",
         "hash": "0ce865b674c2964413c744134702cdc2888f8ed546fd2d27de54dd798a5c0887",
         "hashType": "sha256",
@@ -5383,7 +5383,7 @@
     ],
     "org.totschnig.myexpenses": [
       {
-        "added": 1790087474827,
+        "added": 1790089360951,
         "apkName": "myexpenses-4.1.1.2-hoodles-arm64.apk",
         "hash": "799286fef50db81667d81024e0b7014e269317caea58443184632d16e7bdfe20",
         "hashType": "sha256",
@@ -5400,7 +5400,7 @@
     ],
     "com.myfitnesspal.android": [
       {
-        "added": 1790087474851,
+        "added": 1790089360975,
         "apkName": "myfitnesspal.android-26.31.0-hoodles-arm64.apk",
         "hash": "eacd67aa81c78619dc11c7072502ab656e98c1672905b93744fcac25d1c07a03",
         "hashType": "sha256",
@@ -5417,7 +5417,7 @@
     ],
     "com.netflix.ninja.clone": [
       {
-        "added": 1790087474904,
+        "added": 1790089361025,
         "apkName": "ninja-13.0.1 build 25028-androidtv-tv.apk",
         "hash": "f3d5722176db09c6dedc72642c606990f6cf02bc4b46fb4bc64781e08bd211d6",
         "hashType": "sha256",
@@ -5434,9 +5434,9 @@
     ],
     "com.streetwriters.notesnook": [
       {
-        "added": 1790087475042,
+        "added": 1790089361151,
         "apkName": "notesnook-3.4.12-hxreborn-arm64.apk",
-        "hash": "f0609c14ecd9f9b24b5f9000b52056d4c612f72398f4e80905494bf034283d56",
+        "hash": "ebcfd09bc52048023dca96e2bffd0f30ed1c4a509adff740ade03ed671992ed5",
         "hashType": "sha256",
         "packageName": "com.streetwriters.notesnook",
         "versionCode": 4197422,
@@ -5451,7 +5451,7 @@
     ],
     "nl.sanomamedia.android.nu": [
       {
-        "added": 1790087475122,
+        "added": 1790089361229,
         "apkName": "nu-26.8.0-de-vanced-arm64.apk",
         "hash": "0bdb9b02d2c3d6179238b251205c32f2cc38fc1a15ee79abc9a95f195aa70f02",
         "hashType": "sha256",
@@ -5468,7 +5468,7 @@
     ],
     "com.facebook.orca": [
       {
-        "added": 1790087475203,
+        "added": 1790089361310,
         "apkName": "orca-573.0.0.44.88-de-vanced-arm64.apk",
         "hash": "15d25bfef644e9e5340469c3b2316edbde06a90da6b863c54163f18ee6c7b828",
         "hashType": "sha256",
@@ -5485,7 +5485,7 @@
     ],
     "com.cbs.ott": [
       {
-        "added": 1790087475302,
+        "added": 1790089361408,
         "apkName": "ott-16.19.0-androidtv-tv.apk",
         "hash": "fdc26160705876162e15ce238359a03aeda3799655dcea8b1fe33d4dd255e3cb",
         "hashType": "sha256",
@@ -5502,7 +5502,7 @@
     ],
     "com.pandora.android": [
       {
-        "added": 1790087475338,
+        "added": 1790089361450,
         "apkName": "pandora.android-2608.1-hoodles-arm64.apk",
         "hash": "5b6d513a5ff8d3399fe52bbf2ede7d375f8aeff4f6c93d8ca6493bbd6d33abdd",
         "hashType": "sha256",
@@ -5519,7 +5519,7 @@
     ],
     "com.xodo.pdf.reader": [
       {
-        "added": 1790087475409,
+        "added": 1790089361522,
         "apkName": "pdf.reader-11.0.0-hoodles-arm64.apk",
         "hash": "8a1cd641bae065c7c87841075dc6403bbb787c724cf046c25adbeb6b7cd34cd6",
         "hashType": "sha256",
@@ -5536,7 +5536,7 @@
     ],
     "com.peacocktv.peacockandroid": [
       {
-        "added": 1790087475529,
+        "added": 1790089361642,
         "apkName": "peacockandroid-7.8.100-androidtv-tv.apk",
         "hash": "34c7000aa5e7db0f391b8dba0aa23336038525b89e95ec9e60d11ffa75636a4d",
         "hashType": "sha256",
@@ -5553,9 +5553,9 @@
     ],
     "photo.editor.photoeditor.photoeditorpro": [
       {
-        "added": 1790087475548,
+        "added": 1790089361676,
         "apkName": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
-        "hash": "b3d4499a148ac4fc98538c1dfbedc3ba0dcbfb3429a366e23eae8a0c7bf82f65",
+        "hash": "eeb746f7b066afb2364f8fba6502d32cb64ec911b09f3f9f8b104a87e11f4088",
         "hashType": "sha256",
         "packageName": "photo.editor.photoeditor.photoeditorpro",
         "versionCode": 265100,
@@ -5570,7 +5570,7 @@
     ],
     "com.microblink.photomath": [
       {
-        "added": 1790087475629,
+        "added": 1790089361720,
         "apkName": "photomath-8.48.0-de-vanced-arm64.apk",
         "hash": "4f90955ff4fea357aba51e69730da629b58711781b1a5ad48203d2372aa003ca",
         "hashType": "sha256",
@@ -5587,7 +5587,7 @@
     ],
     "app.morphe.android.apps.photos": [
       {
-        "added": 1790087475661,
+        "added": 1790089361753,
         "apkName": "photos-7.92.0.977185651-de-vanced-arm64.apk",
         "hash": "74442b57b602d8c076bf4e8beee679f3afd9f1fd957359f60d42aa7f76d58fb4",
         "hashType": "sha256",
@@ -5604,9 +5604,9 @@
     ],
     "app.symfonik.music.player": [
       {
-        "added": 1790087475745,
+        "added": 1790089361831,
         "apkName": "player-15.0.1-hxreborn-arm64.apk",
-        "hash": "ffd36e9e9c8c57c267c04a7434add4c07814583d51693e4badc29c9c8dba02f3",
+        "hash": "ea09eba64b71bce6da44d13a758840772e01eb07b25fc2e89b6f0c7c20e24b27",
         "hashType": "sha256",
         "packageName": "app.symfonik.music.player",
         "versionCode": 127798,
@@ -5621,7 +5621,7 @@
     ],
     "tv.pluto.android": [
       {
-        "added": 1790087475780,
+        "added": 1790089361860,
         "apkName": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
         "hash": "708cdb5ea4e8769fe8ea53ae9f7f342a619c1336bb6341aa8869c375b29acafd",
         "hashType": "sha256",
@@ -5638,7 +5638,7 @@
     ],
     "com.bambuna.podcastaddict": [
       {
-        "added": 1790087475826,
+        "added": 1790089361902,
         "apkName": "podcastaddict-2026.10.1-hoodles-arm64.apk",
         "hash": "d012113365e219b9efbed4c3447e8407f62d0fec890222373455ef6c041687fd",
         "hashType": "sha256",
@@ -5655,7 +5655,7 @@
     ],
     "com.univision.prendetv": [
       {
-        "added": 1790087475862,
+        "added": 1790089361939,
         "apkName": "prendetv-4.47.2_tv-androidtv-tv.apk",
         "hash": "062ac217a2e62b9188dd6ee4392c3c90bd3a29386fe2db43786b8fa750b90615",
         "hashType": "sha256",
@@ -5672,9 +5672,9 @@
     ],
     "ch.protonmail.android": [
       {
-        "added": 1790087475916,
+        "added": 1790089361985,
         "apkName": "protonmail.android-7.11.5-hxreborn-arm64.apk",
-        "hash": "33e49ae851a03ca9c81e6586765412688647e468a485fb237ad722c8d17137e3",
+        "hash": "de854f31b3e243f707919f31df79c5559946c990d97b1deaacadcff4c0777a96",
         "hashType": "sha256",
         "packageName": "ch.protonmail.android",
         "versionCode": 18317,
@@ -5689,7 +5689,7 @@
     ],
     "ch.protonvpn.android": [
       {
-        "added": 1790087476097,
+        "added": 1790089362149,
         "apkName": "protonvpn.android-5.19.43.0-hoodles-arm64.apk",
         "hash": "c3e0fb0afce2ab754041a0d38285f62ab97241319270ec85fbfdb9f7c3060d9f",
         "hashType": "sha256",
@@ -5706,7 +5706,7 @@
     ],
     "jp.pxv.android": [
       {
-        "added": 1790087476147,
+        "added": 1790089362198,
         "apkName": "pxv.android-6.196.0-de-vanced-arm64.apk",
         "hash": "50022245ee1d7a0c1f0b46d1e43c15b6ae82288b838330570b6d5931665c3b75",
         "hashType": "sha256",
@@ -5723,7 +5723,7 @@
     ],
     "ru.iiec.pydroid3": [
       {
-        "added": 1790087476194,
+        "added": 1790089362243,
         "apkName": "pydroid3-8.3_arm64-hoodles-arm64.apk",
         "hash": "805f456ed818a92afe1459f1f14bb2b236e3cfaabda059de3175834c85af4856",
         "hashType": "sha256",
@@ -5740,7 +5740,7 @@
     ],
     "com.quizlet.quizletandroid": [
       {
-        "added": 1790087476283,
+        "added": 1790089362326,
         "apkName": "quizletandroid-10.38.1-hoomans-arm64.apk",
         "hash": "d9c8224e83c6cc7dd8349d743d766a0d489ed7fcfe77cdd8f80cf668782abcbe",
         "hashType": "sha256",
@@ -5757,9 +5757,9 @@
     ],
     "org.readera": [
       {
-        "added": 1790087476322,
+        "added": 1790089362362,
         "apkName": "readera-26.05.20+2300-hxreborn-arm64.apk",
-        "hash": "3d01f22c3683d2d1493b861c415f8d5c09df957cfc5095bdbafbf15f8f5b701e",
+        "hash": "b5fdb3ae41974d33f0ffa87050be84d0b40fc23b1f0c5fdeeab71db29a54e9f5",
         "hashType": "sha256",
         "packageName": "org.readera",
         "versionCode": 2300,
@@ -5774,7 +5774,7 @@
     ],
     "com.google.android.apps.recorder": [
       {
-        "added": 1790087476341,
+        "added": 1790089362382,
         "apkName": "recorder-4.2.20260709.976121876-de-vanced-arm64.apk",
         "hash": "0c05267a244a262d4a40d2930dc470dc2adf846081057f3688a40fbf52be894e",
         "hashType": "sha256",
@@ -5791,7 +5791,7 @@
     ],
     "com.soepic.photogallery.release": [
       {
-        "added": 1790087476402,
+        "added": 1790089362440,
         "apkName": "release-2.1.11-hoomans-arm64.apk",
         "hash": "462da305cab08eafcf807c66631c12f7de936eadd4f2bbde99e8c1d5ee4d5fb9",
         "hashType": "sha256",
@@ -5808,7 +5808,7 @@
     ],
     "com.hv.replaio": [
       {
-        "added": 1790087476467,
+        "added": 1790089362500,
         "apkName": "replaio-3.3.9-hoomans-arm64.apk",
         "hash": "c37265a07232e6072eea68b5bffa44335db18f9ecc6b8abace6b4292089f19d0",
         "hashType": "sha256",
@@ -5825,7 +5825,7 @@
     ],
     "com.sofascore.results": [
       {
-        "added": 1790087476529,
+        "added": 1790089362555,
         "apkName": "results-26.06.23-hoomans-arm64.apk",
         "hash": "e157edff1717909250e29f4038a6a77bbfa4d001f86c050fe2392d645d10ac0f",
         "hashType": "sha256",
@@ -5842,9 +5842,9 @@
     ],
     "com.gamma.scan": [
       {
-        "added": 1790087476612,
+        "added": 1790089362625,
         "apkName": "scan-2.2.221-hxreborn-arm64.apk",
-        "hash": "abc47a9cd7e2de2cf05624bb71cd3e24eb36d0416cd9d14e1efc1ecbb265e6b5",
+        "hash": "3ebaba9d2abe71f1775cb0635d3fc6f4ac83eb995031bac23314bd1b7f4605f1",
         "hashType": "sha256",
         "packageName": "com.gamma.scan",
         "versionCode": 221,
@@ -5859,7 +5859,7 @@
     ],
     "videoeditor.videorecorder.screenrecorder": [
       {
-        "added": 1790087476638,
+        "added": 1790089362649,
         "apkName": "screenrecorder-2.5.1.1-hoodles-arm64.apk",
         "hash": "e8cfbca551e4db094134828c4c47afa5756f94cc26f650035726137a8fc24222",
         "hashType": "sha256",
@@ -5876,7 +5876,7 @@
     ],
     "com.amazon.mShop.android.shopping": [
       {
-        "added": 1790087476677,
+        "added": 1790089362687,
         "apkName": "shopping-32.17.0.100-de-vanced-arm64.apk",
         "hash": "3ab157d9a85e544ac41b394d49e5f10af8576d4aca2be9fb415895a53f15afb0",
         "hashType": "sha256",
@@ -5893,9 +5893,9 @@
     ],
     "com.michaldrabik.showly2": [
       {
-        "added": 1790087476824,
+        "added": 1790089362842,
         "apkName": "showly2-3.70.0-hxreborn-arm64.apk",
-        "hash": "b764d0bcef8459dab53a5536705188a3b05dde86b4ef63c9d95f0d9da9ed343b",
+        "hash": "5d812ac324ac98c2e9f71c6d2da86b651325582fd1a680cfd4af9f69ec990b4f",
         "hashType": "sha256",
         "packageName": "com.michaldrabik.showly2",
         "versionCode": 840,
@@ -5910,7 +5910,7 @@
     ],
     "com.urbandroid.sleep": [
       {
-        "added": 1790087476843,
+        "added": 1790089362861,
         "apkName": "sleep-20260916-hoodles-arm64.apk",
         "hash": "ba5a6a1ccb23bbecf126062388d57f7a8aa1f381674bb17b4b6449867ffd6c25",
         "hashType": "sha256",
@@ -5927,7 +5927,7 @@
     ],
     "ak.alizandro.smartaudiobookplayer": [
       {
-        "added": 1790087476909,
+        "added": 1790089362925,
         "apkName": "smartaudiobookplayer-11.7.8-hoomans-arm64.apk",
         "hash": "90c276db054a80817043eb98f6a4a53056d59a2f344d96095fd057a5b969ed42",
         "hashType": "sha256",
@@ -5944,7 +5944,7 @@
     ],
     "com.nothing.smartcenter": [
       {
-        "added": 1790087476925,
+        "added": 1790089362941,
         "apkName": "smartcenter-3.8.0-de-vanced-arm64.apk",
         "hash": "d95cae232bcd92df5fd9c35ab5f61599ddf2f2ce7f00765775aa0b7dab97cc2d",
         "hashType": "sha256",
@@ -5961,7 +5961,7 @@
     ],
     "com.snorelab.app": [
       {
-        "added": 1790087477211,
+        "added": 1790089363214,
         "apkName": "snorelab.app-2.27.3.6291-hoodles-arm64.apk",
         "hash": "ace7e3f6108b36f6ae558401c8e9eee178273559304df0dfae623ef0abf9041c",
         "hashType": "sha256",
@@ -5978,7 +5978,7 @@
     ],
     "pl.solidexplorer2": [
       {
-        "added": 1790087477281,
+        "added": 1790089363285,
         "apkName": "solidexplorer2-3.5.20-hoodles-arm64.apk",
         "hash": "44ace0fa7abc74f4893a4f3210fb061a55845dd3d24fae59dff1633257cfb06e",
         "hashType": "sha256",
@@ -5995,7 +5995,7 @@
     ],
     "com.soundcloud.android": [
       {
-        "added": 1790087477320,
+        "added": 1790089363326,
         "apkName": "soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
         "hash": "51caf2042917c9ebe9452e1fb0d0339975579adf1684f83be6db5a74bcbef919",
         "hashType": "sha256",
@@ -6012,7 +6012,7 @@
     ],
     "org.zwanoo.android.speedtest": [
       {
-        "added": 1790087477386,
+        "added": 1790089363397,
         "apkName": "speedtest-7.0.4-xtra-arm64.apk",
         "hash": "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7",
         "hashType": "sha256",
@@ -6029,7 +6029,7 @@
     ],
     "io.stashteam.games.tracker.stashapp": [
       {
-        "added": 1790087477422,
+        "added": 1790089363476,
         "apkName": "stashapp-2.48.2-hoomans-arm64.apk",
         "hash": "3ad367dfa1cca6d424a899ac7ac8e3f49cb0ebab9453055bae0c8a5f0b2a5987",
         "hashType": "sha256",
@@ -6046,7 +6046,7 @@
     ],
     "com.noctuasoftware.stellarium_free": [
       {
-        "added": 1790087477479,
+        "added": 1790089363589,
         "apkName": "stellarium_free-1.16.3-xtra-arm64.apk",
         "hash": "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6",
         "hashType": "sha256",
@@ -6063,7 +6063,7 @@
     ],
     "com.strava": [
       {
-        "added": 1790087477642,
+        "added": 1790089363931,
         "apkName": "strava-477.14-de-vanced-arm64.apk",
         "hash": "e094e5a6ec90fbaf7a8b91f63eeacb5a61ad49b52c53323fa30a0659e13df80e",
         "hashType": "sha256",
@@ -6080,7 +6080,7 @@
     ],
     "com.superchinese": [
       {
-        "added": 1790087477796,
+        "added": 1790089364230,
         "apkName": "superchinese-6.8.1-hoodles-arm64.apk",
         "hash": "ab6fd7fb24a41a5b29456a91376502877e15febd79d7fa769b7f747624ad6144",
         "hashType": "sha256",
@@ -6097,7 +6097,7 @@
     ],
     "com.atomengineapps.teachmeanatomy": [
       {
-        "added": 1790087477970,
+        "added": 1790089364498,
         "apkName": "teachmeanatomy-5.115-hoomans-arm64.apk",
         "hash": "419b52a4b43caf6a20d8590930804733db813b8e229392195248c351fb033048",
         "hashType": "sha256",
@@ -6114,7 +6114,7 @@
     ],
     "com.teslacoilsw.launcher": [
       {
-        "added": 1790087478147,
+        "added": 1790089364669,
         "apkName": "teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
         "hash": "9aff1eb030bd9d12336d5a0530f453a65d0545f93992000af39c7c0dc4cdf088",
         "hashType": "sha256",
@@ -6131,9 +6131,9 @@
     ],
     "com.thetrainline": [
       {
-        "added": 1790087478197,
+        "added": 1790089364722,
         "apkName": "thetrainline-407.0.0.178994-hxreborn-arm64.apk",
-        "hash": "26ebc46d12d94dfbab30f6a7336a651b5fcfebcf07f8a9a49aceda2252c6dacf",
+        "hash": "17914b74c5a84a24f52a8d67f558e785696ca62cbdbaf5c9f7fc219e6104f436",
         "hashType": "sha256",
         "packageName": "com.thetrainline",
         "versionCode": 1278994,
@@ -6148,7 +6148,7 @@
     ],
     "com.amazon.avod.thirdpartyclient": [
       {
-        "added": 1790087478270,
+        "added": 1790089364794,
         "apkName": "thirdpartyclient-3.0.452.1047-hoodles-arm64.apk",
         "hash": "20bc6befdfc640383da017d04be8df46688da2470c7a7c6b2763ba30c16683ab",
         "hashType": "sha256",
@@ -6165,7 +6165,7 @@
     ],
     "com.todoist": [
       {
-        "added": 1790087478405,
+        "added": 1790089364925,
         "apkName": "todoist-v12190-hoomans-arm64.apk",
         "hash": "7d6038e4f1f9f2519ec8b2eabeae8e65e47fca75f4aa84798c20cedc068dafcb",
         "hashType": "sha256",
@@ -6182,7 +6182,7 @@
     ],
     "com.tracked.mobile": [
       {
-        "added": 1790087478462,
+        "added": 1790089364982,
         "apkName": "tracked.mobile-7.0.0-hoomans-arm64.apk",
         "hash": "316206376edea8e3bb7f89c2c231823550d8ffa9d0d1d6f2cbd7f8ddf966bf23",
         "hashType": "sha256",
@@ -6199,7 +6199,7 @@
     ],
     "com.budget.tracker_app": [
       {
-        "added": 1790087478582,
+        "added": 1790089365100,
         "apkName": "tracker_app-6.6.11-hoomans-arm64.apk",
         "hash": "e6f71c03aff1d4080b44eb2283b96f59ef12521cae360d924b2ecd86bb842c40",
         "hashType": "sha256",
@@ -6216,7 +6216,7 @@
     ],
     "com.sbs.train": [
       {
-        "added": 1790087478642,
+        "added": 1790089365161,
         "apkName": "train-1.2.1-hoodles-arm64.apk",
         "hash": "6151bda8a5f3eb2078145d5cdd3966121d0a0ea3a7352fe983c3e24986e6f303",
         "hashType": "sha256",
@@ -6233,7 +6233,7 @@
     ],
     "app.ttmikstories.android": [
       {
-        "added": 1790087478852,
+        "added": 1790089365400,
         "apkName": "ttmikstories.android-1.16.0-hoodles-arm64.apk",
         "hash": "02774316e66c1cbc9c353d4a9b5a1e0d365e2b6c795b92b1df2f9e77476e6c56",
         "hashType": "sha256",
@@ -6250,7 +6250,7 @@
     ],
     "com.tubitv": [
       {
-        "added": 1790087479010,
+        "added": 1790089365527,
         "apkName": "tubitv-10.28.5000-androidtv-tv.apk",
         "hash": "65eb37cd2bbdbf539566b103fc03026b1f333013bbfc47e3a9e52bc5d03f0b45",
         "hashType": "sha256",
@@ -6267,7 +6267,7 @@
     ],
     "com.tumblr": [
       {
-        "added": 1790087479088,
+        "added": 1790089365590,
         "apkName": "tumblr-45.8.0.110-hoomans-arm64.apk",
         "hash": "50c43ad13344879dce27e203056782a4e066a3172f0b9b28da722bbb8680b5ad",
         "hashType": "sha256",
@@ -6284,7 +6284,7 @@
     ],
     "com.simyasolutions.ling.universal": [
       {
-        "added": 1790087479146,
+        "added": 1790089365646,
         "apkName": "universal-8.4.4-hoodles-arm64.apk",
         "hash": "f52bf53d2ef28df13496eb09742e11508b76f580de8bfd2bb91809ece8c40b16",
         "hashType": "sha256",
@@ -6301,7 +6301,7 @@
     ],
     "com.ufovpn.connect.velnet": [
       {
-        "added": 1790087479257,
+        "added": 1790089365752,
         "apkName": "velnet-2.5.8-xtra-arm64.apk",
         "hash": "3812cb6e00a56858cf5f9ac9c28cc752f7dee2e92bf608e03112f4d0ccdc8268",
         "hashType": "sha256",
@@ -6318,7 +6318,7 @@
     ],
     "cz.ackee.ventusky": [
       {
-        "added": 1790087479354,
+        "added": 1790089365839,
         "apkName": "ventusky-53.1-hoodles-arm64.apk",
         "hash": "703f89aa5683923526fca956e20e2dd2d857f1a59a9104bbef01f15a0b4b1304",
         "hashType": "sha256",
@@ -6335,7 +6335,7 @@
     ],
     "app.remux.video.converter": [
       {
-        "added": 1790087479400,
+        "added": 1790089365883,
         "apkName": "video.converter-3.2.2-hoomans-arm64.apk",
         "hash": "fdee69204519e5e4fd778c483b8015df3a65e885efd8e74d5c0cc6f523ed52e7",
         "hashType": "sha256",
@@ -6352,7 +6352,7 @@
     ],
     "com.viber.voip": [
       {
-        "added": 1790087479540,
+        "added": 1790089366030,
         "apkName": "voip-26.1.2.0-de-vanced-arm64.apk",
         "hash": "10a14308a6d29fc9c173460945be5ceeac0a7a147b0766062242219a4c66fdad",
         "hashType": "sha256",
@@ -6369,7 +6369,7 @@
     ],
     "com.vpn.free.hotspot.secure.vpnify": [
       {
-        "added": 1790087479683,
+        "added": 1790089366175,
         "apkName": "vpnify-2.2.9-xtra-arm64.apk",
         "hash": "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28",
         "hashType": "sha256",
@@ -6386,7 +6386,7 @@
     ],
     "nom.vrd": [
       {
-        "added": 1790087479718,
+        "added": 1790089366211,
         "apkName": "vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
         "hash": "dc0f8169c41d506e4c5466e8b8e1f0eb3dd594dd6886d12add275cf8efda6c07",
         "hashType": "sha256",
@@ -6403,7 +6403,7 @@
     ],
     "com.vitotechnology.sky.tonight.map.star.walk": [
       {
-        "added": 1790087479825,
+        "added": 1790089366314,
         "apkName": "walk-2.5.0-xtra-arm64.apk",
         "hash": "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321",
         "hashType": "sha256",
@@ -6420,7 +6420,7 @@
     ],
     "com.wallpaperscraft.wallpaper": [
       {
-        "added": 1790087480089,
+        "added": 1790089366584,
         "apkName": "wallpaper-3.61.01-hoodles-arm64.apk",
         "hash": "e5d2898c72b2becbf4489b9206a50b03de516a69d1a65c6e36ba8d76f153f8ea",
         "hashType": "sha256",
@@ -6437,7 +6437,7 @@
     ],
     "com.backdrops.wallpapers": [
       {
-        "added": 1790087480165,
+        "added": 1790089366659,
         "apkName": "wallpapers-6.1.2-xtra-arm64.apk",
         "hash": "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062",
         "hashType": "sha256",
@@ -6454,7 +6454,7 @@
     ],
     "com.wanderlog.android": [
       {
-        "added": 1790087480200,
+        "added": 1790089366697,
         "apkName": "wanderlog.android-2.208-hoomans-arm64.apk",
         "hash": "28ea5cbf3008a4d53b9bf3eb6da36b9d0db7012bebf4031731d94ede3b5d0b63",
         "hashType": "sha256",
@@ -6471,7 +6471,7 @@
     ],
     "com.mobilefootie.wc2010": [
       {
-        "added": 1790087480370,
+        "added": 1790089366869,
         "apkName": "wc2010-236.17398.20260827-hoodles-arm64.apk",
         "hash": "3de4eb105a32289139d5ea59757ec8d3b8c87776a2490bb12a922086b2ef890b",
         "hashType": "sha256",
@@ -6488,7 +6488,7 @@
     ],
     "com.windyty.android": [
       {
-        "added": 1790087480429,
+        "added": 1790089366926,
         "apkName": "windyty.android-51.0.1-hoodles-arm64.apk",
         "hash": "174b6ac5eac8fdba8f99e9007016a80df2b9790676c80f642a5947ea3dab289b",
         "hashType": "sha256",
@@ -6505,7 +6505,7 @@
     ],
     "app.morphe.android.youtube": [
       {
-        "added": 1790087480503,
+        "added": 1790089367005,
         "apkName": "youtube-21.13.164-morphe-arm64.apk",
         "hash": "0bb47950c4f32044fa78cdd248a13116b81bce21d54ba9062664e513045d6c98",
         "hashType": "sha256",
