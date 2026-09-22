@@ -567,14 +567,14 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088932,
-      "out": "etsy.android-7.95.0-hxreborn-arm64.apk",
+      "at": 1790092478,
+      "out": "etsy.android-7.96.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.28.0"
       },
-      "vc": 79500148,
-      "version": "7.95.0"
+      "vc": 79600135,
+      "version": "7.96.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "Facebook",
@@ -2103,8 +2103,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1790088932,
-      47658195
+      1790092478,
+      47646166
     ],
     "com.facebook.katana": [
       1789948557,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
