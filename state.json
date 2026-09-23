@@ -27,11 +27,11 @@
     "all.in.one.calculator|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088894,
+      "at": 1790175286,
       "out": "calculator-3.4.0-hxreborn-arm64.apk",
       "package": "all.in.one.calculator",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 340,
       "version": "3.4.0"
@@ -63,11 +63,11 @@
     "app.rubberbands.fit|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088904,
+      "at": 1790175281,
       "out": "fit-3.9-hxreborn-arm64.apk",
       "package": "app.rubberbands.fit",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 291,
       "version": "3.9"
@@ -75,11 +75,11 @@
     "app.symfonik.music.player|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088908,
+      "at": 1790175277,
       "out": "player-15.0.1-hxreborn-arm64.apk",
       "package": "app.symfonik.music.player",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 127798,
       "version": "15.0.1"
@@ -111,11 +111,11 @@
     "ch.protonmail.android|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088932,
+      "at": 1790175310,
       "out": "protonmail.android-7.11.5-hxreborn-arm64.apk",
       "package": "ch.protonmail.android",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 18317,
       "version": "7.11.5"
@@ -303,11 +303,11 @@
     "com.audible.application|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088923,
+      "at": 1790175299,
       "out": "application-26.30.05-hxreborn-arm64.apk",
       "package": "com.audible.application",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 2090263005,
       "version": "26.30.05"
@@ -519,11 +519,11 @@
     "com.cxinventor.file.explorer|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088924,
+      "at": 1790175302,
       "out": "explorer-2.7.8-hxreborn-arm64.apk",
       "package": "com.cxinventor.file.explorer",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 278,
       "version": "2.7.8"
@@ -567,14 +567,14 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790092478,
-      "out": "etsy.android-7.96.0-hxreborn-arm64.apk",
+      "at": 1790175312,
+      "out": "etsy.android-7.95.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
-      "vc": 79600135,
-      "version": "7.96.0"
+      "vc": 79500148,
+      "version": "7.95.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "Facebook",
@@ -615,11 +615,11 @@
     "com.gamma.scan|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088930,
+      "at": 1790175307,
       "out": "scan-2.2.221-hxreborn-arm64.apk",
       "package": "com.gamma.scan",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 221,
       "version": "2.2.221"
@@ -783,11 +783,11 @@
     "com.kick.mobile|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088946,
+      "at": 1790175321,
       "out": "kick.mobile-40.30.4-hxreborn-arm64.apk",
       "package": "com.kick.mobile",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 60006950,
       "version": "40.30.4"
@@ -879,11 +879,11 @@
     "com.michaldrabik.showly2|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088940,
+      "at": 1790175317,
       "out": "showly2-3.70.0-hxreborn-arm64.apk",
       "package": "com.michaldrabik.showly2",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 840,
       "version": "3.70.0"
@@ -951,11 +951,11 @@
     "com.myvitale.forus|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088947,
+      "at": 1790175320,
       "out": "forus-3.0.15-hxreborn-arm64.apk",
       "package": "com.myvitale.forus",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 96,
       "version": "3.0.15"
@@ -1227,11 +1227,11 @@
     "com.streetwriters.notesnook|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088952,
+      "at": 1790175325,
       "out": "notesnook-3.4.12-hxreborn-arm64.apk",
       "package": "com.streetwriters.notesnook",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 4197422,
       "version": "3.4.12"
@@ -1275,11 +1275,11 @@
     "com.thetrainline|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088955,
+      "at": 1790175328,
       "out": "thetrainline-407.0.0.178994-hxreborn-arm64.apk",
       "package": "com.thetrainline",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 1278994,
       "version": "407.0.0.178994"
@@ -1743,11 +1743,11 @@
     "org.readera|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088954,
+      "at": 1790175328,
       "out": "readera-26.05.20+2300-hxreborn-arm64.apk",
       "package": "org.readera",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 2300,
       "version": "26.05.20+2300"
@@ -1779,11 +1779,11 @@
     "photo.editor.photoeditor.photoeditorpro|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790088967,
+      "at": 1790175342,
       "out": "photoeditorpro-1.791.265-hxreborn-arm64.apk",
       "package": "photo.editor.photoeditor.photoeditorpro",
       "tags": {
-        "hxreborn": "v1.28.0"
+        "hxreborn": "v1.29.0"
       },
       "vc": 265100,
       "version": "1.791.265"
@@ -1890,7 +1890,7 @@
     "de-vanced": "v1.4.4",
     "hoodles": "v1.45.0-dev.2",
     "hoomans": "v1.53.0",
-    "hxreborn": "v1.28.0",
+    "hxreborn": "v1.29.0",
     "microg": "7.2.1-dev.3",
     "morphe": "v1.45.0-dev.4",
     "prathxm": "v1.13.1",
@@ -1911,7 +1911,7 @@
       4930922
     ],
     "all.in.one.calculator": [
-      1790088894,
+      1790175285,
       36301495
     ],
     "altergames.carlauncher": [
@@ -1935,11 +1935,11 @@
       44870727
     ],
     "app.rubberbands.fit": [
-      1790088904,
+      1790175281,
       76126520
     ],
     "app.symfonik.music.player": [
-      1790088908,
+      1790175276,
       20076420
     ],
     "app.ttmikstories.android": [
@@ -1951,7 +1951,7 @@
       14659714
     ],
     "ch.protonmail.android": [
-      1790088932,
+      1790175308,
       158258588
     ],
     "ch.protonvpn.android": [
@@ -2015,7 +2015,7 @@
       141635595
     ],
     "com.audible.application": [
-      1790088922,
+      1790175299,
       110073724
     ],
     "com.avocards": [
@@ -2087,7 +2087,7 @@
       84845593
     ],
     "com.cxinventor.file.explorer": [
-      1790088924,
+      1790175302,
       12199950
     ],
     "com.drinkplusplus.angulus": [
@@ -2103,8 +2103,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1790092478,
-      47646166
+      1790175311,
+      47658195
     ],
     "com.facebook.katana": [
       1789948557,
@@ -2119,7 +2119,7 @@
       201207455
     ],
     "com.gamma.scan": [
-      1790088930,
+      1790175307,
       15528886
     ],
     "com.getmimo": [
@@ -2167,7 +2167,7 @@
       153569003
     ],
     "com.kick.mobile": [
-      1790088944,
+      1790175321,
       104994803
     ],
     "com.letterboxd.letterboxd": [
@@ -2195,7 +2195,7 @@
       137876091
     ],
     "com.michaldrabik.showly2": [
-      1790088940,
+      1790175317,
       8054680
     ],
     "com.microblink.photomath": [
@@ -2219,7 +2219,7 @@
       4143288
     ],
     "com.myvitale.forus": [
-      1790088947,
+      1790175320,
       94294767
     ],
     "com.naver.linewebtoon": [
@@ -2311,8 +2311,8 @@
       116495681
     ],
     "com.streetwriters.notesnook": [
-      1790088952,
-      68023217
+      1790175325,
+      68027313
     ],
     "com.superchinese": [
       1790028048,
@@ -2327,7 +2327,7 @@
       53281893
     ],
     "com.thetrainline": [
-      1790088955,
+      1790175328,
       56853037
     ],
     "com.todoist": [
@@ -2483,7 +2483,7 @@
       52261862
     ],
     "org.readera": [
-      1790088954,
+      1790175328,
       13204948
     ],
     "org.totschnig.myexpenses": [
@@ -2495,8 +2495,8 @@
       28315126
     ],
     "photo.editor.photoeditor.photoeditorpro": [
-      1790088967,
-      40930753
+      1790175341,
+      40934849
     ],
     "pl.solidexplorer2": [
       1790027771,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
