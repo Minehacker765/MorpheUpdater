@@ -795,14 +795,14 @@
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
       "arch": "arm64",
-      "at": 1789948608,
-      "out": "letterboxd-3.5.7-de-vanced-arm64.apk",
+      "at": 1790196901,
+      "out": "letterboxd-3.5.8-de-vanced-arm64.apk",
       "package": "com.letterboxd.letterboxd",
       "tags": {
         "de-vanced": "v1.4.4"
       },
-      "vc": 503,
-      "version": "3.5.7"
+      "vc": 504,
+      "version": "3.5.8"
     },
     "com.lingodeer|hoodles|arm64": {
       "app_name": "LingoDeer - Learn Languages",
@@ -2171,8 +2171,8 @@
       104994803
     ],
     "com.letterboxd.letterboxd": [
-      1789948607,
-      95018377
+      1790196901,
+      93175601
     ],
     "com.lingodeer": [
       1790027929,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
