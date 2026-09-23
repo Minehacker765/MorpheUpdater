@@ -243,14 +243,14 @@
     "com.amazon.mShop.android.shopping|de-vanced|arm64": {
       "app_name": "Amazon Shopping",
       "arch": "arm64",
-      "at": 1789948657,
-      "out": "shopping-32.17.0.100-de-vanced-arm64.apk",
+      "at": 1790135726,
+      "out": "shopping-32.18.0.100-de-vanced-arm64.apk",
       "package": "com.amazon.mShop.android.shopping",
       "tags": {
         "de-vanced": "v1.4.4"
       },
-      "vc": 1243230206,
-      "version": "32.17.0.100"
+      "vc": 1243240206,
+      "version": "32.18.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
       "app_name": "Amazon Music: Songs & Podcasts",
@@ -1995,8 +1995,8 @@
       108140243
     ],
     "com.amazon.mShop.android.shopping": [
-      1789948657,
-      128170133
+      1790135726,
+      128307593
     ],
     "com.amazon.mp3": [
       1789948577,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
