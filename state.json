@@ -567,14 +567,14 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790175312,
-      "out": "etsy.android-7.95.0-hxreborn-arm64.apk",
+      "at": 1790177112,
+      "out": "etsy.android-7.96.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.29.0"
       },
-      "vc": 79500148,
-      "version": "7.95.0"
+      "vc": 79600135,
+      "version": "7.96.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "Facebook",
@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790166328,
+      "at": 1790177103,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.45.0-dev.4"
+        "morphe": "v1.45.0-dev.5"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -1023,14 +1023,14 @@
     "com.pandora.android|hoodles|arm64": {
       "app_name": "Pandora - Music & Podcasts",
       "arch": "arm64",
-      "at": 1790027981,
-      "out": "pandora.android-2608.1-hoodles-arm64.apk",
+      "at": 1790177122,
+      "out": "pandora.android-2609.1.1-hoodles-arm64.apk",
       "package": "com.pandora.android",
       "tags": {
         "hoodles": "v1.45.0-dev.2"
       },
-      "vc": 26081001,
-      "version": "2608.1"
+      "vc": 26091104,
+      "version": "2609.1.1"
     },
     "com.peacocktv.peacockandroid|androidtv|tv": {
       "app_name": "",
@@ -1095,11 +1095,11 @@
     "com.reddit.frontpage|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790166327,
+      "at": 1790177102,
       "out": "frontpage-2026.14.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.45.0-dev.4"
+        "morphe": "v1.45.0-dev.5"
       },
       "vc": 2614140,
       "version": "2026.14.0"
@@ -1892,7 +1892,7 @@
     "hoomans": "v1.53.0",
     "hxreborn": "v1.29.0",
     "microg": "7.2.1-dev.3",
-    "morphe": "v1.45.0-dev.4",
+    "morphe": "v1.45.0-dev.5",
     "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1919,8 +1919,8 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1790166327,
-      72251131
+      1790177103,
+      72255227
     ],
     "app.morphe.android.youtube": [
       1789718750,
@@ -2103,8 +2103,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1790175311,
-      47658195
+      1790177112,
+      47650262
     ],
     "com.facebook.katana": [
       1789948557,
@@ -2243,8 +2243,8 @@
       8932883
     ],
     "com.pandora.android": [
-      1790027981,
-      66112225
+      1790177122,
+      67990886
     ],
     "com.peacocktv.peacockandroid": [
       1789863917,
@@ -2267,7 +2267,7 @@
       24083683
     ],
     "com.reddit.frontpage": [
-      1790166327,
+      1790177101,
       57733463
     ],
     "com.rp.hypertrophy": [
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789864145,
-      56671443
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
