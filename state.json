@@ -687,14 +687,14 @@
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
       "arch": "arm64",
-      "at": 1789948626,
-      "out": "recorder-4.2.20260709.976121876-de-vanced-arm64.apk",
+      "at": 1790157300,
+      "out": "recorder-4.2.20260823.982886211-de-vanced-arm64.apk",
       "package": "com.google.android.apps.recorder",
       "tags": {
         "de-vanced": "v1.4.4"
       },
-      "vc": 42423113,
-      "version": "4.2.20260709.976121876"
+      "vc": 42443113,
+      "version": "4.2.20260823.982886211"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
@@ -2143,8 +2143,8 @@
       72454081
     ],
     "com.google.android.apps.recorder": [
-      1789948626,
-      52308495
+      1790157300,
+      52726328
     ],
     "com.google.android.dialer": [
       1789950350,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
