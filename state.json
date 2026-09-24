@@ -1369,16 +1369,16 @@
       "version": "4.47.2_tv"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
-      "at": 1790031306,
-      "out": "sleep-20260916-hoodles-arm64.apk",
+      "at": 1790261708,
+      "out": "sleep-20260923-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.45.0-dev.2"
       },
-      "vc": 2311705,
-      "version": "20260916"
+      "vc": 2311709,
+      "version": "20260923"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "Rakuten Viber Messenger",
@@ -2359,8 +2359,8 @@
       40092425
     ],
     "com.urbandroid.sleep": [
-      1790031306,
-      50131146
+      1790261708,
+      50360432
     ],
     "com.viber.voip": [
       1789948668,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
