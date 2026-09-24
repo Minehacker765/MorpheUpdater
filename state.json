@@ -781,16 +781,16 @@
       "version": "7.20.0.2606230000"
     },
     "com.kick.mobile|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "KICK: Live Streaming",
       "arch": "arm64",
-      "at": 1790175321,
-      "out": "kick.mobile-40.30.4-hxreborn-arm64.apk",
+      "at": 1790211309,
+      "out": "kick.mobile-40.31.0-hxreborn-arm64.apk",
       "package": "com.kick.mobile",
       "tags": {
         "hxreborn": "v1.29.0"
       },
-      "vc": 60006950,
-      "version": "40.30.4"
+      "vc": 60006951,
+      "version": "40.31.0"
     },
     "com.letterboxd.letterboxd|de-vanced|arm64": {
       "app_name": "Letterboxd",
@@ -2167,8 +2167,8 @@
       153569003
     ],
     "com.kick.mobile": [
-      1790175321,
-      104994803
+      1790211308,
+      105449659
     ],
     "com.letterboxd.letterboxd": [
       1790196901,
@@ -2519,8 +2519,8 @@
       28927428
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1789864145,
+      56671443
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
