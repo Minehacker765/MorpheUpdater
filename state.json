@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790240101,
+      "at": 1790339087,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.45.0-dev.9"
+        "morphe": "v1.45.0-dev.14"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -1093,16 +1093,16 @@
       "version": "4.12.13 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
-      "app_name": "",
+      "app_name": "Reddit",
       "arch": "arm64",
-      "at": 1790240100,
-      "out": "frontpage-2026.14.0-morphe-arm64.apk",
+      "at": 1790339104,
+      "out": "frontpage-2026.24.0-morphe-arm64.apk",
       "package": "com.reddit.frontpage",
       "tags": {
-        "morphe": "v1.45.0-dev.9"
+        "morphe": "v1.45.0-dev.14"
       },
-      "vc": 2614140,
-      "version": "2026.14.0"
+      "vc": 2624051,
+      "version": "2026.24.0"
     },
     "com.rp.hypertrophy|hoodles|arm64": {
       "app_name": "RP Hypertrophy",
@@ -1892,7 +1892,7 @@
     "hoomans": "v1.53.0",
     "hxreborn": "v1.29.0",
     "microg": "7.2.1-dev.3",
-    "morphe": "v1.45.0-dev.9",
+    "morphe": "v1.45.0-dev.14",
     "prathxm": "v1.13.1",
     "tiktok-hx": "v1.3.0",
     "xtra": "v2.12.0"
@@ -1919,8 +1919,8 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1790240101,
-      72271782
+      1790339087,
+      72308646
     ],
     "app.morphe.android.youtube": [
       1789718750,
@@ -2267,8 +2267,8 @@
       24083683
     ],
     "com.reddit.frontpage": [
-      1790240100,
-      57733463
+      1790339104,
+      64922325
     ],
     "com.rp.hypertrophy": [
       1790029473,
@@ -2519,8 +2519,8 @@
       28931524
     ],
     "tv.twitch.android.app": [
-      1790267181,
-      56687819
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
