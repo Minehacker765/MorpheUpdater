@@ -219,11 +219,11 @@
     "com.amazon.amazonvideo.livingroom|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1790357081,
+      "at": 1790389478,
       "out": "livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
       "package": "com.amazon.amazonvideo.livingroom",
       "tags": {
-        "androidtv": "v1.37.6"
+        "androidtv": "v1.37.7"
       },
       "vc": 606023231,
       "version": "6.23.23+v15.5.0.70-armv7a"
@@ -1839,11 +1839,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "",
       "arch": "tv",
-      "at": 1790357085,
+      "at": 1790389481,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.37.6"
+        "androidtv": "v1.37.7"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -1987,7 +1987,7 @@
       151927773
     ],
     "com.amazon.amazonvideo.livingroom": [
-      1790357080,
+      1790389477,
       26079339
     ],
     "com.amazon.avod.thirdpartyclient": [
@@ -2515,12 +2515,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1790357084,
+      1790389481,
       28931524
     ],
     "tv.twitch.android.app": [
-      1790387724,
-      56687819
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790027780,
