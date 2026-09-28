@@ -145,13 +145,13 @@
       "version": "1.21.0-release"
     },
     "cn.wps.moffice_eng|hoodles|arm64": {
-      "app_name": "WPS Office-PDF, Word, Sheet",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1790027863,
+      "at": 1790583355,
       "out": "moffice_eng-18.24-hoodles-arm64.apk",
       "package": "cn.wps.moffice_eng",
       "tags": {
-        "hoodles": "v1.45.0-dev.2"
+        "hoodles": "v1.45.0-dev.5"
       },
       "vc": 1553,
       "version": "18.24"
@@ -1963,8 +1963,8 @@
       16089663
     ],
     "cn.wps.moffice_eng": [
-      1790027863,
-      126186155
+      1790583355,
+      126173867
     ],
     "com.adguard.android": [
       1789865624,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790560534,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790579475,
