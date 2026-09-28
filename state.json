@@ -421,16 +421,16 @@
       "version": "3.23.1"
     },
     "com.busuu.android.enc|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Busuu: Learn & Speak Languages",
       "arch": "arm64",
-      "at": 1790581996,
-      "out": "enc-32.47.0(1754308)-hoodles-arm64.apk",
+      "at": 1790594168,
+      "out": "enc-32.48.0(1766366)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
         "hoodles": "v1.45.0-dev.5"
       },
-      "vc": 1754308,
-      "version": "32.47.0(1754308)"
+      "vc": 1766366,
+      "version": "32.48.0(1766366)"
     },
     "com.camerasideas.instashot|hoomans|arm64": {
       "app_name": "Video Editor & Maker - InShot",
@@ -2055,8 +2055,8 @@
       74113252
     ],
     "com.busuu.android.enc": [
-      1790581996,
-      57047581
+      1790594168,
+      56810330
     ],
     "com.camerasideas.instashot": [
       1789950338,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790560534,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790579475,
