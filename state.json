@@ -193,13 +193,13 @@
       "version": "26.7.1.47181"
     },
     "com.alltrails.alltrails|hoodles|arm64": {
-      "app_name": "AllTrails: Hike, Bike & Run",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1790620819,
+      "at": 1790627386,
       "out": "alltrails-26.9.40-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
-        "hoodles": "v1.45.0"
+        "hoodles": "v1.45.1-dev.1"
       },
       "vc": 60526,
       "version": "26.9.40"
@@ -1979,8 +1979,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1790626367,
-      95895992
+      1790627386,
+      96324751
     ],
     "com.alphaprogression.alphaprogression": [
       1789950298,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1790560534,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790624118,
