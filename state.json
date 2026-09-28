@@ -471,11 +471,11 @@
     "com.chess|prathxm|arm64": {
       "app_name": "Chess - Play and Learn Online",
       "arch": "arm64",
-      "at": 1790528135,
+      "at": 1790596003,
       "out": "chess-4.10.0-googleplay-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
-        "prathxm": "v1.13.2-dev.1"
+        "prathxm": "v1.14.0-dev.1"
       },
       "vc": 268250,
       "version": "4.10.0-googleplay"
@@ -1893,7 +1893,7 @@
     "hxreborn": "v1.33.0",
     "microg": "7.2.1-dev.3",
     "morphe": "v1.45.0-dev.18",
-    "prathxm": "v1.13.2-dev.1",
+    "prathxm": "v1.14.0-dev.1",
     "tiktok-hx": "v1.4.0",
     "xtra": "v2.12.0"
   },
@@ -2071,8 +2071,8 @@
       55703198
     ],
     "com.chess.prathxm": [
-      1790528131,
-      258528680
+      1790596002,
+      258549160
     ],
     "com.collectrinc.collectr": [
       1789950330,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1790560534,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790579475,
@@ -2534,8 +2534,8 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "external",
-      "tag": "v1.17.1-dev.2"
+      "signing": "internal",
+      "tag": "v1.17.1-dev.3"
     }
   }
 }
