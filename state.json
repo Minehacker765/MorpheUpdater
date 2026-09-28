@@ -471,11 +471,11 @@
     "com.chess|prathxm|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790629171,
+      "at": 1790636524,
       "out": "chess-4.10.0-googleplay-prathxm-arm64.apk",
       "package": "com.chess",
       "tags": {
-        "prathxm": "v1.14.0"
+        "prathxm": "v1.15.0"
       },
       "vc": 268250,
       "version": "4.10.0-googleplay"
@@ -2071,8 +2071,8 @@
       55703198
     ],
     "com.chess.prathxm": [
-      1790635313,
-      65100152
+      1790636523,
+      258606504
     ],
     "com.collectrinc.collectr": [
       1789950330,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790560534,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790632890,
