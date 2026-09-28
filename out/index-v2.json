@@ -14,7 +14,7 @@
       }
     },
     "address": "https://morpheupdater.minehacker765.workers.dev",
-    "timestamp": 1790610721814,
+    "timestamp": 1790613015457,
     "mirrors": [
       {
         "url": "https://morpheupdater.minehacker765.workers.dev"
@@ -44,13 +44,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610706810,
-        "lastUpdated": 1790610707097,
+        "added": 1790612997704,
+        "lastUpdated": 1790612997990,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d77b6767fce511cc1fd8f44894b3f6fc207a52429f5d14fdd35a31af9ad06175": {
-          "added": 1790610707097,
+          "added": 1790612997990,
           "file": {
             "name": "/adguard-4.14.2-arm64.apk",
             "sha256": "d77b6767fce511cc1fd8f44894b3f6fc207a52429f5d14fdd35a31af9ad06175",
@@ -71,7 +71,7 @@
           }
         },
         "feeac0f16286ebe6cb1dc3aa22ae60c1792d35ff68f618294483b3a10402b6f2": {
-          "added": 1790610707002,
+          "added": 1790612997895,
           "file": {
             "name": "/adguard-4.14.1-arm64.apk",
             "sha256": "feeac0f16286ebe6cb1dc3aa22ae60c1792d35ff68f618294483b3a10402b6f2",
@@ -92,7 +92,7 @@
           }
         },
         "05784b0592ace307d96a975062e0752940795ce3c18a05e5820e8aad702f7c1a": {
-          "added": 1790610706905,
+          "added": 1790612997799,
           "file": {
             "name": "/adguard-4.14.0-arm64.apk",
             "sha256": "05784b0592ace307d96a975062e0752940795ce3c18a05e5820e8aad702f7c1a",
@@ -113,7 +113,7 @@
           }
         },
         "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6": {
-          "added": 1790610706810,
+          "added": 1790612997704,
           "file": {
             "name": "/adguard-4.13.2-arm64.apk",
             "sha256": "d9756e07f80aff4640b47a464e35f1b566b861e67f1cfafc954223ab52ebc5d6",
@@ -157,13 +157,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707188,
-        "lastUpdated": 1790610707188,
+        "added": 1790612998081,
+        "lastUpdated": 1790612998081,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d3be35a3c8607050eb78c6236d1cfd8ae3f9f1da655a95bff002c1db8a7f52a7": {
-          "added": 1790610707188,
+          "added": 1790612998081,
           "file": {
             "name": "/adm-14.0.39-hoomans-arm64.apk",
             "sha256": "d3be35a3c8607050eb78c6236d1cfd8ae3f9f1da655a95bff002c1db8a7f52a7",
@@ -207,13 +207,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707236,
-        "lastUpdated": 1790610707236,
+        "added": 1790612998139,
+        "lastUpdated": 1790612998139,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "905890351964ba5bb9c937f1124d0466657efb2b65797f31fd11a10597765f37": {
-          "added": 1790610707236,
+          "added": 1790612998139,
           "file": {
             "name": "/adobe.reader-26.7.1.47181-hoomans-arm64.apk",
             "sha256": "905890351964ba5bb9c937f1124d0466657efb2b65797f31fd11a10597765f37",
@@ -257,13 +257,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707424,
-        "lastUpdated": 1790610707424,
+        "added": 1790612998312,
+        "lastUpdated": 1790612998312,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4ac93e2756040fc3de6c6eb5af5470838a9bf1d2e9f5114127ba01feadadae0d": {
-          "added": 1790610707424,
+          "added": 1790612998312,
           "file": {
             "name": "/alltrails-26.9.40-hoodles-arm64.apk",
             "sha256": "4ac93e2756040fc3de6c6eb5af5470838a9bf1d2e9f5114127ba01feadadae0d",
@@ -307,13 +307,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707549,
-        "lastUpdated": 1790610707549,
+        "added": 1790612998442,
+        "lastUpdated": 1790612998442,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a6736ff6d31deed690ac990a0eedc2a87de47bc474214b001b8a084234233f87": {
-          "added": 1790610707549,
+          "added": 1790612998442,
           "file": {
             "name": "/alphaprogression-7.1.1-hoomans-arm64.apk",
             "sha256": "a6736ff6d31deed690ac990a0eedc2a87de47bc474214b001b8a084234233f87",
@@ -357,13 +357,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711653,
-        "lastUpdated": 1790610711653,
+        "added": 1790613003223,
+        "lastUpdated": 1790613003223,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f63f29927fc13c4a6b310cacf478fd8b4a233ef1dc744778816e674503befe0b": {
-          "added": 1790610711653,
+          "added": 1790613003223,
           "file": {
             "name": "/free-2.4.0e-hxreborn-arm64.apk",
             "sha256": "f63f29927fc13c4a6b310cacf478fd8b4a233ef1dc744778816e674503befe0b",
@@ -407,13 +407,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715420,
-        "lastUpdated": 1790610715420,
+        "added": 1790613009148,
+        "lastUpdated": 1790613009148,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "ce607c1e94fe958183f926498a210b75689d767b1a352f35c441f7b0ffa02d42": {
-          "added": 1790610715420,
+          "added": 1790613009148,
           "file": {
             "name": "/mp3-26.34.0-de-vanced-arm64.apk",
             "sha256": "ce607c1e94fe958183f926498a210b75689d767b1a352f35c441f7b0ffa02d42",
@@ -457,13 +457,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717860,
-        "lastUpdated": 1790610717860,
+        "added": 1790613011520,
+        "lastUpdated": 1790613011520,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8a2c5e005e498463a55309579a77cfe20122f6ea921833154a474e6e35392f32": {
-          "added": 1790610717860,
+          "added": 1790613011520,
           "file": {
             "name": "/shopping-32.18.0.100-de-vanced-arm64.apk",
             "sha256": "8a2c5e005e498463a55309579a77cfe20122f6ea921833154a474e6e35392f32",
@@ -507,13 +507,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707914,
-        "lastUpdated": 1790610707914,
+        "added": 1790612998821,
+        "lastUpdated": 1790612998821,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b7e5aa553d7f628efb54c8c0d8880b4fb16e41f4fde74c69576e007c4104e102": {
-          "added": 1790610707914,
+          "added": 1790612998821,
           "file": {
             "name": "/angulus-6.1.0-de-vanced-arm64.apk",
             "sha256": "b7e5aa553d7f628efb54c8c0d8880b4fb16e41f4fde74c69576e007c4104e102",
@@ -557,13 +557,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708612,
-        "lastUpdated": 1790610708612,
+        "added": 1790612999253,
+        "lastUpdated": 1790612999253,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9": {
-          "added": 1790610708612,
+          "added": 1790612999253,
           "file": {
             "name": "/atmfee-3.7.9-xtra-arm64.apk",
             "sha256": "882796f9a7ea57a711ce7a56bae758ed957c624b1e7fa8284c6a45aabe5634b9",
@@ -607,13 +607,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708205,
-        "lastUpdated": 1790610708205,
+        "added": 1790612999092,
+        "lastUpdated": 1790612999092,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "58fa9114a3d3a920c00ebec4f6e95f55c4c32aec6b66d43baa060b67e4280ae9": {
-          "added": 1790610708205,
+          "added": 1790612999092,
           "file": {
             "name": "/application-26.30.05-hxreborn-arm64.apk",
             "sha256": "58fa9114a3d3a920c00ebec4f6e95f55c4c32aec6b66d43baa060b67e4280ae9",
@@ -657,13 +657,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708717,
-        "lastUpdated": 1790610708717,
+        "added": 1790612999309,
+        "lastUpdated": 1790612999309,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad": {
-          "added": 1790610708717,
+          "added": 1790612999309,
           "file": {
             "name": "/automate-1.51.1-xtra-arm64.apk",
             "sha256": "8af0f2e0f045d423f1ec15e5578b6612105454b034061b71a982a53b847c33ad",
@@ -707,13 +707,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708750,
-        "lastUpdated": 1790610708750,
+        "added": 1790612999325,
+        "lastUpdated": 1790612999325,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3": {
-          "added": 1790610708750,
+          "added": 1790612999325,
           "file": {
             "name": "/autosync-7.5.10-xtra-arm64.apk",
             "sha256": "8411a617a33931fca4b8e18854c2d50adc1acae6458583993f7493d06e14efd3",
@@ -757,13 +757,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708849,
-        "lastUpdated": 1790610708849,
+        "added": 1790612999378,
+        "lastUpdated": 1790612999378,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c3884650e5cc30bcd14db6412af7ff58725b0c4e823cd6ac28df4b99e6380aaf": {
-          "added": 1790610708849,
+          "added": 1790612999378,
           "file": {
             "name": "/autozen-8.0.10-hoomans-arm64.apk",
             "sha256": "c3884650e5cc30bcd14db6412af7ff58725b0c4e823cd6ac28df4b99e6380aaf",
@@ -807,13 +807,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709195,
-        "lastUpdated": 1790610709195,
+        "added": 1790612999568,
+        "lastUpdated": 1790612999568,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f07cca2e9af058e641465b846579afd605f6a8b068a37b5089b780eb405da5cc": {
-          "added": 1790610709195,
+          "added": 1790612999568,
           "file": {
             "name": "/avocards-3.0.18-hoodles-arm64.apk",
             "sha256": "f07cca2e9af058e641465b846579afd605f6a8b068a37b5089b780eb405da5cc",
@@ -857,13 +857,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721343,
-        "lastUpdated": 1790610721343,
+        "added": 1790613014991,
+        "lastUpdated": 1790613014991,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062": {
-          "added": 1790610721343,
+          "added": 1790613014991,
           "file": {
             "name": "/wallpapers-6.1.2-xtra-arm64.apk",
             "sha256": "d3f13ec153940ffdb9fad45781342118e0748f24ac2868634a2db19e3c476062",
@@ -907,13 +907,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709252,
-        "lastUpdated": 1790610709252,
+        "added": 1790612999601,
+        "lastUpdated": 1790612999601,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "61dabcdc58b83a95a4e2c714c02f222d8a7e29a6c33100036b5a83f90eaac42c": {
-          "added": 1790610709252,
+          "added": 1790612999601,
           "file": {
             "name": "/bandcamp.android-3.3.6-de-vanced-arm64.apk",
             "sha256": "61dabcdc58b83a95a4e2c714c02f222d8a7e29a6c33100036b5a83f90eaac42c",
@@ -957,13 +957,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709274,
-        "lastUpdated": 1790610709274,
+        "added": 1790612999626,
+        "lastUpdated": 1790612999626,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9fbb1417f7e72fbbe1e28e6652b21258802784ba8cd36f023e7201c297f0e844": {
-          "added": 1790610709274,
+          "added": 1790612999626,
           "file": {
             "name": "/bandlab-11.25.3-hoomans-arm64.apk",
             "sha256": "9fbb1417f7e72fbbe1e28e6652b21258802784ba8cd36f023e7201c297f0e844",
@@ -1007,13 +1007,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709347,
-        "lastUpdated": 1790610709347,
+        "added": 1790612999698,
+        "lastUpdated": 1790612999698,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1a33e101ff8223ce151a8b0ee7367bbfda0508e3a424f1c2f1685942b3b5915e": {
-          "added": 1790610709347,
+          "added": 1790612999698,
           "file": {
             "name": "/batteryguru-2.5.0.6-hoomans-arm64.apk",
             "sha256": "1a33e101ff8223ce151a8b0ee7367bbfda0508e3a424f1c2f1685942b3b5915e",
@@ -1057,13 +1057,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709392,
-        "lastUpdated": 1790610709392,
+        "added": 1790612999747,
+        "lastUpdated": 1790612999747,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5387b78d9a1e4dd370dfa26e95f46b7d0d3632c2cc764ceecba38dd52cd58eb0": {
-          "added": 1790610709392,
+          "added": 1790612999747,
           "file": {
             "name": "/bitpit.launcher-1.16.24-hoodles-arm64.apk",
             "sha256": "5387b78d9a1e4dd370dfa26e95f46b7d0d3632c2cc764ceecba38dd52cd58eb0",
@@ -1107,13 +1107,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709417,
-        "lastUpdated": 1790610709417,
+        "added": 1790612999774,
+        "lastUpdated": 1790612999774,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9": {
-          "added": 1790610709417,
+          "added": 1790612999774,
           "file": {
             "name": "/blocker-5.0.67-xtra-arm64.apk",
             "sha256": "9587573406bd0559b8adb41580562f6c3802081d75dd76c6139c995c00bb3ee9",
@@ -1153,13 +1153,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709518,
-        "lastUpdated": 1790610709518,
+        "added": 1790612999889,
+        "lastUpdated": 1790612999889,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "bb1be52f48f3c04354cefb9e376c1696dfc5afbbdaa6d5c4f33142e6ce31c5e2": {
-          "added": 1790610709518,
+          "added": 1790612999889,
           "file": {
             "name": "/blockerhero-1.5.0-hoomans-arm64.apk",
             "sha256": "bb1be52f48f3c04354cefb9e376c1696dfc5afbbdaa6d5c4f33142e6ce31c5e2",
@@ -1203,13 +1203,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719767,
-        "lastUpdated": 1790610719767,
+        "added": 1790613013413,
+        "lastUpdated": 1790613013413,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e6f71c03aff1d4080b44eb2283b96f59ef12521cae360d924b2ecd86bb842c40": {
-          "added": 1790610719767,
+          "added": 1790613013413,
           "file": {
             "name": "/tracker_app-6.6.11-hoomans-arm64.apk",
             "sha256": "e6f71c03aff1d4080b44eb2283b96f59ef12521cae360d924b2ecd86bb842c40",
@@ -1253,13 +1253,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709532,
-        "lastUpdated": 1790610709532,
+        "added": 1790612999903,
+        "lastUpdated": 1790612999903,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0aa26f93f3e7367f0be6cfe55250f2cfd2aa6a87b2c6c4fdebb4ed770ba2f572": {
-          "added": 1790610709532,
+          "added": 1790612999903,
           "file": {
             "name": "/bunpoapp-3.23.1-hoodles-arm64.apk",
             "sha256": "0aa26f93f3e7367f0be6cfe55250f2cfd2aa6a87b2c6c4fdebb4ed770ba2f572",
@@ -1303,13 +1303,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710980,
-        "lastUpdated": 1790610710980,
+        "added": 1790613002040,
+        "lastUpdated": 1790613002040,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "45ee5d3c4e19b925e2fa75b3f44a761fba85cd67196c014da0ba7e99cb2995a6": {
-          "added": 1790610710980,
+          "added": 1790613002040,
           "file": {
             "name": "/enc-32.48.0(1766366)-hoodles-arm64.apk",
             "sha256": "45ee5d3c4e19b925e2fa75b3f44a761fba85cd67196c014da0ba7e99cb2995a6",
@@ -1353,13 +1353,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709623,
-        "lastUpdated": 1790610709623,
+        "added": 1790612999991,
+        "lastUpdated": 1790612999991,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4f033fc49a065386b329530fd3bdd34422ef8df957cb4833940ec9e387b22cc9": {
-          "added": 1790610709623,
+          "added": 1790612999991,
           "file": {
             "name": "/calculator-3.4.0-hxreborn-arm64.apk",
             "sha256": "4f033fc49a065386b329530fd3bdd34422ef8df957cb4833940ec9e387b22cc9",
@@ -1403,13 +1403,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709706,
-        "lastUpdated": 1790610709706,
+        "added": 1790613000067,
+        "lastUpdated": 1790613000067,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "ed21192ea173bb24948da535c5f9bb3a88ad6609ddea0748ce45fae4c8a4228c": {
-          "added": 1790610709706,
+          "added": 1790613000067,
           "file": {
             "name": "/camscanner-7.20.0.2606230000-hoodles-arm64.apk",
             "sha256": "ed21192ea173bb24948da535c5f9bb3a88ad6609ddea0748ce45fae4c8a4228c",
@@ -1453,13 +1453,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709880,
-        "lastUpdated": 1790610709880,
+        "added": 1790613000255,
+        "lastUpdated": 1790613000255,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5e634d3787618f2d7471a00307d11450eb6a1d8df3ac19156c218ee041dadca1": {
-          "added": 1790610709880,
+          "added": 1790613000255,
           "file": {
             "name": "/carlauncher-5.0.5-hoomans-arm64.apk",
             "sha256": "5e634d3787618f2d7471a00307d11450eb6a1d8df3ac19156c218ee041dadca1",
@@ -1503,13 +1503,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709904,
-        "lastUpdated": 1790610709904,
+        "added": 1790613000280,
+        "lastUpdated": 1790613000280,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "dbad2d3188586d959386ce03a7a9e49e2b76b57abb57d9e360658ca36eabe19f": {
-          "added": 1790610709904,
+          "added": 1790613000280,
           "file": {
             "name": "/cfdrink-1.19.11-hoomans-arm64.apk",
             "sha256": "dbad2d3188586d959386ce03a7a9e49e2b76b57abb57d9e360658ca36eabe19f",
@@ -1553,13 +1553,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709970,
-        "lastUpdated": 1790610709970,
+        "added": 1790613000344,
+        "lastUpdated": 1790613000344,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fffa9da636443840e8f56ddecefe70e044b1777b5c51610ebdcc958c71c3bab9": {
-          "added": 1790610709970,
+          "added": 1790613000344,
           "file": {
             "name": "/chatboost-3.23.0-hoomans-arm64.apk",
             "sha256": "fffa9da636443840e8f56ddecefe70e044b1777b5c51610ebdcc958c71c3bab9",
@@ -1590,7 +1590,7 @@
           "en-US": "Chess patched with Morphe"
         },
         "description": {
-          "en-US": "Chess patched with Morphe.\n\nPatches: prathxm v1.14.0-dev.1.\n\nEnabled patches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots.\n\nOriginal app: com.chess 4.10.0-googleplay (patched APK signed with the F-Droid repo key)."
+          "en-US": "Chess patched with Morphe.\n\nPatches: prathxm v1.14.0-dev.2.\n\nEnabled patches (6): Ad-Free, Custom Titles, Global Crash Handler, Lichess Puzzles, Local Stockfish Analysis, Unlock All Bots.\n\nOriginal app: com.chess 4.10.0-googleplay (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -1603,16 +1603,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710011,
-        "lastUpdated": 1790610710011,
+        "added": 1790613000382,
+        "lastUpdated": 1790613000382,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "54d3a3be4621f9b57db7d24c005cbea7465b97936769082b7a9f62bb93029d0d": {
-          "added": 1790610710011,
+        "8577377f1da51276a818c34f1e1f745791a6cb50d7e18df9695bd0dc54403fcf": {
+          "added": 1790613000382,
           "file": {
             "name": "/chess-4.10.0-googleplay-prathxm-arm64.apk",
-            "sha256": "54d3a3be4621f9b57db7d24c005cbea7465b97936769082b7a9f62bb93029d0d",
+            "sha256": "8577377f1da51276a818c34f1e1f745791a6cb50d7e18df9695bd0dc54403fcf",
             "size": 258549160
           },
           "manifest": {
@@ -1653,13 +1653,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710310,
-        "lastUpdated": 1790610710310,
+        "added": 1790613000662,
+        "lastUpdated": 1790613000662,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8": {
-          "added": 1790610710310,
+          "added": 1790613000662,
           "file": {
             "name": "/circuitsimulator-1.49.0-xtra-arm64.apk",
             "sha256": "4b654a6bacf9d19edf0175cc0c81eaf3d11d40845e1a9dae43d557471dd5d1b8",
@@ -1703,13 +1703,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710345,
-        "lastUpdated": 1790610710345,
+        "added": 1790613000718,
+        "lastUpdated": 1790613000718,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "30c68a45c04a9f7b477ff77661725620c29fed032ca4a441365169f59d50bb6f": {
-          "added": 1790610710345,
+          "added": 1790613000718,
           "file": {
             "name": "/collectr-2.5.6-hoomans-arm64.apk",
             "sha256": "30c68a45c04a9f7b477ff77661725620c29fed032ca4a441365169f59d50bb6f",
@@ -1753,13 +1753,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710439,
-        "lastUpdated": 1790610710439,
+        "added": 1790613000927,
+        "lastUpdated": 1790613000927,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "24af41cdf3f18352cebf24a5eda2dbe4fc81c0e4ade455ce54511bd419f99fee": {
-          "added": 1790610710439,
+          "added": 1790613000927,
           "file": {
             "name": "/cricbuzz.android-6.24.01-de-vanced-arm64.apk",
             "sha256": "24af41cdf3f18352cebf24a5eda2dbe4fc81c0e4ade455ce54511bd419f99fee",
@@ -1803,13 +1803,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711876,
-        "lastUpdated": 1790610711876,
+        "added": 1790613003678,
+        "lastUpdated": 1790613003678,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2e64964265f95302bfde88fc985416bb88b289ba2cb78fd55f7df762e1adae00": {
-          "added": 1790610711876,
+          "added": 1790613003678,
           "file": {
             "name": "/gold-4.57.2-hoomans-arm64.apk",
             "sha256": "2e64964265f95302bfde88fc985416bb88b289ba2cb78fd55f7df762e1adae00",
@@ -1853,13 +1853,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710471,
-        "lastUpdated": 1790610710471,
+        "added": 1790613000989,
+        "lastUpdated": 1790613000989,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2913ed35da65969fe6bd26d291a3a37e7a7f2e8095f834efe460b1b8a00a8bed": {
-          "added": 1790610710471,
+          "added": 1790613000989,
           "file": {
             "name": "/dailypay-6.0.7-hoodles-arm64.apk",
             "sha256": "2913ed35da65969fe6bd26d291a3a37e7a7f2e8095f834efe460b1b8a00a8bed",
@@ -1903,13 +1903,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710687,
-        "lastUpdated": 1790610710687,
+        "added": 1790613001417,
+        "lastUpdated": 1790613001417,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "ebad476c76abd833835e0d795ec4e10e01987c058561c3e5e81e714f2b496404": {
-          "added": 1790610710687,
+          "added": 1790613001417,
           "file": {
             "name": "/directchat-1.9.8-hoomans-arm64.apk",
             "sha256": "ebad476c76abd833835e0d795ec4e10e01987c058561c3e5e81e714f2b496404",
@@ -1953,13 +1953,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710749,
-        "lastUpdated": 1790610710749,
+        "added": 1790613001541,
+        "lastUpdated": 1790613001541,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c1f72fd2c93456434fdf8b0cc1fe7a82c98c6f11d316e7853f87e9ca583485e0": {
-          "added": 1790610710749,
+          "added": 1790613001541,
           "file": {
             "name": "/duolingo-6.98.4-hoodles-arm64.apk",
             "sha256": "c1f72fd2c93456434fdf8b0cc1fe7a82c98c6f11d316e7853f87e9ca583485e0",
@@ -2003,13 +2003,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710898,
-        "lastUpdated": 1790610710898,
+        "added": 1790613001904,
+        "lastUpdated": 1790613001904,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0fc0b1926d7a093bd22e867ec07a48abc25eea77c32b210fc659b159bbf27f5b": {
-          "added": 1790610710898,
+          "added": 1790613001904,
           "file": {
             "name": "/eggconvo-4.12.19-hoodles-arm64.apk",
             "sha256": "0fc0b1926d7a093bd22e867ec07a48abc25eea77c32b210fc659b159bbf27f5b",
@@ -2053,13 +2053,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711050,
-        "lastUpdated": 1790610711050,
+        "added": 1790613002116,
+        "lastUpdated": 1790613002116,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e6d5ffa6efa27f581808a836d5d5e2b2d5c79e6b3024b49e8de0d0fabd386c23": {
-          "added": 1790610711050,
+          "added": 1790613002116,
           "file": {
             "name": "/essence-4.2.8-hoomans-arm64.apk",
             "sha256": "e6d5ffa6efa27f581808a836d5d5e2b2d5c79e6b3024b49e8de0d0fabd386c23",
@@ -2103,13 +2103,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711127,
-        "lastUpdated": 1790610711127,
+        "added": 1790613002202,
+        "lastUpdated": 1790613002202,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "80a993ca64f95455e6adcf7c0e3cb9f92d5e15e2528fb7fce7c37ec9710100ef": {
-          "added": 1790610711127,
+          "added": 1790613002202,
           "file": {
             "name": "/etsy.android-7.96.0-hxreborn-arm64.apk",
             "sha256": "80a993ca64f95455e6adcf7c0e3cb9f92d5e15e2528fb7fce7c37ec9710100ef",
@@ -2153,13 +2153,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712821,
-        "lastUpdated": 1790610712821,
+        "added": 1790613005612,
+        "lastUpdated": 1790613005612,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b290ef13c7167addf4a44edfceae65373175343d756b8d07bbc4fc25ea52c01b": {
-          "added": 1790610712821,
+          "added": 1790613005612,
           "file": {
             "name": "/katana-490.0.0.63.82-de-vanced-arm64.apk",
             "sha256": "b290ef13c7167addf4a44edfceae65373175343d756b8d07bbc4fc25ea52c01b",
@@ -2203,13 +2203,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711181,
-        "lastUpdated": 1790610711181,
+        "added": 1790613002260,
+        "lastUpdated": 1790613002260,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "09b31eff08288185e20fc3162981c0da470ab50e6af4d18e2bb4b1d57dc058d9": {
-          "added": 1790610711181,
+          "added": 1790613002260,
           "file": {
             "name": "/explorer-2.7.8-hxreborn-arm64.apk",
             "sha256": "09b31eff08288185e20fc3162981c0da470ab50e6af4d18e2bb4b1d57dc058d9",
@@ -2253,13 +2253,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711217,
-        "lastUpdated": 1790610711217,
+        "added": 1790613002312,
+        "lastUpdated": 1790613002312,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "82460b804d7eecd9d45ab6c0a3c556e1f76cb4654a77447eeee19d8233808747": {
-          "added": 1790610711217,
+          "added": 1790613002312,
           "file": {
             "name": "/finch-3.73.179-hoomans-arm64.apk",
             "sha256": "82460b804d7eecd9d45ab6c0a3c556e1f76cb4654a77447eeee19d8233808747",
@@ -2303,13 +2303,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711525,
-        "lastUpdated": 1790610711525,
+        "added": 1790613002959,
+        "lastUpdated": 1790613002959,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "15b3d230922dd3b9b36a6b1f8d1685752249705a72a8272b55c547bbdb7830df": {
-          "added": 1790610711525,
+          "added": 1790613002959,
           "file": {
             "name": "/flowerfree-6.6 build 021-hoodles-arm64.apk",
             "sha256": "15b3d230922dd3b9b36a6b1f8d1685752249705a72a8272b55c547bbdb7830df",
@@ -2353,13 +2353,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713415,
-        "lastUpdated": 1790610713415,
+        "added": 1790613006741,
+        "lastUpdated": 1790613006741,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f105d21447f84df384d7e4fc037d2ab4ee73da970ddb283eb99619e20dee30aa": {
-          "added": 1790610713415,
+          "added": 1790613006741,
           "file": {
             "name": "/lite-4.12.0-hoomans-arm64.apk",
             "sha256": "f105d21447f84df384d7e4fc037d2ab4ee73da970ddb283eb99619e20dee30aa",
@@ -2403,13 +2403,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711549,
-        "lastUpdated": 1790610711549,
+        "added": 1790613003003,
+        "lastUpdated": 1790613003003,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "38c8bd8d425334994f97ace2b118e7b74826489eb415008c0aedee90fe56e847": {
-          "added": 1790610711549,
+          "added": 1790613003003,
           "file": {
             "name": "/forus-3.0.15-hxreborn-arm64.apk",
             "sha256": "38c8bd8d425334994f97ace2b118e7b74826489eb415008c0aedee90fe56e847",
@@ -2453,13 +2453,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717799,
-        "lastUpdated": 1790610717799,
+        "added": 1790613011459,
+        "lastUpdated": 1790613011459,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b98daa3e05edde9cda64650677164127ea3d8bc6654968980717014277f64327": {
-          "added": 1790610717799,
+          "added": 1790613011459,
           "file": {
             "name": "/scan-2.2.221-hxreborn-arm64.apk",
             "sha256": "b98daa3e05edde9cda64650677164127ea3d8bc6654968980717014277f64327",
@@ -2503,13 +2503,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711846,
-        "lastUpdated": 1790610711846,
+        "added": 1790613003621,
+        "lastUpdated": 1790613003621,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e572eab571cd324853598dfbb7b2189fb30f20dc163707df60202e5fec33598f": {
-          "added": 1790610711846,
+          "added": 1790613003621,
           "file": {
             "name": "/github.android-1.271.1-hoodles-arm64.apk",
             "sha256": "e572eab571cd324853598dfbb7b2189fb30f20dc163707df60202e5fec33598f",
@@ -2553,13 +2553,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713828,
-        "lastUpdated": 1790610713828,
+        "added": 1790613007575,
+        "lastUpdated": 1790613007575,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "cb9083ebba1d10f962d71f18aa9be59b3be8990f849cf83c96f3a6f1010f6d0a": {
-          "added": 1790610713828,
+          "added": 1790613007575,
           "file": {
             "name": "/mail-9.17.2-de-vanced-arm64.apk",
             "sha256": "cb9083ebba1d10f962d71f18aa9be59b3be8990f849cf83c96f3a6f1010f6d0a",
@@ -2603,13 +2603,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711980,
-        "lastUpdated": 1790610711980,
+        "added": 1790613003900,
+        "lastUpdated": 1790613003900,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7c8c742a8d78a1f2f019d3fa3984bd15c1e8dcd6c4d14ef282b9c36855511531": {
-          "added": 1790610711980,
+          "added": 1790613003900,
           "file": {
             "name": "/goodreads-2.76.0 Build 0-hoodles-arm64.apk",
             "sha256": "7c8c742a8d78a1f2f019d3fa3984bd15c1e8dcd6c4d14ef282b9c36855511531",
@@ -2653,13 +2653,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713804,
-        "lastUpdated": 1790610713804,
+        "added": 1790613007522,
+        "lastUpdated": 1790613007522,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f4b9a75f5f0b30c32704e57aab16f9be573381b90025d7ea0de1fbf2732745e6": {
-          "added": 1790610713804,
+          "added": 1790613007522,
           "file": {
             "name": "/magazines-5.161.0.931240252-hoodles-arm64.apk",
             "sha256": "f4b9a75f5f0b30c32704e57aab16f9be573381b90025d7ea0de1fbf2732745e6",
@@ -2703,13 +2703,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716870,
-        "lastUpdated": 1790610716870,
+        "added": 1790613010554,
+        "lastUpdated": 1790613010554,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "74442b57b602d8c076bf4e8beee679f3afd9f1fd957359f60d42aa7f76d58fb4": {
-          "added": 1790610716870,
+          "added": 1790613010554,
           "file": {
             "name": "/photos-7.92.0.977185651-de-vanced-arm64.apk",
             "sha256": "74442b57b602d8c076bf4e8beee679f3afd9f1fd957359f60d42aa7f76d58fb4",
@@ -2753,13 +2753,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712039,
-        "lastUpdated": 1790610712039,
+        "added": 1790613004032,
+        "lastUpdated": 1790613004032,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4dd99fe8f5787a2a134b9d9c5d6cb63d31482dd4b6f7eae7268d194f86cc057f": {
-          "added": 1790610712039,
+          "added": 1790613004032,
           "file": {
             "name": "/guessthecountry-3.34.2-hoodles-arm64.apk",
             "sha256": "4dd99fe8f5787a2a134b9d9c5d6cb63d31482dd4b6f7eae7268d194f86cc057f",
@@ -2803,13 +2803,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712107,
-        "lastUpdated": 1790610712107,
+        "added": 1790613004182,
+        "lastUpdated": 1790613004182,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "480311bbd951cae9bd651038caf3439ae8449bb88b0ec02d7943b5210ac02c27": {
-          "added": 1790610712107,
+          "added": 1790613004182,
           "file": {
             "name": "/hbomax-7.9.0.61-androidtv-tv.apk",
             "sha256": "480311bbd951cae9bd651038caf3439ae8449bb88b0ec02d7943b5210ac02c27",
@@ -2853,13 +2853,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712206,
-        "lastUpdated": 1790610712206,
+        "added": 1790613004366,
+        "lastUpdated": 1790613004366,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "285c140faeb8615ea415f26c029ae5f8ca9756e22f101a1f4b9f85b829bacc6a": {
-          "added": 1790610712206,
+          "added": 1790613004366,
           "file": {
             "name": "/hellochinese-7.11.0-hoodles-arm64.apk",
             "sha256": "285c140faeb8615ea415f26c029ae5f8ca9756e22f101a1f4b9f85b829bacc6a",
@@ -2903,13 +2903,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712285,
-        "lastUpdated": 1790610712285,
+        "added": 1790613004535,
+        "lastUpdated": 1790613004535,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "3a92281104a7a912d94f2841fa94a742173df902cf522803eb61e05faebef8ca": {
-          "added": 1790610712285,
+          "added": 1790613004535,
           "file": {
             "name": "/hevy-3.1.0-hoomans-arm64.apk",
             "sha256": "3a92281104a7a912d94f2841fa94a742173df902cf522803eb61e05faebef8ca",
@@ -2953,13 +2953,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712434,
-        "lastUpdated": 1790610712434,
+        "added": 1790613004859,
+        "lastUpdated": 1790613004859,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "da3a9f6da6ef93ed365be3be0fa5cd2c1847bc4b924c358eb3e0e05ba22f4bc0": {
-          "added": 1790610712434,
+          "added": 1790613004859,
           "file": {
             "name": "/hexedit-2.8.3-de-vanced-arm64.apk",
             "sha256": "da3a9f6da6ef93ed365be3be0fa5cd2c1847bc4b924c358eb3e0e05ba22f4bc0",
@@ -3003,13 +3003,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712452,
-        "lastUpdated": 1790610712452,
+        "added": 1790613004902,
+        "lastUpdated": 1790613004902,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a3aa10f4351b30ef2b0ea962748cb09116386e50d25ed056a0505d2fba2f0e9b": {
-          "added": 1790610712452,
+          "added": 1790613004902,
           "file": {
             "name": "/iamsober-8.6.7-hoomans-arm64.apk",
             "sha256": "a3aa10f4351b30ef2b0ea962748cb09116386e50d25ed056a0505d2fba2f0e9b",
@@ -3053,13 +3053,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712520,
-        "lastUpdated": 1790610712520,
+        "added": 1790613005026,
+        "lastUpdated": 1790613005026,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "78d1fe2cdb55783f674d77426ac00b4f09bda0e8523be4b69a2d9ef20570cf32": {
-          "added": 1790610712520,
+          "added": 1790613005026,
           "file": {
             "name": "/ibispaintx.app-14.1.2-hoodles-arm64.apk",
             "sha256": "78d1fe2cdb55783f674d77426ac00b4f09bda0e8523be4b69a2d9ef20570cf32",
@@ -3103,13 +3103,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712626,
-        "lastUpdated": 1790610712626,
+        "added": 1790613005268,
+        "lastUpdated": 1790613005268,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4d26cc7de4f9b2abb7f83a15a39aa7b696302723350667512dee50f230eb8916": {
-          "added": 1790610712626,
+          "added": 1790613005268,
           "file": {
             "name": "/iconpackstudio-2.4 build 001-de-vanced-arm64.apk",
             "sha256": "4d26cc7de4f9b2abb7f83a15a39aa7b696302723350667512dee50f230eb8916",
@@ -3153,13 +3153,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712600,
-        "lastUpdated": 1790610712600,
+        "added": 1790613005208,
+        "lastUpdated": 1790613005208,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c8f67f7ebfc6fbf622a5d96d99e1946abec742e80cd857ff8f4273a6d4261bbd": {
-          "added": 1790610712600,
+          "added": 1790613005208,
           "file": {
             "name": "/iconpacker-1.21.0-release-hoodles-arm64.apk",
             "sha256": "c8f67f7ebfc6fbf622a5d96d99e1946abec742e80cd857ff8f4273a6d4261bbd",
@@ -3203,13 +3203,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712712,
-        "lastUpdated": 1790610712712,
+        "added": 1790613005415,
+        "lastUpdated": 1790613005415,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c8bef28dbb39afb46a7e27816eeda1e3b7deff491f8253555944308fe11dc63e": {
-          "added": 1790610712712,
+          "added": 1790613005415,
           "file": {
             "name": "/instashot-2.214.1539-hoomans-arm64.apk",
             "sha256": "c8bef28dbb39afb46a7e27816eeda1e3b7deff491f8253555944308fe11dc63e",
@@ -3253,13 +3253,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712795,
-        "lastUpdated": 1790610712795,
+        "added": 1790613005570,
+        "lastUpdated": 1790613005570,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7c36b93ad56de50290307d612fadf662b8acdd7c03f919a8169630c3ae119e5e": {
-          "added": 1790610712795,
+          "added": 1790613005570,
           "file": {
             "name": "/irplus-1.10-de-vanced-arm64.apk",
             "sha256": "7c36b93ad56de50290307d612fadf662b8acdd7c03f919a8169630c3ae119e5e",
@@ -3303,13 +3303,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712922,
-        "lastUpdated": 1790610712922,
+        "added": 1790613005825,
+        "lastUpdated": 1790613005825,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "bcdaf94a2cc8ed71dbf53047424823638a8a9cfd8e2f62e4c50c6e08c2a16d39": {
-          "added": 1790610712922,
+          "added": 1790613005825,
           "file": {
             "name": "/kick.mobile-40.31.0-hxreborn-arm64.apk",
             "sha256": "bcdaf94a2cc8ed71dbf53047424823638a8a9cfd8e2f62e4c50c6e08c2a16d39",
@@ -3353,13 +3353,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713060,
-        "lastUpdated": 1790610713060,
+        "added": 1790613006070,
+        "lastUpdated": 1790613006070,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "660be5fc2d2e153cd787c7c0b27f0705052f658ce86e9af9136ab2e60fda1b3d": {
-          "added": 1790610713060,
+          "added": 1790613006070,
           "file": {
             "name": "/letterboxd-3.5.8-de-vanced-arm64.apk",
             "sha256": "660be5fc2d2e153cd787c7c0b27f0705052f658ce86e9af9136ab2e60fda1b3d",
@@ -3403,13 +3403,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713504,
-        "lastUpdated": 1790610713504,
+        "added": 1790613006903,
+        "lastUpdated": 1790613006903,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "371c6c8fd3212b13bfeae27cb07f2bb962c3f8018d6dd1408a319bd1b0c6dcfe": {
-          "added": 1790610713504,
+          "added": 1790613006903,
           "file": {
             "name": "/lrmobile-11.5.31-hoodles-arm64.apk",
             "sha256": "371c6c8fd3212b13bfeae27cb07f2bb962c3f8018d6dd1408a319bd1b0c6dcfe",
@@ -3453,13 +3453,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720310,
-        "lastUpdated": 1790610720310,
+        "added": 1790613013959,
+        "lastUpdated": 1790613013959,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "bb017e4fb0828288e0b1bda392fef101f11478251f3f05fa8caab951da5adf24": {
-          "added": 1790610720310,
+          "added": 1790613013959,
           "file": {
             "name": "/universal-8.4.4-hoodles-arm64.apk",
             "sha256": "bb017e4fb0828288e0b1bda392fef101f11478251f3f05fa8caab951da5adf24",
@@ -3503,13 +3503,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713278,
-        "lastUpdated": 1790610713278,
+        "added": 1790613006466,
+        "lastUpdated": 1790613006466,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "29ceb3eefab5dc12fd1b77fb85e0c2b57f610d7ad5d11aa166f94d22afd19a70": {
-          "added": 1790610713278,
+          "added": 1790613006466,
           "file": {
             "name": "/lingodeer-2.99.413-hoodles-arm64.apk",
             "sha256": "29ceb3eefab5dc12fd1b77fb85e0c2b57f610d7ad5d11aa166f94d22afd19a70",
@@ -3553,13 +3553,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713351,
-        "lastUpdated": 1790610713351,
+        "added": 1790613006614,
+        "lastUpdated": 1790613006614,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f5975a906e1f38c41ee444a3ad8420718aebec335e38d46f7b6e6341dcc5e7b1": {
-          "added": 1790610713351,
+          "added": 1790613006614,
           "file": {
             "name": "/lingory-1.2.75-hoodles-arm64.apk",
             "sha256": "f5975a906e1f38c41ee444a3ad8420718aebec335e38d46f7b6e6341dcc5e7b1",
@@ -3603,13 +3603,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713763,
-        "lastUpdated": 1790610713763,
+        "added": 1790613007424,
+        "lastUpdated": 1790613007424,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "242113837765e91833637e92ea31f24114112f1917fffb641bf61617b102a981": {
-          "added": 1790610713763,
+          "added": 1790613007424,
           "file": {
             "name": "/lyfta-1.551-hoodles-arm64.apk",
             "sha256": "242113837765e91833637e92ea31f24114112f1917fffb641bf61617b102a981",
@@ -3653,13 +3653,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610706506,
-        "lastUpdated": 1790610706506,
+        "added": 1790612997372,
+        "lastUpdated": 1790612997372,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0997eed1f31e0b6d4d531703e455db1e3d38fdf0dc438296f23612d053b72f5d": {
-          "added": 1790610706506,
+          "added": 1790612997372,
           "file": {
             "name": "/MemeGenerator-4.6826-hoodles-arm64.apk",
             "sha256": "0997eed1f31e0b6d4d531703e455db1e3d38fdf0dc438296f23612d053b72f5d",
@@ -3703,13 +3703,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713895,
-        "lastUpdated": 1790610713895,
+        "added": 1790613007645,
+        "lastUpdated": 1790613007645,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2e9ac1028626b2a7e73e3a806a177c9e1429b1cd553f9619c743da0cfdcf95f8": {
-          "added": 1790610713895,
+          "added": 1790613007645,
           "file": {
             "name": "/merriamwebster-5.6.2-hoodles-arm64.apk",
             "sha256": "2e9ac1028626b2a7e73e3a806a177c9e1429b1cd553f9619c743da0cfdcf95f8",
@@ -3753,13 +3753,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716413,
-        "lastUpdated": 1790610716413,
+        "added": 1790613010101,
+        "lastUpdated": 1790613010101,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "15d25bfef644e9e5340469c3b2316edbde06a90da6b863c54163f18ee6c7b828": {
-          "added": 1790610716413,
+          "added": 1790613010101,
           "file": {
             "name": "/orca-573.0.0.44.88-de-vanced-arm64.apk",
             "sha256": "15d25bfef644e9e5340469c3b2316edbde06a90da6b863c54163f18ee6c7b828",
@@ -3803,13 +3803,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610714073,
-        "lastUpdated": 1790610715037,
+        "added": 1790613007808,
+        "lastUpdated": 1790613008762,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1273464784b2d7f5f48d3d3bed33acab2fdf58e87876673e44a47a0980a9aff3": {
-          "added": 1790610715037,
+          "added": 1790613008762,
           "file": {
             "name": "/microg-7.2.1-dev.3-arm64.apk",
             "sha256": "1273464784b2d7f5f48d3d3bed33acab2fdf58e87876673e44a47a0980a9aff3",
@@ -3830,7 +3830,7 @@
           }
         },
         "779c5bc0acced5b0b875842003e2ac0b25a75dfbe4fc706855a18d6b76ac718e": {
-          "added": 1790610714976,
+          "added": 1790613008703,
           "file": {
             "name": "/microg-7.2.1-dev.2-arm64.apk",
             "sha256": "779c5bc0acced5b0b875842003e2ac0b25a75dfbe4fc706855a18d6b76ac718e",
@@ -3851,7 +3851,7 @@
           }
         },
         "c3c1936f75897bbd4d5be0f50cd3c5105aa633f0a309b1aeaea21016e786f76b": {
-          "added": 1790610714914,
+          "added": 1790613008643,
           "file": {
             "name": "/microg-7.2.1-dev.1-arm64.apk",
             "sha256": "c3c1936f75897bbd4d5be0f50cd3c5105aa633f0a309b1aeaea21016e786f76b",
@@ -3872,7 +3872,7 @@
           }
         },
         "ee8c8c3618821ecd4d73f3251277cf027409ff3a868455a3f9c904612d472b30": {
-          "added": 1790610714855,
+          "added": 1790613008584,
           "file": {
             "name": "/microg-7.1.2-dev.3-arm64.apk",
             "sha256": "ee8c8c3618821ecd4d73f3251277cf027409ff3a868455a3f9c904612d472b30",
@@ -3893,7 +3893,7 @@
           }
         },
         "60d430f1aff31417a7ddf78a13060e9f2f09a2ebf782aec1a92cbc44b48131b9": {
-          "added": 1790610714795,
+          "added": 1790613008525,
           "file": {
             "name": "/microg-7.1.2-dev.2-arm64.apk",
             "sha256": "60d430f1aff31417a7ddf78a13060e9f2f09a2ebf782aec1a92cbc44b48131b9",
@@ -3914,7 +3914,7 @@
           }
         },
         "4083d85d6e2db8bab4b01fe1213901430b273cdc1450523c931ba2f91a397c80": {
-          "added": 1790610714735,
+          "added": 1790613008464,
           "file": {
             "name": "/microg-7.1.2-dev.1-arm64.apk",
             "sha256": "4083d85d6e2db8bab4b01fe1213901430b273cdc1450523c931ba2f91a397c80",
@@ -3935,7 +3935,7 @@
           }
         },
         "13d8839fc0d4d9fa53bb36ae82d59120141123b05f67f1e41b0843b4019e8579": {
-          "added": 1790610714257,
+          "added": 1790613007988,
           "file": {
             "name": "/microg-7.1.0-arm64.apk",
             "sha256": "13d8839fc0d4d9fa53bb36ae82d59120141123b05f67f1e41b0843b4019e8579",
@@ -3956,7 +3956,7 @@
           }
         },
         "98122cc39bd3e9c06216f44acce19e552cf27778827f6c6fe506320c7ee0c9b0": {
-          "added": 1790610714616,
+          "added": 1790613008342,
           "file": {
             "name": "/microg-7.1.1-arm64.apk",
             "sha256": "98122cc39bd3e9c06216f44acce19e552cf27778827f6c6fe506320c7ee0c9b0",
@@ -3977,7 +3977,7 @@
           }
         },
         "8989aa2ceea84a8bba82fad0de570c463ae1484ac73fd423e8c26c9bd9fd5fcb": {
-          "added": 1790610714675,
+          "added": 1790613008403,
           "file": {
             "name": "/microg-7.1.1-dev.1-arm64.apk",
             "sha256": "8989aa2ceea84a8bba82fad0de570c463ae1484ac73fd423e8c26c9bd9fd5fcb",
@@ -3998,7 +3998,7 @@
           }
         },
         "8ab6587ada77cc1947e2adc44acaeeb8f66255c8c848e3b576fb031770091034": {
-          "added": 1790610714557,
+          "added": 1790613008282,
           "file": {
             "name": "/microg-7.1.0-dev.5-arm64.apk",
             "sha256": "8ab6587ada77cc1947e2adc44acaeeb8f66255c8c848e3b576fb031770091034",
@@ -4019,7 +4019,7 @@
           }
         },
         "8afc7d14610075807848cdd73a225065139ecf8243f7a340a8e3626fafce652d": {
-          "added": 1790610714498,
+          "added": 1790613008221,
           "file": {
             "name": "/microg-7.1.0-dev.4-arm64.apk",
             "sha256": "8afc7d14610075807848cdd73a225065139ecf8243f7a340a8e3626fafce652d",
@@ -4040,7 +4040,7 @@
           }
         },
         "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19": {
-          "added": 1790610714073,
+          "added": 1790613007808,
           "file": {
             "name": "/microg-7.0.0-arm64.apk",
             "sha256": "5666edc4d6d5ff020211004d845906e3b2d9b06a0a832f515d2bbe60c58fba19",
@@ -4061,7 +4061,7 @@
           }
         },
         "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4": {
-          "added": 1790610714135,
+          "added": 1790613007870,
           "file": {
             "name": "/microg-7.0.0-dev.6-arm64.apk",
             "sha256": "44215dc487d5292a21f766b657fc0b422e4ce61f20dc7075ca62144d4744e1b4",
@@ -4082,7 +4082,7 @@
           }
         },
         "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7": {
-          "added": 1790610714196,
+          "added": 1790613007929,
           "file": {
             "name": "/microg-7.0.0-dev.7-arm64.apk",
             "sha256": "db8da141d2c60a832f8b5d6f3c5dcd9703e70ac65e8c540708cf8ef70ff24cc7",
@@ -4103,7 +4103,7 @@
           }
         },
         "72f5b3d37224d9dee2b09783bf251fcb7a977d3a64cf259773cf8634f589adc7": {
-          "added": 1790610714317,
+          "added": 1790613008046,
           "file": {
             "name": "/microg-7.1.0-dev.1-arm64.apk",
             "sha256": "72f5b3d37224d9dee2b09783bf251fcb7a977d3a64cf259773cf8634f589adc7",
@@ -4124,7 +4124,7 @@
           }
         },
         "9886455c98f180d7810a4b26982a2cbb097680ecb185d1e5f3438545971035cc": {
-          "added": 1790610714377,
+          "added": 1790613008105,
           "file": {
             "name": "/microg-7.1.0-dev.2-arm64.apk",
             "sha256": "9886455c98f180d7810a4b26982a2cbb097680ecb185d1e5f3438545971035cc",
@@ -4145,7 +4145,7 @@
           }
         },
         "2abb3de5ee93927c1ac14efb33c6a30d0b30803c3038db9c12b7bb558dd5eb92": {
-          "added": 1790610714438,
+          "added": 1790613008163,
           "file": {
             "name": "/microg-7.1.0-dev.3-arm64.apk",
             "sha256": "2abb3de5ee93927c1ac14efb33c6a30d0b30803c3038db9c12b7bb558dd5eb92",
@@ -4189,13 +4189,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711769,
-        "lastUpdated": 1790610711769,
+        "added": 1790613003434,
+        "lastUpdated": 1790613003434,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "6a3d0e057f3b7ceab6926147d4a29b20f8587befd827b9c4fce6257bbe7e1c60": {
-          "added": 1790610711769,
+          "added": 1790613003434,
           "file": {
             "name": "/getmimo-9.30-hoodles-arm64.apk",
             "sha256": "6a3d0e057f3b7ceab6926147d4a29b20f8587befd827b9c4fce6257bbe7e1c60",
@@ -4239,13 +4239,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715091,
-        "lastUpdated": 1790610715091,
+        "added": 1790613008817,
+        "lastUpdated": 1790613008817,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "575cc56e6f562b94002adc97464437fd3f2e7bbc824cafe3f5aad8d656cfb859": {
-          "added": 1790610715091,
+          "added": 1790613008817,
           "file": {
             "name": "/mirinae-2.2.2-hoodles-arm64.apk",
             "sha256": "575cc56e6f562b94002adc97464437fd3f2e7bbc824cafe3f5aad8d656cfb859",
@@ -4289,13 +4289,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708511,
-        "lastUpdated": 1790610708511,
+        "added": 1790612999212,
+        "lastUpdated": 1790612999212,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "dbf618d16f7f8dfd96ba44acdda11c555ece31f5c8ec9c626e95c1342e4daa58": {
-          "added": 1790610708511,
+          "added": 1790612999212,
           "file": {
             "name": "/atbat-26.8.1.1-androidtv-tv.apk",
             "sha256": "dbf618d16f7f8dfd96ba44acdda11c555ece31f5c8ec9c626e95c1342e4daa58",
@@ -4339,13 +4339,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721562,
-        "lastUpdated": 1790610721562,
+        "added": 1790613015199,
+        "lastUpdated": 1790613015199,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0c9a4ec9289f84346daae3d2302ad08b36bbec05df7655275a11539fa1446862": {
-          "added": 1790610721562,
+          "added": 1790613015199,
           "file": {
             "name": "/wc2010-236.17398.20260827-hoodles-arm64.apk",
             "sha256": "0c9a4ec9289f84346daae3d2302ad08b36bbec05df7655275a11539fa1446862",
@@ -4389,13 +4389,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715314,
-        "lastUpdated": 1790610715314,
+        "added": 1790613009041,
+        "lastUpdated": 1790613009041,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "97214f0d85c28907eebe45ce15ce0de92c76fe7bff31307643d1194b65298930": {
-          "added": 1790610715314,
+          "added": 1790613009041,
           "file": {
             "name": "/moneta-1.3.0-hoomans-arm64.apk",
             "sha256": "97214f0d85c28907eebe45ce15ce0de92c76fe7bff31307643d1194b65298930",
@@ -4439,13 +4439,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715382,
-        "lastUpdated": 1790610715382,
+        "added": 1790613009109,
+        "lastUpdated": 1790613009109,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fb9735c4237032f37b967f38e7814b945346eed82a9145559056b4ca2f306d69": {
-          "added": 1790610715382,
+          "added": 1790613009109,
           "file": {
             "name": "/moneymanagerfree-4.12.13 GF-hoomans-arm64.apk",
             "sha256": "fb9735c4237032f37b967f38e7814b945346eed82a9145559056b4ca2f306d69",
@@ -4489,13 +4489,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716035,
-        "lastUpdated": 1790610716035,
+        "added": 1790613009729,
+        "lastUpdated": 1790613009729,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "3f3e06d96793ebae12099dde0fb3d9b3c0b104d19e9f939a9824e7e6b19de673": {
-          "added": 1790610716035,
+          "added": 1790613009729,
           "file": {
             "name": "/myexpenses-4.1.1.2-hoodles-arm64.apk",
             "sha256": "3f3e06d96793ebae12099dde0fb3d9b3c0b104d19e9f939a9824e7e6b19de673",
@@ -4539,13 +4539,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715997,
-        "lastUpdated": 1790610715997,
+        "added": 1790613009686,
+        "lastUpdated": 1790613009686,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "938467f3012c20016b8063f2479aa4906645563de34eaade7b3eef4a1292ad31": {
-          "added": 1790610715997,
+          "added": 1790613009686,
           "file": {
             "name": "/mycake-6.4.0-hoodles-arm64.apk",
             "sha256": "938467f3012c20016b8063f2479aa4906645563de34eaade7b3eef4a1292ad31",
@@ -4589,13 +4589,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716059,
-        "lastUpdated": 1790610716059,
+        "added": 1790613009753,
+        "lastUpdated": 1790613009753,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7ed7ca4c21da728e5a3bc78c2e0a122869afa10b47fb30c477274cf00a6e56fb": {
-          "added": 1790610716059,
+          "added": 1790613009753,
           "file": {
             "name": "/myfitnesspal.android-26.31.0-hoodles-arm64.apk",
             "sha256": "7ed7ca4c21da728e5a3bc78c2e0a122869afa10b47fb30c477274cf00a6e56fb",
@@ -4639,13 +4639,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716115,
-        "lastUpdated": 1790610716115,
+        "added": 1790613009810,
+        "lastUpdated": 1790613009810,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f54cd10827a8ee679acf10dfd7abbe4963630d46365ad94e80259d665da67e96": {
-          "added": 1790610716115,
+          "added": 1790613009810,
           "file": {
             "name": "/ninja-13.0.1 build 25028-androidtv-tv.apk",
             "sha256": "f54cd10827a8ee679acf10dfd7abbe4963630d46365ad94e80259d665da67e96",
@@ -4689,13 +4689,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716233,
-        "lastUpdated": 1790610716233,
+        "added": 1790613009937,
+        "lastUpdated": 1790613009937,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1ba58018303eed0f43cb2d29672ffb376082eb92eb4d7c9a9b20eff11ed9b3df": {
-          "added": 1790610716233,
+          "added": 1790613009937,
           "file": {
             "name": "/notesnook-3.4.12-hxreborn-arm64.apk",
             "sha256": "1ba58018303eed0f43cb2d29672ffb376082eb92eb4d7c9a9b20eff11ed9b3df",
@@ -4739,13 +4739,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718101,
-        "lastUpdated": 1790610718101,
+        "added": 1790613011757,
+        "lastUpdated": 1790613011757,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d95cae232bcd92df5fd9c35ab5f61599ddf2f2ce7f00765775aa0b7dab97cc2d": {
-          "added": 1790610718101,
+          "added": 1790613011757,
           "file": {
             "name": "/smartcenter-3.8.0-de-vanced-arm64.apk",
             "sha256": "d95cae232bcd92df5fd9c35ab5f61599ddf2f2ce7f00765775aa0b7dab97cc2d",
@@ -4789,13 +4789,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716313,
-        "lastUpdated": 1790610716313,
+        "added": 1790613010018,
+        "lastUpdated": 1790613010018,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0bdb9b02d2c3d6179238b251205c32f2cc38fc1a15ee79abc9a95f195aa70f02": {
-          "added": 1790610716313,
+          "added": 1790613010018,
           "file": {
             "name": "/nu-26.8.0-de-vanced-arm64.apk",
             "sha256": "0bdb9b02d2c3d6179238b251205c32f2cc38fc1a15ee79abc9a95f195aa70f02",
@@ -4839,13 +4839,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716557,
-        "lastUpdated": 1790610716557,
+        "added": 1790613010245,
+        "lastUpdated": 1790613010245,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "dee03959ee4dceb995c1bffff72be24fce5d34668f71e6cfb011feec550f1eb6": {
-          "added": 1790610716557,
+          "added": 1790613010245,
           "file": {
             "name": "/pandora.android-2609.2-hoodles-arm64.apk",
             "sha256": "dee03959ee4dceb995c1bffff72be24fce5d34668f71e6cfb011feec550f1eb6",
@@ -4889,13 +4889,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716521,
-        "lastUpdated": 1790610716521,
+        "added": 1790613010207,
+        "lastUpdated": 1790613010207,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "430d5e8af5799c9d810a4a291674e35a3c776c3a50e0986b5e8da50f178ba033": {
-          "added": 1790610716521,
+          "added": 1790613010207,
           "file": {
             "name": "/ott-16.19.0-androidtv-tv.apk",
             "sha256": "430d5e8af5799c9d810a4a291674e35a3c776c3a50e0986b5e8da50f178ba033",
@@ -4939,13 +4939,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716767,
-        "lastUpdated": 1790610716767,
+        "added": 1790613010458,
+        "lastUpdated": 1790613010458,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5cf741e93c1adebb5916f0336889db0d9358703960cae25d58a78390b41d253c": {
-          "added": 1790610716767,
+          "added": 1790613010458,
           "file": {
             "name": "/peacockandroid-7.8.100-androidtv-tv.apk",
             "sha256": "5cf741e93c1adebb5916f0336889db0d9358703960cae25d58a78390b41d253c",
@@ -4989,13 +4989,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707990,
-        "lastUpdated": 1790610707990,
+        "added": 1790612998900,
+        "lastUpdated": 1790612998900,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "20680ee3f7000e4297c0ef91973fdb44ec3db57ca9596df682c5d8a33627b32d": {
-          "added": 1790610707990,
+          "added": 1790612998900,
           "file": {
             "name": "/app.android-2.98.0-hxreborn-arm64.apk",
             "sha256": "20680ee3f7000e4297c0ef91973fdb44ec3db57ca9596df682c5d8a33627b32d",
@@ -5039,13 +5039,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710499,
-        "lastUpdated": 1790610710499,
+        "added": 1790613001050,
+        "lastUpdated": 1790613001050,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "30a0773a5a17869291b25ca3fc33acb2cb72b9ea339f8877ff1da128cf4d7b2f": {
-          "added": 1790610710499,
+          "added": 1790613001050,
           "file": {
             "name": "/dialer-161.0.726587057-downloadable-hoomans-arm64.apk",
             "sha256": "30a0773a5a17869291b25ca3fc33acb2cb72b9ea339f8877ff1da128cf4d7b2f",
@@ -5089,13 +5089,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716785,
-        "lastUpdated": 1790610716785,
+        "added": 1790613010474,
+        "lastUpdated": 1790613010474,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b295760f5482d3fc282c7411b7e4cd24da3af65a20bfb8e51e1b423a0006cb3d": {
-          "added": 1790610716785,
+          "added": 1790613010474,
           "file": {
             "name": "/photoeditorpro-1.791.265-hxreborn-arm64.apk",
             "sha256": "b295760f5482d3fc282c7411b7e4cd24da3af65a20bfb8e51e1b423a0006cb3d",
@@ -5139,13 +5139,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717591,
-        "lastUpdated": 1790610717591,
+        "added": 1790613011273,
+        "lastUpdated": 1790613011273,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "462da305cab08eafcf807c66631c12f7de936eadd4f2bbde99e8c1d5ee4d5fb9": {
-          "added": 1790610717591,
+          "added": 1790613011273,
           "file": {
             "name": "/release-2.1.11-hoomans-arm64.apk",
             "sha256": "462da305cab08eafcf807c66631c12f7de936eadd4f2bbde99e8c1d5ee4d5fb9",
@@ -5189,13 +5189,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716839,
-        "lastUpdated": 1790610716839,
+        "added": 1790613010525,
+        "lastUpdated": 1790613010525,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4f90955ff4fea357aba51e69730da629b58711781b1a5ad48203d2372aa003ca": {
-          "added": 1790610716839,
+          "added": 1790613010525,
           "file": {
             "name": "/photomath-8.48.0-de-vanced-arm64.apk",
             "sha256": "4f90955ff4fea357aba51e69730da629b58711781b1a5ad48203d2372aa003ca",
@@ -5239,13 +5239,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717331,
-        "lastUpdated": 1790610717331,
+        "added": 1790613011018,
+        "lastUpdated": 1790613011018,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "50022245ee1d7a0c1f0b46d1e43c15b6ae82288b838330570b6d5931665c3b75": {
-          "added": 1790610717331,
+          "added": 1790613011018,
           "file": {
             "name": "/pxv.android-6.196.0-de-vanced-arm64.apk",
             "sha256": "50022245ee1d7a0c1f0b46d1e43c15b6ae82288b838330570b6d5931665c3b75",
@@ -5289,13 +5289,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716988,
-        "lastUpdated": 1790610716988,
+        "added": 1790613010668,
+        "lastUpdated": 1790613010668,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a92542fa0edc40cb574ffaab2298caee14067dd3d7487a868858c0785004510a": {
-          "added": 1790610716988,
+          "added": 1790613010668,
           "file": {
             "name": "/pluto.android-5.66.0-leanback-androidtv-tv.apk",
             "sha256": "a92542fa0edc40cb574ffaab2298caee14067dd3d7487a868858c0785004510a",
@@ -5339,13 +5339,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717027,
-        "lastUpdated": 1790610717027,
+        "added": 1790613010707,
+        "lastUpdated": 1790613010707,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b0fd28726ebc1f64358fa03fb88a22c156b0085045756b3c37abea410ae0da5d": {
-          "added": 1790610717027,
+          "added": 1790613010707,
           "file": {
             "name": "/podcastaddict-2026.10.1-hoodles-arm64.apk",
             "sha256": "b0fd28726ebc1f64358fa03fb88a22c156b0085045756b3c37abea410ae0da5d",
@@ -5389,13 +5389,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610708655,
-        "lastUpdated": 1790610708655,
+        "added": 1790612999276,
+        "lastUpdated": 1790612999276,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "65d0551c493634218a7513f1c8dae5aeab9bb8029b06234f3d6bbd1e1b2fde86": {
-          "added": 1790610708655,
+          "added": 1790612999276,
           "file": {
             "name": "/audioplayer-build-1025-bundle-play-hoomans-arm64.apk",
             "sha256": "65d0551c493634218a7513f1c8dae5aeab9bb8029b06234f3d6bbd1e1b2fde86",
@@ -5439,13 +5439,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719446,
-        "lastUpdated": 1790610719446,
+        "added": 1790613013095,
+        "lastUpdated": 1790613013095,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f3254bd1e7da290e7910837a0860585cc25316b53b646e17e72e81ed37b3903f": {
-          "added": 1790610719446,
+          "added": 1790613013095,
           "file": {
             "name": "/thirdpartyclient-3.0.470.1047-hoodles-arm64.apk",
             "sha256": "f3254bd1e7da290e7910837a0860585cc25316b53b646e17e72e81ed37b3903f",
@@ -5489,13 +5489,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713464,
-        "lastUpdated": 1790610713464,
+        "added": 1790613006824,
+        "lastUpdated": 1790613006824,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "cbf21268473e4b893ca0b782060ddb4d90fe6d12d7dff22a5c0bbd1d7947140b": {
-          "added": 1790610713464,
+          "added": 1790613006824,
           "file": {
             "name": "/livingroom-6.23.23+v15.5.0.70-armv7a-androidtv-tv.apk",
             "sha256": "cbf21268473e4b893ca0b782060ddb4d90fe6d12d7dff22a5c0bbd1d7947140b",
@@ -5539,13 +5539,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717118,
-        "lastUpdated": 1790610717118,
+        "added": 1790613010797,
+        "lastUpdated": 1790613010797,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c19171a92db6f9a9544c0184b4a2b86da99fd1c897e46f0b3b8bb70ec5480dd4": {
-          "added": 1790610717118,
+          "added": 1790613010797,
           "file": {
             "name": "/protonmail.android-7.11.8-hxreborn-arm64.apk",
             "sha256": "c19171a92db6f9a9544c0184b4a2b86da99fd1c897e46f0b3b8bb70ec5480dd4",
@@ -5589,13 +5589,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717283,
-        "lastUpdated": 1790610717283,
+        "added": 1790613010970,
+        "lastUpdated": 1790613010970,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "cc649f29fb0192255e1ce555213d2c443a926e9a121e852d72756c24dd5e92f4": {
-          "added": 1790610717283,
+          "added": 1790613010970,
           "file": {
             "name": "/protonvpn.android-5.19.43.0-hoodles-arm64.apk",
             "sha256": "cc649f29fb0192255e1ce555213d2c443a926e9a121e852d72756c24dd5e92f4",
@@ -5639,13 +5639,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717382,
-        "lastUpdated": 1790610717382,
+        "added": 1790613011067,
+        "lastUpdated": 1790613011067,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "cfb99b3f3ec87bd5a0d1e4e292d4f2955b1f9b5c5c14cd3889a4f7a2e6d02324": {
-          "added": 1790610717382,
+          "added": 1790613011067,
           "file": {
             "name": "/pydroid3-8.3_arm64-hoodles-arm64.apk",
             "sha256": "cfb99b3f3ec87bd5a0d1e4e292d4f2955b1f9b5c5c14cd3889a4f7a2e6d02324",
@@ -5689,13 +5689,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717470,
-        "lastUpdated": 1790610717470,
+        "added": 1790613011151,
+        "lastUpdated": 1790613011151,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d9c8224e83c6cc7dd8349d743d766a0d489ed7fcfe77cdd8f80cf668782abcbe": {
-          "added": 1790610717470,
+          "added": 1790613011151,
           "file": {
             "name": "/quizletandroid-10.38.1-hoomans-arm64.apk",
             "sha256": "d9c8224e83c6cc7dd8349d743d766a0d489ed7fcfe77cdd8f80cf668782abcbe",
@@ -5739,13 +5739,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717508,
-        "lastUpdated": 1790610717508,
+        "added": 1790613011188,
+        "lastUpdated": 1790613011188,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "aa20dcad7fb8d8becd3eb47180f527053846d773245f46d3843279acfeb56ed4": {
-          "added": 1790610717508,
+          "added": 1790613011188,
           "file": {
             "name": "/readera-26.05.20+2300-hxreborn-arm64.apk",
             "sha256": "aa20dcad7fb8d8becd3eb47180f527053846d773245f46d3843279acfeb56ed4",
@@ -5789,13 +5789,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717526,
-        "lastUpdated": 1790610717526,
+        "added": 1790613011207,
+        "lastUpdated": 1790613011207,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "f66602e7f0b47f7b3b8fa237917497a989c69d56549344e63f3e4399c7bf8248": {
-          "added": 1790610717526,
+          "added": 1790613011207,
           "file": {
             "name": "/recorder-4.2.20260823.982886211-de-vanced-arm64.apk",
             "sha256": "f66602e7f0b47f7b3b8fa237917497a989c69d56549344e63f3e4399c7bf8248",
@@ -5826,7 +5826,7 @@
           "en-US": "Reddit patched with Morphe"
         },
         "description": {
-          "en-US": "Reddit patched with Morphe.\n\nPatches: morphe v1.45.0-dev.18.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.reddit.frontpage 2026.24.0 (patched APK signed with the F-Droid repo key)."
+          "en-US": "Reddit patched with Morphe.\n\nPatches: morphe v1.45.0-dev.19.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.reddit.frontpage 2026.24.0 (patched APK signed with the F-Droid repo key)."
         },
         "icon": {
           "en-US": {
@@ -5839,16 +5839,16 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711670,
-        "lastUpdated": 1790610711670,
+        "added": 1790613003257,
+        "lastUpdated": 1790613003257,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "efdf4e8e0ce5f88621a78232c37c1cbbffb7c5fac4611b8fbaba0db2e6fe066f": {
-          "added": 1790610711670,
+        "486294e1f149860a45b1126efde9ece4c526467ce160c0bd66995f3ce8c3ab78": {
+          "added": 1790613003257,
           "file": {
             "name": "/frontpage-2026.24.0-morphe-arm64.apk",
-            "sha256": "efdf4e8e0ce5f88621a78232c37c1cbbffb7c5fac4611b8fbaba0db2e6fe066f",
+            "sha256": "486294e1f149860a45b1126efde9ece4c526467ce160c0bd66995f3ce8c3ab78",
             "size": 65041109
           },
           "manifest": {
@@ -5889,13 +5889,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717670,
-        "lastUpdated": 1790610717670,
+        "added": 1790613011332,
+        "lastUpdated": 1790613011332,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c37265a07232e6072eea68b5bffa44335db18f9ecc6b8abace6b4292089f19d0": {
-          "added": 1790610717670,
+          "added": 1790613011332,
           "file": {
             "name": "/replaio-3.3.9-hoomans-arm64.apk",
             "sha256": "c37265a07232e6072eea68b5bffa44335db18f9ecc6b8abace6b4292089f19d0",
@@ -5939,13 +5939,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610712442,
-        "lastUpdated": 1790610712442,
+        "added": 1790613004882,
+        "lastUpdated": 1790613004882,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "2c2bd13a7d68123fff306a23b8d813c4d4ad994b630ba00b763853feca7a5f90": {
-          "added": 1790610712442,
+          "added": 1790613004882,
           "file": {
             "name": "/hypertrophy-1.1.0-hoodles-arm64.apk",
             "sha256": "2c2bd13a7d68123fff306a23b8d813c4d4ad994b630ba00b763853feca7a5f90",
@@ -5989,13 +5989,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610711436,
-        "lastUpdated": 1790610711436,
+        "added": 1790613002790,
+        "lastUpdated": 1790613002790,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "25da0a1ecaf89bef9136ebcc3b637fcf424d3a0d5a0e75663e8957c4da0bb7ca": {
-          "added": 1790610711436,
+          "added": 1790613002790,
           "file": {
             "name": "/fit-3.9-hxreborn-arm64.apk",
             "sha256": "25da0a1ecaf89bef9136ebcc3b637fcf424d3a0d5a0e75663e8957c4da0bb7ca",
@@ -6039,13 +6039,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610709363,
-        "lastUpdated": 1790610709363,
+        "added": 1790612999716,
+        "lastUpdated": 1790612999716,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "b24dd01dd6a30256c5f533aacd850280f1553a075ac7984217ea895184560624": {
-          "added": 1790610709363,
+          "added": 1790612999716,
           "file": {
             "name": "/battles-3.14.5-hoomans-arm64.apk",
             "sha256": "b24dd01dd6a30256c5f533aacd850280f1553a075ac7984217ea895184560624",
@@ -6089,13 +6089,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610710534,
-        "lastUpdated": 1790610710534,
+        "added": 1790613001121,
+        "lastUpdated": 1790613001121,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9b5a7d1a20e2054c0b885b5fc149ee499ba4893a75117ebc04b85c91868bb03a": {
-          "added": 1790610710534,
+          "added": 1790613001121,
           "file": {
             "name": "/diet-5.7.9-hoodles-arm64.apk",
             "sha256": "9b5a7d1a20e2054c0b885b5fc149ee499ba4893a75117ebc04b85c91868bb03a",
@@ -6139,13 +6139,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719825,
-        "lastUpdated": 1790610719825,
+        "added": 1790613013471,
+        "lastUpdated": 1790613013471,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7688a3e3ffc937e3d12e274bc987a7ffbcde5620b1a6f07e489fd4c3a55ac812": {
-          "added": 1790610719825,
+          "added": 1790613013471,
           "file": {
             "name": "/train-1.2.1-hoodles-arm64.apk",
             "sha256": "7688a3e3ffc937e3d12e274bc987a7ffbcde5620b1a6f07e489fd4c3a55ac812",
@@ -6189,13 +6189,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718012,
-        "lastUpdated": 1790610718012,
+        "added": 1790613011665,
+        "lastUpdated": 1790613011665,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "a2d00ae9ee35a43822e12f42ae3b3d742a63b2d3374bec7dd4bc846023d6ff8e": {
-          "added": 1790610718012,
+          "added": 1790613011665,
           "file": {
             "name": "/showly2-3.70.0-hxreborn-arm64.apk",
             "sha256": "a2d00ae9ee35a43822e12f42ae3b3d742a63b2d3374bec7dd4bc846023d6ff8e",
@@ -6239,13 +6239,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720991,
-        "lastUpdated": 1790610720991,
+        "added": 1790613014652,
+        "lastUpdated": 1790613014652,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321": {
-          "added": 1790610720991,
+          "added": 1790613014652,
           "file": {
             "name": "/walk-2.5.0-xtra-arm64.apk",
             "sha256": "723b564ecd60c298dc0155f6449e657b0067cc8516d68784f17313aa05e1d321",
@@ -6289,13 +6289,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718029,
-        "lastUpdated": 1790610718029,
+        "added": 1790613011685,
+        "lastUpdated": 1790613011685,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "6dab00ecd825636dbe4f392ef88d2176d624762ec68247b2df3ae4a2122d7483": {
-          "added": 1790610718029,
+          "added": 1790613011685,
           "file": {
             "name": "/sleep-20260916-hoodles-arm64.apk",
             "sha256": "6dab00ecd825636dbe4f392ef88d2176d624762ec68247b2df3ae4a2122d7483",
@@ -6339,13 +6339,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718085,
-        "lastUpdated": 1790610718085,
+        "added": 1790613011741,
+        "lastUpdated": 1790613011741,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "90c276db054a80817043eb98f6a4a53056d59a2f344d96095fd057a5b969ed42": {
-          "added": 1790610718085,
+          "added": 1790613011741,
           "file": {
             "name": "/smartaudiobookplayer-11.7.8-hoomans-arm64.apk",
             "sha256": "90c276db054a80817043eb98f6a4a53056d59a2f344d96095fd057a5b969ed42",
@@ -6389,13 +6389,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718370,
-        "lastUpdated": 1790610718370,
+        "added": 1790613012026,
+        "lastUpdated": 1790613012026,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "585ed453cd8f7297f3bb47b9002e0a97760f2f203c09e7c45954e7657dcb39cf": {
-          "added": 1790610718370,
+          "added": 1790613012026,
           "file": {
             "name": "/snorelab.app-2.27.3.6291-hoodles-arm64.apk",
             "sha256": "585ed453cd8f7297f3bb47b9002e0a97760f2f203c09e7c45954e7657dcb39cf",
@@ -6439,13 +6439,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717729,
-        "lastUpdated": 1790610717729,
+        "added": 1790613011390,
+        "lastUpdated": 1790613011390,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e157edff1717909250e29f4038a6a77bbfa4d001f86c050fe2392d645d10ac0f": {
-          "added": 1790610717729,
+          "added": 1790613011390,
           "file": {
             "name": "/results-26.06.23-hoomans-arm64.apk",
             "sha256": "e157edff1717909250e29f4038a6a77bbfa4d001f86c050fe2392d645d10ac0f",
@@ -6489,13 +6489,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718446,
-        "lastUpdated": 1790610718446,
+        "added": 1790613012101,
+        "lastUpdated": 1790613012101,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5a5deac458a4c0bb1a9140efc1259c5c77dcfd68ed9f3e143dfd5989f94aff01": {
-          "added": 1790610718446,
+          "added": 1790613012101,
           "file": {
             "name": "/solidexplorer2-3.6.1-hoodles-arm64.apk",
             "sha256": "5a5deac458a4c0bb1a9140efc1259c5c77dcfd68ed9f3e143dfd5989f94aff01",
@@ -6539,13 +6539,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718484,
-        "lastUpdated": 1790610718484,
+        "added": 1790613012139,
+        "lastUpdated": 1790613012139,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1861709e8b7b8c63792cf1cc10c00b6bdd75ef96d61895cdbef1c5fc0a22e76b": {
-          "added": 1790610718484,
+          "added": 1790613012139,
           "file": {
             "name": "/soundcloud.android-2026.08.26-release-hoodles-arm64.apk",
             "sha256": "1861709e8b7b8c63792cf1cc10c00b6bdd75ef96d61895cdbef1c5fc0a22e76b",
@@ -6589,13 +6589,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718545,
-        "lastUpdated": 1790610718545,
+        "added": 1790613012199,
+        "lastUpdated": 1790613012199,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7": {
-          "added": 1790610718545,
+          "added": 1790613012199,
           "file": {
             "name": "/speedtest-7.0.4-xtra-arm64.apk",
             "sha256": "373558069d86eac07d4ca87d97891271154581e94db170e142d2caafa9e235b7",
@@ -6639,13 +6639,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610706595,
-        "lastUpdated": 1790610706595,
+        "added": 1790612997491,
+        "lastUpdated": 1790612997491,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "11faf52939b1c1cfb526af66c773af82e0a703ebe3dc21f6e2eb41b7f18c7642": {
-          "added": 1790610706595,
+          "added": 1790612997491,
           "file": {
             "name": "/StarWalk2Free-2.21.0-xtra-arm64.apk",
             "sha256": "11faf52939b1c1cfb526af66c773af82e0a703ebe3dc21f6e2eb41b7f18c7642",
@@ -6689,13 +6689,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718580,
-        "lastUpdated": 1790610718580,
+        "added": 1790613012234,
+        "lastUpdated": 1790613012234,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "3ad367dfa1cca6d424a899ac7ac8e3f49cb0ebab9453055bae0c8a5f0b2a5987": {
-          "added": 1790610718580,
+          "added": 1790613012234,
           "file": {
             "name": "/stashapp-2.48.2-hoomans-arm64.apk",
             "sha256": "3ad367dfa1cca6d424a899ac7ac8e3f49cb0ebab9453055bae0c8a5f0b2a5987",
@@ -6739,13 +6739,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718634,
-        "lastUpdated": 1790610718634,
+        "added": 1790613012289,
+        "lastUpdated": 1790613012289,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6": {
-          "added": 1790610718634,
+          "added": 1790613012289,
           "file": {
             "name": "/stellarium_free-1.16.3-xtra-arm64.apk",
             "sha256": "9ba74fd6994e1e796786921872f5ffb4a9cbaac69995f75b3eb979bd56afb8c6",
@@ -6789,13 +6789,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718796,
-        "lastUpdated": 1790610718796,
+        "added": 1790613012459,
+        "lastUpdated": 1790613012459,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e094e5a6ec90fbaf7a8b91f63eeacb5a61ad49b52c53323fa30a0659e13df80e": {
-          "added": 1790610718796,
+          "added": 1790613012459,
           "file": {
             "name": "/strava-477.14-de-vanced-arm64.apk",
             "sha256": "e094e5a6ec90fbaf7a8b91f63eeacb5a61ad49b52c53323fa30a0659e13df80e",
@@ -6839,13 +6839,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610718945,
-        "lastUpdated": 1790610718945,
+        "added": 1790613012610,
+        "lastUpdated": 1790613012610,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7efc8fe51195836c08197925f936ca70f2cb2e8e9241e0ec5eb2c760e59f870d": {
-          "added": 1790610718945,
+          "added": 1790613012610,
           "file": {
             "name": "/superchinese-6.8.1-hoodles-arm64.apk",
             "sha256": "7efc8fe51195836c08197925f936ca70f2cb2e8e9241e0ec5eb2c760e59f870d",
@@ -6889,13 +6889,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716956,
-        "lastUpdated": 1790610716956,
+        "added": 1790613010638,
+        "lastUpdated": 1790613010638,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0520458ad56b9406424cd9262940e4a53d418c0ffb69731597e80c826a8381e5": {
-          "added": 1790610716956,
+          "added": 1790613010638,
           "file": {
             "name": "/player-15.0.1-hxreborn-arm64.apk",
             "sha256": "0520458ad56b9406424cd9262940e4a53d418c0ffb69731597e80c826a8381e5",
@@ -6939,13 +6939,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719126,
-        "lastUpdated": 1790610719126,
+        "added": 1790613012792,
+        "lastUpdated": 1790613012792,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "419b52a4b43caf6a20d8590930804733db813b8e229392195248c351fb033048": {
-          "added": 1790610719126,
+          "added": 1790613012792,
           "file": {
             "name": "/teachmeanatomy-5.115-hoomans-arm64.apk",
             "sha256": "419b52a4b43caf6a20d8590930804733db813b8e229392195248c351fb033048",
@@ -6989,13 +6989,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719300,
-        "lastUpdated": 1790610719300,
+        "added": 1790613012962,
+        "lastUpdated": 1790613012962,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c06d713e8993582234ff4aa4f030feb18d1f362bfe6e3529afee4f0fbc9d8453": {
-          "added": 1790610719300,
+          "added": 1790613012962,
           "file": {
             "name": "/teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
             "sha256": "c06d713e8993582234ff4aa4f030feb18d1f362bfe6e3529afee4f0fbc9d8453",
@@ -7039,13 +7039,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715762,
-        "lastUpdated": 1790610715762,
+        "added": 1790613009457,
+        "lastUpdated": 1790613009457,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "48fac4046a8e6797ea1c823fb610b6d0ba57390a1d7d3fa6eef1b58953e7f734": {
-          "added": 1790610715762,
+          "added": 1790613009457,
           "file": {
             "name": "/musically-46.2.3-tiktok-hx-arm64.apk",
             "sha256": "48fac4046a8e6797ea1c823fb610b6d0ba57390a1d7d3fa6eef1b58953e7f734",
@@ -7089,13 +7089,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719595,
-        "lastUpdated": 1790610719595,
+        "added": 1790613013244,
+        "lastUpdated": 1790613013244,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7d6038e4f1f9f2519ec8b2eabeae8e65e47fca75f4aa84798c20cedc068dafcb": {
-          "added": 1790610719595,
+          "added": 1790613013244,
           "file": {
             "name": "/todoist-v12190-hoomans-arm64.apk",
             "sha256": "7d6038e4f1f9f2519ec8b2eabeae8e65e47fca75f4aa84798c20cedc068dafcb",
@@ -7139,13 +7139,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719649,
-        "lastUpdated": 1790610719649,
+        "added": 1790613013297,
+        "lastUpdated": 1790613013297,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "316206376edea8e3bb7f89c2c231823550d8ffa9d0d1d6f2cbd7f8ddf966bf23": {
-          "added": 1790610719649,
+          "added": 1790613013297,
           "file": {
             "name": "/tracked.mobile-7.0.0-hoomans-arm64.apk",
             "sha256": "316206376edea8e3bb7f89c2c231823550d8ffa9d0d1d6f2cbd7f8ddf966bf23",
@@ -7189,13 +7189,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610719372,
-        "lastUpdated": 1790610719372,
+        "added": 1790613013018,
+        "lastUpdated": 1790613013018,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "c819dd4e8f0ed7753b06dda4ade6abe706bfef81b28584212cfe58e38e82bc82": {
-          "added": 1790610719372,
+          "added": 1790613013018,
           "file": {
             "name": "/thetrainline-407.0.0.178994-hxreborn-arm64.apk",
             "sha256": "c819dd4e8f0ed7753b06dda4ade6abe706bfef81b28584212cfe58e38e82bc82",
@@ -7239,13 +7239,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720056,
-        "lastUpdated": 1790610720056,
+        "added": 1790613013701,
+        "lastUpdated": 1790613013701,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "95cd90ef7c4a6a66acc5f8e8fc1291bb73db90351e2ba0adca1a6f4b61d1b26c": {
-          "added": 1790610720056,
+          "added": 1790613013701,
           "file": {
             "name": "/ttmikstories.android-1.16.0-hoodles-arm64.apk",
             "sha256": "95cd90ef7c4a6a66acc5f8e8fc1291bb73db90351e2ba0adca1a6f4b61d1b26c",
@@ -7289,13 +7289,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720201,
-        "lastUpdated": 1790610720201,
+        "added": 1790613013848,
+        "lastUpdated": 1790613013848,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "ef93dcfd32c9529b2d21777ea8c1f0762f3610858cc71fc0fde94aaf7c164fec": {
-          "added": 1790610720201,
+          "added": 1790613013848,
           "file": {
             "name": "/tubitv-10.28.5000-androidtv-tv.apk",
             "sha256": "ef93dcfd32c9529b2d21777ea8c1f0762f3610858cc71fc0fde94aaf7c164fec",
@@ -7339,13 +7339,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720257,
-        "lastUpdated": 1790610720257,
+        "added": 1790613013905,
+        "lastUpdated": 1790613013905,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "50c43ad13344879dce27e203056782a4e066a3172f0b9b28da722bbb8680b5ad": {
-          "added": 1790610720257,
+          "added": 1790613013905,
           "file": {
             "name": "/tumblr-45.8.0.110-hoomans-arm64.apk",
             "sha256": "50c43ad13344879dce27e203056782a4e066a3172f0b9b28da722bbb8680b5ad",
@@ -7381,21 +7381,21 @@
         "icon": {
           "en-US": {
             "name": "/tv.twitch.android.app/en-US/tv.twitch.android.app.png",
-            "sha256": "c4f0c2f145f63fcc0505937fa51193063e18e2fea67baca66562bb2382a8da14",
-            "size": 2648
+            "sha256": "5e36d2a9ba44ceb1fce6b9c8276da7d25bbf2f85269a587237c8b982bcdc9e85",
+            "size": 932
           }
         },
         "categories": [
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610707720,
-        "lastUpdated": 1790610707801,
+        "added": 1790612998627,
+        "lastUpdated": 1790612998709,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "68ac7ea5d08e6e7c9d6a4761ca12677048a41f16c907286410eac71eb061155c": {
-          "added": 1790610707720,
+          "added": 1790612998627,
           "file": {
             "name": "/android.app-13.0.0.2-androidtv-tv.apk",
             "sha256": "68ac7ea5d08e6e7c9d6a4761ca12677048a41f16c907286410eac71eb061155c",
@@ -7416,7 +7416,7 @@
           }
         },
         "449c8619c343f4e21ae04dc1915b9095419fc4195bbd7840e4a42695d856e393": {
-          "added": 1790610707801,
+          "added": 1790612998709,
           "file": {
             "name": "/android.app-30.7.2-hoomans-arm64.apk",
             "sha256": "449c8619c343f4e21ae04dc1915b9095419fc4195bbd7840e4a42695d856e393",
@@ -7460,13 +7460,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720425,
-        "lastUpdated": 1790610720425,
+        "added": 1790613014071,
+        "lastUpdated": 1790613014071,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "3812cb6e00a56858cf5f9ac9c28cc752f7dee2e92bf608e03112f4d0ccdc8268": {
-          "added": 1790610720425,
+          "added": 1790613014071,
           "file": {
             "name": "/velnet-2.5.8-xtra-arm64.apk",
             "sha256": "3812cb6e00a56858cf5f9ac9c28cc752f7dee2e92bf608e03112f4d0ccdc8268",
@@ -7510,13 +7510,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720515,
-        "lastUpdated": 1790610720515,
+        "added": 1790613014160,
+        "lastUpdated": 1790613014160,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "5c9b0fa1b6bf27850973bc17978905fbd4b320708159d268b148140fcb622412": {
-          "added": 1790610720515,
+          "added": 1790613014160,
           "file": {
             "name": "/ventusky-53.1-hoodles-arm64.apk",
             "sha256": "5c9b0fa1b6bf27850973bc17978905fbd4b320708159d268b148140fcb622412",
@@ -7560,13 +7560,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720705,
-        "lastUpdated": 1790610720705,
+        "added": 1790613014369,
+        "lastUpdated": 1790613014369,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "10a14308a6d29fc9c173460945be5ceeac0a7a147b0766062242219a4c66fdad": {
-          "added": 1790610720705,
+          "added": 1790613014369,
           "file": {
             "name": "/voip-26.1.2.0-de-vanced-arm64.apk",
             "sha256": "10a14308a6d29fc9c173460945be5ceeac0a7a147b0766062242219a4c66fdad",
@@ -7610,13 +7610,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720559,
-        "lastUpdated": 1790610720559,
+        "added": 1790613014210,
+        "lastUpdated": 1790613014210,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "fdee69204519e5e4fd778c483b8015df3a65e885efd8e74d5c0cc6f523ed52e7": {
-          "added": 1790610720559,
+          "added": 1790613014210,
           "file": {
             "name": "/video.converter-3.2.2-hoomans-arm64.apk",
             "sha256": "fdee69204519e5e4fd778c483b8015df3a65e885efd8e74d5c0cc6f523ed52e7",
@@ -7660,13 +7660,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717066,
-        "lastUpdated": 1790610717066,
+        "added": 1790613010745,
+        "lastUpdated": 1790613010745,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "21d87a13833ec1f51b95aa23a56777c1bfea0a650180d18a43034e10d1b679b7": {
-          "added": 1790610717066,
+          "added": 1790613010745,
           "file": {
             "name": "/prendetv-4.47.2_tv-androidtv-tv.apk",
             "sha256": "21d87a13833ec1f51b95aa23a56777c1bfea0a650180d18a43034e10d1b679b7",
@@ -7710,13 +7710,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720860,
-        "lastUpdated": 1790610720860,
+        "added": 1790613014506,
+        "lastUpdated": 1790613014506,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28": {
-          "added": 1790610720860,
+          "added": 1790613014506,
           "file": {
             "name": "/vpnify-2.2.9-xtra-arm64.apk",
             "sha256": "1074019b698ae8c33ec3567b53532952fc9d5eb9a12f195cb5f45db2e79cab28",
@@ -7760,13 +7760,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610720892,
-        "lastUpdated": 1790610720892,
+        "added": 1790613014541,
+        "lastUpdated": 1790613014541,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d8eb5692b755a3aba80791b3361d7faba01983d928f2f39606be030d6198da5c": {
-          "added": 1790610720892,
+          "added": 1790613014541,
           "file": {
             "name": "/vrd-1.9.3-GooglePlay-hoodles-arm64.apk",
             "sha256": "d8eb5692b755a3aba80791b3361d7faba01983d928f2f39606be030d6198da5c",
@@ -7810,13 +7810,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721262,
-        "lastUpdated": 1790610721262,
+        "added": 1790613014910,
+        "lastUpdated": 1790613014910,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "d8f3657dc0ea703c6d9af7191f410473c7a05b2ee45ea2638986a83dac91a84d": {
-          "added": 1790610721262,
+          "added": 1790613014910,
           "file": {
             "name": "/wallpaper-3.61.01-hoodles-arm64.apk",
             "sha256": "d8f3657dc0ea703c6d9af7191f410473c7a05b2ee45ea2638986a83dac91a84d",
@@ -7860,13 +7860,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721378,
-        "lastUpdated": 1790610721378,
+        "added": 1790613015027,
+        "lastUpdated": 1790613015027,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "28ea5cbf3008a4d53b9bf3eb6da36b9d0db7012bebf4031731d94ede3b5d0b63": {
-          "added": 1790610721378,
+          "added": 1790613015027,
           "file": {
             "name": "/wanderlog.android-2.208-hoomans-arm64.apk",
             "sha256": "28ea5cbf3008a4d53b9bf3eb6da36b9d0db7012bebf4031731d94ede3b5d0b63",
@@ -7910,13 +7910,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610713181,
-        "lastUpdated": 1790610713181,
+        "added": 1790613006292,
+        "lastUpdated": 1790613006292,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "4b40b343351801ada9943403f8addb2e85aa0237c4b4ad6c54ffe2ae7afb8ed0": {
-          "added": 1790610713181,
+          "added": 1790613006292,
           "file": {
             "name": "/linewebtoon-3.9.5-hoomans-arm64.apk",
             "sha256": "4b40b343351801ada9943403f8addb2e85aa0237c4b4ad6c54ffe2ae7afb8ed0",
@@ -7960,13 +7960,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721618,
-        "lastUpdated": 1790610721618,
+        "added": 1790613015256,
+        "lastUpdated": 1790613015256,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "627166fe05c241fa03e966c9d5f00a43f3cbdf4b168d6f33440de8b878ffbfff": {
-          "added": 1790610721618,
+          "added": 1790613015256,
           "file": {
             "name": "/windyty.android-51.0.1-hoodles-arm64.apk",
             "sha256": "627166fe05c241fa03e966c9d5f00a43f3cbdf4b168d6f33440de8b878ffbfff",
@@ -8010,13 +8010,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715186,
-        "lastUpdated": 1790610715186,
+        "added": 1790613008897,
+        "lastUpdated": 1790613008897,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0d5538d62cc291ba45d2d0539d8d8df585a8aad3aec4ce4c791a98ec180fda45": {
-          "added": 1790610715186,
+          "added": 1790613008897,
           "file": {
             "name": "/moffice_eng-18.24-hoodles-arm64.apk",
             "sha256": "0d5538d62cc291ba45d2d0539d8d8df585a8aad3aec4ce4c791a98ec180fda45",
@@ -8060,13 +8060,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610716638,
-        "lastUpdated": 1790610716638,
+        "added": 1790613010326,
+        "lastUpdated": 1790613010326,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "e9e94f2364386d6f44da6100f532f6f0f79892ba726af00bc30662f8a3ee71c6": {
-          "added": 1790610716638,
+          "added": 1790613010326,
           "file": {
             "name": "/pdf.reader-11.2.0-hoodles-arm64.apk",
             "sha256": "e9e94f2364386d6f44da6100f532f6f0f79892ba726af00bc30662f8a3ee71c6",
@@ -8110,13 +8110,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610717823,
-        "lastUpdated": 1790610717823,
+        "added": 1790613011483,
+        "lastUpdated": 1790613011483,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "7600c2671d55918aeab16bda9aae500953dc441ecdbadee401db2a7cede08983": {
-          "added": 1790610717823,
+          "added": 1790613011483,
           "file": {
             "name": "/screenrecorder-2.5.1.1-hoodles-arm64.apk",
             "sha256": "7600c2671d55918aeab16bda9aae500953dc441ecdbadee401db2a7cede08983",
@@ -8160,13 +8160,13 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610721674,
-        "lastUpdated": 1790610721674,
+        "added": 1790613015317,
+        "lastUpdated": 1790613015317,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
         "0bb47950c4f32044fa78cdd248a13116b81bce21d54ba9062664e513045d6c98": {
-          "added": 1790610721674,
+          "added": 1790613015317,
           "file": {
             "name": "/youtube-21.13.164-morphe-arm64.apk",
             "sha256": "0bb47950c4f32044fa78cdd248a13116b81bce21d54ba9062664e513045d6c98",
@@ -8197,7 +8197,7 @@
           "en-US": "YouTube Music patched with Morphe"
         },
         "description": {
-          "en-US": "YouTube Music patched with Morphe.\n\nPatches: morphe v1.45.0-dev.18.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.google.android.apps.youtube.music 9.15.51 (patched APK signed with the F-Droid repo key).\n\nRequires MicroG for login and playback."
+          "en-US": "YouTube Music patched with Morphe.\n\nPatches: morphe v1.45.0-dev.19.\n\nEnabled patches (110): Add to queue, Alternative thumbnails, Ambient mode, Bypass certificate checks, Bypass image region restrictions, Bypass link redirects, Captions, Change form factor, Change header, Change installer source, Change miniplayer color, Change start page, Check watch history domain name resolution, Clone app, Copy video link, Crossfade, Custom branding, Custom branding name for Reddit, Custom font, Custom player overlay opacity, Disable DRC audio, Disable Play Store updates, Disable QUIC protocol, Disable Shorts resuming on startup, Disable dislike redirection, Disable double tap actions, Disable fullscreen gestures, Disable haptic feedback, Disable layout updates, Disable modern home, Disable player popup panels, Disable rolling number animations, Disable screenshot popup, Disable sign in to TV popup, Disable video codecs, Double tap to seek, Downloads, Enable debugging, Enable exclusive audio playback, Enable forced miniplayer, Enable swipe to dismiss miniplayer, Exit fullscreen mode, Force original audio, Force system font, GmsCore support, Hide Ask button, Hide Reddit search, Hide Shorts components, Hide Trending shelves, Hide ads, Hide autoplay preview, Hide buttons, Hide communities shelf, Hide end screen cards, Hide end screen suggested video, Hide filter bar, Hide flyout menu components, Hide info cards, Hide layout components, Hide music action buttons, Hide navigation buttons, Hide player flyout menu components, Hide player overlay buttons, Hide related video overlay, Hide related videos, Hide sidebar components, Hide timestamp, Hide video action buttons, Loop video, Media notification controls, Miniplayer, Miniplayer previous and next buttons, Navigation bar, Network proxy, Open Shorts in regular player, Open channel of live avatar, Open links directly, Open links externally, Open system share sheet, Open videos fullscreen, Override YouTube Music buttons, Override certificate pinning, Play all, Playback in feeds, Playback speed, Reload video, Remember repeat state, Remember shuffle state, Remove background playback restrictions, Remove subreddit dialog, Remove viewer discretion dialog, Return YouTube Dislike, Sanitize sharing links, Save to watch later, Scrobbling, Seekbar, Settings menu filter, Shorts autoplay, Show view count, SponsorBlock, Spoof app version, Spoof device dimensions, Spoof signature, Spoof video streams, Swipe controls, Theme, Third-party lyrics, Video quality, Voice over translation, Wide search bar.\n\nOriginal app: com.google.android.apps.youtube.music 9.15.51 (patched APK signed with the F-Droid repo key).\n\nRequires MicroG for login and playback."
         },
         "icon": {
           "en-US": {
@@ -8210,17 +8210,17 @@
           "Other"
         ],
         "license": "Unknown",
-        "added": 1790610715627,
-        "lastUpdated": 1790610715627,
+        "added": 1790613009347,
+        "lastUpdated": 1790613009347,
         "preferredSigner": "2b4d9183652345d271b0bbc62f7758109659a776aaa6b765d04ca6c6285f02c7"
       },
       "versions": {
-        "7f274ca2f0a37e9d71f7317aad303b33ff6702523582259a66448b527031a354": {
-          "added": 1790610715627,
+        "86fdfd38e14009e955b2b45fe7d49f568c90bf1f9acc7d85bdf6c453b8590b4c": {
+          "added": 1790613009347,
           "file": {
             "name": "/music-9.15.51-morphe-arm64.apk",
-            "sha256": "7f274ca2f0a37e9d71f7317aad303b33ff6702523582259a66448b527031a354",
-            "size": 72407122
+            "sha256": "86fdfd38e14009e955b2b45fe7d49f568c90bf1f9acc7d85bdf6c453b8590b4c",
+            "size": 72456274
           },
           "manifest": {
             "versionName": "9.15.51",
