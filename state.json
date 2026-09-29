@@ -195,11 +195,11 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790664378,
+      "at": 1790677833,
       "out": "alltrails-26.9.40-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
-        "hoodles": "v1.46.0-dev.3"
+        "hoodles": "v1.46.0-dev.4"
       },
       "vc": 60526,
       "version": "26.9.40"
@@ -699,11 +699,11 @@
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790612617,
+      "at": 1790677827,
       "out": "music-9.15.51-morphe-arm64.apk",
       "package": "com.google.android.apps.youtube.music",
       "tags": {
-        "morphe": "v1.45.0-dev.19"
+        "morphe": "v1.45.0-dev.20"
       },
       "vc": 91551240,
       "version": "9.15.51"
@@ -1919,7 +1919,7 @@
       13122697
     ],
     "app.morphe.android.apps.youtube.music": [
-      1790612617,
+      1790677827,
       72456274
     ],
     "app.morphe.android.youtube": [
@@ -1979,8 +1979,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1790674567,
-      77550078
+      1790677832,
+      96324751
     ],
     "com.alphaprogression.alphaprogression": [
       1789950298,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790560534,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790673056,
