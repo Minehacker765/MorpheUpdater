@@ -999,14 +999,14 @@
     "com.nothing.smartcenter|de-vanced|arm64": {
       "app_name": "Nothing X",
       "arch": "arm64",
-      "at": 1790629267,
-      "out": "smartcenter-3.8.0-de-vanced-arm64.apk",
+      "at": 1790645489,
+      "out": "smartcenter-3.9.0-de-vanced-arm64.apk",
       "package": "com.nothing.smartcenter",
       "tags": {
         "de-vanced": "v1.5.0-dev.1"
       },
-      "vc": 3080004,
-      "version": "3.8.0"
+      "vc": 3090005,
+      "version": "3.9.0"
     },
     "com.paget96.batteryguru|hoomans|arm64": {
       "app_name": "Battery Guru: Battery Health",
@@ -2235,8 +2235,8 @@
       129896566
     ],
     "com.nothing.smartcenter": [
-      1790629267,
-      230078393
+      1790645489,
+      234679698
     ],
     "com.paget96.batteryguru": [
       1789950372,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1790560534,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790632890,
