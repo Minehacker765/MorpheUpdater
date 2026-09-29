@@ -1683,14 +1683,14 @@
     "net.binarymode.android.irplus|de-vanced|arm64": {
       "app_name": "irplus - Infrared Remote",
       "arch": "arm64",
-      "at": 1790634554,
-      "out": "irplus-1.9.13-de-vanced-arm64.apk",
+      "at": 1790652697,
+      "out": "irplus-1.10-de-vanced-arm64.apk",
       "package": "net.binarymode.android.irplus",
       "tags": {
         "de-vanced": "v1.5.0-dev.1"
       },
-      "vc": 307,
-      "version": "1.9.13"
+      "vc": 322,
+      "version": "1.10"
     },
     "net.uniquegem.directchat|hoomans|arm64": {
       "app_name": "DirectChat (ChatHeads/Bubbles)",
@@ -2463,8 +2463,8 @@
       33733736
     ],
     "net.binarymode.android.irplus": [
-      1790634554,
-      6129085
+      1790652697,
+      7617891
     ],
     "net.uniquegem.directchat": [
       1789950445,
@@ -2519,8 +2519,8 @@
       28898764
     ],
     "tv.twitch.android.app": [
-      1790560534,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790632890,
