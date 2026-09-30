@@ -807,11 +807,11 @@
     "com.lingodeer|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790725848,
+      "at": 1790737325,
       "out": "lingodeer-2.99.413-hoodles-arm64.apk",
       "package": "com.lingodeer",
       "tags": {
-        "hoodles": "v1.46.0-dev.5"
+        "hoodles": "v1.46.0-dev.6"
       },
       "vc": 677,
       "version": "2.99.413"
@@ -2175,8 +2175,8 @@
       93175601
     ],
     "com.lingodeer": [
-      1790725847,
-      61056591
+      1790737325,
+      61027927
     ],
     "com.llamalab.automate": [
       1788235582,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790729739,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790732228,
