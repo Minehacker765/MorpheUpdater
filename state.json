@@ -1021,16 +1021,16 @@
       "version": "2.5.0.6"
     },
     "com.pandora.android|hoodles|arm64": {
-      "app_name": "Pandora - Music & Podcasts",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1790794398,
-      "out": "pandora.android-2609.1.1-hoodles-arm64.apk",
+      "at": 1790795882,
+      "out": "pandora.android-2609.2-hoodles-arm64.apk",
       "package": "com.pandora.android",
       "tags": {
         "hoodles": "v1.46.0"
       },
-      "vc": 26091104,
-      "version": "2609.1.1"
+      "vc": 26092004,
+      "version": "2609.2"
     },
     "com.peacocktv.peacockandroid|androidtv|tv": {
       "app_name": "Peacock TV: Stream TV & Movies",
@@ -1369,16 +1369,16 @@
       "version": "4.47.2_tv"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
-      "app_name": "Sleep as Android: Smart alarm",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1790794476,
-      "out": "sleep-20260916-hoodles-arm64.apk",
+      "at": 1790795877,
+      "out": "sleep-20260923-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
         "hoodles": "v1.46.0"
       },
-      "vc": 2311705,
-      "version": "20260916"
+      "vc": 2311711,
+      "version": "20260923"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "",
@@ -2243,8 +2243,8 @@
       8932883
     ],
     "com.pandora.android": [
-      1790794397,
-      67978598
+      1790795882,
+      68027823
     ],
     "com.peacocktv.peacockandroid": [
       1790729725,
@@ -2359,8 +2359,8 @@
       40092425
     ],
     "com.urbandroid.sleep": [
-      1790794474,
-      50196674
+      1790795877,
+      50315319
     ],
     "com.viber.voip": [
       1790723730,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790729739,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790794167,
