@@ -423,14 +423,14 @@
     "com.busuu.android.enc|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790734256,
-      "out": "enc-32.47.0(1754308)-hoodles-arm64.apk",
+      "at": 1790739156,
+      "out": "enc-32.48.1(1769740)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
         "hoodles": "v1.46.0-dev.6"
       },
-      "vc": 1754308,
-      "version": "32.47.0(1754308)"
+      "vc": 1769740,
+      "version": "32.48.1(1769740)"
     },
     "com.camerasideas.instashot|hoomans|arm64": {
       "app_name": "Video Editor & Maker - InShot",
@@ -2055,8 +2055,8 @@
       74113252
     ],
     "com.busuu.android.enc": [
-      1790734256,
-      57047581
+      1790739156,
+      56810330
     ],
     "com.camerasideas.instashot": [
       1789950338,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1790729739,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790732228,
