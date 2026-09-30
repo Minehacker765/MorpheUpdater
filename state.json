@@ -109,13 +109,13 @@
       "version": "1.16.24"
     },
     "ch.protonmail.android|hxreborn|arm64": {
-      "app_name": "",
+      "app_name": "Proton Mail: Encrypted Email",
       "arch": "arm64",
-      "at": 1790703601,
+      "at": 1790790501,
       "out": "protonmail.android-7.11.8-hxreborn-arm64.apk",
       "package": "ch.protonmail.android",
       "tags": {
-        "hxreborn": "v1.36.0"
+        "hxreborn": "v1.37.0"
       },
       "vc": 18323,
       "version": "7.11.8"
@@ -1951,8 +1951,8 @@
       14692474
     ],
     "ch.protonmail.android": [
-      1790703600,
-      151772822
+      1790790500,
+      151776918
     ],
     "ch.protonvpn.android": [
       1790767805,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1790729739,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790767817,
