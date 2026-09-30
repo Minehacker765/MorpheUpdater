@@ -1251,11 +1251,11 @@
     "com.teslacoilsw.launcher|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790736277,
+      "at": 1790776631,
       "out": "teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
-        "hoodles": "v1.46.0-dev.6"
+        "hoodles": "v1.46.0-dev.7"
       },
       "vc": 89200,
       "version": "89200 (8.9.2)"
@@ -1371,14 +1371,14 @@
     "com.urbandroid.sleep|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790736283,
-      "out": "sleep-20260923-hoodles-arm64.apk",
+      "at": 1790775599,
+      "out": "sleep-20260916-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
-        "hoodles": "v1.46.0-dev.6"
+        "hoodles": "v1.46.0-dev.7"
       },
-      "vc": 2311711,
-      "version": "20260923"
+      "vc": 2311705,
+      "version": "20260916"
     },
     "com.viber.voip|de-vanced|arm64": {
       "app_name": "",
@@ -1431,11 +1431,11 @@
     "com.wallpaperscraft.wallpaper|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790736300,
+      "at": 1790777229,
       "out": "wallpaper-3.61.01-hoodles-arm64.apk",
       "package": "com.wallpaperscraft.wallpaper",
       "tags": {
-        "hoodles": "v1.46.0-dev.6"
+        "hoodles": "v1.46.0-dev.7"
       },
       "vc": 36101,
       "version": "3.61.01"
@@ -1467,11 +1467,11 @@
     "com.windyty.android|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1790736298,
+      "at": 1790777252,
       "out": "windyty.android-51.0.1-hoodles-arm64.apk",
       "package": "com.windyty.android",
       "tags": {
-        "hoodles": "v1.46.0-dev.6"
+        "hoodles": "v1.46.0-dev.7"
       },
       "vc": 5100010,
       "version": "51.0.1"
@@ -1963,8 +1963,8 @@
       16106039
     ],
     "cn.wps.moffice_eng": [
-      1790734249,
-      126173867
+      1790773364,
+      124456757
     ],
     "com.adguard.android": [
       1790590474,
@@ -2319,7 +2319,7 @@
       156419409
     ],
     "com.teslacoilsw.launcher": [
-      1790736277,
+      1790776630,
       37059982
     ],
     "com.thehungrywasp.iamsober": [
@@ -2359,8 +2359,8 @@
       40092425
     ],
     "com.urbandroid.sleep": [
-      1790736282,
-      50245695
+      1790775599,
+      50118858
     ],
     "com.viber.voip": [
       1790723730,
@@ -2379,7 +2379,7 @@
       25012455
     ],
     "com.wallpaperscraft.wallpaper": [
-      1790736300,
+      1790777217,
       66862327
     ],
     "com.wanderlog.android": [
@@ -2391,7 +2391,7 @@
       68295682
     ],
     "com.windyty.android": [
-      1790736298,
+      1790777251,
       43683273
     ],
     "com.xodo.pdf.reader": [
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1790729739,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790767817,
@@ -2534,7 +2534,7 @@
       "tag": "V1.4.9"
     },
     "morphe-desktop": {
-      "signing": "internal",
+      "signing": "external",
       "tag": "v1.18.0-dev.5"
     }
   }
