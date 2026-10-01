@@ -171,14 +171,14 @@
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "Lightroom Photo & Video Editor",
       "arch": "arm64",
-      "at": 1790799497,
-      "out": "lrmobile-11.6.0-hoodles-arm64.apk",
+      "at": 1790864353,
+      "out": "lrmobile-11.6.01-hoodles-arm64.apk",
       "package": "com.adobe.lrmobile",
       "tags": {
         "hoodles": "v1.46.0"
       },
-      "vc": 711106000,
-      "version": "11.6.0"
+      "vc": 711106010,
+      "version": "11.6.01"
     },
     "com.adobe.reader|hoomans|arm64": {
       "app_name": "Adobe Acrobat Reader: Edit PDF",
@@ -1971,8 +1971,8 @@
       79959205
     ],
     "com.adobe.lrmobile": [
-      1790799497,
-      236348409
+      1790864351,
+      236356601
     ],
     "com.adobe.reader": [
       1789950304,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790729739,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790794167,
