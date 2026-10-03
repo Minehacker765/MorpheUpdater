@@ -171,14 +171,14 @@
     "com.adobe.lrmobile|hoodles|arm64": {
       "app_name": "Lightroom Photo & Video Editor",
       "arch": "arm64",
-      "at": 1791062309,
-      "out": "lrmobile-11.5.31-hoodles-arm64.apk",
+      "at": 1791064139,
+      "out": "lrmobile-11.6.01-hoodles-arm64.apk",
       "package": "com.adobe.lrmobile",
       "tags": {
         "hoodles": "v1.47.0-dev.1"
       },
-      "vc": 711105310,
-      "version": "11.5.31"
+      "vc": 711106010,
+      "version": "11.6.01"
     },
     "com.adobe.reader|hoomans|arm64": {
       "app_name": "Adobe Acrobat Reader: Edit PDF",
@@ -423,11 +423,11 @@
     "com.busuu.android.enc|hoodles|arm64": {
       "app_name": "Busuu: Learn & Speak Languages",
       "arch": "arm64",
-      "at": 1790948892,
+      "at": 1791064122,
       "out": "enc-32.48.2(1772482)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
-        "hoodles": "v1.46.0"
+        "hoodles": "v1.47.0-dev.1"
       },
       "vc": 1772482,
       "version": "32.48.2(1772482)"
@@ -1369,13 +1369,13 @@
       "version": "4.47.2_tv"
     },
     "com.urbandroid.sleep|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Sleep as Android: Smart alarm",
       "arch": "arm64",
-      "at": 1790795877,
+      "at": 1791064119,
       "out": "sleep-20260923-hoodles-arm64.apk",
       "package": "com.urbandroid.sleep",
       "tags": {
-        "hoodles": "v1.46.0"
+        "hoodles": "v1.47.0-dev.1"
       },
       "vc": 2311711,
       "version": "20260923"
@@ -1971,8 +1971,8 @@
       79959205
     ],
     "com.adobe.lrmobile": [
-      1791062308,
-      236568507
+      1791064139,
+      236614631
     ],
     "com.adobe.reader": [
       1789950304,
@@ -2055,8 +2055,8 @@
       74354890
     ],
     "com.busuu.android.enc": [
-      1790948891,
-      56826706
+      1791064122,
+      57744082
     ],
     "com.camerasideas.instashot": [
       1789950338,
@@ -2359,8 +2359,8 @@
       40092425
     ],
     "com.urbandroid.sleep": [
-      1790795877,
-      50315319
+      1791064118,
+      50659192
     ],
     "com.viber.voip": [
       1790985040,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1790729739,
-      56679635
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791062348,
