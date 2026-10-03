@@ -1083,13 +1083,13 @@
     "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
       "app_name": "Money Manager Expense & Budget",
       "arch": "arm64",
-      "at": 1791001111,
+      "at": 1791004706,
       "out": "moneymanagerfree-4.12.13 GF-hoomans-arm64.apk",
       "package": "com.realbyteapps.moneymanagerfree",
       "tags": {
         "hoomans": "v1.53.0"
       },
-      "vc": 1207,
+      "vc": 1205,
       "version": "4.12.13 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
@@ -2263,8 +2263,8 @@
       26081730
     ],
     "com.realbyteapps.moneymanagerfree": [
-      1791001111,
-      24091715
+      1791004706,
+      24083683
     ],
     "com.reddit.frontpage": [
       1790932710,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790729739,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790794167,
