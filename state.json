@@ -253,16 +253,16 @@
       "version": "32.18.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "Amazon Music: Songs & Podcasts",
       "arch": "arm64",
-      "at": 1790984937,
-      "out": "mp3-26.35.0-de-vanced-arm64.apk",
+      "at": 1790997567,
+      "out": "mp3-26.35.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.5.0"
       },
-      "vc": 526350010,
-      "version": "26.35.0"
+      "vc": 526350110,
+      "version": "26.35.1"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "Essence: Quit Addiction",
@@ -1999,8 +1999,8 @@
       128307593
     ],
     "com.amazon.mp3": [
-      1790984937,
-      173210401
+      1790997567,
+      173226785
     ],
     "com.appfactory.essence": [
       1789950306,
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1790729739,
+      56679635
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1790794167,
