@@ -253,16 +253,16 @@
       "version": "32.18.0.100"
     },
     "com.amazon.mp3|de-vanced|arm64": {
-      "app_name": "Amazon Music: Songs & Podcasts",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1791111085,
-      "out": "mp3-26.35.0-de-vanced-arm64.apk",
+      "at": 1791120020,
+      "out": "mp3-26.35.1-de-vanced-arm64.apk",
       "package": "com.amazon.mp3",
       "tags": {
         "de-vanced": "v1.5.1"
       },
-      "vc": 526350010,
-      "version": "26.35.0"
+      "vc": 526350110,
+      "version": "26.35.1"
     },
     "com.appfactory.essence|hoomans|arm64": {
       "app_name": "Essence: Quit Addiction",
@@ -1839,11 +1839,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "Pluto TV: Watch Free Movies/TV",
       "arch": "tv",
-      "at": 1790729717,
+      "at": 1791120024,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.40.3"
+        "androidtv": "v1.40.4"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -1999,7 +1999,7 @@
       127803793
     ],
     "com.amazon.mp3": [
-      1791111085,
+      1791120016,
       174447401
     ],
     "com.appfactory.essence": [
@@ -2515,12 +2515,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1790729717,
-      28935620
+      1791120024,
+      29967820
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1791073120,
+      56773835
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791080443,
