@@ -421,13 +421,13 @@
       "version": "3.23.1"
     },
     "com.busuu.android.enc|hoodles|arm64": {
-      "app_name": "Busuu: Learn & Speak Languages",
+      "app_name": "",
       "arch": "arm64",
-      "at": 1791064122,
+      "at": 1791078482,
       "out": "enc-32.48.2(1772482)-hoodles-arm64.apk",
       "package": "com.busuu.android.enc",
       "tags": {
-        "hoodles": "v1.47.0-dev.1"
+        "hoodles": "v1.47.0-dev.2"
       },
       "vc": 1772482,
       "version": "32.48.2(1772482)"
@@ -2055,7 +2055,7 @@
       74354890
     ],
     "com.busuu.android.enc": [
-      1791064122,
+      1791078482,
       57744082
     ],
     "com.camerasideas.instashot": [
@@ -2519,8 +2519,8 @@
       28935620
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791076737,
