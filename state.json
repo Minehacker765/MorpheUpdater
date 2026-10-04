@@ -121,13 +121,13 @@
       "version": "7.11.9"
     },
     "ch.protonvpn.android|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Proton VPN: Fast & Secure VPN",
       "arch": "arm64",
-      "at": 1791080415,
+      "at": 1791141627,
       "out": "protonvpn.android-5.20.57.0-hoodles-arm64.apk",
       "package": "ch.protonvpn.android",
       "tags": {
-        "hoodles": "v1.47.0-dev.3"
+        "hoodles": "v1.47.0"
       },
       "vc": 605205700,
       "version": "5.20.57.0"
@@ -147,11 +147,11 @@
     "cn.wps.moffice_eng|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1791080594,
+      "at": 1791141631,
       "out": "moffice_eng-18.24-hoodles-arm64.apk",
       "package": "cn.wps.moffice_eng",
       "tags": {
-        "hoodles": "v1.47.0-dev.3"
+        "hoodles": "v1.47.0"
       },
       "vc": 1553,
       "version": "18.24"
@@ -1955,16 +1955,16 @@
       152211102
     ],
     "ch.protonvpn.android": [
-      1791080415,
-      36917886
+      1791141627,
+      37208838
     ],
     "cn.ommiao.iconpacker": [
       1791139909,
       16339519
     ],
     "cn.wps.moffice_eng": [
-      1791080593,
-      126751267
+      1791141631,
+      128344747
     ],
     "com.adguard.android": [
       1790590474,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1791073120,
+      56773835
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
