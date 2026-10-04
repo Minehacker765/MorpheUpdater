@@ -195,14 +195,14 @@
     "com.alltrails.alltrails|hoodles|arm64": {
       "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
-      "at": 1791140660,
-      "out": "alltrails-26.9.40-hoodles-arm64.apk",
+      "at": 1791143444,
+      "out": "alltrails-26.9.51-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.47.0"
       },
-      "vc": 60526,
-      "version": "26.9.40"
+      "vc": 60536,
+      "version": "26.9.51"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "Alpha Progression Gym Tracker",
@@ -1251,14 +1251,14 @@
     "com.teslacoilsw.launcher|hoodles|arm64": {
       "app_name": "Nova Launcher: Home Screen",
       "arch": "arm64",
-      "at": 1791140864,
-      "out": "teslacoilsw.launcher-89200 (8.9.2)-hoodles-arm64.apk",
+      "at": 1791143442,
+      "out": "teslacoilsw.launcher-89300 (8.9.3)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
         "hoodles": "v1.47.0"
       },
-      "vc": 89200,
-      "version": "89200 (8.9.2)"
+      "vc": 89300,
+      "version": "89300 (8.9.3)"
     },
     "com.thehungrywasp.iamsober|hoomans|arm64": {
       "app_name": "I Am Sober",
@@ -1979,8 +1979,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1791140657,
-      97393815
+      1791143444,
+      85149861
     ],
     "com.alphaprogression.alphaprogression": [
       1789950298,
@@ -2319,8 +2319,8 @@
       157652313
     ],
     "com.teslacoilsw.launcher": [
-      1791140864,
-      38096270
+      1791143442,
+      38165902
     ],
     "com.thehungrywasp.iamsober": [
       1789950394,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
