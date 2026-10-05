@@ -567,11 +567,11 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "Etsy: Shop from Real People",
       "arch": "arm64",
-      "at": 1791134425,
+      "at": 1791204624,
       "out": "etsy.android-7.97.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
-        "hxreborn": "v1.40.0"
+        "hxreborn": "v1.41.0"
       },
       "vc": 79700150,
       "version": "7.97.0"
@@ -1705,16 +1705,16 @@
       "version": "1.9.8"
     },
     "nl.sanomamedia.android.nu|de-vanced|arm64": {
-      "app_name": "",
+      "app_name": "NU.nl - Nieuws, Sport & meer",
       "arch": "arm64",
-      "at": 1791111100,
-      "out": "nu-26.8.0-de-vanced-arm64.apk",
+      "at": 1791204625,
+      "out": "nu-26.9.0-de-vanced-arm64.apk",
       "package": "nl.sanomamedia.android.nu",
       "tags": {
         "de-vanced": "v1.5.1"
       },
-      "vc": 210153,
-      "version": "26.8.0"
+      "vc": 210156,
+      "version": "26.9.0"
     },
     "nom.vrd|hoodles|arm64": {
       "app_name": "NOMone Desktop - Linux and VR",
@@ -2103,8 +2103,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1791134425,
-      48849968
+      1791204624,
+      48681896
     ],
     "com.facebook.katana": [
       1791111038,
@@ -2471,8 +2471,8 @@
       17025225
     ],
     "nl.sanomamedia.android.nu": [
-      1791111100,
-      42109875
+      1791204625,
+      42325382
     ],
     "nom.vrd": [
       1791140934,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
