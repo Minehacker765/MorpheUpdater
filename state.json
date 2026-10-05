@@ -567,14 +567,14 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "Etsy: Shop from Real People",
       "arch": "arm64",
-      "at": 1791204624,
-      "out": "etsy.android-7.97.0-hxreborn-arm64.apk",
+      "at": 1791219028,
+      "out": "etsy.android-7.98.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
         "hxreborn": "v1.41.0"
       },
-      "vc": 79700150,
-      "version": "7.97.0"
+      "vc": 79800173,
+      "version": "7.98.0"
     },
     "com.facebook.katana|de-vanced|arm64": {
       "app_name": "",
@@ -687,14 +687,14 @@
     "com.google.android.apps.recorder|de-vanced|arm64": {
       "app_name": "Recorder",
       "arch": "arm64",
-      "at": 1791121791,
-      "out": "recorder-4.2.20260823.982886211-de-vanced-arm64.apk",
+      "at": 1791219018,
+      "out": "recorder-4.2.20260823.992025916-de-vanced-arm64.apk",
       "package": "com.google.android.apps.recorder",
       "tags": {
         "de-vanced": "v1.5.1"
       },
-      "vc": 42443113,
-      "version": "4.2.20260823.982886211"
+      "vc": 42443313,
+      "version": "4.2.20260823.992025916"
     },
     "com.google.android.apps.youtube.music|morphe|arm64": {
       "app_name": "",
@@ -2103,8 +2103,8 @@
       28026190
     ],
     "com.etsy.android": [
-      1791204624,
-      48681896
+      1791219028,
+      48279653
     ],
     "com.facebook.katana": [
       1791111038,
@@ -2143,8 +2143,8 @@
       73773001
     ],
     "com.google.android.apps.recorder": [
-      1791121791,
-      52918848
+      1791219017,
+      52750776
     ],
     "com.google.android.dialer": [
       1789950350,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
