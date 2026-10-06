@@ -1083,13 +1083,13 @@
     "com.realbyteapps.moneymanagerfree|hoomans|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1791301815,
+      "at": 1791305445,
       "out": "moneymanagerfree-4.12.13 GF-hoomans-arm64.apk",
       "package": "com.realbyteapps.moneymanagerfree",
       "tags": {
         "hoomans": "v1.53.0"
       },
-      "vc": 1207,
+      "vc": 1205,
       "version": "4.12.13 GF"
     },
     "com.reddit.frontpage|morphe|arm64": {
@@ -2263,8 +2263,8 @@
       26081730
     ],
     "com.realbyteapps.moneymanagerfree": [
-      1791301814,
-      24300619
+      1791305445,
+      24280299
     ],
     "com.reddit.frontpage": [
       1791287440,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
