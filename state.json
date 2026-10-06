@@ -913,16 +913,16 @@
       "version": "2.2.2"
     },
     "com.mobilefootie.wc2010|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "FotMob - Soccer Live Scores",
       "arch": "arm64",
-      "at": 1791076870,
-      "out": "wc2010-237.17614.20260921-hoodles-arm64.apk",
+      "at": 1791309008,
+      "out": "wc2010-238.17666.20260928-hoodles-arm64.apk",
       "package": "com.mobilefootie.wc2010",
       "tags": {
-        "hoodles": "v1.47.0-dev.2"
+        "hoodles": "v1.47.0"
       },
-      "vc": 17614,
-      "version": "237.17614.20260921"
+      "vc": 17666,
+      "version": "238.17666.20260928"
     },
     "com.myfitnesspal.android|hoodles|arm64": {
       "app_name": "MyFitnessPal: Calorie Counter",
@@ -2207,8 +2207,8 @@
       29769359
     ],
     "com.mobilefootie.wc2010": [
-      1791076869,
-      29570532
+      1791309008,
+      29729591
     ],
     "com.myfitnesspal.android": [
       1791139875,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791073120,
-      56773835
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791139856,
