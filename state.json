@@ -855,14 +855,14 @@
     "com.merriamwebster|hoodles|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1791320018,
-      "out": "merriamwebster-5.6.2-hoodles-arm64.apk",
+      "at": 1791366641,
+      "out": "merriamwebster-5.6.3-hoodles-arm64.apk",
       "package": "com.merriamwebster",
       "tags": {
         "hoodles": "v1.47.1-dev.1"
       },
-      "vc": 560204,
-      "version": "5.6.2"
+      "vc": 560302,
+      "version": "5.6.3"
     },
     "com.mgoogle.android.gms|microg|arm64": {
       "app_name": "MicroG",
@@ -2191,8 +2191,8 @@
       20803230
     ],
     "com.merriamwebster": [
-      1791320018,
-      138248827
+      1791366641,
+      139530875
     ],
     "com.michaldrabik.showly2": [
       1791363035,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791320174,
-      56741075
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
