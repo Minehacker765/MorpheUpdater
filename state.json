@@ -1021,16 +1021,16 @@
       "version": "2.5.0.6"
     },
     "com.pandora.android|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Pandora - Music & Podcasts",
       "arch": "arm64",
-      "at": 1791320035,
-      "out": "pandora.android-2609.2-hoodles-arm64.apk",
+      "at": 1791391824,
+      "out": "pandora.android-2610.1-hoodles-arm64.apk",
       "package": "com.pandora.android",
       "tags": {
         "hoodles": "v1.47.1-dev.1"
       },
-      "vc": 26092004,
-      "version": "2609.2"
+      "vc": 26101010,
+      "version": "2610.1"
     },
     "com.peacocktv.peacockandroid|androidtv|tv": {
       "app_name": "Peacock TV: Stream TV & Movies",
@@ -2243,8 +2243,8 @@
       8932883
     ],
     "com.pandora.android": [
-      1791320035,
-      68806071
+      1791391824,
+      69356514
     ],
     "com.peacocktv.peacockandroid": [
       1791319890,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791320174,
-      56741075
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
