@@ -1839,11 +1839,11 @@
     "tv.pluto.android|androidtv|tv": {
       "app_name": "Pluto TV: Watch Free Movies/TV",
       "arch": "tv",
-      "at": 1791120024,
+      "at": 1791377426,
       "out": "pluto.android-5.66.0-leanback-androidtv-tv.apk",
       "package": "tv.pluto.android",
       "tags": {
-        "androidtv": "v1.40.4"
+        "androidtv": "v1.40.5"
       },
       "vc": 510400248,
       "version": "5.66.0-leanback"
@@ -2515,12 +2515,12 @@
       20112868
     ],
     "tv.pluto.android": [
-      1791120024,
+      1791377426,
       29967820
     ],
     "tv.twitch.android.app": [
-      1791320174,
-      56741075
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
