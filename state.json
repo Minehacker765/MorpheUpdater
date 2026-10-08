@@ -193,16 +193,16 @@
       "version": "26.7.1.47181"
     },
     "com.alltrails.alltrails|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "AllTrails: Hike, Bike & Run",
       "arch": "arm64",
-      "at": 1791319948,
-      "out": "alltrails-26.9.51-hoodles-arm64.apk",
+      "at": 1791420627,
+      "out": "alltrails-26.10.10-hoodles-arm64.apk",
       "package": "com.alltrails.alltrails",
       "tags": {
         "hoodles": "v1.47.1-dev.1"
       },
-      "vc": 60536,
-      "version": "26.9.51"
+      "vc": 60537,
+      "version": "26.10.10"
     },
     "com.alphaprogression.alphaprogression|hoomans|arm64": {
       "app_name": "Alpha Progression Gym Tracker",
@@ -1979,8 +1979,8 @@
       134142836
     ],
     "com.alltrails.alltrails": [
-      1791319947,
-      85149861
+      1791420627,
+      84731411
     ],
     "com.alphaprogression.alphaprogression": [
       1789950298,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791320174,
-      56741075
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
