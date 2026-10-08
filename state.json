@@ -567,11 +567,11 @@
     "com.etsy.android|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1791363025,
+      "at": 1791463813,
       "out": "etsy.android-7.98.0-hxreborn-arm64.apk",
       "package": "com.etsy.android",
       "tags": {
-        "hxreborn": "v1.44.0"
+        "hxreborn": "v1.45.0"
       },
       "vc": 79800173,
       "version": "7.98.0"
@@ -1249,16 +1249,16 @@
       "version": "6.8.1"
     },
     "com.teslacoilsw.launcher|hoodles|arm64": {
-      "app_name": "",
+      "app_name": "Nova Launcher: Home Screen",
       "arch": "arm64",
-      "at": 1791320081,
-      "out": "teslacoilsw.launcher-89300 (8.9.3)-hoodles-arm64.apk",
+      "at": 1791463839,
+      "out": "teslacoilsw.launcher-89400 (8.9.4)-hoodles-arm64.apk",
       "package": "com.teslacoilsw.launcher",
       "tags": {
         "hoodles": "v1.47.1-dev.1"
       },
-      "vc": 89300,
-      "version": "89300 (8.9.3)"
+      "vc": 89400,
+      "version": "89400 (8.9.4)"
     },
     "com.thehungrywasp.iamsober|hoomans|arm64": {
       "app_name": "I Am Sober",
@@ -1743,11 +1743,11 @@
     "org.readera|hxreborn|arm64": {
       "app_name": "",
       "arch": "arm64",
-      "at": 1791363041,
+      "at": 1791463816,
       "out": "readera-26.05.20+2300-hxreborn-arm64.apk",
       "package": "org.readera",
       "tags": {
-        "hxreborn": "v1.44.0"
+        "hxreborn": "v1.45.0"
       },
       "vc": 2300,
       "version": "26.05.20+2300"
@@ -2103,7 +2103,7 @@
       28026190
     ],
     "com.etsy.android": [
-      1791363024,
+      1791463813,
       48496877
     ],
     "com.facebook.katana": [
@@ -2319,8 +2319,8 @@
       157652313
     ],
     "com.teslacoilsw.launcher": [
-      1791320081,
-      38165902
+      1791463839,
+      38474005
     ],
     "com.thehungrywasp.iamsober": [
       1789950394,
@@ -2483,7 +2483,7 @@
       53064678
     ],
     "org.readera": [
-      1791363041,
+      1791463816,
       13417948
     ],
     "org.totschnig.myexpenses": [
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1791320174,
-      56741075
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
