@@ -1890,7 +1890,7 @@
     "de-vanced": "v1.5.1",
     "hoodles": "v1.47.1-dev.1",
     "hoomans": "v1.53.0",
-    "hxreborn": "v1.47.0",
+    "hxreborn": "v1.48.0",
     "microg": "7.2.2-dev.2",
     "morphe": "v1.47.0",
     "prathxm": "v1.15.0",
@@ -2311,7 +2311,7 @@
       117163337
     ],
     "com.streetwriters.notesnook": [
-      1791760820,
+      1791764425,
       67945265
     ],
     "com.superchinese": [
@@ -2483,7 +2483,7 @@
       53064678
     ],
     "org.readera": [
-      1791760819,
+      1791764423,
       13016532
     ],
     "org.totschnig.myexpenses": [
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1789950285,
-      97614554
+      1791320174,
+      56741075
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
@@ -2535,7 +2535,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.18.2-dev.2"
+      "tag": "v1.18.2-dev.4"
     }
   }
 }
