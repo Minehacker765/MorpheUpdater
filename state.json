@@ -1886,7 +1886,7 @@
     }
   },
   "bundles": {
-    "androidtv": "v1.41.0",
+    "androidtv": "v1.42.0",
     "de-vanced": "v1.5.1",
     "hoodles": "v1.47.1-dev.1",
     "hoomans": "v1.53.0",
@@ -1911,7 +1911,7 @@
       4930922
     ],
     "all.in.one.calculator": [
-      1792187416,
+      1792205406,
       41189903
     ],
     "altergames.carlauncher": [
@@ -2119,8 +2119,8 @@
       201207455
     ],
     "com.gamma.scan": [
-      1792203626,
-      15225538
+      1792205411,
+      15340226
     ],
     "com.getmimo": [
       1791319977,
@@ -2219,8 +2219,8 @@
       4278464
     ],
     "com.myvitale.forus": [
-      1792203629,
-      94098117
+      1792205416,
+      94122693
     ],
     "com.naver.linewebtoon": [
       1789950380,
@@ -2495,8 +2495,8 @@
       28315126
     ],
     "photo.editor.photoeditor.photoeditorpro": [
-      1792201838,
-      51181755
+      1792205421,
+      39330149
     ],
     "pl.solidexplorer2": [
       1791319868,
@@ -2519,8 +2519,8 @@
       29967820
     ],
     "tv.twitch.android.app": [
-      1792203644,
-      56757451
+      1789950285,
+      97614554
     ],
     "videoeditor.videorecorder.screenrecorder": [
       1791319868,
@@ -2535,7 +2535,7 @@
     },
     "morphe-desktop": {
       "signing": "internal",
-      "tag": "v1.19.0-dev.1"
+      "tag": "v1.19.0-dev.3"
     }
   }
 }
